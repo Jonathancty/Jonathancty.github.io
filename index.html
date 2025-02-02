@@ -27,7 +27,7 @@
     </div>
   </nav>
 
-  <div id="cover-page" class="container mx-auto flex justify-center items-center min-h-screen">
+  <div id="cover-page" class="container mx-auto flex justify-center items-center min-h-screen section">
     <!-- <div
     id="cover-page"
     class="container mx-auto flex justify-center items-center h-screen bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:400%_400%] animate-gradient-x"
@@ -56,8 +56,8 @@
     </div>
   </div>
 
-  <div id="aboutMe" class="w-full min-h-screen mx-auto flex flex-col justify-center items-center bg-black">
-    <div class="container flex flex-col justify-start pt-32 px-32">
+  <div id="aboutMe" class="w-full min-h-screen mx-auto flex flex-col justify-center items-center bg-black section">
+    <div class="container flex flex-col justify-start pt-32 px-4">
       <h1 class="text-4xl text-white font-poppins text-center">About Me</h1>
       <div class="flex flex-col md:flex-row pt-12 items-center px-8">
         <div class="md:w-1/4 flex justify-center">
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row pt-12 items-start px-8">
+      <div class="flex flex-col md:flex-row pt-12 items-start justify-center px-8">
         <div class="md:w-1/2 flex flex-col justify-center px-8">
           <h1 class="text-2xl text-white font-poppins text-center">Skills</h1>
           <div class="w-full px-8 py-4">
@@ -117,13 +117,13 @@
             <div class="mb-4">
               <h2 class="text-xl text-white font-poppins">C/C++</h2>
               <div class="w-full bg-gray-200 rounded-full h-4">
-                <div class="bg-red-600 h-4 rounded-full" style="width: 45%"></div>
+                <div class="bg-yellow-600 h-4 rounded-full" style="width: 55%"></div>
               </div>
             </div>
             <div class="mb-4">
               <h2 class="text-xl text-white font-poppins">React/TS</h2>
               <div class="w-full bg-gray-200 rounded-full h-4">
-                <div class="bg-red-600 h-4 rounded-full" style="width: 45%"></div>
+                <div class="bg-yellow-600 h-4 rounded-full" style="width: 55%"></div>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@
       </div>
     </div>
   </div>
-  <div id="resume" class="w-full min-h-screen mx-auto flex justify-center items-center bg-black">
+  <div id="resume" class="w-full min-h-screen mx-auto flex justify-center items-center bg-black section">
     <div class="container flex flex-col justify-center items-center">
       <h1 class="text-4xl text-white font-poppins text-center">Resume</h1>
       <div class="flex justify-center items-center mt-8">
@@ -225,7 +225,7 @@
   </div>
 
   <div id="slogan"
-    class="w-full min-h-screen flex justify-center items-center bg-gradient-to-b from-black to-gray-900 text-white">
+    class="w-full min-h-screen flex justify-center items-center bg-gradient-to-b from-black to-gray-900 text-white section">
     <div class="container flex justify-center items-center">
       <h1 class="text-5xl font-poppins text-white text-center">Innovative solutions, cutting-edge technology.
       </h1>
@@ -233,42 +233,76 @@
   </div>
 
   <div id="projects"
-    class="w-full min-h-screen mx-auto flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-gray-700 text-white relative">
+    class="w-full min-h-screen mx-auto flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-gray-700 text-white relative section">
     <div class="container flex flex-col justify-center items-center">
       <h1 class="text-4xl font-poppins text-center mt-8 mb-24">Projects</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
         <!-- Project Card 1 -->
         <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold">Project 1</h3>
-          <p class="text-base font-normal text-gray-400 mt-2">Description of Project 1.</p>
+          <h3 class="text-xl font-semibold">Blog website</h3>
+          <p class="text-base font-normal text-gray-400 mt-2">Our blog is a collaborative platform founded by a group of
+            Hong Kongers, dedicated to providing insightful articles on global events and issues relevant to Hong Kong.
+            Through diverse perspectives and in-depth analysis, we aim to inform, engage, and foster meaningful
+            discussions on current affairs.</p>
         </div>
         <!-- Project Card 2 -->
         <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold">Project 2</h3>
-          <p class="text-base font-normal text-gray-400 mt-2">Description of Project 2.</p>
+          <h3 class="text-xl font-semibold">AI recommdation system</h3>
+          <p class="text-base font-normal text-gray-400 mt-2">Our AI-powered recommendation system is designed to help
+            university students discover and participate in society activities that align with their interests and
+            availability. By intelligently matching events with students' schedules, we provide personalized suggestions
+            to enhance their campus experience and foster greater engagement in student life.</p>
         </div>
         <!-- Project Card 3 -->
         <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold">Project 3</h3>
-          <p class="text-base font-normal text-gray-400 mt-2">Description of Project 3.</p>
+          <h3 class="text-xl font-semibold">Machine Learning Paper</h3>
+          <p class="text-base font-normal text-gray-400 mt-2">This research paper explores the application of regression
+            methods in machine learning to address real-world, cutting-edge challenges. By leveraging advanced
+            regression techniques, we demonstrate how predictive modeling can drive insights and solutions across
+            various domains, from healthcare and finance to engineering and social sciences.</p>
         </div>
         <!-- Add more project cards as needed -->
       </div>
     </div>
   </div>
 
-  <div id="contact" class="w-full min-h-screen mx-auto flex justify-center items-start bg-white text-black  pt-16">
+  <div id="contact"
+    class="w-full min-h-screen mx-auto flex justify-center items-start bg-gray-100 text-black pt-16 section">
     <div class="container flex flex-col justify-start items-center">
       <h1 class="text-4xl font-poppins text-center mt-16 mb-8">Contact</h1>
-      <div class="flex justify-center items-center mt-8">
-        <a href="JonathanChan_CV.pdf" download
-          class="bg-blue-600 text-white font-poppins py-2 px-4 rounded hover:bg-blue-700">
-          JonathanChan_CV.pdf
-        </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex items-center space-x-2">
+          <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+          <span class="text-lg font-poppins font-semibold">Email:</span>
+          <a href="mailto:your.email@example.com"
+            class="text-lg font-poppins text-blue-400 hover:underline">jonathan05cty@gmail.com</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-school" style="color: #000000;"></i>
+          <span class="text-lg font-poppins font-semibold">School Email:</span>
+          <a href="mailto:school.email@example.com"
+            class="text-lg font-poppins text-blue-400 hover:underline">zdqh62@durham.ac.uk</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-phone" style="color: #000000;"></i>
+          <span class="text-lg font-poppins font-semibold">Phone:</span>
+          <a href="tel:+1234567890" class="text-lg font-poppins text-blue-400 hover:underline">+44 7803844878</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fa-brands fa-github" style="color: #000000;"></i>
+          <span class="text-lg font-poppins font-semibold">GitHub:</span>
+          <a href="https://github.com/yourusername"
+            class="text-lg font-poppins text-blue-400 hover:underline">github.com/jonathancty</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fa-brands fa-linkedin" style="color: #000000;"></i>
+          <span class="text-lg font-poppins font-semibold">LinkedIn:</span>
+          <a href="https://linkedin.com/in/yourusername"
+            class="text-lg font-poppins text-blue-400 hover:underline">linkedin.com/in/jonathancty</a>
+        </div>
       </div>
     </div>
   </div>
-
 
 </body>
 

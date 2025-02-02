@@ -9,11 +9,21 @@ module.exports = {
       },
       animation: {
         "gradient-x": "gradient-x 15s ease infinite",
+        fadeIn: "fadeIn 0.5s ease-in forwards",
+        fadeOut: "fadeOut 0.5s ease-out forwards",
       },
       keyframes: {
         "gradient-x": {
           "0%, 100%": { "background-position": "0% 50%" },
           "50%": { "background-position": "100% 50%" },
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
         },
       },
     },

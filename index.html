@@ -42,14 +42,14 @@
         </p>
         <!-- social media -->
         <div class="flex flex-row justify-center mt-8 space-x-4">
-          <a href="http://www.linkedin.com/in/jonathancty">
+          <a href="http://www.linkedin.com/in/jonathancty" class="transform transition duration-300 hover:scale-125">
             <i class="fa-brands fa-linkedin text-4xl" style="color: #000000"></i>
           </a>
-          <a href="http://www.linkedin.com/in/jonathancty">
+          <a href="https://github.com/jonathancty" class="transform transition duration-300 hover:scale-125">
             <i class="fa-brands fa-github text-4xl" style="color: #000000"></i>
           </a>
-          <a href="http://www.linkedin.com/in/jonathancty">
-            <i class="fa-brands fa-youtube text-4xl" style="color: #000000"></i>
+          <a href="https://discordapp.com/users/6654" class="transform transition duration-300 hover:scale-125">
+            <i class="fa-brands fa-discord text-4xl" style="color: #000000;"></i>
           </a>
         </div>
       </div>
@@ -212,13 +212,15 @@
   </div>
   <div id="resume" class="w-full min-h-screen mx-auto flex justify-center items-center bg-black section">
     <div class="container flex flex-col justify-center items-center">
-      <h1 class="text-4xl text-white font-poppins text-center">Resume</h1>
-      <div class="flex justify-center items-center mt-8">
+      <h1 class="text-4xl text-white font-poppins text-center pb-8">Resume</h1>
+      <div class="relative inline-flex  group">
+        <div
+          class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#4A90E2] via-[#9013FE] to-[#FF0080] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
         <a href="JonathanChan_CV.pdf" download
-          class="relative text-white font-poppins flex items-center justify-center transition duration-300 ease-in-out w-60 h-60 rounded-full bg-gradient-to-r from-black to-black hover:from-gray-700 hover:to-black shadow-lg">
+          class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+          role="button">
           JonathanChan_CV.pdf
-          <span
-            class="absolute inset-0 rounded-full bg-gradient-to-r from-white to-transparent opacity-0 hover:opacity-50 transition duration-300 ease-in-out"></span>
         </a>
       </div>
     </div>
@@ -238,29 +240,37 @@
       <h1 class="text-4xl font-poppins text-center mt-8 mb-24">Projects</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
         <!-- Project Card 1 -->
-        <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <a href="https://sandwich-kongsi.onrender.com/" target="_blank"
+          class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 block">
+          <img src="./images/sandwichKongSi.png" alt="Blog Website" class="w-full h-48 object-cover rounded-lg mb-4">
           <h3 class="text-xl font-semibold">Blog website</h3>
           <p class="text-base font-normal text-gray-400 mt-2">Our blog is a collaborative platform founded by a group of
             Hong Kongers, dedicated to providing insightful articles on global events and issues relevant to Hong Kong.
             Through diverse perspectives and in-depth analysis, we aim to inform, engage, and foster meaningful
             discussions on current affairs.</p>
-        </div>
+        </a>
         <!-- Project Card 2 -->
-        <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold">AI recommdation system</h3>
+        <a href="https://github.com/Jonathancty/AI-recommender" target="_blank"
+          class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 block">
+          <img src="./images/recommender.png" alt="AI Recommendation System"
+            class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">AI recommendation system</h3>
           <p class="text-base font-normal text-gray-400 mt-2">Our AI-powered recommendation system is designed to help
             university students discover and participate in society activities that align with their interests and
             availability. By intelligently matching events with students' schedules, we provide personalized suggestions
             to enhance their campus experience and foster greater engagement in student life.</p>
-        </div>
+        </a>
         <!-- Project Card 3 -->
-        <div class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <a href="#" target="_blank"
+          class="relative bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 block">
+          <img src="./images/machineLearning.png" alt="Machine Learning Paper"
+            class="w-full h-48 object-cover rounded-lg mb-4">
           <h3 class="text-xl font-semibold">Machine Learning Paper</h3>
           <p class="text-base font-normal text-gray-400 mt-2">This research paper explores the application of regression
             methods in machine learning to address real-world, cutting-edge challenges. By leveraging advanced
             regression techniques, we demonstrate how predictive modeling can drive insights and solutions across
             various domains, from healthcare and finance to engineering and social sciences.</p>
-        </div>
+        </a>
         <!-- Add more project cards as needed -->
       </div>
     </div>

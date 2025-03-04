@@ -38,3 +38,30 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial fade-in for the first section
   fadeIn(sections[currentSection]);
 });
+
+// Canvas animation for dynamic gradient background
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+let gradientOffset = 0;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  drawGradient();
+}
+
+function drawGradient() {
+  gradientOffset += 0.001;
+  const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  gradient.addColorStop(0, `hsl(${Math.sin(gradientOffset) * 360}, 100%, 50%)`);
+  gradient.addColorStop(1, `hsl(${Math.cos(gradientOffset) * 360}, 100%, 50%)`);
+
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  requestAnimationFrame(drawGradient);
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();

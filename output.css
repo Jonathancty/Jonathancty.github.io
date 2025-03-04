@@ -544,8 +544,17 @@ video {
 .-inset-px {
   inset: -1px;
 }
+.inset-0 {
+  inset: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .top-0 {
   top: 0px;
+}
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -598,6 +607,9 @@ video {
 }
 .h-48 {
   height: 12rem;
+}
+.h-full {
+  height: 100%;
 }
 .h-screen {
   height: 100vh;

@@ -38,3 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial fade-in for the first section
   fadeIn(sections[currentSection]);
 });
+
+// hamburger menu functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+  const menuItems = menu.querySelectorAll("a"); // Select all menu items
+
+  // Toggle menu visibility when the hamburger button is clicked
+  menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("hidden");
+  });
+
+  // Hide the menu when a menu item is clicked
+  menuItems.forEach(item => {
+    item.addEventListener("click", function () {
+      menu.classList.add("hidden"); // Add 'hidden' class to hide the menu
+    });
+  });
+});

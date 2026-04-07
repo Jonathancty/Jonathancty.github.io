@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-ag" />
+  <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jonathan Chan - Portfolio</title>
@@ -14,8 +14,9 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
+      background-color: #06080d;
       color: #f5f5f5;
+      overflow-x: hidden;
     }
 
     .timeline-item::before {
@@ -26,31 +27,67 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background-color: #0a0a0a;
+      background-color: #06080d;
       border: 4px solid #2dd4bf;
-      /* Changed to teal-400 */
       z-index: 10;
     }
 
-    /* Animated Gradient Background */
+    /* Interactive Background Canvas */
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    #root {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Make React containers transparent so our canvas shows through */
+    #root,
+    #root > div,
+    #root .bg-black,
+    #root .bg-\[\#0a0a0a\] {
+      background-color: transparent !important;
+      background: transparent !important;
+    }
+
+    /* Hide the old React-rendered background canvas */
+    #root canvas {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* Mouse-reactive glow that follows cursor */
+    #cursor-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, rgba(6, 182, 212, 0.04) 30%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    /* Subtle animated gradient overlay */
     .animated-gradient {
-      background: linear-gradient(-45deg, #0f172a, #0369a1, #14b8a6, #0d9488);
+      background: linear-gradient(-45deg, #06080d, #0c1524, #0a1628, #06080d);
       background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
+      animation: gradient 20s ease infinite;
     }
 
     @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
 
@@ -69,7 +106,321 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div id="cursor-glow"></div>
+  <div id="root"></div>
+
+  <script>
+  (function() {
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    const cursorGlow = document.getElementById('cursor-glow');
+
+    let width, height, dpr;
+    let mouse = { x: -9999, y: -9999, active: false };
+    let particles = [];
+    let gridLines = [];
+    let animFrame;
+    let time = 0;
+
+    // Configuration
+    const CONFIG = {
+      particleCount: 120,
+      connectionDistance: 160,
+      mouseRadius: 250,
+      mouseForce: 0.08,
+      baseSpeed: 0.3,
+      colors: {
+        primary: [20, 184, 166],     // teal
+        secondary: [6, 182, 212],    // cyan
+        accent: [99, 102, 241],      // indigo
+        dim: [30, 58, 95],           // dark blue
+      },
+      gridSpacing: 80,
+      gridOpacity: 0.04,
+    };
+
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      ctx.scale(dpr, dpr);
+      generateGrid();
+    }
+
+    function generateGrid() {
+      gridLines = [];
+      for (let x = 0; x < width; x += CONFIG.gridSpacing) {
+        gridLines.push({ x1: x, y1: 0, x2: x, y2: height, type: 'v' });
+      }
+      for (let y = 0; y < height; y += CONFIG.gridSpacing) {
+        gridLines.push({ x1: 0, y1: y, x2: width, y2: y, type: 'h' });
+      }
+    }
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.depth = 0.3 + Math.random() * 0.7; // parallax depth
+        this.baseRadius = 1 + Math.random() * 2.5;
+        this.radius = this.baseRadius;
+        this.vx = (Math.random() - 0.5) * CONFIG.baseSpeed * this.depth;
+        this.vy = (Math.random() - 0.5) * CONFIG.baseSpeed * this.depth;
+        this.pulsePhase = Math.random() * Math.PI * 2;
+        this.pulseSpeed = 0.01 + Math.random() * 0.02;
+
+        // Color: blend between primary, secondary, and accent based on depth
+        const t = Math.random();
+        if (t < 0.5) {
+          this.color = CONFIG.colors.primary;
+        } else if (t < 0.8) {
+          this.color = CONFIG.colors.secondary;
+        } else {
+          this.color = CONFIG.colors.accent;
+        }
+      }
+
+      update() {
+        // Pulse
+        this.pulsePhase += this.pulseSpeed;
+        const pulse = 0.7 + 0.3 * Math.sin(this.pulsePhase);
+        this.radius = this.baseRadius * pulse * this.depth;
+
+        // Mouse interaction
+        if (mouse.active) {
+          const dx = this.x - mouse.x;
+          const dy = this.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < CONFIG.mouseRadius) {
+            const force = (1 - dist / CONFIG.mouseRadius) * CONFIG.mouseForce;
+            this.vx += dx * force * 0.02;
+            this.vy += dy * force * 0.02;
+            // Enlarge near mouse
+            this.radius *= 1 + (1 - dist / CONFIG.mouseRadius) * 0.8;
+          }
+        }
+
+        // Damping
+        this.vx *= 0.995;
+        this.vy *= 0.995;
+
+        // Drift
+        this.vx += (Math.random() - 0.5) * 0.01;
+        this.vy += (Math.random() - 0.5) * 0.01;
+
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Wrap around
+        if (this.x < -50) this.x = width + 50;
+        if (this.x > width + 50) this.x = -50;
+        if (this.y < -50) this.y = height + 50;
+        if (this.y > height + 50) this.y = -50;
+      }
+
+      draw() {
+        const [r, g, b] = this.color;
+        const alpha = 0.4 + 0.3 * this.depth;
+
+        // Glow
+        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius * 4);
+        gradient.addColorStop(0, `rgba(${r}, ${g}, ${b}, ${alpha * 0.5})`);
+        gradient.addColorStop(0.5, `rgba(${r}, ${g}, ${b}, ${alpha * 0.1})`);
+        gradient.addColorStop(1, 'transparent');
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius * 4, 0, Math.PI * 2);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        // Core
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      particles = [];
+      for (let i = 0; i < CONFIG.particleCount; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function drawGrid() {
+      const scrollY = window.scrollY || 0;
+      ctx.strokeStyle = `rgba(20, 184, 166, ${CONFIG.gridOpacity})`;
+      ctx.lineWidth = 0.5;
+
+      for (const line of gridLines) {
+        // Parallax offset based on scroll
+        const offsetY = (scrollY * 0.05) % CONFIG.gridSpacing;
+        const offsetX = Math.sin(time * 0.0005) * 2;
+
+        ctx.beginPath();
+        if (line.type === 'v') {
+          ctx.moveTo(line.x1 + offsetX, 0);
+          ctx.lineTo(line.x2 + offsetX, height);
+        } else {
+          ctx.moveTo(0, line.y1 - offsetY);
+          ctx.lineTo(width, line.y2 - offsetY);
+        }
+        ctx.stroke();
+      }
+
+      // Highlight grid lines near mouse
+      if (mouse.active) {
+        for (const line of gridLines) {
+          let dist;
+          if (line.type === 'v') {
+            dist = Math.abs(line.x1 - mouse.x);
+          } else {
+            dist = Math.abs(line.y1 - mouse.y);
+          }
+          if (dist < 100) {
+            const alpha = (1 - dist / 100) * 0.12;
+            ctx.strokeStyle = `rgba(20, 184, 166, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            if (line.type === 'v') {
+              ctx.moveTo(line.x1, 0);
+              ctx.lineTo(line.x2, height);
+            } else {
+              ctx.moveTo(0, line.y1);
+              ctx.lineTo(width, line.y2);
+            }
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function drawConnections() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const a = particles[i];
+          const b = particles[j];
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const maxDist = CONFIG.connectionDistance * Math.min(a.depth, b.depth) * 1.5;
+
+          if (dist < maxDist) {
+            let alpha = (1 - dist / maxDist) * 0.15 * Math.min(a.depth, b.depth);
+
+            // Brighter connections near mouse
+            if (mouse.active) {
+              const mx = (a.x + b.x) / 2;
+              const my = (a.y + b.y) / 2;
+              const md = Math.sqrt((mx - mouse.x) ** 2 + (my - mouse.y) ** 2);
+              if (md < CONFIG.mouseRadius) {
+                alpha += (1 - md / CONFIG.mouseRadius) * 0.2;
+              }
+            }
+
+            const [r, g, b2] = a.color;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = `rgba(${r}, ${g}, ${b2}, ${alpha})`;
+            ctx.lineWidth = 0.5 + alpha;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function drawVignette() {
+      // Radial vignette
+      const gradient = ctx.createRadialGradient(
+        width / 2, height / 2, height * 0.2,
+        width / 2, height / 2, height * 0.9
+      );
+      gradient.addColorStop(0, 'transparent');
+      gradient.addColorStop(1, 'rgba(6, 8, 13, 0.6)');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    function drawScanline() {
+      // Subtle moving scanline
+      const scanY = (time * 0.03) % (height + 100) - 50;
+      const grad = ctx.createLinearGradient(0, scanY - 30, 0, scanY + 30);
+      grad.addColorStop(0, 'transparent');
+      grad.addColorStop(0.5, 'rgba(20, 184, 166, 0.02)');
+      grad.addColorStop(1, 'transparent');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, scanY - 30, width, 60);
+    }
+
+    function animate(ts) {
+      time = ts || 0;
+      ctx.clearRect(0, 0, width, height);
+
+      // Background gradient
+      const bg = ctx.createLinearGradient(0, 0, width, height);
+      const shift = Math.sin(time * 0.0003) * 0.02;
+      bg.addColorStop(0, `rgba(6, 8, 13, 1)`);
+      bg.addColorStop(0.3, `rgba(${8 + shift * 200}, ${12 + shift * 100}, ${24 + shift * 300}, 1)`);
+      bg.addColorStop(0.7, `rgba(${10 + shift * 100}, ${14 + shift * 200}, ${28 + shift * 150}, 1)`);
+      bg.addColorStop(1, 'rgba(6, 8, 13, 1)');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, width, height);
+
+      drawGrid();
+      drawConnections();
+
+      // Update and draw particles (back to front for depth)
+      particles.sort((a, b) => a.depth - b.depth);
+      for (const p of particles) {
+        p.update();
+        p.draw();
+      }
+
+      drawScanline();
+      drawVignette();
+
+      animFrame = requestAnimationFrame(animate);
+    }
+
+    // Event listeners
+    document.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouse.active = true;
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+      cursorGlow.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+      mouse.active = false;
+      cursorGlow.style.opacity = '0';
+    });
+
+    // Make the canvas interactive (pointer events on the body, not the canvas)
+    canvas.style.pointerEvents = 'none';
+
+    window.addEventListener('resize', () => {
+      resize();
+      init();
+    });
+
+    // Initialise
+    resize();
+    init();
+    animate();
+  })();
+  </script>
 </body>
 
 </html>

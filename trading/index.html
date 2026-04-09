@@ -390,7 +390,7 @@
     }
 
     function getSentimentClass(score) {
-      return score >= 0 ? 'bullish' : 'bearish';
+      return score > 0 ? 'bullish' : 'bearish';
     }
 
     function formatNumber(num) {
@@ -405,7 +405,7 @@
       const timeString = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' ' + date.toLocaleDateString();
 
       // Render Top Trending (Hero)
-      const topSentimentClass = getSentimentClass(top_trending.sentiment_score);
+      const topSentimentClass = getSentimentClass(top_trending.sentiment_delta);
       
       let html = `
         <div class="hero-section">
@@ -432,8 +432,8 @@
                   </span>
                 </div>
                 <div class="metric">
-                  <span class="metric-label">Sentiment Score</span>
-                  <span class="metric-value ${topSentimentClass}">${top_trending.sentiment_score > 0 ? '+' : ''}${top_trending.sentiment_score}</span>
+                  <span class="metric-label">7-Day Spike</span>
+                  <span class="metric-value ${topSentimentClass}">${top_trending.sentiment_delta > 0 ? '+' : ''}${(top_trending.sentiment_delta * 100).toFixed(1)}%</span>
                 </div>
                 <div class="metric">
                   <span class="metric-label">Current Price</span>
@@ -465,7 +465,7 @@
 
       // Render the rest of the grid
       trending_list.forEach(stock => {
-        const sentimentClass = getSentimentClass(stock.sentiment_score);
+        const sentimentClass = getSentimentClass(stock.sentiment_delta);
         html += `
           <div class="glass-card trending-card">
             <div class="stock-header">
@@ -485,8 +485,8 @@
                 <span class="metric-value" style="font-size:1rem">${formatNumber(stock.tweet_volume)}</span>
               </div>
               <div class="metric">
-                <span class="metric-label" style="font-size:0.7rem">Score</span>
-                <span class="metric-value ${sentimentClass}" style="font-size:1rem">${stock.sentiment_score > 0 ? '+' : ''}${stock.sentiment_score}</span>
+                <span class="metric-label" style="font-size:0.7rem">7d Spike</span>
+                <span class="metric-value ${sentimentClass}" style="font-size:1rem">${stock.sentiment_delta > 0 ? '+' : ''}${(stock.sentiment_delta * 100).toFixed(1)}%</span>
               </div>
             </div>
             

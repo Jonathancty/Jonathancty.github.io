@@ -1,65 +1,148 @@
 {
-  "updated_at": "2026-04-09T09:00:00Z",
+  "updated_at": "2026-04-09T17:26:20.718141+00:00",
   "top_trending": {
-    "ticker": "NVDA",
-    "name": "NVIDIA Corporation",
-    "sentiment_score": 0.92,
-    "sentiment_label": "Extremely Bullish",
-    "tweet_volume": 124500,
-    "price": 845.20,
-    "change_pct": "+4.2%",
-    "key_topics": ["AI Chips", "Earnings Beat", "Data Centers"]
+    "ticker": "ARAI",
+    "name": "Arrive AI Inc.",
+    "sentiment_delta": 0.0,
+    "current_sentiment": 0.0,
+    "tweet_volume": 686569,
+    "price": 1.33,
+    "change_pct": "+98.97%",
+    "key_topics": [
+      "Momentum",
+      "Volume Spike"
+    ]
   },
   "trending_list": [
     {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "sentiment_score": 0.65,
-      "sentiment_label": "Bullish",
-      "tweet_volume": 85200,
-      "price": 175.40,
-      "change_pct": "+1.5%",
-      "key_topics": ["Robotaxi", "FSD V12"]
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 59162,
+      "price": 90.27,
+      "change_pct": "-7.39%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "sentiment_score": -0.20,
-      "sentiment_label": "Bearish",
-      "tweet_volume": 62100,
-      "price": 169.30,
-      "change_pct": "-1.1%",
-      "key_topics": ["China Sales", "Antitrust Lawsuit"]
+      "ticker": "NET",
+      "name": "Cloudflare, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 16874,
+      "price": 185.42,
+      "change_pct": "-12.23%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices",
-      "sentiment_score": 0.81,
-      "sentiment_label": "Very Bullish",
-      "tweet_volume": 45000,
-      "price": 164.50,
-      "change_pct": "+2.8%",
-      "key_topics": ["MI300X", "AI Market Share"]
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 108476,
+      "price": 94.36,
+      "change_pct": "+6.14%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
     },
     {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sentiment_score": 0.75,
-      "sentiment_label": "Bullish",
-      "tweet_volume": 39000,
-      "price": 505.10,
-      "change_pct": "+1.2%",
-      "key_topics": ["Llama 3", "AI Integration"]
+      "ticker": "SNOW",
+      "name": "Snowflake Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 20307,
+      "price": 134.15,
+      "change_pct": "-10.56%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
     },
     {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies",
-      "sentiment_score": 0.88,
-      "sentiment_label": "Very Bullish",
-      "tweet_volume": 32000,
-      "price": 24.30,
-      "change_pct": "+5.4%",
-      "key_topics": ["AIP Bootcamp", "Government Contracts"]
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 10106,
+      "price": 361.64,
+      "change_pct": "-6.87%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 44075,
+      "price": 3.78,
+      "change_pct": "+7.12%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex Ltd.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 5044,
+      "price": 75.59,
+      "change_pct": "+3.28%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ONCO",
+      "name": "Onconetix, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 502002,
+      "price": 1.77,
+      "change_pct": "+56.72%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DKNG",
+      "name": "DraftKings Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 15579,
+      "price": 22.79,
+      "change_pct": "-4.80%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 11232,
+      "price": 122.23,
+      "change_pct": "-11.33%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
     }
   ]
 }

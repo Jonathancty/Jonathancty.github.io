@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Sentiment Trading Dashboard</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-base: #06080d;
+      --bg-surface: rgba(20, 25, 35, 0.5);
+      --bg-surface-hover: rgba(30, 38, 52, 0.7);
+      
+      --text-primary: #f5f5f5;
+      --text-secondary: #94a3b8;
+      
+      --accent-primary: #2dd4bf;
+      --accent-secondary: #6366f1;
+      
+      --bullish: #10b981;
+      --bearish: #ef4444;
+      
+      --border-light: rgba(255, 255, 255, 0.06);
+      --glass-blur: blur(12px);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Ambient Background Glow */
+    .ambient-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
+      top: -200px;
+      right: -100px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .ambient-glow-2 {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, rgba(45, 212, 191, 0.03) 40%, transparent 70%);
+      bottom: -100px;
+      left: -150px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 1.5rem;
+    }
+
+    .logo-area h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-area p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-primary);
+    }
+    
+    .nav-links svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Glass Card Base */
+    .glass-card {
+      background: var(--bg-surface);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .glass-card:hover {
+      background: var(--bg-surface-hover);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Hero Section - Top Trending */
+    .hero-section {
+      margin-bottom: 3rem;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-primary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-label .dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-primary);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-primary);
+      animation: pulse 2s infinite;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    }
+
+    @media (min-width: 768px) {
+      .hero-card {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+      }
+    }
+
+    .stock-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stock-header h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .stock-name {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .metric-label {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .sentiment-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .bullish {
+      color: var(--bullish);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .bearish {
+      color: var(--bearish);
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    /* List Section */
+    .list-header {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .update-time {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .trending-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .trending-card {
+      padding: 1.5rem;
+    }
+    
+    .trending-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .trending-card .stock-header h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    
+    .trending-card .metric-grid {
+      margin-top: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    
+    .trending-card .metric-value {
+      font-size: 1.25rem;
+    }
+
+    .topics {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .topic-tag {
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      color: var(--text-secondary);
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    
+    /* Loading Skeleton */
+    .skeleton {
+      background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 8px;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-2"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo-area">
+        <h1>X-Sentiment</h1>
+        <p>Real-time market sentiment derived from social momentum</p>
+      </div>
+      <div class="nav-links">
+        <a href="/">
+          <svg style="color:var(--text-secondary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          Back to Portfolio
+        </a>
+      </div>
+    </header>
+
+    <main id="app-content">
+      <!-- Content populated by JS -->
+      <div style="text-align: center; color: var(--text-secondary); padding: 4rem;">
+         <div class="skeleton" style="height: 300px; margin-bottom: 2rem; border-radius: 20px;"></div>
+         <div class="skeleton" style="height: 200px; border-radius: 20px;"></div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Fetch data and render UI
+    async function loadDashboardData() {
+      try {
+        const response = await fetch('./data.json');
+        if (!response.ok) throw new Error('Network response was not ok');
+        const data = await response.json();
+        renderDashboard(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('app-content').innerHTML = `
+          <div style="text-align:center; padding: 4rem;">
+            <h2 style="color:var(--bearish)">Failed to load data</h2>
+            <p style="color:var(--text-secondary)">Please ensure data.json exists and try again.</p>
+          </div>
+        `;
+      }
+    }
+
+    function getSentimentClass(score) {
+      return score >= 0 ? 'bullish' : 'bearish';
+    }
+
+    function formatNumber(num) {
+      if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+      return num;
+    }
+
+    function renderDashboard(data) {
+      const { top_trending, trending_list, updated_at } = data;
+      
+      const date = new Date(updated_at);
+      const timeString = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' ' + date.toLocaleDateString();
+
+      // Render Top Trending (Hero)
+      const topSentimentClass = getSentimentClass(top_trending.sentiment_score);
+      
+      let html = `
+        <div class="hero-section">
+          <div class="hero-label">
+            <span class="dot"></span>
+            #1 Most Discussed Today
+          </div>
+          <div class="glass-card hero-card">
+            <div>
+              <div class="stock-header">
+                <h2>${top_trending.ticker}</h2>
+                <span class="sentiment-badge ${topSentimentClass}">${top_trending.sentiment_label}</span>
+              </div>
+              <p class="stock-name">${top_trending.name}</p>
+              
+              <div class="metric-grid">
+                <div class="metric">
+                  <span class="metric-label">X Volume</span>
+                  <span class="metric-value">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-secondary)">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    ${formatNumber(top_trending.tweet_volume)}
+                  </span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Sentiment Score</span>
+                  <span class="metric-value ${topSentimentClass}">${top_trending.sentiment_score > 0 ? '+' : ''}${top_trending.sentiment_score}</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Current Price</span>
+                  <span class="metric-value">$${top_trending.price.toFixed(2)}</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">24h Change</span>
+                  <span class="metric-value ${top_trending.change_pct.startsWith('-') ? 'bearish' : 'bullish'}">${top_trending.change_pct}</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+              <span class="metric-label" style="margin-bottom: 1rem;">Primary Drivers</span>
+              <div class="topics" style="margin-top: 0;">
+                ${top_trending.key_topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-header">
+          <span>Other Trending Assets</span>
+          <span class="update-time">Last updated: ${timeString}</span>
+        </div>
+        
+        <div class="trending-grid">
+      `;
+
+      // Render the rest of the grid
+      trending_list.forEach(stock => {
+        const sentimentClass = getSentimentClass(stock.sentiment_score);
+        html += `
+          <div class="glass-card trending-card">
+            <div class="stock-header">
+              <h3>${stock.ticker}</h3>
+              <span class="sentiment-badge ${sentimentClass}" style="font-size:0.75rem">${stock.sentiment_label}</span>
+            </div>
+            <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+               <span style="font-size:1.5rem; font-family:'Outfit'; font-weight: 700;">$${stock.price.toFixed(2)}</span>
+               <span class="${stock.change_pct.startsWith('-') ? 'bearish' : 'bullish'} font-weight:600">${stock.change_pct}</span>
+            </div>
+            
+            <div style="height: 1px; background: var(--border-light); margin: 1rem 0;"></div>
+            
+            <div class="metric-grid" style="margin-top:0;">
+              <div class="metric">
+                <span class="metric-label" style="font-size:0.7rem">Volume</span>
+                <span class="metric-value" style="font-size:1rem">${formatNumber(stock.tweet_volume)}</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label" style="font-size:0.7rem">Score</span>
+                <span class="metric-value ${sentimentClass}" style="font-size:1rem">${stock.sentiment_score > 0 ? '+' : ''}${stock.sentiment_score}</span>
+              </div>
+            </div>
+            
+            <div class="topics">
+              ${stock.key_topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div>`;
+      document.getElementById('app-content').innerHTML = html;
+    }
+
+    // Initialize
+    loadDashboardData();
+  </script>
+</body>
+</html>

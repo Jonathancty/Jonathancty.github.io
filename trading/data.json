@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-04-09T09:00:00Z",
+  "top_trending": {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sentiment_score": 0.92,
+    "sentiment_label": "Extremely Bullish",
+    "tweet_volume": 124500,
+    "price": 845.20,
+    "change_pct": "+4.2%",
+    "key_topics": ["AI Chips", "Earnings Beat", "Data Centers"]
+  },
+  "trending_list": [
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sentiment_score": 0.65,
+      "sentiment_label": "Bullish",
+      "tweet_volume": 85200,
+      "price": 175.40,
+      "change_pct": "+1.5%",
+      "key_topics": ["Robotaxi", "FSD V12"]
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sentiment_score": -0.20,
+      "sentiment_label": "Bearish",
+      "tweet_volume": 62100,
+      "price": 169.30,
+      "change_pct": "-1.1%",
+      "key_topics": ["China Sales", "Antitrust Lawsuit"]
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sentiment_score": 0.81,
+      "sentiment_label": "Very Bullish",
+      "tweet_volume": 45000,
+      "price": 164.50,
+      "change_pct": "+2.8%",
+      "key_topics": ["MI300X", "AI Market Share"]
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sentiment_score": 0.75,
+      "sentiment_label": "Bullish",
+      "tweet_volume": 39000,
+      "price": 505.10,
+      "change_pct": "+1.2%",
+      "key_topics": ["Llama 3", "AI Integration"]
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sentiment_score": 0.88,
+      "sentiment_label": "Very Bullish",
+      "tweet_volume": 32000,
+      "price": 24.30,
+      "change_pct": "+5.4%",
+      "key_topics": ["AIP Bootcamp", "Government Contracts"]
+    }
+  ]
+}

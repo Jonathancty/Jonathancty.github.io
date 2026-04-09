@@ -1,0 +1,36 @@
+name: Generate Trending Stock Data
+
+on:
+  schedule:
+    # Runs at 13:00 UTC every day (approx. market open time for NYC)
+    - cron: '0 13 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub actions interface
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push data back to the repo
+      
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install Dependencies
+        run: pip install -r scripts/requirements.txt
+        
+      - name: Run Sentiment and Stock Scraper
+        run: python scripts/update_trending.py
+        
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add trading/data.json
+          git commit -m "Automated update of trending stock data 📈" || echo "No changes to commit"
+          git push

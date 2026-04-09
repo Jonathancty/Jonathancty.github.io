@@ -432,12 +432,11 @@
       
       const q = todaysQuestions[currentQIndex];
       
-      // Rotate through 4 high-quality casino/poker images based on question index
+      // Rotate through our beautiful custom AI generated casino images locally
       const visualBank = [
-        "https://images.unsplash.com/photo-1540315753062-81fae5e6e963?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1598375836418-21d3f9af56db?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1626240228723-8ce058a5be02?auto=format&fit=crop&w=800&q=80"
+        "flop.png",
+        "chips.png",
+        "spades.png"
       ];
       document.getElementById('q-image').src = visualBank[currentQIndex % visualBank.length];
       

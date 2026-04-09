@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Skills Trainer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-base: #060906; /* Dark green/black */
+      --bg-surface: rgba(16, 28, 20, 0.6);
+      --bg-surface-hover: rgba(22, 40, 28, 0.8);
+      
+      --text-primary: #f5f5f5;
+      --text-secondary: #94a3b8;
+      
+      --accent-primary: #10b981; /* Casino Green */
+      --accent-secondary: #f59e0b; /* Gold */
+      
+      --correct: #10b981;
+      --incorrect: #ef4444;
+      
+      --border-light: rgba(16, 185, 129, 0.15);
+      --glass-blur: blur(16px);
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Poker Glow */
+    .ambient-glow {
+      position: fixed;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 60%);
+      top: -250px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 1.5rem;
+    }
+
+    .logo-area h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2rem;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .streak-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .streak-count {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Glass Card Base */
+    .glass-card {
+      background: var(--bg-surface);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-light);
+      border-radius: 24px;
+      padding: 2.5rem;
+      transition: transform 0.3s ease;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Quiz Intro */
+    #setup-screen { text-align: center; margin: auto; }
+    #quiz-screen { display: none; }
+    #result-screen { display: none; text-align: center; margin: auto; }
+
+    .btn {
+      background: linear-gradient(135deg, var(--accent-primary), #059669);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 99px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 1.5rem;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+    }
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Questions */
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--accent-secondary);
+      width: 10%;
+      transition: width 0.3s ease;
+    }
+
+    .question-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .option-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 1.25rem;
+      border-radius: 16px;
+      color: white;
+      text-align: left;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .option-btn:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .option-btn.selected {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--accent-primary);
+    }
+    .option-btn.correct {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--correct);
+      color: var(--correct);
+    }
+    .option-btn.incorrect {
+      background: rgba(239, 68, 68, 0.2);
+      border-color: var(--incorrect);
+      color: var(--incorrect);
+      opacity: 0.7;
+    }
+    
+    .explanation-box {
+      background: rgba(0,0,0,0.3);
+      border-left: 4px solid var(--accent-secondary);
+      padding: 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 2rem;
+      display: none;
+      line-height: 1.6;
+    }
+    .explanation-title {
+      color: var(--accent-secondary);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Utilities */
+    .chip-icon { width: 24px; height: 24px; vertical-align: middle; }
+    
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent-primary); }
+
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo-area">
+        <h1>GTO Trainer</h1>
+        <p>Daily Advanced Poker Mathematics</p>
+      </div>
+      <div class="streak-container">
+        <span class="streak-count">
+          <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <span id="streak-val">0</span> Day Streak
+        </span>
+      </div>
+    </header>
+
+    <div class="glass-card" id="setup-screen">
+      <h2 style="font-family:'Outfit'; font-size: 2.5rem; margin-bottom: 1rem;">Daily Poker Quiz</h2>
+      <p style="color:var(--text-secondary); font-size: 1.1rem; max-width: 500px; margin: 0 auto 2rem;">
+        Complete exactly 10 mathematically advanced poker scenarios every day. 
+        Your 10 questions are uniquely generated based on today's calendar date.
+      </p>
+      <div id="loading-state" style="margin-bottom: 1rem;">Loading Scenario Bank...</div>
+      <button class="btn" id="start-btn" style="display:none;" onclick="startQuiz()">Play Today's Hand</button>
+      
+      <div class="nav-links" style="justify-content: center;">
+        <a href="/">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+
+    <div class="glass-card" id="quiz-screen">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      
+      <div style="color:var(--text-secondary); font-weight:600; margin-bottom:1rem; letter-spacing:1px; text-transform:uppercase; font-size:0.85rem;">
+        Hand <span id="q-curr">1</span> of 10
+      </div>
+      
+      <div id="q-image-container" style="width: 100%; height: 200px; border-radius: 16px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--border-light);">
+        <img id="q-image" src="" alt="Poker Scenario" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      
+      <div class="question-title" id="question-text">
+        Loading Question...
+      </div>
+      
+      <div class="options-grid" id="options-container">
+        <!-- Buttons injected here -->
+      </div>
+      
+      <div class="explanation-box" id="explanation-box">
+        <div class="explanation-title">Mathematical Proof:</div>
+        <div id="explanation-text"></div>
+      </div>
+      
+      <div style="display:flex; justify-content: flex-end;">
+        <button class="btn" id="next-btn" style="display:none;" onclick="nextQuestion()">Next Hand ➔</button>
+      </div>
+    </div>
+    
+    <div class="glass-card" id="result-screen">
+      <h2 style="font-family:'Outfit'; font-size: 3rem; margin-bottom: 1rem; color:var(--accent-secondary)" id="final-score-title">Session Complete</h2>
+      <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+        You scored <span id="final-score" style="font-family:'Outfit'; font-weight:700;">0</span> / 10
+      </p>
+      <p style="color:var(--text-secondary); margin-bottom: 2rem;" id="completion-msg">
+        Come back tomorrow for 10 new advanced mathematical setups to keep your edge sharp.
+      </p>
+      <button class="btn" onclick="location.reload()">Review Hands</button>
+      <div class="nav-links" style="justify-content: center;">
+        <a href="/">Back to Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- Seeded Randomizer (Mulberry32) ---
+    // Allows us to pick the exact same 10 random questions for any specific calendar date.
+    function mulberry32(a) {
+      return function() {
+        var t = a += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      }
+    }
+    
+    // Generate an integer seed from today's date string (e.g. "2026-04-09")
+    function getTodaySeed() {
+      const today = new Date();
+      const dateString = today.getFullYear() + "-" + today.getMonth() + "-" + today.getDate();
+      let hash = 0;
+      for (let i = 0; i < dateString.length; i++) {
+        let chr = dateString.charCodeAt(i);
+        hash = ((hash << 5) - hash) + chr;
+        hash |= 0;
+      }
+      return hash;
+    }
+
+    // --- Quiz State ---
+    let fullQuestionBank = [];
+    let todaysQuestions = [];
+    let currentQIndex = 0;
+    let score = 0;
+    let answeredCurrent = false;
+
+    // --- On Load ---
+    document.addEventListener("DOMContentLoaded", async () => {
+      loadStreak();
+      
+      try {
+        const res = await fetch('./questions.json');
+        fullQuestionBank = await res.json();
+        
+        // Pick 10 questions using today's seed
+        const seed = getTodaySeed();
+        const rand = mulberry32(seed);
+        
+        // Shuffle and slice
+        let shuffled = [...fullQuestionBank];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(rand() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        
+        todaysQuestions = shuffled.slice(0, 10);
+        
+        // Check if already completed today
+        const lastPlayed = localStorage.getItem('pokerLastPlayed');
+        const todayStr = new Date().toDateString();
+        if (lastPlayed === todayStr && localStorage.getItem('pokerTodayScore') !== null) {
+          // Already played
+          const prevScore = localStorage.getItem('pokerTodayScore');
+          showResults(prevScore, true);
+        } else {
+          // Ready to play
+          document.getElementById('loading-state').style.display = 'none';
+          document.getElementById('start-btn').style.display = 'inline-block';
+        }
+      } catch(e) {
+        document.getElementById('loading-state').innerText = "Error loading question bank.";
+      }
+    });
+
+    function loadStreak() {
+      let streak = parseInt(localStorage.getItem('pokerStreak')) || 0;
+      document.getElementById('streak-val').innerText = streak;
+    }
+    
+    function updateStreakOnComplete() {
+      const lastPlayed = localStorage.getItem('pokerLastPlayed');
+      const today = new Date();
+      const todayStr = today.toDateString();
+      const yesterday = new Date(today);
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toDateString();
+      
+      let streak = parseInt(localStorage.getItem('pokerStreak')) || 0;
+      
+      if (lastPlayed === yesterdayStr) {
+        streak += 1;
+      } else if (lastPlayed !== todayStr) {
+        streak = 1; // Reset if they missed a day
+      }
+      
+      localStorage.setItem('pokerStreak', streak);
+      localStorage.setItem('pokerLastPlayed', todayStr);
+      localStorage.setItem('pokerTodayScore', score);
+      
+      document.getElementById('streak-val').innerText = streak;
+    }
+
+    function startQuiz() {
+      document.getElementById('setup-screen').style.display = 'none';
+      document.getElementById('quiz-screen').style.display = 'flex';
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      answeredCurrent = false;
+      document.getElementById('explanation-box').style.display = 'none';
+      document.getElementById('next-btn').style.display = 'none';
+      
+      const q = todaysQuestions[currentQIndex];
+      
+      // Rotate through 4 high-quality casino/poker images based on question index
+      const visualBank = [
+        "https://images.unsplash.com/photo-1540315753062-81fae5e6e963?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1598375836418-21d3f9af56db?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1626240228723-8ce058a5be02?auto=format&fit=crop&w=800&q=80"
+      ];
+      document.getElementById('q-image').src = visualBank[currentQIndex % visualBank.length];
+      
+      document.getElementById('q-curr').innerText = currentQIndex + 1;
+      document.getElementById('progress-fill').style.width = ((currentQIndex + 1) / 10) * 100 + "%";
+      
+      document.getElementById('question-text').innerText = q.question;
+      
+      const optsContainer = document.getElementById('options-container');
+      optsContainer.innerHTML = '';
+      
+      q.options.forEach((opt, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.innerText = opt;
+        btn.onclick = () => selectAnswer(index, btn);
+        optsContainer.appendChild(btn);
+      });
+      
+      document.getElementById('explanation-text').innerText = q.explanation;
+    }
+
+    function selectAnswer(selectedIndex, btnElement) {
+      if(answeredCurrent) return;
+      answeredCurrent = true;
+      
+      const q = todaysQuestions[currentQIndex];
+      const allBtns = document.querySelectorAll('.option-btn');
+      
+      // Disable all
+      allBtns.forEach(b => { b.disabled = true; b.style.cursor = 'default'; });
+      
+      if(selectedIndex === q.answer) {
+        btnElement.classList.add('correct');
+        score++;
+      } else {
+        btnElement.classList.add('incorrect');
+        allBtns[q.answer].classList.add('correct');
+      }
+      
+      document.getElementById('explanation-box').style.display = 'block';
+      document.getElementById('next-btn').style.display = 'inline-block';
+    }
+
+    function nextQuestion() {
+      currentQIndex++;
+      if(currentQIndex >= todaysQuestions.length) {
+        updateStreakOnComplete();
+        showResults(score, false);
+      } else {
+        renderQuestion();
+      }
+    }
+    
+    function showResults(finalScore, isReview) {
+      document.getElementById('setup-screen').style.display = 'none';
+      document.getElementById('quiz-screen').style.display = 'none';
+      document.getElementById('result-screen').style.display = 'flex';
+      
+      document.getElementById('final-score').innerText = finalScore;
+      
+      if(isReview) {
+        document.getElementById('final-score-title').innerText = "Already Played Today";
+        document.getElementById('completion-msg').innerText = "You have already completed today's quiz. Come back tomorrow for 10 new advanced mathematical setups.";
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-09T17:26:20.718141+00:00",
+  "updated_at": "2026-04-10T14:16:31.679189+00:00",
   "top_trending": {
-    "ticker": "ARAI",
-    "name": "Arrive AI Inc.",
+    "ticker": "SNOW",
+    "name": "Snowflake Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 686569,
-    "price": 1.33,
-    "change_pct": "+98.97%",
+    "tweet_volume": 12378,
+    "price": 124.25,
+    "change_pct": "-6.04%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,104 +15,39 @@
   },
   "trending_list": [
     {
+      "ticker": "TEM",
+      "name": "Tempus AI, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 2783,
+      "price": 44.98,
+      "change_pct": "+1.85%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 59162,
-      "price": 90.27,
-      "change_pct": "-7.39%",
+      "tweet_volume": 35006,
+      "price": 84.28,
+      "change_pct": "-6.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
+      "ticker": "EOSE",
+      "name": "Eos Energy Enterprises, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 16874,
-      "price": 185.42,
-      "change_pct": "-12.23%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 108476,
-      "price": 94.36,
-      "change_pct": "+6.14%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 20307,
-      "price": 134.15,
-      "change_pct": "-10.56%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 10106,
-      "price": 361.64,
-      "change_pct": "-6.87%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 44075,
-      "price": 3.78,
-      "change_pct": "+7.12%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FLEX",
-      "name": "Flex Ltd.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 5044,
-      "price": 75.59,
-      "change_pct": "+3.28%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ONCO",
-      "name": "Onconetix, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 502002,
-      "price": 1.77,
-      "change_pct": "+56.72%",
+      "tweet_volume": 46160,
+      "price": 6.08,
+      "change_pct": "+2.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -123,22 +58,87 @@
       "name": "DraftKings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 15579,
-      "price": 22.79,
-      "change_pct": "-4.80%",
+      "tweet_volume": 3344,
+      "price": 22.41,
+      "change_pct": "+0.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
+      "ticker": "OGN",
+      "name": "Organon & Co.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 11232,
-      "price": 122.23,
-      "change_pct": "-11.33%",
+      "tweet_volume": 38553,
+      "price": 8.64,
+      "change_pct": "+25.11%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "RAYA",
+      "name": "Erayak Power Solution Group Inc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 406498,
+      "price": 0.75,
+      "change_pct": "+64.11%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NET",
+      "name": "Cloudflare, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 8536,
+      "price": 170.5,
+      "change_pct": "-11.68%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ISPC",
+      "name": "iSpecimen Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 710083,
+      "price": 0.17,
+      "change_pct": "+32.28%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "OKTA",
+      "name": "Okta, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 1784,
+      "price": 65.43,
+      "change_pct": "-3.44%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CREG",
+      "name": "Smart Powerr Corp.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 582212,
+      "price": 0.91,
+      "change_pct": "+167.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

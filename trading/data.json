@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-11T13:56:05.228739+00:00",
+  "updated_at": "2026-04-12T13:59:43.037809+00:00",
   "top_trending": {
-    "ticker": "DOCU",
-    "name": "DocuSign, Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 14804,
-    "price": 42.89,
-    "change_pct": "-5.84%",
+    "tweet_volume": 5082609,
+    "price": 1.33,
+    "change_pct": "-2.16%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,78 @@
   },
   "trending_list": [
     {
-      "ticker": "ZM",
-      "name": "Zoom Communications, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 14811,
-      "price": 79.24,
-      "change_pct": "-5.70%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 3985164,
-      "price": 1.34,
-      "change_pct": "-0.88%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 8728,
-      "price": 265.66,
-      "change_pct": "-5.46%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FICO",
-      "name": "Fair Isaac Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 2715,
-      "price": 922.37,
-      "change_pct": "-13.99%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NIO",
-      "name": "NIO Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 146315,
-      "price": 6.5,
-      "change_pct": "+7.08%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FSELX",
-      "name": "Fidelity Select Semiconductors ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 2836,
-      "price": 49.57,
-      "change_pct": "-5.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
       "ticker": "SOL-USD",
       "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 29821317,
-      "price": 84.21,
-      "change_pct": "-0.73%",
+      "tweet_volume": 38700444,
+      "price": 81.93,
+      "change_pct": "-3.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LWLG",
-      "name": "Lightwave Logic, Inc.",
+      "ticker": "SPAX.PVT",
+      "name": "SpaceX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 33581,
-      "price": 10.6,
-      "change_pct": "+25.59%",
+      "tweet_volume": 9279,
+      "price": 603.54,
+      "change_pct": "+0.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OKTA",
-      "name": "Okta, Inc.",
+      "ticker": "USO",
+      "name": "United States Oil Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 18012,
-      "price": 62.93,
-      "change_pct": "-7.13%",
+      "tweet_volume": 39835,
+      "price": 124.82,
+      "change_pct": "-1.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "POET",
-      "name": "POET Technologies Inc.",
+      "ticker": "DJT",
+      "name": "Trump Media & Technology Group ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 44809,
-      "price": 7.04,
-      "change_pct": "+15.79%",
+      "tweet_volume": 6039,
+      "price": 9.39,
+      "change_pct": "+1.40%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SLV",
+      "name": "iShares Silver Trust",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 51650,
+      "price": 69.08,
+      "change_pct": "+1.01%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 150903,
+      "price": 2.74,
+      "change_pct": "+0.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

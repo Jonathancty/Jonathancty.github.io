@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-12T13:59:43.037809+00:00",
+  "updated_at": "2026-04-13T14:47:52.221155+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "SKYQ",
+    "name": "Sky Quarry Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 5082609,
-    "price": 1.33,
-    "change_pct": "-2.16%",
+    "tweet_volume": 34666,
+    "price": 15.68,
+    "change_pct": "+24.54%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,78 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 38700444,
-      "price": 81.93,
-      "change_pct": "-3.56%",
+      "tweet_volume": 18128,
+      "price": 130.34,
+      "change_pct": "+35.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPAX.PVT",
-      "name": "SpaceX",
+      "ticker": "LWLG",
+      "name": "Lightwave Logic, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9279,
-      "price": 603.54,
-      "change_pct": "+0.07%",
+      "tweet_volume": 24684,
+      "price": 12.17,
+      "change_pct": "+14.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USO",
-      "name": "United States Oil Fund",
+      "ticker": "ALLO",
+      "name": "Allogene Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 39835,
-      "price": 124.82,
-      "change_pct": "-1.69%",
+      "tweet_volume": 128551,
+      "price": 3.86,
+      "change_pct": "+41.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media & Technology Group ",
+      "ticker": "BATL",
+      "name": "Battalion Oil Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6039,
-      "price": 9.39,
-      "change_pct": "+1.40%",
+      "tweet_volume": 33622,
+      "price": 3.67,
+      "change_pct": "+14.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLV",
-      "name": "iShares Silver Trust",
+      "ticker": "RMSG",
+      "name": "Real Messenger Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 51650,
-      "price": 69.08,
-      "change_pct": "+1.01%",
+      "tweet_volume": 512688,
+      "price": 1.22,
+      "change_pct": "+158.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLUG",
-      "name": "Plug Power, Inc.",
+      "ticker": "RCT",
+      "name": "RedCloud Holdings plc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 150903,
-      "price": 2.74,
-      "change_pct": "+0.00%",
+      "tweet_volume": 278395,
+      "price": 1.09,
+      "change_pct": "+91.07%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ALMU",
+      "name": "Aeluma, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 21193,
+      "price": 16.15,
+      "change_pct": "+50.11%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "IDYA",
+      "name": "IDEAYA Biosciences, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 11552,
+      "price": 35.83,
+      "change_pct": "+17.48%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "UHAL",
+      "name": "U-Haul Holding Company",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 24,
+      "price": 50.98,
+      "change_pct": "-0.44%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "POET",
+      "name": "POET Technologies Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 29614,
+      "price": 7.65,
+      "change_pct": "+8.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

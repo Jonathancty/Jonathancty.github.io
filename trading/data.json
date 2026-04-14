@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-13T14:47:52.221155+00:00",
+  "updated_at": "2026-04-14T14:50:39.980087+00:00",
   "top_trending": {
-    "ticker": "SKYQ",
-    "name": "Sky Quarry Inc.",
+    "ticker": "BE",
+    "name": "Bloom Energy Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 34666,
-    "price": 15.68,
-    "change_pct": "+24.54%",
+    "tweet_volume": 25799,
+    "price": 212.82,
+    "change_pct": "+20.46%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
+      "ticker": "GSAT",
+      "name": "Globalstar, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 18128,
-      "price": 130.34,
-      "change_pct": "+35.17%",
+      "tweet_volume": 18195,
+      "price": 79.98,
+      "change_pct": "+9.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LWLG",
-      "name": "Lightwave Logic, Inc.",
+      "ticker": "ROLR",
+      "name": "High Roller Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 24684,
+      "tweet_volume": 165761,
+      "price": 7.48,
+      "change_pct": "+46.95%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SNAL",
+      "name": "Snail, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 1189095,
+      "price": 1.41,
+      "change_pct": "+274.01%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 22817,
+      "price": 58.48,
+      "change_pct": "+8.43%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KMX",
+      "name": "CarMax Inc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 10692,
+      "price": 42.33,
+      "change_pct": "-13.76%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 36133,
+      "price": 94.03,
+      "change_pct": "-4.99%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PMNT",
+      "name": "Perfect Moment Ltd.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 976799,
+      "price": 0.49,
+      "change_pct": "+101.65%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AAL",
+      "name": "American Airlines Group, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 108979,
       "price": 12.17,
-      "change_pct": "+14.81%",
+      "change_pct": "+8.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ALLO",
-      "name": "Allogene Therapeutics, Inc.",
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 128551,
-      "price": 3.86,
-      "change_pct": "+41.91%",
+      "tweet_volume": 68355,
+      "price": 34.76,
+      "change_pct": "+16.80%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BATL",
-      "name": "Battalion Oil Corporation",
+      "ticker": "GPRO",
+      "name": "GoPro, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 33622,
-      "price": 3.67,
-      "change_pct": "+14.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RMSG",
-      "name": "Real Messenger Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 512688,
-      "price": 1.22,
-      "change_pct": "+158.79%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RCT",
-      "name": "RedCloud Holdings plc",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 278395,
-      "price": 1.09,
-      "change_pct": "+91.07%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ALMU",
-      "name": "Aeluma, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 21193,
-      "price": 16.15,
-      "change_pct": "+50.11%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IDYA",
-      "name": "IDEAYA Biosciences, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 11552,
-      "price": 35.83,
-      "change_pct": "+17.48%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "UHAL",
-      "name": "U-Haul Holding Company",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 24,
-      "price": 50.98,
-      "change_pct": "-0.44%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "POET",
-      "name": "POET Technologies Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 29614,
-      "price": 7.65,
-      "change_pct": "+8.65%",
+      "tweet_volume": 67826,
+      "price": 0.94,
+      "change_pct": "+0.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

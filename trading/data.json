@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-14T14:50:39.980087+00:00",
+  "updated_at": "2026-04-15T14:44:34.730831+00:00",
   "top_trending": {
-    "ticker": "BE",
-    "name": "Bloom Energy Corporation",
+    "ticker": "IONQ",
+    "name": "IonQ, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 25799,
-    "price": 212.82,
-    "change_pct": "+20.46%",
+    "tweet_volume": 109192,
+    "price": 41.27,
+    "change_pct": "+15.41%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "GSAT",
-      "name": "Globalstar, Inc.",
+      "ticker": "QBTS",
+      "name": "D-Wave Quantum Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 18195,
-      "price": 79.98,
-      "change_pct": "+9.73%",
+      "tweet_volume": 103741,
+      "price": 20.12,
+      "change_pct": "+18.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ROLR",
-      "name": "High Roller Technologies, Inc.",
+      "ticker": "BIRD",
+      "name": "Allbirds, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 165761,
-      "price": 7.48,
-      "change_pct": "+46.95%",
+      "tweet_volume": 343187,
+      "price": 12.09,
+      "change_pct": "+385.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNAL",
-      "name": "Snail, Inc.",
+      "ticker": "IMMP",
+      "name": "Immutep Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 1189095,
-      "price": 1.41,
-      "change_pct": "+274.01%",
+      "tweet_volume": 1298372,
+      "price": 0.74,
+      "change_pct": "+135.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "AGAE",
+      "name": "Allied Gaming & Entertainment I",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 22817,
-      "price": 58.48,
-      "change_pct": "+8.43%",
+      "tweet_volume": 398423,
+      "price": 0.43,
+      "change_pct": "+32.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KMX",
-      "name": "CarMax Inc",
+      "ticker": "BULL",
+      "name": "Webull Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10692,
-      "price": 42.33,
-      "change_pct": "-13.76%",
+      "tweet_volume": 38656,
+      "price": 6.25,
+      "change_pct": "+7.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile, Inc.",
+      "ticker": "DOO.TO",
+      "name": "BRP INC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 36133,
-      "price": 94.03,
-      "change_pct": "-4.99%",
+      "tweet_volume": 1639,
+      "price": 69.52,
+      "change_pct": "-35.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PMNT",
-      "name": "Perfect Moment Ltd.",
+      "ticker": "SYM",
+      "name": "Symbotic Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 976799,
-      "price": 0.49,
-      "change_pct": "+101.65%",
+      "tweet_volume": 2063,
+      "price": 60.39,
+      "change_pct": "+6.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AAL",
-      "name": "American Airlines Group, Inc.",
+      "ticker": "ARAI",
+      "name": "Arrive AI Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 108979,
-      "price": 12.17,
-      "change_pct": "+8.37%",
+      "tweet_volume": 36039,
+      "price": 1.01,
+      "change_pct": "-38.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
+      "ticker": "VSA",
+      "name": "VisionSys AI Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 68355,
-      "price": 34.76,
-      "change_pct": "+16.80%",
+      "tweet_volume": 413452,
+      "price": 0.91,
+      "change_pct": "+51.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GPRO",
-      "name": "GoPro, Inc.",
+      "ticker": "DOO",
+      "name": "BRP Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 67826,
-      "price": 0.94,
-      "change_pct": "+0.12%",
+      "tweet_volume": 3813,
+      "price": 50.49,
+      "change_pct": "-35.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

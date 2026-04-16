@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-15T14:44:34.730831+00:00",
+  "updated_at": "2026-04-16T14:56:19.974777+00:00",
   "top_trending": {
-    "ticker": "IONQ",
-    "name": "IonQ, Inc.",
+    "ticker": "BIRD",
+    "name": "Allbirds, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 109192,
-    "price": 41.27,
-    "change_pct": "+15.41%",
+    "tweet_volume": 46748,
+    "price": 12.82,
+    "change_pct": "-24.54%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "QBTS",
-      "name": "D-Wave Quantum Inc.",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 103741,
-      "price": 20.12,
-      "change_pct": "+18.59%",
+      "tweet_volume": 73630,
+      "price": 25.8,
+      "change_pct": "+6.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIRD",
-      "name": "Allbirds, Inc.",
+      "ticker": "MYSE",
+      "name": "Myseum, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 343187,
-      "price": 12.09,
-      "change_pct": "+385.55%",
+      "tweet_volume": 387768,
+      "price": 3.64,
+      "change_pct": "+152.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IMMP",
-      "name": "Immutep Limited",
+      "ticker": "WSHP",
+      "name": "WeShop Holdings Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 1298372,
-      "price": 0.74,
-      "change_pct": "+135.86%",
+      "tweet_volume": 63141,
+      "price": 25.17,
+      "change_pct": "+206.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AGAE",
-      "name": "Allied Gaming & Entertainment I",
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 398423,
-      "price": 0.43,
-      "change_pct": "+32.59%",
+      "tweet_volume": 2592,
+      "price": 143.3,
+      "change_pct": "+2.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BULL",
-      "name": "Webull Corporation",
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 38656,
-      "price": 6.25,
-      "change_pct": "+7.47%",
+      "tweet_volume": 12399,
+      "price": 82.46,
+      "change_pct": "+12.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOO.TO",
-      "name": "BRP INC",
+      "ticker": "SOUN",
+      "name": "SoundHound AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 1639,
-      "price": 69.52,
-      "change_pct": "-35.65%",
+      "tweet_volume": 46569,
+      "price": 7.96,
+      "change_pct": "+1.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SYM",
-      "name": "Symbotic Inc.",
+      "ticker": "DGNX",
+      "name": "Diginex Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2063,
-      "price": 60.39,
-      "change_pct": "+6.77%",
+      "tweet_volume": 167164,
+      "price": 0.55,
+      "change_pct": "-2.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARAI",
-      "name": "Arrive AI Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 36039,
-      "price": 1.01,
-      "change_pct": "-38.91%",
+      "tweet_volume": 9267870,
+      "price": 1.41,
+      "change_pct": "+1.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VSA",
-      "name": "VisionSys AI Inc.",
+      "ticker": "SLDP",
+      "name": "Solid Power, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 413452,
-      "price": 0.91,
-      "change_pct": "+51.68%",
+      "tweet_volume": 29630,
+      "price": 3.25,
+      "change_pct": "-0.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOO",
-      "name": "BRP Inc.",
+      "ticker": "CAPS",
+      "name": "Capstone Holding Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 3813,
-      "price": 50.49,
-      "change_pct": "-35.64%",
+      "tweet_volume": 232980,
+      "price": 0.64,
+      "change_pct": "+8.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

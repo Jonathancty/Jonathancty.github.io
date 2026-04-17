@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-16T14:56:19.974777+00:00",
+  "updated_at": "2026-04-17T14:20:31.615065+00:00",
   "top_trending": {
-    "ticker": "BIRD",
-    "name": "Allbirds, Inc.",
+    "ticker": "PBM",
+    "name": "Psyence Biomedical Ltd.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 46748,
-    "price": 12.82,
-    "change_pct": "-24.54%",
+    "tweet_volume": 84773,
+    "price": 8.76,
+    "change_pct": "+49.23%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,91 +15,52 @@
   },
   "trending_list": [
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health, Inc.",
+      "ticker": "BYND",
+      "name": "Beyond Meat, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 73630,
-      "price": 25.8,
-      "change_pct": "+6.24%",
+      "tweet_volume": 235187,
+      "price": 0.95,
+      "change_pct": "+21.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MYSE",
-      "name": "Myseum, Inc.",
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor Corporati",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 387768,
-      "price": 3.64,
-      "change_pct": "+152.77%",
+      "tweet_volume": 24839,
+      "price": 12.59,
+      "change_pct": "+1.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WSHP",
-      "name": "WeShop Holdings Limited",
+      "ticker": "CRML",
+      "name": "Critical Metals Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 63141,
-      "price": 25.17,
-      "change_pct": "+206.21%",
+      "tweet_volume": 74033,
+      "price": 12.98,
+      "change_pct": "+40.01%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLD",
-      "name": "Prologis, Inc.",
+      "ticker": "ISPC",
+      "name": "iSpecimen Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2592,
-      "price": 143.3,
-      "change_pct": "+2.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AEHR",
-      "name": "Aehr Test Systems",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 12399,
-      "price": 82.46,
-      "change_pct": "+12.62%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 46569,
-      "price": 7.96,
-      "change_pct": "+1.34%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "DGNX",
-      "name": "Diginex Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 167164,
-      "price": 0.55,
-      "change_pct": "-2.45%",
+      "tweet_volume": 1176996,
+      "price": 0.16,
+      "change_pct": "+41.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -110,35 +71,74 @@
       "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9267870,
-      "price": 1.41,
-      "change_pct": "+1.25%",
+      "tweet_volume": 10825026,
+      "price": 1.49,
+      "change_pct": "+2.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLDP",
-      "name": "Solid Power, Inc.",
+      "ticker": "DARE",
+      "name": "Dare Bioscience, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 29630,
-      "price": 3.25,
-      "change_pct": "-0.31%",
+      "tweet_volume": 16556,
+      "price": 3.29,
+      "change_pct": "+21.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CAPS",
-      "name": "Capstone Holding Corp.",
+      "ticker": "MAIR",
+      "name": "24574",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 232980,
-      "price": 0.64,
-      "change_pct": "+8.35%",
+      "tweet_volume": 11693,
+      "price": 31.98,
+      "change_pct": "+0.72%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "RPAY",
+      "name": "Repay Holdings Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 42301,
+      "price": 4.16,
+      "change_pct": "+30.81%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BZAI",
+      "name": "Blaize Holdings, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 73524,
+      "price": 2.35,
+      "change_pct": "+35.84%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DVLT",
+      "name": "Datavault AI Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 56058,
+      "price": 0.79,
+      "change_pct": "-5.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

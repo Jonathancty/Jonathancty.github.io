@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-18T14:00:59.589436+00:00",
+  "updated_at": "2026-04-19T13:59:34.424832+00:00",
   "top_trending": {
-    "ticker": "AVEX",
-    "name": "AVEX",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 39874,
-    "price": 26.93,
-    "change_pct": "+34.65%",
+    "tweet_volume": 5776193,
+    "price": 1.44,
+    "change_pct": "+0.34%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,91 +15,13 @@
   },
   "trending_list": [
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9050589,
-      "price": 1.44,
-      "change_pct": "-2.62%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BIRD",
-      "name": "Allbirds, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 49943,
-      "price": 10.8,
-      "change_pct": "-1.01%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VICI",
-      "name": "VICI Properties Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 21752,
-      "price": 29.01,
-      "change_pct": "+2.15%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GM",
-      "name": "General Motors Company",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 18224,
-      "price": 81.32,
-      "change_pct": "+4.19%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AMC",
-      "name": "AMC Entertainment Holdings, Inc",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 215745,
-      "price": 1.86,
-      "change_pct": "+15.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "COF",
-      "name": "Capital One Financial Corporati",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 10209,
-      "price": 206.47,
-      "change_pct": "+2.87%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VTRS",
-      "name": "Viatris Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 27805,
-      "price": 14.68,
-      "change_pct": "+4.78%",
+      "tweet_volume": 49090,
+      "price": 85.53,
+      "change_pct": "-5.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -110,35 +32,113 @@
       "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 12416796,
-      "price": 86.84,
-      "change_pct": "-2.29%",
+      "tweet_volume": 9016354,
+      "price": 86.29,
+      "change_pct": "+0.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9430,
-      "price": 251.72,
-      "change_pct": "+3.84%",
+      "tweet_volume": 3878248,
+      "price": 0.1,
+      "change_pct": "+0.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "Z",
-      "name": "Zillow Group, Inc.",
+      "ticker": "DFTX",
+      "name": "Definium Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 11306,
-      "price": 46.86,
-      "change_pct": "+6.31%",
+      "tweet_volume": 5289,
+      "price": 22.68,
+      "change_pct": "+0.98%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PBM",
+      "name": "Psyence Biomedical Ltd.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 122626,
+      "price": 7.6,
+      "change_pct": "+29.47%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "IBKR",
+      "name": "Interactive Brokers Group, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 11273,
+      "price": 81.71,
+      "change_pct": "+2.94%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CLM26.NYM",
+      "name": "Crude Oil Jun 26",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 1132,
+      "price": 82.59,
+      "change_pct": "-9.41%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN LIMITED",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 76706,
+      "price": 48.12,
+      "change_pct": "+0.88%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 77993,
+      "price": 46.03,
+      "change_pct": "+0.72%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 18234,
+      "price": 58.66,
+      "change_pct": "+0.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

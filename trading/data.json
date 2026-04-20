@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-19T13:59:34.424832+00:00",
+  "updated_at": "2026-04-20T14:50:13.944974+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 5776193,
-    "price": 1.44,
-    "change_pct": "+0.34%",
+    "tweet_volume": 43220,
+    "price": 145.56,
+    "change_pct": "+4.20%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -19,35 +19,87 @@
       "name": "AST SpaceMobile, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 49090,
-      "price": 85.53,
-      "change_pct": "-5.95%",
+      "tweet_volume": 56290,
+      "price": 79.25,
+      "change_pct": "-7.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "USAR",
+      "name": "USA Rare Earth, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9016354,
-      "price": 86.29,
-      "change_pct": "+0.10%",
+      "tweet_volume": 50252,
+      "price": 22.71,
+      "change_pct": "+13.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "CMPS",
+      "name": "COMPASS Pathways Plc - American",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 3878248,
-      "price": 0.1,
-      "change_pct": "+0.48%",
+      "tweet_volume": 46036,
+      "price": 9.02,
+      "change_pct": "+35.43%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TOVX",
+      "name": "Theriva Biologics, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 979999,
+      "price": 0.47,
+      "change_pct": "+81.18%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CLF",
+      "name": "Cleveland-Cliffs Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 22799,
+      "price": 9.39,
+      "change_pct": "-5.53%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CMND",
+      "name": "Clearmind Medicine Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 459954,
+      "price": 1.07,
+      "change_pct": "+49.39%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ENVB",
+      "name": "Enveric Biosciences, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 295447,
+      "price": 4.33,
+      "change_pct": "+137.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -58,87 +110,35 @@
       "name": "Definium Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5289,
-      "price": 22.68,
-      "change_pct": "+0.98%",
+      "tweet_volume": 6316,
+      "price": 23.31,
+      "change_pct": "+2.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PBM",
-      "name": "Psyence Biomedical Ltd.",
+      "ticker": "ATAI",
+      "name": "AtaiBeckley Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 122626,
-      "price": 7.6,
-      "change_pct": "+29.47%",
+      "tweet_volume": 71736,
+      "price": 5.12,
+      "change_pct": "+27.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IBKR",
-      "name": "Interactive Brokers Group, Inc.",
+      "ticker": "AVEX",
+      "name": "AEVEX Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 11273,
-      "price": 81.71,
-      "change_pct": "+2.94%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CLM26.NYM",
-      "name": "Crude Oil Jun 26",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 1132,
-      "price": 82.59,
-      "change_pct": "-9.41%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 76706,
-      "price": 48.12,
-      "change_pct": "+0.88%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NKE",
-      "name": "Nike, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 77993,
-      "price": 46.03,
-      "change_pct": "+0.72%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "JEPQ",
-      "name": "JPMorgan Nasdaq Equity Premium ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 18234,
-      "price": 58.66,
-      "change_pct": "+0.22%",
+      "tweet_volume": 15998,
+      "price": 35.98,
+      "change_pct": "+33.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-20T14:50:13.944974+00:00",
+  "updated_at": "2026-04-21T14:46:43.084594+00:00",
   "top_trending": {
-    "ticker": "MRVL",
-    "name": "Marvell Technology, Inc.",
+    "ticker": "BYND",
+    "name": "Beyond Meat, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 43220,
-    "price": 145.56,
-    "change_pct": "+4.20%",
+    "tweet_volume": 584829,
+    "price": 1.17,
+    "change_pct": "+0.85%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile, Inc.",
+      "ticker": "CAR",
+      "name": "Avis Budget Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 56290,
-      "price": 79.25,
-      "change_pct": "-7.34%",
+      "tweet_volume": 10262,
+      "price": 673.71,
+      "change_pct": "+10.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USAR",
-      "name": "USA Rare Earth, Inc.",
+      "ticker": "VGT",
+      "name": "Vanguard Information Tech ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 50252,
-      "price": 22.71,
-      "change_pct": "+13.86%",
+      "tweet_volume": 2998,
+      "price": 101.89,
+      "change_pct": "-87.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMPS",
-      "name": "COMPASS Pathways Plc - American",
+      "ticker": "VUG",
+      "name": "Vanguard Growth ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 46036,
-      "price": 9.02,
-      "change_pct": "+35.43%",
+      "tweet_volume": 6468,
+      "price": 82.21,
+      "change_pct": "-83.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TOVX",
-      "name": "Theriva Biologics, Inc.",
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor Corporati",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 979999,
-      "price": 0.47,
-      "change_pct": "+81.18%",
+      "tweet_volume": 98084,
+      "price": 16.18,
+      "change_pct": "+22.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLF",
-      "name": "Cleveland-Cliffs Inc.",
+      "ticker": "VOOG",
+      "name": "Vanguard S&P 500 Growth ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 22799,
-      "price": 9.39,
-      "change_pct": "-5.53%",
+      "tweet_volume": 2233,
+      "price": 76.82,
+      "change_pct": "-83.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMND",
-      "name": "Clearmind Medicine Inc.",
+      "ticker": "LOBO",
+      "name": "LOBO TECHNOLOGIES LTD.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 459954,
-      "price": 1.07,
-      "change_pct": "+49.39%",
+      "tweet_volume": 438896,
+      "price": 0.71,
+      "change_pct": "+23.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ENVB",
-      "name": "Enveric Biosciences, Inc.",
+      "ticker": "LCID",
+      "name": "Lucid Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 295447,
-      "price": 4.33,
-      "change_pct": "+137.99%",
+      "tweet_volume": 61540,
+      "price": 7.51,
+      "change_pct": "+11.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DFTX",
-      "name": "Definium Therapeutics, Inc.",
+      "ticker": "MMM",
+      "name": "3M Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6316,
-      "price": 23.31,
-      "change_pct": "+2.78%",
+      "tweet_volume": 5715,
+      "price": 151.96,
+      "change_pct": "+0.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ATAI",
-      "name": "AtaiBeckley Inc.",
+      "ticker": "DHI",
+      "name": "D.R. Horton, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 71736,
-      "price": 5.12,
-      "change_pct": "+27.17%",
+      "tweet_volume": 4188,
+      "price": 165.49,
+      "change_pct": "+7.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AVEX",
-      "name": "AEVEX Corp.",
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 15998,
-      "price": 35.98,
-      "change_pct": "+33.59%",
+      "tweet_volume": 70119,
+      "price": 3.23,
+      "change_pct": "+0.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

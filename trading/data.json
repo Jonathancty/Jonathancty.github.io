@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-21T14:46:43.084594+00:00",
+  "updated_at": "2026-04-22T14:46:34.191255+00:00",
   "top_trending": {
-    "ticker": "BYND",
-    "name": "Beyond Meat, Inc.",
+    "ticker": "AGPU",
+    "name": "Axe Compute Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 584829,
-    "price": 1.17,
-    "change_pct": "+0.85%",
+    "tweet_volume": 148549,
+    "price": 9.67,
+    "change_pct": "+98.16%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "CAR",
-      "name": "Avis Budget Group, Inc.",
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10262,
-      "price": 673.71,
-      "change_pct": "+10.66%",
+      "tweet_volume": 9963,
+      "price": 306.12,
+      "change_pct": "-2.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VGT",
-      "name": "Vanguard Information Tech ETF",
+      "ticker": "AMC",
+      "name": "AMC Entertainment Holdings, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2998,
-      "price": 101.89,
-      "change_pct": "-87.41%",
+      "tweet_volume": 29359,
+      "price": 1.72,
+      "change_pct": "+2.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VUG",
-      "name": "Vanguard Growth ETF",
+      "ticker": "FFAI",
+      "name": "Faraday Future Intelligent Elec",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6468,
-      "price": 82.21,
-      "change_pct": "-83.31%",
+      "tweet_volume": 303683,
+      "price": 0.48,
+      "change_pct": "-10.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NVTS",
-      "name": "Navitas Semiconductor Corporati",
+      "ticker": "BBY",
+      "name": "Best Buy Co., Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 98084,
-      "price": 16.18,
-      "change_pct": "+22.58%",
+      "tweet_volume": 3893,
+      "price": 63.45,
+      "change_pct": "-4.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VOOG",
-      "name": "Vanguard S&P 500 Growth ETF",
+      "ticker": "ELPW",
+      "name": "Elong Power Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2233,
-      "price": 76.82,
-      "change_pct": "-83.32%",
+      "tweet_volume": 149927,
+      "price": 2.63,
+      "change_pct": "+69.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LOBO",
-      "name": "LOBO TECHNOLOGIES LTD.",
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 438896,
-      "price": 0.71,
-      "change_pct": "+23.73%",
+      "tweet_volume": 41192,
+      "price": 5.43,
+      "change_pct": "-0.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group, Inc.",
+      "ticker": "INBX",
+      "name": "Inhibrx Biosciences, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 61540,
-      "price": 7.51,
-      "change_pct": "+11.33%",
+      "tweet_volume": 4604,
+      "price": 104.49,
+      "change_pct": "+24.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MMM",
-      "name": "3M Company",
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5715,
-      "price": 151.96,
-      "change_pct": "+0.37%",
+      "tweet_volume": 31568,
+      "price": 178.94,
+      "change_pct": "+9.13%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DHI",
-      "name": "D.R. Horton, Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 4188,
-      "price": 165.49,
-      "change_pct": "+7.92%",
+      "tweet_volume": 6467048,
+      "price": 1.45,
+      "change_pct": "+1.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLUG",
-      "name": "Plug Power, Inc.",
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 70119,
-      "price": 3.23,
-      "change_pct": "+0.47%",
+      "tweet_volume": 60951,
+      "price": 11.55,
+      "change_pct": "+12.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-22T14:46:34.191255+00:00",
+  "updated_at": "2026-04-23T15:12:07.768932+00:00",
   "top_trending": {
-    "ticker": "AGPU",
-    "name": "Axe Compute Inc.",
+    "ticker": "QS",
+    "name": "QuantumScape Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 148549,
-    "price": 9.67,
-    "change_pct": "+98.16%",
+    "tweet_volume": 172351,
+    "price": 7.81,
+    "change_pct": "+6.84%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9963,
-      "price": 306.12,
-      "change_pct": "-2.02%",
+      "tweet_volume": 105163,
+      "price": 86.78,
+      "change_pct": "-15.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment Holdings, Inc",
+      "ticker": "TLRY",
+      "name": "Tilray Brands, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 29359,
-      "price": 1.72,
-      "change_pct": "+2.99%",
+      "tweet_volume": 68096,
+      "price": 7.75,
+      "change_pct": "-1.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FFAI",
-      "name": "Faraday Future Intelligent Elec",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 303683,
-      "price": 0.48,
-      "change_pct": "-10.04%",
+      "tweet_volume": 46377,
+      "price": 79.2,
+      "change_pct": "+9.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BBY",
-      "name": "Best Buy Co., Inc.",
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 3893,
-      "price": 63.45,
-      "change_pct": "-4.71%",
+      "tweet_volume": 2943,
+      "price": 532.64,
+      "change_pct": "-4.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ELPW",
-      "name": "Elong Power Holding Limited",
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 149927,
-      "price": 2.63,
-      "change_pct": "+69.35%",
+      "tweet_volume": 42259,
+      "price": 64.64,
+      "change_pct": "-8.13%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies Inc",
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 41192,
-      "price": 5.43,
-      "change_pct": "-0.35%",
+      "tweet_volume": 12653,
+      "price": 145.36,
+      "change_pct": "-11.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INBX",
-      "name": "Inhibrx Biosciences, Inc.",
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 4604,
-      "price": 104.49,
-      "change_pct": "+24.27%",
+      "tweet_volume": 239572,
+      "price": 10.5,
+      "change_pct": "+6.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 31568,
-      "price": 178.94,
-      "change_pct": "+9.13%",
+      "tweet_volume": 66077,
+      "price": 27.39,
+      "change_pct": "-6.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6467048,
-      "price": 1.45,
-      "change_pct": "+1.60%",
+      "tweet_volume": 66597,
+      "price": 36.94,
+      "change_pct": "+13.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
+      "ticker": "AUUD",
+      "name": "Auddia Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 60951,
-      "price": 11.55,
-      "change_pct": "+12.08%",
+      "tweet_volume": 161706,
+      "price": 6.1,
+      "change_pct": "+57.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

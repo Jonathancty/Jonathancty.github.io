@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-23T15:12:07.768932+00:00",
+  "updated_at": "2026-04-24T14:44:54.080405+00:00",
   "top_trending": {
-    "ticker": "QS",
-    "name": "QuantumScape Corporation",
+    "ticker": "MXL",
+    "name": "MaxLinear, Inc",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 172351,
-    "price": 7.81,
-    "change_pct": "+6.84%",
+    "tweet_volume": 34379,
+    "price": 58.95,
+    "change_pct": "+72.12%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "SKLZ",
+      "name": "Skillz Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 105163,
-      "price": 86.78,
-      "change_pct": "-15.81%",
+      "tweet_volume": 12748,
+      "price": 7.58,
+      "change_pct": "-39.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TLRY",
-      "name": "Tilray Brands, Inc.",
+      "ticker": "OGN",
+      "name": "Organon & Co.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 68096,
-      "price": 7.75,
-      "change_pct": "-1.52%",
+      "tweet_volume": 27179,
+      "price": 10.29,
+      "change_pct": "+19.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "LIDR",
+      "name": "AEye, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 46377,
-      "price": 79.2,
-      "change_pct": "+9.38%",
+      "tweet_volume": 185905,
+      "price": 2.44,
+      "change_pct": "+44.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
+      "ticker": "ELPW",
+      "name": "Elong Power Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2943,
-      "price": 532.64,
-      "change_pct": "-4.10%",
+      "tweet_volume": 143653,
+      "price": 3.26,
+      "change_pct": "+22.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan, Inc.",
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 42259,
-      "price": 64.64,
-      "change_pct": "-8.13%",
+      "tweet_volume": 2140,
+      "price": 492.11,
+      "change_pct": "+7.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LULU",
-      "name": "lululemon athletica inc.",
+      "ticker": "WU",
+      "name": "Western Union Company (The)",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 12653,
-      "price": 145.36,
-      "change_pct": "-11.07%",
+      "tweet_volume": 59309,
+      "price": 8.71,
+      "change_pct": "-6.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
+      "ticker": "SCNI",
+      "name": "Scinai Immunotherapeutics Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 239572,
-      "price": 10.5,
-      "change_pct": "+6.49%",
+      "tweet_volume": 343530,
+      "price": 0.82,
+      "change_pct": "+80.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
+      "ticker": "STNE",
+      "name": "StoneCo Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 66077,
-      "price": 27.39,
-      "change_pct": "-6.15%",
+      "tweet_volume": 6929,
+      "price": 12.2,
+      "change_pct": "-16.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 66597,
-      "price": 36.94,
-      "change_pct": "+13.91%",
+      "tweet_volume": 3296,
+      "price": 442.62,
+      "change_pct": "-6.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AUUD",
-      "name": "Auddia Inc.",
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 161706,
-      "price": 6.1,
-      "change_pct": "+57.62%",
+      "tweet_volume": 1949,
+      "price": 328.12,
+      "change_pct": "+4.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

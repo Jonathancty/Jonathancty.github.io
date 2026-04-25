@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-24T14:44:54.080405+00:00",
+  "updated_at": "2026-04-25T14:02:36.048152+00:00",
   "top_trending": {
-    "ticker": "MXL",
-    "name": "MaxLinear, Inc",
+    "ticker": "XE",
+    "name": "X-Energy, Inc. Class A Common Stock",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 34379,
-    "price": 58.95,
-    "change_pct": "+72.12%",
+    "tweet_volume": 100861,
+    "price": 29.2,
+    "change_pct": "+26.96%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "SKLZ",
-      "name": "Skillz Inc.",
+      "ticker": "TTD",
+      "name": "The Trade Desk, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 12748,
-      "price": 7.58,
-      "change_pct": "-39.12%",
+      "tweet_volume": 52151,
+      "price": 23.97,
+      "change_pct": "+5.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OGN",
-      "name": "Organon & Co.",
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 27179,
-      "price": 10.29,
-      "change_pct": "+19.59%",
+      "tweet_volume": 20217,
+      "price": 97.94,
+      "change_pct": "-5.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LIDR",
-      "name": "AEye, Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 185905,
-      "price": 2.44,
-      "change_pct": "+44.67%",
+      "tweet_volume": 3970058,
+      "price": 1.43,
+      "change_pct": "-0.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ELPW",
-      "name": "Elong Power Holding Limited",
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 143653,
-      "price": 3.26,
-      "change_pct": "+22.10%",
+      "tweet_volume": 163169,
+      "price": 27.56,
+      "change_pct": "-12.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
+      "ticker": "NTLA",
+      "name": "Intellia Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2140,
-      "price": 492.11,
-      "change_pct": "+7.72%",
+      "tweet_volume": 19465,
+      "price": 13.63,
+      "change_pct": "-14.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WU",
-      "name": "Western Union Company (The)",
+      "ticker": "SNOW",
+      "name": "Snowflake Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 59309,
-      "price": 8.71,
-      "change_pct": "-6.62%",
+      "tweet_volume": 29226,
+      "price": 140.32,
+      "change_pct": "-4.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCNI",
-      "name": "Scinai Immunotherapeutics Ltd.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 343530,
-      "price": 0.82,
-      "change_pct": "+80.31%",
+      "tweet_volume": 7059176,
+      "price": 86.6,
+      "change_pct": "+0.43%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STNE",
-      "name": "StoneCo Ltd.",
+      "ticker": "CRSP",
+      "name": "CRISPR Therapeutics AG",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6929,
-      "price": 12.2,
-      "change_pct": "-16.15%",
+      "tweet_volume": 9460,
+      "price": 48.78,
+      "change_pct": "-11.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HCA",
-      "name": "HCA Healthcare, Inc.",
+      "ticker": "SIRI",
+      "name": "SiriusXM Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 3296,
-      "price": 442.62,
-      "change_pct": "-6.63%",
+      "tweet_volume": 30237,
+      "price": 26.61,
+      "change_pct": "-4.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 1949,
-      "price": 328.12,
-      "change_pct": "+4.39%",
+      "tweet_volume": 2931898,
+      "price": 0.1,
+      "change_pct": "-0.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

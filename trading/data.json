@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-25T14:02:36.048152+00:00",
+  "updated_at": "2026-04-26T14:04:28.943151+00:00",
   "top_trending": {
-    "ticker": "XE",
-    "name": "X-Energy, Inc. Class A Common Stock",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 100861,
-    "price": 29.2,
-    "change_pct": "+26.96%",
+    "tweet_volume": 2890486,
+    "price": 1.42,
+    "change_pct": "-0.03%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,117 +15,26 @@
   },
   "trending_list": [
     {
-      "ticker": "TTD",
-      "name": "The Trade Desk, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 52151,
-      "price": 23.97,
-      "change_pct": "+5.97%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 20217,
-      "price": 97.94,
-      "change_pct": "-5.28%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 3970058,
-      "price": 1.43,
-      "change_pct": "-0.20%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 163169,
-      "price": 27.56,
-      "change_pct": "-12.90%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NTLA",
-      "name": "Intellia Therapeutics, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 19465,
-      "price": 13.63,
-      "change_pct": "-14.11%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 29226,
-      "price": 140.32,
-      "change_pct": "-4.15%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
       "ticker": "SOL-USD",
       "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 7059176,
-      "price": 86.6,
-      "change_pct": "+0.43%",
+      "tweet_volume": 6762343,
+      "price": 86.12,
+      "change_pct": "-0.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRSP",
-      "name": "CRISPR Therapeutics AG",
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 9460,
-      "price": 48.78,
-      "change_pct": "-11.59%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SIRI",
-      "name": "SiriusXM Holdings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "tweet_volume": 30237,
-      "price": 26.61,
-      "change_pct": "-4.96%",
+      "tweet_volume": 2119,
+      "price": 223.15,
+      "change_pct": "-1.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -136,9 +45,100 @@
       "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2931898,
+      "tweet_volume": 2387926,
       "price": 0.1,
-      "change_pct": "-0.32%",
+      "change_pct": "+0.45%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 6676,
+      "price": 513.45,
+      "change_pct": "-3.08%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DUOL",
+      "name": "Duolingo, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 3876,
+      "price": 103.45,
+      "change_pct": "+3.15%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 38757,
+      "price": 44.69,
+      "change_pct": "-0.20%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 5494,
+      "price": 122.15,
+      "change_pct": "-1.37%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 20532,
+      "price": 50.48,
+      "change_pct": "+1.47%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 304315,
+      "price": 10.46,
+      "change_pct": "+1.26%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "tweet_volume": 189948,
+      "price": 3.14,
+      "change_pct": "-1.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

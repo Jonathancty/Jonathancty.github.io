@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-27T15:07:22.022841+00:00",
+  "updated_at": "2026-04-28T15:26:32.586668+00:00",
   "top_trending": {
-    "ticker": "POET",
-    "name": "POET Technologies Inc.",
+    "ticker": "SPOT",
+    "name": "Spotify Technology S.A.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 324442,
-    "price": 8.29,
-    "change_pct": "-45.11%",
+    "tweet_volume": 14079,
+    "price": 432.3,
+    "change_pct": "-12.81%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "DPZ",
-      "name": "Domino's Pizza Inc",
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 4673,
-      "price": 333.07,
-      "change_pct": "-9.54%",
+      "tweet_volume": 12308,
+      "price": 103.93,
+      "change_pct": "-3.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NTLA",
-      "name": "Intellia Therapeutics, Inc.",
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 35383,
-      "price": 14.17,
-      "change_pct": "+3.96%",
+      "tweet_volume": 32544,
+      "price": 153.05,
+      "change_pct": "-8.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARX.TO",
-      "name": "ARC RESOURCES LTD.",
+      "ticker": "ATER",
+      "name": "Aterian, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 39998,
-      "price": 31.52,
-      "change_pct": "+22.31%",
+      "tweet_volume": 402876,
+      "price": 1.25,
+      "change_pct": "+90.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XE",
-      "name": "X-Energy, Inc.",
+      "ticker": "RMBS",
+      "name": "Rambus, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 35947,
-      "price": 33.09,
-      "change_pct": "+13.30%",
+      "tweet_volume": 10176,
+      "price": 106.05,
+      "change_pct": "-24.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USEG",
-      "name": "U.S. Energy Corp.",
+      "ticker": "CLS",
+      "name": "Celestica, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 398012,
-      "price": 1.19,
-      "change_pct": "+28.38%",
+      "tweet_volume": 7843,
+      "price": 363.23,
+      "change_pct": "-13.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMPX",
-      "name": "Compass Therapeutics, Inc.",
+      "ticker": "VISN",
+      "name": "Vistance Networks, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 289034,
-      "price": 2.0,
-      "change_pct": "-60.16%",
+      "tweet_volume": 17112,
+      "price": 9.99,
+      "change_pct": "-48.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ORKA",
-      "name": "Oruka Therapeutics, Inc.",
+      "ticker": "BIYA",
+      "name": "Baiya International Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10106,
-      "price": 83.26,
-      "change_pct": "+20.61%",
+      "tweet_volume": 374415,
+      "price": 1.7,
+      "change_pct": "+118.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "YAAS",
-      "name": "Youxin Technology Ltd",
+      "ticker": "BBBY",
+      "name": "Bed Bath & Beyond, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 280869,
-      "price": 1.47,
-      "change_pct": "+57.92%",
+      "tweet_volume": 77310,
+      "price": 5.13,
+      "change_pct": "-3.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLF",
-      "name": "Cleveland-Cliffs Inc.",
+      "ticker": "ERAS",
+      "name": "Erasca, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 44253,
-      "price": 10.68,
-      "change_pct": "+9.38%",
+      "tweet_volume": 64041,
+      "price": 9.53,
+      "change_pct": "-50.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RMAX",
-      "name": "RE/MAX Holdings, Inc.",
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 26852,
-      "price": 9.76,
-      "change_pct": "+22.15%",
+      "tweet_volume": 10652,
+      "price": 298.62,
+      "change_pct": "-7.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

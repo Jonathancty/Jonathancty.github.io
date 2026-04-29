@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-28T15:26:32.586668+00:00",
+  "updated_at": "2026-04-29T15:12:46.999222+00:00",
   "top_trending": {
-    "ticker": "SPOT",
-    "name": "Spotify Technology S.A.",
+    "ticker": "SOFI",
+    "name": "SoFi Technologies, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 14079,
-    "price": 432.3,
-    "change_pct": "-12.81%",
+    "tweet_volume": 255020,
+    "price": 15.95,
+    "change_pct": "-13.15%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 12308,
-      "price": 103.93,
-      "change_pct": "-3.98%",
+      "tweet_volume": 102271,
+      "price": 70.52,
+      "change_pct": "-14.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 32544,
-      "price": 153.05,
-      "change_pct": "-8.90%",
+      "tweet_volume": 27533,
+      "price": 275.13,
+      "change_pct": "+21.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ATER",
-      "name": "Aterian, Inc.",
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings PLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 402876,
-      "price": 1.25,
-      "change_pct": "+90.42%",
+      "tweet_volume": 13252,
+      "price": 665.55,
+      "change_pct": "+14.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RMBS",
-      "name": "Rambus, Inc.",
+      "ticker": "BBAI",
+      "name": "BigBear.ai, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10176,
-      "price": 106.05,
-      "change_pct": "-24.87%",
+      "tweet_volume": 82846,
+      "price": 3.86,
+      "change_pct": "-6.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica, Inc.",
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 7843,
-      "price": 363.23,
-      "change_pct": "-13.97%",
+      "tweet_volume": 10898,
+      "price": 283.48,
+      "change_pct": "+23.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VISN",
-      "name": "Vistance Networks, Inc.",
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 17112,
-      "price": 9.99,
-      "change_pct": "-48.82%",
+      "tweet_volume": 17239,
+      "price": 317.17,
+      "change_pct": "-16.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIYA",
-      "name": "Baiya International Group Inc.",
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 374415,
-      "price": 1.7,
-      "change_pct": "+118.23%",
+      "tweet_volume": 10869,
+      "price": 428.0,
+      "change_pct": "+9.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BBBY",
-      "name": "Bed Bath & Beyond, Inc.",
+      "ticker": "TEVA",
+      "name": "Teva Pharmaceutical Industries ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 77310,
-      "price": 5.13,
-      "change_pct": "-3.93%",
+      "tweet_volume": 25031,
+      "price": 35.22,
+      "change_pct": "+11.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ERAS",
-      "name": "Erasca, Inc.",
+      "ticker": "SAGT",
+      "name": "SAGTEC GLOBAL LIMITED",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 64041,
-      "price": 9.53,
-      "change_pct": "-50.23%",
+      "tweet_volume": 236321,
+      "price": 2.23,
+      "change_pct": "+31.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
+      "ticker": "SIMO",
+      "name": "Silicon Motion Technology Corpo",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10652,
-      "price": 298.62,
-      "change_pct": "-7.39%",
+      "tweet_volume": 5952,
+      "price": 195.0,
+      "change_pct": "+30.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

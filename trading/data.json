@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-29T15:12:46.999222+00:00",
+  "updated_at": "2026-04-30T15:09:55.151865+00:00",
   "top_trending": {
-    "ticker": "SOFI",
-    "name": "SoFi Technologies, Inc.",
+    "ticker": "MO",
+    "name": "Altria Group, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 255020,
-    "price": 15.95,
-    "change_pct": "-13.15%",
+    "tweet_volume": 24651,
+    "price": 73.13,
+    "change_pct": "+7.23%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
+      "ticker": "HCAI",
+      "name": "Huachen AI Parking Management T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 102271,
-      "price": 70.52,
-      "change_pct": "-14.08%",
+      "tweet_volume": 87601,
+      "price": 10.71,
+      "change_pct": "+99.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
+      "ticker": "FATN",
+      "name": "FatPipe, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 27533,
-      "price": 275.13,
-      "change_pct": "+21.54%",
+      "tweet_volume": 108960,
+      "price": 2.91,
+      "change_pct": "+17.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings PLC",
+      "ticker": "PSUS",
+      "name": "PSUS",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 13252,
-      "price": 665.55,
-      "change_pct": "+14.94%",
+      "tweet_volume": 5752,
+      "price": 43.22,
+      "change_pct": "+5.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BBAI",
-      "name": "BigBear.ai, Inc.",
+      "ticker": "MRAM",
+      "name": "Everspin Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 82846,
-      "price": 3.86,
-      "change_pct": "-6.32%",
+      "tweet_volume": 26553,
+      "price": 17.95,
+      "change_pct": "+36.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors N.V.",
+      "ticker": "VIAV",
+      "name": "Viavi Solutions Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10898,
-      "price": 283.48,
-      "change_pct": "+23.08%",
+      "tweet_volume": 19316,
+      "price": 51.84,
+      "change_pct": "+13.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 17239,
-      "price": 317.17,
-      "change_pct": "-16.56%",
+      "tweet_volume": 1941,
+      "price": 702.45,
+      "change_pct": "+11.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
+      "ticker": "F",
+      "name": "Ford Motor Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10869,
-      "price": 428.0,
-      "change_pct": "+9.49%",
+      "tweet_volume": 90829,
+      "price": 11.84,
+      "change_pct": "-3.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TEVA",
-      "name": "Teva Pharmaceutical Industries ",
+      "ticker": "XRX",
+      "name": "Xerox Holdings Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 25031,
-      "price": 35.22,
-      "change_pct": "+11.39%",
+      "tweet_volume": 95821,
+      "price": 2.18,
+      "change_pct": "+38.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SAGT",
-      "name": "SAGTEC GLOBAL LIMITED",
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 236321,
-      "price": 2.23,
-      "change_pct": "+31.18%",
+      "tweet_volume": 4392,
+      "price": 276.05,
+      "change_pct": "+8.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SIMO",
-      "name": "Silicon Motion Technology Corpo",
+      "ticker": "HPQ",
+      "name": "HP Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5952,
-      "price": 195.0,
-      "change_pct": "+30.71%",
+      "tweet_volume": 5790,
+      "price": 20.43,
+      "change_pct": "+1.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

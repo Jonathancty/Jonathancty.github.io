@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-30T15:09:55.151865+00:00",
+  "updated_at": "2026-05-01T14:16:37.512125+00:00",
   "top_trending": {
-    "ticker": "MO",
-    "name": "Altria Group, Inc.",
+    "ticker": "BYND",
+    "name": "Beyond Meat, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 24651,
-    "price": 73.13,
-    "change_pct": "+7.23%",
+    "tweet_volume": 116212,
+    "price": 1.02,
+    "change_pct": "+3.49%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "HCAI",
-      "name": "Huachen AI Parking Management T",
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 87601,
-      "price": 10.71,
-      "change_pct": "+99.47%",
+      "tweet_volume": 12973,
+      "price": 160.99,
+      "change_pct": "+9.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FATN",
-      "name": "FatPipe, Inc.",
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 108960,
-      "price": 2.91,
-      "change_pct": "+17.34%",
+      "tweet_volume": 55679,
+      "price": 45.54,
+      "change_pct": "-17.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSUS",
-      "name": "PSUS",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5752,
-      "price": 43.22,
-      "change_pct": "+5.67%",
+      "tweet_volume": 7299,
+      "price": 44.48,
+      "change_pct": "-3.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRAM",
-      "name": "Everspin Technologies, Inc.",
+      "ticker": "EL",
+      "name": "Estee Lauder Companies, Inc. (T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 26553,
-      "price": 17.95,
-      "change_pct": "+36.09%",
+      "tweet_volume": 5342,
+      "price": 81.75,
+      "change_pct": "+6.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VIAV",
-      "name": "Viavi Solutions Inc.",
+      "ticker": "TEAM",
+      "name": "Atlassian Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 19316,
-      "price": 51.84,
-      "change_pct": "+13.86%",
+      "tweet_volume": 22385,
+      "price": 84.15,
+      "change_pct": "+22.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
+      "ticker": "TWLO",
+      "name": "Twilio Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 1941,
-      "price": 702.45,
-      "change_pct": "+11.75%",
+      "tweet_volume": 5065,
+      "price": 171.71,
+      "change_pct": "+15.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "F",
-      "name": "Ford Motor Company",
+      "ticker": "CUE",
+      "name": "Cue Biopharma, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 90829,
-      "price": 11.84,
-      "change_pct": "-3.31%",
+      "tweet_volume": 27252,
+      "price": 28.98,
+      "change_pct": "+96.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRX",
-      "name": "Xerox Holdings Corporation",
+      "ticker": "TEM",
+      "name": "Tempus AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 95821,
-      "price": 2.18,
-      "change_pct": "+38.85%",
+      "tweet_volume": 2070,
+      "price": 54.77,
+      "change_pct": "-1.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
+      "ticker": "ESPR",
+      "name": "Esperion Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 4392,
-      "price": 276.05,
-      "change_pct": "+8.68%",
+      "tweet_volume": 287579,
+      "price": 3.12,
+      "change_pct": "+55.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HPQ",
-      "name": "HP Inc.",
+      "ticker": "ROKU",
+      "name": "Roku, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5790,
-      "price": 20.43,
-      "change_pct": "+1.46%",
+      "tweet_volume": 6918,
+      "price": 119.82,
+      "change_pct": "+2.80%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,13 +1,15 @@
 {
-  "updated_at": "2026-05-01T14:16:37.512125+00:00",
+  "updated_at": "2026-05-02T14:10:13.844969+00:00",
   "top_trending": {
-    "ticker": "BYND",
-    "name": "Beyond Meat, Inc.",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 116212,
-    "price": 1.02,
-    "change_pct": "+3.49%",
+    "sentiment_label": "Neutral",
+    "bullish_pct": null,
+    "tweet_volume": 38274,
+    "price": 26.53,
+    "change_pct": "+6.33%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
+      "ticker": "FLYYQ",
+      "name": "Spirit Aviation Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 12973,
-      "price": 160.99,
-      "change_pct": "+9.35%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 10320,
+      "price": 1.04,
+      "change_pct": "-25.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox Corporation",
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 55679,
-      "price": 45.54,
-      "change_pct": "-17.59%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 25778,
+      "price": 104.07,
+      "change_pct": "+0.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "SOUN",
+      "name": "SoundHound AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 7299,
-      "price": 44.48,
-      "change_pct": "-3.17%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 169517,
+      "price": 9.56,
+      "change_pct": "+20.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "EL",
-      "name": "Estee Lauder Companies, Inc. (T",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5342,
-      "price": 81.75,
-      "change_pct": "+6.57%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 39277,
+      "price": 154.49,
+      "change_pct": "+11.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian Corporation",
+      "ticker": "JBLU",
+      "name": "JetBlue Airways Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 22385,
-      "price": 84.15,
-      "change_pct": "+22.69%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 121031,
+      "price": 4.86,
+      "change_pct": "+4.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TWLO",
-      "name": "Twilio Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5065,
-      "price": 171.71,
-      "change_pct": "+15.97%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3196768,
+      "price": 1.39,
+      "change_pct": "+0.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CUE",
-      "name": "Cue Biopharma, Inc.",
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 27252,
-      "price": 28.98,
-      "change_pct": "+96.61%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9923,
+      "price": 294.73,
+      "change_pct": "-6.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TEM",
-      "name": "Tempus AI, Inc.",
+      "ticker": "WOLF",
+      "name": "Wolfspeed, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 2070,
-      "price": 54.77,
-      "change_pct": "-1.28%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 20516,
+      "price": 36.76,
+      "change_pct": "+24.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ESPR",
-      "name": "Esperion Therapeutics, Inc.",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 287579,
-      "price": 3.12,
-      "change_pct": "+55.75%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3515079,
+      "price": 0.11,
+      "change_pct": "+0.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ROKU",
-      "name": "Roku, Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 6918,
-      "price": 119.82,
-      "change_pct": "+2.80%",
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 7238865,
+      "price": 83.93,
+      "change_pct": "+0.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

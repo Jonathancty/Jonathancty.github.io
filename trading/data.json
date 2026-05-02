@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-09T17:26:20.718141+00:00",
+  "updated_at": "2026-05-01T14:16:37.512125+00:00",
   "top_trending": {
-    "ticker": "ARAI",
-    "name": "Arrive AI Inc.",
+    "ticker": "BYND",
+    "name": "Beyond Meat, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
-    "tweet_volume": 686569,
-    "price": 1.33,
-    "change_pct": "+98.97%",
+    "tweet_volume": 116212,
+    "price": 1.02,
+    "change_pct": "+3.49%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -15,130 +15,130 @@
   },
   "trending_list": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 59162,
-      "price": 90.27,
-      "change_pct": "-7.39%",
+      "tweet_volume": 12973,
+      "price": 160.99,
+      "change_pct": "+9.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 16874,
-      "price": 185.42,
-      "change_pct": "-12.23%",
+      "tweet_volume": 55679,
+      "price": 45.54,
+      "change_pct": "-17.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 108476,
-      "price": 94.36,
-      "change_pct": "+6.14%",
+      "tweet_volume": 7299,
+      "price": 44.48,
+      "change_pct": "-3.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNOW",
-      "name": "Snowflake Inc.",
+      "ticker": "EL",
+      "name": "Estee Lauder Companies, Inc. (T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 20307,
-      "price": 134.15,
-      "change_pct": "-10.56%",
+      "tweet_volume": 5342,
+      "price": 81.75,
+      "change_pct": "+6.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
+      "ticker": "TEAM",
+      "name": "Atlassian Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 10106,
-      "price": 361.64,
-      "change_pct": "-6.87%",
+      "tweet_volume": 22385,
+      "price": 84.15,
+      "change_pct": "+22.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
+      "ticker": "TWLO",
+      "name": "Twilio Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 44075,
-      "price": 3.78,
-      "change_pct": "+7.12%",
+      "tweet_volume": 5065,
+      "price": 171.71,
+      "change_pct": "+15.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FLEX",
-      "name": "Flex Ltd.",
+      "ticker": "CUE",
+      "name": "Cue Biopharma, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 5044,
-      "price": 75.59,
-      "change_pct": "+3.28%",
+      "tweet_volume": 27252,
+      "price": 28.98,
+      "change_pct": "+96.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONCO",
-      "name": "Onconetix, Inc.",
+      "ticker": "TEM",
+      "name": "Tempus AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 502002,
-      "price": 1.77,
-      "change_pct": "+56.72%",
+      "tweet_volume": 2070,
+      "price": 54.77,
+      "change_pct": "-1.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DKNG",
-      "name": "DraftKings Inc.",
+      "ticker": "ESPR",
+      "name": "Esperion Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 15579,
-      "price": 22.79,
-      "change_pct": "-4.80%",
+      "tweet_volume": 287579,
+      "price": 3.12,
+      "change_pct": "+55.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
+      "ticker": "ROKU",
+      "name": "Roku, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
-      "tweet_volume": 11232,
-      "price": 122.23,
-      "change_pct": "-11.33%",
+      "tweet_volume": 6918,
+      "price": 119.82,
+      "change_pct": "+2.80%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

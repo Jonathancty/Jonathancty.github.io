@@ -320,6 +320,35 @@
       color: var(--text-secondary);
     }
 
+    /* Sentiment Bar */
+    .sentiment-bar-wrap {
+      margin-top: 1.25rem;
+    }
+
+    .sentiment-bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .sentiment-bar-labels .bull-label { color: var(--bullish); font-weight: 600; }
+    .sentiment-bar-labels .bear-label { color: var(--bearish); font-weight: 600; }
+
+    .sentiment-bar-track {
+      height: 6px;
+      border-radius: 9999px;
+      background: rgba(239, 68, 68, 0.25);
+      overflow: hidden;
+    }
+
+    .sentiment-bar-fill {
+      height: 100%;
+      border-radius: 9999px;
+      background: linear-gradient(90deg, var(--bullish), #34d399);
+      transition: width 0.6s ease;
+    }
+
     @keyframes pulse {
       0% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.5; transform: scale(1.2); }
@@ -394,19 +423,44 @@
     }
 
     function formatNumber(num) {
+      if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
       if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
       return num;
+    }
+
+    function sentimentLabel(score, labelOverride) {
+      if (labelOverride) return labelOverride;
+      if (score >= 0.1) return 'Bullish';
+      if (score <= -0.1) return 'Bearish';
+      return 'Neutral';
+    }
+
+    function renderSentimentBar(bullish_pct) {
+      if (bullish_pct === null || bullish_pct === undefined) return '';
+      const bearish_pct = 100 - bullish_pct;
+      return `
+        <div class="sentiment-bar-wrap">
+          <div class="sentiment-bar-labels">
+            <span class="bull-label">Bull ${bullish_pct}%</span>
+            <span class="bear-label">${bearish_pct}% Bear</span>
+          </div>
+          <div class="sentiment-bar-track">
+            <div class="sentiment-bar-fill" style="width:${bullish_pct}%"></div>
+          </div>
+        </div>`;
     }
 
     function renderDashboard(data) {
       const { top_trending, trending_list, updated_at } = data;
       
       const date = new Date(updated_at);
-      const timeString = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' ' + date.toLocaleDateString();
+      const timeString = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' ' + 
+                         date.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
 
       // Render Top Trending (Hero)
-      const topSentimentClass = getSentimentClass(top_trending.sentiment_delta);
-      
+      const topLabel = sentimentLabel(top_trending.current_sentiment, top_trending.sentiment_label);
+      const topSentimentClass = getSentimentClass(top_trending.current_sentiment);
+
       let html = `
         <div class="hero-section">
           <div class="hero-label">
@@ -417,13 +471,13 @@
             <div>
               <div class="stock-header">
                 <h2>${top_trending.ticker}</h2>
-                <span class="sentiment-badge ${topSentimentClass}">${top_trending.sentiment_label}</span>
+                <span class="sentiment-badge ${topSentimentClass}">${topLabel}</span>
               </div>
               <p class="stock-name">${top_trending.name}</p>
-              
+
               <div class="metric-grid">
                 <div class="metric">
-                  <span class="metric-label">X Volume</span>
+                  <span class="metric-label">Social Mentions</span>
                   <span class="metric-value">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-secondary)">
                       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -444,10 +498,11 @@
                   <span class="metric-value ${top_trending.change_pct.startsWith('-') ? 'bearish' : 'bullish'}">${top_trending.change_pct}</span>
                 </div>
               </div>
+              ${renderSentimentBar(top_trending.bullish_pct)}
             </div>
-            
+
             <div style="background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-              <span class="metric-label" style="margin-bottom: 1rem;">Primary Drivers</span>
+              <span class="metric-label" style="margin-bottom: 1rem;">Trending Topics</span>
               <div class="topics" style="margin-top: 0;">
                 ${top_trending.key_topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
               </div>
@@ -465,23 +520,24 @@
 
       // Render the rest of the grid
       trending_list.forEach(stock => {
-        const sentimentClass = getSentimentClass(stock.sentiment_delta);
+        const label = sentimentLabel(stock.current_sentiment, stock.sentiment_label);
+        const sentimentClass = getSentimentClass(stock.current_sentiment);
         html += `
           <div class="glass-card trending-card">
             <div class="stock-header">
               <h3>${stock.ticker}</h3>
-              <span class="sentiment-badge ${sentimentClass}" style="font-size:0.75rem">${stock.sentiment_label}</span>
+              <span class="sentiment-badge ${sentimentClass}" style="font-size:0.75rem">${label}</span>
             </div>
             <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-               <span style="font-size:1.5rem; font-family:'Outfit'; font-weight: 700;">$${stock.price.toFixed(2)}</span>
-               <span class="${stock.change_pct.startsWith('-') ? 'bearish' : 'bullish'} font-weight:600">${stock.change_pct}</span>
+              <span style="font-size:1.5rem; font-family:'Outfit'; font-weight: 700;">$${stock.price.toFixed(2)}</span>
+              <span class="${stock.change_pct.startsWith('-') ? 'bearish' : 'bullish'}" style="font-weight:600">${stock.change_pct}</span>
             </div>
-            
+
             <div style="height: 1px; background: var(--border-light); margin: 1rem 0;"></div>
-            
+
             <div class="metric-grid" style="margin-top:0;">
               <div class="metric">
-                <span class="metric-label" style="font-size:0.7rem">Volume</span>
+                <span class="metric-label" style="font-size:0.7rem">Social Mentions</span>
                 <span class="metric-value" style="font-size:1rem">${formatNumber(stock.tweet_volume)}</span>
               </div>
               <div class="metric">
@@ -489,7 +545,9 @@
                 <span class="metric-value ${sentimentClass}" style="font-size:1rem">${stock.sentiment_delta > 0 ? '+' : ''}${(stock.sentiment_delta * 100).toFixed(1)}%</span>
               </div>
             </div>
-            
+
+            ${renderSentimentBar(stock.bullish_pct)}
+
             <div class="topics">
               ${stock.key_topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
             </div>

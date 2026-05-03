@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-02T14:10:13.844969+00:00",
+  "updated_at": "2026-05-03T14:10:54.084782+00:00",
   "top_trending": {
-    "ticker": "GME",
-    "name": "GameStop Corporation",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 38274,
-    "price": 26.53,
-    "change_pct": "+6.33%",
+    "tweet_volume": 2908772,
+    "price": 1.39,
+    "change_pct": "+0.05%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,120 +17,30 @@
   },
   "trending_list": [
     {
-      "ticker": "FLYYQ",
-      "name": "Spirit Aviation Holdings, Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10320,
-      "price": 1.04,
-      "change_pct": "-25.36%",
+      "tweet_volume": 6004368,
+      "price": 84.19,
+      "change_pct": "-0.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor Corporati",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25778,
-      "price": 104.07,
-      "change_pct": "+0.57%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOUN",
-      "name": "SoundHound AI, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 169517,
-      "price": 9.56,
-      "change_pct": "+20.10%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 39277,
-      "price": 154.49,
-      "change_pct": "+11.76%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "JBLU",
-      "name": "JetBlue Airways Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 121031,
-      "price": 4.86,
-      "change_pct": "+4.40%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 3196768,
-      "price": 1.39,
-      "change_pct": "+0.48%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9923,
-      "price": 294.73,
-      "change_pct": "-6.47%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "WOLF",
-      "name": "Wolfspeed, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 20516,
-      "price": 36.76,
-      "change_pct": "+24.48%",
+      "tweet_volume": 4742,
+      "price": 120.96,
+      "change_pct": "-1.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -143,7 +53,7 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3515079,
+      "tweet_volume": 2770730,
       "price": 0.11,
       "change_pct": "+0.25%",
       "key_topics": [
@@ -152,15 +62,105 @@
       ]
     },
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "DRAM",
+      "name": "Roundhill Memory ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7238865,
-      "price": 83.93,
-      "change_pct": "+0.25%",
+      "tweet_volume": 28025,
+      "price": 40.41,
+      "change_pct": "+2.75%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ZEC-USD",
+      "name": "Zcash USD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1690894,
+      "price": 393.32,
+      "change_pct": "+1.62%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ON",
+      "name": "ON Semiconductor Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 23951,
+      "price": 103.03,
+      "change_pct": "+2.20%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 7184,
+      "price": 345.42,
+      "change_pct": "+0.57%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor Technology, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 26658,
+      "price": 71.09,
+      "change_pct": "+1.92%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 35578,
+      "price": 22.49,
+      "change_pct": "-0.75%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "WULF",
+      "name": "TeraWulf Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 68739,
+      "price": 21.31,
+      "change_pct": "-1.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

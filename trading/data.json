@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-03T14:10:54.084782+00:00",
+  "updated_at": "2026-05-04T15:10:00.704852+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2908772,
-    "price": 1.39,
-    "change_pct": "+0.05%",
+    "tweet_volume": 52050,
+    "price": 24.8,
+    "change_pct": "-6.52%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6004368,
-      "price": 84.19,
-      "change_pct": "-0.10%",
+      "tweet_volume": 26087,
+      "price": 110.61,
+      "change_pct": "+6.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor Corporati",
+      "ticker": "XNDU",
+      "name": "Xanadu Quantum Technologies Lim",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4742,
-      "price": 120.96,
-      "change_pct": "-1.08%",
+      "tweet_volume": 88590,
+      "price": 14.64,
+      "change_pct": "-59.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2770730,
-      "price": 0.11,
-      "change_pct": "+0.25%",
+      "tweet_volume": 17115,
+      "price": 98.07,
+      "change_pct": "-8.83%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DRAM",
-      "name": "Roundhill Memory ETF",
+      "ticker": "CNSP",
+      "name": "CNS Pharmaceuticals, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28025,
-      "price": 40.41,
-      "change_pct": "+2.75%",
+      "tweet_volume": 166369,
+      "price": 8.33,
+      "change_pct": "+260.43%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZEC-USD",
-      "name": "Zcash USD",
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1690894,
-      "price": 393.32,
-      "change_pct": "+1.62%",
+      "tweet_volume": 73216,
+      "price": 5.92,
+      "change_pct": "+9.13%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ON",
-      "name": "ON Semiconductor Corporation",
+      "ticker": "SOUN",
+      "name": "SoundHound AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23951,
-      "price": 103.03,
-      "change_pct": "+2.20%",
+      "tweet_volume": 59628,
+      "price": 9.96,
+      "change_pct": "+4.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
+      "ticker": "FDX",
+      "name": "FedEx Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7184,
-      "price": 345.42,
-      "change_pct": "+0.57%",
+      "tweet_volume": 4613,
+      "price": 359.55,
+      "change_pct": "-8.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMKR",
-      "name": "Amkor Technology, Inc.",
+      "ticker": "OUST",
+      "name": "Ouster, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26658,
-      "price": 71.09,
-      "change_pct": "+1.92%",
+      "tweet_volume": 6607,
+      "price": 28.37,
+      "change_pct": "+7.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
+      "ticker": "NCLH",
+      "name": "Norwegian Cruise Line Holdings ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35578,
-      "price": 22.49,
-      "change_pct": "-0.75%",
+      "tweet_volume": 65869,
+      "price": 17.41,
+      "change_pct": "-7.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WULF",
-      "name": "TeraWulf Inc.",
+      "ticker": "PN",
+      "name": "Skycorp Solar Group Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 68739,
-      "price": 21.31,
-      "change_pct": "-1.93%",
+      "tweet_volume": 85456,
+      "price": 4.7,
+      "change_pct": "+63.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

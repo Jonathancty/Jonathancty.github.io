@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-04T15:10:00.704852+00:00",
+  "updated_at": "2026-05-05T15:32:44.846198+00:00",
   "top_trending": {
-    "ticker": "GME",
-    "name": "GameStop Corporation",
+    "ticker": "PYPL",
+    "name": "PayPal Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 52050,
-    "price": 24.8,
-    "change_pct": "-6.52%",
+    "tweet_volume": 59462,
+    "price": 46.22,
+    "change_pct": "-8.28%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26087,
-      "price": 110.61,
-      "change_pct": "+6.28%",
+      "tweet_volume": 30233,
+      "price": 114.53,
+      "change_pct": "-10.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XNDU",
-      "name": "Xanadu Quantum Technologies Lim",
+      "ticker": "POET",
+      "name": "POET Technologies Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 88590,
-      "price": 14.64,
-      "change_pct": "-59.47%",
+      "tweet_volume": 138315,
+      "price": 9.42,
+      "change_pct": "+32.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
+      "ticker": "STRL",
+      "name": "Sterling Infrastructure, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17115,
-      "price": 98.07,
-      "change_pct": "-8.83%",
+      "tweet_volume": 3152,
+      "price": 778.99,
+      "change_pct": "+47.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CNSP",
-      "name": "CNS Pharmaceuticals, Inc.",
+      "ticker": "DOCN",
+      "name": "DigitalOcean Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 166369,
-      "price": 8.33,
-      "change_pct": "+260.43%",
+      "tweet_volume": 18985,
+      "price": 145.61,
+      "change_pct": "+33.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
+      "ticker": "PINS",
+      "name": "Pinterest, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 73216,
-      "price": 5.92,
-      "change_pct": "+9.13%",
+      "tweet_volume": 77231,
+      "price": 23.27,
+      "change_pct": "+11.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI, Inc.",
+      "ticker": "DGXX",
+      "name": "Digi Power X Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 59628,
-      "price": 9.96,
-      "change_pct": "+4.18%",
+      "tweet_volume": 204980,
+      "price": 4.91,
+      "change_pct": "+24.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx Corporation",
+      "ticker": "FISV",
+      "name": "Fiserv, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4613,
-      "price": 359.55,
-      "change_pct": "-8.67%",
+      "tweet_volume": 17830,
+      "price": 57.9,
+      "change_pct": "-7.83%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OUST",
-      "name": "Ouster, Inc.",
+      "ticker": "BLSH",
+      "name": "Bullish",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6607,
-      "price": 28.37,
-      "change_pct": "+7.26%",
+      "tweet_volume": 5783,
+      "price": 47.4,
+      "change_pct": "+16.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NCLH",
-      "name": "Norwegian Cruise Line Holdings ",
+      "ticker": "BLZE",
+      "name": "Backblaze, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 65869,
-      "price": 17.41,
-      "change_pct": "-7.42%",
+      "tweet_volume": 70108,
+      "price": 7.23,
+      "change_pct": "+55.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PN",
-      "name": "Skycorp Solar Group Limited",
+      "ticker": "IPGP",
+      "name": "IPG Photonics Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 85456,
-      "price": 4.7,
-      "change_pct": "+63.87%",
+      "tweet_volume": 3335,
+      "price": 92.38,
+      "change_pct": "-24.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-05T15:32:44.846198+00:00",
+  "updated_at": "2026-05-06T15:26:56.249807+00:00",
   "top_trending": {
-    "ticker": "PYPL",
-    "name": "PayPal Holdings, Inc.",
+    "ticker": "SMCI",
+    "name": "Super Micro Computer, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 59462,
-    "price": 46.22,
-    "change_pct": "-8.28%",
+    "tweet_volume": 156313,
+    "price": 32.27,
+    "change_pct": "+15.95%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
+      "ticker": "HUT",
+      "name": "Hut 8 Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30233,
-      "price": 114.53,
-      "change_pct": "-10.21%",
+      "tweet_volume": 27694,
+      "price": 106.29,
+      "change_pct": "+32.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "POET",
-      "name": "POET Technologies Inc.",
+      "ticker": "PRIM",
+      "name": "Primoris Services Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 138315,
-      "price": 9.42,
-      "change_pct": "+32.49%",
+      "tweet_volume": 14706,
+      "price": 112.0,
+      "change_pct": "-44.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STRL",
-      "name": "Sterling Infrastructure, Inc.",
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3152,
-      "price": 778.99,
-      "change_pct": "+47.12%",
+      "tweet_volume": 16157,
+      "price": 9.13,
+      "change_pct": "+12.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean Holdings, Inc.",
+      "ticker": "OSS",
+      "name": "One Stop Systems, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18985,
-      "price": 145.61,
-      "change_pct": "+33.82%",
+      "tweet_volume": 25238,
+      "price": 15.56,
+      "change_pct": "+59.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PINS",
-      "name": "Pinterest, Inc.",
+      "ticker": "JOBY",
+      "name": "Joby Aviation, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 77231,
-      "price": 23.27,
-      "change_pct": "+11.61%",
+      "tweet_volume": 62691,
+      "price": 9.94,
+      "change_pct": "+14.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DGXX",
-      "name": "Digi Power X Inc.",
+      "ticker": "FLEX",
+      "name": "Flex Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 204980,
-      "price": 4.91,
-      "change_pct": "+24.31%",
+      "tweet_volume": 21116,
+      "price": 127.22,
+      "change_pct": "+31.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FISV",
-      "name": "Fiserv, Inc.",
+      "ticker": "SEDG",
+      "name": "SolarEdge Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17830,
-      "price": 57.9,
-      "change_pct": "-7.83%",
+      "tweet_volume": 12800,
+      "price": 40.04,
+      "change_pct": "-10.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BLSH",
-      "name": "Bullish",
+      "ticker": "KVYO",
+      "name": "Klaviyo, Inc. Series A",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5783,
-      "price": 47.4,
-      "change_pct": "+16.46%",
+      "tweet_volume": 23626,
+      "price": 16.68,
+      "change_pct": "-28.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BLZE",
-      "name": "Backblaze, Inc.",
+      "ticker": "COMP",
+      "name": "Compass, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 70108,
-      "price": 7.23,
-      "change_pct": "+55.82%",
+      "tweet_volume": 41112,
+      "price": 9.36,
+      "change_pct": "+28.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IPGP",
-      "name": "IPG Photonics Corporation",
+      "ticker": "CDW",
+      "name": "CDW Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3335,
-      "price": 92.38,
-      "change_pct": "-24.48%",
+      "tweet_volume": 6113,
+      "price": 107.82,
+      "change_pct": "-21.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

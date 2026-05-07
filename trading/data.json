@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-06T15:26:56.249807+00:00",
+  "updated_at": "2026-05-07T15:28:13.689343+00:00",
   "top_trending": {
-    "ticker": "SMCI",
-    "name": "Super Micro Computer, Inc.",
+    "ticker": "DDOG",
+    "name": "Datadog, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 156313,
-    "price": 32.27,
-    "change_pct": "+15.95%",
+    "tweet_volume": 35822,
+    "price": 185.25,
+    "change_pct": "+28.91%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "HUT",
-      "name": "Hut 8 Corp.",
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27694,
-      "price": 106.29,
-      "change_pct": "+32.05%",
+      "tweet_volume": 5668,
+      "price": 502.16,
+      "change_pct": "+7.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PRIM",
-      "name": "Primoris Services Corporation",
+      "ticker": "SHAK",
+      "name": "Shake Shack, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14706,
-      "price": 112.0,
-      "change_pct": "-44.81%",
+      "tweet_volume": 18294,
+      "price": 68.94,
+      "change_pct": "-28.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
+      "ticker": "RXT",
+      "name": "Rackspace Technology, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16157,
-      "price": 9.13,
-      "change_pct": "+12.64%",
+      "tweet_volume": 365778,
+      "price": 4.14,
+      "change_pct": "+82.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OSS",
-      "name": "One Stop Systems, Inc.",
+      "ticker": "FSLY",
+      "name": "Fastly, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25238,
-      "price": 15.56,
-      "change_pct": "+59.27%",
+      "tweet_volume": 60816,
+      "price": 19.65,
+      "change_pct": "-37.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JOBY",
-      "name": "Joby Aviation, Inc.",
+      "ticker": "PLNT",
+      "name": "Planet Fitness, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 62691,
-      "price": 9.94,
-      "change_pct": "+14.52%",
+      "tweet_volume": 21688,
+      "price": 43.19,
+      "change_pct": "-32.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FLEX",
-      "name": "Flex Ltd.",
+      "ticker": "U",
+      "name": "Unity Software Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21116,
-      "price": 127.22,
-      "change_pct": "+31.90%",
+      "tweet_volume": 42707,
+      "price": 26.84,
+      "change_pct": "-1.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SEDG",
-      "name": "SolarEdge Technologies, Inc.",
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12800,
-      "price": 40.04,
-      "change_pct": "-10.30%",
+      "tweet_volume": 35227,
+      "price": 85.89,
+      "change_pct": "-22.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KVYO",
-      "name": "Klaviyo, Inc. Series A",
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23626,
-      "price": 16.68,
-      "change_pct": "-28.50%",
+      "tweet_volume": 22009,
+      "price": 111.4,
+      "change_pct": "+23.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COMP",
-      "name": "Compass, Inc.",
+      "ticker": "HIMX",
+      "name": "Himax Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41112,
-      "price": 9.36,
-      "change_pct": "+28.86%",
+      "tweet_volume": 42323,
+      "price": 17.66,
+      "change_pct": "+43.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CDW",
-      "name": "CDW Corporation",
+      "ticker": "WHR",
+      "name": "Whirlpool Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6113,
-      "price": 107.82,
-      "change_pct": "-21.18%",
+      "tweet_volume": 18392,
+      "price": 47.57,
+      "change_pct": "-13.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

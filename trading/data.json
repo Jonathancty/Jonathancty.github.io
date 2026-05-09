@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-08T14:50:51.158140+00:00",
+  "updated_at": "2026-05-09T14:16:46.772139+00:00",
   "top_trending": {
-    "ticker": "IREN",
-    "name": "IREN LIMITED",
+    "ticker": "MRNA",
+    "name": "Moderna, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 135980,
-    "price": 60.98,
-    "change_pct": "+7.26%",
+    "tweet_volume": 51901,
+    "price": 54.35,
+    "change_pct": "+11.97%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,105 @@
   },
   "trending_list": [
     {
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
+      "ticker": "MRAM",
+      "name": "Everspin Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27293,
-      "price": 88.32,
-      "change_pct": "+93.52%",
+      "tweet_volume": 12372,
+      "price": 26.99,
+      "change_pct": "+25.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 81048,
-      "price": 96.4,
-      "change_pct": "+22.68%",
+      "tweet_volume": 4223985,
+      "price": 1.42,
+      "change_pct": "+0.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2270,
-      "price": 1669.28,
-      "change_pct": "-10.73%",
+      "tweet_volume": 12222120,
+      "price": 93.16,
+      "change_pct": "+1.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 57427,
-      "price": 112.42,
-      "change_pct": "-12.74%",
+      "tweet_volume": 40225,
+      "price": 28.97,
+      "change_pct": "+20.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21361,
-      "price": 197.08,
-      "change_pct": "-23.25%",
+      "tweet_volume": 2646160,
+      "price": 0.11,
+      "change_pct": "-0.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XYZ",
-      "name": "Block, Inc.",
+      "ticker": "DJT",
+      "name": "Trump Media & Technology Group ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12550,
-      "price": 73.96,
-      "change_pct": "+5.45%",
+      "tweet_volume": 12189,
+      "price": 8.93,
+      "change_pct": "-1.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TTD",
-      "name": "The Trade Desk, Inc.",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 47540,
-      "price": 21.86,
-      "change_pct": "-6.94%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HubSpot, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 8106,
-      "price": 191.61,
-      "change_pct": "-21.38%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TOST",
-      "name": "Toast, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 34733,
-      "price": 24.85,
-      "change_pct": "-15.42%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AKAM",
-      "name": "Akamai Technologies, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 23415,
-      "price": 139.82,
-      "change_pct": "+19.83%",
+      "tweet_volume": 54763,
+      "price": 28.27,
+      "change_pct": "+10.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

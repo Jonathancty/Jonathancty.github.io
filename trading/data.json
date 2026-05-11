@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-10T14:19:52.899639+00:00",
+  "updated_at": "2026-05-11T15:54:54.960118+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "MRAM",
+    "name": "Everspin Technologies, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 3105672,
-    "price": 1.43,
-    "change_pct": "+0.80%",
+    "tweet_volume": 37654,
+    "price": 39.48,
+    "change_pct": "+46.28%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor Corporati",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8366723,
-      "price": 93.83,
-      "change_pct": "+0.73%",
+      "tweet_volume": 96531,
+      "price": 22.42,
+      "change_pct": "+23.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 60888,
-      "price": 91.18,
-      "change_pct": "-2.58%",
+      "tweet_volume": 214811,
+      "price": 3.56,
+      "change_pct": "+13.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1673875,
-      "price": 0.11,
-      "change_pct": "-0.64%",
+      "tweet_volume": 83741,
+      "price": 56.71,
+      "change_pct": "+15.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "QS",
+      "name": "QuantumScape Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18724,
-      "price": 335.26,
-      "change_pct": "+5.03%",
+      "tweet_volume": 42662,
+      "price": 8.24,
+      "change_pct": "+9.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-CAD",
-      "name": "XRP CAD",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4246230,
-      "price": 1.96,
-      "change_pct": "+0.79%",
+      "tweet_volume": 38513,
+      "price": 45.77,
+      "change_pct": "+10.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PENG",
-      "name": "Penguin Solutions, Inc.",
+      "ticker": "B",
+      "name": "Barrick Mining Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10790,
-      "price": 44.23,
-      "change_pct": "+13.47%",
+      "tweet_volume": 31178,
+      "price": 46.87,
+      "change_pct": "+8.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HUT",
-      "name": "Hut 8 Corp.",
+      "ticker": "ELF",
+      "name": "e.l.f. Beauty, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13204,
-      "price": 98.46,
-      "change_pct": "-2.69%",
+      "tweet_volume": 7312,
+      "price": 56.02,
+      "change_pct": "-7.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LINK-USD",
-      "name": "Chainlink USD",
+      "ticker": "MNDY",
+      "name": "monday.com Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1059521,
-      "price": 10.54,
-      "change_pct": "+1.66%",
+      "tweet_volume": 11943,
+      "price": 75.84,
+      "change_pct": "+5.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SUI20947-USD",
-      "name": "Sui USD",
+      "ticker": "P",
+      "name": "Everpure, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2164990,
-      "price": 1.15,
-      "change_pct": "+7.33%",
+      "tweet_volume": 16829,
+      "price": 88.67,
+      "change_pct": "+13.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HBAR-USD",
-      "name": "Hedera USD",
+      "ticker": "CRCL",
+      "name": "Circle Internet Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 157688,
-      "price": 0.1,
-      "change_pct": "+2.79%",
+      "tweet_volume": 61528,
+      "price": 128.1,
+      "change_pct": "+12.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

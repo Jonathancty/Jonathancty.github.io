@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-11T15:54:54.960118+00:00",
+  "updated_at": "2026-05-12T15:39:22.319920+00:00",
   "top_trending": {
-    "ticker": "MRAM",
-    "name": "Everspin Technologies, Inc.",
+    "ticker": "QUBT",
+    "name": "Quantum Computing Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 37654,
-    "price": 39.48,
-    "change_pct": "+46.28%",
+    "tweet_volume": 252640,
+    "price": 11.82,
+    "change_pct": "+16.11%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "NVTS",
-      "name": "Navitas Semiconductor Corporati",
+      "ticker": "BZFD",
+      "name": "BuzzFeed, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 96531,
-      "price": 22.42,
-      "change_pct": "+23.19%",
+      "tweet_volume": 223346,
+      "price": 1.49,
+      "change_pct": "+103.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLUG",
-      "name": "Plug Power, Inc.",
+      "ticker": "ZBRA",
+      "name": "Zebra Technologies Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 214811,
-      "price": 3.56,
-      "change_pct": "+13.94%",
+      "tweet_volume": 2978,
+      "price": 254.09,
+      "change_pct": "+17.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
+      "ticker": "ERNA",
+      "name": "Ernexa Therapeutics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 83741,
-      "price": 56.71,
-      "change_pct": "+15.17%",
+      "tweet_volume": 34158,
+      "price": 13.07,
+      "change_pct": "+81.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QS",
-      "name": "QuantumScape Corporation",
+      "ticker": "SE",
+      "name": "Sea Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 42662,
-      "price": 8.24,
-      "change_pct": "+9.35%",
+      "tweet_volume": 20044,
+      "price": 94.5,
+      "change_pct": "+11.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
+      "ticker": "ONON",
+      "name": "On Holding AG",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 38513,
-      "price": 45.77,
-      "change_pct": "+10.95%",
+      "tweet_volume": 20751,
+      "price": 32.22,
+      "change_pct": "-5.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "B",
-      "name": "Barrick Mining Corporation",
+      "ticker": "GME",
+      "name": "GameStop Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 31178,
-      "price": 46.87,
-      "change_pct": "+8.66%",
+      "tweet_volume": 13432,
+      "price": 22.81,
+      "change_pct": "-1.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ELF",
-      "name": "e.l.f. Beauty, Inc.",
+      "ticker": "PSIX",
+      "name": "Power Solutions International, ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7312,
-      "price": 56.02,
-      "change_pct": "-7.95%",
+      "tweet_volume": 7754,
+      "price": 39.01,
+      "change_pct": "-37.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MNDY",
-      "name": "monday.com Ltd.",
+      "ticker": "PACS",
+      "name": "PACS Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11943,
-      "price": 75.84,
-      "change_pct": "+5.23%",
+      "tweet_volume": 3709,
+      "price": 38.94,
+      "change_pct": "+22.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
+      "ticker": "VG",
+      "name": "Venture Global, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16829,
-      "price": 88.67,
-      "change_pct": "+13.45%",
+      "tweet_volume": 38860,
+      "price": 13.04,
+      "change_pct": "+12.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRCL",
-      "name": "Circle Internet Group, Inc.",
+      "ticker": "UA",
+      "name": "Under Armour, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 61528,
-      "price": 128.1,
-      "change_pct": "+12.69%",
+      "tweet_volume": 11006,
+      "price": 4.83,
+      "change_pct": "-17.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-12T15:39:22.319920+00:00",
+  "updated_at": "2026-05-13T15:42:38.803492+00:00",
   "top_trending": {
-    "ticker": "QUBT",
-    "name": "Quantum Computing Inc.",
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 252640,
-    "price": 11.82,
-    "change_pct": "+16.11%",
+    "tweet_volume": 57466,
+    "price": 205.51,
+    "change_pct": "+14.74%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "BZFD",
-      "name": "BuzzFeed, Inc.",
+      "ticker": "WOLF",
+      "name": "Wolfspeed, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 223346,
-      "price": 1.49,
-      "change_pct": "+103.62%",
+      "tweet_volume": 44702,
+      "price": 65.8,
+      "change_pct": "+22.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZBRA",
-      "name": "Zebra Technologies Corporation",
+      "ticker": "NIO",
+      "name": "NIO Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2978,
-      "price": 254.09,
-      "change_pct": "+17.11%",
+      "tweet_volume": 89110,
+      "price": 6.51,
+      "change_pct": "+7.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ERNA",
-      "name": "Ernexa Therapeutics Inc.",
+      "ticker": "F",
+      "name": "Ford Motor Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 34158,
-      "price": 13.07,
-      "change_pct": "+81.28%",
+      "tweet_volume": 180295,
+      "price": 13.05,
+      "change_pct": "+8.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "WIX",
+      "name": "Wix.com Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20044,
-      "price": 94.5,
-      "change_pct": "+11.35%",
+      "tweet_volume": 14547,
+      "price": 53.19,
+      "change_pct": "-29.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONON",
-      "name": "On Holding AG",
+      "ticker": "EOSE",
+      "name": "Eos Energy Enterprises, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20751,
-      "price": 32.22,
-      "change_pct": "-5.36%",
+      "tweet_volume": 204105,
+      "price": 8.88,
+      "change_pct": "+9.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13432,
-      "price": 22.81,
-      "change_pct": "-1.55%",
+      "tweet_volume": 7931,
+      "price": 275.89,
+      "change_pct": "-6.03%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSIX",
-      "name": "Power Solutions International, ",
+      "ticker": "VNET",
+      "name": "VNET Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7754,
-      "price": 39.01,
-      "change_pct": "-37.53%",
+      "tweet_volume": 120294,
+      "price": 11.44,
+      "change_pct": "+26.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PACS",
-      "name": "PACS Group, Inc.",
+      "ticker": "QUCY",
+      "name": "Quantum Cyber N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3709,
-      "price": 38.94,
-      "change_pct": "+22.07%",
+      "tweet_volume": 599361,
+      "price": 0.54,
+      "change_pct": "+68.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VG",
-      "name": "Venture Global, Inc.",
+      "ticker": "BIDU",
+      "name": "Baidu, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 38860,
-      "price": 13.04,
-      "change_pct": "+12.18%",
+      "tweet_volume": 6387,
+      "price": 150.32,
+      "change_pct": "+7.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UA",
-      "name": "Under Armour, Inc.",
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11006,
-      "price": 4.83,
-      "change_pct": "-17.94%",
+      "tweet_volume": 7884,
+      "price": 245.91,
+      "change_pct": "+11.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

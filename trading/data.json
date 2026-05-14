@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-13T15:42:38.803492+00:00",
+  "updated_at": "2026-05-14T15:17:39.377706+00:00",
   "top_trending": {
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
+    "ticker": "POET",
+    "name": "POET Technologies Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 57466,
-    "price": 205.51,
-    "change_pct": "+14.74%",
+    "tweet_volume": 174912,
+    "price": 19.14,
+    "change_pct": "+33.19%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed, Inc.",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 44702,
-      "price": 65.8,
-      "change_pct": "+22.49%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NIO",
-      "name": "NIO Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 89110,
-      "price": 6.51,
-      "change_pct": "+7.15%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "F",
-      "name": "Ford Motor Company",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 180295,
-      "price": 13.05,
-      "change_pct": "+8.88%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "WIX",
-      "name": "Wix.com Ltd.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 14547,
-      "price": 53.19,
-      "change_pct": "-29.91%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "EOSE",
-      "name": "Eos Energy Enterprises, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 204105,
-      "price": 8.88,
-      "change_pct": "+9.63%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporatio",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7931,
-      "price": 275.89,
-      "change_pct": "-6.03%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VNET",
-      "name": "VNET Group, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 120294,
-      "price": 11.44,
-      "change_pct": "+26.77%",
+      "tweet_volume": 246392,
+      "price": 10.6,
+      "change_pct": "+19.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -128,39 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 599361,
-      "price": 0.54,
-      "change_pct": "+68.28%",
+      "tweet_volume": 405352,
+      "price": 3.21,
+      "change_pct": "+139.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu, Inc.",
+      "ticker": "CBRS-USD",
+      "name": "Cerebras Systems (Derivatives) USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6387,
-      "price": 150.32,
-      "change_pct": "+7.42%",
+      "tweet_volume": 2500,
+      "price": 341.56,
+      "change_pct": "+18.03%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor Ltd.",
+      "ticker": "CBRS",
+      "name": "CBRS",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7884,
-      "price": 245.91,
-      "change_pct": "+11.36%",
+      "tweet_volume": 2500,
+      "price": 185.0,
+      "change_pct": "+0.00%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KLAR",
+      "name": "Klarna Group plc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 39576,
+      "price": 15.68,
+      "change_pct": "+14.54%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 192467,
+      "price": 14.78,
+      "change_pct": "+0.47%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MOBX",
+      "name": "Mobix Labs, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 287060,
+      "price": 3.21,
+      "change_pct": "+84.77%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SNAL",
+      "name": "Snail, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 535273,
+      "price": 1.38,
+      "change_pct": "+173.85%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 253511,
+      "price": 14.51,
+      "change_pct": "+6.92%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AIIO",
+      "name": "Robo.ai Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 188846,
+      "price": 4.02,
+      "change_pct": "+54.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

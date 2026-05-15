@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Stress-Tester &amp; Dividend Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #06080d; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    .card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(51, 65, 85, 0.45);
+      backdrop-filter: blur(12px);
+    }
+    .card-glow { box-shadow: 0 0 0 1px rgba(16,185,129,0.15), 0 4px 24px rgba(0,0,0,0.4); }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #10b981 0%, #3b82f6 60%, #8b5cf6 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+    .data-input {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(51, 65, 85, 0.7);
+      color: #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 0.375rem 0.625rem;
+      font-size: 0.875rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .data-input:focus {
+      outline: none;
+      border-color: #10b981;
+      box-shadow: 0 0 0 2px rgba(16,185,129,0.2);
+    }
+    .data-input::placeholder { color: #475569; }
+
+    .ticker-input { font-family: 'JetBrains Mono', monospace; font-weight: 600; text-transform: uppercase; }
+
+    .spin { animation: spin 0.75s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    table { border-collapse: separate; border-spacing: 0; }
+    th {
+      background: rgba(8, 14, 28, 0.9);
+      color: #64748b;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.625rem 0.75rem;
+      position: sticky; top: 0;
+    }
+    td { padding: 0.5rem 0.75rem; border-bottom: 1px solid rgba(30, 41, 59, 0.7); }
+    tbody tr:hover td { background: rgba(30, 41, 59, 0.3); }
+    tbody tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 10px; border-radius: 9999px;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
+    }
+    .badge-green  { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.25); }
+    .badge-yellow { background: rgba(245,158,11,0.15);  color: #f59e0b; border: 1px solid rgba(245,158,11,0.25); }
+    .badge-red    { background: rgba(239,68,68,0.15);   color: #ef4444; border: 1px solid rgba(239,68,68,0.25); }
+    .badge-blue   { background: rgba(59,130,246,0.15);  color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.5rem 1rem; border-radius: 0.5rem;
+      font-size: 0.875rem; font-weight: 500;
+      background: #10b981; color: #fff;
+      transition: background 0.15s, transform 0.1s;
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: #059669; }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.5rem 1rem; border-radius: 0.5rem;
+      font-size: 0.875rem; font-weight: 500;
+      background: rgba(59,130,246,0.15); color: #60a5fa;
+      border: 1px solid rgba(59,130,246,0.3);
+      transition: background 0.15s; cursor: pointer;
+    }
+    .btn-secondary:hover { background: rgba(59,130,246,0.25); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.5rem 1rem; border-radius: 0.5rem;
+      font-size: 0.875rem; font-weight: 500;
+      background: rgba(51,65,85,0.3); color: #94a3b8;
+      border: 1px solid rgba(51,65,85,0.4);
+      transition: background 0.15s; cursor: pointer;
+    }
+    .btn-ghost:hover { background: rgba(51,65,85,0.5); color: #cbd5e1; }
+
+    .stat-card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(51, 65, 85, 0.4);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .progress-bar {
+      height: 6px; border-radius: 3px;
+      background: rgba(51,65,85,0.5);
+      overflow: hidden;
+    }
+    .progress-fill { height: 100%; border-radius: 3px; transition: width 0.6s ease; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeInUp 0.4s ease both; }
+    .fade-in-2 { animation: fadeInUp 0.4s 0.1s ease both; }
+    .fade-in-3 { animation: fadeInUp 0.4s 0.2s ease both; }
+  </style>
+</head>
+
+<body class="min-h-screen text-slate-100">
+
+<!-- ═══ NAV ═══ -->
+<nav class="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/90 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="font-bold text-sm text-white">Stress<span class="text-emerald-400">Test</span>Pro</span>
+        <span class="text-slate-600 mx-2 text-xs">|</span>
+        <span class="text-slate-400 text-xs">Portfolio Risk Analyzer</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span id="last-updated" class="text-xs text-slate-600 hidden"></span>
+      <span id="mode-badge" class="badge badge-yellow hidden">Demo Mode</span>
+      <a href="../" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">← Home</a>
+    </div>
+  </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-4 py-8 space-y-6">
+
+  <!-- ═══ HERO ═══ -->
+  <div class="text-center py-4 fade-in">
+    <div class="inline-flex items-center gap-2 badge badge-green mb-4">
+      <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+      Free &bull; Static Site Compatible &bull; LocalStorage Persistence
+    </div>
+    <h1 class="text-4xl font-bold mb-3">
+      <span class="gradient-text">Portfolio Stress-Tester</span><br>
+      <span class="text-white text-3xl">&amp; Dividend Tracker</span>
+    </h1>
+    <p class="text-slate-400 text-sm max-w-2xl mx-auto">
+      Simulate market crashes, project dividend income with compounding, and benchmark your portfolio against SPY and QQQ.
+      Data auto-saves to your browser.
+    </p>
+  </div>
+
+  <!-- ═══ PORTFOLIO INPUT ═══ -->
+  <div class="card rounded-xl overflow-hidden fade-in-2">
+    <div class="px-5 py-4 border-b border-slate-800/60 flex items-center justify-between">
+      <h2 class="text-sm font-semibold text-slate-200 flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+        </svg>
+        Your Portfolio
+      </h2>
+      <button onclick="addRow()" class="btn-primary py-1.5 text-xs">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        Add Stock
+      </button>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[600px]">
+        <thead>
+          <tr>
+            <th class="text-left w-8">#</th>
+            <th class="text-left">Ticker</th>
+            <th class="text-left">Company</th>
+            <th class="text-right">Shares</th>
+            <th class="text-right">Avg Cost ($)</th>
+            <th class="text-right w-12"></th>
+          </tr>
+        </thead>
+        <tbody id="portfolio-tbody"></tbody>
+      </table>
+    </div>
+    <div class="px-5 py-3 border-t border-slate-800/40 flex items-center gap-2 text-xs text-slate-500">
+      <svg class="w-3.5 h-3.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Portfolio auto-saves to LocalStorage. Supports any US-listed equity or ETF. Cost basis is optional (used for P&amp;L calculation).
+    </div>
+  </div>
+
+  <!-- ═══ DATA SOURCE ═══ -->
+  <div class="card rounded-xl p-5 fade-in-3">
+    <h2 class="text-sm font-semibold text-slate-200 mb-4 flex items-center gap-2">
+      <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+      Data Source
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+      <div class="md:col-span-2 space-y-2">
+        <label class="block text-xs text-slate-400">
+          Alpha Vantage API Key
+          <a href="https://www.alphavantage.co/support/#api-key" target="_blank" rel="noopener"
+            class="ml-1 text-blue-400 hover:text-blue-300 hover:underline">(get free key →)</a>
+        </label>
+        <div class="flex gap-2">
+          <input type="text" id="api-key" placeholder="e.g. ABCD1234EFGH5678" class="data-input flex-1">
+          <button onclick="fetchLiveData()" id="fetch-btn" class="btn-secondary whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+            </svg>
+            Fetch Live Data
+          </button>
+        </div>
+        <p class="text-xs text-slate-600">Free tier: 25 req/day. Fetches price, beta &amp; dividend yield via Alpha Vantage. Unknown tickers fall back to built-in estimates.</p>
+      </div>
+      <div class="space-y-2">
+        <label class="block text-xs text-slate-400">Or try the built-in sample</label>
+        <button onclick="loadDemoMode()" class="btn-primary w-full justify-center">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.347.347a3.001 3.001 0 01-2.48.953 3.001 3.001 0 01-2.48-.953l-.347-.347z"/>
+          </svg>
+          Load Demo Portfolio
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ STATUS ═══ -->
+  <div id="status-bar" class="hidden rounded-xl px-4 py-3 text-sm flex items-start gap-3"></div>
+
+  <!-- ═══ RESULTS (hidden until data loaded) ═══ -->
+  <div id="results" class="hidden space-y-6">
+
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="stat-card">
+        <p class="text-xs text-slate-500 mb-1">Portfolio Value</p>
+        <p class="text-2xl font-bold mono text-white" id="c-value">—</p>
+        <p class="text-xs text-slate-600 mt-1" id="c-cost">—</p>
+      </div>
+      <div class="stat-card">
+        <p class="text-xs text-slate-500 mb-1">Unrealized P&amp;L</p>
+        <p class="text-2xl font-bold mono" id="c-pnl">—</p>
+        <p class="text-xs mt-1" id="c-pnl-pct">—</p>
+      </div>
+      <div class="stat-card">
+        <p class="text-xs text-slate-500 mb-1">Portfolio Beta (β)</p>
+        <p class="text-2xl font-bold mono text-white" id="c-beta">—</p>
+        <p class="text-xs text-slate-600 mt-1" id="c-beta-desc">vs S&amp;P 500 β = 1.00</p>
+      </div>
+      <div class="stat-card">
+        <p class="text-xs text-slate-500 mb-1">Annual Dividends</p>
+        <p class="text-2xl font-bold mono text-emerald-400" id="c-div">—</p>
+        <p class="text-xs text-slate-600 mt-1" id="c-yield">Blended yield: —</p>
+      </div>
+    </div>
+
+    <!-- Holdings Table -->
+    <div class="card rounded-xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-800/60">
+        <h2 class="text-sm font-semibold text-slate-200">Holdings Detail</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[750px]">
+          <thead>
+            <tr>
+              <th class="text-left">Ticker</th>
+              <th class="text-left">Company</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Shares</th>
+              <th class="text-right">Value</th>
+              <th class="text-right">Weight</th>
+              <th class="text-right">P&amp;L</th>
+              <th class="text-right">Beta</th>
+              <th class="text-right">Div Yield</th>
+            </tr>
+          </thead>
+          <tbody id="holdings-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Stress Test Table -->
+    <div class="card rounded-xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-800/60 flex items-center gap-3">
+        <svg class="w-5 h-5 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+        </svg>
+        <div>
+          <h2 class="text-sm font-semibold text-slate-200">Stress Test Scenarios</h2>
+          <p class="text-xs text-slate-500">Beta-adjusted impact — your portfolio loss = market drop × portfolio β</p>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[640px]">
+          <thead>
+            <tr>
+              <th class="text-left">Scenario</th>
+              <th class="text-right">Market Drop</th>
+              <th class="text-right">Portfolio Drop (β-adj)</th>
+              <th class="text-right">Dollar Loss</th>
+              <th class="text-right">Remaining Value</th>
+              <th class="text-right">Recovery Needed</th>
+            </tr>
+          </thead>
+          <tbody id="stress-tbody"></tbody>
+        </table>
+      </div>
+      <div class="px-5 py-3 border-t border-slate-800/40 text-xs text-slate-600 flex items-start gap-2">
+        <svg class="w-3.5 h-3.5 text-yellow-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Individual stocks may deviate significantly from beta estimates. Assumes perfect negative correlation with the market. Not financial advice.
+      </div>
+    </div>
+
+    <!-- Charts Row 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card rounded-xl p-5">
+        <h2 class="text-sm font-semibold text-slate-200 mb-4">Portfolio Allocation</h2>
+        <div style="position:relative;height:280px;"><canvas id="chart-allocation"></canvas></div>
+      </div>
+      <div class="card rounded-xl p-5">
+        <h2 class="text-sm font-semibold text-slate-200 mb-4">Stress Test — Dollar Impact</h2>
+        <div style="position:relative;height:280px;"><canvas id="chart-stress"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Charts Row 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Dividend Snowball -->
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-sm font-semibold text-slate-200">5-Year Dividend Snowball</h2>
+          <span class="text-xs text-slate-500">+5% annual growth, reinvested</span>
+        </div>
+        <div style="position:relative;height:260px;"><canvas id="chart-snowball"></canvas></div>
+        <div id="snowball-stats" class="grid grid-cols-3 gap-3 mt-4"></div>
+      </div>
+
+      <!-- Benchmark Comparison -->
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-sm font-semibold text-slate-200">Benchmark Comparison</h2>
+          <span class="text-xs text-slate-500">vs SPY &amp; QQQ</span>
+        </div>
+        <div style="position:relative;height:260px;"><canvas id="chart-benchmark"></canvas></div>
+        <p class="text-xs text-slate-600 text-center mt-3">Radar of normalized portfolio metrics vs major benchmarks</p>
+      </div>
+    </div>
+
+    <!-- Dividend Income Breakdown -->
+    <div class="card rounded-xl p-5">
+      <h2 class="text-sm font-semibold text-slate-200 mb-4 flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        Dividend Income by Holding
+      </h2>
+      <div id="div-bars" class="space-y-3"></div>
+    </div>
+
+  </div><!-- /results -->
+</main>
+
+<footer class="border-t border-slate-800/50 mt-16 py-6 text-center text-xs text-slate-600">
+  <p>StressTestPro &bull; Educational use only &bull; Not financial advice &bull; Data may be delayed or estimated</p>
+  <p class="mt-1">Powered by Chart.js &amp; Tailwind CSS &bull;
+    <a href="../" class="text-slate-500 hover:text-slate-300 transition-colors">← Back to portfolio</a>
+  </p>
+</footer>
+
+<script>
+// ══════════════════════════════════════════
+//  MOCK DATABASE — realistic 2024 data
+// ══════════════════════════════════════════
+const DB = {
+  AAPL:  { name: 'Apple Inc.',            price: 189.30, beta: 1.20, dividendYield: 0.55, sector: 'Technology' },
+  MSFT:  { name: 'Microsoft Corp.',       price: 378.85, beta: 0.90, dividendYield: 0.73, sector: 'Technology' },
+  NVDA:  { name: 'NVIDIA Corp.',          price: 875.40, beta: 1.75, dividendYield: 0.04, sector: 'Technology' },
+  GOOGL: { name: 'Alphabet Inc.',         price: 175.20, beta: 1.05, dividendYield: 0.00, sector: 'Technology' },
+  GOOG:  { name: 'Alphabet Inc. (C)',     price: 176.50, beta: 1.05, dividendYield: 0.00, sector: 'Technology' },
+  AMZN:  { name: 'Amazon.com Inc.',       price: 185.60, beta: 1.15, dividendYield: 0.00, sector: 'Consumer Disc.' },
+  META:  { name: 'Meta Platforms',        price: 512.30, beta: 1.30, dividendYield: 0.42, sector: 'Technology' },
+  TSLA:  { name: 'Tesla Inc.',            price: 248.50, beta: 2.10, dividendYield: 0.00, sector: 'Consumer Disc.' },
+  NFLX:  { name: 'Netflix Inc.',          price: 680.20, beta: 1.40, dividendYield: 0.00, sector: 'Communication' },
+  AMD:   { name: 'AMD Inc.',              price: 165.40, beta: 1.80, dividendYield: 0.00, sector: 'Technology' },
+  INTC:  { name: 'Intel Corp.',           price: 32.60,  beta: 1.05, dividendYield: 1.23, sector: 'Technology' },
+  CRM:   { name: 'Salesforce Inc.',       price: 285.40, beta: 1.20, dividendYield: 0.00, sector: 'Technology' },
+  ORCL:  { name: 'Oracle Corp.',          price: 125.80, beta: 1.00, dividendYield: 1.27, sector: 'Technology' },
+  JPM:   { name: 'JPMorgan Chase',        price: 198.40, beta: 1.10, dividendYield: 2.20, sector: 'Financials' },
+  BAC:   { name: 'Bank of America',       price: 40.25,  beta: 1.35, dividendYield: 2.68, sector: 'Financials' },
+  GS:    { name: 'Goldman Sachs',         price: 485.60, beta: 1.40, dividendYield: 2.53, sector: 'Financials' },
+  WFC:   { name: 'Wells Fargo',           price: 57.30,  beta: 1.20, dividendYield: 2.45, sector: 'Financials' },
+  MS:    { name: 'Morgan Stanley',        price: 98.40,  beta: 1.30, dividendYield: 3.50, sector: 'Financials' },
+  JNJ:   { name: 'Johnson & Johnson',     price: 152.40, beta: 0.55, dividendYield: 3.15, sector: 'Healthcare' },
+  PFE:   { name: 'Pfizer Inc.',           price: 28.30,  beta: 0.60, dividendYield: 6.40, sector: 'Healthcare' },
+  UNH:   { name: 'UnitedHealth Group',    price: 490.20, beta: 0.75, dividendYield: 1.65, sector: 'Healthcare' },
+  ABBV:  { name: 'AbbVie Inc.',           price: 178.30, beta: 0.70, dividendYield: 3.80, sector: 'Healthcare' },
+  MRK:   { name: 'Merck & Co.',           price: 128.50, beta: 0.65, dividendYield: 2.60, sector: 'Healthcare' },
+  KO:    { name: 'Coca-Cola Co.',         price: 61.20,  beta: 0.55, dividendYield: 3.10, sector: 'Cons. Staples' },
+  PG:    { name: 'Procter & Gamble',      price: 162.80, beta: 0.50, dividendYield: 2.42, sector: 'Cons. Staples' },
+  WMT:   { name: 'Walmart Inc.',          price: 68.30,  beta: 0.60, dividendYield: 1.22, sector: 'Cons. Staples' },
+  COST:  { name: 'Costco Wholesale',      price: 798.20, beta: 0.80, dividendYield: 0.58, sector: 'Cons. Staples' },
+  XOM:   { name: 'Exxon Mobil Corp.',     price: 112.50, beta: 0.85, dividendYield: 3.70, sector: 'Energy' },
+  CVX:   { name: 'Chevron Corp.',         price: 153.20, beta: 0.90, dividendYield: 4.30, sector: 'Energy' },
+  VZ:    { name: 'Verizon Comm.',         price: 40.85,  beta: 0.40, dividendYield: 6.85, sector: 'Communication' },
+  T:     { name: 'AT&T Inc.',             price: 18.20,  beta: 0.60, dividendYield: 6.90, sector: 'Communication' },
+  O:     { name: 'Realty Income Corp.',   price: 53.20,  beta: 0.70, dividendYield: 5.80, sector: 'Real Estate' },
+  SPY:   { name: 'SPDR S&P 500 ETF',     price: 524.50, beta: 1.00, dividendYield: 1.25, sector: 'ETF' },
+  QQQ:   { name: 'Invesco QQQ Trust',     price: 448.20, beta: 1.15, dividendYield: 0.65, sector: 'ETF' },
+  VTI:   { name: 'Vanguard Total Mkt.',   price: 235.40, beta: 1.00, dividendYield: 1.45, sector: 'ETF' },
+  SCHD:  { name: 'Schwab US Dividend',    price: 77.80,  beta: 0.80, dividendYield: 3.60, sector: 'ETF' },
+  VYM:   { name: 'Vanguard High Div.',    price: 115.30, beta: 0.75, dividendYield: 3.10, sector: 'ETF' },
+  BRK:   { name: 'Berkshire Hathaway B',  price: 388.20, beta: 0.90, dividendYield: 0.00, sector: 'Financials' },
+  BRKB:  { name: 'Berkshire Hathaway B',  price: 388.20, beta: 0.90, dividendYield: 0.00, sector: 'Financials' },
+};
+
+const DEMO = [
+  { ticker: 'AAPL',  shares: 50,  costBasis: 145.20 },
+  { ticker: 'MSFT',  shares: 30,  costBasis: 285.50 },
+  { ticker: 'NVDA',  shares: 20,  costBasis: 220.30 },
+  { ticker: 'JNJ',   shares: 40,  costBasis: 158.90 },
+  { ticker: 'KO',    shares: 60,  costBasis: 58.30  },
+];
+
+const COLORS = ['#10b981','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#06b6d4','#ec4899','#84cc16','#f97316','#6366f1'];
+
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let portfolio = [];
+let stockData = {};
+let charts = {};
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  loadPortfolio();
+  if (portfolio.length === 0) addRow();
+  renderPortfolioTable();
+
+  const saved = localStorage.getItem('stress_apikey');
+  if (saved) document.getElementById('api-key').value = saved;
+  document.getElementById('api-key').addEventListener('change', e =>
+    localStorage.setItem('stress_apikey', e.target.value.trim()));
+});
+
+// ══════════════════════════════════════════
+//  PORTFOLIO CRUD
+// ══════════════════════════════════════════
+function loadPortfolio() {
+  try {
+    const raw = localStorage.getItem('stress_portfolio_v3');
+    if (raw) portfolio = JSON.parse(raw);
+  } catch { portfolio = []; }
+}
+
+function savePortfolio() {
+  localStorage.setItem('stress_portfolio_v3', JSON.stringify(portfolio));
+}
+
+function addRow(ticker = '', shares = '', costBasis = '') {
+  portfolio.push({ ticker, shares: shares === '' ? '' : Number(shares), costBasis: costBasis === '' ? '' : Number(costBasis) });
+  renderPortfolioTable();
+  savePortfolio();
+}
+
+function removeRow(i) {
+  portfolio.splice(i, 1);
+  renderPortfolioTable();
+  savePortfolio();
+}
+
+function updateField(i, field, val) {
+  if (!portfolio[i]) return;
+  if (field === 'ticker') { portfolio[i].ticker = val.toUpperCase().trim(); }
+  else { portfolio[i][field] = val === '' ? '' : Number(val); }
+  // refresh name in row
+  if (field === 'ticker') renderPortfolioTable();
+  savePortfolio();
+}
+
+function renderPortfolioTable() {
+  const tbody = document.getElementById('portfolio-tbody');
+  if (!portfolio.length) {
+    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-slate-500 text-sm">No stocks added yet.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = portfolio.map((r, i) => {
+    const info = DB[r.ticker] || null;
+    return `<tr>
+      <td class="text-slate-600 text-xs w-8">${i + 1}</td>
+      <td>
+        <input type="text" value="${r.ticker}" placeholder="AAPL" maxlength="6"
+          class="data-input ticker-input w-[72px]"
+          oninput="this.value=this.value.toUpperCase()"
+          onchange="updateField(${i},'ticker',this.value)">
+      </td>
+      <td class="text-slate-400 text-xs max-w-[180px] truncate">${info ? info.name : (r.ticker ? '<span class="text-red-400">Unknown ticker</span>' : '<span class="text-slate-600">Enter ticker →</span>')}</td>
+      <td class="text-right">
+        <input type="number" value="${r.shares}" placeholder="100" min="0" step="any"
+          class="data-input w-24 text-right"
+          onchange="updateField(${i},'shares',this.value)">
+      </td>
+      <td class="text-right">
+        <div class="flex items-center justify-end gap-1">
+          <span class="text-slate-500 text-sm">$</span>
+          <input type="number" value="${r.costBasis}" placeholder="0.00" min="0" step="0.01"
+            class="data-input w-28 text-right"
+            onchange="updateField(${i},'costBasis',this.value)">
+        </div>
+      </td>
+      <td class="text-right">
+        <button onclick="removeRow(${i})"
+          class="text-slate-600 hover:text-red-400 transition-colors p-1 rounded hover:bg-red-400/10">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+          </svg>
+        </button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════
+//  DEMO MODE
+// ══════════════════════════════════════════
+function loadDemoMode() {
+  portfolio = JSON.parse(JSON.stringify(DEMO));
+  stockData = {};
+  for (const r of portfolio) {
+    if (DB[r.ticker]) stockData[r.ticker] = { ...DB[r.ticker], _src: 'demo' };
+  }
+  renderPortfolioTable();
+  savePortfolio();
+
+  const badge = document.getElementById('mode-badge');
+  badge.textContent = 'Demo Mode';
+  badge.className = 'badge badge-yellow';
+  badge.classList.remove('hidden');
+
+  showStatus('success', 'Demo portfolio loaded with 5 sample stocks (AAPL, MSFT, NVDA, JNJ, KO).');
+  renderResults();
+}
+
+// ══════════════════════════════════════════
+//  LIVE DATA FETCH (Alpha Vantage)
+// ══════════════════════════════════════════
+async function fetchLiveData() {
+  const key = document.getElementById('api-key').value.trim();
+  if (!key) { showStatus('error', 'Please enter an Alpha Vantage API key, or use "Load Demo Portfolio".'); return; }
+
+  const validRows = portfolio.filter(r => r.ticker && r.shares > 0);
+  if (!validRows.length) { showStatus('error', 'Add at least one stock with a ticker and share count.'); return; }
+
+  const btn = document.getElementById('fetch-btn');
+  btn.innerHTML = `<svg class="w-4 h-4 spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg> Fetching…`;
+  btn.disabled = true;
+
+  showStatus('info', `Fetching live data for ${validRows.length} ticker(s) — this may take a moment…`);
+  stockData = {};
+  let ok = 0, fallback = [], failed = [];
+
+  for (const r of validRows) {
+    try {
+      const [qRes, ovRes] = await Promise.all([
+        fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${r.ticker}&apikey=${key}`),
+        fetch(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${r.ticker}&apikey=${key}`)
+      ]);
+      const q = await qRes.json();
+      const ov = await ovRes.json();
+      const quote = q['Global Quote'];
+
+      if (quote && quote['05. price'] && parseFloat(quote['05. price']) > 0) {
+        stockData[r.ticker] = {
+          name: ov.Name || r.ticker,
+          price: parseFloat(quote['05. price']),
+          beta: parseFloat(ov.Beta) || DB[r.ticker]?.beta || 1.0,
+          dividendYield: (parseFloat(ov.DividendYield) || 0) * 100,
+          sector: ov.Sector || DB[r.ticker]?.sector || 'Unknown',
+          _src: 'live',
+        };
+        ok++;
+      } else if (DB[r.ticker]) {
+        stockData[r.ticker] = { ...DB[r.ticker], _src: 'mock' };
+        fallback.push(r.ticker);
+      } else {
+        failed.push(r.ticker);
+      }
+    } catch {
+      if (DB[r.ticker]) { stockData[r.ticker] = { ...DB[r.ticker], _src: 'mock' }; fallback.push(r.ticker); }
+      else failed.push(r.ticker);
+    }
+    await new Promise(res => setTimeout(res, 300));
+  }
+
+  btn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg> Fetch Live Data`;
+  btn.disabled = false;
+
+  const parts = [];
+  if (ok) parts.push(`${ok} live`);
+  if (fallback.length) parts.push(`${fallback.length} fallback (${fallback.join(', ')})`);
+  if (failed.length) parts.push(`${failed.length} unknown (${failed.join(', ')})`);
+
+  const badge = document.getElementById('mode-badge');
+  badge.textContent = ok > 0 ? 'Live Data' : 'Estimated Data';
+  badge.className = `badge ${ok > 0 ? 'badge-blue' : 'badge-yellow'}`;
+  badge.classList.remove('hidden');
+
+  showStatus(failed.length && !ok ? 'warning' : 'success', 'Data loaded: ' + parts.join(' · '));
+  renderResults();
+}
+
+// ══════════════════════════════════════════
+//  CALCULATIONS
+// ══════════════════════════════════════════
+function holdings() {
+  return portfolio.filter(r => r.ticker && r.shares > 0 && stockData[r.ticker]);
+}
+
+function totalValue(hs) {
+  return hs.reduce((s, r) => s + stockData[r.ticker].price * r.shares, 0);
+}
+
+function totalCost(hs) {
+  return hs.reduce((s, r) => s + (r.costBasis > 0 ? r.costBasis * r.shares : 0), 0);
+}
+
+function weightedBeta(hs, tv) {
+  return hs.reduce((s, r) => {
+    const w = (stockData[r.ticker].price * r.shares) / tv;
+    return s + w * (stockData[r.ticker].beta || 1);
+  }, 0);
+}
+
+function annualDividends(hs) {
+  return hs.reduce((s, r) => {
+    const d = stockData[r.ticker];
+    return s + d.price * r.shares * (d.dividendYield / 100);
+  }, 0);
+}
+
+// ══════════════════════════════════════════
+//  RENDER RESULTS
+// ══════════════════════════════════════════
+function renderResults() {
+  const hs = holdings();
+  if (!hs.length) { showStatus('error', 'No recognized tickers with data. Check your portfolio.'); return; }
+
+  const tv   = totalValue(hs);
+  const tc   = totalCost(hs);
+  const beta = weightedBeta(hs, tv);
+  const div  = annualDividends(hs);
+  const pnl  = tc > 0 ? tv - tc : null;
+  const pnlp = tc > 0 ? ((tv - tc) / tc) * 100 : null;
+
+  // ── Summary cards ──
+  set('c-value', fmtDollar(tv));
+  set('c-cost',  tc > 0 ? 'Cost basis: ' + fmtDollar(tc) : 'No cost basis entered');
+
+  const pnlEl = document.getElementById('c-pnl');
+  const pnlPctEl = document.getElementById('c-pnl-pct');
+  if (pnl !== null) {
+    pnlEl.textContent = (pnl >= 0 ? '+' : '') + fmtDollar(pnl);
+    pnlEl.className = 'text-2xl font-bold mono ' + (pnl >= 0 ? 'text-emerald-400' : 'text-red-400');
+    pnlPctEl.textContent = (pnlp >= 0 ? '+' : '') + pnlp.toFixed(2) + '% total return';
+    pnlPctEl.className = 'text-xs mt-1 ' + (pnl >= 0 ? 'text-emerald-600' : 'text-red-600');
+  } else {
+    pnlEl.textContent = '—';
+    pnlEl.className = 'text-2xl font-bold mono text-slate-500';
+    pnlPctEl.textContent = 'Enter cost basis to see P&L';
+    pnlPctEl.className = 'text-xs mt-1 text-slate-600';
+  }
+
+  set('c-beta', beta.toFixed(2));
+  set('c-beta-desc',
+    beta < 0.7  ? 'Defensive — moves less than the market' :
+    beta < 1.15 ? 'Moderate — closely tracks the market' :
+    beta < 1.5  ? 'Aggressive — amplified market swings' :
+                  'High-risk — very sensitive to market moves');
+
+  set('c-div', fmtDollar(div));
+  set('c-yield', tv > 0
+    ? `Blended yield: ${((div / tv) * 100).toFixed(2)}% · $${(div / 12).toFixed(0)}/mo`
+    : 'No yield data');
+
+  // ── Holdings table ──
+  renderHoldingsTable(hs, tv);
+
+  // ── Stress test table ──
+  renderStressTable(tv, beta);
+
+  // ── Charts ──
+  renderAllocChart(hs, tv);
+  renderStressChart(tv, beta);
+  renderSnowballChart(div);
+  renderBenchmarkChart(beta, div, tv);
+  renderDivBars(hs, div);
+
+  document.getElementById('results').classList.remove('hidden');
+  document.getElementById('last-updated').textContent = 'Updated ' + new Date().toLocaleTimeString();
+  document.getElementById('last-updated').classList.remove('hidden');
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderHoldingsTable(hs, tv) {
+  document.getElementById('holdings-tbody').innerHTML = hs.map(r => {
+    const d = stockData[r.ticker];
+    const val  = d.price * r.shares;
+    const w    = (val / tv) * 100;
+    const pnl  = r.costBasis > 0 ? (d.price - r.costBasis) * r.shares : null;
+    const pnlp = r.costBasis > 0 ? ((d.price - r.costBasis) / r.costBasis) * 100 : null;
+    const srcDot = d._src === 'live' ? '<span class="text-blue-400 text-xs" title="Live data">●</span>' :
+                   d._src === 'demo' ? '<span class="text-yellow-400 text-xs" title="Demo data">●</span>' :
+                                       '<span class="text-slate-600 text-xs" title="Estimated data">●</span>';
+    return `<tr>
+      <td class="mono font-semibold text-white">${r.ticker} ${srcDot}</td>
+      <td class="text-slate-400 text-xs max-w-[160px] truncate">${d.name}</td>
+      <td class="text-right mono">${fmtPrice(d.price)}</td>
+      <td class="text-right text-slate-300 mono">${Number(r.shares).toLocaleString()}</td>
+      <td class="text-right mono font-semibold">${fmtDollar(val)}</td>
+      <td class="text-right">
+        <div class="flex items-center justify-end gap-2">
+          <div class="progress-bar w-12"><div class="progress-fill bg-blue-500" style="width:${Math.min(w,100)}%"></div></div>
+          <span class="text-xs text-slate-300 w-10 text-right">${w.toFixed(1)}%</span>
+        </div>
+      </td>
+      <td class="text-right text-xs mono">
+        ${pnl !== null
+          ? `<span class="${pnl >= 0 ? 'text-emerald-400' : 'text-red-400'}">${pnl >= 0 ? '+' : ''}${fmtDollar(pnl)}<br>(${pnlp >= 0 ? '+' : ''}${pnlp.toFixed(1)}%)</span>`
+          : '<span class="text-slate-600">—</span>'}
+      </td>
+      <td class="text-right">
+        <span class="mono text-xs ${betaClass(d.beta)}">${d.beta.toFixed(2)}</span>
+      </td>
+      <td class="text-right text-xs ${d.dividendYield > 0 ? 'text-emerald-400 mono' : 'text-slate-600'}">
+        ${d.dividendYield > 0 ? d.dividendYield.toFixed(2) + '%' : '—'}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function betaClass(b) {
+  if (b < 0.7)  return 'text-blue-400';
+  if (b < 1.2)  return 'text-slate-300';
+  if (b < 1.6)  return 'text-yellow-400';
+  return 'text-red-400';
+}
+
+function renderStressTable(tv, beta) {
+  const scenarios = [
+    { label: 'Mild Correction',    icon: '🟡', mktDrop: 0.10 },
+    { label: 'Moderate Bear Mkt',  icon: '🟠', mktDrop: 0.20 },
+    { label: 'Severe Crash (-50%)',icon: '🔴', mktDrop: 0.50 },
+  ];
+  document.getElementById('stress-tbody').innerHTML = scenarios.map(s => {
+    const portDrop  = s.mktDrop * beta;
+    const loss      = tv * portDrop;
+    const remaining = tv - loss;
+    const recovery  = remaining > 0 ? ((tv / remaining) - 1) * 100 : Infinity;
+    return `<tr>
+      <td class="font-medium text-slate-200 py-3">${s.icon} ${s.label}</td>
+      <td class="text-right text-red-400 mono font-semibold">-${(s.mktDrop * 100).toFixed(0)}%</td>
+      <td class="text-right mono font-bold text-red-400">-${(portDrop * 100).toFixed(1)}%</td>
+      <td class="text-right mono font-semibold text-red-400">-${fmtDollar(loss)}</td>
+      <td class="text-right mono font-semibold text-slate-200">${fmtDollar(remaining)}</td>
+      <td class="text-right mono text-yellow-400">
+        ${isFinite(recovery) ? '+' + recovery.toFixed(1) + '%' : '∞'}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════
+//  CHARTS
+// ══════════════════════════════════════════
+function killChart(id) {
+  if (charts[id]) { charts[id].destroy(); delete charts[id]; }
+}
+
+function renderAllocChart(hs, tv) {
+  killChart('a');
+  const ctx = document.getElementById('chart-allocation').getContext('2d');
+  charts['a'] = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: hs.map(r => r.ticker),
+      datasets: [{
+        data: hs.map(r => +((stockData[r.ticker].price * r.shares / tv) * 100).toFixed(2)),
+        backgroundColor: COLORS.slice(0, hs.length),
+        borderColor: '#0f172a',
+        borderWidth: 3,
+        hoverBorderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      cutout: '62%',
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: { color: '#94a3b8', font: { size: 11 }, padding: 10, usePointStyle: true, pointStyleWidth: 8 }
+        },
+        tooltip: {
+          callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed.toFixed(1)}%` }
+        }
+      }
+    }
+  });
+}
+
+function renderStressChart(tv, beta) {
+  killChart('s');
+  const ctx = document.getElementById('chart-stress').getContext('2d');
+  const labels = ['-10% Market', '-20% Market', '-50% Market'];
+  const mktLoss  = [0.10, 0.20, 0.50].map(p => +(tv * p / 1000).toFixed(1));
+  const portLoss = [0.10, 0.20, 0.50].map(p => +(tv * p * beta / 1000).toFixed(1));
+
+  charts['s'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Market (β=1.0)',
+          data: mktLoss,
+          backgroundColor: 'rgba(239,68,68,0.35)',
+          borderColor: '#ef4444',
+          borderWidth: 1.5,
+          borderRadius: 4,
+        },
+        {
+          label: `Your Portfolio (β=${beta.toFixed(2)})`,
+          data: portLoss,
+          backgroundColor: 'rgba(245,158,11,0.35)',
+          borderColor: '#f59e0b',
+          borderWidth: 1.5,
+          borderRadius: 4,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
+        tooltip: {
+          callbacks: { label: ctx => ` ${ctx.dataset.label}: -$${ctx.parsed.y.toFixed(1)}K` }
+        }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(51,65,85,0.25)' }, ticks: { color: '#64748b' } },
+        y: {
+          grid: { color: 'rgba(51,65,85,0.25)' },
+          ticks: { color: '#64748b', callback: v => '-$' + v.toFixed(0) + 'K' }
+        }
+      }
+    }
+  });
+}
+
+function renderSnowballChart(baseDiv) {
+  killChart('sn');
+  const ctx = document.getElementById('chart-snowball').getContext('2d');
+  const G = 0.05;
+  const years = [0, 1, 2, 3, 4, 5];
+  let cum = 0;
+  const annual = [], cumulative = [];
+  years.forEach(y => {
+    const inc = baseDiv * Math.pow(1 + G, y);
+    annual.push(+inc.toFixed(2));
+    cum += inc;
+    cumulative.push(+cum.toFixed(2));
+  });
+
+  charts['sn'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: years.map(y => y === 0 ? 'Now' : 'Yr ' + y),
+      datasets: [
+        {
+          label: 'Annual Income',
+          data: annual,
+          backgroundColor: 'rgba(16,185,129,0.55)',
+          borderColor: '#10b981',
+          borderWidth: 1.5,
+          borderRadius: 4,
+          yAxisID: 'y',
+          order: 2,
+        },
+        {
+          label: 'Cumulative Income',
+          data: cumulative,
+          type: 'line',
+          borderColor: '#3b82f6',
+          backgroundColor: 'rgba(59,130,246,0.08)',
+          fill: true,
+          tension: 0.4,
+          pointRadius: 5,
+          pointBackgroundColor: '#3b82f6',
+          yAxisID: 'y2',
+          order: 1,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
+        tooltip: {
+          callbacks: { label: ctx => ` ${ctx.dataset.label}: ${fmtDollar(ctx.parsed.y)}` }
+        }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(51,65,85,0.25)' }, ticks: { color: '#64748b' } },
+        y: {
+          position: 'left',
+          grid: { color: 'rgba(51,65,85,0.25)' },
+          ticks: { color: '#64748b', callback: v => '$' + fmtK(v) }
+        },
+        y2: {
+          position: 'right',
+          grid: { display: false },
+          ticks: { color: '#60a5fa', callback: v => '$' + fmtK(v) }
+        }
+      }
+    }
+  });
+
+  // Mini stats
+  document.getElementById('snowball-stats').innerHTML = [
+    { label: 'Year 1 Income', val: annual[1], cls: 'text-emerald-400' },
+    { label: 'Year 5 Income', val: annual[5], cls: 'text-emerald-400' },
+    { label: '5-Yr Total',    val: cumulative[5], cls: 'text-blue-400' },
+  ].map(s => `
+    <div class="bg-slate-800/40 rounded-lg p-3 text-center">
+      <p class="text-xs text-slate-500 mb-1">${s.label}</p>
+      <p class="text-sm font-bold mono ${s.cls}">${fmtDollar(s.val)}</p>
+    </div>
+  `).join('');
+}
+
+function renderBenchmarkChart(beta, div, tv) {
+  killChart('b');
+  const ctx = document.getElementById('chart-benchmark').getContext('2d');
+  const portYield = tv > 0 ? (div / tv) * 100 : 0;
+
+  function norm(v, lo, hi) { return Math.min(5, Math.max(0, ((v - lo) / (hi - lo)) * 5)); }
+
+  // Metrics: Beta Risk | Income | Defensiveness | Growth Tilt | Stability
+  const port = [
+    norm(beta, 0, 2.5),
+    norm(portYield, 0, 7),
+    norm(2.5 - beta, 0, 2.5),
+    norm(Math.max(0, beta - 0.8), 0, 1.7),
+    norm(2.5 / Math.max(beta, 0.1), 0, 6),
+  ];
+  const spy = [norm(1.0,0,2.5), norm(1.25,0,7), norm(1.5,0,2.5), norm(0.2,0,1.7), norm(2.5,0,6)];
+  const qqq = [norm(1.15,0,2.5), norm(0.65,0,7), norm(1.35,0,2.5), norm(0.35,0,1.7), norm(2.17,0,6)];
+
+  charts['b'] = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Beta Risk', 'Income Yield', 'Defensiveness', 'Growth Tilt', 'Stability'],
+      datasets: [
+        { label: 'Your Portfolio', data: port, backgroundColor: 'rgba(16,185,129,0.2)', borderColor: '#10b981', pointBackgroundColor: '#10b981', pointRadius: 4, borderWidth: 2 },
+        { label: 'SPY (S&P 500)', data: spy, backgroundColor: 'rgba(59,130,246,0.15)', borderColor: '#3b82f6', pointBackgroundColor: '#3b82f6', pointRadius: 4, borderWidth: 2 },
+        { label: 'QQQ (Nasdaq)', data: qqq, backgroundColor: 'rgba(245,158,11,0.1)', borderColor: '#f59e0b', pointBackgroundColor: '#f59e0b', pointRadius: 4, borderWidth: 2, borderDash: [5,5] },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: '#94a3b8', font: { size: 10 }, padding: 12, usePointStyle: true }
+        }
+      },
+      scales: {
+        r: {
+          min: 0, max: 5,
+          ticks: { display: false, stepSize: 1 },
+          grid: { color: 'rgba(51,65,85,0.4)' },
+          pointLabels: { color: '#64748b', font: { size: 10 } },
+          angleLines: { color: 'rgba(51,65,85,0.35)' },
+        }
+      }
+    }
+  });
+}
+
+function renderDivBars(hs, totalDiv) {
+  const payers = hs
+    .filter(r => stockData[r.ticker].dividendYield > 0)
+    .map(r => {
+      const d = stockData[r.ticker];
+      const ann = d.price * r.shares * d.dividendYield / 100;
+      return { ticker: r.ticker, ann, monthly: ann / 12, yld: d.dividendYield };
+    })
+    .sort((a, b) => b.ann - a.ann);
+
+  const container = document.getElementById('div-bars');
+  if (!payers.length) {
+    container.innerHTML = `<p class="text-slate-500 text-sm text-center py-6">None of your current holdings pay dividends.</p>`;
+    return;
+  }
+
+  container.innerHTML = payers.map((p, i) => {
+    const pct = totalDiv > 0 ? (p.ann / totalDiv) * 100 : 0;
+    const color = COLORS[i % COLORS.length];
+    return `<div class="flex items-center gap-3">
+      <span class="mono font-semibold text-white text-xs w-14 flex-shrink-0">${p.ticker}</span>
+      <div class="flex-1 progress-bar" style="background:rgba(51,65,85,0.4)">
+        <div class="progress-fill" style="width:${pct}%;background:${color}40;border-right:2px solid ${color}"></div>
+      </div>
+      <div class="flex items-center gap-4 text-xs flex-shrink-0">
+        <span class="mono text-emerald-400 w-20 text-right">${fmtDollar(p.ann)}/yr</span>
+        <span class="mono text-slate-500 w-16 text-right">${fmtDollar(p.monthly)}/mo</span>
+        <span class="text-slate-400 w-12 text-right">${p.yld.toFixed(2)}%</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════
+//  UTILS
+// ══════════════════════════════════════════
+function fmtDollar(v) {
+  const a = Math.abs(v), s = v < 0 ? '-' : '';
+  if (a >= 1e6) return s + '$' + (a / 1e6).toFixed(2) + 'M';
+  if (a >= 1e3) return s + '$' + (a / 1e3).toFixed(1) + 'K';
+  return s + '$' + a.toFixed(2);
+}
+
+function fmtPrice(v) {
+  return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function fmtK(v) {
+  const a = Math.abs(v);
+  if (a >= 1e6) return (v / 1e6).toFixed(1) + 'M';
+  if (a >= 1e3) return (v / 1e3).toFixed(0) + 'K';
+  return v.toFixed(0);
+}
+
+function set(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+function showStatus(type, msg) {
+  const bar = document.getElementById('status-bar');
+  const map = {
+    success: { bg: 'bg-emerald-950/60 border border-emerald-800/40 text-emerald-300', icon: '✓' },
+    error:   { bg: 'bg-red-950/60 border border-red-800/40 text-red-300',             icon: '✕' },
+    warning: { bg: 'bg-yellow-950/60 border border-yellow-800/40 text-yellow-300',    icon: '⚠' },
+    info:    { bg: 'bg-blue-950/60 border border-blue-800/40 text-blue-300',           icon: 'ℹ' },
+  };
+  const s = map[type] || map.info;
+  bar.className = `rounded-xl px-4 py-3 text-sm flex items-start gap-3 ${s.bg}`;
+  bar.innerHTML = `<span class="font-bold mt-0.5 flex-shrink-0">${s.icon}</span><span>${msg}</span>`;
+  bar.classList.remove('hidden');
+  if (type === 'success' || type === 'info') setTimeout(() => bar.classList.add('hidden'), 6000);
+}
+</script>
+</body>
+</html>

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-15T15:12:47.669605+00:00",
+  "updated_at": "2026-05-16T14:21:41.559623+00:00",
   "top_trending": {
-    "ticker": "CBRS",
-    "name": "CBRS",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 25986,
-    "price": 295.6,
-    "change_pct": "-4.97%",
+    "tweet_volume": 4874007,
+    "price": 1.41,
+    "change_pct": "-1.84%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "FIG",
-      "name": "Figma, Inc.",
+      "ticker": "NTRA",
+      "name": "Natera, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 110471,
-      "price": 22.84,
-      "change_pct": "+12.85%",
+      "tweet_volume": 5586,
+      "price": 186.36,
+      "change_pct": "-5.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DVLT",
-      "name": "Datavault AI Inc.",
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 195902,
-      "price": 0.52,
-      "change_pct": "-10.44%",
+      "tweet_volume": 17996,
+      "price": 70.23,
+      "change_pct": "-1.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HCWB",
-      "name": "HCW Biologics Inc.",
+      "ticker": "SPAX.PVT",
+      "name": "SpaceX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 659628,
-      "price": 1.16,
-      "change_pct": "+243.29%",
+      "tweet_volume": 2500,
+      "price": 646.78,
+      "change_pct": "+0.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GEMI",
-      "name": "Gemini Space Station, Inc.",
+      "ticker": "M",
+      "name": "Macy's Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28481,
-      "price": 5.79,
-      "change_pct": "+10.17%",
+      "tweet_volume": 16726,
+      "price": 18.41,
+      "change_pct": "+0.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 174692,
-      "price": 12.06,
-      "change_pct": "-6.69%",
+      "tweet_volume": 8703890,
+      "price": 86.08,
+      "change_pct": "-3.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AUUD",
-      "name": "Auddia Inc.",
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 273566,
-      "price": 1.99,
-      "change_pct": "+62.70%",
+      "tweet_volume": 117021,
+      "price": 10.27,
+      "change_pct": "+6.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLE",
-      "name": "Super League Enterprise, Inc.",
+      "ticker": "SEDG",
+      "name": "SolarEdge Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 94334,
-      "price": 6.1,
-      "change_pct": "+52.99%",
+      "tweet_volume": 36110,
+      "price": 61.76,
+      "change_pct": "+22.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11115065,
-      "price": 1.44,
-      "change_pct": "-3.10%",
+      "tweet_volume": 3050612,
+      "price": 0.11,
+      "change_pct": "-4.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan, Inc.",
+      "ticker": "NASA",
+      "name": "Tema Space Innovators ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14642,
-      "price": 62.94,
-      "change_pct": "-4.84%",
+      "tweet_volume": 10552,
+      "price": 34.51,
+      "change_pct": "-3.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOXS",
-      "name": "Direxion Daily Semiconductor Be",
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 657594,
-      "price": 9.15,
-      "change_pct": "+10.61%",
+      "tweet_volume": 41176,
+      "price": 49.49,
+      "change_pct": "+4.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

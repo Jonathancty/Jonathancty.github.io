@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-17T14:25:14.912368+00:00",
+  "updated_at": "2026-05-18T16:22:18.381715+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "HIVE",
+    "name": "HIVE Digital Technologies Ltd",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2881905,
-    "price": 1.41,
-    "change_pct": "-0.06%",
+    "tweet_volume": 212234,
+    "price": 3.41,
+    "change_pct": "+26.77%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,90 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "ZETA",
-      "name": "Zeta Global Holdings Corp.",
+      "ticker": "GCTS",
+      "name": "GCT Semiconductor Holding, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17238,
-      "price": 17.19,
-      "change_pct": "+3.68%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CMPS",
-      "name": "COMPASS Pathways Plc - American",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7823,
-      "price": 10.37,
-      "change_pct": "-2.35%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6262837,
-      "price": 86.23,
-      "change_pct": "-0.35%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1977412,
-      "price": 0.11,
-      "change_pct": "+1.37%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 28235,
-      "price": 7.97,
-      "change_pct": "-2.21%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 10889,
-      "price": 46.82,
-      "change_pct": "-5.30%",
+      "tweet_volume": 124139,
+      "price": 2.42,
+      "change_pct": "+32.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -113,54 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11687,
-      "price": 61.73,
-      "change_pct": "-1.97%",
+      "tweet_volume": 48210,
+      "price": 67.2,
+      "change_pct": "+8.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "USAR",
+      "name": "USA Rare Earth, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39787,
-      "price": 31.72,
-      "change_pct": "-0.25%",
+      "tweet_volume": 29495,
+      "price": 21.37,
+      "change_pct": "-12.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PL",
-      "name": "Planet Labs PBC",
+      "ticker": "SBFM",
+      "name": "Sunshine Biopharma Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21840,
-      "price": 41.62,
-      "change_pct": "-3.30%",
+      "tweet_volume": 737680,
+      "price": 0.89,
+      "change_pct": "+213.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 67825,
-      "price": 31.04,
-      "change_pct": "-6.02%",
+      "tweet_volume": 19967,
+      "price": 47.28,
+      "change_pct": "+10.34%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9977,
+      "price": 340.2,
+      "change_pct": "-8.29%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VRAX",
+      "name": "Virax Biolabs Group Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1711757,
+      "price": 0.32,
+      "change_pct": "+106.12%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "GOVX",
+      "name": "GeoVax Labs, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 429560,
+      "price": 2.3,
+      "change_pct": "+87.02%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SPAX.PVT",
+      "name": "SpaceX",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2500,
+      "price": 646.78,
+      "change_pct": "+0.25%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NXXT",
+      "name": "NextNRG, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 426507,
+      "price": 0.46,
+      "change_pct": "+62.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

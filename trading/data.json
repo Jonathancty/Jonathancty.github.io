@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-18T16:22:18.381715+00:00",
+  "updated_at": "2026-05-19T16:18:53.919295+00:00",
   "top_trending": {
-    "ticker": "HIVE",
-    "name": "HIVE Digital Technologies Ltd",
+    "ticker": "WNW",
+    "name": "Meiwu Technology Company Limite",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 212234,
-    "price": 3.41,
-    "change_pct": "+26.77%",
+    "tweet_volume": 101002,
+    "price": 6.28,
+    "change_pct": "+160.59%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "GCTS",
-      "name": "GCT Semiconductor Holding, Inc.",
+      "ticker": "AMST",
+      "name": "Amesite Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 124139,
-      "price": 2.42,
-      "change_pct": "+32.24%",
+      "tweet_volume": 326084,
+      "price": 1.86,
+      "change_pct": "+136.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "D",
-      "name": "Dominion Energy, Inc.",
+      "ticker": "RUBI",
+      "name": "Rubico Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 48210,
-      "price": 67.2,
-      "change_pct": "+8.86%",
+      "tweet_volume": 114305,
+      "price": 1.74,
+      "change_pct": "+0.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USAR",
-      "name": "USA Rare Earth, Inc.",
+      "ticker": "INM",
+      "name": "InMed Pharmaceuticals Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29495,
-      "price": 21.37,
-      "change_pct": "-12.38%",
+      "tweet_volume": 178435,
+      "price": 1.45,
+      "change_pct": "+112.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SBFM",
-      "name": "Sunshine Biopharma Inc.",
+      "ticker": "CSU.TO",
+      "name": "CONSTELLATION SOFTWARE INC.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 737680,
-      "price": 0.89,
-      "change_pct": "+213.27%",
+      "tweet_volume": 142,
+      "price": 2847.0,
+      "change_pct": "+8.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox Corporation",
+      "ticker": "CHWY",
+      "name": "Chewy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19967,
-      "price": 47.28,
-      "change_pct": "+10.34%",
+      "tweet_volume": 23594,
+      "price": 19.99,
+      "change_pct": "-7.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
+      "ticker": "AGYS",
+      "name": "Agilysys, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9977,
-      "price": 340.2,
-      "change_pct": "-8.29%",
+      "tweet_volume": 4512,
+      "price": 79.62,
+      "change_pct": "+13.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VRAX",
-      "name": "Virax Biolabs Group Limited",
+      "ticker": "RLAY",
+      "name": "Relay Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1711757,
-      "price": 0.32,
-      "change_pct": "+106.12%",
+      "tweet_volume": 28621,
+      "price": 13.0,
+      "change_pct": "+7.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GOVX",
-      "name": "GeoVax Labs, Inc.",
+      "ticker": "CODX",
+      "name": "Co-Diagnostics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 429560,
-      "price": 2.3,
-      "change_pct": "+87.02%",
+      "tweet_volume": 240717,
+      "price": 2.12,
+      "change_pct": "+55.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPAX.PVT",
-      "name": "SpaceX",
+      "ticker": "CMBT",
+      "name": "CMB.TECH NV",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 646.78,
-      "change_pct": "+0.25%",
+      "tweet_volume": 11255,
+      "price": 16.93,
+      "change_pct": "+12.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NXXT",
-      "name": "NextNRG, Inc.",
+      "ticker": "CLS.TO",
+      "name": "CELESTICA INC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 426507,
-      "price": 0.46,
-      "change_pct": "+62.55%",
+      "tweet_volume": 639,
+      "price": 462.32,
+      "change_pct": "-6.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

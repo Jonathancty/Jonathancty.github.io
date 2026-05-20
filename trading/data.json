@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-19T16:18:53.919295+00:00",
+  "updated_at": "2026-05-20T16:24:34.653051+00:00",
   "top_trending": {
-    "ticker": "WNW",
-    "name": "Meiwu Technology Company Limite",
+    "ticker": "TGT",
+    "name": "Target Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 101002,
-    "price": 6.28,
-    "change_pct": "+160.59%",
+    "tweet_volume": 30823,
+    "price": 122.24,
+    "change_pct": "-3.93%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "AMST",
-      "name": "Amesite Inc.",
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 326084,
-      "price": 1.86,
-      "change_pct": "+136.89%",
+      "tweet_volume": 13952,
+      "price": 277.92,
+      "change_pct": "+13.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RUBI",
-      "name": "Rubico Inc.",
+      "ticker": "HCWB",
+      "name": "HCW Biologics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 114305,
-      "price": 1.74,
-      "change_pct": "+0.58%",
+      "tweet_volume": 331837,
+      "price": 2.17,
+      "change_pct": "+104.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INM",
-      "name": "InMed Pharmaceuticals Inc.",
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 178435,
-      "price": 1.45,
-      "change_pct": "+112.28%",
+      "tweet_volume": 10727,
+      "price": 145.01,
+      "change_pct": "-6.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CSU.TO",
-      "name": "CONSTELLATION SOFTWARE INC.",
+      "ticker": "TE",
+      "name": "T1 Energy Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 142,
-      "price": 2847.0,
-      "change_pct": "+8.98%",
+      "tweet_volume": 156241,
+      "price": 9.35,
+      "change_pct": "+35.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CHWY",
-      "name": "Chewy, Inc.",
+      "ticker": "IMVT",
+      "name": "Immunovant, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23594,
-      "price": 19.99,
-      "change_pct": "-7.58%",
+      "tweet_volume": 32083,
+      "price": 35.39,
+      "change_pct": "+34.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AGYS",
-      "name": "Agilysys, Inc.",
+      "ticker": "CCL",
+      "name": "Carnival Corporation Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4512,
-      "price": 79.62,
-      "change_pct": "+13.42%",
+      "tweet_volume": 73206,
+      "price": 25.75,
+      "change_pct": "+7.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RLAY",
-      "name": "Relay Therapeutics, Inc.",
+      "ticker": "XNDU",
+      "name": "Xanadu Quantum Technologies Lim",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28621,
-      "price": 13.0,
-      "change_pct": "+7.44%",
+      "tweet_volume": 8339,
+      "price": 13.57,
+      "change_pct": "+15.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CODX",
-      "name": "Co-Diagnostics, Inc.",
+      "ticker": "AMC",
+      "name": "AMC Entertainment Holdings, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 240717,
-      "price": 2.12,
-      "change_pct": "+55.11%",
+      "tweet_volume": 55946,
+      "price": 1.54,
+      "change_pct": "+13.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMBT",
-      "name": "CMB.TECH NV",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11255,
-      "price": 16.93,
-      "change_pct": "+12.42%",
+      "tweet_volume": 54705,
+      "price": 33.4,
+      "change_pct": "+9.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLS.TO",
-      "name": "CELESTICA INC",
+      "ticker": "MWC",
+      "name": "Micware Co., Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 639,
-      "price": 462.32,
-      "change_pct": "-6.57%",
+      "tweet_volume": 88105,
+      "price": 8.37,
+      "change_pct": "+77.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

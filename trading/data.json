@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-21T16:15:50.508693+00:00",
+  "updated_at": "2026-05-22T15:47:40.479264+00:00",
   "top_trending": {
-    "ticker": "QBTS",
-    "name": "D-Wave Quantum Inc.",
+    "ticker": "FUTU",
+    "name": "Futu Holdings Limited",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 165824,
-    "price": 24.28,
-    "change_pct": "+25.80%",
+    "tweet_volume": 127581,
+    "price": 91.41,
+    "change_pct": "-26.20%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,75 @@
   },
   "trending_list": [
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
+      "ticker": "AKTX",
+      "name": "Akari Therapeutics Plc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35461,
-      "price": 302.49,
-      "change_pct": "-21.21%",
+      "tweet_volume": 32949,
+      "price": 9.36,
+      "change_pct": "+82.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RGTI",
-      "name": "Rigetti Computing, Inc.",
+      "ticker": "TIGR",
+      "name": "UP Fintech Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 214236,
-      "price": 21.16,
-      "change_pct": "+25.36%",
+      "tweet_volume": 151831,
+      "price": 4.5,
+      "change_pct": "-22.95%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 15916,
+      "price": 126.55,
+      "change_pct": "+3.86%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ZM",
+      "name": "Zoom Communications, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 13470,
+      "price": 108.33,
+      "change_pct": "+11.97%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9460,
+      "price": 228.4,
+      "change_pct": "-4.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -53,114 +98,69 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10799,
-      "price": 500.32,
-      "change_pct": "+15.46%",
+      "tweet_volume": 7006,
+      "price": 529.78,
+      "change_pct": "+8.13%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INFQ",
-      "name": "Infleqtion, Inc.",
+      "ticker": "PCLA",
+      "name": "PicoCELA Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 138578,
-      "price": 14.53,
-      "change_pct": "+29.97%",
+      "tweet_volume": 58565,
+      "price": 5.5,
+      "change_pct": "+144.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 36580,
-      "price": 224.24,
-      "change_pct": "+16.90%",
+      "tweet_volume": 50190,
+      "price": 7.64,
+      "change_pct": "+14.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
+      "ticker": "EL",
+      "name": "Estee Lauder Companies, Inc. (T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 61804,
-      "price": 47.37,
-      "change_pct": "+19.86%",
+      "tweet_volume": 9694,
+      "price": 87.29,
+      "change_pct": "+10.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
+      "ticker": "QTEX",
+      "name": "QTEX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 102249,
-      "price": 59.35,
-      "change_pct": "+13.11%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 3596,
-      "price": 520.0,
-      "change_pct": "-7.22%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "QUBT",
-      "name": "Quantum Computing Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 94587,
-      "price": 11.24,
-      "change_pct": "+17.58%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 28786,
-      "price": 24.43,
-      "change_pct": "+20.85%",
+      "tweet_volume": 1361377,
+      "price": 0.87,
+      "change_pct": "+186.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

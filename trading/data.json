@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-22T15:47:40.479264+00:00",
+  "updated_at": "2026-05-23T14:28:30.859556+00:00",
   "top_trending": {
-    "ticker": "FUTU",
-    "name": "Futu Holdings Limited",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 127581,
-    "price": 91.41,
-    "change_pct": "-26.20%",
+    "tweet_volume": 5111344,
+    "price": 1.33,
+    "change_pct": "-0.14%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,135 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "AKTX",
-      "name": "Akari Therapeutics Plc",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32949,
-      "price": 9.36,
-      "change_pct": "+82.06%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TIGR",
-      "name": "UP Fintech Holding Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 151831,
-      "price": 4.5,
-      "change_pct": "-22.95%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15916,
-      "price": 126.55,
-      "change_pct": "+3.86%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ZM",
-      "name": "Zoom Communications, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 13470,
-      "price": 108.33,
-      "change_pct": "+11.97%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9460,
-      "price": 228.4,
-      "change_pct": "-4.06%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SPOT",
-      "name": "Spotify Technology S.A.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7006,
-      "price": 529.78,
-      "change_pct": "+8.13%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PCLA",
-      "name": "PicoCELA Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 58565,
-      "price": 5.5,
-      "change_pct": "+144.44%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 50190,
-      "price": 7.64,
-      "change_pct": "+14.88%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "EL",
-      "name": "Estee Lauder Companies, Inc. (T",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9694,
-      "price": 87.29,
-      "change_pct": "+10.62%",
+      "tweet_volume": 9660954,
+      "price": 83.37,
+      "change_pct": "-1.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -158,9 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1361377,
-      "price": 0.87,
-      "change_pct": "+186.60%",
+      "tweet_volume": 1867643,
+      "price": 0.73,
+      "change_pct": "+140.01%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2826763,
+      "price": 0.1,
+      "change_pct": "-2.02%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 273067,
+      "price": 14.93,
+      "change_pct": "+9.22%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VELO",
+      "name": "Velo3D, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 11816,
+      "price": 23.06,
+      "change_pct": "+13.43%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "HYPE32196-USD",
+      "name": "Hyperliquid USD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2565929,
+      "price": 55.69,
+      "change_pct": "+1.24%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2500,
+      "price": 260.0,
+      "change_pct": "+0.38%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "HLIT",
+      "name": "Harmonic Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 30726,
+      "price": 15.2,
+      "change_pct": "+19.69%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SPAX.PVT",
+      "name": "SpaceX",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2500,
+      "price": 652.93,
+      "change_pct": "+0.20%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NLST",
+      "name": "Netlist, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1815,
+      "price": 2.9,
+      "change_pct": "+8.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

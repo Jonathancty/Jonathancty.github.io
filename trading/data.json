@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-24T14:23:22.860967+00:00",
+  "updated_at": "2026-05-25T15:49:56.403346+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "BB.TO",
+    "name": "BLACKBERRY LIMITED",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 3716459,
-    "price": 1.35,
-    "change_pct": "-0.72%",
+    "tweet_volume": 5970,
+    "price": 11.16,
+    "change_pct": "+2.57%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,120 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "XEQT.TO",
+      "name": "ISHARES CORE EQUITY ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8611007,
-      "price": 85.08,
-      "change_pct": "-0.68%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NNE",
-      "name": "Nano Nuclear Energy Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5328,
-      "price": 26.73,
-      "change_pct": "+6.58%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "HYPE32196-USD",
-      "name": "Hyperliquid USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2861940,
-      "price": 62.39,
-      "change_pct": "+6.37%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CLSK",
-      "name": "CleanSpark, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 52686,
-      "price": 15.97,
-      "change_pct": "+1.33%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1967014,
-      "price": 0.1,
-      "change_pct": "-0.81%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ZEC-USD",
-      "name": "Zcash USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2135675,
-      "price": 645.5,
-      "change_pct": "+2.23%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CCJ",
-      "name": "Cameco Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6288,
-      "price": 104.75,
-      "change_pct": "-0.55%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 142638,
-      "price": 15.62,
-      "change_pct": "-0.19%",
+      "tweet_volume": 2370,
+      "price": 44.78,
+      "change_pct": "+1.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -143,24 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50760,
-      "price": 72.9,
-      "change_pct": "+23.45%",
+      "tweet_volume": 49764,
+      "price": 85.55,
+      "change_pct": "+17.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ET",
-      "name": "Energy Transfer LP",
+      "ticker": "KEEL.TO",
+      "name": "KEEL INFRASTRUCTURE CORP",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16551,
-      "price": 20.07,
-      "change_pct": "+0.30%",
+      "tweet_volume": 3923,
+      "price": 7.08,
+      "change_pct": "+6.79%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "HOD.TO",
+      "name": "BETAPRO CRUDE OIL INV LVGD DLY ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3284,
+      "price": 28.85,
+      "change_pct": "+2647.62%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VFV.TO",
+      "name": "VANGUARD SP 500 INDEX ETF",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 304,
+      "price": 184.78,
+      "change_pct": "+0.86%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AC.TO",
+      "name": "AIR CANADA",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2424,
+      "price": 20.84,
+      "change_pct": "+2.68%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CNQ.TO",
+      "name": "CDN NATURAL RES",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3373,
+      "price": 65.15,
+      "change_pct": "-3.11%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "PNG.V",
+      "name": "KRAKEN ROBOTICS INC",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1076,
+      "price": 7.85,
+      "change_pct": "+7.68%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CSU.TO",
+      "name": "CONSTELLATION SOFTWARE INC.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 8,
+      "price": 2798.4,
+      "change_pct": "+2.83%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "HIVE.TO",
+      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4244,
+      "price": 5.78,
+      "change_pct": "+2.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

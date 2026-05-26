@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-25T15:49:56.403346+00:00",
+  "updated_at": "2026-05-26T16:42:00.229041+00:00",
   "top_trending": {
-    "ticker": "BB.TO",
-    "name": "BLACKBERRY LIMITED",
+    "ticker": "ASTS",
+    "name": "AST SpaceMobile, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 5970,
-    "price": 11.16,
-    "change_pct": "+2.57%",
+    "tweet_volume": 71974,
+    "price": 126.03,
+    "change_pct": "+19.05%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "XEQT.TO",
-      "name": "ISHARES CORE EQUITY ETF",
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2370,
-      "price": 44.78,
-      "change_pct": "+1.82%",
+      "tweet_volume": 177722,
+      "price": 22.27,
+      "change_pct": "+27.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SIVE.ST",
-      "name": "Sivers Semiconductors AB",
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49764,
-      "price": 85.55,
-      "change_pct": "+17.35%",
+      "tweet_volume": 96464,
+      "price": 218.96,
+      "change_pct": "+14.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KEEL.TO",
-      "name": "KEEL INFRASTRUCTURE CORP",
+      "ticker": "DRAM",
+      "name": "Roundhill Memory ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3923,
-      "price": 7.08,
-      "change_pct": "+6.79%",
+      "tweet_volume": 74909,
+      "price": 59.96,
+      "change_pct": "+13.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HOD.TO",
-      "name": "BETAPRO CRUDE OIL INV LVGD DLY ",
+      "ticker": "TE",
+      "name": "T1 Energy Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3284,
-      "price": 28.85,
-      "change_pct": "+2647.62%",
+      "tweet_volume": 116762,
+      "price": 10.62,
+      "change_pct": "+31.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VFV.TO",
-      "name": "VANGUARD SP 500 INDEX ETF",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 304,
-      "price": 184.78,
-      "change_pct": "+0.86%",
+      "tweet_volume": 129668,
+      "price": 9.95,
+      "change_pct": "+9.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AC.TO",
-      "name": "AIR CANADA",
+      "ticker": "BRAI",
+      "name": "Braiin Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2424,
-      "price": 20.84,
-      "change_pct": "+2.68%",
+      "tweet_volume": 16419,
+      "price": 15.85,
+      "change_pct": "+121.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CNQ.TO",
-      "name": "CDN NATURAL RES",
+      "ticker": "AZO",
+      "name": "AutoZone, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3373,
-      "price": 65.15,
-      "change_pct": "-3.11%",
+      "tweet_volume": 773,
+      "price": 3065.38,
+      "change_pct": "-10.01%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PNG.V",
-      "name": "KRAKEN ROBOTICS INC",
+      "ticker": "MNTS",
+      "name": "Momentus Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1076,
-      "price": 7.85,
-      "change_pct": "+7.68%",
+      "tweet_volume": 145602,
+      "price": 13.09,
+      "change_pct": "+77.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CSU.TO",
-      "name": "CONSTELLATION SOFTWARE INC.",
+      "ticker": "SOXS",
+      "name": "Direxion Daily Semiconductor Be",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8,
-      "price": 2798.4,
-      "change_pct": "+2.83%",
+      "tweet_volume": 700269,
+      "price": 6.58,
+      "change_pct": "-14.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIVE.TO",
-      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4244,
-      "price": 5.78,
-      "change_pct": "+2.66%",
+      "tweet_volume": 31648,
+      "price": 70.55,
+      "change_pct": "+7.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-26T16:42:00.229041+00:00",
+  "updated_at": "2026-05-27T16:36:34.065625+00:00",
   "top_trending": {
-    "ticker": "ASTS",
-    "name": "AST SpaceMobile, Inc.",
+    "ticker": "ZS",
+    "name": "Zscaler, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 71974,
-    "price": 126.03,
-    "change_pct": "+19.05%",
+    "tweet_volume": 55259,
+    "price": 126.89,
+    "change_pct": "-31.26%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
+      "ticker": "ASTC",
+      "name": "Astrotech Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 177722,
-      "price": 22.27,
-      "change_pct": "+27.35%",
+      "tweet_volume": 272974,
+      "price": 16.41,
+      "change_pct": "+564.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOXL",
-      "name": "Direxion Daily Semiconductor Bu",
+      "ticker": "SNGX",
+      "name": "Soligenix, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 96464,
-      "price": 218.96,
-      "change_pct": "+14.90%",
+      "tweet_volume": 447582,
+      "price": 0.83,
+      "change_pct": "+62.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DRAM",
-      "name": "Roundhill Memory ETF",
+      "ticker": "NIO",
+      "name": "NIO Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 74909,
-      "price": 59.96,
-      "change_pct": "+13.52%",
+      "tweet_volume": 149841,
+      "price": 5.71,
+      "change_pct": "+8.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TE",
-      "name": "T1 Energy Inc.",
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 116762,
-      "price": 10.62,
-      "change_pct": "+31.46%",
+      "tweet_volume": 70946,
+      "price": 86.18,
+      "change_pct": "-10.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 129668,
-      "price": 9.95,
-      "change_pct": "+9.77%",
+      "tweet_volume": 166229,
+      "price": 4.17,
+      "change_pct": "+8.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BRAI",
-      "name": "Braiin Limited",
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16419,
-      "price": 15.85,
-      "change_pct": "+121.06%",
+      "tweet_volume": 70251,
+      "price": 50.61,
+      "change_pct": "-12.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AZO",
-      "name": "AutoZone, Inc.",
+      "ticker": "WOLF",
+      "name": "Wolfspeed, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 773,
-      "price": 3065.38,
-      "change_pct": "-10.01%",
+      "tweet_volume": 26523,
+      "price": 60.48,
+      "change_pct": "-17.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MNTS",
-      "name": "Momentus Inc.",
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 145602,
-      "price": 13.09,
-      "change_pct": "+77.37%",
+      "tweet_volume": 8810,
+      "price": 155.0,
+      "change_pct": "+7.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOXS",
-      "name": "Direxion Daily Semiconductor Be",
+      "ticker": "APPS",
+      "name": "Digital Turbine, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 700269,
-      "price": 6.58,
-      "change_pct": "-14.88%",
+      "tweet_volume": 101557,
+      "price": 7.47,
+      "change_pct": "+55.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "VRRM",
+      "name": "Verra Mobility Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 31648,
-      "price": 70.55,
-      "change_pct": "+7.09%",
+      "tweet_volume": 126752,
+      "price": 3.79,
+      "change_pct": "-71.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

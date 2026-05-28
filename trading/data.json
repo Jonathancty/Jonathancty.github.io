@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-27T16:36:34.065625+00:00",
+  "updated_at": "2026-05-28T16:53:15.721755+00:00",
   "top_trending": {
-    "ticker": "ZS",
-    "name": "Zscaler, Inc.",
+    "ticker": "SNOW",
+    "name": "Snowflake Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 55259,
-    "price": 126.89,
-    "change_pct": "-31.26%",
+    "tweet_volume": 68719,
+    "price": 239.17,
+    "change_pct": "+36.47%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ASTC",
-      "name": "Astrotech Corporation",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 272974,
-      "price": 16.41,
-      "change_pct": "+564.47%",
+      "tweet_volume": 123837,
+      "price": 42.24,
+      "change_pct": "+10.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNGX",
-      "name": "Soligenix, Inc.",
+      "ticker": "UMAC",
+      "name": "Unusual Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 447582,
-      "price": 0.83,
-      "change_pct": "+62.38%",
+      "tweet_volume": 89663,
+      "price": 31.25,
+      "change_pct": "+65.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NIO",
-      "name": "NIO Inc.",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 149841,
-      "price": 5.71,
-      "change_pct": "+8.55%",
+      "tweet_volume": 451799,
+      "price": 13.73,
+      "change_pct": "+27.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
+      "ticker": "PLAB",
+      "name": "Photronics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 70946,
-      "price": 86.18,
-      "change_pct": "-10.82%",
+      "tweet_volume": 14357,
+      "price": 35.83,
+      "change_pct": "-33.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLUG",
-      "name": "Plug Power, Inc.",
+      "ticker": "AMPX",
+      "name": "Amprius Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 166229,
-      "price": 4.17,
-      "change_pct": "+8.60%",
+      "tweet_volume": 33931,
+      "price": 21.84,
+      "change_pct": "+27.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BSX",
-      "name": "Boston Scientific Corporation",
+      "ticker": "RCAT",
+      "name": "Red Cat Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 70251,
-      "price": 50.61,
-      "change_pct": "-12.20%",
+      "tweet_volume": 128611,
+      "price": 14.98,
+      "change_pct": "+40.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed, Inc.",
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26523,
-      "price": 60.48,
-      "change_pct": "-17.71%",
+      "tweet_volume": 7035,
+      "price": 215.0,
+      "change_pct": "+18.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
+      "ticker": "MASK",
+      "name": "3 E Network Technology Group Lt",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8810,
-      "price": 155.0,
-      "change_pct": "+7.16%",
+      "tweet_volume": 310449,
+      "price": 4.88,
+      "change_pct": "+253.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APPS",
-      "name": "Digital Turbine, Inc.",
+      "ticker": "CM.TO",
+      "name": "CANADIAN IMPERIAL BANK OF COMME",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 101557,
-      "price": 7.47,
-      "change_pct": "+55.32%",
+      "tweet_volume": 5540,
+      "price": 152.13,
+      "change_pct": "-4.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VRRM",
-      "name": "Verra Mobility Corporation",
+      "ticker": "KTOS",
+      "name": "Kratos Defense & Security Solut",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 126752,
-      "price": 3.79,
-      "change_pct": "-71.06%",
+      "tweet_volume": 17686,
+      "price": 65.75,
+      "change_pct": "+14.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

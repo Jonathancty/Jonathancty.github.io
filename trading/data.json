@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-28T16:53:15.721755+00:00",
+  "updated_at": "2026-05-29T16:41:49.196384+00:00",
   "top_trending": {
-    "ticker": "SNOW",
-    "name": "Snowflake Inc.",
+    "ticker": "SPCE",
+    "name": "Virgin Galactic Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 68719,
-    "price": 239.17,
-    "change_pct": "+36.47%",
+    "tweet_volume": 184169,
+    "price": 5.45,
+    "change_pct": "+20.38%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 238238,
+      "price": 18.39,
+      "change_pct": "+8.34%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
       "ticker": "SMCI",
       "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 123837,
-      "price": 42.24,
-      "change_pct": "+10.60%",
+      "tweet_volume": 168645,
+      "price": 45.69,
+      "change_pct": "+10.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UMAC",
-      "name": "Unusual Machines, Inc.",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 89663,
-      "price": 31.25,
-      "change_pct": "+65.96%",
+      "tweet_volume": 87697,
+      "price": 114.52,
+      "change_pct": "-13.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
+      "ticker": "HUBC",
+      "name": "Hub Cyber Security Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 451799,
-      "price": 13.73,
-      "change_pct": "+27.18%",
+      "tweet_volume": 2733806,
+      "price": 0.53,
+      "change_pct": "+380.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLAB",
-      "name": "Photronics, Inc.",
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Comp",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14357,
-      "price": 35.83,
-      "change_pct": "-33.04%",
+      "tweet_volume": 98545,
+      "price": 43.55,
+      "change_pct": "+13.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMPX",
-      "name": "Amprius Technologies, Inc.",
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 33931,
-      "price": 21.84,
-      "change_pct": "+27.27%",
+      "tweet_volume": 18196,
+      "price": 179.95,
+      "change_pct": "+26.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RCAT",
-      "name": "Red Cat Holdings, Inc.",
+      "ticker": "OKTA",
+      "name": "Okta, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 128611,
-      "price": 14.98,
-      "change_pct": "+40.44%",
+      "tweet_volume": 22036,
+      "price": 121.17,
+      "change_pct": "+27.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
+      "ticker": "AMBA",
+      "name": "Ambarella, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7035,
-      "price": 215.0,
-      "change_pct": "+18.60%",
+      "tweet_volume": 10794,
+      "price": 73.72,
+      "change_pct": "-19.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MASK",
-      "name": "3 E Network Technology Group Lt",
+      "ticker": "PRFX",
+      "name": "PRF Technologies Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 310449,
-      "price": 4.88,
-      "change_pct": "+253.62%",
+      "tweet_volume": 117443,
+      "price": 4.44,
+      "change_pct": "+224.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CM.TO",
-      "name": "CANADIAN IMPERIAL BANK OF COMME",
+      "ticker": "REPL",
+      "name": "Replimune Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5540,
-      "price": 152.13,
-      "change_pct": "-4.64%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "KTOS",
-      "name": "Kratos Defense & Security Solut",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 17686,
-      "price": 65.75,
-      "change_pct": "+14.76%",
+      "tweet_volume": 103618,
+      "price": 8.36,
+      "change_pct": "+78.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

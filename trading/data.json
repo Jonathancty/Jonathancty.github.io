@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-31T14:43:29.452035+00:00",
+  "updated_at": "2026-06-01T18:37:32.182687+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "FLNC",
+    "name": "Fluence Energy, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2937410,
-    "price": 1.33,
-    "change_pct": "-0.73%",
+    "tweet_volume": 93487,
+    "price": 27.88,
+    "change_pct": "+47.67%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ELMT",
-      "name": "The Elmet Group Co.",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2608,
-      "price": 15.28,
-      "change_pct": "-5.68%",
+      "tweet_volume": 48215,
+      "price": 271.25,
+      "change_pct": "+17.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLM-USD",
-      "name": "Stellar USD",
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3380290,
-      "price": 0.25,
-      "change_pct": "+9.91%",
+      "tweet_volume": 109334,
+      "price": 125.78,
+      "change_pct": "+14.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMMT",
-      "name": "Summit Therapeutics Inc.",
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18010,
-      "price": 17.54,
-      "change_pct": "+0.75%",
+      "tweet_volume": 352560,
+      "price": 16.33,
+      "change_pct": "+10.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HYPE32196-USD",
-      "name": "Hyperliquid USD",
+      "ticker": "TMHC",
+      "name": "Taylor Morrison Home Corporatio",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2590515,
-      "price": 68.27,
-      "change_pct": "+0.08%",
+      "tweet_volume": 41354,
+      "price": 71.57,
+      "change_pct": "+22.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CACI",
-      "name": "CACI International, Inc.",
+      "ticker": "ANY",
+      "name": "Sphere 3D Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 745,
-      "price": 513.51,
-      "change_pct": "-1.79%",
+      "tweet_volume": 277347,
+      "price": 4.08,
+      "change_pct": "+114.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
+      "ticker": "AIM",
+      "name": "AIM ImmunoTech Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15006,
-      "price": 157.48,
-      "change_pct": "+1.84%",
+      "tweet_volume": 813345,
+      "price": 0.87,
+      "change_pct": "+112.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "HKIT",
+      "name": "Hitek Global Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5454444,
-      "price": 81.92,
-      "change_pct": "-0.76%",
+      "tweet_volume": 202061,
+      "price": 6.5,
+      "change_pct": "+345.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMP",
-      "name": "Compass Minerals Intl Inc",
+      "ticker": "TWLO",
+      "name": "Twilio Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1189,
-      "price": 31.92,
-      "change_pct": "-1.72%",
+      "tweet_volume": 11852,
+      "price": 223.89,
+      "change_pct": "+17.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOKIA.HE",
-      "name": "Nokia Corporation",
+      "ticker": "ZM",
+      "name": "Zoom Communications, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 179462,
-      "price": 12.49,
-      "change_pct": "-6.27%",
+      "tweet_volume": 15014,
+      "price": 110.92,
+      "change_pct": "+9.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "NUAI",
+      "name": "New Era Energy & Digital, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1281070,
-      "price": 0.1,
-      "change_pct": "-0.53%",
+      "tweet_volume": 35839,
+      "price": 5.92,
+      "change_pct": "+24.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

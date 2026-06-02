@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-01T18:37:32.182687+00:00",
+  "updated_at": "2026-06-02T17:22:07.142505+00:00",
   "top_trending": {
-    "ticker": "FLNC",
-    "name": "Fluence Energy, Inc.",
+    "ticker": "HPE",
+    "name": "Hewlett Packard Enterprise Comp",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 93487,
-    "price": 27.88,
-    "change_pct": "+47.67%",
+    "tweet_volume": 269971,
+    "price": 53.51,
+    "change_pct": "+13.85%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 48215,
-      "price": 271.25,
-      "change_pct": "+17.38%",
+      "tweet_volume": 286094,
+      "price": 11.68,
+      "change_pct": "-10.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "ABVX",
+      "name": "Abivax SA",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 109334,
-      "price": 125.78,
-      "change_pct": "+14.84%",
+      "tweet_volume": 32555,
+      "price": 73.42,
+      "change_pct": "-43.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
+      "ticker": "LASE",
+      "name": "Laser Photonics Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 352560,
-      "price": 16.33,
-      "change_pct": "+10.05%",
+      "tweet_volume": 378855,
+      "price": 1.85,
+      "change_pct": "+100.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TMHC",
-      "name": "Taylor Morrison Home Corporatio",
+      "ticker": "LAC",
+      "name": "Lithium Americas Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41354,
-      "price": 71.57,
-      "change_pct": "+22.34%",
+      "tweet_volume": 76472,
+      "price": 5.91,
+      "change_pct": "+7.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ANY",
-      "name": "Sphere 3D Corp.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 277347,
-      "price": 4.08,
-      "change_pct": "+114.72%",
+      "tweet_volume": 6362638,
+      "price": 1.24,
+      "change_pct": "-4.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AIM",
-      "name": "AIM ImmunoTech Inc.",
+      "ticker": "SWMR",
+      "name": "Swarmer, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 813345,
-      "price": 0.87,
-      "change_pct": "+112.87%",
+      "tweet_volume": 2609,
+      "price": 77.1,
+      "change_pct": "+35.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HKIT",
-      "name": "Hitek Global Inc.",
+      "ticker": "LEGN",
+      "name": "Legend Biotech Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 202061,
-      "price": 6.5,
-      "change_pct": "+345.21%",
+      "tweet_volume": 25294,
+      "price": 35.18,
+      "change_pct": "+37.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TWLO",
-      "name": "Twilio Inc.",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11852,
-      "price": 223.89,
-      "change_pct": "+17.44%",
+      "tweet_volume": 16078,
+      "price": 425.5,
+      "change_pct": "+17.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZM",
-      "name": "Zoom Communications, Inc.",
+      "ticker": "BJDX",
+      "name": "Bluejay Diagnostics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15014,
-      "price": 110.92,
-      "change_pct": "+9.18%",
+      "tweet_volume": 172887,
+      "price": 4.28,
+      "change_pct": "+97.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NUAI",
-      "name": "New Era Energy & Digital, Inc.",
+      "ticker": "SHAK",
+      "name": "Shake Shack, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35839,
-      "price": 5.92,
-      "change_pct": "+24.21%",
+      "tweet_volume": 10924,
+      "price": 56.41,
+      "change_pct": "-9.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-02T17:22:07.142505+00:00",
+  "updated_at": "2026-06-03T17:59:36.231321+00:00",
   "top_trending": {
-    "ticker": "HPE",
-    "name": "Hewlett Packard Enterprise Comp",
+    "ticker": "NVTS",
+    "name": "Navitas Semiconductor Corporati",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 269971,
-    "price": 53.51,
-    "change_pct": "+13.85%",
+    "tweet_volume": 231900,
+    "price": 32.01,
+    "change_pct": "+23.78%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
+      "ticker": "XOS",
+      "name": "Xos, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 286094,
-      "price": 11.68,
-      "change_pct": "-10.12%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ABVX",
-      "name": "Abivax SA",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 32555,
-      "price": 73.42,
-      "change_pct": "-43.39%",
+      "tweet_volume": 189053,
+      "price": 6.27,
+      "change_pct": "+181.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -53,114 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 378855,
-      "price": 1.85,
-      "change_pct": "+100.00%",
+      "tweet_volume": 494779,
+      "price": 3.15,
+      "change_pct": "+30.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LAC",
-      "name": "Lithium Americas Corp.",
+      "ticker": "SDOT",
+      "name": "Sadot Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 76472,
-      "price": 5.91,
-      "change_pct": "+7.26%",
+      "tweet_volume": 121075,
+      "price": 6.14,
+      "change_pct": "+87.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "GME",
+      "name": "GameStop Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6362638,
-      "price": 1.24,
-      "change_pct": "-4.54%",
+      "tweet_volume": 31642,
+      "price": 22.3,
+      "change_pct": "+6.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SWMR",
-      "name": "Swarmer, Inc",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2609,
-      "price": 77.1,
-      "change_pct": "+35.25%",
+      "tweet_volume": 30681,
+      "price": 33.55,
+      "change_pct": "-15.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LEGN",
-      "name": "Legend Biotech Corporation",
+      "ticker": "WCT",
+      "name": "Wellchange Holdings Company Lim",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25294,
-      "price": 35.18,
-      "change_pct": "+37.91%",
+      "tweet_volume": 200180,
+      "price": 2.46,
+      "change_pct": "+167.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "AADX",
+      "name": "AADX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16078,
-      "price": 425.5,
-      "change_pct": "+17.25%",
+      "tweet_volume": 28574,
+      "price": 19.76,
+      "change_pct": "-1.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BJDX",
-      "name": "Bluejay Diagnostics, Inc.",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 172887,
-      "price": 4.28,
-      "change_pct": "+97.30%",
+      "tweet_volume": 42851,
+      "price": 65.44,
+      "change_pct": "-10.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SHAK",
-      "name": "Shake Shack, Inc.",
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10924,
-      "price": 56.41,
-      "change_pct": "-9.35%",
+      "tweet_volume": 56676,
+      "price": 23.62,
+      "change_pct": "-4.93%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 27027,
+      "price": 77.6,
+      "change_pct": "+5.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-04T16:19:40.828612+00:00",
+  "updated_at": "2026-06-05T15:52:37.056090+00:00",
   "top_trending": {
-    "ticker": "STI",
-    "name": "Solidion Technology, Inc.",
+    "ticker": "RMSG",
+    "name": "Real Messenger Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 212181,
-    "price": 24.28,
-    "change_pct": "+388.53%",
+    "tweet_volume": 379768,
+    "price": 2.29,
+    "change_pct": "+107.73%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,135 +17,45 @@
   },
   "trending_list": [
     {
-      "ticker": "CXAI",
-      "name": "CXApp Inc.",
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 985355,
-      "price": 0.28,
-      "change_pct": "+73.43%",
+      "tweet_volume": 24720,
+      "price": 112.85,
+      "change_pct": "-9.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
+      "ticker": "PL",
+      "name": "Planet Labs PBC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10602,
-      "price": 515.97,
-      "change_pct": "-16.83%",
+      "tweet_volume": 55523,
+      "price": 33.94,
+      "change_pct": "-22.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRSP",
-      "name": "CRISPR Therapeutics AG",
+      "ticker": "MRLN",
+      "name": "Merlin, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4641,
-      "price": 57.42,
-      "change_pct": "+10.26%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "QNT",
-      "name": "Quantinuum Inc. Class A Common Stock",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 60.0,
-      "change_pct": "+0.00%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FOXX",
-      "name": "Foxx Development Holdings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 168569,
-      "price": 6.09,
-      "change_pct": "+102.44%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 129722,
-      "price": 21.66,
-      "change_pct": "+16.35%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PVH",
-      "name": "PVH Corp.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7515,
-      "price": 77.44,
-      "change_pct": "-20.98%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RXRX",
-      "name": "Recursion Pharmaceuticals, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 65344,
-      "price": 3.89,
-      "change_pct": "+12.10%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NTLA",
-      "name": "Intellia Therapeutics, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 14019,
-      "price": 14.89,
-      "change_pct": "+14.40%",
+      "tweet_volume": 49506,
+      "price": 9.02,
+      "change_pct": "+25.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -158,9 +68,99 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8925265,
-      "price": 1.17,
-      "change_pct": "-2.89%",
+      "tweet_volume": 8129559,
+      "price": 1.1,
+      "change_pct": "-5.67%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CURLF",
+      "name": "Curaleaf Holdings, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 531,
+      "price": 10.92,
+      "change_pct": "+220.23%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 39291,
+      "price": 29.51,
+      "change_pct": "+4.72%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AGX",
+      "name": "Argan, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1342,
+      "price": 741.1,
+      "change_pct": "+7.49%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BCDA",
+      "name": "BioCardia, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 321338,
+      "price": 1.35,
+      "change_pct": "+47.44%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TVK.TO",
+      "name": "TERRAVEST INDUSTRIES INC",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2240,
+      "price": 116.4,
+      "change_pct": "-26.53%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SMTK",
+      "name": "SmartKem, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 476298,
+      "price": 0.48,
+      "change_pct": "+51.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

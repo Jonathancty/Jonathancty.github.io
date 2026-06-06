@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-05T15:52:37.056090+00:00",
+  "updated_at": "2026-06-06T14:28:56.980780+00:00",
   "top_trending": {
-    "ticker": "RMSG",
-    "name": "Real Messenger Corporation",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 379768,
-    "price": 2.29,
-    "change_pct": "+107.73%",
+    "tweet_volume": 8365867,
+    "price": 1.1,
+    "change_pct": "+0.49%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "LULU",
-      "name": "lululemon athletica inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 24720,
-      "price": 112.85,
-      "change_pct": "-9.67%",
+      "tweet_volume": 11777637,
+      "price": 62.58,
+      "change_pct": "-1.43%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PL",
-      "name": "Planet Labs PBC",
+      "ticker": "ADA-USD",
+      "name": "Cardano USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 55523,
-      "price": 33.94,
-      "change_pct": "-22.04%",
+      "tweet_volume": 2216425,
+      "price": 0.16,
+      "change_pct": "+2.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRLN",
-      "name": "Merlin, Inc.",
+      "ticker": "ZEC-USD",
+      "name": "Zcash USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49506,
-      "price": 9.02,
-      "change_pct": "+25.63%",
+      "tweet_volume": 5375490,
+      "price": 344.54,
+      "change_pct": "-11.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8129559,
-      "price": 1.1,
-      "change_pct": "-5.67%",
+      "tweet_volume": 3891891,
+      "price": 0.08,
+      "change_pct": "+0.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
+      "ticker": "XLM-USD",
+      "name": "Stellar USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 531,
-      "price": 10.92,
-      "change_pct": "+220.23%",
+      "tweet_volume": 1943729,
+      "price": 0.2,
+      "change_pct": "-0.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
+      "ticker": "XRP-CAD",
+      "name": "XRP CAD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39291,
-      "price": 29.51,
-      "change_pct": "+4.72%",
+      "tweet_volume": 11655745,
+      "price": 1.54,
+      "change_pct": "+0.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AGX",
-      "name": "Argan, Inc.",
+      "ticker": "HYPE32196-USD",
+      "name": "Hyperliquid USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1342,
-      "price": 741.1,
-      "change_pct": "+7.49%",
+      "tweet_volume": 2565165,
+      "price": 58.48,
+      "change_pct": "-1.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BCDA",
-      "name": "BioCardia, Inc.",
+      "ticker": "FLEX",
+      "name": "Flex Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 321338,
-      "price": 1.35,
-      "change_pct": "+47.44%",
+      "tweet_volume": 13058,
+      "price": 151.92,
+      "change_pct": "-4.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TVK.TO",
-      "name": "TERRAVEST INDUSTRIES INC",
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2240,
-      "price": 116.4,
-      "change_pct": "-26.53%",
+      "tweet_volume": 2500,
+      "price": 257.02,
+      "change_pct": "-2.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMTK",
-      "name": "SmartKem, Inc.",
+      "ticker": "BETA",
+      "name": "Beta Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 476298,
-      "price": 0.48,
-      "change_pct": "+51.06%",
+      "tweet_volume": 5048,
+      "price": 17.13,
+      "change_pct": "-5.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

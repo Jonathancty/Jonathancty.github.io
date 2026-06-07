@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T14:28:56.980780+00:00",
+  "updated_at": "2026-06-07T14:51:16.371870+00:00",
   "top_trending": {
     "ticker": "XRP-USD",
     "name": "XRP USD",
@@ -7,9 +7,9 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 8365867,
-    "price": 1.1,
-    "change_pct": "+0.49%",
+    "tweet_volume": 4917494,
+    "price": 1.13,
+    "change_pct": "+3.30%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -23,9 +23,9 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11777637,
-      "price": 62.58,
-      "change_pct": "-1.43%",
+      "tweet_volume": 6813608,
+      "price": 64.68,
+      "change_pct": "+4.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -38,24 +38,9 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2216425,
+      "tweet_volume": 1281870,
       "price": 0.16,
-      "change_pct": "+2.15%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ZEC-USD",
-      "name": "Zcash USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5375490,
-      "price": 344.54,
-      "change_pct": "-11.50%",
+      "change_pct": "+2.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -68,24 +53,24 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3891891,
+      "tweet_volume": 1778621,
       "price": 0.08,
-      "change_pct": "+0.55%",
+      "change_pct": "+2.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLM-USD",
-      "name": "Stellar USD",
+      "ticker": "ZEC-USD",
+      "name": "Zcash USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1943729,
-      "price": 0.2,
-      "change_pct": "-0.56%",
+      "tweet_volume": 3413640,
+      "price": 432.0,
+      "change_pct": "+19.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -98,9 +83,39 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11655745,
-      "price": 1.54,
-      "change_pct": "+0.71%",
+      "tweet_volume": 6851299,
+      "price": 1.57,
+      "change_pct": "+3.38%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "XLM-USD",
+      "name": "Stellar USD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2343982,
+      "price": 0.2,
+      "change_pct": "-3.91%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "STM",
+      "name": "STMicroelectronics N.V.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 49776,
+      "price": 70.72,
+      "change_pct": "-9.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -113,54 +128,39 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2565165,
-      "price": 58.48,
-      "change_pct": "-1.85%",
+      "tweet_volume": 1734225,
+      "price": 58.52,
+      "change_pct": "+3.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FLEX",
-      "name": "Flex Ltd.",
+      "ticker": "XLV",
+      "name": "State Street Health Care Select",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13058,
-      "price": 151.92,
-      "change_pct": "-4.76%",
+      "tweet_volume": 51770,
+      "price": 153.01,
+      "change_pct": "+0.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
+      "ticker": "O",
+      "name": "Realty Income Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 257.02,
-      "change_pct": "-2.63%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BETA",
-      "name": "Beta Technologies, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5048,
-      "price": 17.13,
-      "change_pct": "-5.52%",
+      "tweet_volume": 17059,
+      "price": 60.84,
+      "change_pct": "+1.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

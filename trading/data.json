@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-07T14:51:16.371870+00:00",
+  "updated_at": "2026-06-08T16:47:40.527640+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "ABAT",
+    "name": "American Battery Technology Com",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 4917494,
-    "price": 1.13,
-    "change_pct": "+3.30%",
+    "tweet_volume": 138946,
+    "price": 4.08,
+    "change_pct": "+31.35%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "SUNE",
+      "name": "SUNation Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6813608,
-      "price": 64.68,
-      "change_pct": "+4.00%",
+      "tweet_volume": 455867,
+      "price": 2.36,
+      "change_pct": "+108.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ADA-USD",
-      "name": "Cardano USD",
+      "ticker": "INHD",
+      "name": "Inno Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1281870,
-      "price": 0.16,
-      "change_pct": "+2.95%",
+      "tweet_volume": 584653,
+      "price": 6.58,
+      "change_pct": "+526.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "OCC",
+      "name": "Optical Cable Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1778621,
-      "price": 0.08,
-      "change_pct": "+2.94%",
+      "tweet_volume": 39667,
+      "price": 20.58,
+      "change_pct": "+67.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZEC-USD",
-      "name": "Zcash USD",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3413640,
-      "price": 432.0,
-      "change_pct": "+19.33%",
+      "tweet_volume": 12707,
+      "price": 242.48,
+      "change_pct": "+20.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-CAD",
-      "name": "XRP CAD",
+      "ticker": "TNGX",
+      "name": "Tango Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6851299,
-      "price": 1.57,
-      "change_pct": "+3.38%",
+      "tweet_volume": 33761,
+      "price": 28.45,
+      "change_pct": "+40.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLM-USD",
-      "name": "Stellar USD",
+      "ticker": "DUOL",
+      "name": "Duolingo, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2343982,
-      "price": 0.2,
-      "change_pct": "-3.91%",
+      "tweet_volume": 3028,
+      "price": 118.5,
+      "change_pct": "+8.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STM",
-      "name": "STMicroelectronics N.V.",
+      "ticker": "GLXY",
+      "name": "Galaxy Digital Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49776,
-      "price": 70.72,
-      "change_pct": "-9.75%",
+      "tweet_volume": 29943,
+      "price": 30.9,
+      "change_pct": "+22.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HYPE32196-USD",
-      "name": "Hyperliquid USD",
+      "ticker": "NEXR",
+      "name": "Nexera Technologies Ltd",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1734225,
-      "price": 58.52,
-      "change_pct": "+3.26%",
+      "tweet_volume": 121754,
+      "price": 0.93,
+      "change_pct": "-23.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLV",
-      "name": "State Street Health Care Select",
+      "ticker": "RYET",
+      "name": "Ruanyun Edai Technology Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 51770,
-      "price": 153.01,
-      "change_pct": "+0.61%",
+      "tweet_volume": 121586,
+      "price": 1.0,
+      "change_pct": "+21.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
+      "ticker": "NPT",
+      "name": "Texxon Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17059,
-      "price": 60.84,
-      "change_pct": "+1.82%",
+      "tweet_volume": 181346,
+      "price": 2.83,
+      "change_pct": "+119.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

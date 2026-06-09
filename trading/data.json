@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-08T16:47:40.527640+00:00",
+  "updated_at": "2026-06-09T15:54:06.704758+00:00",
   "top_trending": {
-    "ticker": "ABAT",
-    "name": "American Battery Technology Com",
+    "ticker": "CHAI",
+    "name": "Core AI Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 138946,
-    "price": 4.08,
-    "change_pct": "+31.35%",
+    "tweet_volume": 340224,
+    "price": 2.95,
+    "change_pct": "+259.74%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,15 +17,30 @@
   },
   "trending_list": [
     {
-      "ticker": "SUNE",
-      "name": "SUNation Energy, Inc.",
+      "ticker": "CCTG",
+      "name": "CCSC Technology International H",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 455867,
-      "price": 2.36,
-      "change_pct": "+108.56%",
+      "tweet_volume": 247733,
+      "price": 2.21,
+      "change_pct": "+361.19%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AZI",
+      "name": "Autozi Internet Technology (Glo",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 277948,
+      "price": 5.07,
+      "change_pct": "+348.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -38,129 +53,114 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 584653,
-      "price": 6.58,
-      "change_pct": "+526.67%",
+      "tweet_volume": 697249,
+      "price": 39.49,
+      "change_pct": "+0.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OCC",
-      "name": "Optical Cable Corporation",
+      "ticker": "PAVS",
+      "name": "Paranovus Entertainment Technol",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39667,
-      "price": 20.58,
-      "change_pct": "+67.32%",
+      "tweet_volume": 421566,
+      "price": 18.59,
+      "change_pct": "+1876.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "RGNT",
+      "name": "Regentis Biomaterials Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12707,
-      "price": 242.48,
-      "change_pct": "+20.63%",
+      "tweet_volume": 203817,
+      "price": 3.22,
+      "change_pct": "+151.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TNGX",
-      "name": "Tango Therapeutics, Inc.",
+      "ticker": "NUVL",
+      "name": "Nuvalent, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 33761,
-      "price": 28.45,
-      "change_pct": "+40.73%",
+      "tweet_volume": 110174,
+      "price": 123.24,
+      "change_pct": "+39.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DUOL",
-      "name": "Duolingo, Inc.",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3028,
-      "price": 118.5,
-      "change_pct": "+8.69%",
+      "tweet_volume": 49692,
+      "price": 40.73,
+      "change_pct": "-0.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLXY",
-      "name": "Galaxy Digital Inc.",
+      "ticker": "DKNG",
+      "name": "DraftKings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29943,
-      "price": 30.9,
-      "change_pct": "+22.91%",
+      "tweet_volume": 24585,
+      "price": 26.75,
+      "change_pct": "+7.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NEXR",
-      "name": "Nexera Technologies Ltd",
+      "ticker": "SPCE",
+      "name": "Virgin Galactic Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 121754,
-      "price": 0.93,
-      "change_pct": "-23.04%",
+      "tweet_volume": 78776,
+      "price": 4.38,
+      "change_pct": "+6.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RYET",
-      "name": "Ruanyun Edai Technology Inc.",
+      "ticker": "ELPW",
+      "name": "Elong Power Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 121586,
-      "price": 1.0,
-      "change_pct": "+21.08%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NPT",
-      "name": "Texxon Holding Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 181346,
-      "price": 2.83,
-      "change_pct": "+119.38%",
+      "tweet_volume": 238228,
+      "price": 1.29,
+      "change_pct": "+68.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

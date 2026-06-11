@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-10T16:35:21.719917+00:00",
+  "updated_at": "2026-06-11T16:54:20.550512+00:00",
   "top_trending": {
-    "ticker": "SMCI",
-    "name": "Super Micro Computer, Inc.",
+    "ticker": "ADBE",
+    "name": "Adobe Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 165946,
-    "price": 33.39,
-    "change_pct": "-17.84%",
+    "tweet_volume": 13841,
+    "price": 223.12,
+    "change_pct": "-4.40%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "DSY",
-      "name": "Big Tree Cloud Holdings Limited",
+      "ticker": "SPCE",
+      "name": "Virgin Galactic Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 238778,
-      "price": 7.96,
-      "change_pct": "+332.34%",
+      "tweet_volume": 166647,
+      "price": 5.74,
+      "change_pct": "+21.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VSME",
-      "name": "VS Media Holdings Limited",
+      "ticker": "EDHL",
+      "name": "Everbright Digital Holding Limi",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 520946,
-      "price": 2.74,
-      "change_pct": "+233.09%",
+      "tweet_volume": 138052,
+      "price": 6.6,
+      "change_pct": "+88.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CASY",
-      "name": "Caseys General Stores, Inc.",
+      "ticker": "PPCB",
+      "name": "Propanc Biopharma, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2326,
-      "price": 873.09,
-      "change_pct": "+14.70%",
+      "tweet_volume": 381967,
+      "price": 3.25,
+      "change_pct": "+140.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRL",
-      "name": "Cracker Barrel Old Country Stor",
+      "ticker": "DOL.TO",
+      "name": "DOLLARAMA INC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17120,
-      "price": 45.23,
-      "change_pct": "+24.60%",
+      "tweet_volume": 1706,
+      "price": 195.46,
+      "change_pct": "+8.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CHWY",
-      "name": "Chewy, Inc.",
+      "ticker": "GLXG",
+      "name": "Galaxy Payroll Group Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32261,
-      "price": 20.47,
-      "change_pct": "+0.34%",
+      "tweet_volume": 248703,
+      "price": 2.29,
+      "change_pct": "+134.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporatio",
+      "ticker": "GELS",
+      "name": "Gelteq Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5172,
-      "price": 244.04,
-      "change_pct": "-3.02%",
+      "tweet_volume": 216502,
+      "price": 1.32,
+      "change_pct": "+156.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LMND",
-      "name": "Lemonade, Inc.",
+      "ticker": "MNTS",
+      "name": "Momentus Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4569,
-      "price": 57.05,
-      "change_pct": "+6.49%",
+      "tweet_volume": 29700,
+      "price": 15.27,
+      "change_pct": "+34.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
+      "ticker": "SATS",
+      "name": "EchoStar Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19591,
-      "price": 234.16,
-      "change_pct": "-9.80%",
+      "tweet_volume": 21169,
+      "price": 125.61,
+      "change_pct": "+8.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CHOW",
-      "name": "ChowChow Cloud International Ho",
+      "ticker": "RKDA",
+      "name": "Arcadia Biosciences, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 353340,
-      "price": 0.7,
-      "change_pct": "+101.43%",
+      "tweet_volume": 275051,
+      "price": 1.2,
+      "change_pct": "+32.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BATL",
-      "name": "Battalion Oil Corporation",
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 137074,
-      "price": 2.27,
-      "change_pct": "+73.27%",
+      "tweet_volume": 16250,
+      "price": 165.74,
+      "change_pct": "-2.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

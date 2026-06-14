@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-13T14:59:47.693269+00:00",
+  "updated_at": "2026-06-14T15:07:16.107138+00:00",
   "top_trending": {
-    "ticker": "ROKU",
-    "name": "Roku, Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 37091,
-    "price": 143.66,
-    "change_pct": "+20.08%",
+    "tweet_volume": 2216619,
+    "price": 1.13,
+    "change_pct": "-1.48%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,45 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "MSGS",
+      "name": "Madison Square Garden Sports Co",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2882124,
-      "price": 1.15,
-      "change_pct": "+1.94%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11801,
-      "price": 62.72,
-      "change_pct": "+1.31%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CAST",
-      "name": "FreeCast, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 511050,
-      "price": 1.55,
-      "change_pct": "+140.68%",
+      "tweet_volume": 993,
+      "price": 384.68,
+      "change_pct": "-2.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -68,39 +38,39 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4852575,
-      "price": 68.2,
-      "change_pct": "+2.17%",
+      "tweet_volume": 3570511,
+      "price": 67.35,
+      "change_pct": "-2.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WBD",
-      "name": "Warner Bros. Discovery, Inc. - ",
+      "ticker": "RMBS",
+      "name": "Rambus, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 37196,
-      "price": 26.98,
-      "change_pct": "+0.45%",
+      "tweet_volume": 4984,
+      "price": 146.56,
+      "change_pct": "+1.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPCL",
-      "name": "Defiance Pure Space Daily 2X St",
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2442,
-      "price": 51.26,
-      "change_pct": "+56.57%",
+      "tweet_volume": 30792,
+      "price": 41.53,
+      "change_pct": "+0.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -113,54 +83,84 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2164811,
+      "tweet_volume": 1185661,
       "price": 0.09,
-      "change_pct": "+2.69%",
+      "change_pct": "-1.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "ONTO",
+      "name": "Onto Innovation Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50215,
-      "price": 32.82,
-      "change_pct": "+0.89%",
+      "tweet_volume": 4517,
+      "price": 323.88,
+      "change_pct": "+6.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-CAD",
-      "name": "XRP CAD",
+      "ticker": "SMR",
+      "name": "NuScale Power Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4033677,
-      "price": 1.62,
-      "change_pct": "+1.94%",
+      "tweet_volume": 77426,
+      "price": 9.89,
+      "change_pct": "+3.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSKY",
-      "name": "Paramount Skydance Corporation",
+      "ticker": "STM",
+      "name": "STMicroelectronics N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10913,
-      "price": 10.47,
-      "change_pct": "-0.19%",
+      "tweet_volume": 28259,
+      "price": 77.3,
+      "change_pct": "-1.05%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 56770,
+      "price": 42.7,
+      "change_pct": "+2.97%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2627,
+      "price": 170.58,
+      "change_pct": "-7.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

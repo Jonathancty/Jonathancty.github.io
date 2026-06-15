@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-14T15:07:16.107138+00:00",
+  "updated_at": "2026-06-15T17:58:54.646523+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "ROKU",
+    "name": "Roku, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2216619,
-    "price": 1.13,
-    "change_pct": "-1.48%",
+    "tweet_volume": 42744,
+    "price": 141.49,
+    "change_pct": "-1.51%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "MSGS",
-      "name": "Madison Square Garden Sports Co",
+      "ticker": "FOX",
+      "name": "Fox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 993,
-      "price": 384.68,
-      "change_pct": "-2.29%",
+      "tweet_volume": 11376,
+      "price": 49.29,
+      "change_pct": "-16.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "FISV",
+      "name": "Fiserv, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3570511,
-      "price": 67.35,
-      "change_pct": "-2.21%",
+      "tweet_volume": 39891,
+      "price": 48.02,
+      "change_pct": "-10.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RMBS",
-      "name": "Rambus, Inc.",
+      "ticker": "POET",
+      "name": "POET Technologies Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4984,
-      "price": 146.56,
-      "change_pct": "+1.45%",
+      "tweet_volume": 81688,
+      "price": 14.58,
+      "change_pct": "+16.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
+      "ticker": "RGNT",
+      "name": "Regentis Biomaterials Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30792,
-      "price": 41.53,
-      "change_pct": "+0.70%",
+      "tweet_volume": 339874,
+      "price": 14.3,
+      "change_pct": "+853.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1185661,
-      "price": 0.09,
-      "change_pct": "-1.97%",
+      "tweet_volume": 27263,
+      "price": 260.71,
+      "change_pct": "+12.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONTO",
-      "name": "Onto Innovation Inc.",
+      "ticker": "CAST",
+      "name": "FreeCast, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4517,
-      "price": 323.88,
-      "change_pct": "+6.70%",
+      "tweet_volume": 356944,
+      "price": 3.6,
+      "change_pct": "+132.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMR",
-      "name": "NuScale Power Corporation",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 77426,
-      "price": 9.89,
-      "change_pct": "+3.34%",
+      "tweet_volume": 3313623,
+      "price": 1.28,
+      "change_pct": "+7.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STM",
-      "name": "STMicroelectronics N.V.",
+      "ticker": "QTEX",
+      "name": "QTREX Quantum Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28259,
-      "price": 77.3,
-      "change_pct": "-1.05%",
+      "tweet_volume": 237103,
+      "price": 2.31,
+      "change_pct": "+79.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 56770,
-      "price": 42.7,
-      "change_pct": "+2.97%",
+      "tweet_volume": 808,
+      "price": 1645.17,
+      "change_pct": "+3.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2627,
-      "price": 170.58,
-      "change_pct": "-7.14%",
+      "tweet_volume": 88037,
+      "price": 17.41,
+      "change_pct": "+8.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

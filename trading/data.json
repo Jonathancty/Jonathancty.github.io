@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-16T18:03:50.874776+00:00",
+  "updated_at": "2026-06-17T16:38:20.175757+00:00",
   "top_trending": {
-    "ticker": "CRVO",
-    "name": "CervoMed Inc.",
+    "ticker": "HOOD",
+    "name": "Robinhood Markets, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 449270,
-    "price": 4.79,
-    "change_pct": "+93.15%",
+    "tweet_volume": 88006,
+    "price": 107.54,
+    "change_pct": "+11.20%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RXT",
-      "name": "Rackspace Technology, Inc.",
+      "ticker": "QURE",
+      "name": "uniQure N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 170100,
-      "price": 6.7,
-      "change_pct": "+13.19%",
+      "tweet_volume": 32506,
+      "price": 47.02,
+      "change_pct": "+74.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OBAI",
-      "name": "Our Bond, Inc.",
+      "ticker": "ICCM",
+      "name": "IceCure Medical Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1053181,
-      "price": 1.18,
-      "change_pct": "+120.73%",
+      "tweet_volume": 286466,
+      "price": 8.06,
+      "change_pct": "+278.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "BIRD",
+      "name": "Allbirds, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 75834,
-      "price": 119.04,
-      "change_pct": "+11.56%",
+      "tweet_volume": 91885,
+      "price": 5.66,
+      "change_pct": "+43.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SUGP",
-      "name": "SU Group Holdings Limited",
+      "ticker": "AMC",
+      "name": "AMC Entertainment Holdings, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 603310,
-      "price": 1.65,
-      "change_pct": "+87.39%",
+      "tweet_volume": 97679,
+      "price": 2.74,
+      "change_pct": "+10.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies Inc",
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 108865,
-      "price": 4.93,
-      "change_pct": "+7.05%",
+      "tweet_volume": 18412,
+      "price": 64.56,
+      "change_pct": "-7.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GIL",
-      "name": "Gildan Activewear, Inc.",
+      "ticker": "SNBR",
+      "name": "Sleep Number Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28224,
-      "price": 49.99,
-      "change_pct": "-19.33%",
+      "tweet_volume": 1831189,
+      "price": 0.52,
+      "change_pct": "+194.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "FRMI",
+      "name": "Fermi Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17961,
-      "price": 57.33,
-      "change_pct": "+9.98%",
+      "tweet_volume": 47375,
+      "price": 8.89,
+      "change_pct": "+12.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KEEL",
-      "name": "Keel Infrastructure Corp.",
+      "ticker": "WOLF",
+      "name": "Wolfspeed, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 113287,
-      "price": 6.2,
-      "change_pct": "+9.45%",
+      "tweet_volume": 10705,
+      "price": 51.86,
+      "change_pct": "+15.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
+      "ticker": "BRAI",
+      "name": "Braiin Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4138,
-      "price": 110.19,
-      "change_pct": "+10.57%",
+      "tweet_volume": 2694,
+      "price": 10.07,
+      "change_pct": "+34.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IVDA",
-      "name": "Iveda Solutions, Inc.",
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 862298,
-      "price": 0.48,
-      "change_pct": "+50.44%",
+      "tweet_volume": 142954,
+      "price": 18.5,
+      "change_pct": "+4.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-17T16:38:20.175757+00:00",
+  "updated_at": "2026-06-18T16:30:09.486542+00:00",
   "top_trending": {
-    "ticker": "HOOD",
-    "name": "Robinhood Markets, Inc.",
+    "ticker": "ACN",
+    "name": "Accenture plc",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 88006,
-    "price": 107.54,
-    "change_pct": "+11.20%",
+    "tweet_volume": 42701,
+    "price": 129.37,
+    "change_pct": "-17.08%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "QURE",
-      "name": "uniQure N.V.",
+      "ticker": "QS",
+      "name": "QuantumScape Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32506,
-      "price": 47.02,
-      "change_pct": "+74.21%",
+      "tweet_volume": 136547,
+      "price": 7.82,
+      "change_pct": "+13.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ICCM",
-      "name": "IceCure Medical Ltd.",
+      "ticker": "SMR",
+      "name": "NuScale Power Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 286466,
-      "price": 8.06,
-      "change_pct": "+278.40%",
+      "tweet_volume": 80430,
+      "price": 11.37,
+      "change_pct": "+9.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIRD",
-      "name": "Allbirds, Inc.",
+      "ticker": "PFE",
+      "name": "Pfizer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 91885,
-      "price": 5.66,
-      "change_pct": "+43.65%",
+      "tweet_volume": 107952,
+      "price": 25.14,
+      "change_pct": "-2.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMC",
-      "name": "AMC Entertainment Holdings, Inc",
+      "ticker": "STRC",
+      "name": "Strategy Inc - Variable Rate Se",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 97679,
-      "price": 2.74,
-      "change_pct": "+10.16%",
+      "tweet_volume": 20080,
+      "price": 85.26,
+      "change_pct": "-4.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
+      "ticker": "CDT",
+      "name": "CDT Equity Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18412,
-      "price": 64.56,
-      "change_pct": "-7.82%",
+      "tweet_volume": 500509,
+      "price": 1.33,
+      "change_pct": "+92.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNBR",
-      "name": "Sleep Number Corporation",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1831189,
-      "price": 0.52,
-      "change_pct": "+194.17%",
+      "tweet_volume": 9457,
+      "price": 231.0,
+      "change_pct": "+8.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FRMI",
-      "name": "Fermi Inc.",
+      "ticker": "CIFR",
+      "name": "Cipher Digital Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 47375,
-      "price": 8.89,
-      "change_pct": "+12.88%",
+      "tweet_volume": 50698,
+      "price": 29.63,
+      "change_pct": "+12.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WOLF",
-      "name": "Wolfspeed, Inc.",
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10705,
-      "price": 51.86,
-      "change_pct": "+15.24%",
+      "tweet_volume": 40949,
+      "price": 111.29,
+      "change_pct": "-4.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BRAI",
-      "name": "Braiin Limited",
+      "ticker": "ATPC",
+      "name": "Agape ATP Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2694,
-      "price": 10.07,
-      "change_pct": "+34.45%",
+      "tweet_volume": 156763,
+      "price": 5.36,
+      "change_pct": "+96.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
+      "ticker": "CAST",
+      "name": "FreeCast, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 142954,
-      "price": 18.5,
-      "change_pct": "+4.49%",
+      "tweet_volume": 208526,
+      "price": 7.47,
+      "change_pct": "+45.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

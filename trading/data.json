@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-18T16:30:09.486542+00:00",
+  "updated_at": "2026-06-19T15:58:29.289251+00:00",
   "top_trending": {
-    "ticker": "ACN",
-    "name": "Accenture plc",
+    "ticker": "KEEL.TO",
+    "name": "KEEL INFRASTRUCTURE CORP",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 42701,
-    "price": 129.37,
-    "change_pct": "-17.08%",
+    "tweet_volume": 11162,
+    "price": 9.98,
+    "change_pct": "+12.90%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,120 @@
   },
   "trending_list": [
     {
-      "ticker": "QS",
-      "name": "QuantumScape Corporation",
+      "ticker": "MDA.TO",
+      "name": "MDA SPACE LTD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 136547,
-      "price": 7.82,
-      "change_pct": "+13.34%",
+      "tweet_volume": 1428,
+      "price": 57.7,
+      "change_pct": "+3.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMR",
-      "name": "NuScale Power Corporation",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 80430,
-      "price": 11.37,
-      "change_pct": "+9.97%",
+      "tweet_volume": 3987178,
+      "price": 1.14,
+      "change_pct": "-0.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PFE",
-      "name": "Pfizer, Inc.",
+      "ticker": "AGI.TO",
+      "name": "ALAMOS GOLD INC CLS A",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 107952,
-      "price": 25.14,
-      "change_pct": "-2.99%",
+      "tweet_volume": 3981,
+      "price": 42.35,
+      "change_pct": "-17.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STRC",
-      "name": "Strategy Inc - Variable Rate Se",
+      "ticker": "HIVE.TO",
+      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20080,
-      "price": 85.26,
-      "change_pct": "-4.20%",
+      "tweet_volume": 7442,
+      "price": 6.43,
+      "change_pct": "+6.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CDT",
-      "name": "CDT Equity Inc.",
+      "ticker": "BB.TO",
+      "name": "BLACKBERRY LIMITED",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 500509,
-      "price": 1.33,
-      "change_pct": "+92.53%",
+      "tweet_volume": 1001,
+      "price": 11.9,
+      "change_pct": "+0.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "CM.TO",
+      "name": "CANADIAN IMPERIAL BANK OF COMME",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9457,
-      "price": 231.0,
-      "change_pct": "+8.11%",
+      "tweet_volume": 5631,
+      "price": 160.35,
+      "change_pct": "+1.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CIFR",
-      "name": "Cipher Digital Inc.",
+      "ticker": "HUT.TO",
+      "name": "HUT 8 CORP",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50698,
-      "price": 29.63,
-      "change_pct": "+12.45%",
+      "tweet_volume": 75,
+      "price": 174.34,
+      "change_pct": "-0.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "APGE",
+      "name": "Apogee Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 40949,
-      "price": 111.29,
-      "change_pct": "-4.52%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ATPC",
-      "name": "Agape ATP Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 156763,
-      "price": 5.36,
-      "change_pct": "+96.34%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CAST",
-      "name": "FreeCast, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 208526,
-      "price": 7.47,
-      "change_pct": "+45.05%",
+      "tweet_volume": 4213,
+      "price": 90.38,
+      "change_pct": "+2.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-19T15:58:29.289251+00:00",
+  "updated_at": "2026-06-20T15:02:46.800391+00:00",
   "top_trending": {
-    "ticker": "KEEL.TO",
-    "name": "KEEL INFRASTRUCTURE CORP",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 11162,
-    "price": 9.98,
-    "change_pct": "+12.90%",
+    "tweet_volume": 2337583,
+    "price": 1.14,
+    "change_pct": "+0.67%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,120 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "MDA.TO",
-      "name": "MDA SPACE LTD",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1428,
-      "price": 57.7,
-      "change_pct": "+3.76%",
+      "tweet_volume": 4050512,
+      "price": 71.61,
+      "change_pct": "+2.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3987178,
-      "price": 1.14,
-      "change_pct": "-0.84%",
+      "tweet_volume": 52913,
+      "price": 42.51,
+      "change_pct": "+1.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AGI.TO",
-      "name": "ALAMOS GOLD INC CLS A",
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3981,
-      "price": 42.35,
-      "change_pct": "-17.61%",
+      "tweet_volume": 18046,
+      "price": 333.05,
+      "change_pct": "+4.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIVE.TO",
-      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7442,
-      "price": 6.43,
-      "change_pct": "+6.46%",
+      "tweet_volume": 56465,
+      "price": 417.07,
+      "change_pct": "+11.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BB.TO",
-      "name": "BLACKBERRY LIMITED",
+      "ticker": "SCHD",
+      "name": "Schwab US Dividend Equity ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1001,
-      "price": 11.9,
-      "change_pct": "+0.68%",
+      "tweet_volume": 51515,
+      "price": 31.86,
+      "change_pct": "-0.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CM.TO",
-      "name": "CANADIAN IMPERIAL BANK OF COMME",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5631,
-      "price": 160.35,
-      "change_pct": "+1.51%",
+      "tweet_volume": 72162,
+      "price": 286.69,
+      "change_pct": "+2.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HUT.TO",
-      "name": "HUT 8 CORP",
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 75,
-      "price": 174.34,
-      "change_pct": "-0.67%",
+      "tweet_volume": 30574,
+      "price": 437.92,
+      "change_pct": "+7.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APGE",
-      "name": "Apogee Therapeutics, Inc.",
+      "ticker": "SPMO",
+      "name": "Invesco S&P 500 Momentum ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4213,
-      "price": 90.38,
-      "change_pct": "+2.21%",
+      "tweet_volume": 6090,
+      "price": 159.9,
+      "change_pct": "+2.84%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 70340,
+      "price": 14.35,
+      "change_pct": "-0.07%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ACHR",
+      "name": "Archer Aviation Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 74194,
+      "price": 5.57,
+      "change_pct": "+3.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

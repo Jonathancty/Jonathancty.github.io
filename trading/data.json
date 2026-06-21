@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T15:02:46.800391+00:00",
+  "updated_at": "2026-06-21T15:10:31.325929+00:00",
   "top_trending": {
     "ticker": "XRP-USD",
     "name": "XRP USD",
@@ -7,9 +7,9 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2337583,
-    "price": 1.14,
-    "change_pct": "+0.67%",
+    "tweet_volume": 1917022,
+    "price": 1.15,
+    "change_pct": "-0.04%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -23,144 +23,144 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4050512,
-      "price": 71.61,
-      "change_pct": "+2.71%",
+      "tweet_volume": 4919449,
+      "price": 73.99,
+      "change_pct": "+1.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
+      "ticker": "ADTX",
+      "name": "Aditxt, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 52913,
-      "price": 42.51,
-      "change_pct": "+1.02%",
+      "tweet_volume": 13457515,
+      "price": 0.01,
+      "change_pct": "+127.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
+      "ticker": "AGIX",
+      "name": "KraneShares Public-Private AI &",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18046,
-      "price": 333.05,
-      "change_pct": "+4.87%",
+      "tweet_volume": 778,
+      "price": 47.52,
+      "change_pct": "+2.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "FOTO",
+      "name": "Tuttle Capital Pure Play Photon",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 56465,
-      "price": 417.07,
-      "change_pct": "+11.31%",
+      "tweet_volume": 2280,
+      "price": 23.65,
+      "change_pct": "+0.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "HYPE32196-USD",
+      "name": "Hyperliquid USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 51515,
-      "price": 31.86,
-      "change_pct": "-0.22%",
+      "tweet_volume": 934546,
+      "price": 68.63,
+      "change_pct": "-2.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 72162,
-      "price": 286.69,
-      "change_pct": "+2.06%",
+      "tweet_volume": 62406,
+      "price": 95.04,
+      "change_pct": "-0.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
+      "ticker": "AXTI",
+      "name": "AXT Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30574,
-      "price": 437.92,
-      "change_pct": "+7.19%",
+      "tweet_volume": 30871,
+      "price": 84.57,
+      "change_pct": "-8.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPMO",
-      "name": "Invesco S&P 500 Momentum ETF",
+      "ticker": "VST",
+      "name": "Vistra Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6090,
-      "price": 159.9,
-      "change_pct": "+2.84%",
+      "tweet_volume": 19774,
+      "price": 163.75,
+      "change_pct": "+3.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
+      "ticker": "AMKR",
+      "name": "Amkor Technology, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 70340,
-      "price": 14.35,
-      "change_pct": "-0.07%",
+      "tweet_volume": 13293,
+      "price": 90.46,
+      "change_pct": "+4.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ACHR",
-      "name": "Archer Aviation Inc.",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 74194,
-      "price": 5.57,
-      "change_pct": "+3.92%",
+      "tweet_volume": 18350,
+      "price": 389.57,
+      "change_pct": "+2.83%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

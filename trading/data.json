@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-22T17:39:57.353031+00:00",
+  "updated_at": "2026-06-23T15:47:01.226177+00:00",
   "top_trending": {
-    "ticker": "SMCI",
-    "name": "Super Micro Computer, Inc.",
+    "ticker": "INFQ",
+    "name": "Infleqtion, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 205106,
-    "price": 35.64,
-    "change_pct": "+16.24%",
+    "tweet_volume": 66207,
+    "price": 16.08,
+    "change_pct": "+13.16%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "ATLN",
+      "name": "Atlantic International Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46050,
-      "price": 110.32,
-      "change_pct": "-6.47%",
+      "tweet_volume": 726227,
+      "price": 1.13,
+      "change_pct": "+156.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DFTX",
-      "name": "Definium Therapeutics, Inc.",
+      "ticker": "CCL",
+      "name": "Carnival Corporation Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41201,
-      "price": 37.57,
-      "change_pct": "+53.47%",
+      "tweet_volume": 54551,
+      "price": 28.43,
+      "change_pct": "-5.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LULU",
-      "name": "lululemon athletica inc.",
+      "ticker": "PRIM",
+      "name": "Primoris Services Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7094,
-      "price": 104.67,
-      "change_pct": "-6.35%",
+      "tweet_volume": 14103,
+      "price": 83.47,
+      "change_pct": "-22.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GETY",
-      "name": "Getty Images Holdings, Inc.",
+      "ticker": "ZETA",
+      "name": "Zeta Global Holdings Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 458339,
-      "price": 1.23,
-      "change_pct": "+103.27%",
+      "tweet_volume": 24039,
+      "price": 19.65,
+      "change_pct": "+6.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "HSCS",
+      "name": "HeartSciences Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39022,
-      "price": 92.33,
-      "change_pct": "-2.85%",
+      "tweet_volume": 306027,
+      "price": 2.61,
+      "change_pct": "+47.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
+      "ticker": "ATD.TO",
+      "name": "ALIMENTATION COUCHE-TARD INC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46444,
-      "price": 98.68,
-      "change_pct": "-7.98%",
+      "tweet_volume": 5722,
+      "price": 92.27,
+      "change_pct": "+12.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SKYQ",
-      "name": "Sky Quarry Inc.",
+      "ticker": "FCUV",
+      "name": "Focus Universal Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 483053,
-      "price": 1.87,
-      "change_pct": "+59.83%",
+      "tweet_volume": 143500,
+      "price": 5.29,
+      "change_pct": "+143.51%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BOLD",
+      "name": "Boundless Bio, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 123248,
+      "price": 2.51,
+      "change_pct": "+78.99%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "QBTS",
+      "name": "D-Wave Quantum Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 67209,
+      "price": 25.4,
+      "change_pct": "+3.80%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ARQQ",
+      "name": "Arqit Quantum Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4968,
+      "price": 28.43,
+      "change_pct": "+32.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

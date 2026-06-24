@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-23T15:47:01.226177+00:00",
+  "updated_at": "2026-06-24T15:32:43.028900+00:00",
   "top_trending": {
-    "ticker": "INFQ",
-    "name": "Infleqtion, Inc.",
+    "ticker": "WEN",
+    "name": "Wendy's Company (The)",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 66207,
-    "price": 16.08,
-    "change_pct": "+13.16%",
+    "tweet_volume": 321309,
+    "price": 7.89,
+    "change_pct": "+26.22%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ATLN",
-      "name": "Atlantic International Corp.",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 726227,
-      "price": 1.13,
-      "change_pct": "+156.41%",
+      "tweet_volume": 27010,
+      "price": 191.79,
+      "change_pct": "-15.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CCL",
-      "name": "Carnival Corporation Ltd.",
+      "ticker": "RUN",
+      "name": "Sunrun Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 54551,
-      "price": 28.43,
-      "change_pct": "-5.85%",
+      "tweet_volume": 75225,
+      "price": 16.37,
+      "change_pct": "+27.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PRIM",
-      "name": "Primoris Services Corporation",
+      "ticker": "RHM.DE",
+      "name": "RHEINMETALL AG                I",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14103,
-      "price": 83.47,
-      "change_pct": "-22.96%",
+      "tweet_volume": 3269,
+      "price": 940.6,
+      "change_pct": "-19.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZETA",
-      "name": "Zeta Global Holdings Corp.",
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 24039,
-      "price": 19.65,
-      "change_pct": "+6.41%",
+      "tweet_volume": 31358,
+      "price": 97.97,
+      "change_pct": "-5.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HSCS",
-      "name": "HeartSciences Inc.",
+      "ticker": "FCEL",
+      "name": "FuelCell Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 306027,
-      "price": 2.61,
-      "change_pct": "+47.46%",
+      "tweet_volume": 40863,
+      "price": 21.67,
+      "change_pct": "-0.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ATD.TO",
-      "name": "ALIMENTATION COUCHE-TARD INC",
+      "ticker": "HTZ",
+      "name": "Hertz Global Holdings, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5722,
-      "price": 92.27,
-      "change_pct": "+12.17%",
+      "tweet_volume": 61535,
+      "price": 3.67,
+      "change_pct": "-27.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCUV",
-      "name": "Focus Universal Inc.",
+      "ticker": "PLSM",
+      "name": "Pulsenmore Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 143500,
-      "price": 5.29,
-      "change_pct": "+143.51%",
+      "tweet_volume": 107887,
+      "price": 8.03,
+      "change_pct": "+135.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BOLD",
-      "name": "Boundless Bio, Inc.",
+      "ticker": "AFRM",
+      "name": "Affirm Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 123248,
-      "price": 2.51,
-      "change_pct": "+78.99%",
+      "tweet_volume": 6086,
+      "price": 79.63,
+      "change_pct": "+10.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QBTS",
-      "name": "D-Wave Quantum Inc.",
+      "ticker": "FDX",
+      "name": "FedEx Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 67209,
-      "price": 25.4,
-      "change_pct": "+3.80%",
+      "tweet_volume": 7101,
+      "price": 314.38,
+      "change_pct": "-0.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARQQ",
-      "name": "Arqit Quantum Inc.",
+      "ticker": "ABVX",
+      "name": "Abivax SA",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4968,
-      "price": 28.43,
-      "change_pct": "+32.70%",
+      "tweet_volume": 11508,
+      "price": 93.0,
+      "change_pct": "-5.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-24T15:32:43.028900+00:00",
+  "updated_at": "2026-06-25T15:39:14.896251+00:00",
   "top_trending": {
-    "ticker": "WEN",
-    "name": "Wendy's Company (The)",
+    "ticker": "BB",
+    "name": "BlackBerry Limited",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 321309,
-    "price": 7.89,
-    "change_pct": "+26.22%",
+    "tweet_volume": 111746,
+    "price": 10.41,
+    "change_pct": "+20.77%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,135 @@
   },
   "trending_list": [
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "ILLR",
+      "name": "Triller Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27010,
-      "price": 191.79,
-      "change_pct": "-15.41%",
+      "tweet_volume": 369487,
+      "price": 3.37,
+      "change_pct": "+338.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RUN",
-      "name": "Sunrun Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 75225,
-      "price": 16.37,
-      "change_pct": "+27.79%",
+      "tweet_volume": 6623487,
+      "price": 1.03,
+      "change_pct": "-3.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RHM.DE",
-      "name": "RHEINMETALL AG                I",
+      "ticker": "NEXR",
+      "name": "Nexera Technologies Ltd",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3269,
-      "price": 940.6,
-      "change_pct": "-19.37%",
+      "tweet_volume": 581539,
+      "price": 0.87,
+      "change_pct": "+53.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "AZI",
+      "name": "Autozi Internet Technology (Glo",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 31358,
-      "price": 97.97,
-      "change_pct": "-5.65%",
+      "tweet_volume": 127024,
+      "price": 1.83,
+      "change_pct": "+60.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
+      "ticker": "BB.TO",
+      "name": "BLACKBERRY LIMITED",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 40863,
-      "price": 21.67,
-      "change_pct": "-0.69%",
+      "tweet_volume": 15437,
+      "price": 14.77,
+      "change_pct": "+20.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HTZ",
-      "name": "Hertz Global Holdings, Inc",
+      "ticker": "KUST",
+      "name": "Kustom Entertainment, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 61535,
-      "price": 3.67,
-      "change_pct": "-27.57%",
+      "tweet_volume": 201203,
+      "price": 1.64,
+      "change_pct": "+16.80%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PLSM",
-      "name": "Pulsenmore Ltd.",
+      "ticker": "IQST",
+      "name": "iQSTEL Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 107887,
-      "price": 8.03,
-      "change_pct": "+135.34%",
+      "tweet_volume": 180376,
+      "price": 1.34,
+      "change_pct": "+24.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm Holdings, Inc.",
+      "ticker": "NNOX",
+      "name": "NANO-X IMAGING LTD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6086,
-      "price": 79.63,
-      "change_pct": "+10.86%",
+      "tweet_volume": 30031,
+      "price": 0.86,
+      "change_pct": "-45.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FDX",
-      "name": "FedEx Corporation",
+      "ticker": "TCOM",
+      "name": "Trip.com Group Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7101,
-      "price": 314.38,
-      "change_pct": "-0.90%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ABVX",
-      "name": "Abivax SA",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11508,
-      "price": 93.0,
-      "change_pct": "-5.52%",
+      "tweet_volume": 20275,
+      "price": 40.42,
+      "change_pct": "-12.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

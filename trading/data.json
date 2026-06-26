@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-25T15:39:14.896251+00:00",
+  "updated_at": "2026-06-26T15:22:56.188782+00:00",
   "top_trending": {
-    "ticker": "BB",
-    "name": "BlackBerry Limited",
+    "ticker": "ON",
+    "name": "ON Semiconductor Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 111746,
-    "price": 10.41,
-    "change_pct": "+20.77%",
+    "tweet_volume": 42185,
+    "price": 93.49,
+    "change_pct": "-21.26%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,135 +17,150 @@
   },
   "trending_list": [
     {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 18191,
+      "price": 266.21,
+      "change_pct": "-13.90%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 13250,
+      "price": 68.71,
+      "change_pct": "+15.00%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "FCEL",
+      "name": "FuelCell Energy, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 30117,
+      "price": 24.45,
+      "change_pct": "+24.43%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 40538,
+      "price": 13.12,
+      "change_pct": "+5.26%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "IVF",
+      "name": "INVO Fertility, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 172630,
+      "price": 2.06,
+      "change_pct": "+65.73%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TII",
+      "name": "Titan Mining Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 47617,
+      "price": 2.38,
+      "change_pct": "+6.78%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "QUCY",
+      "name": "Quantum Cyber N.V.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 137526,
+      "price": 1.82,
+      "change_pct": "+25.35%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SDOT",
+      "name": "Sadot Group Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 49294,
+      "price": 11.03,
+      "change_pct": "+78.48%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
       "ticker": "ILLR",
       "name": "Triller Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 369487,
-      "price": 3.37,
-      "change_pct": "+338.04%",
+      "tweet_volume": 157319,
+      "price": 4.26,
+      "change_pct": "+39.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "SHPH",
+      "name": "Shuttle Pharmaceuticals Holding",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6623487,
-      "price": 1.03,
-      "change_pct": "-3.74%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NEXR",
-      "name": "Nexera Technologies Ltd",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 581539,
-      "price": 0.87,
-      "change_pct": "+53.94%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AZI",
-      "name": "Autozi Internet Technology (Glo",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 127024,
-      "price": 1.83,
-      "change_pct": "+60.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BB.TO",
-      "name": "BLACKBERRY LIMITED",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15437,
-      "price": 14.77,
-      "change_pct": "+20.47%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "KUST",
-      "name": "Kustom Entertainment, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 201203,
-      "price": 1.64,
-      "change_pct": "+16.80%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IQST",
-      "name": "iQSTEL Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 180376,
-      "price": 1.34,
-      "change_pct": "+24.54%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NNOX",
-      "name": "NANO-X IMAGING LTD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 30031,
-      "price": 0.86,
-      "change_pct": "-45.41%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TCOM",
-      "name": "Trip.com Group Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 20275,
-      "price": 40.42,
-      "change_pct": "-12.70%",
+      "tweet_volume": 67677,
+      "price": 4.77,
+      "change_pct": "+26.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

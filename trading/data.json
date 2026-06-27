@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-26T15:22:56.188782+00:00",
+  "updated_at": "2026-06-27T14:28:15.036149+00:00",
   "top_trending": {
-    "ticker": "ON",
-    "name": "ON Semiconductor Corporation",
+    "ticker": "LCID",
+    "name": "Lucid Group, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 42185,
-    "price": 93.49,
-    "change_pct": "-21.26%",
+    "tweet_volume": 74787,
+    "price": 5.92,
+    "change_pct": "+15.62%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18191,
-      "price": 266.21,
-      "change_pct": "-13.90%",
+      "tweet_volume": 3900592,
+      "price": 1.07,
+      "change_pct": "+1.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13250,
-      "price": 68.71,
-      "change_pct": "+15.00%",
+      "tweet_volume": 7194568,
+      "price": 72.54,
+      "change_pct": "+0.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30117,
-      "price": 24.45,
-      "change_pct": "+24.43%",
+      "tweet_volume": 91291,
+      "price": 8.71,
+      "change_pct": "+11.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
+      "ticker": "GENB",
+      "name": "Generate Biomedicines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 40538,
-      "price": 13.12,
-      "change_pct": "+5.26%",
+      "tweet_volume": 7926,
+      "price": 16.47,
+      "change_pct": "+0.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IVF",
-      "name": "INVO Fertility, Inc.",
+      "ticker": "GME",
+      "name": "GameStop Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 172630,
-      "price": 2.06,
-      "change_pct": "+65.73%",
+      "tweet_volume": 13120,
+      "price": 21.76,
+      "change_pct": "+3.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TII",
-      "name": "Titan Mining Corporation",
+      "ticker": "DOGE-USD",
+      "name": "Dogecoin USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 47617,
-      "price": 2.38,
-      "change_pct": "+6.78%",
+      "tweet_volume": 1227736,
+      "price": 0.08,
+      "change_pct": "+0.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QUCY",
-      "name": "Quantum Cyber N.V.",
+      "ticker": "RSP",
+      "name": "Invesco S&P 500 Equal Weight ET",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 137526,
-      "price": 1.82,
-      "change_pct": "+25.35%",
+      "tweet_volume": 41810,
+      "price": 210.31,
+      "change_pct": "-0.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SDOT",
-      "name": "Sadot Group Inc.",
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49294,
-      "price": 11.03,
-      "change_pct": "+78.48%",
+      "tweet_volume": 2500,
+      "price": 256.14,
+      "change_pct": "-0.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ILLR",
-      "name": "Triller Group Inc.",
+      "ticker": "FSELX",
+      "name": "Fidelity Select Semiconductors ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 157319,
-      "price": 4.26,
-      "change_pct": "+39.67%",
+      "tweet_volume": 2500,
+      "price": 66.58,
+      "change_pct": "-5.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SHPH",
-      "name": "Shuttle Pharmaceuticals Holding",
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 67677,
-      "price": 4.77,
-      "change_pct": "+26.17%",
+      "tweet_volume": 42179,
+      "price": 232.21,
+      "change_pct": "+0.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

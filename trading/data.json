@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-27T14:28:15.036149+00:00",
+  "updated_at": "2026-06-28T14:47:42.926563+00:00",
   "top_trending": {
-    "ticker": "LCID",
-    "name": "Lucid Group, Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 74787,
-    "price": 5.92,
-    "change_pct": "+15.62%",
+    "tweet_volume": 2627636,
+    "price": 1.05,
+    "change_pct": "+0.51%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,15 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "SHAZ",
+      "name": "SharonAI Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3900592,
-      "price": 1.07,
-      "change_pct": "+1.74%",
+      "tweet_volume": 2943,
+      "price": 82.05,
+      "change_pct": "+1.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -38,54 +38,9 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7194568,
-      "price": 72.54,
-      "change_pct": "+0.98%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 91291,
-      "price": 8.71,
-      "change_pct": "+11.81%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GENB",
-      "name": "Generate Biomedicines, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7926,
-      "price": 16.47,
-      "change_pct": "+0.30%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 13120,
-      "price": 21.76,
-      "change_pct": "+3.57%",
+      "tweet_volume": 4287995,
+      "price": 71.72,
+      "change_pct": "+1.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -98,69 +53,99 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1227736,
-      "price": 0.08,
-      "change_pct": "+0.14%",
+      "tweet_volume": 1121958,
+      "price": 0.07,
+      "change_pct": "-1.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RSP",
-      "name": "Invesco S&P 500 Equal Weight ET",
+      "ticker": "SIMO",
+      "name": "Silicon Motion Technology Corpo",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41810,
-      "price": 210.31,
-      "change_pct": "-0.68%",
+      "tweet_volume": 2758,
+      "price": 305.28,
+      "change_pct": "-6.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
+      "ticker": "CAG",
+      "name": "ConAgra Brands, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 256.14,
-      "change_pct": "-0.04%",
+      "tweet_volume": 32707,
+      "price": 14.08,
+      "change_pct": "+2.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FSELX",
-      "name": "Fidelity Select Semiconductors ",
+      "ticker": "ZETA",
+      "name": "Zeta Global Holdings Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 66.58,
-      "change_pct": "-5.56%",
+      "tweet_volume": 16731,
+      "price": 18.98,
+      "change_pct": "+6.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
+      "ticker": "OUST",
+      "name": "Ouster, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 42179,
-      "price": 232.21,
-      "change_pct": "+0.42%",
+      "tweet_volume": 12483,
+      "price": 42.02,
+      "change_pct": "+0.48%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 35007,
+      "price": 23.7,
+      "change_pct": "+0.98%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TTD",
+      "name": "The Trade Desk, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 67054,
+      "price": 18.37,
+      "change_pct": "+6.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

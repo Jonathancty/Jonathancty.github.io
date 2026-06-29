@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-28T14:47:42.926563+00:00",
+  "updated_at": "2026-06-29T16:38:10.597440+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "CMCSA",
+    "name": "Comcast Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2627636,
-    "price": 1.05,
-    "change_pct": "+0.51%",
+    "tweet_volume": 205991,
+    "price": 24.78,
+    "change_pct": "+6.95%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,90 +17,90 @@
   },
   "trending_list": [
     {
-      "ticker": "SHAZ",
-      "name": "SharonAI Holdings, Inc.",
+      "ticker": "IRDM",
+      "name": "Iridium Communications Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2943,
-      "price": 82.05,
-      "change_pct": "+1.58%",
+      "tweet_volume": 19345,
+      "price": 53.28,
+      "change_pct": "+22.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4287995,
-      "price": 71.72,
-      "change_pct": "+1.86%",
+      "tweet_volume": 7443,
+      "price": 236.27,
+      "change_pct": "-2.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOGE-USD",
-      "name": "Dogecoin USD",
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1121958,
-      "price": 0.07,
-      "change_pct": "-1.06%",
+      "tweet_volume": 25117,
+      "price": 54.34,
+      "change_pct": "+14.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SIMO",
-      "name": "Silicon Motion Technology Corpo",
+      "ticker": "UPC",
+      "name": "Universe Pharmaceuticals Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2758,
-      "price": 305.28,
-      "change_pct": "-6.14%",
+      "tweet_volume": 116512,
+      "price": 12.28,
+      "change_pct": "+314.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CAG",
-      "name": "ConAgra Brands, Inc.",
+      "ticker": "TNMG",
+      "name": "TNL Mediagene",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32707,
-      "price": 14.08,
-      "change_pct": "+2.18%",
+      "tweet_volume": 585181,
+      "price": 1.02,
+      "change_pct": "+110.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZETA",
-      "name": "Zeta Global Holdings Corp.",
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16731,
-      "price": 18.98,
-      "change_pct": "+6.15%",
+      "tweet_volume": 50864,
+      "price": 16.59,
+      "change_pct": "+6.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -113,39 +113,54 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12483,
-      "price": 42.02,
-      "change_pct": "+0.48%",
+      "tweet_volume": 17009,
+      "price": 51.72,
+      "change_pct": "+23.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
+      "ticker": "NNBR",
+      "name": "NN, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35007,
-      "price": 23.7,
-      "change_pct": "+0.98%",
+      "tweet_volume": 217231,
+      "price": 3.88,
+      "change_pct": "+40.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TTD",
-      "name": "The Trade Desk, Inc.",
+      "ticker": "VSAT",
+      "name": "ViaSat, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 67054,
-      "price": 18.37,
-      "change_pct": "+6.00%",
+      "tweet_volume": 5473,
+      "price": 75.47,
+      "change_pct": "+21.82%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 21056,
+      "price": 147.37,
+      "change_pct": "+10.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-29T16:38:10.597440+00:00",
+  "updated_at": "2026-06-30T15:26:04.072215+00:00",
   "top_trending": {
-    "ticker": "CMCSA",
-    "name": "Comcast Corporation",
+    "ticker": "AVAV",
+    "name": "AeroVironment, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 205991,
-    "price": 24.78,
-    "change_pct": "+6.95%",
+    "tweet_volume": 12343,
+    "price": 160.17,
+    "change_pct": "+15.23%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "IRDM",
-      "name": "Iridium Communications Inc",
+      "ticker": "ABVX",
+      "name": "Abivax SA",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19345,
-      "price": 53.28,
-      "change_pct": "+22.44%",
+      "tweet_volume": 11949,
+      "price": 133.37,
+      "change_pct": "+38.71%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
+      "ticker": "CRCL",
+      "name": "Circle Internet Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7443,
-      "price": 236.27,
-      "change_pct": "-2.93%",
+      "tweet_volume": 37316,
+      "price": 66.1,
+      "change_pct": "-12.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RBLX",
-      "name": "Roblox Corporation",
+      "ticker": "T.TO",
+      "name": "TELUS CORPORATION",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25117,
-      "price": 54.34,
-      "change_pct": "+14.26%",
+      "tweet_volume": 7560,
+      "price": 15.1,
+      "change_pct": "-1.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UPC",
-      "name": "Universe Pharmaceuticals Inc",
+      "ticker": "CELZ",
+      "name": "Creative Medical Technology Hol",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 116512,
-      "price": 12.28,
-      "change_pct": "+314.70%",
+      "tweet_volume": 349076,
+      "price": 3.71,
+      "change_pct": "+357.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TNMG",
-      "name": "TNL Mediagene",
+      "ticker": "ENPH",
+      "name": "Enphase Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 585181,
-      "price": 1.02,
-      "change_pct": "+110.81%",
+      "tweet_volume": 24555,
+      "price": 49.74,
+      "change_pct": "+2.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50864,
-      "price": 16.59,
-      "change_pct": "+6.11%",
+      "tweet_volume": 5893,
+      "price": 494.48,
+      "change_pct": "+8.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OUST",
-      "name": "Ouster, Inc.",
+      "ticker": "JEM",
+      "name": "707 Cayman Holdings Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17009,
-      "price": 51.72,
-      "change_pct": "+23.08%",
+      "tweet_volume": 212051,
+      "price": 3.38,
+      "change_pct": "+212.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NNBR",
-      "name": "NN, Inc.",
+      "ticker": "FCEL",
+      "name": "FuelCell Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 217231,
-      "price": 3.88,
-      "change_pct": "+40.54%",
+      "tweet_volume": 32594,
+      "price": 36.33,
+      "change_pct": "+21.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VSAT",
-      "name": "ViaSat, Inc.",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5473,
-      "price": 75.47,
-      "change_pct": "+21.82%",
+      "tweet_volume": 16588,
+      "price": 288.62,
+      "change_pct": "+10.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CHTR",
-      "name": "Charter Communications, Inc.",
+      "ticker": "SOC",
+      "name": "Sable Offshore Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21056,
-      "price": 147.37,
-      "change_pct": "+10.27%",
+      "tweet_volume": 66250,
+      "price": 3.46,
+      "change_pct": "-50.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

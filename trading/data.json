@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-06-30T15:26:04.072215+00:00",
+  "updated_at": "2026-07-01T15:40:28.112012+00:00",
   "top_trending": {
-    "ticker": "AVAV",
-    "name": "AeroVironment, Inc.",
+    "ticker": "CRWV",
+    "name": "CoreWeave, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 12343,
-    "price": 160.17,
-    "change_pct": "+15.23%",
+    "tweet_volume": 80495,
+    "price": 87.0,
+    "change_pct": "-12.60%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ABVX",
-      "name": "Abivax SA",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11949,
-      "price": 133.37,
-      "change_pct": "+38.71%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 37316,
-      "price": 66.1,
-      "change_pct": "-12.97%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "T.TO",
-      "name": "TELUS CORPORATION",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7560,
-      "price": 15.1,
-      "change_pct": "-1.50%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CELZ",
-      "name": "Creative Medical Technology Hol",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 349076,
-      "price": 3.71,
-      "change_pct": "+357.29%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ENPH",
-      "name": "Enphase Energy, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 24555,
-      "price": 49.74,
-      "change_pct": "+2.91%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5893,
-      "price": 494.48,
-      "change_pct": "+8.45%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "JEM",
-      "name": "707 Cayman Holdings Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 212051,
-      "price": 3.38,
-      "change_pct": "+212.96%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 32594,
-      "price": 36.33,
-      "change_pct": "+21.90%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16588,
-      "price": 288.62,
-      "change_pct": "+10.52%",
+      "tweet_volume": 46698,
+      "price": 240.82,
+      "change_pct": "-12.80%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOC",
-      "name": "Sable Offshore Corp.",
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 66250,
-      "price": 3.46,
-      "change_pct": "-50.29%",
+      "tweet_volume": 106238,
+      "price": 42.68,
+      "change_pct": "+3.97%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 31166,
+      "price": 37.38,
+      "change_pct": "+7.40%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "LHAI",
+      "name": "Linkhome Holdings Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 516372,
+      "price": 1.47,
+      "change_pct": "+122.53%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 32076,
+      "price": 105.61,
+      "change_pct": "+6.37%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DVLT",
+      "name": "Datavault AI Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 203547,
+      "price": 0.43,
+      "change_pct": "+22.14%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CANF",
+      "name": "Can-Fite Biopharma Ltd",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 127800,
+      "price": 4.07,
+      "change_pct": "+37.04%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TC",
+      "name": "Token Cat Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 118636,
+      "price": 3.72,
+      "change_pct": "+101.09%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KLAR",
+      "name": "Klarna Group plc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 15580,
+      "price": 20.73,
+      "change_pct": "+2.42%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DXF",
+      "name": "Dunxin Financial Holdings Limit",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 416936,
+      "price": 0.79,
+      "change_pct": "+114.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

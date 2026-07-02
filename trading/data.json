@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-01T15:40:28.112012+00:00",
+  "updated_at": "2026-07-02T15:14:02.638533+00:00",
   "top_trending": {
-    "ticker": "CRWV",
-    "name": "CoreWeave, Inc.",
+    "ticker": "HOOD",
+    "name": "Robinhood Markets, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 80495,
-    "price": 87.0,
-    "change_pct": "-12.60%",
+    "tweet_volume": 58225,
+    "price": 114.2,
+    "change_pct": "+5.11%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46698,
-      "price": 240.82,
-      "change_pct": "-12.80%",
+      "tweet_volume": 100325,
+      "price": 18.89,
+      "change_pct": "+9.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NKE",
-      "name": "Nike, Inc.",
+      "ticker": "USDE",
+      "name": "StablecoinX Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 106238,
-      "price": 42.68,
-      "change_pct": "+3.97%",
+      "tweet_volume": 91930,
+      "price": 3.4,
+      "change_pct": "+63.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 31166,
-      "price": 37.38,
-      "change_pct": "+7.40%",
+      "tweet_volume": 15456,
+      "price": 77.34,
+      "change_pct": "+6.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LHAI",
-      "name": "Linkhome Holdings Inc.",
+      "ticker": "CRSP",
+      "name": "CRISPR Therapeutics AG",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 516372,
-      "price": 1.47,
-      "change_pct": "+122.53%",
+      "tweet_volume": 3073,
+      "price": 60.04,
+      "change_pct": "+7.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32076,
-      "price": 105.61,
-      "change_pct": "+6.37%",
+      "tweet_volume": 4829009,
+      "price": 1.09,
+      "change_pct": "+3.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DVLT",
-      "name": "Datavault AI Inc.",
+      "ticker": "SURG",
+      "name": "SurgePays, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 203547,
-      "price": 0.43,
-      "change_pct": "+22.14%",
+      "tweet_volume": 316356,
+      "price": 0.6,
+      "change_pct": "+45.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CANF",
-      "name": "Can-Fite Biopharma Ltd",
+      "ticker": "DSY",
+      "name": "Big Tree Cloud Holdings Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 127800,
-      "price": 4.07,
-      "change_pct": "+37.04%",
+      "tweet_volume": 49319,
+      "price": 4.3,
+      "change_pct": "+50.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TC",
-      "name": "Token Cat Limited",
+      "ticker": "CETX",
+      "name": "Cemtrex Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 118636,
-      "price": 3.72,
-      "change_pct": "+101.09%",
+      "tweet_volume": 59743,
+      "price": 3.15,
+      "change_pct": "+12.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KLAR",
-      "name": "Klarna Group plc",
+      "ticker": "OWL",
+      "name": "Blue Owl Capital Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15580,
-      "price": 20.73,
-      "change_pct": "+2.42%",
+      "tweet_volume": 36691,
+      "price": 9.12,
+      "change_pct": "+5.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DXF",
-      "name": "Dunxin Financial Holdings Limit",
+      "ticker": "LIMN",
+      "name": "Liminatus Pharma, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 416936,
-      "price": 0.79,
-      "change_pct": "+114.73%",
+      "tweet_volume": 1094464,
+      "price": 0.16,
+      "change_pct": "+42.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

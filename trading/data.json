@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-02T15:14:02.638533+00:00",
+  "updated_at": "2026-07-03T15:10:05.111997+00:00",
   "top_trending": {
-    "ticker": "HOOD",
-    "name": "Robinhood Markets, Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 58225,
-    "price": 114.2,
-    "change_pct": "+5.11%",
+    "tweet_volume": 3413285,
+    "price": 1.12,
+    "change_pct": "+3.11%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
+      "ticker": "T.TO",
+      "name": "TELUS CORPORATION",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 100325,
-      "price": 18.89,
-      "change_pct": "+9.98%",
+      "tweet_volume": 4098,
+      "price": 14.61,
+      "change_pct": "+1.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USDE",
-      "name": "StablecoinX Inc.",
+      "ticker": "KEEL.TO",
+      "name": "KEEL INFRASTRUCTURE CORP",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 91930,
-      "price": 3.4,
-      "change_pct": "+63.47%",
+      "tweet_volume": 1613,
+      "price": 6.67,
+      "change_pct": "+2.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "BB.TO",
+      "name": "BLACKBERRY LIMITED",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15456,
-      "price": 77.34,
-      "change_pct": "+6.68%",
+      "tweet_volume": 2134,
+      "price": 16.22,
+      "change_pct": "-0.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRSP",
-      "name": "CRISPR Therapeutics AG",
+      "ticker": "FFN.TO",
+      "name": "NORTH AMERICAN FINANCIAL 15 SPL",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3073,
-      "price": 60.04,
-      "change_pct": "+7.95%",
+      "tweet_volume": 392,
+      "price": 10.77,
+      "change_pct": "+1.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "PPL.TO",
+      "name": "PEMBINA PIPELINE CORPORATION",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4829009,
-      "price": 1.09,
-      "change_pct": "+3.46%",
+      "tweet_volume": 520,
+      "price": 66.8,
+      "change_pct": "+1.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SURG",
-      "name": "SurgePays, Inc.",
+      "ticker": "PNG.V",
+      "name": "KRAKEN ROBOTICS INC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 316356,
-      "price": 0.6,
-      "change_pct": "+45.36%",
+      "tweet_volume": 1602,
+      "price": 6.65,
+      "change_pct": "+4.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DSY",
-      "name": "Big Tree Cloud Holdings Limited",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49319,
-      "price": 4.3,
-      "change_pct": "+50.88%",
+      "tweet_volume": 5619936,
+      "price": 81.83,
+      "change_pct": "+1.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CETX",
-      "name": "Cemtrex Inc.",
+      "ticker": "SIVE.ST",
+      "name": "Sivers Semiconductors AB",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 59743,
-      "price": 3.15,
-      "change_pct": "+12.32%",
+      "tweet_volume": 21785,
+      "price": 56.9,
+      "change_pct": "+16.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OWL",
-      "name": "Blue Owl Capital Inc.",
+      "ticker": "HIVE.TO",
+      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 36691,
-      "price": 9.12,
-      "change_pct": "+5.50%",
+      "tweet_volume": 1100,
+      "price": 4.77,
+      "change_pct": "+3.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LIMN",
-      "name": "Liminatus Pharma, Inc.",
+      "ticker": "SLBT",
+      "name": "SL Science Holding Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1094464,
-      "price": 0.16,
-      "change_pct": "+42.33%",
+      "tweet_volume": 2867,
+      "price": 5.99,
+      "change_pct": "+34.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

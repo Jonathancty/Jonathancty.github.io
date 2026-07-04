@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T15:10:05.111997+00:00",
+  "updated_at": "2026-07-04T14:28:14.031388+00:00",
   "top_trending": {
     "ticker": "XRP-USD",
     "name": "XRP USD",
@@ -7,9 +7,9 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 3413285,
-    "price": 1.12,
-    "change_pct": "+3.11%",
+    "tweet_volume": 4771977,
+    "price": 1.16,
+    "change_pct": "+2.39%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "T.TO",
-      "name": "TELUS CORPORATION",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 4098,
-      "price": 14.61,
-      "change_pct": "+1.04%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "KEEL.TO",
-      "name": "KEEL INFRASTRUCTURE CORP",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1613,
-      "price": 6.67,
-      "change_pct": "+2.77%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BB.TO",
-      "name": "BLACKBERRY LIMITED",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2134,
-      "price": 16.22,
-      "change_pct": "-0.61%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FFN.TO",
-      "name": "NORTH AMERICAN FINANCIAL 15 SPL",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 392,
-      "price": 10.77,
-      "change_pct": "+1.08%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PPL.TO",
-      "name": "PEMBINA PIPELINE CORPORATION",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 520,
-      "price": 66.8,
-      "change_pct": "+1.49%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PNG.V",
-      "name": "KRAKEN ROBOTICS INC",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1602,
-      "price": 6.65,
-      "change_pct": "+4.40%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
       "ticker": "SOL-USD",
       "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5619936,
-      "price": 81.83,
-      "change_pct": "+1.47%",
+      "tweet_volume": 5842384,
+      "price": 81.59,
+      "change_pct": "-0.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SIVE.ST",
-      "name": "Sivers Semiconductors AB",
+      "ticker": "ADA-USD",
+      "name": "Cardano USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21785,
-      "price": 56.9,
-      "change_pct": "+16.12%",
+      "tweet_volume": 1664186,
+      "price": 0.18,
+      "change_pct": "+0.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIVE.TO",
-      "name": "HIVE DIGITAL TECHNOLOGIES LTD",
+      "ticker": "XRP-CAD",
+      "name": "XRP CAD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1100,
-      "price": 4.77,
-      "change_pct": "+3.47%",
+      "tweet_volume": 6775969,
+      "price": 1.65,
+      "change_pct": "+2.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLBT",
-      "name": "SL Science Holding Limited",
+      "ticker": "HIMX",
+      "name": "Himax Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2867,
-      "price": 5.99,
-      "change_pct": "+34.61%",
+      "tweet_volume": 6751,
+      "price": 13.15,
+      "change_pct": "-7.65%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 7265,
+      "price": 368.76,
+      "change_pct": "-0.14%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 24050,
+      "price": 52.36,
+      "change_pct": "-0.17%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 280672,
+      "price": 20.58,
+      "change_pct": "+0.49%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SCHD",
+      "name": "Schwab US Dividend Equity ETF",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 49569,
+      "price": 32.39,
+      "change_pct": "+1.70%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VGT",
+      "name": "Vanguard Information Tech ETF",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 12633,
+      "price": 114.64,
+      "change_pct": "-2.20%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 10293,
+      "price": 239.25,
+      "change_pct": "+1.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

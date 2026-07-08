@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-07T15:43:05.096297+00:00",
+  "updated_at": "2026-07-08T15:20:44.126189+00:00",
   "top_trending": {
-    "ticker": "CRNX",
-    "name": "Crinetics Pharmaceuticals, Inc.",
+    "ticker": "BATL",
+    "name": "Battalion Oil Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 154238,
-    "price": 42.03,
-    "change_pct": "+0.00%",
+    "tweet_volume": 290631,
+    "price": 1.61,
+    "change_pct": "-9.27%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
+      "ticker": "VTAK",
+      "name": "Catheter Precision, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 94433,
-      "price": 17.13,
-      "change_pct": "-14.94%",
+      "tweet_volume": 371303,
+      "price": 1.33,
+      "change_pct": "+86.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FISV",
-      "name": "Fiserv, Inc.",
+      "ticker": "PENG",
+      "name": "Penguin Solutions, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15173,
-      "price": 53.59,
-      "change_pct": "+3.50%",
+      "tweet_volume": 14974,
+      "price": 74.37,
+      "change_pct": "+18.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLRO",
-      "name": "ClearOne, Inc.",
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporatio",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 102487,
-      "price": 10.24,
-      "change_pct": "+46.29%",
+      "tweet_volume": 20330,
+      "price": 54.53,
+      "change_pct": "+5.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOXL",
-      "name": "Direxion Daily Semiconductor Bu",
+      "ticker": "FCEL",
+      "name": "FuelCell Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 104626,
-      "price": 154.93,
-      "change_pct": "-20.41%",
+      "tweet_volume": 29703,
+      "price": 22.29,
+      "change_pct": "-14.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SKIN",
-      "name": "SkinHealth Systems Inc.",
+      "ticker": "NVVE",
+      "name": "Nuvve Holding Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 146551,
-      "price": 1.13,
-      "change_pct": "+49.69%",
+      "tweet_volume": 33139,
+      "price": 9.76,
+      "change_pct": "+88.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MAAS",
-      "name": "Maase Inc.",
+      "ticker": "USO",
+      "name": "United States Oil Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 559,
-      "price": 17.75,
-      "change_pct": "+15.94%",
+      "tweet_volume": 16819,
+      "price": 114.03,
+      "change_pct": "+4.69%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOXS",
-      "name": "Direxion Daily Semiconductor Be",
+      "ticker": "QXO",
+      "name": "QXO, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 976920,
-      "price": 5.02,
-      "change_pct": "+20.40%",
+      "tweet_volume": 53762,
+      "price": 14.03,
+      "change_pct": "-8.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TDTH",
-      "name": "Trident Digital Tech Holdings L",
+      "ticker": "EDBL",
+      "name": "Edible Garden AG Incorporated",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 87860,
-      "price": 2.45,
-      "change_pct": "+34.62%",
+      "tweet_volume": 1011033,
+      "price": 0.12,
+      "change_pct": "+32.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "EOSE",
-      "name": "Eos Energy Enterprises, Inc.",
+      "ticker": "IOTR",
+      "name": "iOThree Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 75950,
-      "price": 4.8,
-      "change_pct": "-5.04%",
+      "tweet_volume": 53925,
+      "price": 3.21,
+      "change_pct": "+27.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMR",
-      "name": "NuScale Power Corporation",
+      "ticker": "SKYQ",
+      "name": "Sky Quarry Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 44186,
-      "price": 8.78,
-      "change_pct": "-8.65%",
+      "tweet_volume": 103824,
+      "price": 4.04,
+      "change_pct": "+34.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-08T15:20:44.126189+00:00",
+  "updated_at": "2026-07-09T15:55:09.367957+00:00",
   "top_trending": {
-    "ticker": "BATL",
-    "name": "Battalion Oil Corporation",
+    "ticker": "VRAX",
+    "name": "Virax Biolabs Group Limited",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 290631,
-    "price": 1.61,
-    "change_pct": "-9.27%",
+    "tweet_volume": 145039,
+    "price": 9.42,
+    "change_pct": "+196.23%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "VTAK",
-      "name": "Catheter Precision, Inc.",
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 371303,
-      "price": 1.33,
-      "change_pct": "+86.56%",
+      "tweet_volume": 111636,
+      "price": 5.32,
+      "change_pct": "+10.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PENG",
-      "name": "Penguin Solutions, Inc.",
+      "ticker": "MARA",
+      "name": "MARA Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14974,
-      "price": 74.37,
-      "change_pct": "+18.59%",
+      "tweet_volume": 111126,
+      "price": 13.79,
+      "change_pct": "+14.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporatio",
+      "ticker": "LASR",
+      "name": "nLIGHT, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20330,
-      "price": 54.53,
-      "change_pct": "+5.52%",
+      "tweet_volume": 6190,
+      "price": 75.32,
+      "change_pct": "+28.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
+      "ticker": "IONS",
+      "name": "Ionis Pharmaceuticals, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29703,
-      "price": 22.29,
-      "change_pct": "-14.14%",
+      "tweet_volume": 26886,
+      "price": 65.42,
+      "change_pct": "-22.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NVVE",
-      "name": "Nuvve Holding Corp.",
+      "ticker": "RKTO",
+      "name": "Rocket One Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 33139,
-      "price": 9.76,
-      "change_pct": "+88.05%",
+      "tweet_volume": 290895,
+      "price": 0.97,
+      "change_pct": "+21.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USO",
-      "name": "United States Oil Fund",
+      "ticker": "RXT",
+      "name": "Rackspace Technology, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16819,
-      "price": 114.03,
-      "change_pct": "+4.69%",
+      "tweet_volume": 82455,
+      "price": 4.76,
+      "change_pct": "-27.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QXO",
-      "name": "QXO, Inc.",
+      "ticker": "WRAP",
+      "name": "Wrap Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 53762,
-      "price": 14.03,
-      "change_pct": "-8.00%",
+      "tweet_volume": 97210,
+      "price": 2.38,
+      "change_pct": "+49.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "EDBL",
-      "name": "Edible Garden AG Incorporated",
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1011033,
-      "price": 0.12,
-      "change_pct": "+32.27%",
+      "tweet_volume": 7395,
+      "price": 790.98,
+      "change_pct": "+11.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IOTR",
-      "name": "iOThree Limited",
+      "ticker": "PSKY",
+      "name": "Paramount Skydance Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 53925,
-      "price": 3.21,
-      "change_pct": "+27.08%",
+      "tweet_volume": 24679,
+      "price": 9.21,
+      "change_pct": "-5.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SKYQ",
-      "name": "Sky Quarry Inc.",
+      "ticker": "SUNE",
+      "name": "SUNation Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 103824,
-      "price": 4.04,
-      "change_pct": "+34.50%",
+      "tweet_volume": 44254,
+      "price": 2.63,
+      "change_pct": "+24.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

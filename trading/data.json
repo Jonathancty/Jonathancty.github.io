@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-09T15:55:09.367957+00:00",
+  "updated_at": "2026-07-10T15:31:13.704910+00:00",
   "top_trending": {
-    "ticker": "VRAX",
-    "name": "Virax Biolabs Group Limited",
+    "ticker": "CRCL",
+    "name": "Circle Internet Group, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 145039,
-    "price": 9.42,
-    "change_pct": "+196.23%",
+    "tweet_volume": 62784,
+    "price": 66.58,
+    "change_pct": "+5.67%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "OPEN",
-      "name": "Opendoor Technologies Inc",
+      "ticker": "WDFC",
+      "name": "WD-40 Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 111636,
-      "price": 5.32,
-      "change_pct": "+10.97%",
+      "tweet_volume": 1615,
+      "price": 268.21,
+      "change_pct": "+12.03%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MARA",
-      "name": "MARA Holdings, Inc.",
+      "ticker": "FRMI",
+      "name": "Fermi Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 111126,
-      "price": 13.79,
-      "change_pct": "+14.77%",
+      "tweet_volume": 96610,
+      "price": 6.22,
+      "change_pct": "-15.03%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LASR",
-      "name": "nLIGHT, Inc.",
+      "ticker": "GMM",
+      "name": "Global Mofy AI Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6190,
-      "price": 75.32,
-      "change_pct": "+28.36%",
+      "tweet_volume": 273939,
+      "price": 3.92,
+      "change_pct": "+111.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IONS",
-      "name": "Ionis Pharmaceuticals, Inc.",
+      "ticker": "JZXN",
+      "name": "Jiuzi Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26886,
-      "price": 65.42,
-      "change_pct": "-22.54%",
+      "tweet_volume": 287754,
+      "price": 2.44,
+      "change_pct": "+108.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RKTO",
-      "name": "Rocket One Inc.",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 290895,
-      "price": 0.97,
-      "change_pct": "+21.04%",
+      "tweet_volume": 10306,
+      "price": 68.5,
+      "change_pct": "-10.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RXT",
-      "name": "Rackspace Technology, Inc.",
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 82455,
-      "price": 4.76,
-      "change_pct": "-27.66%",
+      "tweet_volume": 13648,
+      "price": 86.98,
+      "change_pct": "-2.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WRAP",
-      "name": "Wrap Technologies, Inc.",
+      "ticker": "NVVE",
+      "name": "Nuvve Holding Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 97210,
-      "price": 2.38,
-      "change_pct": "+49.37%",
+      "tweet_volume": 33653,
+      "price": 16.65,
+      "change_pct": "+89.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "VOD",
+      "name": "Vodafone Group Plc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7395,
-      "price": 790.98,
-      "change_pct": "+11.86%",
+      "tweet_volume": 25158,
+      "price": 14.73,
+      "change_pct": "+12.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSKY",
-      "name": "Paramount Skydance Corporation",
+      "ticker": "ZBAO",
+      "name": "Zhibao Technology Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 24679,
-      "price": 9.21,
-      "change_pct": "-5.59%",
+      "tweet_volume": 655186,
+      "price": 0.43,
+      "change_pct": "+43.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SUNE",
-      "name": "SUNation Energy, Inc.",
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 44254,
-      "price": 2.63,
-      "change_pct": "+24.88%",
+      "tweet_volume": 112163,
+      "price": 18.84,
+      "change_pct": "+1.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

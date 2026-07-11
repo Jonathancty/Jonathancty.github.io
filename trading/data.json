@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-10T15:31:13.704910+00:00",
+  "updated_at": "2026-07-11T14:21:16.521676+00:00",
   "top_trending": {
-    "ticker": "CRCL",
-    "name": "Circle Internet Group, Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 62784,
-    "price": 66.58,
-    "change_pct": "+5.67%",
+    "tweet_volume": 1786087,
+    "price": 1.11,
+    "change_pct": "+0.59%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "WDFC",
-      "name": "WD-40 Company",
+      "ticker": "BSP",
+      "name": "Bending Spoons S.p.A.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1615,
-      "price": 268.21,
-      "change_pct": "+12.03%",
+      "tweet_volume": 3691,
+      "price": 32.91,
+      "change_pct": "-4.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FRMI",
-      "name": "Fermi Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 96610,
-      "price": 6.22,
-      "change_pct": "-15.03%",
+      "tweet_volume": 3944336,
+      "price": 78.27,
+      "change_pct": "+0.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GMM",
-      "name": "Global Mofy AI Limited",
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 273939,
-      "price": 3.92,
-      "change_pct": "+111.79%",
+      "tweet_volume": 2500,
+      "price": 263.26,
+      "change_pct": "+0.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JZXN",
-      "name": "Jiuzi Holdings, Inc.",
+      "ticker": "WHR",
+      "name": "Whirlpool Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 287754,
-      "price": 2.44,
-      "change_pct": "+108.55%",
+      "tweet_volume": 10229,
+      "price": 40.72,
+      "change_pct": "+7.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "GRAB",
+      "name": "Grab Holdings Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10306,
-      "price": 68.5,
-      "change_pct": "-10.53%",
+      "tweet_volume": 55383,
+      "price": 3.93,
+      "change_pct": "+1.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13648,
-      "price": 86.98,
-      "change_pct": "-2.27%",
+      "tweet_volume": 11073,
+      "price": 693.86,
+      "change_pct": "+0.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NVVE",
-      "name": "Nuvve Holding Corp.",
+      "ticker": "XLK",
+      "name": "State Street Technology Select ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 33653,
-      "price": 16.65,
-      "change_pct": "+89.64%",
+      "tweet_volume": 15371,
+      "price": 185.78,
+      "change_pct": "+0.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VOD",
-      "name": "Vodafone Group Plc",
+      "ticker": "MAGS",
+      "name": "Roundhill Magnificent Seven ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25158,
-      "price": 14.73,
-      "change_pct": "+12.61%",
+      "tweet_volume": 15636,
+      "price": 67.68,
+      "change_pct": "+1.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZBAO",
-      "name": "Zhibao Technology Inc.",
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 655186,
-      "price": 0.43,
-      "change_pct": "+43.99%",
+      "tweet_volume": 6824,
+      "price": 372.69,
+      "change_pct": "+0.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
+      "ticker": "JEPI",
+      "name": "JPMorgan Equity Premium Income ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 112163,
-      "price": 18.84,
-      "change_pct": "+1.18%",
+      "tweet_volume": 8234,
+      "price": 56.76,
+      "change_pct": "+0.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

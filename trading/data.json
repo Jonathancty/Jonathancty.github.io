@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-11T14:21:16.521676+00:00",
+  "updated_at": "2026-07-12T14:25:33.984938+00:00",
   "top_trending": {
-    "ticker": "XRP-USD",
-    "name": "XRP USD",
+    "ticker": "BATRA",
+    "name": "Atlanta Braves Holdings, Inc. -",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 1786087,
-    "price": 1.11,
-    "change_pct": "+0.59%",
+    "tweet_volume": 68,
+    "price": 55.74,
+    "change_pct": "-1.88%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,15 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "BSP",
-      "name": "Bending Spoons S.p.A.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3691,
-      "price": 32.91,
-      "change_pct": "-4.11%",
+      "tweet_volume": 2023261,
+      "price": 1.1,
+      "change_pct": "-0.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -38,83 +38,8 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3944336,
-      "price": 78.27,
-      "change_pct": "+0.26%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 263.26,
-      "change_pct": "+0.16%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "WHR",
-      "name": "Whirlpool Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 10229,
-      "price": 40.72,
-      "change_pct": "+7.55%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GRAB",
-      "name": "Grab Holdings Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 55383,
-      "price": 3.93,
-      "change_pct": "+1.29%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VOO",
-      "name": "Vanguard S&P 500 ETF",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11073,
-      "price": 693.86,
-      "change_pct": "+0.46%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XLK",
-      "name": "State Street Technology Select ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15371,
-      "price": 185.78,
+      "tweet_volume": 4234705,
+      "price": 77.0,
       "change_pct": "+0.23%",
       "key_topics": [
         "Momentum",
@@ -122,29 +47,29 @@
       ]
     },
     {
-      "ticker": "MAGS",
-      "name": "Roundhill Magnificent Seven ETF",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15636,
-      "price": 67.68,
-      "change_pct": "+1.38%",
+      "tweet_volume": 1864,
+      "price": 565.8,
+      "change_pct": "-2.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VTI",
-      "name": "Vanguard Total Stock Market ETF",
+      "ticker": "IQQ",
+      "name": "iShares Nasdaq 100 ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6824,
-      "price": 372.69,
+      "tweet_volume": 13721,
+      "price": 24.55,
       "change_pct": "+0.33%",
       "key_topics": [
         "Momentum",
@@ -152,15 +77,90 @@
       ]
     },
     {
-      "ticker": "JEPI",
-      "name": "JPMorgan Equity Premium Income ",
+      "ticker": "LYFT",
+      "name": "Lyft, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8234,
-      "price": 56.76,
-      "change_pct": "+0.23%",
+      "tweet_volume": 22038,
+      "price": 15.61,
+      "change_pct": "+2.90%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MAIN",
+      "name": "Main Street Capital Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1445,
+      "price": 52.84,
+      "change_pct": "+2.26%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 14984,
+      "price": 159.07,
+      "change_pct": "+0.40%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 11221,
+      "price": 63.31,
+      "change_pct": "+0.22%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9822,
+      "price": 257.79,
+      "change_pct": "-2.96%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 15769,
+      "price": 19.66,
+      "change_pct": "-0.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

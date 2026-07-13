@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-12T14:25:33.984938+00:00",
+  "updated_at": "2026-07-13T15:41:03.187131+00:00",
   "top_trending": {
-    "ticker": "BATRA",
-    "name": "Atlanta Braves Holdings, Inc. -",
+    "ticker": "AGEN",
+    "name": "Agenus Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 68,
-    "price": 55.74,
-    "change_pct": "-1.88%",
+    "tweet_volume": 374645,
+    "price": 6.8,
+    "change_pct": "+102.99%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
+      "ticker": "SKHY-USD",
+      "name": "SK Hynix (Derivatives) USD",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2500,
+      "price": 156.66,
+      "change_pct": "-6.18%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MIMI",
+      "name": "Mint Incorporation Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 101436,
+      "price": 3.0,
+      "change_pct": "+39.52%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VEEE",
+      "name": "Twin Vee PowerCats Co.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 112311,
+      "price": 22.77,
+      "change_pct": "+372.41%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "QTTB",
+      "name": "Q32 Bio Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 51890,
+      "price": 21.43,
+      "change_pct": "+91.17%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BATL",
+      "name": "Battalion Oil Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 50449,
+      "price": 1.89,
+      "change_pct": "+19.54%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SKYQ",
+      "name": "Sky Quarry Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 34912,
+      "price": 3.97,
+      "change_pct": "+24.84%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BRAI",
+      "name": "Braiin Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 16747,
+      "price": 8.81,
+      "change_pct": "+59.70%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SOBR",
+      "name": "SOBR Safe, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 217705,
+      "price": 0.78,
+      "change_pct": "+78.74%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "LGPS",
+      "name": "LogProstyle Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 193427,
+      "price": 1.17,
+      "change_pct": "+40.81%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
       "ticker": "XRP-USD",
       "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2023261,
-      "price": 1.1,
-      "change_pct": "-0.09%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 4234705,
-      "price": 77.0,
-      "change_pct": "+0.23%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1864,
-      "price": 565.8,
-      "change_pct": "-2.78%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IQQ",
-      "name": "iShares Nasdaq 100 ETF",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 13721,
-      "price": 24.55,
-      "change_pct": "+0.33%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "LYFT",
-      "name": "Lyft, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 22038,
-      "price": 15.61,
-      "change_pct": "+2.90%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "MAIN",
-      "name": "Main Street Capital Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1445,
-      "price": 52.84,
-      "change_pct": "+2.26%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 14984,
-      "price": 159.07,
-      "change_pct": "+0.40%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11221,
-      "price": 63.31,
-      "change_pct": "+0.22%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9822,
-      "price": 257.79,
-      "change_pct": "-2.96%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ET",
-      "name": "Energy Transfer LP",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15769,
-      "price": 19.66,
-      "change_pct": "-0.66%",
+      "tweet_volume": 2727712,
+      "price": 1.07,
+      "change_pct": "-1.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

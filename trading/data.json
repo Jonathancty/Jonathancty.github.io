@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-13T15:41:03.187131+00:00",
+  "updated_at": "2026-07-14T14:49:03.054622+00:00",
   "top_trending": {
-    "ticker": "AGEN",
-    "name": "Agenus Inc.",
+    "ticker": "NXTC",
+    "name": "NextCure, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 374645,
-    "price": 6.8,
-    "change_pct": "+102.99%",
+    "tweet_volume": 200842,
+    "price": 6.09,
+    "change_pct": "+179.59%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SKHY-USD",
-      "name": "SK Hynix (Derivatives) USD",
+      "ticker": "CLSK",
+      "name": "CleanSpark, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 156.66,
-      "change_pct": "-6.18%",
+      "tweet_volume": 84069,
+      "price": 13.79,
+      "change_pct": "+11.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MIMI",
-      "name": "Mint Incorporation Limited",
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 101436,
-      "price": 3.0,
-      "change_pct": "+39.52%",
+      "tweet_volume": 3135,
+      "price": 390.23,
+      "change_pct": "-4.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VEEE",
-      "name": "Twin Vee PowerCats Co.",
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 112311,
-      "price": 22.77,
-      "change_pct": "+372.41%",
+      "tweet_volume": 5161,
+      "price": 253.31,
+      "change_pct": "+10.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QTTB",
-      "name": "Q32 Bio Inc.",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 51890,
-      "price": 21.43,
-      "change_pct": "+91.17%",
+      "tweet_volume": 26519,
+      "price": 106.59,
+      "change_pct": "-4.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BATL",
-      "name": "Battalion Oil Corporation",
+      "ticker": "VMAR",
+      "name": "Vision Marine Technologies Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50449,
-      "price": 1.89,
-      "change_pct": "+19.54%",
+      "tweet_volume": 203516,
+      "price": 1.46,
+      "change_pct": "+3.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SKYQ",
-      "name": "Sky Quarry Inc.",
+      "ticker": "SHPH",
+      "name": "Shuttle Pharmaceuticals Holding",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 34912,
-      "price": 3.97,
-      "change_pct": "+24.84%",
+      "tweet_volume": 114760,
+      "price": 4.02,
+      "change_pct": "+35.81%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BRAI",
-      "name": "Braiin Limited",
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16747,
-      "price": 8.81,
-      "change_pct": "+59.70%",
+      "tweet_volume": 47885,
+      "price": 16.16,
+      "change_pct": "+10.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOBR",
-      "name": "SOBR Safe, Inc.",
+      "ticker": "UBXG",
+      "name": "U-BX Technology Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 217705,
-      "price": 0.78,
-      "change_pct": "+78.74%",
+      "tweet_volume": 21658,
+      "price": 4.85,
+      "change_pct": "-23.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LGPS",
-      "name": "LogProstyle Inc.",
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 193427,
-      "price": 1.17,
-      "change_pct": "+40.81%",
+      "tweet_volume": 4635,
+      "price": 366.12,
+      "change_pct": "-6.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
+      "ticker": "LHAI",
+      "name": "Linkhome Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2727712,
-      "price": 1.07,
-      "change_pct": "-1.08%",
+      "tweet_volume": 177139,
+      "price": 1.23,
+      "change_pct": "+23.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

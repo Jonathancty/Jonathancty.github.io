@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-14T14:49:03.054622+00:00",
+  "updated_at": "2026-07-15T14:49:17.857391+00:00",
   "top_trending": {
-    "ticker": "NXTC",
-    "name": "NextCure, Inc.",
+    "ticker": "PYPL",
+    "name": "PayPal Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 200842,
-    "price": 6.09,
-    "change_pct": "+179.59%",
+    "tweet_volume": 120815,
+    "price": 55.46,
+    "change_pct": "+17.08%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "CLSK",
-      "name": "CleanSpark, Inc.",
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 84069,
-      "price": 13.79,
-      "change_pct": "+11.53%",
+      "tweet_volume": 18247,
+      "price": 94.8,
+      "change_pct": "+31.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
+      "ticker": "LCID",
+      "name": "Lucid Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3135,
-      "price": 390.23,
-      "change_pct": "-4.15%",
+      "tweet_volume": 55662,
+      "price": 5.38,
+      "change_pct": "+16.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor Ltd.",
+      "ticker": "ELVA",
+      "name": "Electrovaya Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5161,
-      "price": 253.31,
-      "change_pct": "+10.29%",
+      "tweet_volume": 46902,
+      "price": 11.02,
+      "change_pct": "+39.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "JTAI",
+      "name": "Jet.AI Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26519,
-      "price": 106.59,
-      "change_pct": "-4.20%",
+      "tweet_volume": 58665,
+      "price": 4.45,
+      "change_pct": "+863.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VMAR",
-      "name": "Vision Marine Technologies Inc.",
+      "ticker": "ERNA",
+      "name": "Ernexa Therapeutics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 203516,
-      "price": 1.46,
-      "change_pct": "+3.55%",
+      "tweet_volume": 58443,
+      "price": 7.44,
+      "change_pct": "+22.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SHPH",
-      "name": "Shuttle Pharmaceuticals Holding",
+      "ticker": "VIVS",
+      "name": "VivoSim Labs, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 114760,
-      "price": 4.02,
-      "change_pct": "+35.81%",
+      "tweet_volume": 225486,
+      "price": 1.0,
+      "change_pct": "+19.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BMNR",
-      "name": "BitMine Immersion Technologies,",
+      "ticker": "PGR",
+      "name": "Progressive Corporation (The)",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 47885,
-      "price": 16.16,
-      "change_pct": "+10.57%",
+      "tweet_volume": 4274,
+      "price": 210.93,
+      "change_pct": "-6.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UBXG",
-      "name": "U-BX Technology Ltd.",
+      "ticker": "CAG",
+      "name": "ConAgra Brands, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21658,
-      "price": 4.85,
-      "change_pct": "-23.02%",
+      "tweet_volume": 30531,
+      "price": 14.3,
+      "change_pct": "+1.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HCA",
-      "name": "HCA Healthcare, Inc.",
+      "ticker": "PNR",
+      "name": "Pentair plc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4635,
-      "price": 366.12,
-      "change_pct": "-6.30%",
+      "tweet_volume": 12737,
+      "price": 63.67,
+      "change_pct": "-15.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LHAI",
-      "name": "Linkhome Holdings Inc.",
+      "ticker": "NET",
+      "name": "Cloudflare, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 177139,
-      "price": 1.23,
-      "change_pct": "+23.00%",
+      "tweet_volume": 2095,
+      "price": 277.83,
+      "change_pct": "-1.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

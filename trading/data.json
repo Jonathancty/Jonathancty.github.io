@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-15T14:49:17.857391+00:00",
+  "updated_at": "2026-07-16T15:00:19.152646+00:00",
   "top_trending": {
-    "ticker": "PYPL",
-    "name": "PayPal Holdings, Inc.",
+    "ticker": "ATAI",
+    "name": "AtaiBeckley Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 120815,
-    "price": 55.46,
-    "change_pct": "+17.08%",
+    "tweet_volume": 251833,
+    "price": 7.13,
+    "change_pct": "+33.12%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "AEHR",
-      "name": "Aehr Test Systems",
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18247,
-      "price": 94.8,
-      "change_pct": "+31.64%",
+      "tweet_volume": 56537,
+      "price": 56.75,
+      "change_pct": "-14.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group, Inc.",
+      "ticker": "RUBI",
+      "name": "Rubico Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 55662,
-      "price": 5.38,
-      "change_pct": "+16.34%",
+      "tweet_volume": 59595,
+      "price": 3.37,
+      "change_pct": "-9.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ELVA",
-      "name": "Electrovaya Inc.",
+      "ticker": "IQST",
+      "name": "iQSTEL Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46902,
-      "price": 11.02,
-      "change_pct": "+39.61%",
+      "tweet_volume": 266854,
+      "price": 1.19,
+      "change_pct": "+34.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JTAI",
-      "name": "Jet.AI Inc.",
+      "ticker": "ATPC",
+      "name": "Agape ATP Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 58665,
-      "price": 4.45,
-      "change_pct": "+863.84%",
+      "tweet_volume": 41434,
+      "price": 3.46,
+      "change_pct": "+37.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ERNA",
-      "name": "Ernexa Therapeutics Inc.",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 58443,
-      "price": 7.44,
-      "change_pct": "+22.77%",
+      "tweet_volume": 7851,
+      "price": 42.22,
+      "change_pct": "-7.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VIVS",
-      "name": "VivoSim Labs, Inc.",
+      "ticker": "MAN",
+      "name": "ManpowerGroup",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 225486,
-      "price": 1.0,
-      "change_pct": "+19.78%",
+      "tweet_volume": 4423,
+      "price": 51.74,
+      "change_pct": "+32.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PGR",
-      "name": "Progressive Corporation (The)",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4274,
-      "price": 210.93,
-      "change_pct": "-6.91%",
+      "tweet_volume": 32882,
+      "price": 4.95,
+      "change_pct": "+4.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CAG",
-      "name": "ConAgra Brands, Inc.",
+      "ticker": "MAAS",
+      "name": "Maase Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30531,
-      "price": 14.3,
-      "change_pct": "+1.06%",
+      "tweet_volume": 714,
+      "price": 22.24,
+      "change_pct": "+34.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PNR",
-      "name": "Pentair plc.",
+      "ticker": "ARI",
+      "name": "Apollo Commercial Real Estate F",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12737,
-      "price": 63.67,
-      "change_pct": "-15.86%",
+      "tweet_volume": 11204,
+      "price": 7.07,
+      "change_pct": "+4.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
+      "ticker": "CMPS",
+      "name": "COMPASS Pathways Plc - American",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2095,
-      "price": 277.83,
-      "change_pct": "-1.39%",
+      "tweet_volume": 10870,
+      "price": 13.03,
+      "change_pct": "-2.10%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

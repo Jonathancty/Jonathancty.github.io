@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-16T15:00:19.152646+00:00",
+  "updated_at": "2026-07-17T14:43:01.345428+00:00",
   "top_trending": {
-    "ticker": "ATAI",
-    "name": "AtaiBeckley Inc.",
+    "ticker": "SDOT",
+    "name": "Sadot Group Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 251833,
-    "price": 7.13,
-    "change_pct": "+33.12%",
+    "tweet_volume": 27509,
+    "price": 22.22,
+    "change_pct": "+55.93%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile, Inc.",
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 56537,
-      "price": 56.75,
-      "change_pct": "-14.42%",
+      "tweet_volume": 10219,
+      "price": 355.84,
+      "change_pct": "-11.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RUBI",
-      "name": "Rubico Inc.",
+      "ticker": "SLND",
+      "name": "Southland Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 59595,
-      "price": 3.37,
-      "change_pct": "-9.41%",
+      "tweet_volume": 328260,
+      "price": 1.03,
+      "change_pct": "+51.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IQST",
-      "name": "iQSTEL Inc.",
+      "ticker": "STAK",
+      "name": "STAK Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 266854,
-      "price": 1.19,
-      "change_pct": "+34.48%",
+      "tweet_volume": 62570,
+      "price": 2.34,
+      "change_pct": "-34.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ATPC",
-      "name": "Agape ATP Corporation",
+      "ticker": "BIYA",
+      "name": "Baiya International Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41434,
-      "price": 3.46,
-      "change_pct": "+37.30%",
+      "tweet_volume": 44762,
+      "price": 4.25,
+      "change_pct": "+39.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "TRV",
+      "name": "The Travelers Companies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7851,
-      "price": 42.22,
-      "change_pct": "-7.61%",
+      "tweet_volume": 3140,
+      "price": 366.67,
+      "change_pct": "+8.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MAN",
-      "name": "ManpowerGroup",
+      "ticker": "CJMB",
+      "name": "Callan JMB Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4423,
-      "price": 51.74,
-      "change_pct": "+32.59%",
+      "tweet_volume": 88942,
+      "price": 1.2,
+      "change_pct": "+39.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32882,
-      "price": 4.95,
-      "change_pct": "+4.32%",
+      "tweet_volume": 45354,
+      "price": 697.16,
+      "change_pct": "-1.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MAAS",
-      "name": "Maase Inc.",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 714,
-      "price": 22.24,
-      "change_pct": "+34.22%",
+      "tweet_volume": 2745381,
+      "price": 1.08,
+      "change_pct": "-0.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARI",
-      "name": "Apollo Commercial Real Estate F",
+      "ticker": "PMAX",
+      "name": "Powell Max Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11204,
-      "price": 7.07,
-      "change_pct": "+4.12%",
+      "tweet_volume": 21785,
+      "price": 1.96,
+      "change_pct": "+11.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CMPS",
-      "name": "COMPASS Pathways Plc - American",
+      "ticker": "TQQQ",
+      "name": "ProShares UltraPro QQQ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10870,
-      "price": 13.03,
-      "change_pct": "-2.10%",
+      "tweet_volume": 97401,
+      "price": 68.01,
+      "change_pct": "-3.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

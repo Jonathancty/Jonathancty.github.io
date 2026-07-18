@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-17T14:43:01.345428+00:00",
+  "updated_at": "2026-07-18T14:19:24.837613+00:00",
   "top_trending": {
-    "ticker": "SDOT",
-    "name": "Sadot Group Inc.",
+    "ticker": "XRP-USD",
+    "name": "XRP USD",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 27509,
-    "price": 22.22,
-    "change_pct": "+55.93%",
+    "tweet_volume": 1702008,
+    "price": 1.09,
+    "change_pct": "-0.15%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,105 @@
   },
   "trending_list": [
     {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10219,
-      "price": 355.84,
-      "change_pct": "-11.56%",
+      "tweet_volume": 12611,
+      "price": 112.06,
+      "change_pct": "+1.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLND",
-      "name": "Southland Holdings, Inc.",
+      "ticker": "LCID",
+      "name": "Lucid Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 328260,
-      "price": 1.03,
-      "change_pct": "+51.14%",
+      "tweet_volume": 119465,
+      "price": 7.36,
+      "change_pct": "+13.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "STAK",
-      "name": "STAK Inc.",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 62570,
-      "price": 2.34,
-      "change_pct": "-34.64%",
+      "tweet_volume": 57807,
+      "price": 5.0,
+      "change_pct": "+7.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIYA",
-      "name": "Baiya International Group Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 44762,
-      "price": 4.25,
-      "change_pct": "+39.67%",
+      "tweet_volume": 28078,
+      "price": 13.19,
+      "change_pct": "+12.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TRV",
-      "name": "The Travelers Companies, Inc.",
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3140,
-      "price": 366.67,
-      "change_pct": "+8.54%",
+      "tweet_volume": 22525,
+      "price": 7.68,
+      "change_pct": "+3.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CJMB",
-      "name": "Callan JMB Inc.",
+      "ticker": "GME",
+      "name": "GameStop Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 88942,
-      "price": 1.2,
-      "change_pct": "+39.74%",
+      "tweet_volume": 6032,
+      "price": 21.89,
+      "change_pct": "-0.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust, Series 1",
+      "ticker": "test",
+      "name": "YieldMax TSLA Performance & Dis",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 45354,
-      "price": 697.16,
-      "change_pct": "-1.24%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2745381,
-      "price": 1.08,
-      "change_pct": "-0.16%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PMAX",
-      "name": "Powell Max Limited",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 21785,
-      "price": 1.96,
-      "change_pct": "+11.40%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TQQQ",
-      "name": "ProShares UltraPro QQQ",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 97401,
-      "price": 68.01,
-      "change_pct": "-3.86%",
+      "tweet_volume": 2,
+      "price": 42.27,
+      "change_pct": "-1.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

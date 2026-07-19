@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T14:19:24.837613+00:00",
+  "updated_at": "2026-07-19T14:23:21.480169+00:00",
   "top_trending": {
     "ticker": "XRP-USD",
     "name": "XRP USD",
@@ -7,9 +7,9 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 1702008,
+    "tweet_volume": 1582855,
     "price": 1.09,
-    "change_pct": "-0.15%",
+    "change_pct": "-0.01%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12611,
-      "price": 112.06,
-      "change_pct": "+1.04%",
+      "tweet_volume": 20694,
+      "price": 58.51,
+      "change_pct": "-1.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LCID",
-      "name": "Lucid Group, Inc.",
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 119465,
-      "price": 7.36,
-      "change_pct": "+13.93%",
+      "tweet_volume": 2984556,
+      "price": 76.02,
+      "change_pct": "+0.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
+      "ticker": "XLM-USD",
+      "name": "Stellar USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 57807,
-      "price": 5.0,
-      "change_pct": "+7.30%",
+      "tweet_volume": 268642,
+      "price": 0.19,
+      "change_pct": "+1.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "NUAI",
+      "name": "New Era Energy & Digital, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28078,
-      "price": 13.19,
-      "change_pct": "+12.26%",
+      "tweet_volume": 13590,
+      "price": 4.08,
+      "change_pct": "+2.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
+      "ticker": "BN",
+      "name": "Brookfield Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 22525,
-      "price": 7.68,
-      "change_pct": "+3.09%",
+      "tweet_volume": 5441,
+      "price": 43.63,
+      "change_pct": "-1.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6032,
-      "price": 21.89,
-      "change_pct": "-0.14%",
+      "tweet_volume": 141333,
+      "price": 2.17,
+      "change_pct": "+0.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "test",
-      "name": "YieldMax TSLA Performance & Dis",
+      "ticker": "STRL",
+      "name": "Sterling Infrastructure, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2,
-      "price": 42.27,
-      "change_pct": "-1.99%",
+      "tweet_volume": 2545,
+      "price": 638.56,
+      "change_pct": "-0.44%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "EPD",
+      "name": "Enterprise Products Partners L.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 10249,
+      "price": 38.2,
+      "change_pct": "+0.53%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "JEPI",
+      "name": "JPMorgan Equity Premium Income ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 13047,
+      "price": 56.55,
+      "change_pct": "-0.75%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AAL",
+      "name": "American Airlines Group, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 441805,
+      "price": 14.98,
+      "change_pct": "-3.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

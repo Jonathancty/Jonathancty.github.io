@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-20T15:11:15.066164+00:00",
+  "updated_at": "2026-07-21T15:03:38.974365+00:00",
   "top_trending": {
-    "ticker": "BE",
-    "name": "Bloom Energy Corporation",
+    "ticker": "CELH",
+    "name": "Celsius Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 15248,
-    "price": 196.28,
-    "change_pct": "-8.69%",
+    "tweet_volume": 9285,
+    "price": 28.5,
+    "change_pct": "-3.14%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "HUT",
-      "name": "Hut 8 Corp.",
+      "ticker": "BULL",
+      "name": "Webull Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9729,
-      "price": 101.39,
-      "change_pct": "+10.86%",
+      "tweet_volume": 13017,
+      "price": 8.03,
+      "change_pct": "+4.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
+      "ticker": "VICR",
+      "name": "Vicor Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 89966,
-      "price": 38.98,
-      "change_pct": "+15.94%",
+      "tweet_volume": 1928,
+      "price": 214.62,
+      "change_pct": "-7.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart Holdings, Inc.",
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2620,
-      "price": 29.05,
-      "change_pct": "-1.54%",
+      "tweet_volume": 2351,
+      "price": 507.49,
+      "change_pct": "-3.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2952,
-      "price": 7.95,
-      "change_pct": "-3.17%",
+      "tweet_volume": 4880,
+      "price": 230.08,
+      "change_pct": "-1.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IMMX",
-      "name": "Immix Biopharma, Inc.",
+      "ticker": "MAAS",
+      "name": "Maase Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4414,
-      "price": 8.87,
-      "change_pct": "-13.46%",
+      "tweet_volume": 78,
+      "price": 19.16,
+      "change_pct": "+6.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSNL",
-      "name": "Personalis, Inc.",
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16060,
-      "price": 13.61,
-      "change_pct": "-11.57%",
+      "tweet_volume": 14463,
+      "price": 177.09,
+      "change_pct": "+10.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NUVB",
-      "name": "Nuvation Bio Inc.",
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12535,
-      "price": 6.3,
-      "change_pct": "+8.71%",
+      "tweet_volume": 2795,
+      "price": 157.5,
+      "change_pct": "-1.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZVRA",
-      "name": "Zevra Therapeutics, Inc.",
+      "ticker": "ABEO",
+      "name": "Abeona Therapeutics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 666,
-      "price": 12.55,
-      "change_pct": "-1.72%",
+      "tweet_volume": 1872,
+      "price": 6.34,
+      "change_pct": "-2.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NN",
-      "name": "NextNav Inc.",
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1902,
-      "price": 13.16,
-      "change_pct": "+0.77%",
+      "tweet_volume": 19341,
+      "price": 106.48,
+      "change_pct": "+7.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMRN",
-      "name": "Amarin Corporation plc",
+      "ticker": "HELP",
+      "name": "Cybin Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 48,
-      "price": 13.77,
-      "change_pct": "-1.22%",
+      "tweet_volume": 5837,
+      "price": 8.32,
+      "change_pct": "+17.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

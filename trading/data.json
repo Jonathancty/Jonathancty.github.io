@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-21T15:03:38.974365+00:00",
+  "updated_at": "2026-07-22T15:03:10.786714+00:00",
   "top_trending": {
-    "ticker": "CELH",
-    "name": "Celsius Holdings, Inc.",
+    "ticker": "SMCI",
+    "name": "Super Micro Computer, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 9285,
-    "price": 28.5,
-    "change_pct": "-3.14%",
+    "tweet_volume": 219855,
+    "price": 31.72,
+    "change_pct": "+24.39%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "BULL",
-      "name": "Webull Corporation",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13017,
-      "price": 8.03,
-      "change_pct": "+4.42%",
+      "tweet_volume": 25680,
+      "price": 97.08,
+      "change_pct": "-4.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VICR",
-      "name": "Vicor Corporation",
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1928,
-      "price": 214.62,
-      "change_pct": "-7.08%",
+      "tweet_volume": 66423,
+      "price": 10.73,
+      "change_pct": "-10.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2351,
-      "price": 507.49,
-      "change_pct": "-3.14%",
+      "tweet_volume": 11030,
+      "price": 168.49,
+      "change_pct": "-9.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4880,
-      "price": 230.08,
-      "change_pct": "-1.99%",
+      "tweet_volume": 124901,
+      "price": 8.23,
+      "change_pct": "+7.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MAAS",
-      "name": "Maase Inc.",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 78,
-      "price": 19.16,
-      "change_pct": "+6.86%",
+      "tweet_volume": 17659,
+      "price": 220.46,
+      "change_pct": "+5.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
+      "ticker": "OTLY",
+      "name": "Oatly Group AB",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14463,
-      "price": 177.09,
-      "change_pct": "+10.38%",
+      "tweet_volume": 1084,
+      "price": 12.09,
+      "change_pct": "+33.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
+      "ticker": "ARWR",
+      "name": "Arrowhead Pharmaceuticals, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2795,
-      "price": 157.5,
-      "change_pct": "-1.78%",
+      "tweet_volume": 8668,
+      "price": 89.72,
+      "change_pct": "+20.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ABEO",
-      "name": "Abeona Therapeutics Inc.",
+      "ticker": "RCAT",
+      "name": "Red Cat Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1872,
-      "price": 6.34,
-      "change_pct": "-2.08%",
+      "tweet_volume": 10597,
+      "price": 8.12,
+      "change_pct": "-5.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
+      "ticker": "AUR",
+      "name": "Aurora Innovation, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19341,
-      "price": 106.48,
-      "change_pct": "+7.25%",
+      "tweet_volume": 19141,
+      "price": 6.64,
+      "change_pct": "+5.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HELP",
-      "name": "Cybin Inc.",
+      "ticker": "KLAR",
+      "name": "Klarna Group plc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5837,
-      "price": 8.32,
-      "change_pct": "+17.02%",
+      "tweet_volume": 3470,
+      "price": 18.19,
+      "change_pct": "-4.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

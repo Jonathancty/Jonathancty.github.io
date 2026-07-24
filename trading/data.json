@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-23T15:07:56.289657+00:00",
+  "updated_at": "2026-07-24T14:53:21.645473+00:00",
   "top_trending": {
-    "ticker": "QS",
-    "name": "QuantumScape Corporation",
+    "ticker": "HIMS",
+    "name": "Hims & Hers Health, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 54159,
-    "price": 5.11,
-    "change_pct": "-12.90%",
+    "tweet_volume": 21115,
+    "price": 29.36,
+    "change_pct": "-10.34%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,45 +17,120 @@
   },
   "trending_list": [
     {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
+      "ticker": "ZVRA",
+      "name": "Zevra Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 246107,
+      "tweet_volume": 8026,
       "price": 9.85,
-      "change_pct": "-4.18%",
+      "change_pct": "-21.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLF",
-      "name": "Cleveland-Cliffs Inc.",
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 55797,
-      "price": 11.01,
-      "change_pct": "+16.46%",
+      "tweet_volume": 3279,
+      "price": 93.08,
+      "change_pct": "-3.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "MXL",
+      "name": "MaxLinear, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 59910,
-      "price": 94.44,
-      "change_pct": "-1.07%",
+      "tweet_volume": 10269,
+      "price": 74.99,
+      "change_pct": "-17.81%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CELH",
+      "name": "Celsius Holdings, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4122,
+      "price": 26.86,
+      "change_pct": "-1.16%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 10069,
+      "price": 123.56,
+      "change_pct": "-2.32%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart Holdings, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1698,
+      "price": 27.36,
+      "change_pct": "-0.83%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor Technology, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9349,
+      "price": 63.92,
+      "change_pct": "-2.16%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MP",
+      "name": "MP Materials Corp.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3001,
+      "price": 42.54,
+      "change_pct": "-4.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -68,99 +143,24 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 265809,
-      "price": 7.91,
-      "change_pct": "-27.83%",
+      "tweet_volume": 92959,
+      "price": 7.43,
+      "change_pct": "-4.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CIFR",
-      "name": "Cipher Digital Inc.",
+      "ticker": "ACI",
+      "name": "Albertsons Companies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39510,
-      "price": 25.36,
-      "change_pct": "+3.68%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AAL",
-      "name": "American Airlines Group, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 97512,
-      "price": 13.76,
-      "change_pct": "-7.00%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 3368,
-      "price": 566.98,
-      "change_pct": "+10.23%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SSTK",
-      "name": "Shutterstock, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2787,
-      "price": 5.79,
-      "change_pct": "-21.54%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "KTOS",
-      "name": "Kratos Defense & Security Solut",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 4440,
-      "price": 49.91,
-      "change_pct": "+4.23%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5201,
-      "price": 247.21,
-      "change_pct": "+6.10%",
+      "tweet_volume": 13138,
+      "price": 10.95,
+      "change_pct": "-2.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

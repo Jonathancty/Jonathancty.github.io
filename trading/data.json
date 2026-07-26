@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-25T14:36:58.214459+00:00",
+  "updated_at": "2026-07-26T14:28:33.770882+00:00",
   "top_trending": {
-    "ticker": "TSSI",
-    "name": "TSS, Inc.",
+    "ticker": "DVN",
+    "name": "Devon Energy Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 1144,
-    "price": 9.7,
-    "change_pct": "-7.35%",
+    "tweet_volume": 27293,
+    "price": 45.04,
+    "change_pct": "-0.55%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "HQ",
-      "name": "Horizon Quantum Holdings Ltd.",
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 800,
-      "price": 11.7,
-      "change_pct": "-14.85%",
+      "tweet_volume": 29938,
+      "price": 62.09,
+      "change_pct": "+0.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "B",
-      "name": "Barrick Mining Corporation",
+      "ticker": "CURLF",
+      "name": "Curaleaf Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13306,
-      "price": 37.11,
-      "change_pct": "-0.13%",
+      "tweet_volume": 75,
+      "price": 9.25,
+      "change_pct": "+0.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WRD",
-      "name": "WERIDE INC.",
+      "ticker": "DAVE",
+      "name": "Dave Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4878,
-      "price": 5.32,
-      "change_pct": "-6.83%",
+      "tweet_volume": 606,
+      "price": 402.81,
+      "change_pct": "-1.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JEPQ",
-      "name": "JPMorgan Nasdaq Equity Premium ",
+      "ticker": "JBLU",
+      "name": "JetBlue Airways Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21550,
-      "price": 57.96,
-      "change_pct": "-0.97%",
+      "tweet_volume": 137428,
+      "price": 5.27,
+      "change_pct": "+5.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FPS",
-      "name": "Forgent Power Solutions, Inc.",
+      "ticker": "BKKT",
+      "name": "Bakkt, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27713,
-      "price": 35.89,
-      "change_pct": "-7.88%",
+      "tweet_volume": 1443,
+      "price": 7.44,
+      "change_pct": "-3.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IMMX",
-      "name": "Immix Biopharma, Inc.",
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5724,
-      "price": 8.52,
-      "change_pct": "-3.18%",
+      "tweet_volume": 9885,
+      "price": 92.09,
+      "change_pct": "+1.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UCO",
-      "name": "ProShares Ultra Bloomberg Crude",
+      "ticker": "VNDA",
+      "name": "Vanda Pharmaceuticals Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8434,
-      "price": 43.93,
-      "change_pct": "-0.66%",
+      "tweet_volume": 1895,
+      "price": 5.18,
+      "change_pct": "-3.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "REPL",
-      "name": "Replimune Group, Inc.",
+      "ticker": "KOLD",
+      "name": "ProShares UltraShort Bloomberg ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8165,
-      "price": 9.7,
-      "change_pct": "-7.27%",
+      "tweet_volume": 4948,
+      "price": 26.88,
+      "change_pct": "+1.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "F",
-      "name": "Ford Motor Company",
+      "ticker": "UAL",
+      "name": "United Airlines Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 182530,
-      "price": 14.37,
-      "change_pct": "+1.55%",
+      "tweet_volume": 11731,
+      "price": 118.27,
+      "change_pct": "+2.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GDX",
-      "name": "VanEck Gold Miners ETF",
+      "ticker": "UUP",
+      "name": "Invesco DB USD Index Bullish Fu",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26710,
-      "price": 75.23,
-      "change_pct": "+0.28%",
+      "tweet_volume": 2770,
+      "price": 28.58,
+      "change_pct": "+0.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-26T14:28:33.770882+00:00",
+  "updated_at": "2026-07-27T15:41:32.127273+00:00",
   "top_trending": {
-    "ticker": "DVN",
-    "name": "Devon Energy Corporation",
+    "ticker": "CAPR",
+    "name": "Capricor Therapeutics, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 27293,
-    "price": 45.04,
-    "change_pct": "-0.55%",
+    "tweet_volume": 35991,
+    "price": 6.36,
+    "change_pct": "-67.72%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb Company",
+      "ticker": "QBTS",
+      "name": "D-Wave Quantum Inc. Common Stock",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29938,
-      "price": 62.09,
-      "change_pct": "+0.94%",
+      "tweet_volume": 71895,
+      "price": 18.77,
+      "change_pct": "+4.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 75,
-      "price": 9.25,
-      "change_pct": "+0.22%",
+      "tweet_volume": 49787,
+      "price": 677.61,
+      "change_pct": "-0.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DAVE",
-      "name": "Dave Inc.",
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 606,
-      "price": 402.81,
-      "change_pct": "-1.41%",
+      "tweet_volume": 128072,
+      "price": 116.94,
+      "change_pct": "-14.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JBLU",
-      "name": "JetBlue Airways Corporation",
+      "ticker": "VG",
+      "name": "Venture Global, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 137428,
-      "price": 5.27,
-      "change_pct": "+5.61%",
+      "tweet_volume": 20327,
+      "price": 13.21,
+      "change_pct": "-7.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BKKT",
-      "name": "Bakkt, Inc.",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1443,
-      "price": 7.44,
-      "change_pct": "-3.12%",
+      "tweet_volume": 41863,
+      "price": 736.84,
+      "change_pct": "-0.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
+      "ticker": "VCX",
+      "name": "VCX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9885,
-      "price": 92.09,
-      "change_pct": "+1.85%",
+      "tweet_volume": 744,
+      "price": 41.2,
+      "change_pct": "-25.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VNDA",
-      "name": "Vanda Pharmaceuticals Inc.",
+      "ticker": "LEGN",
+      "name": "Legend Biotech Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1895,
-      "price": 5.18,
-      "change_pct": "-3.36%",
+      "tweet_volume": 14375,
+      "price": 18.86,
+      "change_pct": "-15.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KOLD",
-      "name": "ProShares UltraShort Bloomberg ",
+      "ticker": "MXL",
+      "name": "MaxLinear, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4948,
-      "price": 26.88,
-      "change_pct": "+1.51%",
+      "tweet_volume": 8759,
+      "price": 62.78,
+      "change_pct": "-12.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UAL",
-      "name": "United Airlines Holdings, Inc.",
+      "ticker": "RGTI",
+      "name": "Rigetti Computing, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11731,
-      "price": 118.27,
-      "change_pct": "+2.54%",
+      "tweet_volume": 42718,
+      "price": 15.09,
+      "change_pct": "+6.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UUP",
-      "name": "Invesco DB USD Index Bullish Fu",
+      "ticker": "BRUN",
+      "name": "Boost Run Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2770,
-      "price": 28.58,
-      "change_pct": "+0.07%",
+      "tweet_volume": 3175,
+      "price": 18.41,
+      "change_pct": "-15.32%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

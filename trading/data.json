@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T15:19:55.037888+00:00",
+  "updated_at": "2026-07-29T15:31:27.558284+00:00",
   "top_trending": {
     "ticker": "CAPR",
     "name": "Capricor Therapeutics, Inc.",
@@ -7,9 +7,9 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 15143,
-    "price": 5.84,
-    "change_pct": "-16.44%",
+    "tweet_volume": 40628,
+    "price": 6.57,
+    "change_pct": "+0.00%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,120 @@
   },
   "trending_list": [
     {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 265394,
+      "price": 15.31,
+      "change_pct": "-8.56%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
       "ticker": "BE",
       "name": "Bloom Energy Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21530,
-      "price": 164.85,
-      "change_pct": "-12.40%",
+      "tweet_volume": 48711,
+      "price": 164.3,
+      "change_pct": "-1.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DIA",
-      "name": "State Street SPDR Dow Jones Ind",
+      "ticker": "GLXY",
+      "name": "Galaxy Digital Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6159,
-      "price": 526.66,
-      "change_pct": "+1.04%",
+      "tweet_volume": 5373,
+      "price": 19.38,
+      "change_pct": "-7.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
+      "ticker": "DJT",
+      "name": "Trump Media & Technology Group ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 58083,
-      "price": 117.66,
-      "change_pct": "-17.93%",
+      "tweet_volume": 5989,
+      "price": 9.79,
+      "change_pct": "-0.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica, Inc.",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8054,
-      "price": 326.81,
-      "change_pct": "+2.69%",
+      "tweet_volume": 27818,
+      "price": 23.89,
+      "change_pct": "-10.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 Index Fund",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16063,
-      "price": 292.5,
-      "change_pct": "-0.14%",
+      "tweet_volume": 31222,
+      "price": 152.0,
+      "change_pct": "-10.43%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14515,
-      "price": 9.45,
-      "change_pct": "-12.83%",
+      "tweet_volume": 9157,
+      "price": 262.34,
+      "change_pct": "+5.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "REPL",
-      "name": "Replimune Group, Inc.",
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28387,
-      "price": 6.24,
-      "change_pct": "-27.69%",
+      "tweet_volume": 30940,
+      "price": 61.94,
+      "change_pct": "-7.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -128,39 +143,24 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 57834,
-      "price": 675.01,
-      "change_pct": "-1.04%",
+      "tweet_volume": 37234,
+      "price": 666.99,
+      "change_pct": "-1.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "LMND",
+      "name": "Lemonade, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30073,
-      "price": 34.09,
-      "change_pct": "+1.97%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AMKR",
-      "name": "Amkor Technology, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 21362,
-      "price": 46.28,
-      "change_pct": "-23.76%",
+      "tweet_volume": 9403,
+      "price": 47.92,
+      "change_pct": "-22.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-29T15:31:27.558284+00:00",
+  "updated_at": "2026-07-30T15:10:33.308192+00:00",
   "top_trending": {
-    "ticker": "CAPR",
-    "name": "Capricor Therapeutics, Inc.",
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 40628,
-    "price": 6.57,
-    "change_pct": "+0.00%",
+    "tweet_volume": 58688,
+    "price": 189.9,
+    "change_pct": "+28.12%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,120 +17,60 @@
   },
   "trending_list": [
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 265394,
-      "price": 15.31,
-      "change_pct": "-8.56%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
       "ticker": "BE",
       "name": "Bloom Energy Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 48711,
-      "price": 164.3,
-      "change_pct": "-1.52%",
+      "tweet_volume": 45282,
+      "price": 209.86,
+      "change_pct": "+28.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLXY",
-      "name": "Galaxy Digital Inc.",
+      "ticker": "PGY",
+      "name": "Pagaya Technologies Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5373,
-      "price": 19.38,
-      "change_pct": "-7.45%",
+      "tweet_volume": 7864,
+      "price": 16.42,
+      "change_pct": "+1.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media & Technology Group ",
+      "ticker": "VKTX",
+      "name": "Viking Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5989,
-      "price": 9.79,
-      "change_pct": "-0.96%",
+      "tweet_volume": 2728,
+      "price": 31.91,
+      "change_pct": "-4.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
+      "ticker": "SOXS",
+      "name": "Direxion Daily Semiconductor Be",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27818,
-      "price": 23.89,
-      "change_pct": "-10.24%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 31222,
-      "price": 152.0,
-      "change_pct": "-10.43%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9157,
-      "price": 262.34,
-      "change_pct": "+5.28%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 30940,
-      "price": 61.94,
-      "change_pct": "-7.97%",
+      "tweet_volume": 116431,
+      "price": 53.64,
+      "change_pct": "-26.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -143,24 +83,84 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 37234,
-      "price": 666.99,
-      "change_pct": "-1.26%",
+      "tweet_volume": 54134,
+      "price": 681.05,
+      "change_pct": "+2.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LMND",
-      "name": "Lemonade, Inc.",
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9403,
-      "price": 47.92,
-      "change_pct": "-22.85%",
+      "tweet_volume": 35361,
+      "price": 59.44,
+      "change_pct": "-10.38%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TDOC",
+      "name": "Teladoc Health, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 30401,
+      "price": 6.61,
+      "change_pct": "-28.01%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MDGL",
+      "name": "Madrigal Pharmaceuticals, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1859,
+      "price": 477.98,
+      "change_pct": "-12.60%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4294,
+      "price": 306.74,
+      "change_pct": "-7.92%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "REPL",
+      "name": "Replimune Group, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 35649,
+      "price": 5.41,
+      "change_pct": "+0.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

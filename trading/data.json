@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-30T15:10:33.308192+00:00",
+  "updated_at": "2026-07-31T15:18:32.914674+00:00",
   "top_trending": {
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
+    "ticker": "RDDT",
+    "name": "Reddit, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 58688,
-    "price": 189.9,
-    "change_pct": "+28.12%",
+    "tweet_volume": 39086,
+    "price": 137.27,
+    "change_pct": "-22.90%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,135 +17,30 @@
   },
   "trending_list": [
     {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 45282,
-      "price": 209.86,
-      "change_pct": "+28.16%",
+      "tweet_volume": 78320,
+      "price": 34.36,
+      "change_pct": "-29.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PGY",
-      "name": "Pagaya Technologies Ltd.",
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7864,
-      "price": 16.42,
-      "change_pct": "+1.42%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VKTX",
-      "name": "Viking Therapeutics, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2728,
-      "price": 31.91,
-      "change_pct": "-4.55%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOXS",
-      "name": "Direxion Daily Semiconductor Be",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 116431,
-      "price": 53.64,
-      "change_pct": "-26.67%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust, Series 1",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 54134,
-      "price": 681.05,
-      "change_pct": "+2.92%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 35361,
-      "price": 59.44,
-      "change_pct": "-10.38%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "TDOC",
-      "name": "Teladoc Health, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 30401,
-      "price": 6.61,
-      "change_pct": "-28.01%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "MDGL",
-      "name": "Madrigal Pharmaceuticals, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 1859,
-      "price": 477.98,
-      "change_pct": "-12.60%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 4294,
-      "price": 306.74,
-      "change_pct": "-7.92%",
+      "tweet_volume": 22810,
+      "price": 140.66,
+      "change_pct": "-14.01%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -158,9 +53,114 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35649,
-      "price": 5.41,
+      "tweet_volume": 49491,
+      "price": 10.76,
+      "change_pct": "+98.90%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 41455,
+      "price": 82.11,
+      "change_pct": "-0.83%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "name": "AXT Inc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 43676,
+      "price": 58.62,
+      "change_pct": "+24.89%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 45924,
+      "price": 741.7,
       "change_pct": "+0.00%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "FRMI",
+      "name": "Fermi Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 16271,
+      "price": 5.96,
+      "change_pct": "-11.37%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 52664,
+      "price": 15.55,
+      "change_pct": "-7.61%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 21028,
+      "price": 90.78,
+      "change_pct": "-7.12%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 6064,
+      "price": 86.5,
+      "change_pct": "-1.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

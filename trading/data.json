@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-31T15:18:32.914674+00:00",
+  "updated_at": "2026-08-01T14:25:33.014094+00:00",
   "top_trending": {
-    "ticker": "RDDT",
-    "name": "Reddit, Inc.",
+    "ticker": "JEPQ",
+    "name": "JPMorgan Nasdaq Equity Premium ",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 39086,
-    "price": 137.27,
-    "change_pct": "-22.90%",
+    "tweet_volume": 20201,
+    "price": 58.25,
+    "change_pct": "+0.57%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RBLX",
-      "name": "Roblox Corporation",
+      "ticker": "CORZ",
+      "name": "Core Scientific, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 78320,
-      "price": 34.36,
-      "change_pct": "-29.40%",
+      "tweet_volume": 29606,
+      "price": 20.72,
+      "change_pct": "-5.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
+      "ticker": "XLF",
+      "name": "State Street Financial Select S",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 22810,
-      "price": 140.66,
-      "change_pct": "-14.01%",
+      "tweet_volume": 79719,
+      "price": 56.94,
+      "change_pct": "-0.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "REPL",
-      "name": "Replimune Group, Inc.",
+      "ticker": "SENS",
+      "name": "Senseonics Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 49491,
-      "price": 10.76,
-      "change_pct": "+98.90%",
+      "tweet_volume": 1254,
+      "price": 5.03,
+      "change_pct": "-0.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TLT",
-      "name": "iShares 20+ Year Treasury Bond ",
+      "ticker": "WHR",
+      "name": "Whirlpool Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41455,
-      "price": 82.11,
-      "change_pct": "-0.83%",
+      "tweet_volume": 6058,
+      "price": 37.5,
+      "change_pct": "-1.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AXTI",
-      "name": "AXT Inc",
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 43676,
-      "price": 58.62,
-      "change_pct": "+24.89%",
+      "tweet_volume": 793,
+      "price": 1877.95,
+      "change_pct": "-0.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
+      "ticker": "OXLC",
+      "name": "Oxford Lane Capital Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 45924,
-      "price": 741.7,
-      "change_pct": "+0.00%",
+      "tweet_volume": 2876,
+      "price": 9.16,
+      "change_pct": "+2.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FRMI",
-      "name": "Fermi Inc.",
+      "ticker": "MAGS",
+      "name": "Roundhill Magnificent Seven ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16271,
-      "price": 5.96,
-      "change_pct": "-11.37%",
+      "tweet_volume": 11521,
+      "price": 65.96,
+      "change_pct": "+3.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 52664,
-      "price": 15.55,
-      "change_pct": "-7.61%",
+      "tweet_volume": 6362,
+      "price": 151.2,
+      "change_pct": "+1.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "PENN",
+      "name": "PENN Entertainment, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21028,
-      "price": 90.78,
-      "change_pct": "-7.12%",
+      "tweet_volume": 6544,
+      "price": 20.53,
+      "change_pct": "+0.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CCJ",
-      "name": "Cameco Corporation",
+      "ticker": "XLV",
+      "name": "State Street Health Care Select",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6064,
-      "price": 86.5,
-      "change_pct": "-1.96%",
+      "tweet_volume": 23156,
+      "price": 162.55,
+      "change_pct": "-0.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

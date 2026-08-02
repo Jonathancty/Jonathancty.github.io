@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-01T14:25:33.014094+00:00",
+  "updated_at": "2026-08-02T14:28:19.229166+00:00",
   "top_trending": {
-    "ticker": "JEPQ",
-    "name": "JPMorgan Nasdaq Equity Premium ",
+    "ticker": "PENN",
+    "name": "PENN Entertainment, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 20201,
-    "price": 58.25,
-    "change_pct": "+0.57%",
+    "tweet_volume": 6544,
+    "price": 20.53,
+    "change_pct": "+0.07%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "CORZ",
-      "name": "Core Scientific, Inc.",
+      "ticker": "ALMU",
+      "name": "Aeluma, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29606,
-      "price": 20.72,
-      "change_pct": "-5.00%",
+      "tweet_volume": 1351,
+      "price": 16.2,
+      "change_pct": "+5.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLF",
-      "name": "State Street Financial Select S",
+      "ticker": "JMKE",
+      "name": "Jersey Mikes Subs Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 79719,
-      "price": 56.94,
-      "change_pct": "-0.11%",
+      "tweet_volume": 27163,
+      "price": 23.0,
+      "change_pct": "+6.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SENS",
-      "name": "Senseonics Holdings, Inc.",
+      "ticker": "UCO",
+      "name": "ProShares Ultra Bloomberg Crude",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1254,
-      "price": 5.03,
-      "change_pct": "-0.79%",
+      "tweet_volume": 7563,
+      "price": 40.42,
+      "change_pct": "+1.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WHR",
-      "name": "Whirlpool Corporation",
+      "ticker": "ARKK",
+      "name": "ARK Innovation ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6058,
-      "price": 37.5,
-      "change_pct": "-1.50%",
+      "tweet_volume": 15473,
+      "price": 71.24,
+      "change_pct": "-2.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
+      "ticker": "SCO",
+      "name": "ProShares UltraShort Bloomberg ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 793,
-      "price": 1877.95,
-      "change_pct": "-0.41%",
+      "tweet_volume": 7982,
+      "price": 27.15,
+      "change_pct": "-1.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OXLC",
-      "name": "Oxford Lane Capital Corp.",
+      "ticker": "NASA",
+      "name": "Tema Space Innovators ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2876,
-      "price": 9.16,
-      "change_pct": "+2.12%",
+      "tweet_volume": 3509,
+      "price": 21.62,
+      "change_pct": "+0.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MAGS",
-      "name": "Roundhill Magnificent Seven ETF",
+      "ticker": "BTDR",
+      "name": "Bitdeer Technologies Group",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11521,
-      "price": 65.96,
-      "change_pct": "+3.19%",
+      "tweet_volume": 30159,
+      "price": 10.52,
+      "change_pct": "-5.23%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
+      "ticker": "BIDU",
+      "name": "Baidu, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6362,
-      "price": 151.2,
-      "change_pct": "+1.89%",
+      "tweet_volume": 7163,
+      "price": 111.11,
+      "change_pct": "+3.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PENN",
-      "name": "PENN Entertainment, Inc.",
+      "ticker": "GM",
+      "name": "General Motors Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6544,
-      "price": 20.53,
-      "change_pct": "+0.07%",
+      "tweet_volume": 9002,
+      "price": 88.86,
+      "change_pct": "+0.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLV",
-      "name": "State Street Health Care Select",
+      "ticker": "PSNL",
+      "name": "Personalis, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23156,
-      "price": 162.55,
-      "change_pct": "-0.59%",
+      "tweet_volume": 6843,
+      "price": 12.66,
+      "change_pct": "+3.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

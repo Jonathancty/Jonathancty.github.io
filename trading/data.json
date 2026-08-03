@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-02T14:28:19.229166+00:00",
+  "updated_at": "2026-08-03T15:42:04.175449+00:00",
   "top_trending": {
-    "ticker": "PENN",
-    "name": "PENN Entertainment, Inc.",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 6544,
-    "price": 20.53,
-    "change_pct": "+0.07%",
+    "tweet_volume": 48383,
+    "price": 19.08,
+    "change_pct": "-12.17%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ALMU",
-      "name": "Aeluma, Inc.",
+      "ticker": "LKNCY",
+      "name": "Luckin Coffee Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1351,
-      "price": 16.2,
-      "change_pct": "+5.68%",
+      "tweet_volume": 2608,
+      "price": 36.31,
+      "change_pct": "+3.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JMKE",
-      "name": "Jersey Mikes Subs Inc",
+      "ticker": "REPL",
+      "name": "Replimune Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27163,
-      "price": 23.0,
-      "change_pct": "+6.33%",
+      "tweet_volume": 7424,
+      "price": 11.48,
+      "change_pct": "+2.50%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UCO",
-      "name": "ProShares Ultra Bloomberg Crude",
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7563,
-      "price": 40.42,
-      "change_pct": "+1.00%",
+      "tweet_volume": 7596,
+      "price": 46.62,
+      "change_pct": "-10.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARKK",
-      "name": "ARK Innovation ETF",
+      "ticker": "MLTX",
+      "name": "MoonLake Immunotherapeutics",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15473,
-      "price": 71.24,
-      "change_pct": "-2.28%",
+      "tweet_volume": 1021,
+      "price": 17.59,
+      "change_pct": "-4.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SCO",
-      "name": "ProShares UltraShort Bloomberg ",
+      "ticker": "SERV",
+      "name": "Serve Robotics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7982,
-      "price": 27.15,
-      "change_pct": "-1.02%",
+      "tweet_volume": 7319,
+      "price": 5.38,
+      "change_pct": "+12.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NASA",
-      "name": "Tema Space Innovators ETF",
+      "ticker": "AXTI",
+      "name": "AXT Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3509,
-      "price": 21.62,
-      "change_pct": "+0.09%",
+      "tweet_volume": 24116,
+      "price": 67.92,
+      "change_pct": "+12.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BTDR",
-      "name": "Bitdeer Technologies Group",
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30159,
-      "price": 10.52,
-      "change_pct": "-5.23%",
+      "tweet_volume": 5528,
+      "price": 237.63,
+      "change_pct": "+12.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu, Inc.",
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7163,
-      "price": 111.11,
-      "change_pct": "+3.38%",
+      "tweet_volume": 28018,
+      "price": 39.62,
+      "change_pct": "+8.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GM",
-      "name": "General Motors Company",
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb Company",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9002,
-      "price": 88.86,
-      "change_pct": "+0.52%",
+      "tweet_volume": 32745,
+      "price": 65.32,
+      "change_pct": "+0.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PSNL",
-      "name": "Personalis, Inc.",
+      "ticker": "AZN",
+      "name": "AstraZeneca PLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6843,
-      "price": 12.66,
-      "change_pct": "+3.09%",
+      "tweet_volume": 17286,
+      "price": 154.67,
+      "change_pct": "-8.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

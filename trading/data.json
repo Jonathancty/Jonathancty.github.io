@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-05T15:12:05.604091+00:00",
+  "updated_at": "2026-08-06T15:14:06.497098+00:00",
   "top_trending": {
-    "ticker": "ZETA",
-    "name": "Zeta Global Holdings Corp.",
+    "ticker": "SOUN",
+    "name": "SoundHound AI, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 60193,
-    "price": 27.2,
-    "change_pct": "+12.14%",
+    "tweet_volume": 126389,
+    "price": 7.22,
+    "change_pct": "+12.36%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "APPS",
-      "name": "Digital Turbine, Inc.",
+      "ticker": "TTD",
+      "name": "The Trade Desk, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29986,
-      "price": 13.02,
-      "change_pct": "+36.91%",
+      "tweet_volume": 39198,
+      "price": 17.91,
+      "change_pct": "-5.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLD",
-      "name": "SPDR Gold Shares",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18796,
-      "price": 390.78,
-      "change_pct": "+4.44%",
+      "tweet_volume": 85816,
+      "price": 6.03,
+      "change_pct": "+38.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UBER",
-      "name": "Uber Technologies, Inc.",
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 54483,
-      "price": 67.76,
-      "change_pct": "-5.88%",
+      "tweet_volume": 50775,
+      "price": 12.03,
+      "change_pct": "+12.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "CELH",
+      "name": "Celsius Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9406,
-      "price": 327.76,
-      "change_pct": "-9.38%",
+      "tweet_volume": 53043,
+      "price": 24.61,
+      "change_pct": "-15.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DKNG",
-      "name": "DraftKings Inc.",
+      "ticker": "APP",
+      "name": "Applovin Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18342,
-      "price": 22.5,
-      "change_pct": "-4.68%",
+      "tweet_volume": 18318,
+      "price": 335.0,
+      "change_pct": "-19.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BCRX",
-      "name": "BioCryst Pharmaceuticals, Inc.",
+      "ticker": "FLNC",
+      "name": "Fluence Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5037,
-      "price": 9.12,
-      "change_pct": "+1.05%",
+      "tweet_volume": 43189,
+      "price": 14.06,
+      "change_pct": "-1.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FUBO",
-      "name": "fuboTV Inc.",
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3362,
-      "price": 9.85,
-      "change_pct": "+3.14%",
+      "tweet_volume": 23341,
+      "price": 473.23,
+      "change_pct": "-8.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLV",
-      "name": "iShares Silver Trust",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26904,
-      "price": 56.44,
-      "change_pct": "+4.83%",
+      "tweet_volume": 12147,
+      "price": 15.19,
+      "change_pct": "+8.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LUMN",
-      "name": "Lumen Technologies, Inc.",
+      "ticker": "KTOS",
+      "name": "Kratos Defense & Security Solut",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20977,
-      "price": 6.12,
-      "change_pct": "-8.87%",
+      "tweet_volume": 5721,
+      "price": 58.15,
+      "change_pct": "+5.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart Holdings, Inc.",
+      "ticker": "RCAT",
+      "name": "Red Cat Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15327,
-      "price": 32.16,
-      "change_pct": "+6.05%",
+      "tweet_volume": 6235,
+      "price": 8.93,
+      "change_pct": "+3.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-07T14:12:35.119526+00:00",
+  "updated_at": "2026-08-08T13:44:02.400846+00:00",
   "top_trending": {
-    "ticker": "TTD",
-    "name": "The Trade Desk, Inc.",
+    "ticker": "NTDOY",
+    "name": "Nintendo Co., Ltd.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 148393,
-    "price": 14.11,
-    "change_pct": "-20.14%",
+    "tweet_volume": 385,
+    "price": 12.72,
+    "change_pct": "-1.40%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "WEN",
-      "name": "Wendy's Company (The)",
+      "ticker": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12189,
-      "price": 7.47,
-      "change_pct": "+1.15%",
+      "tweet_volume": 10889,
+      "price": 55.24,
+      "change_pct": "+0.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOCS",
-      "name": "Doximity, Inc.",
+      "ticker": "VELO",
+      "name": "Velo3D, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 71891,
-      "price": 32.62,
-      "change_pct": "+57.91%",
+      "tweet_volume": 3452,
+      "price": 14.16,
+      "change_pct": "+7.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
+      "ticker": "GDX",
+      "name": "VanEck Gold Miners ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4632,
-      "price": 62.87,
-      "change_pct": "-3.99%",
+      "tweet_volume": 109006,
+      "price": 89.89,
+      "change_pct": "+7.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AAOI",
-      "name": "Applied Optoelectronics, Inc.",
+      "ticker": "LASR",
+      "name": "nLIGHT, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23752,
-      "price": 141.3,
-      "change_pct": "+13.75%",
+      "tweet_volume": 13609,
+      "price": 56.16,
+      "change_pct": "-25.56%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19673,
-      "price": 181.41,
-      "change_pct": "-4.46%",
+      "tweet_volume": 4693,
+      "price": 223.35,
+      "change_pct": "+2.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DKNG",
-      "name": "DraftKings Inc.",
+      "ticker": "BIDU",
+      "name": "Baidu, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 21743,
-      "price": 22.31,
-      "change_pct": "+0.63%",
+      "tweet_volume": 3108,
+      "price": 109.71,
+      "change_pct": "+0.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GLD",
-      "name": "SPDR Gold Shares",
+      "ticker": "DNA",
+      "name": "Ginkgo Bioworks Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12817,
-      "price": 397.52,
-      "change_pct": "+2.01%",
+      "tweet_volume": 4131,
+      "price": 7.97,
+      "change_pct": "-6.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
+      "ticker": "MP",
+      "name": "MP Materials Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23386,
-      "price": 12.66,
-      "change_pct": "+7.02%",
+      "tweet_volume": 29001,
+      "price": 51.11,
+      "change_pct": "+7.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MARA",
-      "name": "MARA Holdings, Inc.",
+      "ticker": "LQDA",
+      "name": "Liquidia Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39824,
-      "price": 9.72,
-      "change_pct": "-8.73%",
+      "tweet_volume": 1382,
+      "price": 90.22,
+      "change_pct": "+0.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRSR",
-      "name": "Corsair Gaming, Inc.",
+      "ticker": "BFLY",
+      "name": "Butterfly Network, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8394,
-      "price": 14.01,
-      "change_pct": "+32.05%",
+      "tweet_volume": 10884,
+      "price": 8.83,
+      "change_pct": "+6.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

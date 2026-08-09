@@ -1,36 +1,21 @@
 {
-  "updated_at": "2026-08-08T13:44:02.400846+00:00",
+  "updated_at": "2026-08-09T13:48:48.253547+00:00",
   "top_trending": {
-    "ticker": "NTDOY",
-    "name": "Nintendo Co., Ltd.",
+    "ticker": "ALM",
+    "name": "Almonty Industries Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 385,
-    "price": 12.72,
-    "change_pct": "-1.40%",
+    "tweet_volume": 23192,
+    "price": 14.18,
+    "change_pct": "+5.66%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "QQQI",
-      "name": "NEOS Nasdaq 100 High Income ETF",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 10889,
-      "price": 55.24,
-      "change_pct": "+0.89%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
     {
       "ticker": "VELO",
       "name": "Velo3D, Inc.",
@@ -47,120 +32,135 @@
       ]
     },
     {
-      "ticker": "GDX",
-      "name": "VanEck Gold Miners ETF",
+      "ticker": "SNDQ",
+      "name": "Tradr 2X Short SNDK Daily ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 109006,
-      "price": 89.89,
-      "change_pct": "+7.11%",
+      "tweet_volume": 34402,
+      "price": 29.82,
+      "change_pct": "+7.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LASR",
-      "name": "nLIGHT, Inc.",
+      "ticker": "LHX",
+      "name": "L3Harris Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13609,
-      "price": 56.16,
-      "change_pct": "-25.56%",
+      "tweet_volume": 1975,
+      "price": 286.67,
+      "change_pct": "-0.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
+      "ticker": "MLTX",
+      "name": "MoonLake Immunotherapeutics",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4693,
-      "price": 223.35,
-      "change_pct": "+2.27%",
+      "tweet_volume": 2191,
+      "price": 18.26,
+      "change_pct": "+1.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu, Inc.",
+      "ticker": "SNDU",
+      "name": "T-REX 2X Long SNDK Daily Target",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3108,
-      "price": 109.71,
-      "change_pct": "+0.35%",
+      "tweet_volume": 33137,
+      "price": 14.16,
+      "change_pct": "-8.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DNA",
-      "name": "Ginkgo Bioworks Holdings, Inc.",
+      "ticker": "HROW",
+      "name": "Harrow, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4131,
-      "price": 7.97,
-      "change_pct": "-6.24%",
+      "tweet_volume": 783,
+      "price": 40.44,
+      "change_pct": "+1.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MP",
-      "name": "MP Materials Corp.",
+      "ticker": "JACK",
+      "name": "Jack In The Box Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 29001,
-      "price": 51.11,
-      "change_pct": "+7.62%",
+      "tweet_volume": 1495,
+      "price": 17.58,
+      "change_pct": "+1.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LQDA",
-      "name": "Liquidia Corporation",
+      "ticker": "DJIA",
+      "name": "Global X Dow 30 Covered Call ET",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1382,
-      "price": 90.22,
-      "change_pct": "+0.89%",
+      "tweet_volume": 101,
+      "price": 22.85,
+      "change_pct": "+0.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BFLY",
-      "name": "Butterfly Network, Inc.",
+      "ticker": "UUP",
+      "name": "Invesco DB USD Index Bullish Fu",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10884,
-      "price": 8.83,
-      "change_pct": "+6.39%",
+      "tweet_volume": 3434,
+      "price": 28.07,
+      "change_pct": "-0.43%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VSTM",
+      "name": "Verastem, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 10795,
+      "price": 6.74,
+      "change_pct": "+14.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-11T14:19:00.923765+00:00",
+  "updated_at": "2026-08-12T14:19:41.135746+00:00",
   "top_trending": {
-    "ticker": "RUM",
-    "name": "RUM Group Inc.",
+    "ticker": "CRWV",
+    "name": "CoreWeave, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 3567,
-    "price": 6.77,
-    "change_pct": "+9.00%",
+    "tweet_volume": 98134,
+    "price": 109.57,
+    "change_pct": "+21.32%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "RIOT",
-      "name": "Riot Platforms, Inc.",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 71195,
-      "price": 20.77,
-      "change_pct": "+7.09%",
+      "tweet_volume": 149524,
+      "price": 36.19,
+      "change_pct": "+14.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FRMI",
-      "name": "Fermi Inc.",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 54294,
-      "price": 7.18,
-      "change_pct": "+22.13%",
+      "tweet_volume": 56338,
+      "price": 233.54,
+      "change_pct": "+20.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
+      "ticker": "UAMY",
+      "name": "United States Antimony Corporat",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30361,
-      "price": 78.92,
-      "change_pct": "-1.40%",
+      "tweet_volume": 18389,
+      "price": 5.21,
+      "change_pct": "-20.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "APP",
-      "name": "Applovin Corporation",
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5651,
-      "price": 322.0,
-      "change_pct": "-5.01%",
+      "tweet_volume": 9125,
+      "price": 868.06,
+      "change_pct": "+5.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health, Inc.",
+      "ticker": "VELO",
+      "name": "Velo3D, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20952,
-      "price": 31.39,
-      "change_pct": "-1.21%",
+      "tweet_volume": 6113,
+      "price": 14.96,
+      "change_pct": "+9.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BW",
-      "name": "Babcock & Wilcox Enterprises, I",
+      "ticker": "RUM",
+      "name": "RUM Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18645,
-      "price": 9.95,
-      "change_pct": "+12.05%",
+      "tweet_volume": 4131,
+      "price": 7.12,
+      "change_pct": "+2.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONON",
-      "name": "On Holding AG",
+      "ticker": "CAVA",
+      "name": "CAVA Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 37232,
-      "price": 31.38,
-      "change_pct": "-19.08%",
+      "tweet_volume": 9038,
+      "price": 68.72,
+      "change_pct": "+13.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "JOBY",
-      "name": "Joby Aviation, Inc.",
+      "ticker": "DFTX",
+      "name": "Definium Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20120,
-      "price": 8.69,
-      "change_pct": "-1.35%",
+      "tweet_volume": 8313,
+      "price": 42.74,
+      "change_pct": "+4.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SION",
-      "name": "Sionna Therapeutics, Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16249,
-      "price": 5.08,
-      "change_pct": "+12.83%",
+      "tweet_volume": 6511,
+      "price": 11.66,
+      "change_pct": "+5.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SE",
-      "name": "Sea Limited",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14828,
-      "price": 128.8,
-      "change_pct": "+12.20%",
+      "tweet_volume": 46458,
+      "price": 9.78,
+      "change_pct": "+0.36%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

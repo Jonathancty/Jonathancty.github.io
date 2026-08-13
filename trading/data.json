@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-12T14:19:41.135746+00:00",
+  "updated_at": "2026-08-13T14:21:18.951120+00:00",
   "top_trending": {
-    "ticker": "CRWV",
-    "name": "CoreWeave, Inc.",
+    "ticker": "LUNR",
+    "name": "Intuitive Machines, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 98134,
-    "price": 109.57,
-    "change_pct": "+21.32%",
+    "tweet_volume": 27245,
+    "price": 16.93,
+    "change_pct": "-0.12%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,75 +17,30 @@
   },
   "trending_list": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 149524,
-      "price": 36.19,
-      "change_pct": "+14.53%",
+      "tweet_volume": 139074,
+      "price": 9.35,
+      "change_pct": "-4.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "INFQ",
+      "name": "Infleqtion, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 56338,
-      "price": 233.54,
-      "change_pct": "+20.86%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "UAMY",
-      "name": "United States Antimony Corporat",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 18389,
-      "price": 5.21,
-      "change_pct": "-20.74%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9125,
-      "price": 868.06,
-      "change_pct": "+5.78%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VELO",
-      "name": "Velo3D, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6113,
-      "price": 14.96,
-      "change_pct": "+9.28%",
+      "tweet_volume": 18337,
+      "price": 12.82,
+      "change_pct": "+3.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -98,69 +53,114 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4131,
-      "price": 7.12,
-      "change_pct": "+2.89%",
+      "tweet_volume": 8518,
+      "price": 8.52,
+      "change_pct": "+12.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CAVA",
-      "name": "CAVA Group, Inc.",
+      "ticker": "OMER",
+      "name": "Omeros Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9038,
-      "price": 68.72,
-      "change_pct": "+13.00%",
+      "tweet_volume": 13664,
+      "price": 17.03,
+      "change_pct": "+24.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DFTX",
-      "name": "Definium Therapeutics, Inc.",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8313,
-      "price": 42.74,
-      "change_pct": "+4.47%",
+      "tweet_volume": 84349,
+      "price": 41.27,
+      "change_pct": "+9.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "IREN",
+      "name": "IREN LIMITED",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6511,
-      "price": 11.66,
-      "change_pct": "+5.52%",
+      "tweet_volume": 70132,
+      "price": 48.28,
+      "change_pct": "+10.55%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46458,
-      "price": 9.78,
-      "change_pct": "+0.36%",
+      "tweet_volume": 17710,
+      "price": 231.48,
+      "change_pct": "-11.67%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CRMD",
+      "name": "CorMedix Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4704,
+      "price": 8.53,
+      "change_pct": "+20.14%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 11783,
+      "price": 346.89,
+      "change_pct": "-2.46%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ABEO",
+      "name": "Abeona Therapeutics Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3345,
+      "price": 6.53,
+      "change_pct": "-12.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

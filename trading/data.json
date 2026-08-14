@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-13T14:21:18.951120+00:00",
+  "updated_at": "2026-08-14T14:14:55.838939+00:00",
   "top_trending": {
-    "ticker": "LUNR",
-    "name": "Intuitive Machines, Inc.",
+    "ticker": "QXO",
+    "name": "QXO, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 27245,
-    "price": 16.93,
-    "change_pct": "-0.12%",
+    "tweet_volume": 9188,
+    "price": 14.92,
+    "change_pct": "+0.20%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
+      "ticker": "VCX",
+      "name": "VCX",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 139074,
-      "price": 9.35,
-      "change_pct": "-4.30%",
+      "tweet_volume": 5512,
+      "price": 34.28,
+      "change_pct": "-10.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "INFQ",
-      "name": "Infleqtion, Inc.",
+      "ticker": "BRUN",
+      "name": "Boost Run Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18337,
-      "price": 12.82,
-      "change_pct": "+3.76%",
+      "tweet_volume": 6362,
+      "price": 22.94,
+      "change_pct": "+1.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RUM",
-      "name": "RUM Group Inc.",
+      "ticker": "CADL",
+      "name": "Candel Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8518,
-      "price": 8.52,
-      "change_pct": "+12.86%",
+      "tweet_volume": 1070,
+      "price": 11.32,
+      "change_pct": "-4.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OMER",
-      "name": "Omeros Corporation",
+      "ticker": "UMAC",
+      "name": "Unusual Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13664,
-      "price": 17.03,
-      "change_pct": "+24.22%",
+      "tweet_volume": 12852,
+      "price": 30.61,
+      "change_pct": "+12.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
+      "ticker": "ALOY",
+      "name": "REalloys Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 84349,
-      "price": 41.27,
-      "change_pct": "+9.72%",
+      "tweet_volume": 4936,
+      "price": 14.89,
+      "change_pct": "+14.98%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 70132,
-      "price": 48.28,
-      "change_pct": "+10.55%",
+      "tweet_volume": 1717,
+      "price": 191.46,
+      "change_pct": "+1.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 17710,
-      "price": 231.48,
-      "change_pct": "-11.67%",
+      "tweet_volume": 156333,
+      "price": 15.5,
+      "change_pct": "+11.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRMD",
-      "name": "CorMedix Inc.",
+      "ticker": "QMCO",
+      "name": "Quantum Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4704,
-      "price": 8.53,
-      "change_pct": "+20.14%",
+      "tweet_volume": 3691,
+      "price": 27.32,
+      "change_pct": "+10.70%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "SNDQ",
+      "name": "Tradr 2X Short SNDK Daily ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11783,
-      "price": 346.89,
-      "change_pct": "-2.46%",
+      "tweet_volume": 59539,
+      "price": 14.85,
+      "change_pct": "-14.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ABEO",
-      "name": "Abeona Therapeutics Inc.",
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3345,
-      "price": 6.53,
-      "change_pct": "-12.53%",
+      "tweet_volume": 4006,
+      "price": 197.23,
+      "change_pct": "-4.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-14T14:14:55.838939+00:00",
+  "updated_at": "2026-08-15T13:28:38.495262+00:00",
   "top_trending": {
-    "ticker": "QXO",
-    "name": "QXO, Inc.",
+    "ticker": "DXYZ",
+    "name": "Destiny Tech100 Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 9188,
-    "price": 14.92,
-    "change_pct": "+0.20%",
+    "tweet_volume": 4943,
+    "price": 32.0,
+    "change_pct": "+0.25%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "VCX",
-      "name": "VCX",
+      "ticker": "ADMA",
+      "name": "ADMA Biologics Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5512,
-      "price": 34.28,
-      "change_pct": "-10.96%",
+      "tweet_volume": 2999,
+      "price": 9.47,
+      "change_pct": "+0.64%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BRUN",
-      "name": "Boost Run Inc.",
+      "ticker": "RBRK",
+      "name": "Rubrik, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6362,
-      "price": 22.94,
-      "change_pct": "+1.73%",
+      "tweet_volume": 6436,
+      "price": 102.23,
+      "change_pct": "-2.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CADL",
-      "name": "Candel Therapeutics, Inc.",
+      "ticker": "MUZ",
+      "name": "Defiance Daily Target 2X Short ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1070,
-      "price": 11.32,
-      "change_pct": "-4.04%",
+      "tweet_volume": 17770,
+      "price": 9.3,
+      "change_pct": "-5.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UMAC",
-      "name": "Unusual Machines, Inc.",
+      "ticker": "VNDA",
+      "name": "Vanda Pharmaceuticals Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12852,
-      "price": 30.61,
-      "change_pct": "+12.39%",
+      "tweet_volume": 2369,
+      "price": 5.22,
+      "change_pct": "+3.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ALOY",
-      "name": "REalloys Inc.",
+      "ticker": "MRAM",
+      "name": "Everspin Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4936,
-      "price": 14.89,
-      "change_pct": "+14.98%",
+      "tweet_volume": 3841,
+      "price": 18.88,
+      "change_pct": "+12.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
+      "ticker": "XLV",
+      "name": "State Street Health Care Select",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1717,
-      "price": 191.46,
-      "change_pct": "+1.07%",
+      "tweet_volume": 12511,
+      "price": 167.37,
+      "change_pct": "-0.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
+      "ticker": "WU",
+      "name": "Western Union Company (The)",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 156333,
-      "price": 15.5,
-      "change_pct": "+11.27%",
+      "tweet_volume": 17140,
+      "price": 7.45,
+      "change_pct": "-0.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QMCO",
-      "name": "Quantum Corporation",
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3691,
-      "price": 27.32,
-      "change_pct": "+10.70%",
+      "tweet_volume": 7460,
+      "price": 119.55,
+      "change_pct": "-0.01%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNDQ",
-      "name": "Tradr 2X Short SNDK Daily ETF",
+      "ticker": "IGV",
+      "name": "iShares Expanded Tech-Software ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 59539,
-      "price": 14.85,
-      "change_pct": "-14.77%",
+      "tweet_volume": 22493,
+      "price": 104.08,
+      "change_pct": "-2.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
+      "ticker": "NN",
+      "name": "NextNav Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4006,
-      "price": 197.23,
-      "change_pct": "-4.47%",
+      "tweet_volume": 5367,
+      "price": 19.89,
+      "change_pct": "+1.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

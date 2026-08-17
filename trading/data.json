@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-16T13:29:54.581747+00:00",
+  "updated_at": "2026-08-17T13:44:08.862123+00:00",
   "top_trending": {
-    "ticker": "XYZ",
-    "name": "Block, Inc.",
+    "ticker": "EYPT",
+    "name": "EyePoint, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 8791,
-    "price": 82.88,
-    "change_pct": "-0.25%",
+    "tweet_volume": 24315,
+    "price": 4.57,
+    "change_pct": "-69.02%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,45 @@
   },
   "trending_list": [
     {
-      "ticker": "FLO",
-      "name": "Flowers Foods, Inc.",
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7116,
-      "price": 7.52,
-      "change_pct": "-0.13%",
+      "tweet_volume": 66548,
+      "price": 5.2,
+      "change_pct": "-4.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WRD",
-      "name": "WERIDE INC.",
+      "ticker": "OCUL",
+      "name": "Ocular Therapeutix, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6914,
-      "price": 5.85,
-      "change_pct": "-1.68%",
+      "tweet_volume": 4264,
+      "price": 10.97,
+      "change_pct": "+9.26%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "DJT",
+      "name": "Trump Media & Technology Group ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1212,
+      "price": 8.11,
+      "change_pct": "-1.94%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -53,114 +68,99 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15387,
-      "price": 15.09,
-      "change_pct": "+8.95%",
+      "tweet_volume": 8482,
+      "price": 16.22,
+      "change_pct": "+7.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIMX",
-      "name": "Himax Technologies, Inc.",
+      "ticker": "DUOT",
+      "name": "Duos Technologies Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2041,
-      "price": 15.23,
-      "change_pct": "+3.89%",
+      "tweet_volume": 1461,
+      "price": 10.49,
+      "change_pct": "+15.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRAM",
-      "name": "Everspin Technologies, Inc.",
+      "ticker": "LUNR",
+      "name": "Intuitive Machines, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3841,
-      "price": 18.88,
-      "change_pct": "+12.18%",
+      "tweet_volume": 9030,
+      "price": 20.1,
+      "change_pct": "+5.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SYM",
-      "name": "Symbotic Inc.",
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2303,
-      "price": 42.7,
-      "change_pct": "+2.15%",
+      "tweet_volume": 3948,
+      "price": 81.74,
+      "change_pct": "-0.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KWEB",
-      "name": "KraneShares CSI China Internet ",
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39647,
-      "price": 27.01,
-      "change_pct": "+0.60%",
+      "tweet_volume": 7042,
+      "price": 95.63,
+      "change_pct": "+2.78%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AGEN",
-      "name": "Agenus Inc.",
+      "ticker": "NLST",
+      "name": "Netlist, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3101,
-      "price": 7.32,
-      "change_pct": "+4.57%",
+      "tweet_volume": 8,
+      "price": 6.13,
+      "change_pct": "+4.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GTBIF",
-      "name": "Green Thumb Industries Inc.",
+      "ticker": "S",
+      "name": "SentinelOne, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 139,
-      "price": 7.3,
-      "change_pct": "-0.14%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6448,
-      "price": 328.92,
-      "change_pct": "-2.51%",
+      "tweet_volume": 1690,
+      "price": 22.2,
+      "change_pct": "-3.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

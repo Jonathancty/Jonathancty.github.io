@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-17T13:44:08.862123+00:00",
+  "updated_at": "2026-08-18T13:41:17.559360+00:00",
   "top_trending": {
-    "ticker": "EYPT",
-    "name": "EyePoint, Inc.",
+    "ticker": "KLAR",
+    "name": "Klarna Group plc",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 24315,
-    "price": 4.57,
-    "change_pct": "-69.02%",
+    "tweet_volume": 17825,
+    "price": 15.88,
+    "change_pct": "-18.73%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,60 +17,60 @@
   },
   "trending_list": [
     {
-      "ticker": "SNAP",
-      "name": "Snap Inc.",
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 66548,
-      "price": 5.2,
-      "change_pct": "-4.21%",
+      "tweet_volume": 7990,
+      "price": 39.34,
+      "change_pct": "+0.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "OCUL",
-      "name": "Ocular Therapeutix, Inc.",
+      "ticker": "BIDU",
+      "name": "Baidu, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4264,
-      "price": 10.97,
-      "change_pct": "+9.26%",
+      "tweet_volume": 6231,
+      "price": 97.31,
+      "change_pct": "-6.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media & Technology Group ",
+      "ticker": "AMLX",
+      "name": "Amylyx Pharmaceuticals, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1212,
-      "price": 8.11,
-      "change_pct": "-1.94%",
+      "tweet_volume": 16619,
+      "price": 28.5,
+      "change_pct": "+32.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ALM",
-      "name": "Almonty Industries Inc.",
+      "ticker": "HD",
+      "name": "Home Depot, Inc. (The)",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8482,
-      "price": 16.22,
-      "change_pct": "+7.47%",
+      "tweet_volume": 3120,
+      "price": 333.86,
+      "change_pct": "-1.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -83,84 +83,84 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1461,
-      "price": 10.49,
-      "change_pct": "+15.15%",
+      "tweet_volume": 3508,
+      "price": 12.48,
+      "change_pct": "+21.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines, Inc.",
+      "ticker": "GRRR",
+      "name": "Gorilla Technology Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9030,
-      "price": 20.1,
-      "change_pct": "+5.73%",
+      "tweet_volume": 543,
+      "price": 15.79,
+      "change_pct": "+5.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TLT",
-      "name": "iShares 20+ Year Treasury Bond ",
+      "ticker": "FN",
+      "name": "Fabrinet",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3948,
-      "price": 81.74,
-      "change_pct": "-0.37%",
+      "tweet_volume": 1008,
+      "price": 511.75,
+      "change_pct": "-14.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "PONY",
+      "name": "Pony AI Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7042,
-      "price": 95.63,
-      "change_pct": "+2.78%",
+      "tweet_volume": 3969,
+      "price": 7.5,
+      "change_pct": "-6.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NLST",
-      "name": "Netlist, Inc.",
+      "ticker": "BTGO",
+      "name": "BitGo Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8,
-      "price": 6.13,
-      "change_pct": "+4.25%",
+      "tweet_volume": 154,
+      "price": 5.57,
+      "change_pct": "+0.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "S",
-      "name": "SentinelOne, Inc.",
+      "ticker": "RUM",
+      "name": "RUM Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1690,
-      "price": 22.2,
-      "change_pct": "-3.92%",
+      "tweet_volume": 843,
+      "price": 8.23,
+      "change_pct": "-0.12%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

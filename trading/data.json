@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-18T13:41:17.559360+00:00",
+  "updated_at": "2026-08-19T13:42:40.479788+00:00",
   "top_trending": {
-    "ticker": "KLAR",
-    "name": "Klarna Group plc",
+    "ticker": "MRNA",
+    "name": "Moderna, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 17825,
-    "price": 15.88,
-    "change_pct": "-18.73%",
+    "tweet_volume": 86371,
+    "price": 127.91,
+    "change_pct": "+103.16%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "NKE",
-      "name": "Nike, Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7990,
-      "price": 39.34,
-      "change_pct": "+0.65%",
+      "tweet_volume": 1781,
+      "price": 13.22,
+      "change_pct": "+0.92%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BIDU",
-      "name": "Baidu, Inc.",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6231,
-      "price": 97.31,
-      "change_pct": "-6.54%",
+      "tweet_volume": 9037,
+      "price": 769.43,
+      "change_pct": "+0.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AMLX",
-      "name": "Amylyx Pharmaceuticals, Inc.",
+      "ticker": "TEM",
+      "name": "Tempus AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16619,
-      "price": 28.5,
-      "change_pct": "+32.99%",
+      "tweet_volume": 9601,
+      "price": 55.1,
+      "change_pct": "+11.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HD",
-      "name": "Home Depot, Inc. (The)",
+      "ticker": "XBI",
+      "name": "State Street SPDR S&P Biotech E",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3120,
-      "price": 333.86,
-      "change_pct": "-1.26%",
+      "tweet_volume": 6053,
+      "price": 166.64,
+      "change_pct": "+4.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DUOT",
-      "name": "Duos Technologies Group, Inc.",
+      "ticker": "WYFI",
+      "name": "WhiteFiber, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3508,
-      "price": 12.48,
-      "change_pct": "+21.40%",
+      "tweet_volume": 5853,
+      "price": 20.35,
+      "change_pct": "-24.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GRRR",
-      "name": "Gorilla Technology Group Inc.",
+      "ticker": "TGT",
+      "name": "Target Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 543,
-      "price": 15.79,
-      "change_pct": "+5.62%",
+      "tweet_volume": 5221,
+      "price": 159.73,
+      "change_pct": "+4.65%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FN",
-      "name": "Fabrinet",
+      "ticker": "TOYO",
+      "name": "TOYO Co., Ltd",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1008,
-      "price": 511.75,
-      "change_pct": "-14.58%",
+      "tweet_volume": 2928,
+      "price": 4.5,
+      "change_pct": "-21.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PONY",
-      "name": "Pony AI Inc.",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3969,
-      "price": 7.5,
-      "change_pct": "-6.07%",
+      "tweet_volume": 11234,
+      "price": 717.56,
+      "change_pct": "+0.01%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BTGO",
-      "name": "BitGo Holdings, Inc.",
+      "ticker": "ZIM",
+      "name": "ZIM Integrated Shipping Service",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 154,
-      "price": 5.57,
-      "change_pct": "+0.27%",
+      "tweet_volume": 2592,
+      "price": 27.29,
+      "change_pct": "-4.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RUM",
-      "name": "RUM Group Inc.",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 843,
-      "price": 8.23,
-      "change_pct": "-0.12%",
+      "tweet_volume": 12260,
+      "price": 7.73,
+      "change_pct": "+9.96%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

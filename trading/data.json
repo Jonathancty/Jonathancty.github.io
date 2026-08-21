@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-20T13:44:14.930794+00:00",
+  "updated_at": "2026-08-21T13:43:21.679130+00:00",
   "top_trending": {
-    "ticker": "BULL",
-    "name": "Webull Corporation",
+    "ticker": "MSTR",
+    "name": "Strategy Inc",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 29565,
-    "price": 9.66,
-    "change_pct": "+11.81%",
+    "tweet_volume": 28377,
+    "price": 119.44,
+    "change_pct": "+6.27%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,75 +17,60 @@
   },
   "trending_list": [
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "MARA",
+      "name": "MARA Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28831,
-      "price": 111.82,
-      "change_pct": "+7.26%",
+      "tweet_volume": 38080,
+      "price": 12.29,
+      "change_pct": "+10.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TLT",
-      "name": "iShares 20+ Year Treasury Bond ",
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10148,
-      "price": 82.37,
-      "change_pct": "-0.78%",
+      "tweet_volume": 78865,
+      "price": 43.78,
+      "change_pct": "+6.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "APP",
+      "name": "Applovin Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 50069,
-      "price": 145.6,
-      "change_pct": "-16.50%",
+      "tweet_volume": 2147,
+      "price": 303.25,
+      "change_pct": "-1.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
+      "ticker": "ROST",
+      "name": "Ross Stores, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7910,
-      "price": 767.48,
-      "change_pct": "-0.20%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust, Series 1",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 10128,
-      "price": 714.23,
-      "change_pct": "-0.26%",
+      "tweet_volume": 3430,
+      "price": 238.25,
+      "change_pct": "+4.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -98,69 +83,84 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8925,
-      "price": 171.71,
-      "change_pct": "+7.18%",
+      "tweet_volume": 10287,
+      "price": 187.55,
+      "change_pct": "+8.82%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PURR",
-      "name": "Hyperliquid Strategies Inc",
+      "ticker": "ASST",
+      "name": "Strive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 25143,
-      "price": 9.61,
-      "change_pct": "+2.34%",
+      "tweet_volume": 5553,
+      "price": 18.04,
+      "change_pct": "+11.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RARE",
-      "name": "Ultragenyx Pharmaceutical Inc.",
+      "ticker": "FLO",
+      "name": "Flowers Foods, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2279,
-      "price": 26.25,
-      "change_pct": "+0.04%",
+      "tweet_volume": 6153,
+      "price": 7.25,
+      "change_pct": "+1.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NUVB",
-      "name": "Nuvation Bio Inc.",
+      "ticker": "RUM",
+      "name": "RUM Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1471,
-      "price": 7.08,
-      "change_pct": "-2.41%",
+      "tweet_volume": 359,
+      "price": 8.6,
+      "change_pct": "+2.02%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GRRR",
-      "name": "Gorilla Technology Group Inc.",
+      "ticker": "GDXU",
+      "name": "MicroSectors Gold Miners 3X Lev",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 95,
-      "price": 14.73,
-      "change_pct": "+0.94%",
+      "tweet_volume": 2042,
+      "price": 184.46,
+      "change_pct": "+8.18%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "name": "Bitwise XRP ETF",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1883,
+      "price": 15.74,
+      "change_pct": "+14.14%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-23T13:31:08.085973+00:00",
+  "updated_at": "2026-08-24T13:51:03.316016+00:00",
   "top_trending": {
-    "ticker": "DAL",
-    "name": "Delta Air Lines, Inc.",
+    "ticker": "RUM",
+    "name": "RUM Group Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 12687,
-    "price": 82.41,
-    "change_pct": "+1.67%",
+    "tweet_volume": 4975,
+    "price": 9.28,
+    "change_pct": "+2.54%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "VTI",
-      "name": "Vanguard Morningstar Total Stoc",
+      "ticker": "XPEV",
+      "name": "XPeng Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7024,
-      "price": 378.24,
-      "change_pct": "+0.44%",
+      "tweet_volume": 14747,
+      "price": 11.45,
+      "change_pct": "-6.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SBET",
-      "name": "SharpLink, Inc.",
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 34234,
-      "price": 7.91,
-      "change_pct": "+4.22%",
+      "tweet_volume": 23831,
+      "price": 121.3,
+      "change_pct": "+1.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PURR",
-      "name": "Hyperliquid Strategies Inc",
+      "ticker": "RGNX",
+      "name": "REGENXBIO Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 87925,
-      "price": 10.58,
-      "change_pct": "+4.96%",
+      "tweet_volume": 2314,
+      "price": 8.1,
+      "change_pct": "-24.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DJIA",
-      "name": "Global X Dow 30 Covered Call ET",
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 115,
-      "price": 22.91,
-      "change_pct": "+0.39%",
+      "tweet_volume": 10475,
+      "price": 88.24,
+      "change_pct": "-0.16%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NN",
-      "name": "NextNav Inc.",
+      "ticker": "ASST",
+      "name": "Strive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4788,
-      "price": 17.55,
-      "change_pct": "+1.27%",
+      "tweet_volume": 6112,
+      "price": 19.38,
+      "change_pct": "+6.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SIMO",
-      "name": "Silicon Motion Technology Corpo",
+      "ticker": "MAAS",
+      "name": "Maase Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1898,
-      "price": 258.36,
-      "change_pct": "+3.49%",
+      "tweet_volume": 50,
+      "price": 16.23,
+      "change_pct": "+3.87%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TSLL",
-      "name": "Direxion Daily TSLA Bull 2X ETF",
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 336182,
-      "price": 9.77,
-      "change_pct": "+10.02%",
+      "tweet_volume": 30358,
+      "price": 23.82,
+      "change_pct": "+4.40%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XLF",
-      "name": "State Street Financial Select S",
+      "ticker": "GRRR",
+      "name": "Gorilla Technology Group Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 66908,
-      "price": 57.48,
-      "change_pct": "+0.93%",
+      "tweet_volume": 455,
+      "price": 15.7,
+      "change_pct": "-2.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13462,
-      "price": 54.27,
-      "change_pct": "+7.34%",
+      "tweet_volume": 7615,
+      "price": 17.02,
+      "change_pct": "+0.29%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SGML",
-      "name": "Sigma Lithium Corporation",
+      "ticker": "ETH",
+      "name": "Grayscale Ethereum Staking Mini",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4466,
-      "price": 11.97,
-      "change_pct": "+11.56%",
+      "tweet_volume": 2995,
+      "price": 23.78,
+      "change_pct": "+3.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

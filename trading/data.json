@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-24T13:51:03.316016+00:00",
+  "updated_at": "2026-08-25T13:49:02.680113+00:00",
   "top_trending": {
-    "ticker": "RUM",
-    "name": "RUM Group Inc.",
+    "ticker": "NKE",
+    "name": "Nike, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 4975,
-    "price": 9.28,
-    "change_pct": "+2.54%",
+    "tweet_volume": 20977,
+    "price": 39.37,
+    "change_pct": "-3.39%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,30 @@
   },
   "trending_list": [
     {
-      "ticker": "XPEV",
-      "name": "XPeng Inc.",
+      "ticker": "DKS",
+      "name": "Dick's Sporting Goods Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14747,
-      "price": 11.45,
-      "change_pct": "-6.07%",
+      "tweet_volume": 13985,
+      "price": 137.93,
+      "change_pct": "-23.09%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "DJT",
+      "name": "Trump Media & Technology Group ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 23831,
-      "price": 121.3,
-      "change_pct": "+1.72%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RGNX",
-      "name": "REGENXBIO Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 2314,
-      "price": 8.1,
-      "change_pct": "-24.44%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 10475,
-      "price": 88.24,
-      "change_pct": "-0.16%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ASST",
-      "name": "Strive, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6112,
-      "price": 19.38,
-      "change_pct": "+6.37%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "MAAS",
-      "name": "Maase Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 50,
-      "price": 16.23,
-      "change_pct": "+3.87%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "BMNR",
-      "name": "BitMine Immersion Technologies,",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 30358,
-      "price": 23.82,
-      "change_pct": "+4.40%",
+      "tweet_volume": 646,
+      "price": 9.25,
+      "change_pct": "-0.54%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -128,39 +53,114 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 455,
-      "price": 15.7,
-      "change_pct": "-2.24%",
+      "tweet_volume": 1349,
+      "price": 13.77,
+      "change_pct": "-13.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
+      "ticker": "GRML",
+      "name": "Greenland Mines Ltd",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7615,
-      "price": 17.02,
-      "change_pct": "+0.29%",
+      "tweet_volume": 2337,
+      "price": 8.81,
+      "change_pct": "+3.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ETH",
-      "name": "Grayscale Ethereum Staking Mini",
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2995,
-      "price": 23.78,
-      "change_pct": "+3.21%",
+      "tweet_volume": 1328,
+      "price": 119.2,
+      "change_pct": "-2.92%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor Corporati",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9632,
+      "price": 12.71,
+      "change_pct": "+3.97%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "MAAS",
+      "name": "Maase Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 12,
+      "price": 15.63,
+      "change_pct": "-1.08%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KURA",
+      "name": "Kura Oncology, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2686,
+      "price": 13.12,
+      "change_pct": "+5.81%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TOP",
+      "name": "TOP Financial Group Limited",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 42,
+      "price": 15.31,
+      "change_pct": "-5.73%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 1050,
+      "price": 364.39,
+      "change_pct": "-1.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

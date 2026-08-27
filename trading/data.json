@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-14T15:17:39.377706+00:00",
+  "updated_at": "2026-08-26T13:53:39.485186+00:00",
   "top_trending": {
-    "ticker": "POET",
-    "name": "POET Technologies Inc.",
+    "ticker": "INTU",
+    "name": "Intuit Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 174912,
-    "price": 19.14,
-    "change_pct": "+33.19%",
+    "tweet_volume": 10330,
+    "price": 344.49,
+    "change_pct": "-3.63%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
+      "ticker": "SMMT",
+      "name": "Summit Therapeutics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 246392,
-      "price": 10.6,
-      "change_pct": "+19.60%",
+      "tweet_volume": 10393,
+      "price": 14.86,
+      "change_pct": "+11.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QUCY",
-      "name": "Quantum Cyber N.V.",
+      "ticker": "CRML",
+      "name": "Critical Metals Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 405352,
-      "price": 3.21,
-      "change_pct": "+139.57%",
+      "tweet_volume": 12869,
+      "price": 8.41,
+      "change_pct": "+3.83%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRS-USD",
-      "name": "Cerebras Systems (Derivatives) USD",
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 Index Fund",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 341.56,
-      "change_pct": "+18.03%",
+      "tweet_volume": 4383,
+      "price": 299.36,
+      "change_pct": "+0.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "CBRS",
+      "ticker": "KSS",
+      "name": "Kohl's Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2500,
-      "price": 185.0,
-      "change_pct": "+0.00%",
+      "tweet_volume": 7644,
+      "price": 16.6,
+      "change_pct": "-6.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KLAR",
-      "name": "Klarna Group plc",
+      "ticker": "SMTC",
+      "name": "Semtech Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 39576,
-      "price": 15.68,
-      "change_pct": "+14.54%",
+      "tweet_volume": 8532,
+      "price": 145.17,
+      "change_pct": "+13.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
+      "ticker": "ZM",
+      "name": "Zoom Communications, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 192467,
-      "price": 14.78,
-      "change_pct": "+0.47%",
+      "tweet_volume": 3739,
+      "price": 94.82,
+      "change_pct": "-6.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MOBX",
-      "name": "Mobix Labs, Inc.",
+      "ticker": "DKS",
+      "name": "Dick's Sporting Goods Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 287060,
-      "price": 3.21,
-      "change_pct": "+84.77%",
+      "tweet_volume": 7185,
+      "price": 125.95,
+      "change_pct": "+1.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SNAL",
-      "name": "Snail, Inc.",
+      "ticker": "DIA",
+      "name": "State Street SPDR Dow Jones Ind",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 535273,
-      "price": 1.38,
-      "change_pct": "+173.85%",
+      "tweet_volume": 1130,
+      "price": 535.0,
+      "change_pct": "-0.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "F",
-      "name": "Ford Motor Company",
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 253511,
-      "price": 14.51,
-      "change_pct": "+6.92%",
+      "tweet_volume": 1042,
+      "price": 168.93,
+      "change_pct": "+0.30%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AIIO",
-      "name": "Robo.ai Inc.",
+      "ticker": "GT",
+      "name": "The Goodyear Tire & Rubber Comp",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 188846,
-      "price": 4.02,
-      "change_pct": "+54.05%",
+      "tweet_volume": 1372,
+      "price": 6.31,
+      "change_pct": "+1.74%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

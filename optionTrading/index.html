@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option P&amp;L Calculator</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+<style>
+  :root {
+    --bg-base: #06080d;
+    --bg-surface: rgba(20, 25, 35, 0.55);
+    --bg-surface-hover: rgba(30, 38, 52, 0.7);
+    --bg-input: rgba(15, 23, 42, 0.9);
+
+    --text-primary: #f5f5f5;
+    --text-secondary: #94a3b8;
+    --text-dim: #5b6b85;
+
+    --accent-primary: #2dd4bf;
+    --accent-secondary: #6366f1;
+
+    --bullish: #10b981;
+    --bearish: #ef4444;
+    --warn: #f59e0b;
+
+    --border-light: rgba(255, 255, 255, 0.07);
+    --glass-blur: blur(12px);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .ambient-glow {
+    position: fixed;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
+    top: -200px; right: -100px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .ambient-glow-2 {
+    position: fixed;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, rgba(45, 212, 191, 0.03) 40%, transparent 70%);
+    bottom: -150px; left: -150px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo-area h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+
+  .logo-area p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links a:hover { color: var(--accent-primary); }
+  .nav-links svg { width: 18px; height: 18px; }
+
+  .glass-card {
+    background: var(--bg-surface);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    padding: 1.5rem;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 1.75rem;
+    align-items: start;
+  }
+
+  @media (max-width: 980px) {
+    .layout { grid-template-columns: 1fr; }
+  }
+
+  .panel-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .panel-title svg { width: 18px; height: 18px; color: var(--accent-primary); }
+
+  .form-group { margin-bottom: 1.1rem; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+  label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+  }
+
+  .field-wrap { position: relative; }
+
+  .field-prefix, .field-suffix {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    pointer-events: none;
+  }
+  .field-prefix { left: 0.7rem; }
+  .field-suffix { right: 0.7rem; }
+
+  input[type="number"], input[type="date"], select {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid rgba(51, 65, 85, 0.7);
+    color: var(--text-primary);
+    border-radius: 0.55rem;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.9rem;
+    font-family: 'JetBrains Mono', monospace;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+
+  .field-wrap input[type="number"] { padding-left: 1.5rem; }
+  .field-wrap.suffix-pad input[type="number"] { padding-right: 1.8rem; }
+
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(45,212,191,0.2);
+  }
+
+  .toggle-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .toggle-btn {
+    padding: 0.55rem 0.5rem;
+    text-align: center;
+    border-radius: 0.55rem;
+    border: 1px solid rgba(51,65,85,0.7);
+    background: rgba(15,23,42,0.6);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+  }
+
+  .toggle-btn.active-call, .toggle-btn.active-long {
+    background: rgba(16,185,129,0.15);
+    border-color: rgba(16,185,129,0.4);
+    color: var(--bullish);
+  }
+
+  .toggle-btn.active-put, .toggle-btn.active-short {
+    background: rgba(239,68,68,0.15);
+    border-color: rgba(239,68,68,0.4);
+    color: var(--bearish);
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--border-light);
+    margin: 1.4rem 0;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+  }
+
+  /* Summary cards */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  @media (max-width: 780px) {
+    .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .stat-card {
+    padding: 1.1rem 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card.hero {
+    grid-column: span 2;
+  }
+  @media (max-width: 780px) { .stat-card.hero { grid-column: span 2; } }
+
+  .stat-label {
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-value {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .stat-card.hero .stat-value { font-size: 2.1rem; }
+
+  .stat-sub {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+  }
+
+  .up { color: var(--bullish); }
+  .down { color: var(--bearish); }
+  .neutral { color: var(--text-secondary); }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .badge-green  { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.25); }
+  .badge-red    { background: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.25); }
+  .badge-blue   { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+  .badge-amber  { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.25); }
+
+  /* Greeks row */
+  .greeks-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 780px) { .greeks-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .greek-cell {
+    padding: 0.9rem 1rem;
+    background: rgba(8,14,28,0.55);
+    border: 1px solid var(--border-light);
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  .greek-name {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.35rem;
+  }
+  .greek-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  /* chart */
+  .chart-wrap { position: relative; height: 340px; }
+
+  .slider-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  input[type="range"] {
+    flex: 1;
+    accent-color: var(--accent-primary);
+  }
+
+  .slider-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    min-width: 132px;
+    text-align: right;
+  }
+
+  .legend-row {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-swatch { width: 14px; height: 3px; border-radius: 2px; }
+
+  .footnote {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+  }
+  @media (max-width: 980px) { .grid-2col { grid-template-columns: 1fr; } }
+
+  .stack { display: flex; flex-direction: column; gap: 1.75rem; }
+</style>
+</head>
+<body>
+
+<div class="ambient-glow"></div>
+<div class="ambient-glow-2"></div>
+
+<div class="container">
+  <header>
+    <div class="logo-area">
+      <h1>Option P&amp;L Calculator</h1>
+      <p>Black-Scholes fair value, Greeks &amp; payoff modeling for a single option position</p>
+    </div>
+    <div class="nav-links">
+      <a href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- INPUT PANEL -->
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        Trade Setup
+      </h2>
+
+      <div class="section-label">Contract</div>
+
+      <div class="form-row" style="margin-bottom:1.1rem;">
+        <div class="toggle-group">
+          <div id="btn-call" class="toggle-btn active-call">Call</div>
+          <div id="btn-put" class="toggle-btn">Put</div>
+        </div>
+        <div class="toggle-group">
+          <div id="btn-long" class="toggle-btn active-long">Long</div>
+          <div id="btn-short" class="toggle-btn">Short</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="spot">Underlying Spot Price</label>
+        <div class="field-wrap"><span class="field-prefix">$</span>
+          <input type="number" id="spot" value="100" step="0.01" min="0.01">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="strike">Strike Price</label>
+        <div class="field-wrap"><span class="field-prefix">$</span>
+          <input type="number" id="strike" value="105" step="0.01" min="0.01">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="premium">Premium Paid / Received (per share)</label>
+        <div class="field-wrap"><span class="field-prefix">$</span>
+          <input type="number" id="premium" value="3.20" step="0.01" min="0">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contracts">Contracts</label>
+          <input type="number" id="contracts" value="1" step="1" min="1">
+        </div>
+        <div class="form-group">
+          <label for="multiplier">Multiplier</label>
+          <input type="number" id="multiplier" value="100" step="1" min="1">
+        </div>
+      </div>
+
+      <hr class="divider">
+      <div class="section-label">Market Assumptions</div>
+
+      <div class="form-group">
+        <label for="expiration">Expiration Date</label>
+        <input type="date" id="expiration">
+      </div>
+
+      <div class="form-group">
+        <label for="evalDate">Valuation Date (today)</label>
+        <input type="date" id="evalDate">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="volatility">Implied Volatility</label>
+          <div class="field-wrap suffix-pad"><input type="number" id="volatility" value="30" step="0.1" min="0.01"><span class="field-suffix">%</span></div>
+        </div>
+        <div class="form-group">
+          <label for="riskfree">Risk-Free Rate</label>
+          <div class="field-wrap suffix-pad"><input type="number" id="riskfree" value="4.5" step="0.1"><span class="field-suffix">%</span></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="dividend">Dividend Yield</label>
+        <div class="field-wrap suffix-pad"><input type="number" id="dividend" value="0" step="0.1" min="0"><span class="field-suffix">%</span></div>
+      </div>
+
+      <p class="footnote">Fair value and Greeks are computed with the Black-Scholes-Merton model. This tool is for educational estimation only — real option prices are also driven by skew, liquidity and early-exercise premium (American options).</p>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="stack">
+
+      <!-- Summary -->
+      <div class="glass-card">
+        <h2 class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+          Position Summary <span id="posBadge" class="badge badge-green" style="margin-left:0.5rem;">LONG CALL</span>
+        </h2>
+
+        <div class="summary-grid">
+          <div class="glass-card stat-card hero">
+            <div class="stat-label">Unrealized P&amp;L (as of valuation date)</div>
+            <div class="stat-value" id="stat-pnl">$0.00</div>
+            <div class="stat-sub" id="stat-pnl-pct">0.00% return on premium</div>
+          </div>
+          <div class="glass-card stat-card">
+            <div class="stat-label">Theoretical Value</div>
+            <div class="stat-value mono" id="stat-fairvalue" style="font-size:1.4rem;">$0.00</div>
+            <div class="stat-sub" id="stat-perContract">per contract</div>
+          </div>
+          <div class="glass-card stat-card">
+            <div class="stat-label">Days to Expiration</div>
+            <div class="stat-value mono" id="stat-dte" style="font-size:1.4rem;">0</div>
+            <div class="stat-sub">calendar days</div>
+          </div>
+          <div class="glass-card stat-card">
+            <div class="stat-label">Breakeven Price</div>
+            <div class="stat-value mono" id="stat-breakeven" style="font-size:1.4rem;">$0.00</div>
+            <div class="stat-sub" id="stat-breakeven-move">at expiration</div>
+          </div>
+          <div class="glass-card stat-card">
+            <div class="stat-label">Max Profit</div>
+            <div class="stat-value mono up" id="stat-maxprofit" style="font-size:1.4rem;">$0.00</div>
+            <div class="stat-sub">at expiration</div>
+          </div>
+          <div class="glass-card stat-card">
+            <div class="stat-label">Max Loss</div>
+            <div class="stat-value mono down" id="stat-maxloss" style="font-size:1.4rem;">$0.00</div>
+            <div class="stat-sub">at expiration</div>
+          </div>
+        </div>
+
+        <div class="section-label">Greeks (position-adjusted)</div>
+        <div class="greeks-grid">
+          <div class="greek-cell"><div class="greek-name">Delta</div><div class="greek-value" id="g-delta">0.00</div></div>
+          <div class="greek-cell"><div class="greek-name">Gamma</div><div class="greek-value" id="g-gamma">0.00</div></div>
+          <div class="greek-cell"><div class="greek-name">Theta / day</div><div class="greek-value" id="g-theta">0.00</div></div>
+          <div class="greek-cell"><div class="greek-name">Vega / 1% IV</div><div class="greek-value" id="g-vega">0.00</div></div>
+          <div class="greek-cell"><div class="greek-name">Rho / 1% rate</div><div class="greek-value" id="g-rho">0.00</div></div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="glass-card">
+        <h2 class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+          P&amp;L vs. Underlying Price
+        </h2>
+        <div class="chart-wrap"><canvas id="pnlChart"></canvas></div>
+        <div class="legend-row">
+          <div class="legend-item"><span class="legend-swatch" style="background:#2dd4bf;"></span> P&amp;L today (valuation date)</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#6366f1;"></span> P&amp;L at expiration</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#e2e8f0;"></span> Spot</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#f59e0b;"></span> Strike</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#64748b;"></span> Breakeven</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#2dd4bf; border-radius:50%; width:8px; height:8px;"></span> Simulated spot</div>
+        </div>
+
+        <div class="slider-row">
+          <label style="margin:0; white-space:nowrap;">Simulate spot &rarr;</label>
+          <input type="range" id="spotSlider" min="0" max="200" value="100" step="0.5">
+          <span class="slider-value" id="spotSliderValue">$100.00</span>
+        </div>
+        <p class="footnote" id="simFootnote">Drag to preview P&amp;L at a hypothetical underlying price, holding today's valuation date fixed.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ---------- Black-Scholes core ----------
+  function erf(x) {
+    // Abramowitz-Stegun approximation
+    const sign = x < 0 ? -1 : 1;
+    x = Math.abs(x);
+    const a1=0.254829592, a2=-0.284496736, a3=1.421413741, a4=-1.453152027, a5=1.061405429, p=0.3275911;
+    const t = 1 / (1 + p * x);
+    const y = 1 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1) * t * Math.exp(-x*x);
+    return sign * y;
+  }
+  function normCDF(x) { return 0.5 * (1 + erf(x / Math.SQRT2)); }
+  function normPDF(x) { return Math.exp(-0.5 * x * x) / Math.sqrt(2 * Math.PI); }
+
+  function blackScholes(S, K, T, r, q, sigma, type) {
+    // T in years. Returns { price, delta, gamma, theta, vega, rho }
+    if (T <= 0 || sigma <= 0) {
+      const intrinsic = type === 'call' ? Math.max(S - K, 0) : Math.max(K - S, 0);
+      const delta = type === 'call' ? (S > K ? 1 : 0) : (S < K ? -1 : 0);
+      return { price: intrinsic, delta, gamma: 0, theta: 0, vega: 0, rho: 0 };
+    }
+    const sqrtT = Math.sqrt(T);
+    const d1 = (Math.log(S / K) + (r - q + 0.5 * sigma * sigma) * T) / (sigma * sqrtT);
+    const d2 = d1 - sigma * sqrtT;
+    const eqT = Math.exp(-q * T);
+    const erT = Math.exp(-r * T);
+    const pdf1 = normPDF(d1);
+
+    let price, delta, theta, rho;
+    if (type === 'call') {
+      price = S * eqT * normCDF(d1) - K * erT * normCDF(d2);
+      delta = eqT * normCDF(d1);
+      theta = (-(S * eqT * pdf1 * sigma) / (2 * sqrtT) - r * K * erT * normCDF(d2) + q * S * eqT * normCDF(d1));
+      rho = K * T * erT * normCDF(d2);
+    } else {
+      price = K * erT * normCDF(-d2) - S * eqT * normCDF(-d1);
+      delta = eqT * (normCDF(d1) - 1);
+      theta = (-(S * eqT * pdf1 * sigma) / (2 * sqrtT) + r * K * erT * normCDF(-d2) - q * S * eqT * normCDF(-d1));
+      rho = -K * T * erT * normCDF(-d2);
+    }
+    const gamma = (eqT * pdf1) / (S * sigma * sqrtT);
+    const vega = S * eqT * pdf1 * sqrtT;
+
+    return {
+      price,
+      delta,
+      gamma,
+      theta: theta / 365,       // per calendar day
+      vega: vega / 100,         // per 1 vol point (1%)
+      rho: rho / 100            // per 1 rate point (1%)
+    };
+  }
+
+  // ---------- Chart vertical reference-line plugin ----------
+  const vertLinesPlugin = {
+    id: 'vertLines',
+    afterDatasetsDraw(chart, args, opts) {
+      const lines = (opts && opts.lines) || [];
+      if (!lines.length) return;
+      const { ctx, chartArea, scales } = chart;
+      const xScale = scales.x;
+      ctx.save();
+      lines.forEach(line => {
+        if (line.value == null || !isFinite(line.value)) return;
+        if (line.value < xScale.min || line.value > xScale.max) return;
+        const x = xScale.getPixelForValue(line.value);
+        ctx.beginPath();
+        ctx.strokeStyle = line.color;
+        ctx.lineWidth = line.width || 1.25;
+        ctx.setLineDash(line.dash || []);
+        ctx.moveTo(x, chartArea.top);
+        ctx.lineTo(x, chartArea.bottom);
+        ctx.stroke();
+        if (line.label) {
+          ctx.setLineDash([]);
+          ctx.fillStyle = line.color;
+          ctx.font = '600 10px Inter, sans-serif';
+          const rightAligned = line.align === 'right';
+          ctx.textAlign = rightAligned ? 'right' : 'left';
+          ctx.fillText(line.label, x + (rightAligned ? -5 : 5), chartArea.top + 12 + (line.labelOffset || 0));
+        }
+      });
+      ctx.restore();
+    }
+  };
+  if (window.Chart) Chart.register(vertLinesPlugin);
+
+  // ---------- DOM ----------
+  const el = id => document.getElementById(id);
+  const fmtUSD = v => (v < 0 ? '-$' : '$') + Math.abs(v).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
+  const fmtNum = (v, d=4) => v.toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d});
+
+  let optionType = 'call';   // call | put
+  let position = 'long';     // long | short
+
+  const btnCall = el('btn-call'), btnPut = el('btn-put'), btnLong = el('btn-long'), btnShort = el('btn-short');
+
+  function setOptionType(t) {
+    optionType = t;
+    btnCall.classList.toggle('active-call', t === 'call');
+    btnPut.classList.toggle('active-put', t === 'put');
+    recalc();
+  }
+  function setPosition(p) {
+    position = p;
+    btnLong.classList.toggle('active-long', p === 'long');
+    btnShort.classList.toggle('active-short', p === 'short');
+    recalc();
+  }
+  btnCall.addEventListener('click', () => setOptionType('call'));
+  btnPut.addEventListener('click', () => setOptionType('put'));
+  btnLong.addEventListener('click', () => setPosition('long'));
+  btnShort.addEventListener('click', () => setPosition('short'));
+
+  // default dates: eval = today, expiration = +45 days
+  const today = new Date();
+  const exp = new Date(today.getTime() + 45 * 24 * 3600 * 1000);
+  const toISO = d => d.toISOString().slice(0, 10);
+  el('evalDate').value = toISO(today);
+  el('expiration').value = toISO(exp);
+
+  const inputs = ['spot','strike','premium','contracts','multiplier','expiration','evalDate','volatility','riskfree','dividend'];
+  inputs.forEach(id => el(id).addEventListener('input', () => { syncedFromSlider = false; recalc(); }));
+
+  const spotSlider = el('spotSlider');
+  let syncedFromSlider = false;
+  spotSlider.addEventListener('input', () => { syncedFromSlider = true; recalc(); });
+
+  function yearsBetween(d1, d2) {
+    return Math.max(0, (d2 - d1) / (365 * 24 * 3600 * 1000));
+  }
+
+  // A ~3 standard-deviation expected move (from vol & time to expiry), with
+  // floors so a near-expiry or low-vol contract still shows a readable window.
+  function priceWindow(S, K, T, sigma) {
+    const Tsafe = Math.max(T, 1 / 365);
+    const sigmaSafe = Math.max(sigma, 0.05);
+    const move = Math.max(
+      S * sigmaSafe * Math.sqrt(Tsafe) * 3.5,
+      Math.abs(K - S) * 1.6,
+      S * 0.12
+    );
+    const lo = Math.max(0, Math.min(S, K) - move);
+    const hi = Math.max(S, K) + move;
+    return { lo, hi };
+  }
+
+  let chart;
+
+  function recalc() {
+    const S = parseFloat(el('spot').value) || 0;
+    const K = parseFloat(el('strike').value) || 0;
+    const premium = parseFloat(el('premium').value) || 0;
+    const contracts = Math.max(1, parseInt(el('contracts').value) || 1);
+    const multiplier = Math.max(1, parseFloat(el('multiplier').value) || 100);
+    const sigma = Math.max(0.0001, (parseFloat(el('volatility').value) || 0) / 100);
+    const r = (parseFloat(el('riskfree').value) || 0) / 100;
+    const q = (parseFloat(el('dividend').value) || 0) / 100;
+
+    const expDate = new Date(el('expiration').value);
+    const evalDate = new Date(el('evalDate').value);
+    const T = yearsBetween(evalDate, expDate);
+    const dte = Math.round(T * 365);
+
+    // Window the chart/slider around the range of prices actually plausible for
+    // this contract (expected move from vol & time), so the interesting part of
+    // the curve isn't squashed by a handful of extreme, low-probability prices.
+    const { lo: winLo, hi: winHi } = priceWindow(S, K, T, sigma);
+    spotSlider.min = winLo.toFixed(2);
+    spotSlider.max = winHi.toFixed(2);
+    spotSlider.step = ((winHi - winLo) / 400).toFixed(4);
+    if (!syncedFromSlider) spotSlider.value = S;
+    const simSpot = Math.min(winHi, Math.max(winLo, parseFloat(spotSlider.value) || S));
+    el('spotSliderValue').textContent = fmtUSD(simSpot);
+
+    const sign = position === 'long' ? 1 : -1;
+    const totalMultiplier = multiplier * contracts;
+
+    // Current theoretical value at spot S, today
+    const bsToday = blackScholes(S, K, T, r, q, sigma, optionType);
+    // Value at simulated spot, today (for chart "today" line)
+    const bsSimToday = blackScholes(simSpot, K, T, r, q, sigma, optionType);
+
+    // P&L at current spot & valuation date
+    const pnlNow = sign * (bsToday.price - premium) * totalMultiplier;
+    const pnlPct = premium > 0 ? (sign * (bsToday.price - premium) / premium) * 100 : 0;
+
+    el('stat-pnl').textContent = fmtUSD(pnlNow);
+    el('stat-pnl').className = 'stat-value ' + (pnlNow > 0 ? 'up' : pnlNow < 0 ? 'down' : 'neutral');
+    el('stat-pnl-pct').textContent = (pnlPct >= 0 ? '+' : '') + pnlPct.toFixed(2) + '% return on premium at risk';
+
+    el('stat-fairvalue').textContent = fmtUSD(bsToday.price);
+    el('stat-perContract').textContent = fmtUSD(bsToday.price * multiplier) + ' per contract × ' + contracts;
+    el('stat-dte').textContent = dte;
+
+    // Breakeven
+    const breakeven = optionType === 'call' ? K + premium : K - premium;
+    el('stat-breakeven').textContent = fmtUSD(Math.max(breakeven, 0));
+    const moveNeeded = S > 0 ? ((breakeven - S) / S) * 100 : 0;
+    el('stat-breakeven-move').textContent = (moveNeeded >= 0 ? '+' : '') + moveNeeded.toFixed(1) + '% move from spot';
+
+    // Max profit / loss (at expiration), per full position
+    let maxProfit, maxLoss;
+    const premiumTotal = premium * totalMultiplier;
+    if (optionType === 'call') {
+      if (position === 'long') { maxProfit = Infinity; maxLoss = premiumTotal; }
+      else { maxProfit = premiumTotal; maxLoss = Infinity; }
+    } else {
+      const intrinsicCap = K * totalMultiplier;
+      if (position === 'long') { maxProfit = intrinsicCap - premiumTotal; maxLoss = premiumTotal; }
+      else { maxProfit = premiumTotal; maxLoss = intrinsicCap - premiumTotal; }
+    }
+    el('stat-maxprofit').textContent = maxProfit === Infinity ? 'Unlimited' : fmtUSD(maxProfit);
+    el('stat-maxloss').textContent = maxLoss === Infinity ? 'Unlimited' : fmtUSD(maxLoss);
+
+    // Badge
+    const badge = el('posBadge');
+    badge.textContent = (position === 'long' ? 'LONG ' : 'SHORT ') + optionType.toUpperCase();
+    badge.className = 'badge ' + (position === 'long' ? 'badge-green' : 'badge-red');
+
+    // Greeks scaled to position (sign + multiplier*contracts)
+    el('g-delta').textContent = fmtNum(sign * bsToday.delta * totalMultiplier, 2);
+    el('g-gamma').textContent = fmtNum(sign * bsToday.gamma * totalMultiplier, 4);
+    el('g-theta').textContent = fmtUSD(sign * bsToday.theta * totalMultiplier);
+    el('g-vega').textContent = fmtUSD(sign * bsToday.vega * totalMultiplier);
+    el('g-rho').textContent = fmtUSD(sign * bsToday.rho * totalMultiplier);
+
+    // Sim footnote P&L
+    const pnlSim = sign * (bsSimToday.price - premium) * totalMultiplier;
+    el('simFootnote').innerHTML = `At <strong>${fmtUSD(simSpot)}</strong> on the valuation date, theoretical P&amp;L would be <strong class="${pnlSim>=0?'up':'down'}">${fmtUSD(pnlSim)}</strong> (fair value ${fmtUSD(bsSimToday.price)}).`;
+
+    updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot);
+  }
+
+  function updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot) {
+    const { lo, hi } = priceWindow(S, K, T, sigma);
+    const steps = 80;
+    const pnlToday = [];
+    const pnlExpiry = [];
+
+    for (let i = 0; i <= steps; i++) {
+      const px = lo + (hi - lo) * (i / steps);
+
+      const bsT = blackScholes(px, K, T, r, q, sigma, optionType);
+      pnlToday.push({ x: px, y: sign * (bsT.price - premium) * totalMultiplier });
+
+      const intrinsic = optionType === 'call' ? Math.max(px - K, 0) : Math.max(K - px, 0);
+      pnlExpiry.push({ x: px, y: sign * (intrinsic - premium) * totalMultiplier });
+    }
+
+    const bsSim = blackScholes(simSpot, K, T, r, q, sigma, optionType);
+    const simPnl = sign * (bsSim.price - premium) * totalMultiplier;
+
+    const ctx = el('pnlChart').getContext('2d');
+    const data = {
+      datasets: [
+        {
+          label: 'P&L today',
+          data: pnlToday,
+          borderColor: '#2dd4bf',
+          backgroundColor: 'rgba(45,212,191,0.08)',
+          fill: false,
+          pointRadius: 0,
+          borderWidth: 2,
+          tension: 0.15
+        },
+        {
+          label: 'P&L at expiration',
+          data: pnlExpiry,
+          borderColor: '#6366f1',
+          backgroundColor: 'rgba(99,102,241,0.08)',
+          fill: false,
+          pointRadius: 0,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          tension: 0
+        },
+        {
+          label: 'Simulated spot',
+          data: [{ x: simSpot, y: simPnl }],
+          showLine: false,
+          pointRadius: 6,
+          pointHoverRadius: 6,
+          pointBackgroundColor: '#2dd4bf',
+          pointBorderColor: '#06080d',
+          pointBorderWidth: 2
+        }
+      ]
+    };
+
+    const options = {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 200 },
+      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
+      plugins: {
+        legend: { display: false },
+        vertLines: {
+          lines: [
+            { value: S, color: '#e2e8f0', width: 1, label: 'Spot', labelOffset: 0 },
+            { value: K, color: '#f59e0b', width: 1, label: 'Strike', align: 'right', labelOffset: 14 },
+            { value: breakeven, color: '#64748b', width: 1, dash: [4, 4], label: 'BE', labelOffset: 28 }
+          ]
+        },
+        tooltip: {
+          backgroundColor: 'rgba(8,14,28,0.95)',
+          borderColor: 'rgba(51,65,85,0.7)',
+          borderWidth: 1,
+          titleColor: '#f5f5f5',
+          bodyColor: '#cbd5e1',
+          filter: (item) => item.dataset.label !== 'Simulated spot',
+          callbacks: {
+            title: (items) => '$' + items[0].parsed.x.toFixed(2) + ' underlying',
+            label: (item) => item.dataset.label + ': ' + (item.parsed.y < 0 ? '-$' : '$') + Math.abs(item.parsed.y).toFixed(2)
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          min: lo,
+          max: hi,
+          ticks: { color: '#5b6b85', callback: v => '$' + v.toFixed(0), maxTicksLimit: 8 },
+          grid: { color: 'rgba(255,255,255,0.04)' }
+        },
+        y: {
+          ticks: { color: '#5b6b85', callback: v => (v < 0 ? '-$' : '$') + Math.abs(v).toFixed(0) },
+          grid: {
+            color: (ctx2) => ctx2.tick.value === 0 ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.04)'
+          }
+        }
+      }
+    };
+
+    if (chart) {
+      chart.data = data;
+      chart.options = options;
+      chart.update();
+    } else {
+      chart = new Chart(ctx, { type: 'line', data, options });
+    }
+  }
+
+  recalc();
+})();
+</script>
+</body>
+</html>

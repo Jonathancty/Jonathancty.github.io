@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-26T13:53:39.485186+00:00",
+  "updated_at": "2026-08-27T22:49:03.230551+00:00",
   "top_trending": {
-    "ticker": "INTU",
-    "name": "Intuit Inc.",
+    "ticker": "IREN",
+    "name": "IREN LIMITED",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 10330,
-    "price": 344.49,
-    "change_pct": "-3.63%",
+    "tweet_volume": 106308,
+    "price": 40.53,
+    "change_pct": "+2.40%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SMMT",
-      "name": "Summit Therapeutics Inc.",
+      "ticker": "RBRK",
+      "name": "Rubrik, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10393,
-      "price": 14.86,
-      "change_pct": "+11.19%",
+      "tweet_volume": 19711,
+      "price": 107.02,
+      "change_pct": "+11.33%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRML",
-      "name": "Critical Metals Corp.",
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12869,
-      "price": 8.41,
-      "change_pct": "+3.83%",
+      "tweet_volume": 18754,
+      "price": 193.57,
+      "change_pct": "+1.48%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 Index Fund",
+      "ticker": "AFRM",
+      "name": "Affirm Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4383,
-      "price": 299.36,
-      "change_pct": "+0.04%",
+      "tweet_volume": 22272,
+      "price": 77.49,
+      "change_pct": "+1.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "KSS",
-      "name": "Kohl's Corporation",
+      "ticker": "S",
+      "name": "SentinelOne, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7644,
-      "price": 16.6,
-      "change_pct": "-6.05%",
+      "tweet_volume": 46313,
+      "price": 22.71,
+      "change_pct": "+10.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMTC",
-      "name": "Semtech Corporation",
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8532,
-      "price": 145.17,
-      "change_pct": "+13.84%",
+      "tweet_volume": 10488,
+      "price": 233.0,
+      "change_pct": "-0.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZM",
-      "name": "Zoom Communications, Inc.",
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3739,
-      "price": 94.82,
-      "change_pct": "-6.04%",
+      "tweet_volume": 7341,
+      "price": 86.33,
+      "change_pct": "-3.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DKS",
-      "name": "Dick's Sporting Goods Inc",
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7185,
-      "price": 125.95,
-      "change_pct": "+1.25%",
+      "tweet_volume": 180032,
+      "price": 18.33,
+      "change_pct": "+9.37%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DIA",
-      "name": "State Street SPDR Dow Jones Ind",
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1130,
-      "price": 535.0,
-      "change_pct": "-0.04%",
+      "tweet_volume": 35361,
+      "price": 8.65,
+      "change_pct": "+11.04%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
+      "ticker": "PURR",
+      "name": "Hyperliquid Strategies Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1042,
-      "price": 168.93,
-      "change_pct": "+0.30%",
+      "tweet_volume": 105547,
+      "price": 12.83,
+      "change_pct": "+10.99%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GT",
-      "name": "The Goodyear Tire & Rubber Comp",
+      "ticker": "SRPT",
+      "name": "Sarepta Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1372,
-      "price": 6.31,
-      "change_pct": "+1.74%",
+      "tweet_volume": 19778,
+      "price": 21.59,
+      "change_pct": "+10.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

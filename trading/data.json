@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-27T22:49:03.230551+00:00",
+  "updated_at": "2026-08-28T22:53:40.692039+00:00",
   "top_trending": {
-    "ticker": "IREN",
-    "name": "IREN LIMITED",
+    "ticker": "SOFI",
+    "name": "SoFi Technologies, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 106308,
-    "price": 40.53,
-    "change_pct": "+2.40%",
+    "tweet_volume": 113267,
+    "price": 18.06,
+    "change_pct": "-5.84%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,45 @@
   },
   "trending_list": [
     {
-      "ticker": "RBRK",
-      "name": "Rubrik, Inc.",
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 19711,
-      "price": 107.02,
-      "change_pct": "+11.33%",
+      "tweet_volume": 19835,
+      "price": 8.05,
+      "change_pct": "-4.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18754,
-      "price": 193.57,
-      "change_pct": "+1.48%",
+      "tweet_volume": 24394,
+      "price": 13.21,
+      "change_pct": "-13.15%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9751,
+      "price": 120.81,
+      "change_pct": "+5.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -53,114 +68,99 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 22272,
-      "price": 77.49,
-      "change_pct": "+1.35%",
+      "tweet_volume": 72535,
+      "price": 77.76,
+      "change_pct": "+0.35%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "S",
-      "name": "SentinelOne, Inc.",
+      "ticker": "DXYZ",
+      "name": "Destiny Tech100 Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 46313,
-      "price": 22.71,
-      "change_pct": "+10.73%",
+      "tweet_volume": 3323,
+      "price": 34.74,
+      "change_pct": "-1.86%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, ",
+      "ticker": "RDIB",
+      "name": "Reading International Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10488,
-      "price": 233.0,
-      "change_pct": "-0.19%",
+      "tweet_volume": 1619,
+      "price": 18.31,
+      "change_pct": "+18.90%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DECK",
-      "name": "Deckers Outdoor Corporation",
+      "ticker": "PZZA",
+      "name": "Papa John's International, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7341,
-      "price": 86.33,
-      "change_pct": "-3.51%",
+      "tweet_volume": 2342,
+      "price": 23.72,
+      "change_pct": "+2.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PATH",
-      "name": "UiPath, Inc.",
+      "ticker": "SEDG",
+      "name": "SolarEdge Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 180032,
-      "price": 18.33,
-      "change_pct": "+9.37%",
+      "tweet_volume": 8020,
+      "price": 31.41,
+      "change_pct": "-6.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
+      "ticker": "VERA",
+      "name": "Vera Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35361,
-      "price": 8.65,
-      "change_pct": "+11.04%",
+      "tweet_volume": 3141,
+      "price": 34.19,
+      "change_pct": "-1.18%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PURR",
-      "name": "Hyperliquid Strategies Inc",
+      "ticker": "BRUN",
+      "name": "Boost Run Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 105547,
-      "price": 12.83,
-      "change_pct": "+10.99%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SRPT",
-      "name": "Sarepta Therapeutics, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 19778,
-      "price": 21.59,
-      "change_pct": "+10.95%",
+      "tweet_volume": 9055,
+      "price": 17.05,
+      "change_pct": "-17.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

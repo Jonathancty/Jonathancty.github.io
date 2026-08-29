@@ -385,6 +385,31 @@
   @media (max-width: 980px) { .grid-2col { grid-template-columns: 1fr; } }
 
   .stack { display: flex; flex-direction: column; gap: 1.75rem; }
+
+  /* Strike selector table */
+  .strike-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; font-size: 0.8rem; }
+  .strike-table th {
+    text-align: right; color: var(--text-dim); font-size: 0.66rem;
+    text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
+    padding: 0 0.6rem 0.5rem;
+  }
+  .strike-table th:first-child, .strike-table td:first-child { text-align: left; }
+  .strike-table td {
+    padding: 0.6rem 0.6rem; text-align: right;
+    background: rgba(8,14,28,0.5);
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+  }
+  .strike-table tr td:first-child { border-radius: 0.5rem 0 0 0.5rem; }
+  .strike-table tr td:last-child { border-radius: 0 0.5rem 0.5rem 0; text-align: center; }
+  .strike-table tr.highlight-row td { background: rgba(45,212,191,0.1); }
+
+  .strike-use-btn {
+    background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #a5b4fc;
+    padding: 0.3rem 0.65rem; border-radius: 0.4rem; font-size: 0.72rem; cursor: pointer;
+    font-family: 'Inter', sans-serif; font-weight: 600; transition: background 0.15s;
+  }
+  .strike-use-btn:hover { background: rgba(99,102,241,0.28); }
 </style>
 </head>
 <body>
@@ -398,7 +423,11 @@
       <h1>Option P&amp;L Calculator</h1>
       <p>Black-Scholes fair value, Greeks &amp; payoff modeling for a single option position</p>
     </div>
-    <div class="nav-links">
+    <div class="nav-links" style="display:flex; gap:1.5rem;">
+      <a href="./strategies/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 12l3-3 3 3 5-6"/></svg>
+        Strategy Analyzer
+      </a>
       <a href="/">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M19 12H5M12 19l-7-7 7-7"/>
@@ -570,6 +599,50 @@
         <p class="footnote" id="simFootnote">Drag to preview P&amp;L at a hypothetical underlying price, holding today's valuation date fixed.</p>
       </div>
 
+      <!-- Strike Selector -->
+      <div class="glass-card">
+        <h2 class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          Strike Selector — Optimize for Your Price Target
+        </h2>
+        <p class="footnote" style="margin-top:-0.6rem; margin-bottom:1.1rem;">Enter where you think the underlying will be, and by when. This scans a chain of strikes for your current Call/Put and Long/Short choice above and shows which one turns that forecast into the best — and most realistic — profit.</p>
+
+        <div class="form-row" style="margin-bottom:1.25rem; max-width:480px;">
+          <div class="form-group" style="margin-bottom:0;">
+            <label for="targetPrice">Target Price (your forecast)</label>
+            <div class="field-wrap"><span class="field-prefix">$</span>
+              <input type="number" id="targetPrice" value="110" step="0.01" min="0.01">
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:0;">
+            <label for="targetDate">By Date</label>
+            <input type="date" id="targetDate">
+          </div>
+        </div>
+
+        <div style="overflow-x:auto;">
+          <table class="strike-table">
+            <thead>
+              <tr>
+                <th>Strike</th>
+                <th>Moneyness</th>
+                <th>Premium</th>
+                <th>Delta</th>
+                <th>Prob. Profit</th>
+                <th>Leverage</th>
+                <th>P&amp;L @ Target</th>
+                <th>Return</th>
+                <th>Risk-Adj. Return</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="strikeTableBody"></tbody>
+          </table>
+        </div>
+
+        <p class="footnote">"Prob. Profit" is a risk-neutral estimate (Black-Scholes) of finishing past breakeven by expiration. "Leverage" = (Delta × Spot) / Premium — the classic measure of how much more, in %, an option moves than the stock itself; higher leverage means bigger potential % gains but a lower probability of getting there. "Risk-Adj. Return" assumes a simplified binary outcome — full target-price profit with that probability, otherwise a total loss of premium — so it's shown for long positions only, since a short position's maximum loss isn't fixed at the premium.</p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -588,6 +661,12 @@
   }
   function normCDF(x) { return 0.5 * (1 + erf(x / Math.SQRT2)); }
   function normPDF(x) { return Math.exp(-0.5 * x * x) / Math.sqrt(2 * Math.PI); }
+  function probAbove(x, S, T, r, q, sigma) {
+    if (x <= 0) return 1;
+    if (T <= 0 || sigma <= 0) return S > x ? 1 : 0;
+    const d2 = (Math.log(S / x) + (r - q - 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));
+    return normCDF(d2);
+  }
 
   function blackScholes(S, K, T, r, q, sigma, type) {
     // T in years. Returns { price, delta, gamma, theta, vega, rho }
@@ -695,9 +774,12 @@
   const toISO = d => d.toISOString().slice(0, 10);
   el('evalDate').value = toISO(today);
   el('expiration').value = toISO(exp);
+  el('targetDate').value = toISO(exp);
 
   const inputs = ['spot','strike','premium','contracts','multiplier','expiration','evalDate','volatility','riskfree','dividend'];
   inputs.forEach(id => el(id).addEventListener('input', () => { syncedFromSlider = false; recalc(); }));
+
+  ['targetPrice','targetDate'].forEach(id => el(id).addEventListener('input', recalc));
 
   const spotSlider = el('spotSlider');
   let syncedFromSlider = false;
@@ -807,6 +889,105 @@
     el('simFootnote').innerHTML = `At <strong>${fmtUSD(simSpot)}</strong> on the valuation date, theoretical P&amp;L would be <strong class="${pnlSim>=0?'up':'down'}">${fmtUSD(pnlSim)}</strong> (fair value ${fmtUSD(bsSimToday.price)}).`;
 
     updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot);
+    updateStrikeSelector(S, T, r, q, sigma, contracts, multiplier);
+  }
+
+  // ---------- Strike Selector ----------
+  function buildStrikeChain(S, sigma, T) {
+    const Tsafe = Math.max(T, 1 / 365);
+    const sigmaSafe = Math.max(sigma, 0.05);
+    const half = Math.max(S * sigmaSafe * Math.sqrt(Tsafe) * 2.2, S * 0.08);
+    const inc = S < 20 ? 0.5 : S < 50 ? 1 : S < 200 ? 2.5 : S < 1000 ? 5 : 25;
+    const n = 5;
+    const strikes = [];
+    for (let i = -n; i <= n; i++) {
+      const k = Math.max(inc, Math.round((S + (half / n) * i) / inc) * inc);
+      if (!strikes.includes(k)) strikes.push(k);
+    }
+    return strikes.sort((a, b) => a - b);
+  }
+
+  function updateStrikeSelector(S, T, r, q, sigma, contracts, multiplier) {
+    const targetPrice = parseFloat(el('targetPrice').value) || S;
+    const expDate = new Date(el('expiration').value);
+    const evalDateVal = new Date(el('evalDate').value);
+    let targetDate = new Date(el('targetDate').value);
+    if (isNaN(targetDate.getTime())) targetDate = expDate;
+    if (targetDate > expDate) targetDate = expDate;
+    if (targetDate < evalDateVal) targetDate = evalDateVal;
+    const Ttarget = yearsBetween(targetDate, expDate);
+
+    const chain = buildStrikeChain(S, sigma, T);
+    const sign = position === 'long' ? 1 : -1;
+    const totalMultiplier = multiplier * contracts;
+    const currentStrike = parseFloat(el('strike').value);
+
+    const rows = chain.map(K => {
+      const bsNow = blackScholes(S, K, T, r, q, sigma, optionType);
+      const premium = bsNow.price;
+      const delta = bsNow.delta;
+      const breakeven = optionType === 'call' ? K + premium : K - premium;
+      const probBeyond = probAbove(breakeven, S, T, r, q, sigma);
+      let pop;
+      if (optionType === 'call') pop = position === 'long' ? probBeyond : 1 - probBeyond;
+      else pop = position === 'long' ? (1 - probBeyond) : probBeyond;
+      pop = Math.max(0, Math.min(1, pop));
+
+      const leverage = premium > 0 ? Math.abs(delta * S / premium) : 0;
+
+      const bsTarget = blackScholes(targetPrice, K, Ttarget, r, q, sigma, optionType);
+      const pnl = sign * (bsTarget.price - premium) * totalMultiplier;
+      const costBasis = Math.abs(premium * totalMultiplier);
+      const returnPct = costBasis > 0 ? (pnl / costBasis) * 100 : 0;
+
+      const riskAdjReturn = position === 'long' ? (pop * returnPct - (1 - pop) * 100) : null;
+
+      const moneyness = optionType === 'call' ? ((K - S) / S) * 100 : ((S - K) / S) * 100;
+
+      return { K, premium, delta, pop, leverage, pnl, returnPct, riskAdjReturn, moneyness };
+    });
+
+    let bestReturnIdx = 0;
+    rows.forEach((row, i) => { if (row.returnPct > rows[bestReturnIdx].returnPct) bestReturnIdx = i; });
+    let bestRiskAdjIdx = -1;
+    if (position === 'long') {
+      bestRiskAdjIdx = 0;
+      rows.forEach((row, i) => { if (row.riskAdjReturn > rows[bestRiskAdjIdx].riskAdjReturn) bestRiskAdjIdx = i; });
+    }
+
+    const tbody = el('strikeTableBody');
+    tbody.innerHTML = rows.map((row, i) => {
+      const isCurrent = Math.abs(row.K - currentStrike) < 0.001;
+      let strikeCell = '$' + row.K.toFixed(2);
+      if (isCurrent) strikeCell += ' <span class="badge badge-amber">CURRENT</span>';
+      if (i === bestReturnIdx) strikeCell += ' <span class="badge badge-green">BEST RETURN</span>';
+      if (i === bestRiskAdjIdx) strikeCell += ' <span class="badge badge-blue">BEST RISK-ADJ</span>';
+      const moneynessLabel = row.moneyness >= 0
+        ? '+' + row.moneyness.toFixed(1) + '% OTM'
+        : Math.abs(row.moneyness).toFixed(1) + '% ITM';
+      return `
+        <tr class="${isCurrent ? 'highlight-row' : ''}">
+          <td style="text-align:left; font-weight:700;">${strikeCell}</td>
+          <td>${moneynessLabel}</td>
+          <td>${fmtUSD(row.premium)}</td>
+          <td>${row.delta.toFixed(2)}</td>
+          <td>${(row.pop * 100).toFixed(0)}%</td>
+          <td>${row.leverage.toFixed(1)}x</td>
+          <td class="${row.pnl >= 0 ? 'up' : 'down'}">${fmtUSD(row.pnl)}</td>
+          <td class="${row.returnPct >= 0 ? 'up' : 'down'}">${row.returnPct >= 0 ? '+' : ''}${row.returnPct.toFixed(1)}%</td>
+          <td class="${row.riskAdjReturn == null ? 'neutral' : (row.riskAdjReturn >= 0 ? 'up' : 'down')}">${row.riskAdjReturn == null ? '—' : (row.riskAdjReturn >= 0 ? '+' : '') + row.riskAdjReturn.toFixed(1) + '%'}</td>
+          <td><button type="button" class="strike-use-btn" data-strike="${row.K}">Use</button></td>
+        </tr>
+      `;
+    }).join('');
+
+    tbody.querySelectorAll('.strike-use-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        el('strike').value = btn.dataset.strike;
+        syncedFromSlider = false;
+        recalc();
+      });
+    });
   }
 
   function updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot) {

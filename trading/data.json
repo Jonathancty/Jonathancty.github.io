@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-30T17:13:03.182289+00:00",
+  "updated_at": "2026-08-31T19:23:45.943339+00:00",
   "top_trending": {
-    "ticker": "BOIL",
-    "name": "ProShares Ultra Bloomberg Natur",
+    "ticker": "COIN",
+    "name": "Coinbase Global, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 10219,
-    "price": 19.96,
-    "change_pct": "-2.40%",
+    "tweet_volume": 14781,
+    "price": 189.17,
+    "change_pct": "+5.89%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "DLO",
-      "name": "DLocal Limited",
+      "ticker": "ASST",
+      "name": "Strive, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4708,
-      "price": 15.03,
-      "change_pct": "-0.73%",
+      "tweet_volume": 31684,
+      "price": 24.07,
+      "change_pct": "+10.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ROKU",
-      "name": "Roku, Inc.",
+      "ticker": "CRCL",
+      "name": "Circle Internet Group, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4894,
-      "price": 157.68,
-      "change_pct": "+0.91%",
+      "tweet_volume": 31447,
+      "price": 95.25,
+      "change_pct": "+9.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LWLG",
-      "name": "Lightwave Logic, Inc.",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5737,
-      "price": 5.49,
-      "change_pct": "-6.47%",
+      "tweet_volume": 41863,
+      "price": 37.3,
+      "change_pct": "+0.61%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ETH",
-      "name": "Grayscale Ethereum Staking Mini",
+      "ticker": "EIX",
+      "name": "Edison International",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13188,
-      "price": 23.26,
-      "change_pct": "-2.51%",
+      "tweet_volume": 44947,
+      "price": 54.13,
+      "change_pct": "-22.85%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "WRD",
-      "name": "WERIDE INC.",
+      "ticker": "KRMN",
+      "name": "Karman Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3615,
-      "price": 6.05,
-      "change_pct": "+0.67%",
+      "tweet_volume": 6044,
+      "price": 41.83,
+      "change_pct": "-8.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BTC",
-      "name": "Grayscale Bitcoin Mini Trust (B",
+      "ticker": "MOVE",
+      "name": "Corvex, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8866,
-      "price": 34.3,
-      "change_pct": "-2.94%",
+      "tweet_volume": 16790,
+      "price": 11.14,
+      "change_pct": "-3.05%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRVS",
-      "name": "Corvus Pharmaceuticals, Inc.",
+      "ticker": "GAP",
+      "name": "Gap, Inc. (The)",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1611,
-      "price": 14.16,
-      "change_pct": "-3.80%",
+      "tweet_volume": 18745,
+      "price": 22.29,
+      "change_pct": "-5.07%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SYM",
-      "name": "Symbotic Inc.",
+      "ticker": "PURR",
+      "name": "Hyperliquid Strategies Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3333,
-      "price": 39.88,
-      "change_pct": "-3.07%",
+      "tweet_volume": 79922,
+      "price": 11.95,
+      "change_pct": "+2.97%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FPS",
-      "name": "Forgent Power Solutions, Inc.",
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 13823,
-      "price": 30.4,
-      "change_pct": "-3.86%",
+      "tweet_volume": 10954,
+      "price": 9.41,
+      "change_pct": "+1.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AEVA",
-      "name": "Aeva Technologies, Inc.",
+      "ticker": "CCL",
+      "name": "Carnival Corporation Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3565,
-      "price": 15.63,
-      "change_pct": "-4.64%",
+      "tweet_volume": 48713,
+      "price": 23.95,
+      "change_pct": "-3.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

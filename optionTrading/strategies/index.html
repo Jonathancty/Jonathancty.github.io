@@ -274,7 +274,7 @@
   }
   .leg-row:last-child { border-bottom: none; }
   .leg-row-top { display: flex; align-items: center; gap: 0.5rem; }
-  .leg-row-bottom { display: flex; align-items: center; gap: 0.75rem; }
+  .leg-row-bottom { display: flex; align-items: flex-end; gap: 0.75rem; }
   .leg-idx { font-size: 0.75rem; color: var(--text-dim); font-weight: 600; min-width: 40px; }
   .leg-badge {
     display: inline-flex; align-items: center; justify-content: center;
@@ -286,22 +286,24 @@
   .leg-long { background: rgba(16,185,129,0.15); color: #10b981; }
   .leg-short { background: rgba(239,68,68,0.15); color: #ef4444; }
 
-  .leg-strike-wrap { position: relative; flex: 1; min-width: 0; }
-  .leg-strike-wrap .field-prefix { font-size: 0.8rem; left: 0.6rem; }
-  .leg-strike-input { padding: 0.5rem 0.6rem 0.5rem 1.4rem; font-size: 0.9rem; width: 100%; }
-
-  .leg-premium-block {
-    display: flex; flex-direction: column; align-items: flex-end;
-    flex-shrink: 0; min-width: 82px;
-  }
-  .leg-premium-label {
+  .leg-field { flex: 1; min-width: 0; }
+  .leg-field-label {
+    display: flex; align-items: center; gap: 0.35rem;
     font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.05em;
-    color: var(--text-dim); margin-bottom: 0.1rem;
+    color: var(--text-dim); margin-bottom: 0.3rem;
   }
-  .leg-premium {
-    font-size: 1.05rem; font-weight: 700; color: var(--accent-primary);
-    line-height: 1.1;
+  .leg-field-label .manual-tag { color: var(--accent-primary); font-weight: 700; text-transform: none; letter-spacing: 0; }
+  .leg-field-wrap { position: relative; }
+  .leg-field-wrap .field-prefix { font-size: 0.8rem; left: 0.6rem; }
+  .leg-field-wrap input { padding: 0.5rem 0.6rem 0.5rem 1.4rem; font-size: 0.9rem; width: 100%; }
+  .leg-premium-input { color: var(--accent-primary); font-weight: 700; }
+
+  .premium-reset-btn {
+    background: none; border: none; color: var(--text-dim); cursor: pointer;
+    font-size: 0.85rem; line-height: 1; padding: 0; transition: color 0.15s;
   }
+  .premium-reset-btn:hover { color: var(--accent-primary); }
+  .leg-model-hint { display: block; font-size: 0.68rem; color: var(--text-dim); margin-top: 0.25rem; min-height: 1em; }
 
   .slider-row { display: flex; align-items: center; gap: 1rem; }
   input[type="range"] { flex: 1; accent-color: var(--accent-primary); }
@@ -473,7 +475,7 @@
       <div class="section-label">Legs</div>
       <div id="legsContainer"></div>
 
-      <p class="footnote">All legs share the same expiration and a single flat implied volatility (no skew modeled). Beta-weighted delta and the missing "alpha" figure are explained below the Greeks panel.</p>
+      <p class="footnote">Each leg's premium defaults to its Black-Scholes model price, but is editable — type in your actual fill price from your broker to get real cost basis, breakeven and max profit/loss instead of theoretical ones (Greeks stay model-based regardless). Click ↺ to revert a leg to its model price. All legs share the same expiration and a single flat implied volatility (no skew modeled). Beta-weighted delta and the missing "alpha" figure are explained below the Greeks panel.</p>
     </div>
 
     <!-- RESULTS -->
@@ -893,12 +895,18 @@
           <span class="leg-badge ${l.side === 'long' ? 'leg-long' : 'leg-short'}">${l.side === 'long' ? 'LONG' : 'SHORT'}</span>
         </div>
         <div class="leg-row-bottom">
-          <div class="leg-strike-wrap field-wrap"><span class="field-prefix">$</span>
-            <input type="number" class="leg-strike-input" data-idx="${i}" value="${l.strike}" step="0.5" min="0.5">
+          <div class="leg-field">
+            <span class="leg-field-label">Strike</span>
+            <div class="leg-field-wrap field-wrap"><span class="field-prefix">$</span>
+              <input type="number" class="leg-strike-input" data-idx="${i}" value="${l.strike}" step="0.5" min="0.5">
+            </div>
           </div>
-          <div class="leg-premium-block">
-            <span class="leg-premium-label">Premium</span>
-            <span class="leg-premium mono" id="leg-premium-${i}">$0.00</span>
+          <div class="leg-field">
+            <span class="leg-field-label">Premium <button type="button" class="premium-reset-btn" data-idx="${i}" title="Reset to model (theoretical) price">↺</button></span>
+            <div class="leg-field-wrap field-wrap"><span class="field-prefix">$</span>
+              <input type="number" class="leg-premium-input" data-idx="${i}" value="${(l.premium || 0).toFixed(2)}" step="0.01" min="0">
+            </div>
+            <span class="leg-model-hint mono" id="leg-modelprice-${i}"></span>
           </div>
         </div>
       </div>
@@ -907,6 +915,21 @@
       inp.addEventListener('input', (e) => {
         const idx = parseInt(e.target.dataset.idx);
         legs[idx].strike = parseFloat(e.target.value) || legs[idx].strike;
+        recalc();
+      });
+    });
+    container.querySelectorAll('.leg-premium-input').forEach(inp => {
+      inp.addEventListener('input', (e) => {
+        const idx = parseInt(e.target.dataset.idx);
+        legs[idx].premium = parseFloat(e.target.value) || 0;
+        legs[idx].premiumIsManual = true;
+        recalc();
+      });
+    });
+    container.querySelectorAll('.premium-reset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx);
+        legs[idx].premiumIsManual = false;
         recalc();
       });
     });
@@ -930,20 +953,26 @@
 
     if (!legs.length) return;
 
-    // Price each leg today & aggregate Greeks
+    // Price each leg today & aggregate Greeks. A leg's premium can be a live
+    // theoretical (Black-Scholes) estimate, or overridden with the trader's
+    // actual fill price — Greeks always stay model-based, but cost basis,
+    // breakeven, max profit/loss and P&L all follow whichever premium is in use.
     let netCost = 0, deltaTotal = 0, gammaTotal = 0, thetaTotal = 0, vegaTotal = 0, rhoTotal = 0;
     legs.forEach((l, i) => {
       const bs = blackScholes(S, l.strike, T, r, q, sigma, l.type);
-      l.premium = bs.price;
+      if (!l.premiumIsManual) l.premium = bs.price;
       const sign = l.side === 'long' ? 1 : -1;
-      netCost += sign * bs.price * totalMultiplier;
+      netCost += sign * l.premium * totalMultiplier;
       deltaTotal += sign * bs.delta * totalMultiplier;
       gammaTotal += sign * bs.gamma * totalMultiplier;
       thetaTotal += sign * bs.theta * totalMultiplier;
       vegaTotal += sign * bs.vega * totalMultiplier;
       rhoTotal += sign * bs.rho * totalMultiplier;
-      const cell = el('leg-premium-' + i);
-      if (cell) cell.textContent = fmtUSD(bs.price) + ' /sh';
+
+      const input = document.querySelector('.leg-premium-input[data-idx="' + i + '"]');
+      if (input && document.activeElement !== input) input.value = l.premium.toFixed(2);
+      const hint = el('leg-modelprice-' + i);
+      if (hint) hint.textContent = l.premiumIsManual ? ('model: ' + fmtUSD(bs.price)) : '';
     });
 
     // Cost / credit

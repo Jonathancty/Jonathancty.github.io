@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Option P&amp;L Calculator</title>
+<title>Options Trade Analyzer</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,26 +14,30 @@
   :root {
     --bg-base: #06080d;
     --bg-surface: rgba(20, 25, 35, 0.55);
-    --bg-surface-hover: rgba(30, 38, 52, 0.7);
     --bg-input: rgba(15, 23, 42, 0.9);
-
     --text-primary: #f5f5f5;
     --text-secondary: #94a3b8;
     --text-dim: #5b6b85;
-
     --accent-primary: #2dd4bf;
     --accent-secondary: #6366f1;
-
     --bullish: #10b981;
     --bearish: #ef4444;
     --warn: #f59e0b;
-
     --border-light: rgba(255, 255, 255, 0.07);
     --glass-blur: blur(12px);
   }
+  html[data-theme="light"] {
+    --bg-base: #f4f6fa;
+    --bg-surface: rgba(255,255,255,0.75);
+    --bg-input: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-dim: #94a3b8;
+    --border-light: rgba(15,23,42,0.08);
+  }
 
   * { box-sizing: border-box; }
-
+  html { overflow-x: hidden; }
   body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-base);
@@ -42,374 +46,240 @@
     margin: 0;
     overflow-x: hidden;
     position: relative;
+    transition: background-color 0.2s, color 0.2s;
   }
-
   .mono { font-family: 'JetBrains Mono', monospace; }
 
   .ambient-glow {
-    position: fixed;
-    width: 600px; height: 600px;
+    position: fixed; width: 600px; height: 600px;
     background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
-    top: -200px; right: -100px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
+    top: -200px; right: -100px; border-radius: 50%; pointer-events: none; z-index: 0;
   }
-
   .ambient-glow-2 {
-    position: fixed;
-    width: 500px; height: 500px;
+    position: fixed; width: 500px; height: 500px;
     background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, rgba(45, 212, 191, 0.03) 40%, transparent 70%);
-    bottom: -150px; left: -150px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
+    bottom: -150px; left: -150px; border-radius: 50%; pointer-events: none; z-index: 0;
   }
+  html[data-theme="light"] .ambient-glow, html[data-theme="light"] .ambient-glow-2 { opacity: 0.4; }
 
-  .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 2rem;
-    position: relative;
-    z-index: 1;
-  }
+  .container { max-width: 1480px; margin: 0 auto; padding: 1.5rem 2rem 3rem; position: relative; z-index: 1; }
 
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 1.5rem;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;
   }
-
   .logo-area h1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -0.5px;
-    margin: 0;
+    font-family: 'Outfit', sans-serif; font-size: 1.65rem; font-weight: 700;
+    background: linear-gradient(135deg, var(--text-primary) 0%, #a5b4fc 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px; margin: 0;
+  }
+  .logo-area p { color: var(--text-secondary); font-size: 0.88rem; margin-top: 0.3rem; max-width: 640px; }
+
+  .header-actions { display: flex; align-items: center; gap: 0.75rem; }
+  .theme-toggle {
+    background: var(--bg-input); border: 1px solid rgba(51,65,85,0.7); color: var(--text-secondary);
+    border-radius: 0.5rem; padding: 0.5rem 0.7rem; cursor: pointer; font-size: 0.85rem;
   }
 
-  .logo-area p {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-top: 0.35rem;
+  .disclaimer-bar {
+    background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25);
+    border-radius: 0.65rem; padding: 0.7rem 1rem; font-size: 0.78rem; color: var(--text-secondary);
+    margin-bottom: 1.5rem; line-height: 1.5;
   }
+  .disclaimer-bar strong { color: var(--warn); }
 
-  .nav-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  .tab-nav { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-light); flex-wrap: wrap; }
+  .tab-btn {
+    background: none; border: none; color: var(--text-secondary); font-family: 'Inter', sans-serif;
+    font-size: 0.9rem; font-weight: 600; padding: 0.7rem 1.1rem; cursor: pointer;
+    border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s, border-color 0.15s;
   }
-
-  .nav-links a:hover { color: var(--accent-primary); }
-  .nav-links svg { width: 18px; height: 18px; }
+  .tab-btn:hover { color: var(--text-primary); }
+  .tab-btn.active { color: var(--accent-primary); border-bottom-color: var(--accent-primary); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
 
   .glass-card {
-    background: var(--bg-surface);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--border-light);
-    border-radius: 18px;
-    padding: 1.5rem;
+    background: var(--bg-surface); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-light); border-radius: 18px; padding: 1.5rem; margin-bottom: 1.5rem;
   }
-
-  .layout {
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 1.75rem;
-    align-items: start;
-  }
-
-  @media (max-width: 980px) {
-    .layout { grid-template-columns: 1fr; }
-  }
-
   .panel-title {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin: 0 0 1.25rem 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; margin: 0 0 1.25rem 0;
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
   }
-
-  .panel-title svg { width: 18px; height: 18px; color: var(--accent-primary); }
-
-  .form-group { margin-bottom: 1.1rem; }
-
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .panel-title svg { width: 18px; height: 18px; color: var(--accent-primary); flex-shrink: 0; }
+  .panel-sub { font-size: 0.8rem; color: var(--text-secondary); font-weight: 400; margin-top: -0.9rem; margin-bottom: 1.1rem; line-height: 1.5; }
 
   label {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--text-secondary);
-    margin-bottom: 0.4rem;
+    display: block; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--text-secondary); margin-bottom: 0.35rem;
   }
-
   .field-wrap { position: relative; }
-
   .field-prefix, .field-suffix {
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-    color: var(--text-dim);
-    font-size: 0.85rem;
-    pointer-events: none;
+    position: absolute; top: 50%; transform: translateY(-50%); color: var(--text-dim); font-size: 0.8rem; pointer-events: none;
   }
-  .field-prefix { left: 0.7rem; }
-  .field-suffix { right: 0.7rem; }
-
-  input[type="number"], input[type="date"], select {
-    width: 100%;
-    background: var(--bg-input);
-    border: 1px solid rgba(51, 65, 85, 0.7);
-    color: var(--text-primary);
-    border-radius: 0.55rem;
-    padding: 0.55rem 0.7rem;
-    font-size: 0.9rem;
-    font-family: 'JetBrains Mono', monospace;
+  .field-prefix { left: 0.6rem; }
+  .field-suffix { right: 0.6rem; }
+  input[type="number"], input[type="date"], input[type="text"], select {
+    width: 100%; background: var(--bg-input); border: 1px solid rgba(51, 65, 85, 0.55); color: var(--text-primary);
+    border-radius: 0.5rem; padding: 0.5rem 0.65rem; font-size: 0.85rem; font-family: 'JetBrains Mono', monospace;
     transition: border-color 0.15s, box-shadow 0.15s;
   }
+  html[data-theme="light"] input, html[data-theme="light"] select { border-color: rgba(15,23,42,0.15); }
+  .field-wrap input { padding-left: 1.35rem; }
+  .field-wrap.suffix-pad input { padding-right: 1.6rem; }
+  input:focus, select:focus { outline: none; border-color: var(--accent-primary); box-shadow: 0 0 0 2px rgba(45,212,191,0.2); }
+  input::placeholder { color: var(--text-dim); }
 
-  .field-wrap input[type="number"] { padding-left: 1.5rem; }
-  .field-wrap.suffix-pad input[type="number"] { padding-right: 1.8rem; }
-
-  input:focus, select:focus {
-    outline: none;
-    border-color: var(--accent-primary);
-    box-shadow: 0 0 0 2px rgba(45,212,191,0.2);
-  }
-
-  .toggle-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-  }
-
-  .toggle-btn {
-    padding: 0.55rem 0.5rem;
-    text-align: center;
-    border-radius: 0.55rem;
-    border: 1px solid rgba(51,65,85,0.7);
-    background: rgba(15,23,42,0.6);
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    user-select: none;
-  }
-
-  .toggle-btn.active-call, .toggle-btn.active-long {
-    background: rgba(16,185,129,0.15);
-    border-color: rgba(16,185,129,0.4);
-    color: var(--bullish);
-  }
-
-  .toggle-btn.active-put, .toggle-btn.active-short {
-    background: rgba(239,68,68,0.15);
-    border-color: rgba(239,68,68,0.4);
-    color: var(--bearish);
-  }
-
-  hr.divider {
-    border: none;
-    border-top: 1px solid var(--border-light);
-    margin: 1.4rem 0;
-  }
+  .input-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.9rem; }
+  @media (max-width: 1200px) { .input-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .input-grid { grid-template-columns: repeat(2, 1fr); } }
+  .fg { margin-bottom: 0; min-width: 0; }
+  .fg-check { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.35rem; font-size: 0.72rem; color: var(--text-dim); }
+  .fg-check input { width: auto; }
 
   .section-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-dim);
-    font-weight: 700;
-    margin-bottom: 0.9rem;
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim);
+    font-weight: 700; margin: 1.25rem 0 0.75rem;
   }
+  .section-label:first-child { margin-top: 0; }
+  hr.divider { border: none; border-top: 1px solid var(--border-light); margin: 1.25rem 0; }
+
+  .strategy-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; }
+  @media (max-width: 1200px) { .strategy-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .strategy-grid { grid-template-columns: repeat(2, 1fr); } }
+  .strategy-btn {
+    padding: 0.55rem 0.5rem; border-radius: 0.55rem; border: 1px solid rgba(51,65,85,0.6);
+    background: var(--bg-input); color: var(--text-secondary); font-size: 0.74rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s ease; text-align: center; min-width: 0;
+  }
+  .strategy-btn:hover { color: var(--text-primary); }
+  .strategy-btn.active { background: rgba(45,212,191,0.14); border-color: rgba(45,212,191,0.5); color: var(--accent-primary); }
+
+  /* Legs table */
+  .legs-table-wrap { overflow-x: auto; }
+  table.legs-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; font-size: 0.78rem; min-width: 1080px; }
+  .legs-table th {
+    text-align: left; color: var(--text-dim); font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.05em;
+    font-weight: 700; padding: 0 0.5rem 0.4rem;
+  }
+  .legs-table td { padding: 0.4rem 0.5rem; background: rgba(8,14,28,0.4); vertical-align: middle; }
+  html[data-theme="light"] .legs-table td { background: rgba(15,23,42,0.03); }
+  .legs-table tr td:first-child { border-radius: 0.5rem 0 0 0.5rem; }
+  .legs-table tr td:last-child { border-radius: 0 0.5rem 0.5rem 0; }
+  .legs-table input, .legs-table select { padding: 0.35rem 0.4rem; font-size: 0.78rem; min-width: 62px; }
+  .legs-table .num-cell input { min-width: 58px; }
+  .toggle-mini { display: flex; border-radius: 0.4rem; overflow: hidden; border: 1px solid rgba(51,65,85,0.6); }
+  .toggle-mini button {
+    flex: 1; border: none; background: var(--bg-input); color: var(--text-secondary); font-size: 0.72rem;
+    font-weight: 700; padding: 0.35rem 0.5rem; cursor: pointer;
+  }
+  .toggle-mini button.active-call, .toggle-mini button.active-buy { background: rgba(16,185,129,0.18); color: var(--bullish); }
+  .toggle-mini button.active-put, .toggle-mini button.active-sell { background: rgba(239,68,68,0.18); color: var(--bearish); }
+  .leg-remove-btn {
+    background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 1rem; padding: 0.2rem 0.4rem;
+  }
+  .leg-remove-btn:hover { color: var(--bearish); }
+  .model-price-note { font-size: 0.68rem; color: var(--text-dim); white-space: nowrap; }
+  .add-leg-btn {
+    display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(99,102,241,0.14);
+    border: 1px solid rgba(99,102,241,0.35); color: #a5b4fc; padding: 0.5rem 0.9rem; border-radius: 0.5rem;
+    font-size: 0.8rem; font-weight: 600; cursor: pointer; margin-top: 0.9rem;
+  }
+  .add-leg-btn:hover { background: rgba(99,102,241,0.24); }
+
+  .live-tag { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 1px 5px; border-radius: 4px; }
+  .tag-input { background: rgba(96,165,250,0.15); color: #60a5fa; }
+  .tag-model { background: rgba(148,163,184,0.15); color: var(--text-dim); }
 
   /* Summary cards */
-  .summary-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-    margin-bottom: 1.75rem;
-  }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+  @media (max-width: 900px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-card { padding: 1rem 1.15rem; position: relative; overflow: hidden; border-radius: 14px; background: var(--bg-surface); border: 1px solid var(--border-light); min-width: 0; }
+  .stat-card.hero { grid-column: span 2; }
+  .stat-card.wide { grid-column: span 2; }
+  .stat-label { color: var(--text-secondary); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem; justify-content: space-between; }
+  .stat-value { font-family: 'Outfit', sans-serif; font-size: 1.55rem; font-weight: 700; line-height: 1.1; }
+  .stat-card.hero .stat-value { font-size: 1.9rem; }
+  .stat-sub { font-size: 0.74rem; color: var(--text-secondary); margin-top: 0.35rem; }
+  .up { color: var(--bullish); } .down { color: var(--bearish); } .neutral { color: var(--text-secondary); }
 
-  @media (max-width: 780px) {
-    .summary-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  .stat-card {
-    padding: 1.1rem 1.25rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .stat-card.hero {
-    grid-column: span 2;
-  }
-  @media (max-width: 780px) { .stat-card.hero { grid-column: span 2; } }
-
-  .stat-label {
-    color: var(--text-secondary);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .stat-value {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
-
-  .stat-card.hero .stat-value { font-size: 2.1rem; }
-
-  .stat-sub {
-    font-size: 0.78rem;
-    color: var(--text-secondary);
-    margin-top: 0.4rem;
-  }
-
-  .up { color: var(--bullish); }
-  .down { color: var(--bearish); }
-  .neutral { color: var(--text-secondary); }
-
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 2px 10px;
-    border-radius: 9999px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-  }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 9999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em; }
   .badge-green  { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.25); }
   .badge-red    { background: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.25); }
   .badge-blue   { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
   .badge-amber  { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.25); }
+  .badge-gray   { background: rgba(148,163,184,0.15); color: #94a3b8; border: 1px solid rgba(148,163,184,0.25); }
 
-  /* Greeks row */
-  .greeks-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+  .warning-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+  .warning-chip {
+    display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.76rem; font-weight: 600;
+    padding: 0.4rem 0.7rem; border-radius: 0.5rem;
   }
-  @media (max-width: 780px) { .greeks-grid { grid-template-columns: repeat(2, 1fr); } }
+  .warning-chip.bad { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+  .warning-chip.ok { background: rgba(16,185,129,0.08); color: #34d399; border: 1px solid rgba(16,185,129,0.2); }
 
-  .greek-cell {
-    padding: 0.9rem 1rem;
-    background: rgba(8,14,28,0.55);
-    border: 1px solid var(--border-light);
-    border-radius: 0.75rem;
-    text-align: center;
-  }
-  .greek-name {
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-dim);
-    margin-bottom: 0.35rem;
-  }
-  .greek-value {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1.05rem;
-    font-weight: 600;
-  }
+  .greeks-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.9rem; }
+  @media (max-width: 900px) { .greeks-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 500px) { .greeks-grid { grid-template-columns: repeat(2, 1fr); } }
+  .greek-cell { padding: 0.8rem 0.7rem; background: rgba(8,14,28,0.45); border: 1px solid var(--border-light); border-radius: 0.7rem; text-align: center; min-width: 0; }
+  html[data-theme="light"] .greek-cell { background: rgba(15,23,42,0.03); }
+  .greek-name { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 0.3rem; }
+  .greek-value { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; font-weight: 600; }
 
-  /* chart */
   .chart-wrap { position: relative; height: 340px; }
-
-  .slider-row {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.25rem;
-  }
-
-  input[type="range"] {
-    flex: 1;
-    accent-color: var(--accent-primary);
-  }
-
-  .slider-value {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    color: var(--accent-primary);
-    min-width: 132px;
-    text-align: right;
-  }
-
-  .legend-row {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin-top: 0.75rem;
-    flex-wrap: wrap;
-  }
+  .chart-wrap.short { height: 260px; }
+  .legend-row { display: flex; gap: 1.25rem; font-size: 0.76rem; color: var(--text-secondary); margin-top: 0.75rem; flex-wrap: wrap; }
   .legend-item { display: flex; align-items: center; gap: 0.4rem; }
   .legend-swatch { width: 14px; height: 3px; border-radius: 2px; }
 
-  .footnote {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    margin-top: 0.5rem;
-    line-height: 1.5;
-  }
+  .footnote { font-size: 0.76rem; color: var(--text-dim); margin-top: 0.5rem; line-height: 1.55; }
 
-  .grid-2col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.75rem;
-  }
-  @media (max-width: 980px) { .grid-2col { grid-template-columns: 1fr; } }
+  .slider-row { display: flex; align-items: center; gap: 1rem; margin-top: 1.1rem; }
+  input[type="range"] { flex: 1; accent-color: var(--accent-primary); }
+  .slider-value { font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: var(--accent-primary); min-width: 150px; text-align: right; }
 
-  .stack { display: flex; flex-direction: column; gap: 1.75rem; }
+  .iv-gauge-wrap { position: relative; height: 46px; }
+  .iv-gauge-track { position: relative; height: 14px; border-radius: 9999px; overflow: hidden; display: flex; margin-top: 0.6rem; }
+  .iv-gauge-seg { height: 100%; }
+  .iv-gauge-marker { position: absolute; top: -6px; width: 3px; height: 26px; background: var(--text-primary); border-radius: 2px; transform: translateX(-1.5px); box-shadow: 0 0 6px rgba(255,255,255,0.6); }
+  .iv-gauge-labels { display: flex; justify-content: space-between; font-size: 0.65rem; color: var(--text-dim); margin-top: 0.4rem; }
 
-  /* Strike selector table */
-  .strike-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; font-size: 0.8rem; }
-  .strike-table th {
-    text-align: right; color: var(--text-dim); font-size: 0.66rem;
-    text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
-    padding: 0 0.6rem 0.5rem;
-  }
-  .strike-table th:first-child, .strike-table td:first-child { text-align: left; }
-  .strike-table td {
-    padding: 0.6rem 0.6rem; text-align: right;
-    background: rgba(8,14,28,0.5);
-    font-family: 'JetBrains Mono', monospace;
-    white-space: nowrap;
-  }
-  .strike-table tr td:first-child { border-radius: 0.5rem 0 0 0.5rem; }
-  .strike-table tr td:last-child { border-radius: 0 0.5rem 0.5rem 0; text-align: center; }
-  .strike-table tr.highlight-row td { background: rgba(45,212,191,0.1); }
+  .action-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem; }
+  .btn { border-radius: 0.55rem; padding: 0.6rem 1.1rem; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid transparent; }
+  .btn-primary { background: var(--accent-primary); color: #06080d; }
+  .btn-primary:hover { background: #5eead4; }
+  .btn-secondary { background: rgba(99,102,241,0.15); color: #a5b4fc; border-color: rgba(99,102,241,0.3); }
+  .btn-secondary:hover { background: rgba(99,102,241,0.28); }
+  .btn-ghost { background: var(--bg-input); color: var(--text-secondary); border-color: rgba(51,65,85,0.5); }
+  .btn-ghost:hover { color: var(--text-primary); }
+  .btn-danger { background: rgba(239,68,68,0.12); color: #f87171; border-color: rgba(239,68,68,0.3); }
+  .btn-danger:hover { background: rgba(239,68,68,0.22); }
+  .btn-sm { padding: 0.35rem 0.7rem; font-size: 0.74rem; }
 
-  .strike-use-btn {
-    background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #a5b4fc;
-    padding: 0.3rem 0.65rem; border-radius: 0.4rem; font-size: 0.72rem; cursor: pointer;
-    font-family: 'Inter', sans-serif; font-weight: 600; transition: background 0.15s;
+  /* Compare / Log tables */
+  .data-table-wrap { overflow-x: auto; }
+  table.data-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; font-size: 0.82rem; }
+  .data-table th {
+    text-align: left; color: var(--text-dim); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em;
+    font-weight: 700; padding: 0 0.6rem 0.5rem; cursor: pointer; user-select: none; white-space: nowrap;
   }
-  .strike-use-btn:hover { background: rgba(99,102,241,0.28); }
+  .data-table th:hover { color: var(--accent-primary); }
+  .data-table td { padding: 0.6rem 0.6rem; background: var(--bg-surface); vertical-align: middle; white-space: nowrap; }
+  .data-table tr td:first-child { border-radius: 0.5rem 0 0 0.5rem; }
+  .data-table tr td:last-child { border-radius: 0 0.5rem 0.5rem 0; }
+  .empty-state { text-align: center; padding: 3rem 1rem; color: var(--text-dim); font-size: 0.88rem; }
+
+  .filter-row { display: flex; gap: 1rem; align-items: flex-end; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .filter-field { min-width: 0; flex: 1 1 160px; }
+
+  .calib-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  @media (max-width: 780px) { .calib-grid { grid-template-columns: repeat(2,1fr); } }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.3); border-radius: 4px; }
 </style>
 </head>
 <body>
@@ -420,320 +290,532 @@
 <div class="container">
   <header>
     <div class="logo-area">
-      <h1>Option P&amp;L Calculator</h1>
-      <p>Black-Scholes fair value, Greeks &amp; payoff modeling for a single option position</p>
+      <h1>Options Trade Analyzer</h1>
+      <p>Model expected value, probability of profit, and risk/reward for single- and multi-leg option trades before you place them.</p>
     </div>
-    <div class="nav-links" style="display:flex; gap:1.5rem;">
-      <a href="./strategies/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 12l3-3 3 3 5-6"/></svg>
-        Strategy Analyzer
-      </a>
-      <a href="/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-        Back to Portfolio
-      </a>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
     </div>
   </header>
 
-  <div class="layout">
-    <!-- INPUT PANEL -->
+  <div class="disclaimer-bar">
+    <strong>Not investment advice.</strong> This is a personal analysis tool — it places no orders and holds no brokerage connection. No live market data feed is wired up (this is a static site with no backend to safely hold an API key), so every price, volatility, open-interest and earnings-date figure below is either <span class="live-tag tag-input" style="vertical-align:middle;">your input</span> or a <span class="live-tag tag-model" style="vertical-align:middle;">Black-Scholes model estimate</span> — never a live quote. All probability and expected-value figures are estimates from that model, not guarantees.
+  </div>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" data-tab="analyze">Analyze Trade</button>
+    <button class="tab-btn" data-tab="compare">Compare / Screen</button>
+    <button class="tab-btn" data-tab="log">Trade Log</button>
+  </div>
+
+  <!-- ================= ANALYZE TAB ================= -->
+  <div class="tab-panel active" id="tab-analyze">
+
     <div class="glass-card">
       <h2 class="panel-title">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         Trade Setup
       </h2>
 
-      <div class="section-label">Contract</div>
+      <div class="section-label">Quick-start strategy (auto-builds legs — you can still edit everything below)</div>
+      <div class="strategy-grid" id="strategyGrid"></div>
 
-      <div class="form-row" style="margin-bottom:1.1rem;">
-        <div class="toggle-group">
-          <div id="btn-call" class="toggle-btn active-call">Call</div>
-          <div id="btn-put" class="toggle-btn">Put</div>
+      <div class="section-label">Underlying &amp; Market Assumptions</div>
+      <div class="input-grid">
+        <div class="fg">
+          <label for="ticker">Ticker</label>
+          <input type="text" id="ticker" value="XYZ" maxlength="10" style="text-transform:uppercase;">
         </div>
-        <div class="toggle-group">
-          <div id="btn-long" class="toggle-btn active-long">Long</div>
-          <div id="btn-short" class="toggle-btn">Short</div>
+        <div class="fg">
+          <label for="spot">Current Price</label>
+          <div class="field-wrap"><span class="field-prefix">$</span><input type="number" id="spot" value="100" step="0.01" min="0.01"></div>
         </div>
-      </div>
-
-      <div class="form-group">
-        <label for="spot">Underlying Spot Price</label>
-        <div class="field-wrap"><span class="field-prefix">$</span>
-          <input type="number" id="spot" value="100" step="0.01" min="0.01">
+        <div class="fg">
+          <label for="iv">Implied Volatility <span class="live-tag tag-input">input</span></label>
+          <div class="field-wrap"><input type="number" id="iv" value="30" step="0.1" min="0.01"><span class="field-suffix">%</span></div>
         </div>
-      </div>
-
-      <div class="form-group">
-        <label for="strike">Strike Price</label>
-        <div class="field-wrap"><span class="field-prefix">$</span>
-          <input type="number" id="strike" value="105" step="0.01" min="0.01">
+        <div class="fg">
+          <label for="hv">Realized/Expected Vol <span class="live-tag tag-input">input</span></label>
+          <div class="field-wrap"><input type="number" id="hv" value="30" step="0.1" min="0.01"><span class="field-suffix">%</span></div>
+          <div class="fg-check"><input type="checkbox" id="hvLinkIv" checked><label for="hvLinkIv" style="margin:0; text-transform:none; font-weight:400;">same as IV</label></div>
         </div>
-      </div>
-
-      <div class="form-group">
-        <label for="premium">Premium Paid / Received (per share)</label>
-        <div class="field-wrap"><span class="field-prefix">$</span>
-          <input type="number" id="premium" value="3.20" step="0.01" min="0">
+        <div class="fg">
+          <label for="drift">Expected Annual Drift</label>
+          <div class="field-wrap"><input type="number" id="drift" value="4.5" step="0.1"><span class="field-suffix">%</span></div>
+          <div class="fg-check"><input type="checkbox" id="driftLinkR" checked><label for="driftLinkR" style="margin:0; text-transform:none; font-weight:400;">= risk-free (neutral)</label></div>
         </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
+        <div class="fg">
+          <label for="riskfree">Risk-Free Rate</label>
+          <div class="field-wrap"><input type="number" id="riskfree" value="4.5" step="0.1"><span class="field-suffix">%</span></div>
+        </div>
+        <div class="fg">
+          <label for="dividend">Dividend Yield</label>
+          <div class="field-wrap"><input type="number" id="dividend" value="0" step="0.1" min="0"><span class="field-suffix">%</span></div>
+        </div>
+        <div class="fg">
+          <label for="ivrank">IV Rank / Percentile <span class="live-tag tag-input">input</span></label>
+          <div class="field-wrap"><input type="number" id="ivrank" value="45" step="1" min="0" max="100"><span class="field-suffix">%ile</span></div>
+        </div>
+        <div class="fg">
+          <label for="expiration">Expiration Date</label>
+          <input type="date" id="expiration">
+        </div>
+        <div class="fg">
+          <label for="evalDate">Valuation Date</label>
+          <input type="date" id="evalDate">
+        </div>
+        <div class="fg">
+          <label for="earningsDate">Next Earnings Date <span class="live-tag tag-input">optional</span></label>
+          <input type="date" id="earningsDate">
+        </div>
+        <div class="fg">
           <label for="contracts">Contracts</label>
           <input type="number" id="contracts" value="1" step="1" min="1">
         </div>
-        <div class="form-group">
+        <div class="fg">
           <label for="multiplier">Multiplier</label>
           <input type="number" id="multiplier" value="100" step="1" min="1">
         </div>
-      </div>
-
-      <hr class="divider">
-      <div class="section-label">Market Assumptions</div>
-
-      <div class="form-group">
-        <label for="expiration">Expiration Date</label>
-        <input type="date" id="expiration">
-      </div>
-
-      <div class="form-group">
-        <label for="evalDate">Valuation Date (today)</label>
-        <input type="date" id="evalDate">
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="volatility">Implied Volatility</label>
-          <div class="field-wrap suffix-pad"><input type="number" id="volatility" value="30" step="0.1" min="0.01"><span class="field-suffix">%</span></div>
-        </div>
-        <div class="form-group">
-          <label for="riskfree">Risk-Free Rate</label>
-          <div class="field-wrap suffix-pad"><input type="number" id="riskfree" value="4.5" step="0.1"><span class="field-suffix">%</span></div>
+        <div class="fg">
+          <label for="pricingBasis">Pricing Basis</label>
+          <select id="pricingBasis">
+            <option value="model">Model (theoretical)</option>
+            <option value="mid" selected>Mid (bid/ask average)</option>
+            <option value="conservative">Conservative (buy@ask, sell@bid)</option>
+          </select>
         </div>
       </div>
-
-      <div class="form-group">
-        <label for="dividend">Dividend Yield</label>
-        <div class="field-wrap suffix-pad"><input type="number" id="dividend" value="0" step="0.1" min="0"><span class="field-suffix">%</span></div>
-      </div>
-
-      <p class="footnote">Fair value and Greeks are computed with the Black-Scholes-Merton model. This tool is for educational estimation only — real option prices are also driven by skew, liquidity and early-exercise premium (American options).</p>
+      <p class="footnote">"Realized/Expected Vol" and "Expected Annual Drift" drive the <em>probability</em> figures (POP, EV, the distribution overlay) — leave them linked to IV / the risk-free rate for a neutral, market-implied view, or override them with your own forecast to see how your edge changes the math. IV alone drives option <em>pricing</em> and the Greeks, which always stay risk-neutral / model-based regardless.</p>
     </div>
 
-    <!-- RESULTS -->
-    <div class="stack">
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        Legs
+      </h2>
+      <div class="legs-table-wrap">
+        <table class="legs-table">
+          <thead>
+            <tr>
+              <th>Type</th><th>Side</th><th>Strike</th><th>Bid</th><th>Ask</th><th>Mid</th>
+              <th>Used <span class="live-tag tag-model" style="margin-left:2px;">calc</span></th>
+              <th>OI</th><th>Vol</th>
+              <th>Δ</th><th>Γ</th><th>Θ/day</th><th>Vega</th><th>Rho</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="legsBody"></tbody>
+        </table>
+      </div>
+      <button class="add-leg-btn" id="addLegBtn">+ Add Leg</button>
+      <p class="footnote">Bid/Ask/OI/Volume are your own manual entries (this tool has no live feed) — used only for the liquidity check and, if selected above, to compute the "Used" price. Leave Bid/Ask blank to price a leg purely off the model. Δ/Γ/Θ/Vega/Rho are always model-based (Black-Scholes), computed from IV — never derived from bid/ask.</p>
+    </div>
 
-      <!-- Summary -->
-      <div class="glass-card">
-        <h2 class="panel-title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
-          Position Summary <span id="posBadge" class="badge badge-green" style="margin-left:0.5rem;">LONG CALL</span>
-        </h2>
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+        Trade Summary <span id="strategyBadge" class="badge badge-blue" style="margin-left:0.4rem;">—</span>
+      </h2>
 
-        <div class="summary-grid">
-          <div class="glass-card stat-card hero">
-            <div class="stat-label">Unrealized P&amp;L (as of valuation date)</div>
-            <div class="stat-value" id="stat-pnl">$0.00</div>
-            <div class="stat-sub" id="stat-pnl-pct">0.00% return on premium</div>
-          </div>
-          <div class="glass-card stat-card">
-            <div class="stat-label">Theoretical Value</div>
-            <div class="stat-value mono" id="stat-fairvalue" style="font-size:1.4rem;">$0.00</div>
-            <div class="stat-sub" id="stat-perContract">per contract</div>
-          </div>
-          <div class="glass-card stat-card">
-            <div class="stat-label">Days to Expiration</div>
-            <div class="stat-value mono" id="stat-dte" style="font-size:1.4rem;">0</div>
-            <div class="stat-sub">calendar days</div>
-          </div>
-          <div class="glass-card stat-card">
-            <div class="stat-label">Breakeven Price</div>
-            <div class="stat-value mono" id="stat-breakeven" style="font-size:1.4rem;">$0.00</div>
-            <div class="stat-sub" id="stat-breakeven-move">at expiration</div>
-          </div>
-          <div class="glass-card stat-card">
-            <div class="stat-label">Max Profit</div>
-            <div class="stat-value mono up" id="stat-maxprofit" style="font-size:1.4rem;">$0.00</div>
-            <div class="stat-sub">at expiration</div>
-          </div>
-          <div class="glass-card stat-card">
-            <div class="stat-label">Max Loss</div>
-            <div class="stat-value mono down" id="stat-maxloss" style="font-size:1.4rem;">$0.00</div>
-            <div class="stat-sub">at expiration</div>
-          </div>
+      <div class="summary-grid">
+        <div class="stat-card hero">
+          <div class="stat-label">Net Debit / Credit</div>
+          <div class="stat-value" id="stat-cost">$0.00</div>
+          <div class="stat-sub" id="stat-cost-sub">—</div>
         </div>
-
-        <div class="section-label">Greeks (position-adjusted)</div>
-        <div class="greeks-grid">
-          <div class="greek-cell"><div class="greek-name">Delta</div><div class="greek-value" id="g-delta">0.00</div></div>
-          <div class="greek-cell"><div class="greek-name">Gamma</div><div class="greek-value" id="g-gamma">0.00</div></div>
-          <div class="greek-cell"><div class="greek-name">Theta / day</div><div class="greek-value" id="g-theta">0.00</div></div>
-          <div class="greek-cell"><div class="greek-name">Vega / 1% IV</div><div class="greek-value" id="g-vega">0.00</div></div>
-          <div class="greek-cell"><div class="greek-name">Rho / 1% rate</div><div class="greek-value" id="g-rho">0.00</div></div>
+        <div class="stat-card hero" id="ev-card">
+          <div class="stat-label">Expected Value (full distribution) <span class="live-tag tag-model">model</span></div>
+          <div class="stat-value" id="stat-ev">$0.00</div>
+          <div class="stat-sub" id="stat-ev-simple">simple 2-outcome EV: $0.00</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Profit</div>
+          <div class="stat-value mono up" id="stat-maxprofit" style="font-size:1.3rem;">$0.00</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Loss</div>
+          <div class="stat-value mono down" id="stat-maxloss" style="font-size:1.3rem;">$0.00</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Breakeven(s)</div>
+          <div class="stat-value mono" id="stat-breakeven" style="font-size:1.15rem;">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Risk : Reward</div>
+          <div class="stat-value mono" id="stat-rr" style="font-size:1.3rem;">—</div>
+          <div class="stat-sub" id="stat-rr-pct"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">POP (Black-Scholes) <span class="live-tag tag-model">model</span></div>
+          <div class="stat-value mono" id="stat-pop-bs" style="font-size:1.3rem;">0%</div>
+          <div class="stat-sub" id="stat-pop-delta">Delta-approx: 0%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Prob. Max Profit / Max Loss</div>
+          <div class="stat-value mono" id="stat-pop-zones" style="font-size:1.1rem;">0% / 0%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Days to Expiration</div>
+          <div class="stat-value mono" id="stat-dte" style="font-size:1.3rem;">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Net Theta / day</div>
+          <div class="stat-value mono" id="stat-theta" style="font-size:1.3rem;">$0.00</div>
         </div>
       </div>
 
-      <!-- Chart -->
-      <div class="glass-card">
-        <h2 class="panel-title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
-          P&amp;L vs. Underlying Price
-        </h2>
-        <div class="chart-wrap"><canvas id="pnlChart"></canvas></div>
-        <div class="legend-row">
-          <div class="legend-item"><span class="legend-swatch" style="background:#2dd4bf;"></span> P&amp;L today (valuation date)</div>
-          <div class="legend-item"><span class="legend-swatch" style="background:#6366f1;"></span> P&amp;L at expiration</div>
-          <div class="legend-item"><span class="legend-swatch" style="background:#e2e8f0;"></span> Spot</div>
-          <div class="legend-item"><span class="legend-swatch" style="background:#f59e0b;"></span> Strike</div>
-          <div class="legend-item"><span class="legend-swatch" style="background:#64748b;"></span> Breakeven</div>
-          <div class="legend-item"><span class="legend-swatch" style="background:#2dd4bf; border-radius:50%; width:8px; height:8px;"></span> Simulated spot</div>
-        </div>
+      <div class="warning-row" id="warningRow"></div>
 
-        <div class="slider-row">
-          <label style="margin:0; white-space:nowrap;">Simulate spot &rarr;</label>
-          <input type="range" id="spotSlider" min="0" max="200" value="100" step="0.5">
-          <span class="slider-value" id="spotSliderValue">$100.00</span>
-        </div>
-        <p class="footnote" id="simFootnote">Drag to preview P&amp;L at a hypothetical underlying price, holding today's valuation date fixed.</p>
+      <div class="section-label">Net Position Greeks <span class="live-tag tag-model" style="margin-left:4px;">model</span></div>
+      <div class="greeks-grid">
+        <div class="greek-cell"><div class="greek-name">Delta</div><div class="greek-value" id="g-delta">0.00</div></div>
+        <div class="greek-cell"><div class="greek-name">Gamma</div><div class="greek-value" id="g-gamma">0.00</div></div>
+        <div class="greek-cell"><div class="greek-name">Theta / day</div><div class="greek-value" id="g-theta">0.00</div></div>
+        <div class="greek-cell"><div class="greek-name">Vega / 1% IV</div><div class="greek-value" id="g-vega">0.00</div></div>
+        <div class="greek-cell"><div class="greek-name">Rho / 1% rate</div><div class="greek-value" id="g-rho">0.00</div></div>
+        <div class="greek-cell"><div class="greek-name">IV Rank</div><div class="greek-value" id="g-ivrank">0%</div></div>
       </div>
 
-      <!-- Strike Selector -->
-      <div class="glass-card">
-        <h2 class="panel-title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
-          Strike Selector — Optimize for Your Price Target
-        </h2>
-        <p class="footnote" style="margin-top:-0.6rem; margin-bottom:1.1rem;">Enter where you think the underlying will be, and by when. This scans a chain of strikes for your current Call/Put and Long/Short choice above and shows which one turns that forecast into the best — and most realistic — profit.</p>
-
-        <div class="form-row" style="margin-bottom:1.25rem; max-width:480px;">
-          <div class="form-group" style="margin-bottom:0;">
-            <label for="targetPrice">Target Price (your forecast)</label>
-            <div class="field-wrap"><span class="field-prefix">$</span>
-              <input type="number" id="targetPrice" value="110" step="0.01" min="0.01">
-            </div>
-          </div>
-          <div class="form-group" style="margin-bottom:0;">
-            <label for="targetDate">By Date</label>
-            <input type="date" id="targetDate">
-          </div>
+      <div class="iv-gauge-wrap">
+        <div class="section-label" style="margin-top:1.25rem;">IV Rank Gauge <span class="live-tag tag-input" style="margin-left:4px;">input</span></div>
+        <div class="iv-gauge-track">
+          <div class="iv-gauge-seg" style="width:33.33%; background:rgba(59,130,246,0.5);"></div>
+          <div class="iv-gauge-seg" style="width:33.33%; background:rgba(245,158,11,0.5);"></div>
+          <div class="iv-gauge-seg" style="width:33.34%; background:rgba(239,68,68,0.5);"></div>
+          <div class="iv-gauge-marker" id="ivGaugeMarker" style="left:45%;"></div>
         </div>
-
-        <div style="overflow-x:auto;">
-          <table class="strike-table">
-            <thead>
-              <tr>
-                <th>Strike</th>
-                <th>Moneyness</th>
-                <th>Premium</th>
-                <th>Delta</th>
-                <th>Prob. Profit</th>
-                <th>Leverage</th>
-                <th>P&amp;L @ Target</th>
-                <th>Return</th>
-                <th>Risk-Adj. Return</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="strikeTableBody"></tbody>
-          </table>
-        </div>
-
-        <p class="footnote">"Prob. Profit" is a risk-neutral estimate (Black-Scholes) of finishing past breakeven by expiration. "Leverage" = (Delta × Spot) / Premium — the classic measure of how much more, in %, an option moves than the stock itself; higher leverage means bigger potential % gains but a lower probability of getting there. "Risk-Adj. Return" assumes a simplified binary outcome — full target-price profit with that probability, otherwise a total loss of premium — so it's shown for long positions only, since a short position's maximum loss isn't fixed at the premium.</p>
+        <div class="iv-gauge-labels"><span>Low (cheap options)</span><span>Mid</span><span>High (rich options)</span></div>
       </div>
 
+      <div class="action-row">
+        <button class="btn btn-secondary" id="addToCompareBtn">+ Add to Comparison</button>
+        <button class="btn btn-primary" id="saveToLogBtn">💾 Save to Trade Log</button>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+        Payoff Diagram + Probability Overlay
+      </h2>
+      <p class="panel-sub">The shaded area shows the model's estimated probability of the stock landing at each price by expiration — green where that price is profitable, red where it isn't — so you can see how much probability mass sits on each side of your breakeven(s).</p>
+      <div class="chart-wrap"><canvas id="payoffChart"></canvas></div>
+      <div class="legend-row">
+        <div class="legend-item"><span class="legend-swatch" style="background:#2dd4bf;"></span> P&amp;L today</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#6366f1;"></span> P&amp;L at expiration</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#e2e8f0;"></span> Spot</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#f59e0b;"></span> Strikes</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#64748b;"></span> Breakeven</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(16,185,129,0.4);"></span> Profit-zone probability</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(239,68,68,0.4);"></span> Loss-zone probability</div>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Theta Decay — Profit if the Price Doesn't Move
+      </h2>
+      <p class="panel-sub">Holds the underlying at today's price and walks the clock forward, isolating how much time decay alone adds to or costs your P&amp;L. Notice the curve accelerates in the final weeks — that's the real, non-linear shape of theta.</p>
+      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr); margin-bottom:1.25rem;">
+        <div class="stat-card"><div class="stat-label">P&amp;L if Unchanged at Expiry</div><div class="stat-value mono" id="decay-pnl-exp" style="font-size:1.25rem;">$0.00</div></div>
+        <div class="stat-card"><div class="stat-label">Avg. Daily Decay</div><div class="stat-value mono" id="decay-perday" style="font-size:1.25rem;">$0.00</div></div>
+        <div class="stat-card"><div class="stat-label">Days Remaining</div><div class="stat-value mono" id="decay-dte" style="font-size:1.25rem;">0</div></div>
+      </div>
+      <div class="chart-wrap short"><canvas id="decayChart"></canvas></div>
+      <div class="slider-row">
+        <label style="margin:0; white-space:nowrap; font-size:0.85rem; color:var(--text-secondary);">Simulate date &rarr;</label>
+        <input type="range" id="decaySlider" min="0" max="45" value="0" step="1">
+        <span class="slider-value" id="decaySliderValue">Day 0</span>
+      </div>
+      <p class="footnote" id="decayFootnote"></p>
+    </div>
+
+  </div>
+
+  <!-- ================= COMPARE TAB ================= -->
+  <div class="tab-panel" id="tab-compare">
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="5"/><rect x="12" y="8" width="3" height="9"/><rect x="17" y="5" width="3" height="12"/></svg>
+        Compare &amp; Screen Candidate Trades
+      </h2>
+      <p class="panel-sub">Build a trade on the "Analyze Trade" tab, then click "+ Add to Comparison" to bring it here. Compare different strikes/expirations for the same idea side by side, ranked by whichever metric matters most to you.</p>
+
+      <div class="filter-row">
+        <div class="filter-field">
+          <label for="cmpSort">Sort by</label>
+          <select id="cmpSort">
+            <option value="ev">Expected Value</option>
+            <option value="pop">Probability of Profit</option>
+            <option value="rr">Risk : Reward</option>
+            <option value="cost">Net Debit/Credit</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="cmpMinOi">Min. Open Interest</label>
+          <input type="number" id="cmpMinOi" value="0" min="0" step="10">
+        </div>
+        <div class="filter-field">
+          <label for="cmpMaxSpread">Max Spread (% of mid)</label>
+          <input type="number" id="cmpMaxSpread" value="100" min="0" step="5">
+        </div>
+        <button class="btn btn-ghost btn-sm" id="cmpClearBtn">Clear All</button>
+      </div>
+
+      <div class="data-table-wrap">
+        <table class="data-table" id="cmpTable">
+          <thead>
+            <tr>
+              <th>Ticker</th><th>Strategy</th><th>Legs</th><th>DTE</th><th>Net Debit/Credit</th>
+              <th>Max Profit</th><th>Max Loss</th><th>Breakeven</th><th>POP</th><th>R:R</th><th>EV</th><th>Flags</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="cmpBody"></tbody>
+        </table>
+        <div class="empty-state" id="cmpEmpty">No trades added yet — analyze one on the first tab and add it here.</div>
+      </div>
     </div>
   </div>
+
+  <!-- ================= TRADE LOG TAB ================= -->
+  <div class="tab-panel" id="tab-log">
+    <div class="glass-card">
+      <h2 class="panel-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        Trade Log &amp; Calibration
+      </h2>
+      <p class="panel-sub">Saved trades live only in this browser (localStorage) — there's no server, so nothing syncs across devices. Log a trade when you open it, then fill in the actual result once it closes to see whether this model's EV and POP estimates are tracking reality.</p>
+
+      <div class="calib-grid">
+        <div class="stat-card"><div class="stat-label">Trades Logged</div><div class="stat-value mono" id="calib-count" style="font-size:1.3rem;">0</div></div>
+        <div class="stat-card"><div class="stat-label">Avg. Planned EV</div><div class="stat-value mono" id="calib-avg-ev" style="font-size:1.3rem;">$0.00</div></div>
+        <div class="stat-card"><div class="stat-label">Avg. Actual P&amp;L (closed)</div><div class="stat-value mono" id="calib-avg-actual" style="font-size:1.3rem;">$0.00</div></div>
+        <div class="stat-card"><div class="stat-label">Win Rate vs. Avg. POP</div><div class="stat-value mono" id="calib-winrate" style="font-size:1.3rem;">— / —</div></div>
+      </div>
+
+      <div class="data-table-wrap">
+        <table class="data-table" id="logTable">
+          <thead>
+            <tr>
+              <th>Date Logged</th><th>Ticker</th><th>Strategy</th><th>DTE</th><th>Net Debit/Credit</th>
+              <th>Planned EV</th><th>Planned POP</th><th>Status</th><th>Actual P&amp;L</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="logBody"></tbody>
+        </table>
+        <div class="empty-state" id="logEmpty">No trades logged yet.</div>
+      </div>
+      <p class="footnote" id="correlationNote"></p>
+    </div>
+  </div>
+
 </div>
 
 <script>
 (function () {
-  // ---------- Black-Scholes core ----------
+  // ============================================================
+  // Black-Scholes core
+  // ============================================================
   function erf(x) {
-    // Abramowitz-Stegun approximation
-    const sign = x < 0 ? -1 : 1;
-    x = Math.abs(x);
-    const a1=0.254829592, a2=-0.284496736, a3=1.421413741, a4=-1.453152027, a5=1.061405429, p=0.3275911;
-    const t = 1 / (1 + p * x);
-    const y = 1 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1) * t * Math.exp(-x*x);
-    return sign * y;
+    const sign = x < 0 ? -1 : 1; x = Math.abs(x);
+    const a1=0.254829592,a2=-0.284496736,a3=1.421413741,a4=-1.453152027,a5=1.061405429,p=0.3275911;
+    const t = 1/(1+p*x);
+    const y = 1-(((((a5*t+a4)*t)+a3)*t+a2)*t+a1)*t*Math.exp(-x*x);
+    return sign*y;
   }
-  function normCDF(x) { return 0.5 * (1 + erf(x / Math.SQRT2)); }
-  function normPDF(x) { return Math.exp(-0.5 * x * x) / Math.sqrt(2 * Math.PI); }
-  function probAbove(x, S, T, r, q, sigma) {
-    if (x <= 0) return 1;
-    if (T <= 0 || sigma <= 0) return S > x ? 1 : 0;
-    const d2 = (Math.log(S / x) + (r - q - 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));
+  function normCDF(x){ return 0.5*(1+erf(x/Math.SQRT2)); }
+  function normPDF(x){ return Math.exp(-0.5*x*x)/Math.sqrt(2*Math.PI); }
+  function probAbove(x,S,T,r,q,sigma){
+    if (x<=0) return 1;
+    if (T<=0 || sigma<=0) return S>x?1:0;
+    const d2=(Math.log(S/x)+(r-q-0.5*sigma*sigma)*T)/(sigma*Math.sqrt(T));
     return normCDF(d2);
   }
-
-  function blackScholes(S, K, T, r, q, sigma, type) {
-    // T in years. Returns { price, delta, gamma, theta, vega, rho }
-    if (T <= 0 || sigma <= 0) {
-      const intrinsic = type === 'call' ? Math.max(S - K, 0) : Math.max(K - S, 0);
-      const delta = type === 'call' ? (S > K ? 1 : 0) : (S < K ? -1 : 0);
-      return { price: intrinsic, delta, gamma: 0, theta: 0, vega: 0, rho: 0 };
+  function lognormalPdf(x,S,T,mu,sigma){
+    if (x<=0 || T<=0 || sigma<=0) return 0;
+    const m = Math.log(S) + (mu - 0.5*sigma*sigma)*T;
+    const v = sigma*Math.sqrt(T);
+    const z = (Math.log(x)-m)/v;
+    return Math.exp(-0.5*z*z) / (x*v*Math.sqrt(2*Math.PI));
+  }
+  function blackScholes(S,K,T,r,q,sigma,type){
+    if (T<=0 || sigma<=0){
+      const intrinsic = type==='call' ? Math.max(S-K,0) : Math.max(K-S,0);
+      const delta = type==='call' ? (S>K?1:0) : (S<K?-1:0);
+      return { price: intrinsic, delta, gamma:0, theta:0, vega:0, rho:0 };
     }
-    const sqrtT = Math.sqrt(T);
-    const d1 = (Math.log(S / K) + (r - q + 0.5 * sigma * sigma) * T) / (sigma * sqrtT);
-    const d2 = d1 - sigma * sqrtT;
-    const eqT = Math.exp(-q * T);
-    const erT = Math.exp(-r * T);
-    const pdf1 = normPDF(d1);
-
-    let price, delta, theta, rho;
-    if (type === 'call') {
-      price = S * eqT * normCDF(d1) - K * erT * normCDF(d2);
-      delta = eqT * normCDF(d1);
-      theta = (-(S * eqT * pdf1 * sigma) / (2 * sqrtT) - r * K * erT * normCDF(d2) + q * S * eqT * normCDF(d1));
-      rho = K * T * erT * normCDF(d2);
+    const sqrtT=Math.sqrt(T);
+    const d1=(Math.log(S/K)+(r-q+0.5*sigma*sigma)*T)/(sigma*sqrtT);
+    const d2=d1-sigma*sqrtT;
+    const eqT=Math.exp(-q*T), erT=Math.exp(-r*T), pdf1=normPDF(d1);
+    let price,delta,theta,rho;
+    if (type==='call'){
+      price = S*eqT*normCDF(d1) - K*erT*normCDF(d2);
+      delta = eqT*normCDF(d1);
+      theta = (-(S*eqT*pdf1*sigma)/(2*sqrtT) - r*K*erT*normCDF(d2) + q*S*eqT*normCDF(d1));
+      rho = K*T*erT*normCDF(d2);
     } else {
-      price = K * erT * normCDF(-d2) - S * eqT * normCDF(-d1);
-      delta = eqT * (normCDF(d1) - 1);
-      theta = (-(S * eqT * pdf1 * sigma) / (2 * sqrtT) + r * K * erT * normCDF(-d2) - q * S * eqT * normCDF(-d1));
-      rho = -K * T * erT * normCDF(-d2);
+      price = K*erT*normCDF(-d2) - S*eqT*normCDF(-d1);
+      delta = eqT*(normCDF(d1)-1);
+      theta = (-(S*eqT*pdf1*sigma)/(2*sqrtT) + r*K*erT*normCDF(-d2) - q*S*eqT*normCDF(-d1));
+      rho = -K*T*erT*normCDF(-d2);
     }
-    const gamma = (eqT * pdf1) / (S * sigma * sqrtT);
-    const vega = S * eqT * pdf1 * sqrtT;
-
-    return {
-      price,
-      delta,
-      gamma,
-      theta: theta / 365,       // per calendar day
-      vega: vega / 100,         // per 1 vol point (1%)
-      rho: rho / 100            // per 1 rate point (1%)
-    };
+    const gamma=(eqT*pdf1)/(S*sigma*sqrtT);
+    const vega=S*eqT*pdf1*sqrtT;
+    return { price, delta, gamma, theta: theta/365, vega: vega/100, rho: rho/100 };
+  }
+  function yearsBetween(d1,d2){ return Math.max(0,(d2-d1)/(365*24*3600*1000)); }
+  function computeExpiryPnLAt(px, legs, totalMultiplier){
+    return legs.reduce((sum,l)=>{
+      const intrinsic = l.type==='call' ? Math.max(px-l.strike,0) : Math.max(l.strike-px,0);
+      const sign = l.side==='buy' ? 1 : -1;
+      return sum + sign*(intrinsic - l.usedPremium)*totalMultiplier;
+    },0);
+  }
+  function analyzeStrategy(legs, totalMultiplier){
+    const strikes=[...new Set(legs.map(l=>l.strike))].sort((a,b)=>a-b);
+    const upsideSlope = legs.reduce((s,l)=> s+(l.type==='call' ? (l.side==='buy'?1:-1) : 0), 0);
+    const farPx=(strikes[strikes.length-1]||100)*3+1000;
+    const xs=[0,...strikes,farPx];
+    const ys=xs.map(px=>computeExpiryPnLAt(px,legs,totalMultiplier));
+    let maxProfit=Math.max(...ys), maxLoss=Math.min(...ys);
+    if (upsideSlope>0) maxProfit=Infinity;
+    if (upsideSlope<0) maxLoss=-Infinity;
+    const breakevens=[];
+    for (let i=0;i<xs.length-1;i++){
+      const y1=ys[i], y2=ys[i+1];
+      if (Math.abs(y1)<1e-6) breakevens.push(xs[i]);
+      else if ((y1<0&&y2>0)||(y1>0&&y2<0)){
+        const t=y1/(y1-y2);
+        breakevens.push(xs[i]+t*(xs[i+1]-xs[i]));
+      }
+    }
+    if (Math.abs(ys[ys.length-1])<1e-6) breakevens.push(xs[xs.length-1]);
+    const uniqueBE=[...new Set(breakevens.map(b=>Math.round(b*100)/100))].filter(b=>b>0&&isFinite(b)).sort((a,b)=>a-b);
+    return { maxProfit, maxLoss, breakevens: uniqueBE };
+  }
+  function probabilityOfProfit(legs,S,T,r,q,sigma,totalMultiplier,breakevens){
+    const strikes=legs.map(l=>l.strike);
+    const points=[...new Set([...strikes,...(breakevens||[])])].sort((a,b)=>a-b);
+    const bounds=[0,...points,Infinity];
+    let pop=0;
+    for (let i=0;i<bounds.length-1;i++){
+      const lo=bounds[i], hi=bounds[i+1];
+      const testPx = isFinite(hi) ? (lo+hi)/2 : (points[points.length-1]||S)*3+1000;
+      const midPnl=computeExpiryPnLAt(testPx,legs,totalMultiplier);
+      const pLo=probAbove(lo,S,T,r,q,sigma);
+      const pHi=isFinite(hi)?probAbove(hi,S,T,r,q,sigma):0;
+      const mass=pLo-pHi;
+      if (midPnl>0) pop+=mass;
+    }
+    return Math.max(0,Math.min(1,pop));
+  }
+  function zoneProbabilities(legs,S,T,r,q,sigma,totalMultiplier,maxProfit,maxLoss,breakevens){
+    const strikes=legs.map(l=>l.strike);
+    const points=[...new Set([...strikes,...(breakevens||[])])].sort((a,b)=>a-b);
+    const bounds=[0,...points,Infinity];
+    let probMaxProfit=0, probMaxLoss=0;
+    for (let i=0;i<bounds.length-1;i++){
+      const lo=bounds[i], hi=bounds[i+1];
+      const testPx = isFinite(hi) ? (lo+hi)/2 : (points[points.length-1]||S)*3+1000;
+      const pnl=computeExpiryPnLAt(testPx,legs,totalMultiplier);
+      const pLo=probAbove(lo,S,T,r,q,sigma);
+      const pHi=isFinite(hi)?probAbove(hi,S,T,r,q,sigma):0;
+      const mass=pLo-pHi;
+      const nearMax = isFinite(maxProfit) ? Math.abs(pnl-maxProfit) < Math.max(1,Math.abs(maxProfit))*0.01 : (!isFinite(hi) && pnl>0);
+      const nearMin = isFinite(maxLoss) ? Math.abs(pnl-maxLoss) < Math.max(1,Math.abs(maxLoss))*0.01 : (!isFinite(hi) && pnl<0);
+      if (nearMax) probMaxProfit+=mass;
+      if (nearMin) probMaxLoss+=mass;
+    }
+    return { probMaxProfit: Math.max(0,Math.min(1,probMaxProfit)), probMaxLoss: Math.max(0,Math.min(1,probMaxLoss)) };
+  }
+  function fullDistributionEV(legs,S,T,r,q,sigma,mu,totalMultiplier){
+    if (T<=0) return computeExpiryPnLAt(S,legs,totalMultiplier);
+    const m = Math.log(S) + (mu - 0.5*sigma*sigma)*T;
+    const v = sigma*Math.sqrt(T);
+    const lo = Math.exp(m - 6*v), hi = Math.exp(m + 6*v);
+    const steps = 500;
+    let ev = 0;
+    for (let i=0;i<steps;i++){
+      const x0 = lo + (hi-lo)*(i/steps);
+      const x1 = lo + (hi-lo)*((i+1)/steps);
+      const xm = (x0+x1)/2;
+      const pnl = computeExpiryPnLAt(xm, legs, totalMultiplier);
+      const dens = lognormalPdf(xm,S,T,mu,sigma);
+      ev += pnl * dens * (x1-x0);
+    }
+    return ev;
+  }
+  function priceWindowMulti(S, strikes, T, sigma){
+    const Tsafe=Math.max(T,1/365), sigmaSafe=Math.max(sigma,0.05);
+    const volMove=S*sigmaSafe*Math.sqrt(Tsafe)*2.75;
+    const minK=Math.min(S,...strikes), maxK=Math.max(S,...strikes);
+    const pad=Math.max(volMove,(maxK-minK)*0.65,S*0.1);
+    return { lo: Math.max(0,minK-pad), hi: maxK+pad };
+  }
+  function detectStrategy(legs){
+    if (!legs.length) return 'No Legs';
+    if (legs.length===1){
+      const l=legs[0];
+      return (l.side==='buy'?'Long ':'Short ') + (l.type==='call'?'Call':'Put');
+    }
+    if (legs.length===2){
+      const sorted=[...legs].sort((x,y)=>x.strike-y.strike);
+      const [a,b]=sorted;
+      if (a.type===b.type){
+        if (a.side==='buy' && b.side==='sell') return a.type==='call' ? 'Bull Call Spread' : 'Bull Put Spread';
+        if (a.side==='sell' && b.side==='buy') return a.type==='call' ? 'Bear Call Spread' : 'Bear Put Spread';
+        return '2-Leg Custom (' + a.type + 's)';
+      } else {
+        const bothBuy = a.side==='buy' && b.side==='buy';
+        const bothSell = a.side==='sell' && b.side==='sell';
+        if (a.strike===b.strike) return bothBuy ? 'Long Straddle' : bothSell ? 'Short Straddle' : 'Custom Straddle';
+        return bothBuy ? 'Long Strangle' : bothSell ? 'Short Strangle' : 'Custom Strangle';
+      }
+    }
+    if (legs.length===4){
+      const puts=legs.filter(l=>l.type==='put').sort((x,y)=>x.strike-y.strike);
+      const calls=legs.filter(l=>l.type==='call').sort((x,y)=>x.strike-y.strike);
+      if (puts.length===2 && calls.length===2){
+        const [p1,p2]=puts, [c1,c2]=calls;
+        if (p1.side==='buy'&&p2.side==='sell'&&c1.side==='sell'&&c2.side==='buy'){
+          return p2.strike===c1.strike ? 'Iron Butterfly' : 'Iron Condor';
+        }
+        if (p1.side==='sell'&&p2.side==='buy'&&c1.side==='buy'&&c2.side==='sell'){
+          return p2.strike===c1.strike ? 'Reverse Iron Butterfly' : 'Reverse Iron Condor';
+        }
+      }
+    }
+    return legs.length + '-Leg Custom Position';
   }
 
-  // ---------- Chart vertical reference-line plugin ----------
+  // Chart.js vertical reference-line plugin (shared by both charts)
   const vertLinesPlugin = {
     id: 'vertLines',
-    afterDatasetsDraw(chart, args, opts) {
-      const lines = (opts && opts.lines) || [];
+    afterDatasetsDraw(chart, args, opts){
+      const lines=(opts&&opts.lines)||[];
       if (!lines.length) return;
       const { ctx, chartArea, scales } = chart;
       const xScale = scales.x;
       ctx.save();
-      lines.forEach(line => {
-        if (line.value == null || !isFinite(line.value)) return;
-        if (line.value < xScale.min || line.value > xScale.max) return;
-        const x = xScale.getPixelForValue(line.value);
+      lines.forEach(line=>{
+        if (line.value==null || !isFinite(line.value)) return;
+        if (line.value<xScale.min || line.value>xScale.max) return;
+        const x=xScale.getPixelForValue(line.value);
         ctx.beginPath();
-        ctx.strokeStyle = line.color;
-        ctx.lineWidth = line.width || 1.25;
-        ctx.setLineDash(line.dash || []);
-        ctx.moveTo(x, chartArea.top);
-        ctx.lineTo(x, chartArea.bottom);
-        ctx.stroke();
-        if (line.label) {
+        ctx.strokeStyle=line.color;
+        ctx.lineWidth=line.width||1.25;
+        ctx.setLineDash(line.dash||[]);
+        ctx.moveTo(x,chartArea.top); ctx.lineTo(x,chartArea.bottom); ctx.stroke();
+        if (line.label){
           ctx.setLineDash([]);
-          ctx.fillStyle = line.color;
-          ctx.font = '600 10px Inter, sans-serif';
-          const rightAligned = line.align === 'right';
-          ctx.textAlign = rightAligned ? 'right' : 'left';
-          ctx.fillText(line.label, x + (rightAligned ? -5 : 5), chartArea.top + 12 + (line.labelOffset || 0));
+          ctx.fillStyle=line.color;
+          ctx.font='600 10px Inter, sans-serif';
+          const rightAligned=line.align==='right';
+          ctx.textAlign=rightAligned?'right':'left';
+          const baseY = line.pos==='bottom' ? chartArea.bottom-8 : chartArea.top+12;
+          const dir = line.pos==='bottom' ? -1 : 1;
+          ctx.fillText(line.label, x+(rightAligned?-5:5), baseY+dir*(line.labelOffset||0));
         }
       });
       ctx.restore();
@@ -741,365 +823,668 @@
   };
   if (window.Chart) Chart.register(vertLinesPlugin);
 
-  // ---------- DOM ----------
+  // Strategy leg templates (relative to spot S, width fraction w)
+  const STRATEGY_TEMPLATES = {
+    long_call: S=>[{type:'call',side:'buy',strike:S}],
+    long_put: S=>[{type:'put',side:'buy',strike:S}],
+    bull_call_spread: (S,w)=>[{type:'call',side:'buy',strike:S},{type:'call',side:'sell',strike:S*(1+w)}],
+    bear_put_spread: (S,w)=>[{type:'put',side:'buy',strike:S},{type:'put',side:'sell',strike:S*(1-w)}],
+    bull_put_spread: (S,w)=>[{type:'put',side:'sell',strike:S},{type:'put',side:'buy',strike:S*(1-w)}],
+    bear_call_spread: (S,w)=>[{type:'call',side:'sell',strike:S},{type:'call',side:'buy',strike:S*(1+w)}],
+    long_straddle: S=>[{type:'call',side:'buy',strike:S},{type:'put',side:'buy',strike:S}],
+    long_strangle: (S,w)=>[{type:'call',side:'buy',strike:S*(1+w)},{type:'put',side:'buy',strike:S*(1-w)}],
+    iron_condor: (S,w)=>[
+      {type:'put',side:'buy',strike:S*(1-2*w)},{type:'put',side:'sell',strike:S*(1-w)},
+      {type:'call',side:'sell',strike:S*(1+w)},{type:'call',side:'buy',strike:S*(1+2*w)}
+    ],
+    iron_butterfly: (S,w)=>[
+      {type:'put',side:'buy',strike:S*(1-w)},{type:'put',side:'sell',strike:S},
+      {type:'call',side:'sell',strike:S},{type:'call',side:'buy',strike:S*(1+w)}
+    ]
+  };
+  const STRATEGY_LABELS = {
+    long_call:'Long Call', long_put:'Long Put', bull_call_spread:'Bull Call Spread', bear_put_spread:'Bear Put Spread',
+    bull_put_spread:'Bull Put Spread', bear_call_spread:'Bear Call Spread', long_straddle:'Long Straddle',
+    long_strangle:'Long Strangle', iron_condor:'Iron Condor', iron_butterfly:'Iron Butterfly'
+  };
+  function roundStrike(x,S){
+    const inc = S<20?0.5:S<50?1:S<200?2.5:S<1000?5:25;
+    return Math.max(inc, Math.round(x/inc)*inc);
+  }
+
+  // ============================================================
+  // DOM helpers
+  // ============================================================
   const el = id => document.getElementById(id);
-  const fmtUSD = v => (v < 0 ? '-$' : '$') + Math.abs(v).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
-  const fmtNum = (v, d=4) => v.toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d});
-
-  let optionType = 'call';   // call | put
-  let position = 'long';     // long | short
-
-  const btnCall = el('btn-call'), btnPut = el('btn-put'), btnLong = el('btn-long'), btnShort = el('btn-short');
-
-  function setOptionType(t) {
-    optionType = t;
-    btnCall.classList.toggle('active-call', t === 'call');
-    btnPut.classList.toggle('active-put', t === 'put');
-    recalc();
+  const fmtUSD = v => (v<0?'-$':'$') + Math.abs(v).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+  const fmtNum = (v,d=4) => v.toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+  // JSON.stringify silently turns Infinity/-Infinity into null, which would
+  // render "Unlimited" max profit/loss as "$0.00" after a reload — round-trip
+  // them through sentinel strings instead.
+  function reviveComparisonRow(r){
+    if (r.maxProfit==='Infinity') r.maxProfit=Infinity;
+    if (r.maxLoss==='-Infinity') r.maxLoss=-Infinity;
+    return r;
   }
-  function setPosition(p) {
-    position = p;
-    btnLong.classList.toggle('active-long', p === 'long');
-    btnShort.classList.toggle('active-short', p === 'short');
-    recalc();
+  function prepComparisonRowForStorage(r){
+    const copy = {...r};
+    if (copy.maxProfit===Infinity) copy.maxProfit='Infinity';
+    if (copy.maxLoss===-Infinity) copy.maxLoss='-Infinity';
+    return copy;
   }
-  btnCall.addEventListener('click', () => setOptionType('call'));
-  btnPut.addEventListener('click', () => setOptionType('put'));
-  btnLong.addEventListener('click', () => setPosition('long'));
-  btnShort.addEventListener('click', () => setPosition('short'));
+  function saveComparisonList(){
+    localStorage.setItem('optAnalyzer_comparison', JSON.stringify(comparisonList.map(prepComparisonRowForStorage)));
+  }
+  let legIdCounter = 0;
+  let legs = [];
+  let payoffChart, decayChart;
+  let decaySliderTouched = false;
+  let comparisonList = JSON.parse(localStorage.getItem('optAnalyzer_comparison') || '[]').map(reviveComparisonRow);
+  let tradeLog = JSON.parse(localStorage.getItem('optAnalyzer_tradelog') || '[]');
 
-  // default dates: eval = today, expiration = +45 days
+  // ---------- Theme ----------
+  const themeToggle = el('themeToggle');
+  function applyTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    themeToggle.textContent = t==='light' ? '☀️ Light' : '🌙 Dark';
+    localStorage.setItem('optAnalyzer_theme', t);
+  }
+  applyTheme(localStorage.getItem('optAnalyzer_theme') || 'dark');
+  themeToggle.addEventListener('click', () => {
+    applyTheme(document.documentElement.getAttribute('data-theme')==='light' ? 'dark' : 'light');
+  });
+
+  // ---------- Tabs ----------
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b===btn));
+      document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active', p.id==='tab-'+btn.dataset.tab));
+      if (btn.dataset.tab==='compare') renderComparisonTable();
+      if (btn.dataset.tab==='log') renderLogTable();
+    });
+  });
+
+  // ---------- Strategy picker ----------
+  const grid = el('strategyGrid');
+  Object.keys(STRATEGY_LABELS).forEach(key=>{
+    const btn=document.createElement('div');
+    btn.className='strategy-btn';
+    btn.textContent=STRATEGY_LABELS[key];
+    btn.dataset.key=key;
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.strategy-btn').forEach(b=>b.classList.toggle('active', b===btn));
+      const S=parseFloat(el('spot').value)||100;
+      const w=0.05;
+      const templateLegs = STRATEGY_TEMPLATES[key](S,w).map(l=>({...l, strike: roundStrike(l.strike,S)}));
+      legs = templateLegs.map(l=>({ id: ++legIdCounter, type:l.type, side:l.side, strike:l.strike, bid:null, ask:null, oi:null, volume:null }));
+      decaySliderTouched=false;
+      renderLegsTable();
+      recalc();
+    });
+    grid.appendChild(btn);
+  });
+
+  // ---------- Default dates ----------
   const today = new Date();
-  const exp = new Date(today.getTime() + 45 * 24 * 3600 * 1000);
-  const toISO = d => d.toISOString().slice(0, 10);
+  const exp = new Date(today.getTime() + 45*24*3600*1000);
+  const toISO = d => d.toISOString().slice(0,10);
   el('evalDate').value = toISO(today);
   el('expiration').value = toISO(exp);
-  el('targetDate').value = toISO(exp);
 
-  const inputs = ['spot','strike','premium','contracts','multiplier','expiration','evalDate','volatility','riskfree','dividend'];
-  inputs.forEach(id => el(id).addEventListener('input', () => { syncedFromSlider = false; recalc(); }));
+  // Seed with a default bull call spread example
+  (function seedDefault(){
+    const S=100, w=0.05;
+    const templateLegs = STRATEGY_TEMPLATES.bull_call_spread(S,w).map(l=>({...l, strike: roundStrike(l.strike,S)}));
+    legs = templateLegs.map(l=>({ id: ++legIdCounter, type:l.type, side:l.side, strike:l.strike, bid:null, ask:null, oi:null, volume:null }));
+    document.querySelector('.strategy-btn[data-key="bull_call_spread"]').classList.add('active');
+  })();
 
-  ['targetPrice','targetDate'].forEach(id => el(id).addEventListener('input', recalc));
-
-  const spotSlider = el('spotSlider');
-  let syncedFromSlider = false;
-  spotSlider.addEventListener('input', () => { syncedFromSlider = true; recalc(); });
-
-  function yearsBetween(d1, d2) {
-    return Math.max(0, (d2 - d1) / (365 * 24 * 3600 * 1000));
-  }
-
-  // A ~3 standard-deviation expected move (from vol & time to expiry), with
-  // floors so a near-expiry or low-vol contract still shows a readable window.
-  function priceWindow(S, K, T, sigma) {
-    const Tsafe = Math.max(T, 1 / 365);
-    const sigmaSafe = Math.max(sigma, 0.05);
-    const move = Math.max(
-      S * sigmaSafe * Math.sqrt(Tsafe) * 3.5,
-      Math.abs(K - S) * 1.6,
-      S * 0.12
-    );
-    const lo = Math.max(0, Math.min(S, K) - move);
-    const hi = Math.max(S, K) + move;
-    return { lo, hi };
-  }
-
-  let chart;
-
-  function recalc() {
-    const S = parseFloat(el('spot').value) || 0;
-    const K = parseFloat(el('strike').value) || 0;
-    const premium = parseFloat(el('premium').value) || 0;
-    const contracts = Math.max(1, parseInt(el('contracts').value) || 1);
-    const multiplier = Math.max(1, parseFloat(el('multiplier').value) || 100);
-    const sigma = Math.max(0.0001, (parseFloat(el('volatility').value) || 0) / 100);
-    const r = (parseFloat(el('riskfree').value) || 0) / 100;
-    const q = (parseFloat(el('dividend').value) || 0) / 100;
-
-    const expDate = new Date(el('expiration').value);
-    const evalDate = new Date(el('evalDate').value);
-    const T = yearsBetween(evalDate, expDate);
-    const dte = Math.round(T * 365);
-
-    // Window the chart/slider around the range of prices actually plausible for
-    // this contract (expected move from vol & time), so the interesting part of
-    // the curve isn't squashed by a handful of extreme, low-probability prices.
-    const { lo: winLo, hi: winHi } = priceWindow(S, K, T, sigma);
-    spotSlider.min = winLo.toFixed(2);
-    spotSlider.max = winHi.toFixed(2);
-    spotSlider.step = ((winHi - winLo) / 400).toFixed(4);
-    if (!syncedFromSlider) spotSlider.value = S;
-    const simSpot = Math.min(winHi, Math.max(winLo, parseFloat(spotSlider.value) || S));
-    el('spotSliderValue').textContent = fmtUSD(simSpot);
-
-    const sign = position === 'long' ? 1 : -1;
-    const totalMultiplier = multiplier * contracts;
-
-    // Current theoretical value at spot S, today
-    const bsToday = blackScholes(S, K, T, r, q, sigma, optionType);
-    // Value at simulated spot, today (for chart "today" line)
-    const bsSimToday = blackScholes(simSpot, K, T, r, q, sigma, optionType);
-
-    // P&L at current spot & valuation date
-    const pnlNow = sign * (bsToday.price - premium) * totalMultiplier;
-    const pnlPct = premium > 0 ? (sign * (bsToday.price - premium) / premium) * 100 : 0;
-
-    el('stat-pnl').textContent = fmtUSD(pnlNow);
-    el('stat-pnl').className = 'stat-value ' + (pnlNow > 0 ? 'up' : pnlNow < 0 ? 'down' : 'neutral');
-    el('stat-pnl-pct').textContent = (pnlPct >= 0 ? '+' : '') + pnlPct.toFixed(2) + '% return on premium at risk';
-
-    el('stat-fairvalue').textContent = fmtUSD(bsToday.price);
-    el('stat-perContract').textContent = fmtUSD(bsToday.price * multiplier) + ' per contract × ' + contracts;
-    el('stat-dte').textContent = dte;
-
-    // Breakeven
-    const breakeven = optionType === 'call' ? K + premium : K - premium;
-    el('stat-breakeven').textContent = fmtUSD(Math.max(breakeven, 0));
-    const moveNeeded = S > 0 ? ((breakeven - S) / S) * 100 : 0;
-    el('stat-breakeven-move').textContent = (moveNeeded >= 0 ? '+' : '') + moveNeeded.toFixed(1) + '% move from spot';
-
-    // Max profit / loss (at expiration), per full position
-    let maxProfit, maxLoss;
-    const premiumTotal = premium * totalMultiplier;
-    if (optionType === 'call') {
-      if (position === 'long') { maxProfit = Infinity; maxLoss = premiumTotal; }
-      else { maxProfit = premiumTotal; maxLoss = Infinity; }
-    } else {
-      const intrinsicCap = K * totalMultiplier;
-      if (position === 'long') { maxProfit = intrinsicCap - premiumTotal; maxLoss = premiumTotal; }
-      else { maxProfit = premiumTotal; maxLoss = intrinsicCap - premiumTotal; }
-    }
-    el('stat-maxprofit').textContent = maxProfit === Infinity ? 'Unlimited' : fmtUSD(maxProfit);
-    el('stat-maxloss').textContent = maxLoss === Infinity ? 'Unlimited' : fmtUSD(maxLoss);
-
-    // Badge
-    const badge = el('posBadge');
-    badge.textContent = (position === 'long' ? 'LONG ' : 'SHORT ') + optionType.toUpperCase();
-    badge.className = 'badge ' + (position === 'long' ? 'badge-green' : 'badge-red');
-
-    // Greeks scaled to position (sign + multiplier*contracts)
-    el('g-delta').textContent = fmtNum(sign * bsToday.delta * totalMultiplier, 2);
-    el('g-gamma').textContent = fmtNum(sign * bsToday.gamma * totalMultiplier, 4);
-    el('g-theta').textContent = fmtUSD(sign * bsToday.theta * totalMultiplier);
-    el('g-vega').textContent = fmtUSD(sign * bsToday.vega * totalMultiplier);
-    el('g-rho').textContent = fmtUSD(sign * bsToday.rho * totalMultiplier);
-
-    // Sim footnote P&L
-    const pnlSim = sign * (bsSimToday.price - premium) * totalMultiplier;
-    el('simFootnote').innerHTML = `At <strong>${fmtUSD(simSpot)}</strong> on the valuation date, theoretical P&amp;L would be <strong class="${pnlSim>=0?'up':'down'}">${fmtUSD(pnlSim)}</strong> (fair value ${fmtUSD(bsSimToday.price)}).`;
-
-    updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot);
-    updateStrikeSelector(S, T, r, q, sigma, contracts, multiplier);
-  }
-
-  // ---------- Strike Selector ----------
-  function buildStrikeChain(S, sigma, T) {
-    const Tsafe = Math.max(T, 1 / 365);
-    const sigmaSafe = Math.max(sigma, 0.05);
-    const half = Math.max(S * sigmaSafe * Math.sqrt(Tsafe) * 2.2, S * 0.08);
-    const inc = S < 20 ? 0.5 : S < 50 ? 1 : S < 200 ? 2.5 : S < 1000 ? 5 : 25;
-    const n = 5;
-    const strikes = [];
-    for (let i = -n; i <= n; i++) {
-      const k = Math.max(inc, Math.round((S + (half / n) * i) / inc) * inc);
-      if (!strikes.includes(k)) strikes.push(k);
-    }
-    return strikes.sort((a, b) => a - b);
-  }
-
-  function updateStrikeSelector(S, T, r, q, sigma, contracts, multiplier) {
-    const targetPrice = parseFloat(el('targetPrice').value) || S;
-    const expDate = new Date(el('expiration').value);
-    const evalDateVal = new Date(el('evalDate').value);
-    let targetDate = new Date(el('targetDate').value);
-    if (isNaN(targetDate.getTime())) targetDate = expDate;
-    if (targetDate > expDate) targetDate = expDate;
-    if (targetDate < evalDateVal) targetDate = evalDateVal;
-    const Ttarget = yearsBetween(targetDate, expDate);
-
-    const chain = buildStrikeChain(S, sigma, T);
-    const sign = position === 'long' ? 1 : -1;
-    const totalMultiplier = multiplier * contracts;
-    const currentStrike = parseFloat(el('strike').value);
-
-    const rows = chain.map(K => {
-      const bsNow = blackScholes(S, K, T, r, q, sigma, optionType);
-      const premium = bsNow.price;
-      const delta = bsNow.delta;
-      const breakeven = optionType === 'call' ? K + premium : K - premium;
-      const probBeyond = probAbove(breakeven, S, T, r, q, sigma);
-      let pop;
-      if (optionType === 'call') pop = position === 'long' ? probBeyond : 1 - probBeyond;
-      else pop = position === 'long' ? (1 - probBeyond) : probBeyond;
-      pop = Math.max(0, Math.min(1, pop));
-
-      const leverage = premium > 0 ? Math.abs(delta * S / premium) : 0;
-
-      const bsTarget = blackScholes(targetPrice, K, Ttarget, r, q, sigma, optionType);
-      const pnl = sign * (bsTarget.price - premium) * totalMultiplier;
-      const costBasis = Math.abs(premium * totalMultiplier);
-      const returnPct = costBasis > 0 ? (pnl / costBasis) * 100 : 0;
-
-      const riskAdjReturn = position === 'long' ? (pop * returnPct - (1 - pop) * 100) : null;
-
-      const moneyness = optionType === 'call' ? ((K - S) / S) * 100 : ((S - K) / S) * 100;
-
-      return { K, premium, delta, pop, leverage, pnl, returnPct, riskAdjReturn, moneyness };
+  // ---------- Shared inputs wiring ----------
+  const sharedInputs = ['ticker','spot','iv','hv','drift','riskfree','dividend','ivrank','expiration','evalDate','earningsDate','contracts','multiplier','pricingBasis'];
+  sharedInputs.forEach(id=>{
+    el(id).addEventListener('input', ()=>{
+      if (id==='spot' || id==='expiration' || id==='evalDate') decaySliderTouched=false;
+      recalc();
     });
+  });
+  el('hvLinkIv').addEventListener('change', ()=>{
+    if (el('hvLinkIv').checked) { el('hv').value = el('iv').value; el('hv').disabled=true; } else { el('hv').disabled=false; }
+    recalc();
+  });
+  el('iv').addEventListener('input', ()=>{ if (el('hvLinkIv').checked) el('hv').value = el('iv').value; });
+  el('hv').disabled = true;
+  el('driftLinkR').addEventListener('change', ()=>{
+    if (el('driftLinkR').checked) { el('drift').value = el('riskfree').value; el('drift').disabled=true; } else { el('drift').disabled=false; }
+    recalc();
+  });
+  el('riskfree').addEventListener('input', ()=>{ if (el('driftLinkR').checked) el('drift').value = el('riskfree').value; });
+  el('drift').disabled = true;
 
-    let bestReturnIdx = 0;
-    rows.forEach((row, i) => { if (row.returnPct > rows[bestReturnIdx].returnPct) bestReturnIdx = i; });
-    let bestRiskAdjIdx = -1;
-    if (position === 'long') {
-      bestRiskAdjIdx = 0;
-      rows.forEach((row, i) => { if (row.riskAdjReturn > rows[bestRiskAdjIdx].riskAdjReturn) bestRiskAdjIdx = i; });
-    }
+  const decaySlider = el('decaySlider');
+  decaySlider.addEventListener('input', ()=>{ decaySliderTouched=true; recalc(); });
 
-    const tbody = el('strikeTableBody');
-    tbody.innerHTML = rows.map((row, i) => {
-      const isCurrent = Math.abs(row.K - currentStrike) < 0.001;
-      let strikeCell = '$' + row.K.toFixed(2);
-      if (isCurrent) strikeCell += ' <span class="badge badge-amber">CURRENT</span>';
-      if (i === bestReturnIdx) strikeCell += ' <span class="badge badge-green">BEST RETURN</span>';
-      if (i === bestRiskAdjIdx) strikeCell += ' <span class="badge badge-blue">BEST RISK-ADJ</span>';
-      const moneynessLabel = row.moneyness >= 0
-        ? '+' + row.moneyness.toFixed(1) + '% OTM'
-        : Math.abs(row.moneyness).toFixed(1) + '% ITM';
-      return `
-        <tr class="${isCurrent ? 'highlight-row' : ''}">
-          <td style="text-align:left; font-weight:700;">${strikeCell}</td>
-          <td>${moneynessLabel}</td>
-          <td>${fmtUSD(row.premium)}</td>
-          <td>${row.delta.toFixed(2)}</td>
-          <td>${(row.pop * 100).toFixed(0)}%</td>
-          <td>${row.leverage.toFixed(1)}x</td>
-          <td class="${row.pnl >= 0 ? 'up' : 'down'}">${fmtUSD(row.pnl)}</td>
-          <td class="${row.returnPct >= 0 ? 'up' : 'down'}">${row.returnPct >= 0 ? '+' : ''}${row.returnPct.toFixed(1)}%</td>
-          <td class="${row.riskAdjReturn == null ? 'neutral' : (row.riskAdjReturn >= 0 ? 'up' : 'down')}">${row.riskAdjReturn == null ? '—' : (row.riskAdjReturn >= 0 ? '+' : '') + row.riskAdjReturn.toFixed(1) + '%'}</td>
-          <td><button type="button" class="strike-use-btn" data-strike="${row.K}">Use</button></td>
-        </tr>
-      `;
-    }).join('');
+  el('addLegBtn').addEventListener('click', ()=>{
+    const S=parseFloat(el('spot').value)||100;
+    legs.push({ id: ++legIdCounter, type:'call', side:'buy', strike: roundStrike(S,S), bid:null, ask:null, oi:null, volume:null });
+    document.querySelectorAll('.strategy-btn').forEach(b=>b.classList.remove('active'));
+    renderLegsTable();
+    recalc();
+  });
 
-    tbody.querySelectorAll('.strike-use-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        el('strike').value = btn.dataset.strike;
-        syncedFromSlider = false;
+  // ============================================================
+  // Legs table render
+  // ============================================================
+  function renderLegsTable(){
+    const body = el('legsBody');
+    body.innerHTML = legs.map((l,i)=>`
+      <tr data-idx="${i}">
+        <td><div class="toggle-mini"><button type="button" class="type-btn ${l.type==='call'?'active-call':''}" data-field="type" data-val="call">C</button><button type="button" class="type-btn ${l.type==='put'?'active-put':''}" data-field="type" data-val="put">P</button></div></td>
+        <td><div class="toggle-mini"><button type="button" class="side-btn ${l.side==='buy'?'active-buy':''}" data-field="side" data-val="buy">Buy</button><button type="button" class="side-btn ${l.side==='sell'?'active-sell':''}" data-field="side" data-val="sell">Sell</button></div></td>
+        <td class="num-cell"><input type="number" class="leg-input" data-field="strike" step="0.5" min="0.5" value="${l.strike}"></td>
+        <td class="num-cell"><input type="number" class="leg-input" data-field="bid" step="0.01" min="0" placeholder="—" value="${l.bid ?? ''}"></td>
+        <td class="num-cell"><input type="number" class="leg-input" data-field="ask" step="0.01" min="0" placeholder="—" value="${l.ask ?? ''}"></td>
+        <td class="num-cell mono" id="leg-mid-${l.id}">—</td>
+        <td class="num-cell mono" id="leg-used-${l.id}">—</td>
+        <td class="num-cell"><input type="number" class="leg-input" data-field="oi" step="1" min="0" placeholder="—" value="${l.oi ?? ''}"></td>
+        <td class="num-cell"><input type="number" class="leg-input" data-field="volume" step="1" min="0" placeholder="—" value="${l.volume ?? ''}"></td>
+        <td class="num-cell mono" id="leg-delta-${l.id}">—</td>
+        <td class="num-cell mono" id="leg-gamma-${l.id}">—</td>
+        <td class="num-cell mono" id="leg-theta-${l.id}">—</td>
+        <td class="num-cell mono" id="leg-vega-${l.id}">—</td>
+        <td class="num-cell mono" id="leg-rho-${l.id}">—</td>
+        <td><button type="button" class="leg-remove-btn" data-idx="${i}" title="Remove leg">✕</button></td>
+      </tr>
+    `).join('');
+
+    body.querySelectorAll('.type-btn, .side-btn').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        const tr = e.target.closest('tr');
+        const idx = parseInt(tr.dataset.idx);
+        legs[idx][e.target.dataset.field] = e.target.dataset.val;
+        renderLegsTable();
+        recalc();
+      });
+    });
+    body.querySelectorAll('.leg-input').forEach(inp=>{
+      inp.addEventListener('input', (e)=>{
+        const tr = e.target.closest('tr');
+        const idx = parseInt(tr.dataset.idx);
+        const field = e.target.dataset.field;
+        const val = e.target.value === '' ? null : parseFloat(e.target.value);
+        legs[idx][field] = val;
+        recalc();
+      });
+    });
+    body.querySelectorAll('.leg-remove-btn').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        const idx = parseInt(e.target.dataset.idx);
+        legs.splice(idx,1);
+        document.querySelectorAll('.strategy-btn').forEach(b=>b.classList.remove('active'));
+        renderLegsTable();
         recalc();
       });
     });
   }
 
-  function updateChart(S, K, T, r, q, sigma, premium, sign, totalMultiplier, breakeven, simSpot) {
-    const { lo, hi } = priceWindow(S, K, T, sigma);
-    const steps = 80;
-    const pnlToday = [];
-    const pnlExpiry = [];
+  function getUsedPremium(leg, modelPrice, basis){
+    const bid = leg.bid, ask = leg.ask;
+    if (basis==='model') return modelPrice;
+    if (basis==='conservative'){
+      if (leg.side==='buy') return (ask!=null && ask>0) ? ask : ((bid!=null&&bid>0)?bid:modelPrice);
+      return (bid!=null && bid>0) ? bid : ((ask!=null&&ask>0)?ask:modelPrice);
+    }
+    // mid
+    if (bid!=null && bid>0 && ask!=null && ask>0) return (bid+ask)/2;
+    if (bid!=null && bid>0) return bid;
+    if (ask!=null && ask>0) return ask;
+    return modelPrice;
+  }
 
-    for (let i = 0; i <= steps; i++) {
-      const px = lo + (hi - lo) * (i / steps);
+  // ============================================================
+  // Main recalculation
+  // ============================================================
+  function recalc(){
+    if (!legs.length) return;
+    const S = parseFloat(el('spot').value) || 0;
+    const sigma = Math.max(0.0001, (parseFloat(el('iv').value)||0)/100);
+    const sigmaReal = Math.max(0.0001, (parseFloat(el('hv').value)||0)/100);
+    const mu = (parseFloat(el('drift').value)||0)/100;
+    const r = (parseFloat(el('riskfree').value)||0)/100;
+    const q = (parseFloat(el('dividend').value)||0)/100;
+    const ivRank = Math.max(0, Math.min(100, parseFloat(el('ivrank').value)||0));
+    const contracts = Math.max(1, parseInt(el('contracts').value)||1);
+    const multiplier = Math.max(1, parseFloat(el('multiplier').value)||100);
+    const totalMultiplier = multiplier*contracts;
+    const basis = el('pricingBasis').value;
 
-      const bsT = blackScholes(px, K, T, r, q, sigma, optionType);
-      pnlToday.push({ x: px, y: sign * (bsT.price - premium) * totalMultiplier });
+    const expDate = new Date(el('expiration').value);
+    const evalDate = new Date(el('evalDate').value);
+    const T = yearsBetween(evalDate, expDate);
+    const dte = Math.round(T*365);
+    el('stat-dte').textContent = dte;
 
-      const intrinsic = optionType === 'call' ? Math.max(px - K, 0) : Math.max(K - px, 0);
-      pnlExpiry.push({ x: px, y: sign * (intrinsic - premium) * totalMultiplier });
+    let netCost=0, deltaTotal=0, gammaTotal=0, thetaTotal=0, vegaTotal=0, rhoTotal=0;
+    let worstSpreadPct = 0, worstOi = Infinity, anyLiquidityData = false;
+
+    legs.forEach(l=>{
+      const bs = blackScholes(S, l.strike, T, r, q, sigma, l.type);
+      const used = getUsedPremium(l, bs.price, basis);
+      l.usedPremium = used;
+      l.modelPrice = bs.price;
+      const sign = l.side==='buy' ? 1 : -1;
+      netCost += sign*used*totalMultiplier;
+      deltaTotal += sign*bs.delta*totalMultiplier;
+      gammaTotal += sign*bs.gamma*totalMultiplier;
+      thetaTotal += sign*bs.theta*totalMultiplier;
+      vegaTotal += sign*bs.vega*totalMultiplier;
+      rhoTotal += sign*bs.rho*totalMultiplier;
+
+      const midEl = el('leg-mid-'+l.id);
+      if (midEl){
+        const mid = (l.bid!=null && l.bid>0 && l.ask!=null && l.ask>0) ? (l.bid+l.ask)/2 : null;
+        midEl.textContent = mid!=null ? fmtUSD(mid) : '—';
+      }
+      const usedEl = el('leg-used-'+l.id);
+      if (usedEl) usedEl.innerHTML = fmtUSD(used) + (basis==='model' ? ' <span class="live-tag tag-model">model</span>' : '');
+      const dEl=el('leg-delta-'+l.id), gEl=el('leg-gamma-'+l.id), tEl=el('leg-theta-'+l.id), vEl=el('leg-vega-'+l.id), rEl=el('leg-rho-'+l.id);
+      if (dEl) dEl.textContent = fmtNum(bs.delta,2);
+      if (gEl) gEl.textContent = fmtNum(bs.gamma,4);
+      if (tEl) tEl.textContent = fmtNum(bs.theta,3);
+      if (vEl) vEl.textContent = fmtNum(bs.vega,3);
+      if (rEl) rEl.textContent = fmtNum(bs.rho,3);
+
+      if (l.bid!=null && l.bid>0 && l.ask!=null && l.ask>0){
+        anyLiquidityData = true;
+        const mid=(l.bid+l.ask)/2;
+        const spreadPct = mid>0 ? ((l.ask-l.bid)/mid)*100 : 0;
+        worstSpreadPct = Math.max(worstSpreadPct, spreadPct);
+      }
+      if (l.oi!=null){ anyLiquidityData = true; worstOi = Math.min(worstOi, l.oi); }
+    });
+
+    // Cost / credit
+    if (netCost>=0){
+      el('stat-cost').textContent = fmtUSD(netCost);
+      el('stat-cost').className='stat-value down';
+      el('stat-cost-sub').textContent = 'Net Debit — paid to open';
+    } else {
+      el('stat-cost').textContent = fmtUSD(Math.abs(netCost));
+      el('stat-cost').className='stat-value up';
+      el('stat-cost-sub').textContent = 'Net Credit — received to open';
     }
 
-    const bsSim = blackScholes(simSpot, K, T, r, q, sigma, optionType);
-    const simPnl = sign * (bsSim.price - premium) * totalMultiplier;
+    // Payoff analysis
+    const analysis = analyzeStrategy(legs, totalMultiplier);
+    el('stat-maxprofit').textContent = analysis.maxProfit===Infinity ? 'Unlimited' : fmtUSD(analysis.maxProfit);
+    el('stat-maxloss').textContent = analysis.maxLoss===-Infinity ? 'Unlimited' : fmtUSD(Math.abs(analysis.maxLoss));
+    el('stat-breakeven').textContent = analysis.breakevens.length ? analysis.breakevens.map(b=>'$'+b.toFixed(2)).join(' / ') : '—';
 
-    const ctx = el('pnlChart').getContext('2d');
+    const rrEl = el('stat-rr'), rrPctEl = el('stat-rr-pct');
+    if (analysis.maxProfit===Infinity){ rrEl.textContent='Uncapped ↑'; rrPctEl.textContent=''; }
+    else if (analysis.maxLoss===-Infinity){ rrEl.textContent='Uncapped ↓ risk'; rrPctEl.textContent=''; }
+    else if (Math.abs(analysis.maxLoss)>0){
+      const ratio = analysis.maxProfit/Math.abs(analysis.maxLoss);
+      rrEl.textContent = '1 : ' + ratio.toFixed(2);
+      rrPctEl.textContent = (ratio*100).toFixed(0) + '% return on capital at risk';
+    } else { rrEl.textContent='—'; rrPctEl.textContent=''; }
+
+    // POP — precise (Black-Scholes / real-world distribution) + delta approximation
+    const popBs = probabilityOfProfit(legs, S, T, r, q, sigmaReal, totalMultiplier, analysis.breakevens);
+    el('stat-pop-bs').textContent = (popBs*100).toFixed(1)+'%';
+    // Delta approximation: for a single leg, |delta| approximates probability of finishing ITM.
+    // For multi-leg, average the net position delta magnitude scaled to a 0-100% probability proxy.
+    let deltaApproxPop;
+    if (legs.length===1){
+      const l = legs[0];
+      const bs = blackScholes(S,l.strike,T,r,q,sigma,l.type);
+      deltaApproxPop = l.side==='buy' ? Math.abs(bs.delta) : 1-Math.abs(bs.delta);
+    } else {
+      deltaApproxPop = Math.max(0, Math.min(1, 0.5 + (deltaTotal/totalMultiplier)*0.01));
+    }
+    el('stat-pop-delta').textContent = 'Delta-approx: ' + (deltaApproxPop*100).toFixed(1) + '%';
+
+    const zones = zoneProbabilities(legs,S,T,r,q,sigmaReal,totalMultiplier,analysis.maxProfit,analysis.maxLoss,analysis.breakevens);
+    el('stat-pop-zones').textContent = (zones.probMaxProfit*100).toFixed(1)+'% / '+(zones.probMaxLoss*100).toFixed(1)+'%';
+
+    // Expected Value: simple two-outcome + full probability-weighted integral
+    const pWin = popBs, pLoss = 1-popBs;
+    const evSimpleMaxProfit = analysis.maxProfit===Infinity ? null : analysis.maxProfit;
+    const evSimpleMaxLoss = analysis.maxLoss===-Infinity ? null : Math.abs(analysis.maxLoss);
+    const evSimple = (evSimpleMaxProfit!=null && evSimpleMaxLoss!=null) ? (pWin*evSimpleMaxProfit - pLoss*evSimpleMaxLoss) : null;
+    const evFull = fullDistributionEV(legs, S, T, r, q, sigmaReal, mu, totalMultiplier);
+    el('stat-ev').textContent = fmtUSD(evFull);
+    el('stat-ev').className = 'stat-value ' + (evFull>=0?'up':'down');
+    el('ev-card').style.borderColor = evFull>=0 ? 'rgba(16,185,129,0.35)' : 'rgba(239,68,68,0.35)';
+    el('stat-ev-simple').textContent = 'simple 2-outcome EV: ' + (evSimple!=null ? fmtUSD(evSimple) : 'n/a (unlimited profit or loss)');
+
+    el('stat-theta').textContent = fmtUSD(thetaTotal);
+
+    // Warnings
+    const warnEl = el('warningRow');
+    let warnings = [];
+    if (anyLiquidityData){
+      if (isFinite(worstOi) && worstOi < 50) warnings.push({bad:true, text:'⚠ Low open interest (min '+worstOi+' contracts)'});
+      if (worstSpreadPct > 15) warnings.push({bad:true, text:'⚠ Wide bid/ask spread ('+worstSpreadPct.toFixed(0)+'% of mid)'});
+      if (!warnings.length) warnings.push({bad:false, text:'✓ Liquidity looks reasonable'});
+    } else {
+      warnings.push({bad:false, text:'No bid/ask/OI entered — liquidity not checked'});
+    }
+    if (el('earningsDate').value){
+      const eDate = new Date(el('earningsDate').value);
+      if (eDate >= evalDate && eDate <= expDate){
+        warnings.push({bad:true, text:'⚠ Earnings on '+eDate.toLocaleDateString(undefined,{day:'numeric',month:'short'})+' falls inside this trade\'s window — expect an IV crush / gap risk'});
+      }
+    }
+    warnEl.innerHTML = warnings.map(w=>`<span class="warning-chip ${w.bad?'bad':'ok'}">${w.text}</span>`).join('');
+
+    // Greeks
+    el('g-delta').textContent = fmtNum(deltaTotal,2);
+    el('g-gamma').textContent = fmtNum(gammaTotal,4);
+    el('g-theta').textContent = fmtUSD(thetaTotal);
+    el('g-vega').textContent = fmtUSD(vegaTotal);
+    el('g-rho').textContent = fmtUSD(rhoTotal);
+    el('g-ivrank').textContent = ivRank.toFixed(0)+'%';
+    el('ivGaugeMarker').style.left = ivRank+'%';
+
+    // Strategy badge
+    const stratName = detectStrategy(legs);
+    const badge = el('strategyBadge');
+    badge.textContent = stratName.toUpperCase();
+    const netBullish = deltaTotal > 0.01*totalMultiplier;
+    const netBearish = deltaTotal < -0.01*totalMultiplier;
+    badge.className = 'badge ' + (netBullish?'badge-green':netBearish?'badge-red':'badge-blue');
+
+    updatePayoffChart(S,T,r,q,sigma,sigmaReal,mu,totalMultiplier,analysis.breakevens);
+    updateDecayChart(S,r,q,sigma,totalMultiplier,evalDate,expDate,netCost);
+
+    // stash last-computed snapshot for compare/log
+    window.__lastAnalysis = { legs: JSON.parse(JSON.stringify(legs)), S, T, r, q, sigma, sigmaReal, mu, totalMultiplier,
+      dte, netCost, analysis, popBs, evFull, deltaApproxPop, thetaTotal, stratName, ivRank,
+      ticker: el('ticker').value || 'XYZ', earningsDate: el('earningsDate').value, warnings,
+      contracts, multiplier, expiration: el('expiration').value, evalDateStr: el('evalDate').value };
+  }
+
+  // ============================================================
+  // Payoff chart with probability overlay
+  // ============================================================
+  function updatePayoffChart(S,T,r,q,sigma,sigmaReal,mu,totalMultiplier,breakevens){
+    const strikeVals = legs.map(l=>l.strike);
+    const { lo, hi } = priceWindowMulti(S, strikeVals, T, sigma);
+    const steps=90;
+    const pnlToday=[], pnlExpiry=[], profitPdf=[], lossPdf=[];
+    let maxDensity = 0;
+    for (let i=0;i<=steps;i++){
+      const px = lo + (hi-lo)*(i/steps);
+      let today=0, expiry=0;
+      legs.forEach(l=>{
+        const bs = blackScholes(px, l.strike, T, r, q, sigma, l.type);
+        const sign = l.side==='buy' ? 1 : -1;
+        today += sign*(bs.price - l.usedPremium)*totalMultiplier;
+        const intrinsic = l.type==='call' ? Math.max(px-l.strike,0) : Math.max(l.strike-px,0);
+        expiry += sign*(intrinsic - l.usedPremium)*totalMultiplier;
+      });
+      pnlToday.push({x:px,y:today});
+      pnlExpiry.push({x:px,y:expiry});
+      const dens = T>0 ? lognormalPdf(px,S,T,mu,sigmaReal) : 0;
+      maxDensity = Math.max(maxDensity, dens);
+      if (expiry>0){ profitPdf.push({x:px,y:dens}); lossPdf.push({x:px,y:null}); }
+      else { profitPdf.push({x:px,y:null}); lossPdf.push({x:px,y:dens}); }
+    }
+    // scale density to a readable fraction of the y-range on a secondary axis (auto via Chart.js)
+
+    const strikeGroups={};
+    legs.forEach(l=>{
+      const key=l.strike.toFixed(2);
+      if (!strikeGroups[key]) strikeGroups[key]={strike:l.strike, labels:[]};
+      strikeGroups[key].labels.push((l.type==='call'?'C':'P')+(l.side==='buy'?'L':'S'));
+    });
+    const strikeLines = Object.values(strikeGroups).map((g,i)=>({ value:g.strike, color:'#f59e0b', width:1, label:g.labels.join('/'), labelOffset:14*((i%3)+1) }));
+    const beLines = breakevens.map((b,i)=>({ value:b, color:'#64748b', width:1, dash:[4,4], label: breakevens.length>1?'BE'+(i+1):'BE', pos:'bottom', labelOffset:14*i }));
+
+    const ctx = el('payoffChart').getContext('2d');
     const data = {
       datasets: [
-        {
-          label: 'P&L today',
-          data: pnlToday,
-          borderColor: '#2dd4bf',
-          backgroundColor: 'rgba(45,212,191,0.08)',
-          fill: false,
-          pointRadius: 0,
-          borderWidth: 2,
-          tension: 0.15
-        },
-        {
-          label: 'P&L at expiration',
-          data: pnlExpiry,
-          borderColor: '#6366f1',
-          backgroundColor: 'rgba(99,102,241,0.08)',
-          fill: false,
-          pointRadius: 0,
-          borderWidth: 2,
-          borderDash: [5, 4],
-          tension: 0
-        },
-        {
-          label: 'Simulated spot',
-          data: [{ x: simSpot, y: simPnl }],
-          showLine: false,
-          pointRadius: 6,
-          pointHoverRadius: 6,
-          pointBackgroundColor: '#2dd4bf',
-          pointBorderColor: '#06080d',
-          pointBorderWidth: 2
-        }
+        { label:'Profit-zone probability', data: profitPdf, yAxisID:'yProb', borderColor:'rgba(16,185,129,0.6)', backgroundColor:'rgba(16,185,129,0.18)', fill:true, pointRadius:0, borderWidth:1, tension:0.2, spanGaps:false },
+        { label:'Loss-zone probability', data: lossPdf, yAxisID:'yProb', borderColor:'rgba(239,68,68,0.6)', backgroundColor:'rgba(239,68,68,0.18)', fill:true, pointRadius:0, borderWidth:1, tension:0.2, spanGaps:false },
+        { label:'P&L today', data: pnlToday, yAxisID:'y', borderColor:'#2dd4bf', backgroundColor:'rgba(45,212,191,0.08)', fill:false, pointRadius:0, borderWidth:2, tension:0.15 },
+        { label:'P&L at expiration', data: pnlExpiry, yAxisID:'y', borderColor:'#6366f1', backgroundColor:'rgba(99,102,241,0.08)', fill:false, pointRadius:0, borderWidth:2, borderDash:[5,4], tension:0 }
       ]
     };
-
     const options = {
-      responsive: true,
-      maintainAspectRatio: false,
-      animation: { duration: 200 },
-      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
-      plugins: {
-        legend: { display: false },
-        vertLines: {
-          lines: [
-            { value: S, color: '#e2e8f0', width: 1, label: 'Spot', labelOffset: 0 },
-            { value: K, color: '#f59e0b', width: 1, label: 'Strike', align: 'right', labelOffset: 14 },
-            { value: breakeven, color: '#64748b', width: 1, dash: [4, 4], label: 'BE', labelOffset: 28 }
-          ]
-        },
-        tooltip: {
-          backgroundColor: 'rgba(8,14,28,0.95)',
-          borderColor: 'rgba(51,65,85,0.7)',
-          borderWidth: 1,
-          titleColor: '#f5f5f5',
-          bodyColor: '#cbd5e1',
-          filter: (item) => item.dataset.label !== 'Simulated spot',
-          callbacks: {
-            title: (items) => '$' + items[0].parsed.x.toFixed(2) + ' underlying',
-            label: (item) => item.dataset.label + ': ' + (item.parsed.y < 0 ? '-$' : '$') + Math.abs(item.parsed.y).toFixed(2)
+      responsive:true, maintainAspectRatio:false, animation:{duration:200},
+      interaction:{mode:'nearest', intersect:false, axis:'x'},
+      plugins:{
+        legend:{display:false},
+        vertLines:{ lines:[{value:S,color:'#e2e8f0',width:1,label:'Spot',labelOffset:0}, ...strikeLines, ...beLines] },
+        tooltip:{
+          backgroundColor:'rgba(8,14,28,0.95)', borderColor:'rgba(51,65,85,0.7)', borderWidth:1, titleColor:'#f5f5f5', bodyColor:'#cbd5e1',
+          filter:(item)=> item.dataset.label==='P&L today' || item.dataset.label==='P&L at expiration',
+          callbacks:{
+            title:(items)=> '$'+items[0].parsed.x.toFixed(2)+' underlying',
+            label:(item)=> item.dataset.label+': '+(item.parsed.y<0?'-$':'$')+Math.abs(item.parsed.y).toFixed(2)
           }
         }
       },
-      scales: {
-        x: {
-          type: 'linear',
-          min: lo,
-          max: hi,
-          ticks: { color: '#5b6b85', callback: v => '$' + v.toFixed(0), maxTicksLimit: 8 },
-          grid: { color: 'rgba(255,255,255,0.04)' }
-        },
-        y: {
-          ticks: { color: '#5b6b85', callback: v => (v < 0 ? '-$' : '$') + Math.abs(v).toFixed(0) },
-          grid: {
-            color: (ctx2) => ctx2.tick.value === 0 ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.04)'
-          }
-        }
+      scales:{
+        x:{ type:'linear', min:lo, max:hi, ticks:{color:'#5b6b85', callback:v=>'$'+v.toFixed(0), maxTicksLimit:8}, grid:{color:'rgba(255,255,255,0.04)'} },
+        y:{ position:'left', ticks:{color:'#5b6b85', callback:v=>(v<0?'-$':'$')+Math.abs(v).toFixed(0)}, grid:{color:(c)=>c.tick.value===0?'rgba(255,255,255,0.25)':'rgba(255,255,255,0.04)'} },
+        yProb:{ position:'right', min:0, max: maxDensity*3.2 || 1, display:false, grid:{display:false} }
       }
     };
-
-    if (chart) {
-      chart.data = data;
-      chart.options = options;
-      chart.update();
-    } else {
-      chart = new Chart(ctx, { type: 'line', data, options });
-    }
+    if (payoffChart){ payoffChart.data=data; payoffChart.options=options; payoffChart.update(); }
+    else { payoffChart = new Chart(ctx, {type:'line', data, options}); }
   }
 
+  // ============================================================
+  // Theta decay chart
+  // ============================================================
+  function updateDecayChart(S,r,q,sigma,totalMultiplier,evalDate,expDate,netCost){
+    const totalDays = Math.max(1, Math.round(yearsBetween(evalDate,expDate)*365));
+    el('decay-dte').textContent = totalDays;
+    decaySlider.min=0; decaySlider.max=totalDays;
+    if (!decaySliderTouched) decaySlider.value=0;
+    const simDay = Math.min(totalDays, Math.max(0, parseInt(decaySlider.value)||0));
+
+    const pnlAtDay = (d)=>{
+      const Trem = Math.max(0,(totalDays-d)/365);
+      let pnl=0;
+      legs.forEach(l=>{
+        const bs = blackScholes(S,l.strike,Trem,r,q,sigma,l.type);
+        const sign = l.side==='buy' ? 1 : -1;
+        pnl += sign*(bs.price - l.usedPremium)*totalMultiplier;
+      });
+      return pnl;
+    };
+
+    const steps=Math.min(60,totalDays);
+    const pts=[];
+    for (let i=0;i<=steps;i++){ const d=Math.round(totalDays*(i/steps)); pts.push({x:d,y:pnlAtDay(d)}); }
+    const pnlAtExp = pnlAtDay(totalDays);
+    el('decay-pnl-exp').textContent = fmtUSD(pnlAtExp);
+    el('decay-pnl-exp').className='stat-value mono '+(pnlAtExp>=0?'up':'down');
+    el('decay-perday').textContent = fmtUSD(pnlAtExp/totalDays);
+
+    const simPnl = pnlAtDay(simDay);
+    const simDate = new Date(evalDate.getTime() + simDay*24*3600*1000);
+    const simDateStr = simDate.toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'});
+    el('decaySliderValue').textContent = 'Day '+simDay+' — '+simDateStr;
+    el('decayFootnote').innerHTML = `On <strong>${simDateStr}</strong> (day ${simDay} of ${totalDays}), if the underlying is still at <strong>${fmtUSD(S)}</strong>, P&amp;L would be <strong class="${simPnl>=0?'up':'down'}">${fmtUSD(simPnl)}</strong>.`;
+
+    const ctx2 = el('decayChart').getContext('2d');
+    const data2 = {
+      datasets: [
+        { label:'P&L over time', data:pts, borderColor:'#2dd4bf', backgroundColor:'rgba(45,212,191,0.08)', fill:false, pointRadius:0, borderWidth:2, tension:0.15 },
+        { label:'Simulated date', data:[{x:simDay,y:simPnl}], showLine:false, pointRadius:6, pointHoverRadius:6, pointBackgroundColor:'#2dd4bf', pointBorderColor:'#06080d', pointBorderWidth:2 }
+      ]
+    };
+    const options2 = {
+      responsive:true, maintainAspectRatio:false, animation:{duration:200},
+      interaction:{mode:'nearest', intersect:false, axis:'x'},
+      plugins:{
+        legend:{display:false},
+        vertLines:{ lines:[{value:simDay,color:'#2dd4bf',width:1,dash:[4,4],label:'Sim. date',labelOffset:0}] },
+        tooltip:{
+          backgroundColor:'rgba(8,14,28,0.95)', borderColor:'rgba(51,65,85,0.7)', borderWidth:1, titleColor:'#f5f5f5', bodyColor:'#cbd5e1',
+          filter:(item)=>item.dataset.label!=='Simulated date',
+          callbacks:{ title:(items)=>'Day '+items[0].parsed.x.toFixed(0), label:(item)=>(item.parsed.y<0?'-$':'$')+Math.abs(item.parsed.y).toFixed(2) }
+        }
+      },
+      scales:{
+        x:{ type:'linear', min:0, max:totalDays, ticks:{color:'#5b6b85', callback:v=>'D'+v.toFixed(0), maxTicksLimit:8}, grid:{color:'rgba(255,255,255,0.04)'} },
+        y:{ ticks:{color:'#5b6b85', callback:v=>(v<0?'-$':'$')+Math.abs(v).toFixed(0)}, grid:{color:(c)=>c.tick.value===0?'rgba(255,255,255,0.25)':'rgba(255,255,255,0.04)'} }
+      }
+    };
+    if (decayChart){ decayChart.data=data2; decayChart.options=options2; decayChart.update(); }
+    else { decayChart = new Chart(ctx2, {type:'line', data:data2, options:options2}); }
+  }
+
+  // ============================================================
+  // Compare tab
+  // ============================================================
+  el('addToCompareBtn').addEventListener('click', ()=>{
+    if (!window.__lastAnalysis) return;
+    const a = window.__lastAnalysis;
+    comparisonList.push({
+      id: Date.now(), ticker:a.ticker, strategy:a.stratName, legCount:a.legs.length, dte:a.dte,
+      netCost:a.netCost, maxProfit:a.analysis.maxProfit, maxLoss:a.analysis.maxLoss,
+      breakevens:a.analysis.breakevens, pop:a.popBs, ev:a.evFull, warnings:a.warnings
+    });
+    saveComparisonList();
+    renderComparisonTable();
+    document.querySelector('.tab-btn[data-tab="compare"]').click();
+  });
+
+  el('cmpClearBtn').addEventListener('click', ()=>{
+    comparisonList = [];
+    localStorage.setItem('optAnalyzer_comparison','[]');
+    renderComparisonTable();
+  });
+  ['cmpSort','cmpMinOi','cmpMaxSpread'].forEach(id=> el(id).addEventListener('input', renderComparisonTable));
+
+  function renderComparisonTable(){
+    const body = el('cmpBody');
+    const empty = el('cmpEmpty');
+    const sortKey = el('cmpSort').value;
+    let rows = [...comparisonList];
+    rows.sort((a,b)=>{
+      if (sortKey==='ev') return b.ev-a.ev;
+      if (sortKey==='pop') return b.pop-a.pop;
+      if (sortKey==='cost') return Math.abs(a.netCost)-Math.abs(b.netCost);
+      if (sortKey==='rr'){
+        const rrA = isFinite(a.maxLoss) && a.maxLoss!==0 && isFinite(a.maxProfit) ? a.maxProfit/Math.abs(a.maxLoss) : -Infinity;
+        const rrB = isFinite(b.maxLoss) && b.maxLoss!==0 && isFinite(b.maxProfit) ? b.maxProfit/Math.abs(b.maxLoss) : -Infinity;
+        return rrB-rrA;
+      }
+      return 0;
+    });
+    if (!rows.length){ body.innerHTML=''; empty.style.display='block'; return; }
+    empty.style.display='none';
+    body.innerHTML = rows.map(r=>{
+      const rr = (isFinite(r.maxLoss) && r.maxLoss!==0 && isFinite(r.maxProfit)) ? '1 : '+(r.maxProfit/Math.abs(r.maxLoss)).toFixed(2) : (r.maxProfit===Infinity?'Uncapped ↑':'Uncapped ↓');
+      const flags = (r.warnings||[]).filter(w=>w.bad).length;
+      return `<tr>
+        <td class="mono">${r.ticker}</td>
+        <td>${r.strategy}</td>
+        <td>${r.legCount}</td>
+        <td class="mono">${r.dte}</td>
+        <td class="mono">${fmtUSD(r.netCost)}</td>
+        <td class="mono up">${r.maxProfit===Infinity?'Unlimited':fmtUSD(r.maxProfit)}</td>
+        <td class="mono down">${r.maxLoss===-Infinity?'Unlimited':fmtUSD(Math.abs(r.maxLoss))}</td>
+        <td class="mono">${r.breakevens.map(b=>'$'+b.toFixed(2)).join('/')||'—'}</td>
+        <td class="mono">${(r.pop*100).toFixed(1)}%</td>
+        <td class="mono">${rr}</td>
+        <td class="mono ${r.ev>=0?'up':'down'}">${fmtUSD(r.ev)}</td>
+        <td>${flags ? '<span class="badge badge-amber">'+flags+' ⚠</span>' : '<span class="badge badge-green">clear</span>'}</td>
+        <td><button class="btn btn-ghost btn-sm" data-id="${r.id}">Remove</button></td>
+      </tr>`;
+    }).join('');
+    body.querySelectorAll('button[data-id]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        comparisonList = comparisonList.filter(r=>String(r.id)!==btn.dataset.id);
+        saveComparisonList();
+        renderComparisonTable();
+      });
+    });
+  }
+
+  // ============================================================
+  // Trade Log tab
+  // ============================================================
+  el('saveToLogBtn').addEventListener('click', ()=>{
+    if (!window.__lastAnalysis) return;
+    const a = window.__lastAnalysis;
+    tradeLog.push({
+      id: Date.now(), loggedAt: new Date().toISOString(), ticker:a.ticker, strategy:a.stratName,
+      dte:a.dte, netCost:a.netCost, ev:a.evFull, pop:a.popBs, status:'open', actualPnl:null
+    });
+    localStorage.setItem('optAnalyzer_tradelog', JSON.stringify(tradeLog));
+    renderLogTable();
+    document.querySelector('.tab-btn[data-tab="log"]').click();
+  });
+
+  function renderLogTable(){
+    const body = el('logBody');
+    const empty = el('logEmpty');
+    if (!tradeLog.length){ body.innerHTML=''; empty.style.display='block'; }
+    else {
+      empty.style.display='none';
+      body.innerHTML = tradeLog.map(t=>{
+        const dateStr = new Date(t.loggedAt).toLocaleDateString();
+        return `<tr>
+          <td class="mono">${dateStr}</td>
+          <td class="mono">${t.ticker}</td>
+          <td>${t.strategy}</td>
+          <td class="mono">${t.dte}</td>
+          <td class="mono">${fmtUSD(t.netCost)}</td>
+          <td class="mono ${t.ev>=0?'up':'down'}">${fmtUSD(t.ev)}</td>
+          <td class="mono">${(t.pop*100).toFixed(1)}%</td>
+          <td><span class="badge ${t.status==='open'?'badge-blue':'badge-gray'}">${t.status.toUpperCase()}</span></td>
+          <td><input type="number" step="0.01" class="actual-pnl-input mono" data-id="${t.id}" style="width:100px;" placeholder="—" value="${t.actualPnl ?? ''}"></td>
+          <td><button class="btn btn-ghost btn-sm" data-del="${t.id}">Delete</button></td>
+        </tr>`;
+      }).join('');
+      body.querySelectorAll('.actual-pnl-input').forEach(inp=>{
+        inp.addEventListener('input', ()=>{
+          const t = tradeLog.find(x=>String(x.id)===inp.dataset.id);
+          t.actualPnl = inp.value===''? null : parseFloat(inp.value);
+          t.status = t.actualPnl!=null ? 'closed' : 'open';
+          localStorage.setItem('optAnalyzer_tradelog', JSON.stringify(tradeLog));
+          renderLogTable();
+        });
+      });
+      body.querySelectorAll('button[data-del]').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          tradeLog = tradeLog.filter(t=>String(t.id)!==btn.dataset.del);
+          localStorage.setItem('optAnalyzer_tradelog', JSON.stringify(tradeLog));
+          renderLogTable();
+        });
+      });
+    }
+
+    // Calibration stats
+    el('calib-count').textContent = tradeLog.length;
+    const avgEv = tradeLog.length ? tradeLog.reduce((s,t)=>s+t.ev,0)/tradeLog.length : 0;
+    el('calib-avg-ev').textContent = fmtUSD(avgEv);
+    const closed = tradeLog.filter(t=>t.status==='closed');
+    const avgActual = closed.length ? closed.reduce((s,t)=>s+t.actualPnl,0)/closed.length : 0;
+    el('calib-avg-actual').textContent = closed.length ? fmtUSD(avgActual) : '—';
+    const winRate = closed.length ? (closed.filter(t=>t.actualPnl>0).length/closed.length*100) : null;
+    const avgPop = closed.length ? (closed.reduce((s,t)=>s+t.pop,0)/closed.length*100) : null;
+    el('calib-winrate').textContent = (winRate!=null ? winRate.toFixed(0)+'%' : '—') + ' / ' + (avgPop!=null ? avgPop.toFixed(0)+'%' : '—');
+
+    // Correlation note
+    const tickerCounts = {};
+    tradeLog.filter(t=>t.status==='open').forEach(t=>{ tickerCounts[t.ticker] = (tickerCounts[t.ticker]||0)+1; });
+    const concentrated = Object.entries(tickerCounts).filter(([,c])=>c>1);
+    el('correlationNote').innerHTML = concentrated.length
+      ? '⚠ Correlation risk: ' + concentrated.map(([t,c])=>`${c} open positions in <strong>${t}</strong>`).join(', ') + ' — a single move in the underlying affects all of them together.'
+      : 'No concentrated exposure detected among open positions (this only compares by ticker — it has no sector/correlation data).';
+  }
+
+  renderLegsTable();
   recalc();
+  renderComparisonTable();
+  renderLogTable();
 })();
 </script>
 </body>

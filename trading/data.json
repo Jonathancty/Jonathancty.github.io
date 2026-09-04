@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-02T17:00:18.726867+00:00",
+  "updated_at": "2026-09-03T16:56:38.915265+00:00",
   "top_trending": {
-    "ticker": "NLST",
-    "name": "Netlist, Inc.",
+    "ticker": "HOOD",
+    "name": "Robinhood Markets, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 9763,
-    "price": 5.09,
-    "change_pct": "-23.57%",
+    "tweet_volume": 88477,
+    "price": 122.91,
+    "change_pct": "+14.88%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,105 +17,15 @@
   },
   "trending_list": [
     {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding ",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 43982,
-      "price": 166.28,
-      "change_pct": "-19.53%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FCEL",
-      "name": "FuelCell Energy, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 24834,
-      "price": 14.2,
-      "change_pct": "-16.86%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "MGNI",
-      "name": "Magnite, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 6314,
-      "price": 24.5,
-      "change_pct": "+7.03%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GTLB",
-      "name": "GitLab Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 51295,
-      "price": 50.13,
-      "change_pct": "+11.18%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "MDB",
-      "name": "MongoDB, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 12992,
-      "price": 379.84,
-      "change_pct": "-12.52%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9738,
-      "price": 305.25,
-      "change_pct": "-4.55%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "FRVO",
-      "name": "Fervo Energy Company",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 32918,
-      "price": 17.72,
-      "change_pct": "-10.28%",
+      "tweet_volume": 50888,
+      "price": 772.84,
+      "change_pct": "+1.00%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -128,39 +38,129 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 47552,
-      "price": 50.19,
-      "change_pct": "-1.34%",
+      "tweet_volume": 75149,
+      "price": 49.8,
+      "change_pct": "-3.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PCG",
-      "name": "Pacific Gas & Electric Co.",
+      "ticker": "BULL",
+      "name": "Webull Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 165726,
-      "price": 13.07,
-      "change_pct": "-7.01%",
+      "tweet_volume": 50674,
+      "price": 9.96,
+      "change_pct": "+10.72%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AVEX",
-      "name": "AEVEX Corp.",
+      "ticker": "PL",
+      "name": "Planet Labs PBC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2252,
-      "price": 15.61,
-      "change_pct": "-7.58%",
+      "tweet_volume": 34559,
+      "price": 18.23,
+      "change_pct": "-8.78%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 24152,
+      "price": 235.65,
+      "change_pct": "+8.45%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 42998,
+      "price": 14.84,
+      "change_pct": "-44.06%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 3857,
+      "price": 142.3,
+      "change_pct": "-2.13%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 36758,
+      "price": 372.63,
+      "change_pct": "+21.84%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 50685,
+      "price": 37.36,
+      "change_pct": "+0.97%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "LULU",
+      "name": "lululemon athletica inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 5280,
+      "price": 118.95,
+      "change_pct": "-0.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-04T16:44:23.063347+00:00",
+  "updated_at": "2026-09-05T15:47:16.611023+00:00",
   "top_trending": {
-    "ticker": "LULU",
-    "name": "lululemon athletica inc.",
+    "ticker": "AMRN",
+    "name": "Amarin Corporation plc",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 67189,
-    "price": 100.5,
-    "change_pct": "-17.47%",
+    "tweet_volume": 201,
+    "price": 13.63,
+    "change_pct": "-0.58%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
+      "ticker": "SONY",
+      "name": "Sony Group Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 69130,
-      "price": 40.59,
-      "change_pct": "+7.20%",
+      "tweet_volume": 7508,
+      "price": 24.56,
+      "change_pct": "-1.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PATH",
-      "name": "UiPath, Inc.",
+      "ticker": "LYFT",
+      "name": "Lyft, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 153229,
-      "price": 15.19,
-      "change_pct": "-16.66%",
+      "tweet_volume": 22285,
+      "price": 16.72,
+      "change_pct": "-3.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
+      "ticker": "ZM",
+      "name": "Zoom Communications, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 9472,
-      "price": 268.25,
-      "change_pct": "-6.12%",
+      "tweet_volume": 8730,
+      "price": 101.33,
+      "change_pct": "+3.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
+      "ticker": "UEC",
+      "name": "Uranium Energy Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11671,
-      "price": 169.24,
-      "change_pct": "-4.81%",
+      "tweet_volume": 12476,
+      "price": 11.54,
+      "change_pct": "+0.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DJT",
-      "name": "Trump Media & Technology Group ",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5149,
-      "price": 9.05,
-      "change_pct": "-4.88%",
+      "tweet_volume": 6995,
+      "price": 298.96,
+      "change_pct": "+4.88%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "USAR",
-      "name": "USA Rare Earth, Inc.",
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41235,
-      "price": 17.5,
-      "change_pct": "-1.10%",
+      "tweet_volume": 2879,
+      "price": 275.09,
+      "change_pct": "-3.27%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DOCU",
-      "name": "DocuSign, Inc.",
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11425,
-      "price": 67.86,
-      "change_pct": "+2.87%",
+      "tweet_volume": 14085,
+      "price": 128.09,
+      "change_pct": "-1.79%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IOT",
-      "name": "Samsara Inc.",
+      "ticker": "SMMT",
+      "name": "Summit Therapeutics Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35233,
-      "price": 40.05,
-      "change_pct": "+3.35%",
+      "tweet_volume": 15552,
+      "price": 17.61,
+      "change_pct": "+2.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
+      "ticker": "VST",
+      "name": "Vistra Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 35690,
-      "price": 770.93,
-      "change_pct": "-0.29%",
+      "tweet_volume": 11462,
+      "price": 149.3,
+      "change_pct": "+3.52%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PL",
-      "name": "Planet Labs PBC",
+      "ticker": "CHWY",
+      "name": "Chewy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 45083,
-      "price": 18.2,
-      "change_pct": "-0.84%",
+      "tweet_volume": 18422,
+      "price": 23.66,
+      "change_pct": "-1.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

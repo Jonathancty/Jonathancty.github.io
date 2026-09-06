@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-05T15:47:16.611023+00:00",
+  "updated_at": "2026-09-06T15:59:17.554337+00:00",
   "top_trending": {
-    "ticker": "AMRN",
-    "name": "Amarin Corporation plc",
+    "ticker": "FNMA",
+    "name": "Fannie Mae",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 201,
-    "price": 13.63,
-    "change_pct": "-0.58%",
+    "tweet_volume": 1373,
+    "price": 5.98,
+    "change_pct": "+0.84%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,90 @@
   },
   "trending_list": [
     {
-      "ticker": "SONY",
-      "name": "Sony Group Corporation",
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7508,
-      "price": 24.56,
-      "change_pct": "-1.60%",
+      "tweet_volume": 4266,
+      "price": 133.21,
+      "change_pct": "+1.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LYFT",
-      "name": "Lyft, Inc.",
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 22285,
-      "price": 16.72,
-      "change_pct": "-3.24%",
+      "tweet_volume": 12197,
+      "price": 59.87,
+      "change_pct": "+0.30%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KWEB",
+      "name": "KraneShares CSI China Internet ",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 37638,
+      "price": 26.05,
+      "change_pct": "+2.00%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "TJX",
+      "name": "TJX Companies, Inc. (The)",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 17134,
+      "price": 132.08,
+      "change_pct": "-0.08%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 9964,
+      "price": 75.81,
+      "change_pct": "-0.63%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CDE",
+      "name": "Coeur Mining, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 82248,
+      "price": 21.24,
+      "change_pct": "-1.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -62,105 +122,45 @@
       ]
     },
     {
-      "ticker": "UEC",
-      "name": "Uranium Energy Corp.",
+      "ticker": "UCO",
+      "name": "ProShares Ultra Bloomberg Crude",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12476,
-      "price": 11.54,
-      "change_pct": "+0.26%",
+      "tweet_volume": 5798,
+      "price": 47.3,
+      "change_pct": "+1.24%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporatio",
+      "ticker": "XRP-USD",
+      "name": "XRP USD",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6995,
-      "price": 298.96,
-      "change_pct": "+4.88%",
+      "tweet_volume": 4516306,
+      "price": 1.41,
+      "change_pct": "-0.11%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2879,
-      "price": 275.09,
-      "change_pct": "-3.27%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 14085,
-      "price": 128.09,
-      "change_pct": "-1.79%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SMMT",
-      "name": "Summit Therapeutics Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15552,
-      "price": 17.61,
-      "change_pct": "+2.77%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11462,
-      "price": 149.3,
-      "change_pct": "+3.52%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 18422,
-      "price": 23.66,
-      "change_pct": "-1.25%",
+      "tweet_volume": 50446,
+      "price": 38.4,
+      "change_pct": "-0.95%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-07T18:06:39.688307+00:00",
+  "updated_at": "2026-09-08T17:05:00.538417+00:00",
   "top_trending": {
-    "ticker": "LYFT",
-    "name": "Lyft, Inc.",
+    "ticker": "RGTI",
+    "name": "Rigetti Computing, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 22708,
-    "price": 16.72,
-    "change_pct": "-3.24%",
+    "tweet_volume": 71633,
+    "price": 15.93,
+    "change_pct": "+4.80%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,30 +17,105 @@
   },
   "trending_list": [
     {
-      "ticker": "RAM",
-      "name": "Roundhill T-REX 2X Long DRAM Da",
+      "ticker": "POET",
+      "name": "POET Technologies Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 30435,
-      "price": 13.82,
-      "change_pct": "+12.91%",
+      "tweet_volume": 28475,
+      "price": 8.71,
+      "change_pct": "+9.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SGML",
-      "name": "Sigma Lithium Corporation",
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4364,
-      "price": 12.39,
-      "change_pct": "-2.98%",
+      "tweet_volume": 54671,
+      "price": 42.62,
+      "change_pct": "+7.84%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 84072,
+      "price": 104.07,
+      "change_pct": "+16.46%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale Power Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 77914,
+      "price": 11.24,
+      "change_pct": "+15.93%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "GT",
+      "name": "The Goodyear Tire & Rubber Comp",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 16790,
+      "price": 5.89,
+      "change_pct": "-5.68%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "VKTX",
+      "name": "Viking Therapeutics, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 2145,
+      "price": 33.84,
+      "change_pct": "-2.95%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BCRX",
+      "name": "BioCryst Pharmaceuticals, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 16229,
+      "price": 9.23,
+      "change_pct": "-7.28%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -53,114 +128,39 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2575,
-      "price": 12.4,
-      "change_pct": "-1.12%",
+      "tweet_volume": 1313,
+      "price": 12.83,
+      "change_pct": "+3.47%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XE",
-      "name": "X-Energy, Inc.",
+      "ticker": "QUBT",
+      "name": "Quantum Computing Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 15926,
-      "price": 17.71,
-      "change_pct": "-0.95%",
+      "tweet_volume": 14575,
+      "price": 8.48,
+      "change_pct": "+5.93%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "UUP",
-      "name": "Invesco DB USD Index Bullish Fu",
+      "ticker": "TEAM",
+      "name": "Atlassian Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4440,
-      "price": 28.08,
-      "change_pct": "+0.25%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "ADUR",
-      "name": "Aduro Clean Technologies Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 722,
-      "price": 13.58,
-      "change_pct": "-2.16%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "JNUG",
-      "name": "Direxion Daily Junior Gold Mine",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 469,
-      "price": 195.05,
-      "change_pct": "-4.96%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XRP-USD",
-      "name": "XRP USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 5725635,
-      "price": 1.4,
-      "change_pct": "-1.72%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SOL-USD",
-      "name": "Solana USD",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 7900800,
-      "price": 103.95,
-      "change_pct": "-2.35%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "NOKIA.HE",
-      "name": "Nokia Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 22136,
-      "price": 9.18,
-      "change_pct": "+6.05%",
+      "tweet_volume": 4878,
+      "price": 177.35,
+      "change_pct": "-6.45%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

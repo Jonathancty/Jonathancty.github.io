@@ -3,424 +3,602 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonathan Chan - Portfolio</title>
+  <title>Jonathan Chan — Software Engineer</title>
+  <meta name="description" content="Jonathan Chan — Final Year Computer Science student at Durham University (First Class Honours). Software engineering, machine learning, and quantitative trading systems.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306080d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --accent: #2dd4bf;
+      --accent-2: #6366f1;
+    }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #06080d;
       color: #f5f5f5;
       overflow-x: hidden;
     }
+    .mono { font-family: 'JetBrains Mono', monospace; }
 
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -29.5px;
-      top: 0;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background-color: #06080d;
-      border: 4px solid #2dd4bf;
-      z-index: 10;
-    }
-
-    /* Interactive Background Canvas */
-    #bg-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    #root {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Make React containers transparent so our canvas shows through */
-    #root,
-    #root > div,
-    #root .bg-black,
-    #root .bg-\[\#0a0a0a\] {
-      background-color: transparent !important;
-      background: transparent !important;
-    }
-
-    /* Hide the old React-rendered background canvas */
-    #root canvas {
-      opacity: 0 !important;
-      pointer-events: none !important;
-    }
-
-    /* Mouse-reactive glow that follows cursor */
+    #bg-canvas { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
     #cursor-glow {
-      position: fixed;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 0;
-      background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, rgba(6, 182, 212, 0.04) 30%, transparent 70%);
-      transform: translate(-50%, -50%);
-      transition: opacity 0.3s ease;
-      opacity: 0;
+      position: fixed; width: 600px; height: 600px; border-radius: 50%;
+      pointer-events: none; z-index: 0;
+      background: radial-gradient(circle, rgba(45,212,191,0.08) 0%, rgba(99,102,241,0.04) 30%, transparent 70%);
+      transform: translate(-50%, -50%); transition: opacity 0.3s ease; opacity: 0;
+    }
+    #content { position: relative; z-index: 1; }
+
+    .glass {
+      background: rgba(20, 25, 35, 0.5);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 60%, var(--accent) 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-link { position: relative; color: #94a3b8; transition: color 0.2s; }
+    .nav-link:hover { color: #f5f5f5; }
+    .nav-link::after {
+      content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1.5px;
+      background: var(--accent); transition: width 0.2s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #22b8a3);
+      color: #06080d; font-weight: 700; transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -8px rgba(45,212,191,0.5); }
+    .btn-ghost { border: 1px solid rgba(255,255,255,0.15); color: #f5f5f5; transition: all 0.15s ease; }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(45,212,191,0.06); }
+
+    .section-tag {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--accent); display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;
+    }
+    .section-tag::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+
+    .timeline-line { position: relative; }
+    .timeline-item { position: relative; padding-left: 2rem; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: 0; top: 0.35rem; width: 14px; height: 14px; border-radius: 50%;
+      background: #06080d; border: 3px solid var(--accent); z-index: 2;
+    }
+    .timeline-item::after {
+      content: ''; position: absolute; left: 6px; top: 1.1rem; bottom: -2.5rem; width: 1.5px;
+      background: linear-gradient(to bottom, rgba(45,212,191,0.4), rgba(45,212,191,0.05));
+    }
+    .timeline-item:last-child::after { display: none; }
+
+    .skill-chip {
+      display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; font-weight: 600;
+      padding: 0.4rem 0.85rem; border-radius: 9999px; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08); color: #cbd5e1; transition: all 0.15s ease;
+    }
+    .skill-chip:hover { border-color: var(--accent); color: #fff; background: rgba(45,212,191,0.08); }
+    .skill-chip.advanced { border-color: rgba(45,212,191,0.35); }
+    .skill-chip.advanced .dot { background: var(--accent); }
+    .skill-chip .dot { width: 6px; height: 6px; border-radius: 50%; background: #64748b; }
+
+    .card { background: rgba(15,20,30,0.55); border: 1px solid rgba(255,255,255,0.07); transition: border-color 0.2s ease, transform 0.2s ease; }
+    .card:hover { border-color: rgba(45,212,191,0.35); transform: translateY(-4px); }
+
+    .project-img-wrap { position: relative; overflow: hidden; }
+    .project-img-wrap img { transition: transform 0.4s ease; }
+    .card:hover .project-img-wrap img { transform: scale(1.06); }
+    .project-img-wrap::after {
+      content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,14,22,0.95) 0%, transparent 60%);
     }
 
-    /* Subtle animated gradient overlay */
-    .animated-gradient {
-      background: linear-gradient(-45deg, #06080d, #0c1524, #0a1628, #06080d);
-      background-size: 400% 400%;
-      animation: gradient 20s ease infinite;
-    }
+    .tag-pill { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; border-radius: 6px; background: rgba(99,102,241,0.12); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.25); }
 
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+    .stat-num { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    /* Safety net: if IntersectionObserver ever fails to fire, content must never stay invisible */
+    noscript .reveal, .reveal { opacity: 1; transform: none; }
+    .reveal.js-armed { opacity: 0; transform: translateY(18px); }
+    .reveal.js-armed.in { opacity: 1; transform: translateY(0); }
   </style>
-
-  <link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "recharts": "https://aistudiocdn.com/recharts@^3.2.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-DEjYyqs5.js"></script>
 </head>
 
 <body>
   <canvas id="bg-canvas"></canvas>
   <div id="cursor-glow"></div>
-  <div id="root"></div>
+
+  <div id="content">
+
+    <!-- ============ NAV ============ -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#top" class="font-extrabold text-lg tracking-tight">Jonathan<span style="color:var(--accent)">.</span>Chan</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="#contact" class="btn-primary text-sm px-4 py-2 rounded-lg">Get in Touch</a>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header id="top" class="min-h-screen flex items-center px-6 pt-24">
+      <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-3 min-w-0">
+          <p class="section-tag">Hello, I'm</p>
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold gradient-text leading-[1.05] mb-5">Jonathan Chan</h1>
+          <p class="text-lg sm:text-xl text-slate-300 mb-3 font-medium">Final Year Computer Science Student, Durham University</p>
+          <p class="text-slate-400 mb-8 max-w-xl leading-relaxed">
+            First Class Honours student (71.03%) building at the intersection of <span class="text-slate-200 font-semibold">machine learning</span>,
+            <span class="text-slate-200 font-semibold">quantitative trading systems</span>, and <span class="text-slate-200 font-semibold">blockchain architecture</span>.
+            Currently building an automated trading system that fuses news sentiment with technical signals.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 mb-9">
+            <a href="#projects" class="btn-primary px-6 py-3 rounded-lg text-sm">View My Projects</a>
+            <a href="#contact" class="btn-ghost px-6 py-3 rounded-lg text-sm font-semibold">Get In Touch</a>
+          </div>
+          <div class="flex items-center gap-5">
+            <a href="https://github.com/jonathancty" target="_blank" rel="noopener" aria-label="GitHub" class="text-slate-400 hover:text-white transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.79.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.53-3.84-1.53-.52-1.32-1.27-1.68-1.27-1.68-1.03-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.28-5.23-11.5-11.5-11.5z"/></svg>
+            </a>
+            <a href="http://www.linkedin.com/in/jonathanctyyy" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-slate-400 hover:text-white transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a href="mailto:jonathan05cty@gmail.com" aria-label="Email" class="text-slate-400 hover:text-white transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13z"/><path d="m3.5 5.5 8.5 7 8.5-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 min-w-0">
+          <div class="glass rounded-2xl p-6 min-w-0">
+            <div class="flex items-center gap-2 mb-5">
+              <span class="w-3 h-3 rounded-full bg-red-400/70"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400/70"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400/70"></span>
+              <span class="mono text-xs text-slate-500 ml-2">about_me.json</span>
+            </div>
+            <pre class="mono text-[13px] leading-6 text-slate-300 overflow-x-auto min-w-0"><span class="text-slate-500">{</span>
+  <span class="text-sky-300">"degree"</span>: <span class="text-emerald-300">"BSc Computer Science"</span>,
+  <span class="text-sky-300">"university"</span>: <span class="text-emerald-300">"Durham University"</span>,
+  <span class="text-sky-300">"classification"</span>: <span class="text-emerald-300">"First Class Honours"</span>,
+  <span class="text-sky-300">"overall"</span>: <span class="text-amber-300">71.03</span>,
+  <span class="text-sky-300">"interests"</span>: [
+    <span class="text-emerald-300">"machine learning"</span>,
+    <span class="text-emerald-300">"quant trading"</span>,
+    <span class="text-emerald-300">"blockchain"</span>
+  ],
+  <span class="text-sky-300">"basedIn"</span>: <span class="text-emerald-300">"UK / Hong Kong"</span>,
+  <span class="text-sky-300">"openTo"</span>: <span class="text-emerald-300">"graduate roles, 2026"</span>
+<span class="text-slate-500">}</span></pre>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <p class="section-tag">What I work with</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-10">Technical Skills</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-bold text-slate-200 mb-4">Languages &amp; Programming</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-chip advanced"><span class="dot"></span>Python</span>
+              <span class="skill-chip advanced"><span class="dot"></span>JavaScript</span>
+              <span class="skill-chip advanced"><span class="dot"></span>HTML / CSS</span>
+              <span class="skill-chip"><span class="dot"></span>Java</span>
+              <span class="skill-chip"><span class="dot"></span>C</span>
+              <span class="skill-chip"><span class="dot"></span>C++</span>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-bold text-slate-200 mb-4">Tools &amp; Frameworks</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-chip advanced"><span class="dot"></span>Git</span>
+              <span class="skill-chip advanced"><span class="dot"></span>Microsoft Office Suite</span>
+              <span class="skill-chip"><span class="dot"></span>React</span>
+              <span class="skill-chip"><span class="dot"></span>Node.js / Express</span>
+              <span class="skill-chip"><span class="dot"></span>MongoDB</span>
+              <span class="skill-chip"><span class="dot"></span>Unix</span>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-bold text-slate-200 mb-4">Languages Spoken</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-chip advanced"><span class="dot"></span>Cantonese — Native</span>
+              <span class="skill-chip advanced"><span class="dot"></span>English — Fluent</span>
+              <span class="skill-chip advanced"><span class="dot"></span>Mandarin — Fluent</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-4">Teal dot = advanced / daily-use proficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <p class="section-tag">Academic background</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-12">Education</h2>
+
+        <div class="space-y-10">
+          <div class="timeline-item">
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                <h3 class="text-xl font-bold" style="color:var(--accent)">Durham University</h3>
+                <span class="mono text-xs text-slate-400">Oct 2023 — Jun 2026</span>
+              </div>
+              <p class="text-slate-300 font-medium mb-1">BSc (Hons) Computer Science</p>
+              <p class="text-sm font-semibold text-emerald-300 mb-4">First Class Honours — 71.03% overall</p>
+
+              <div class="grid sm:grid-cols-3 gap-3 mb-5">
+                <div class="rounded-lg bg-white/5 border border-white/5 p-3">
+                  <p class="text-xs text-slate-500 mb-1">Year 3 — 73.17%</p>
+                  <p class="text-sm text-slate-300">Deep Learning <span class="text-emerald-300 font-semibold">89%</span>, Cryptography <span class="text-emerald-300 font-semibold">81%</span></p>
+                </div>
+                <div class="rounded-lg bg-white/5 border border-white/5 p-3">
+                  <p class="text-xs text-slate-500 mb-1">Year 2 — 67.83%</p>
+                  <p class="text-sm text-slate-300">Data Science <span class="text-emerald-300 font-semibold">77%</span>, Software Engineering <span class="text-emerald-300 font-semibold">69%</span></p>
+                </div>
+                <div class="rounded-lg bg-white/5 border border-white/5 p-3">
+                  <p class="text-xs text-slate-500 mb-1">Year 1 — 79.33%</p>
+                  <p class="text-sm text-slate-300">Maths for CS <span class="text-emerald-300 font-semibold">93%</span>, Computer Systems <span class="text-emerald-300 font-semibold">84%</span></p>
+                </div>
+              </div>
+
+              <div class="rounded-lg border border-white/10 p-4 bg-black/20">
+                <p class="text-xs uppercase tracking-wide text-slate-500 mb-1 mono">Dissertation</p>
+                <p class="text-sm font-semibold text-slate-200 mb-2">The Blockchain of Things (BCoT): A Scalable Hybrid Architecture for Automated Maintenance Claims</p>
+                <p class="text-sm text-slate-400 leading-relaxed">Engineered a scalable hybrid blockchain architecture using smart contracts to secure IoT sensor data, with a dual-layered claim settlement framework that automates high-frequency micro-claims while keeping Human-in-the-Loop governance over premium-asset payouts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                <h3 class="text-xl font-bold" style="color:var(--accent)">Wah Yan College Hong Kong</h3>
+                <span class="mono text-xs text-slate-400">Sep 2017 — Jun 2023</span>
+              </div>
+              <p class="text-slate-300 font-medium mb-4">HKDSE — Top 3.1% in Hong Kong</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag-pill">Maths 5**</span>
+                <span class="tag-pill">Physics 5</span>
+                <span class="tag-pill">Chemistry 5</span>
+                <span class="tag-pill">ICT 5</span>
+                <span class="tag-pill">Extended Maths 5</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-3">5** ≈ A* and 5 ≈ A at A-level.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <p class="section-tag">Where I've worked</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-12">Work Experience</h2>
+
+        <div class="space-y-10">
+          <div class="timeline-item">
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                <h3 class="text-xl font-bold">Engineering Intern</h3>
+                <span class="mono text-xs text-slate-400">Jul 2024 — Aug 2024</span>
+              </div>
+              <p class="font-medium mb-4" style="color:var(--accent)">The Walt Disney Company · Hong Kong</p>
+              <ul class="space-y-2 text-sm text-slate-400">
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Built 2 Microsoft Power Apps (Internal Bidding Form, Change Request Form) for the Facility Services department.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Automated the maintenance planning process, cutting processing time by <span class="font-semibold text-slate-200">50%</span>.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Integrated Power App + Power Automate with existing systems via 3 data flows for cross-department consistency.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Revamped an IoT setup for a Disney boat ride, streaming sensor data to NAS storage over LoRa.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Researched and presented on Machine Learning's emerging impact in business.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                <h3 class="text-xl font-bold">Event Organizer</h3>
+                <span class="mono text-xs text-slate-400">Jul 2023 — Aug 2023</span>
+              </div>
+              <p class="font-medium mb-4" style="color:var(--accent)">Yan Kwong Social Service Center · Hong Kong</p>
+              <ul class="space-y-2 text-sm text-slate-400">
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Facilitated youth-oriented activities for 30-40 children, building social skills and community participation.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Directed and supervised a team, allocating work to keep activity design and delivery running smoothly.</li>
+                <li class="flex gap-2"><span style="color:var(--accent)">▸</span>Built a system for gathering and maintaining children's records for certificates and health documentation.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership / Extracurricular -->
+        <div class="mt-14">
+          <p class="section-tag">Beyond the classroom</p>
+          <h3 class="text-2xl font-extrabold mb-6">Leadership &amp; Volunteering</h3>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div class="card rounded-xl p-5">
+              <div class="flex items-baseline justify-between gap-2 mb-1">
+                <h4 class="font-bold text-slate-200">Subcommittee Member</h4>
+                <span class="mono text-xs text-slate-500">2023</span>
+              </div>
+              <p class="text-sm mb-2" style="color:var(--accent)">Durham Hong Kong Society</p>
+              <p class="text-sm text-slate-400">Ran a two-day fundraiser for the World Children's Day Charity Sale in aid of Save the Children, coordinating promotion and logistics across the subcommittee.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+              <div class="flex items-baseline justify-between gap-2 mb-1">
+                <h4 class="font-bold text-slate-200">Orienteering Team Captain</h4>
+                <span class="mono text-xs text-slate-500">2021 — 2022</span>
+              </div>
+              <p class="text-sm mb-2" style="color:var(--accent)">Wah Yan College Hong Kong</p>
+              <p class="text-sm text-slate-400">Led the team to an inter-school championship win, directing weekly training sessions and race-day strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <p class="section-tag">What I've built</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-12">Personal Projects</h2>
+
+        <div class="grid md:grid-cols-3 gap-7">
+          <!-- Auto Trading -->
+          <div class="card rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-img-wrap h-44">
+              <img src="images/auto_trading_system.png" alt="Automated trading system dashboard" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-bold text-lg mb-2">Automated Trading System</h3>
+              <p class="text-sm text-slate-400 mb-4 flex-1">Combines sentiment analysis from 20+ financial news sources with real-time technical market data to execute trading strategies — in active development.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag-pill">Python</span><span class="tag-pill">Sentiment Analysis</span><span class="tag-pill">Interactive Brokers API</span>
+              </div>
+              <a href="https://github.com/Jonathancty/AutoTrader" target="_blank" rel="noopener" class="text-sm font-semibold flex items-center gap-1.5" style="color:var(--accent)">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- AI Recommender -->
+          <div class="card rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-img-wrap h-44">
+              <img src="images/AI_recommendation.png" alt="AI event recommendation system" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-bold text-lg mb-2">AI Event Recommendation System</h3>
+              <p class="text-sm text-slate-400 mb-4 flex-1">Integrates 50+ user preference and availability signals via content-based and collaborative filtering to generate personalized society-event suggestions for university students.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag-pill">Python</span><span class="tag-pill">Scikit-Learn</span><span class="tag-pill">Recommender Systems</span>
+              </div>
+              <a href="https://github.com/Jonathancty/AI-recommender" target="_blank" rel="noopener" class="text-sm font-semibold flex items-center gap-1.5" style="color:var(--accent)">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- ML Paper -->
+          <div class="card rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-img-wrap h-44">
+              <img src="images/machine_learning.png" alt="Machine learning regression paper" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-bold text-lg mb-2">Machine Learning Research Paper</h3>
+              <p class="text-sm text-slate-400 mb-4 flex-1">Applies advanced regression methods to real-world problems, showing how predictive modelling delivers insight across healthcare, finance, engineering and social sciences.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag-pill">Python</span><span class="tag-pill">Scikit-Learn</span><span class="tag-pill">Regression</span>
+              </div>
+              <a href="Machine_Learning_watermark.pdf" target="_blank" rel="noopener" class="text-sm font-semibold flex items-center gap-1.5" style="color:var(--accent)">
+                Preview PDF
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dissertation as featured project -->
+        <div class="mt-8 card rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(99,102,241,0.12); border:1px solid rgba(99,102,241,0.25);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a5b4fc" stroke-width="2"><rect x="3" y="11" width="7" height="7" rx="1"/><rect x="14" y="11" width="7" height="7" rx="1"/><rect x="8.5" y="3" width="7" height="7" rx="1"/><path d="M12 10v1M6.5 11v-1a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v1"/></svg>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-2">
+              <h3 class="font-bold text-lg">Blockchain of Things (BCoT)</h3>
+              <span class="tag-pill">Dissertation</span>
+            </div>
+            <p class="text-sm text-slate-400 leading-relaxed">A scalable hybrid blockchain architecture for automated maintenance claims — smart contracts secure IoT sensor data integrity, while a dual-layered settlement framework automates high-frequency micro-claims with Human-in-the-Loop governance protecting premium-asset payouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER ============ -->
+    <section id="contact" class="py-28 px-6 border-t border-white/5">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="section-tag justify-center">Let's talk</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Get In Touch</h2>
+        <p class="text-slate-400 mb-8 leading-relaxed">I'm currently seeking graduate opportunities for 2026 and would love to hear from you. Whether you have a question, an opening, or just want to say hi — my inbox is open.</p>
+        <a href="mailto:jonathan05cty@gmail.com" class="btn-primary inline-block px-7 py-3.5 rounded-lg text-sm mb-10">jonathan05cty@gmail.com</a>
+        <div class="flex items-center justify-center gap-6">
+          <a href="https://github.com/jonathancty" target="_blank" rel="noopener" aria-label="GitHub" class="text-slate-400 hover:text-white transition-colors">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.79.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.53-3.84-1.53-.52-1.32-1.27-1.68-1.27-1.68-1.03-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.28-5.23-11.5-11.5-11.5z"/></svg>
+          </a>
+          <a href="http://www.linkedin.com/in/jonathanctyyy" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-slate-400 hover:text-white transition-colors">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-xs text-slate-600 mt-16">© 2026 Jonathan Chan. All rights reserved.</p>
+    </section>
+
+  </div>
 
   <script>
-  (function() {
-    const canvas = document.getElementById('bg-canvas');
-    const ctx = canvas.getContext('2d');
-    const cursorGlow = document.getElementById('cursor-glow');
+    // ---------- Particle / grid canvas background ----------
+    (function() {
+      const canvas = document.getElementById('bg-canvas');
+      const ctx = canvas.getContext('2d');
+      const cursorGlow = document.getElementById('cursor-glow');
 
-    let width, height, dpr;
-    let mouse = { x: -9999, y: -9999, active: false };
-    let particles = [];
-    let gridLines = [];
-    let animFrame;
-    let time = 0;
+      let width, height, dpr;
+      let mouse = { x: -9999, y: -9999, active: false };
+      let particles = [];
+      let gridLines = [];
+      let time = 0;
 
-    // Configuration
-    const CONFIG = {
-      particleCount: 120,
-      connectionDistance: 160,
-      mouseRadius: 250,
-      mouseForce: 0.08,
-      baseSpeed: 0.3,
-      colors: {
-        primary: [20, 184, 166],     // teal
-        secondary: [6, 182, 212],    // cyan
-        accent: [99, 102, 241],      // indigo
-        dim: [30, 58, 95],           // dark blue
-      },
-      gridSpacing: 80,
-      gridOpacity: 0.04,
-    };
+      const CONFIG = {
+        particleCount: 100,
+        connectionDistance: 160,
+        mouseRadius: 250,
+        mouseForce: 0.08,
+        baseSpeed: 0.3,
+        colors: { primary: [20,184,166], secondary: [6,182,212], accent: [99,102,241] },
+        gridSpacing: 80,
+        gridOpacity: 0.04,
+      };
 
-    function resize() {
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
-      width = window.innerWidth;
-      height = window.innerHeight;
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
-      canvas.style.width = width + 'px';
-      canvas.style.height = height + 'px';
-      ctx.scale(dpr, dpr);
-      generateGrid();
-    }
-
-    function generateGrid() {
-      gridLines = [];
-      for (let x = 0; x < width; x += CONFIG.gridSpacing) {
-        gridLines.push({ x1: x, y1: 0, x2: x, y2: height, type: 'v' });
+      function resize() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth; height = window.innerHeight;
+        canvas.width = width * dpr; canvas.height = height * dpr;
+        canvas.style.width = width + 'px'; canvas.style.height = height + 'px';
+        ctx.setTransform(1,0,0,1,0,0);
+        ctx.scale(dpr, dpr);
+        generateGrid();
       }
-      for (let y = 0; y < height; y += CONFIG.gridSpacing) {
-        gridLines.push({ x1: 0, y1: y, x2: width, y2: y, type: 'h' });
+      function generateGrid() {
+        gridLines = [];
+        for (let x=0; x<width; x+=CONFIG.gridSpacing) gridLines.push({x1:x,y1:0,x2:x,y2:height,type:'v'});
+        for (let y=0; y<height; y+=CONFIG.gridSpacing) gridLines.push({x1:0,y1:y,x2:width,y2:y,type:'h'});
       }
-    }
-
-    class Particle {
-      constructor() {
-        this.reset();
-      }
-
-      reset() {
-        this.x = Math.random() * width;
-        this.y = Math.random() * height;
-        this.depth = 0.3 + Math.random() * 0.7; // parallax depth
-        this.baseRadius = 1 + Math.random() * 2.5;
-        this.radius = this.baseRadius;
-        this.vx = (Math.random() - 0.5) * CONFIG.baseSpeed * this.depth;
-        this.vy = (Math.random() - 0.5) * CONFIG.baseSpeed * this.depth;
-        this.pulsePhase = Math.random() * Math.PI * 2;
-        this.pulseSpeed = 0.01 + Math.random() * 0.02;
-
-        // Color: blend between primary, secondary, and accent based on depth
-        const t = Math.random();
-        if (t < 0.5) {
-          this.color = CONFIG.colors.primary;
-        } else if (t < 0.8) {
-          this.color = CONFIG.colors.secondary;
-        } else {
-          this.color = CONFIG.colors.accent;
+      class Particle {
+        constructor(){ this.reset(); }
+        reset(){
+          this.x = Math.random()*width; this.y = Math.random()*height;
+          this.depth = 0.3 + Math.random()*0.7;
+          this.baseRadius = 1 + Math.random()*2.5; this.radius = this.baseRadius;
+          this.vx = (Math.random()-0.5)*CONFIG.baseSpeed*this.depth;
+          this.vy = (Math.random()-0.5)*CONFIG.baseSpeed*this.depth;
+          this.pulsePhase = Math.random()*Math.PI*2; this.pulseSpeed = 0.01+Math.random()*0.02;
+          const t = Math.random();
+          this.color = t<0.5 ? CONFIG.colors.primary : t<0.8 ? CONFIG.colors.secondary : CONFIG.colors.accent;
         }
-      }
-
-      update() {
-        // Pulse
-        this.pulsePhase += this.pulseSpeed;
-        const pulse = 0.7 + 0.3 * Math.sin(this.pulsePhase);
-        this.radius = this.baseRadius * pulse * this.depth;
-
-        // Mouse interaction
-        if (mouse.active) {
-          const dx = this.x - mouse.x;
-          const dy = this.y - mouse.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < CONFIG.mouseRadius) {
-            const force = (1 - dist / CONFIG.mouseRadius) * CONFIG.mouseForce;
-            this.vx += dx * force * 0.02;
-            this.vy += dy * force * 0.02;
-            // Enlarge near mouse
-            this.radius *= 1 + (1 - dist / CONFIG.mouseRadius) * 0.8;
-          }
-        }
-
-        // Damping
-        this.vx *= 0.995;
-        this.vy *= 0.995;
-
-        // Drift
-        this.vx += (Math.random() - 0.5) * 0.01;
-        this.vy += (Math.random() - 0.5) * 0.01;
-
-        this.x += this.vx;
-        this.y += this.vy;
-
-        // Wrap around
-        if (this.x < -50) this.x = width + 50;
-        if (this.x > width + 50) this.x = -50;
-        if (this.y < -50) this.y = height + 50;
-        if (this.y > height + 50) this.y = -50;
-      }
-
-      draw() {
-        const [r, g, b] = this.color;
-        const alpha = 0.4 + 0.3 * this.depth;
-
-        // Glow
-        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius * 4);
-        gradient.addColorStop(0, `rgba(${r}, ${g}, ${b}, ${alpha * 0.5})`);
-        gradient.addColorStop(0.5, `rgba(${r}, ${g}, ${b}, ${alpha * 0.1})`);
-        gradient.addColorStop(1, 'transparent');
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius * 4, 0, Math.PI * 2);
-        ctx.fillStyle = gradient;
-        ctx.fill();
-
-        // Core
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
-        ctx.fill();
-      }
-    }
-
-    function init() {
-      particles = [];
-      for (let i = 0; i < CONFIG.particleCount; i++) {
-        particles.push(new Particle());
-      }
-    }
-
-    function drawGrid() {
-      const scrollY = window.scrollY || 0;
-      ctx.strokeStyle = `rgba(20, 184, 166, ${CONFIG.gridOpacity})`;
-      ctx.lineWidth = 0.5;
-
-      for (const line of gridLines) {
-        // Parallax offset based on scroll
-        const offsetY = (scrollY * 0.05) % CONFIG.gridSpacing;
-        const offsetX = Math.sin(time * 0.0005) * 2;
-
-        ctx.beginPath();
-        if (line.type === 'v') {
-          ctx.moveTo(line.x1 + offsetX, 0);
-          ctx.lineTo(line.x2 + offsetX, height);
-        } else {
-          ctx.moveTo(0, line.y1 - offsetY);
-          ctx.lineTo(width, line.y2 - offsetY);
-        }
-        ctx.stroke();
-      }
-
-      // Highlight grid lines near mouse
-      if (mouse.active) {
-        for (const line of gridLines) {
-          let dist;
-          if (line.type === 'v') {
-            dist = Math.abs(line.x1 - mouse.x);
-          } else {
-            dist = Math.abs(line.y1 - mouse.y);
-          }
-          if (dist < 100) {
-            const alpha = (1 - dist / 100) * 0.12;
-            ctx.strokeStyle = `rgba(20, 184, 166, ${alpha})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            if (line.type === 'v') {
-              ctx.moveTo(line.x1, 0);
-              ctx.lineTo(line.x2, height);
-            } else {
-              ctx.moveTo(0, line.y1);
-              ctx.lineTo(width, line.y2);
+        update(){
+          this.pulsePhase += this.pulseSpeed;
+          this.radius = this.baseRadius * (0.7+0.3*Math.sin(this.pulsePhase)) * this.depth;
+          if (mouse.active){
+            const dx=this.x-mouse.x, dy=this.y-mouse.y, dist=Math.sqrt(dx*dx+dy*dy);
+            if (dist < CONFIG.mouseRadius){
+              const force=(1-dist/CONFIG.mouseRadius)*CONFIG.mouseForce;
+              this.vx += dx*force*0.02; this.vy += dy*force*0.02;
+              this.radius *= 1+(1-dist/CONFIG.mouseRadius)*0.8;
             }
-            ctx.stroke();
           }
+          this.vx*=0.995; this.vy*=0.995;
+          this.vx += (Math.random()-0.5)*0.01; this.vy += (Math.random()-0.5)*0.01;
+          this.x += this.vx; this.y += this.vy;
+          if (this.x<-50) this.x=width+50; if (this.x>width+50) this.x=-50;
+          if (this.y<-50) this.y=height+50; if (this.y>height+50) this.y=-50;
+        }
+        draw(){
+          const [r,g,b] = this.color; const alpha = 0.4+0.3*this.depth;
+          const grad = ctx.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius*4);
+          grad.addColorStop(0, `rgba(${r},${g},${b},${alpha*0.5})`);
+          grad.addColorStop(0.5, `rgba(${r},${g},${b},${alpha*0.1})`);
+          grad.addColorStop(1, 'transparent');
+          ctx.beginPath(); ctx.arc(this.x,this.y,this.radius*4,0,Math.PI*2); ctx.fillStyle=grad; ctx.fill();
+          ctx.beginPath(); ctx.arc(this.x,this.y,this.radius,0,Math.PI*2); ctx.fillStyle=`rgba(${r},${g},${b},${alpha})`; ctx.fill();
         }
       }
-    }
-
-    function drawConnections() {
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const a = particles[i];
-          const b = particles[j];
-          const dx = a.x - b.x;
-          const dy = a.y - b.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          const maxDist = CONFIG.connectionDistance * Math.min(a.depth, b.depth) * 1.5;
-
-          if (dist < maxDist) {
-            let alpha = (1 - dist / maxDist) * 0.15 * Math.min(a.depth, b.depth);
-
-            // Brighter connections near mouse
-            if (mouse.active) {
-              const mx = (a.x + b.x) / 2;
-              const my = (a.y + b.y) / 2;
-              const md = Math.sqrt((mx - mouse.x) ** 2 + (my - mouse.y) ** 2);
-              if (md < CONFIG.mouseRadius) {
-                alpha += (1 - md / CONFIG.mouseRadius) * 0.2;
-              }
+      function init(){ particles=[]; for(let i=0;i<CONFIG.particleCount;i++) particles.push(new Particle()); }
+      function drawGrid(){
+        const scrollY = window.scrollY || 0;
+        ctx.strokeStyle = `rgba(20,184,166,${CONFIG.gridOpacity})`; ctx.lineWidth=0.5;
+        for (const line of gridLines){
+          const offsetY = (scrollY*0.05) % CONFIG.gridSpacing;
+          const offsetX = Math.sin(time*0.0005)*2;
+          ctx.beginPath();
+          if (line.type==='v'){ ctx.moveTo(line.x1+offsetX,0); ctx.lineTo(line.x2+offsetX,height); }
+          else { ctx.moveTo(0,line.y1-offsetY); ctx.lineTo(width,line.y2-offsetY); }
+          ctx.stroke();
+        }
+      }
+      function drawConnections(){
+        for (let i=0;i<particles.length;i++){
+          for (let j=i+1;j<particles.length;j++){
+            const a=particles[i], b=particles[j];
+            const dx=a.x-b.x, dy=a.y-b.y, dist=Math.sqrt(dx*dx+dy*dy);
+            const maxDist = CONFIG.connectionDistance*Math.min(a.depth,b.depth)*1.5;
+            if (dist < maxDist){
+              let alpha = (1-dist/maxDist)*0.15*Math.min(a.depth,b.depth);
+              const [r,g,b2] = a.color;
+              ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y);
+              ctx.strokeStyle=`rgba(${r},${g},${b2},${alpha})`; ctx.lineWidth=0.5+alpha; ctx.stroke();
             }
-
-            const [r, g, b2] = a.color;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `rgba(${r}, ${g}, ${b2}, ${alpha})`;
-            ctx.lineWidth = 0.5 + alpha;
-            ctx.stroke();
           }
         }
       }
-    }
-
-    function drawVignette() {
-      // Radial vignette
-      const gradient = ctx.createRadialGradient(
-        width / 2, height / 2, height * 0.2,
-        width / 2, height / 2, height * 0.9
-      );
-      gradient.addColorStop(0, 'transparent');
-      gradient.addColorStop(1, 'rgba(6, 8, 13, 0.6)');
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, width, height);
-    }
-
-    function drawScanline() {
-      // Subtle moving scanline
-      const scanY = (time * 0.03) % (height + 100) - 50;
-      const grad = ctx.createLinearGradient(0, scanY - 30, 0, scanY + 30);
-      grad.addColorStop(0, 'transparent');
-      grad.addColorStop(0.5, 'rgba(20, 184, 166, 0.02)');
-      grad.addColorStop(1, 'transparent');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, scanY - 30, width, 60);
-    }
-
-    function animate(ts) {
-      time = ts || 0;
-      ctx.clearRect(0, 0, width, height);
-
-      // Background gradient
-      const bg = ctx.createLinearGradient(0, 0, width, height);
-      const shift = Math.sin(time * 0.0003) * 0.02;
-      bg.addColorStop(0, `rgba(6, 8, 13, 1)`);
-      bg.addColorStop(0.3, `rgba(${8 + shift * 200}, ${12 + shift * 100}, ${24 + shift * 300}, 1)`);
-      bg.addColorStop(0.7, `rgba(${10 + shift * 100}, ${14 + shift * 200}, ${28 + shift * 150}, 1)`);
-      bg.addColorStop(1, 'rgba(6, 8, 13, 1)');
-      ctx.fillStyle = bg;
-      ctx.fillRect(0, 0, width, height);
-
-      drawGrid();
-      drawConnections();
-
-      // Update and draw particles (back to front for depth)
-      particles.sort((a, b) => a.depth - b.depth);
-      for (const p of particles) {
-        p.update();
-        p.draw();
+      function drawVignette(){
+        const grad = ctx.createRadialGradient(width/2,height/2,height*0.2, width/2,height/2,height*0.9);
+        grad.addColorStop(0,'transparent'); grad.addColorStop(1,'rgba(6,8,13,0.6)');
+        ctx.fillStyle=grad; ctx.fillRect(0,0,width,height);
       }
+      function animate(ts){
+        time = ts||0;
+        ctx.clearRect(0,0,width,height);
+        const bg = ctx.createLinearGradient(0,0,width,height);
+        const shift = Math.sin(time*0.0003)*0.02;
+        bg.addColorStop(0,'rgba(6,8,13,1)');
+        bg.addColorStop(0.3,`rgba(${8+shift*200},${12+shift*100},${24+shift*300},1)`);
+        bg.addColorStop(0.7,`rgba(${10+shift*100},${14+shift*200},${28+shift*150},1)`);
+        bg.addColorStop(1,'rgba(6,8,13,1)');
+        ctx.fillStyle=bg; ctx.fillRect(0,0,width,height);
+        drawGrid(); drawConnections();
+        particles.sort((a,b)=>a.depth-b.depth);
+        for (const p of particles){ p.update(); p.draw(); }
+        drawVignette();
+        requestAnimationFrame(animate);
+      }
+      document.addEventListener('mousemove', (e)=>{
+        mouse.x=e.clientX; mouse.y=e.clientY; mouse.active=true;
+        cursorGlow.style.left=e.clientX+'px'; cursorGlow.style.top=e.clientY+'px'; cursorGlow.style.opacity='1';
+      });
+      document.addEventListener('mouseleave', ()=>{ mouse.active=false; cursorGlow.style.opacity='0'; });
+      window.addEventListener('resize', ()=>{ resize(); init(); });
+      resize(); init(); animate();
+    })();
 
-      drawScanline();
-      drawVignette();
-
-      animFrame = requestAnimationFrame(animate);
+    // ---------- Scroll reveal (progressive enhancement only — content is
+    // visible by default; JS just arms a fade-in if IntersectionObserver exists) ----------
+    if ('IntersectionObserver' in window) {
+      const targets = document.querySelectorAll('#skills, #education, #experience, #projects, #contact');
+      targets.forEach(t => t.classList.add('reveal', 'js-armed'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('in'); });
+      }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+      targets.forEach(t => io.observe(t));
     }
-
-    // Event listeners
-    document.addEventListener('mousemove', (e) => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      mouse.active = true;
-      cursorGlow.style.left = e.clientX + 'px';
-      cursorGlow.style.top = e.clientY + 'px';
-      cursorGlow.style.opacity = '1';
-    });
-
-    document.addEventListener('mouseleave', () => {
-      mouse.active = false;
-      cursorGlow.style.opacity = '0';
-    });
-
-    // Make the canvas interactive (pointer events on the body, not the canvas)
-    canvas.style.pointerEvents = 'none';
-
-    window.addEventListener('resize', () => {
-      resize();
-      init();
-    });
-
-    // Initialise
-    resize();
-    init();
-    animate();
-  })();
   </script>
 </body>
-
 </html>

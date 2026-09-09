@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-08T17:05:00.538417+00:00",
+  "updated_at": "2026-09-09T17:02:45.950476+00:00",
   "top_trending": {
-    "ticker": "RGTI",
-    "name": "Rigetti Computing, Inc.",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 71633,
-    "price": 15.93,
-    "change_pct": "+4.80%",
+    "tweet_volume": 23795,
+    "price": 19.83,
+    "change_pct": "+4.98%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "POET",
-      "name": "POET Technologies Inc.",
+      "ticker": "TTAN",
+      "name": "ServiceTitan, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 28475,
-      "price": 8.71,
-      "change_pct": "+9.91%",
+      "tweet_volume": 40763,
+      "price": 57.81,
+      "change_pct": "-29.13%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 54671,
-      "price": 42.62,
-      "change_pct": "+7.84%",
+      "tweet_volume": 57812,
+      "price": 81.82,
+      "change_pct": "-0.46%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 84072,
-      "price": 104.07,
-      "change_pct": "+16.46%",
+      "tweet_volume": 40329,
+      "price": 716.59,
+      "change_pct": "-0.25%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SMR",
-      "name": "NuScale Power Corporation",
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 77914,
-      "price": 11.24,
-      "change_pct": "+15.93%",
+      "tweet_volume": 65438,
+      "price": 13.48,
+      "change_pct": "-3.75%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GT",
-      "name": "The Goodyear Tire & Rubber Comp",
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16790,
-      "price": 5.89,
-      "change_pct": "-5.68%",
+      "tweet_volume": 3902,
+      "price": 142.53,
+      "change_pct": "-4.20%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VKTX",
-      "name": "Viking Therapeutics, Inc.",
+      "ticker": "IRD",
+      "name": "Opus Genetics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2145,
-      "price": 33.84,
-      "change_pct": "-2.95%",
+      "tweet_volume": 102928,
+      "price": 5.76,
+      "change_pct": "+32.83%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BCRX",
-      "name": "BioCryst Pharmaceuticals, Inc.",
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 16229,
-      "price": 9.23,
-      "change_pct": "-7.28%",
+      "tweet_volume": 10572,
+      "price": 266.81,
+      "change_pct": "-8.26%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ZVRA",
-      "name": "Zevra Therapeutics, Inc.",
+      "ticker": "ODD",
+      "name": "ODDITY Tech Ltd.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1313,
-      "price": 12.83,
-      "change_pct": "+3.47%",
+      "tweet_volume": 19906,
+      "price": 16.18,
+      "change_pct": "+24.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QUBT",
-      "name": "Quantum Computing Inc.",
+      "ticker": "CELH",
+      "name": "Celsius Holdings, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14575,
-      "price": 8.48,
-      "change_pct": "+5.93%",
+      "tweet_volume": 11649,
+      "price": 28.11,
+      "change_pct": "-4.91%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TEAM",
-      "name": "Atlassian Corporation",
+      "ticker": "CASY",
+      "name": "Caseys General Stores, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4878,
-      "price": 177.35,
-      "change_pct": "-6.45%",
+      "tweet_volume": 4398,
+      "price": 618.57,
+      "change_pct": "-15.67%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

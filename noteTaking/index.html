@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Notes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.5/purify.min.js"></script>
+
+<style>
+  :root {
+    --bg-base: #06080d;
+    --bg-surface: rgba(20, 25, 35, 0.55);
+    --bg-input: rgba(15, 23, 42, 0.9);
+    --text-primary: #f5f5f5;
+    --text-secondary: #94a3b8;
+    --text-dim: #5b6b85;
+    --accent-primary: #2dd4bf;
+    --accent-secondary: #6366f1;
+    --bullish: #10b981;
+    --bearish: #ef4444;
+    --warn: #f59e0b;
+    --border-light: rgba(255, 255, 255, 0.07);
+    --glass-blur: blur(12px);
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .ambient-glow {
+    position: fixed; width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
+    top: -200px; right: -100px; border-radius: 50%; pointer-events: none; z-index: 0;
+  }
+  .ambient-glow-2 {
+    position: fixed; width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, rgba(45, 212, 191, 0.03) 40%, transparent 70%);
+    bottom: -150px; left: -150px; border-radius: 50%; pointer-events: none; z-index: 0;
+  }
+
+  .glass {
+    background: var(--bg-surface); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-light); border-radius: 18px;
+  }
+
+  header.topbar {
+    position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-light); flex-wrap: wrap; gap: 0.75rem;
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.1rem; }
+  .brand svg { color: var(--accent-primary); width: 22px; height: 22px; }
+  .nav-links a {
+    color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500;
+    display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent-primary); }
+  .nav-links svg { width: 16px; height: 16px; }
+
+  input, textarea, button, select {
+    font-family: 'Inter', sans-serif;
+  }
+  input[type="password"], input[type="text"] {
+    width: 100%; background: var(--bg-input); border: 1px solid rgba(51,65,85,0.7); color: var(--text-primary);
+    border-radius: 0.5rem; padding: 0.65rem 0.85rem; font-size: 0.9rem; transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  input:focus { outline: none; border-color: var(--accent-primary); box-shadow: 0 0 0 2px rgba(45,212,191,0.2); }
+
+  .btn { border-radius: 0.55rem; padding: 0.6rem 1.1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; }
+  .btn-primary { background: var(--accent-primary); color: #06080d; }
+  .btn-primary:hover { background: #5eead4; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-secondary { background: rgba(99,102,241,0.15); color: #a5b4fc; border-color: rgba(99,102,241,0.3); }
+  .btn-secondary:hover { background: rgba(99,102,241,0.28); }
+  .btn-ghost { background: var(--bg-input); color: var(--text-secondary); border-color: rgba(51,65,85,0.5); }
+  .btn-ghost:hover { color: var(--text-primary); }
+  .btn-danger { background: rgba(239,68,68,0.12); color: #f87171; border-color: rgba(239,68,68,0.3); }
+  .btn-danger:hover { background: rgba(239,68,68,0.22); }
+  .btn-sm { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
+  .btn-icon { padding: 0.5rem; display: inline-flex; align-items: center; justify-content: center; }
+
+  /* ---------- Lock screen ---------- */
+  #lockScreen {
+    position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 1.5rem;
+  }
+  .lock-card { max-width: 420px; width: 100%; padding: 2.25rem; }
+  .lock-icon {
+    width: 56px; height: 56px; border-radius: 16px; background: rgba(45,212,191,0.12); border: 1px solid rgba(45,212,191,0.3);
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: var(--accent-primary);
+  }
+  .lock-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.4rem; text-align: center; margin-bottom: 0.4rem; }
+  .lock-sub { color: var(--text-secondary); font-size: 0.85rem; text-align: center; margin-bottom: 1.5rem; line-height: 1.5; }
+  .field-group { margin-bottom: 1rem; }
+  .field-group label { display: block; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); margin-bottom: 0.4rem; }
+  .error-msg { color: var(--bearish); font-size: 0.82rem; margin-top: 0.6rem; text-align: center; min-height: 1.2em; }
+  .warn-box {
+    background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); border-radius: 0.6rem;
+    padding: 0.75rem 0.9rem; font-size: 0.76rem; color: var(--text-secondary); line-height: 1.5; margin-top: 1.25rem;
+  }
+  .warn-box strong { color: var(--warn); }
+
+  /* ---------- Main App ---------- */
+  #app { display: none; position: relative; z-index: 1; }
+  .app-toolbar { display: flex; align-items: center; gap: 0.6rem; padding: 1rem 1.5rem; flex-wrap: wrap; border-bottom: 1px solid var(--border-light); }
+  .search-wrap { position: relative; flex: 1; min-width: 180px; }
+  .search-wrap svg { position: absolute; left: 0.7rem; top: 50%; transform: translateY(-50%); color: var(--text-dim); width: 16px; height: 16px; }
+  .search-wrap input { padding-left: 2.1rem; }
+
+  .app-body { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 128px); }
+  @media (max-width: 860px) { .app-body { grid-template-columns: 1fr; } .sidebar.hide-mobile { display: none; } }
+
+  .sidebar { border-right: 1px solid var(--border-light); padding: 1rem; overflow-y: auto; max-height: calc(100vh - 128px); }
+  .tag-filter-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+  .tag-chip {
+    font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.6rem; border-radius: 9999px; cursor: pointer;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-secondary); transition: all 0.15s;
+  }
+  .tag-chip:hover { color: var(--text-primary); }
+  .tag-chip.active { background: rgba(45,212,191,0.15); border-color: rgba(45,212,191,0.4); color: var(--accent-primary); }
+
+  .note-list-item {
+    padding: 0.8rem 0.85rem; border-radius: 0.7rem; cursor: pointer; margin-bottom: 0.4rem; border: 1px solid transparent;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .note-list-item:hover { background: rgba(255,255,255,0.04); }
+  .note-list-item.selected { background: rgba(45,212,191,0.08); border-color: rgba(45,212,191,0.3); }
+  .note-list-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.35rem; }
+  .note-list-title .pin { color: var(--warn); width: 13px; height: 13px; flex-shrink: 0; }
+  .note-list-preview { font-size: 0.78rem; color: var(--text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 0.35rem; }
+  .note-list-meta { display: flex; align-items: center; justify-content: space-between; font-size: 0.68rem; color: var(--text-dim); }
+  .note-list-tags { display: flex; gap: 0.25rem; flex-wrap: wrap; margin-top: 0.35rem; }
+  .mini-tag { font-size: 0.62rem; padding: 0.1rem 0.4rem; border-radius: 6px; background: rgba(99,102,241,0.12); color: #a5b4fc; }
+
+  .empty-state { text-align: center; padding: 3rem 1.5rem; color: var(--text-dim); }
+  .empty-state svg { width: 40px; height: 40px; margin: 0 auto 1rem; color: var(--text-dim); }
+
+  .editor { padding: 1.5rem; }
+  .editor-top { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  #noteTitle {
+    flex: 1; min-width: 200px; background: transparent; border: none; color: var(--text-primary);
+    font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700; padding: 0.25rem 0;
+  }
+  #noteTitle:focus { outline: none; }
+  #noteTitle::placeholder { color: var(--text-dim); }
+  .editor-actions { display: flex; gap: 0.5rem; align-items: center; }
+
+  .tags-input-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .tags-input-row input { max-width: 200px; background: transparent; border: none; border-bottom: 1px dashed rgba(148,163,184,0.4); color: var(--text-primary); font-size: 0.78rem; padding: 0.2rem 0.1rem; }
+  .tags-input-row input:focus { outline: none; border-color: var(--accent-primary); }
+  .note-tag { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.72rem; font-weight: 600; padding: 0.25rem 0.55rem; border-radius: 9999px; background: rgba(99,102,241,0.14); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3); }
+  .note-tag button { background: none; border: none; color: #a5b4fc; cursor: pointer; padding: 0; font-size: 0.85rem; line-height: 1; opacity: 0.7; }
+  .note-tag button:hover { opacity: 1; }
+
+  .editor-tabs { display: flex; gap: 0.4rem; margin-bottom: 0.75rem; }
+  .editor-tab { font-size: 0.76rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 0.4rem; cursor: pointer; color: var(--text-secondary); background: var(--bg-input); border: 1px solid rgba(51,65,85,0.5); }
+  .editor-tab.active { background: rgba(45,212,191,0.12); border-color: rgba(45,212,191,0.4); color: var(--accent-primary); }
+
+  #noteContent {
+    width: 100%; min-height: 420px; background: var(--bg-input); border: 1px solid rgba(51,65,85,0.5); border-radius: 0.7rem;
+    color: var(--text-primary); font-family: 'JetBrains Mono', monospace; font-size: 0.88rem; line-height: 1.6; padding: 1rem;
+    resize: vertical;
+  }
+  #noteContent:focus { outline: none; border-color: var(--accent-primary); }
+  #notePreview {
+    min-height: 420px; background: var(--bg-input); border: 1px solid rgba(51,65,85,0.5); border-radius: 0.7rem;
+    padding: 1rem 1.25rem; line-height: 1.65; font-size: 0.92rem; color: #e2e8f0;
+  }
+  #notePreview h1, #notePreview h2, #notePreview h3 { font-family: 'Outfit', sans-serif; margin: 1em 0 0.4em; }
+  #notePreview p { margin: 0.6em 0; }
+  #notePreview code { background: rgba(255,255,255,0.08); padding: 0.15em 0.4em; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.85em; }
+  #notePreview pre { background: rgba(0,0,0,0.3); padding: 0.8em; border-radius: 8px; overflow-x: auto; }
+  #notePreview ul, #notePreview ol { padding-left: 1.4em; margin: 0.6em 0; }
+  #notePreview a { color: var(--accent-primary); }
+  #notePreview blockquote { border-left: 3px solid var(--accent-primary); padding-left: 1em; color: var(--text-secondary); margin: 0.6em 0; }
+
+  .save-indicator { font-size: 0.72rem; color: var(--text-dim); display: flex; align-items: center; gap: 0.35rem; }
+  .save-indicator.saved { color: var(--bullish); }
+
+  .footnote { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; line-height: 1.5; }
+
+  /* Reset confirm modal */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 60; display: none; align-items: center; justify-content: center; padding: 1rem; }
+  .modal-overlay.show { display: flex; }
+  .modal-card { max-width: 420px; width: 100%; padding: 1.75rem; }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.3); border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="ambient-glow"></div>
+<div class="ambient-glow-2"></div>
+
+<!-- ============ LOCK SCREEN ============ -->
+<div id="lockScreen">
+  <div class="glass lock-card">
+    <div class="lock-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <h1 class="lock-title" id="lockTitle">Unlock Your Notes</h1>
+    <p class="lock-sub" id="lockSub">Enter your password to decrypt and view your notes.</p>
+
+    <form id="unlockForm">
+      <div class="field-group">
+        <label for="pw1">Password</label>
+        <input type="password" id="pw1" autocomplete="current-password" required>
+      </div>
+      <div class="field-group" id="pw2Group" style="display:none;">
+        <label for="pw2">Confirm Password</label>
+        <input type="password" id="pw2" autocomplete="new-password">
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;" id="unlockBtn">Unlock</button>
+      <p class="error-msg" id="lockError"></p>
+    </form>
+
+    <div class="warn-box" id="setupWarn" style="display:none;">
+      <strong>No password recovery.</strong> Your notes are encrypted in this browser with a key derived from your password (AES-256, PBKDF2). If you forget it, there is no way to recover your notes — not even I can reset it for you. Consider writing it down somewhere safe.
+    </div>
+    <div class="warn-box">
+      <strong>Browser-only storage.</strong> Notes live only in this browser's local storage — they won't sync to other devices, and clearing site data will erase them. Use "Export" once unlocked to keep an unencrypted backup file.
+    </div>
+    <div class="warn-box" id="trulyForgotBox" style="display:none;">
+      <strong>Truly forgotten your password?</strong> There is deliberately no "reset" button here — a one-click wipe next to the password box would let anyone with a moment of access to this device destroy your notes without knowing the password. If you genuinely need to start over: open your browser's DevTools console on this page and run <code class="mono" style="background:rgba(255,255,255,0.08); padding:0.1em 0.4em; border-radius:4px;">localStorage.removeItem('noteTaking_vault_v1')</code>, then reload.
+    </div>
+  </div>
+</div>
+
+<!-- ============ MAIN APP ============ -->
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      My Notes
+    </div>
+    <div class="nav-links" style="display:flex; gap:1.25rem; align-items:center;">
+      <a href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Portfolio
+      </a>
+      <button class="btn btn-secondary btn-sm" id="exportBtn">⬇ Export Backup</button>
+      <button class="btn btn-ghost btn-sm" id="lockBtn">🔒 Lock</button>
+    </div>
+  </header>
+
+  <div class="app-toolbar">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search notes…">
+    </div>
+    <button class="btn btn-ghost btn-sm sidebar-toggle" id="sidebarToggle" style="display:none;">☰ Notes</button>
+    <button class="btn btn-primary btn-sm" id="newNoteBtn">+ New Note</button>
+  </div>
+
+  <div class="app-body">
+    <aside class="sidebar" id="sidebar">
+      <div class="tag-filter-row" id="tagFilterRow"></div>
+      <div id="noteList"></div>
+    </aside>
+
+    <main id="editorPane">
+      <div class="empty-state" id="emptyState">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <p>Select a note, or create a new one to get started.</p>
+      </div>
+
+      <div class="editor" id="editor" style="display:none;">
+        <div class="editor-top">
+          <input type="text" id="noteTitle" placeholder="Untitled note">
+          <div class="editor-actions">
+            <button class="btn btn-icon btn-ghost" id="pinBtn" title="Pin note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 17v5M9 3h6l1 6 3 3v2H5v-2l3-3 1-6z"/></svg>
+            </button>
+            <button class="btn btn-danger btn-sm" id="deleteNoteBtn">Delete</button>
+          </div>
+        </div>
+
+        <div class="tags-input-row" id="tagsInputRow">
+          <input type="text" id="tagInput" placeholder="+ tag">
+        </div>
+
+        <div class="editor-tabs">
+          <div class="editor-tab active" data-mode="write">Write</div>
+          <div class="editor-tab" data-mode="preview">Preview</div>
+        </div>
+
+        <textarea id="noteContent" placeholder="Start writing in Markdown…"></textarea>
+        <div id="notePreview" style="display:none;"></div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.75rem;">
+          <span class="save-indicator" id="saveIndicator">Saved</span>
+          <span class="mono" style="font-size:0.72rem; color:var(--text-dim);" id="noteMeta"></span>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+(function () {
+  const el = id => document.getElementById(id);
+  const VAULT_KEY = 'noteTaking_vault_v1';
+
+  // ============================================================
+  // Crypto helpers (Web Crypto API — AES-256-GCM, PBKDF2-SHA256)
+  // ============================================================
+  const PBKDF2_ITERATIONS = 300000;
+
+  function bufToB64(buf) {
+    return btoa(String.fromCharCode(...new Uint8Array(buf)));
+  }
+  function b64ToBuf(b64) {
+    const bin = atob(b64);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return bytes;
+  }
+  async function deriveKey(password, saltBytes) {
+    const enc = new TextEncoder();
+    const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt: saltBytes, iterations: PBKDF2_ITERATIONS, hash: 'SHA-256' },
+      keyMaterial,
+      { name: 'AES-GCM', length: 256 },
+      false,
+      ['encrypt', 'decrypt']
+    );
+  }
+  async function encryptJSON(key, obj) {
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const enc = new TextEncoder();
+    const data = enc.encode(JSON.stringify(obj));
+    const ciphertext = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, data);
+    return { iv: bufToB64(iv), data: bufToB64(ciphertext) };
+  }
+  async function decryptJSON(key, ivB64, dataB64) {
+    const iv = b64ToBuf(ivB64);
+    const data = b64ToBuf(dataB64);
+    const plainBuf = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, data);
+    return JSON.parse(new TextDecoder().decode(plainBuf));
+  }
+
+  // ============================================================
+  // State
+  // ============================================================
+  let cryptoKey = null;      // in-memory only — never persisted
+  let vaultSalt = null;      // base64, persisted (not secret)
+  let notes = [];            // decrypted, in-memory only
+  let selectedNoteId = null;
+  let activeTagFilter = null;
+  let searchQuery = '';
+  let saveTimer = null;
+  let lastActivity = Date.now();
+  const AUTO_LOCK_MS = 10 * 60 * 1000; // 10 minutes idle
+
+  function getVaultRaw() {
+    try { return JSON.parse(localStorage.getItem(VAULT_KEY) || 'null'); } catch (e) { return null; }
+  }
+  function hasVault() { return !!getVaultRaw(); }
+
+  function markActivity() { lastActivity = Date.now(); }
+  ['mousemove','keydown','click','scroll'].forEach(evt => document.addEventListener(evt, markActivity, { passive: true }));
+  setInterval(() => {
+    if (cryptoKey && Date.now() - lastActivity > AUTO_LOCK_MS) lockApp();
+  }, 15000);
+
+  // ============================================================
+  // Lock screen logic
+  // ============================================================
+  function showLockScreen() {
+    el('app').style.display = 'none';
+    el('lockScreen').style.display = 'flex';
+    const vaultExists = hasVault();
+    el('lockTitle').textContent = vaultExists ? 'Unlock Your Notes' : 'Set Up Your Notes';
+    el('lockSub').textContent = vaultExists
+      ? 'Enter your password to decrypt and view your notes.'
+      : 'Choose a password to encrypt your notes. This only protects them in this browser.';
+    el('pw2Group').style.display = vaultExists ? 'none' : 'block';
+    el('pw2').required = !vaultExists;
+    el('setupWarn').style.display = vaultExists ? 'none' : 'block';
+    el('trulyForgotBox').style.display = vaultExists ? 'block' : 'none';
+    el('unlockBtn').textContent = vaultExists ? 'Unlock' : 'Create & Unlock';
+    el('lockError').textContent = '';
+    el('pw1').value = ''; el('pw2').value = '';
+    setTimeout(() => el('pw1').focus(), 50);
+  }
+
+  function lockApp() {
+    cryptoKey = null;
+    notes = [];
+    selectedNoteId = null;
+    showLockScreen();
+  }
+
+  el('unlockForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    el('lockError').textContent = '';
+    const pw1 = el('pw1').value;
+    const vault = getVaultRaw();
+
+    if (!vault) {
+      // Setup flow
+      const pw2 = el('pw2').value;
+      if (pw1.length < 6) { el('lockError').textContent = 'Use at least 6 characters.'; return; }
+      if (pw1 !== pw2) { el('lockError').textContent = 'Passwords do not match.'; return; }
+      el('unlockBtn').disabled = true; el('unlockBtn').textContent = 'Encrypting…';
+      const salt = crypto.getRandomValues(new Uint8Array(16));
+      const key = await deriveKey(pw1, salt);
+      const encrypted = await encryptJSON(key, []);
+      const newVault = { salt: bufToB64(salt), iv: encrypted.iv, data: encrypted.data, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      localStorage.setItem(VAULT_KEY, JSON.stringify(newVault));
+      cryptoKey = key;
+      notes = [];
+      enterApp();
+    } else {
+      // Unlock flow
+      el('unlockBtn').disabled = true; el('unlockBtn').textContent = 'Unlocking…';
+      try {
+        const salt = b64ToBuf(vault.salt);
+        const key = await deriveKey(pw1, salt);
+        const decrypted = await decryptJSON(key, vault.iv, vault.data);
+        cryptoKey = key;
+        notes = Array.isArray(decrypted) ? decrypted : [];
+        enterApp();
+      } catch (err) {
+        el('lockError').textContent = 'Incorrect password.';
+        el('unlockBtn').disabled = false; el('unlockBtn').textContent = 'Unlock';
+        return;
+      }
+    }
+    el('unlockBtn').disabled = false;
+  });
+
+  el('lockBtn').addEventListener('click', lockApp);
+
+  // ============================================================
+  // Persist notes (re-encrypt whole array on every save)
+  // ============================================================
+  async function persistNotes() {
+    if (!cryptoKey) return;
+    const vault = getVaultRaw();
+    const encrypted = await encryptJSON(cryptoKey, notes);
+    const newVault = { salt: vault.salt, iv: encrypted.iv, data: encrypted.data, createdAt: vault.createdAt, updatedAt: new Date().toISOString() };
+    localStorage.setItem(VAULT_KEY, JSON.stringify(newVault));
+  }
+
+  function scheduleSave() {
+    el('saveIndicator').textContent = 'Saving…';
+    el('saveIndicator').classList.remove('saved');
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(async () => {
+      await persistNotes();
+      el('saveIndicator').textContent = 'Saved';
+      el('saveIndicator').classList.add('saved');
+      renderNoteList();
+    }, 500);
+  }
+
+  // ============================================================
+  // App UI
+  // ============================================================
+  function enterApp() {
+    el('lockScreen').style.display = 'none';
+    el('app').style.display = 'block';
+    markActivity();
+    if (!selectedNoteId && notes.length) selectedNoteId = [...notes].sort(sortNotes)[0].id;
+    renderTagFilters();
+    renderNoteList();
+    renderEditor();
+  }
+
+  function sortNotes(a, b) {
+    if (!!b.pinned - !!a.pinned !== 0) return (!!b.pinned) - (!!a.pinned);
+    return new Date(b.updatedAt) - new Date(a.updatedAt);
+  }
+
+  function allTags() {
+    const set = new Set();
+    notes.forEach(n => (n.tags || []).forEach(t => set.add(t)));
+    return [...set].sort();
+  }
+
+  function filteredNotes() {
+    let list = [...notes];
+    if (activeTagFilter) list = list.filter(n => (n.tags || []).includes(activeTagFilter));
+    if (searchQuery.trim()) {
+      const q = searchQuery.trim().toLowerCase();
+      list = list.filter(n =>
+        (n.title || '').toLowerCase().includes(q) ||
+        (n.content || '').toLowerCase().includes(q) ||
+        (n.tags || []).some(t => t.toLowerCase().includes(q))
+      );
+    }
+    return list.sort(sortNotes);
+  }
+
+  function renderTagFilters() {
+    const tags = allTags();
+    const row = el('tagFilterRow');
+    if (!tags.length) { row.innerHTML = ''; return; }
+    row.innerHTML = `<span class="tag-chip ${!activeTagFilter ? 'active' : ''}" data-tag="">All</span>` +
+      tags.map(t => `<span class="tag-chip ${activeTagFilter === t ? 'active' : ''}" data-tag="${escapeAttr(t)}">${escapeHtml(t)}</span>`).join('');
+    row.querySelectorAll('.tag-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        activeTagFilter = chip.dataset.tag || null;
+        renderTagFilters();
+        renderNoteList();
+      });
+    });
+  }
+
+  function renderNoteList() {
+    const list = filteredNotes();
+    const container = el('noteList');
+    if (!list.length) {
+      container.innerHTML = `<p style="color:var(--text-dim); font-size:0.82rem; text-align:center; padding:2rem 0.5rem;">No notes ${searchQuery || activeTagFilter ? 'match this filter' : 'yet'}.</p>`;
+      return;
+    }
+    container.innerHTML = list.map(n => {
+      const preview = (n.content || '').replace(/[#*`_>-]/g, '').trim().slice(0, 90) || 'No content';
+      const updated = new Date(n.updatedAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+      const tags = (n.tags || []).slice(0, 3).map(t => `<span class="mini-tag">${escapeHtml(t)}</span>`).join('');
+      return `
+        <div class="note-list-item ${n.id === selectedNoteId ? 'selected' : ''}" data-id="${n.id}">
+          <div class="note-list-title">
+            ${n.pinned ? '<svg class="pin" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17v5M9 3h6l1 6 3 3v2H5v-2l3-3 1-6z"/></svg>' : ''}
+            ${escapeHtml(n.title || 'Untitled note')}
+          </div>
+          <div class="note-list-preview">${escapeHtml(preview)}</div>
+          <div class="note-list-meta"><span>${updated}</span></div>
+          ${tags ? `<div class="note-list-tags">${tags}</div>` : ''}
+        </div>`;
+    }).join('');
+    container.querySelectorAll('.note-list-item').forEach(item => {
+      item.addEventListener('click', () => {
+        selectedNoteId = item.dataset.id;
+        renderNoteList();
+        renderEditor();
+        if (window.innerWidth <= 860) el('sidebar').classList.add('hide-mobile');
+      });
+    });
+  }
+
+  function currentNote() { return notes.find(n => n.id === selectedNoteId) || null; }
+
+  function renderEditor() {
+    const note = currentNote();
+    if (!note) {
+      el('emptyState').style.display = 'block';
+      el('editor').style.display = 'none';
+      return;
+    }
+    el('emptyState').style.display = 'none';
+    el('editor').style.display = 'block';
+    el('noteTitle').value = note.title || '';
+    el('noteContent').value = note.content || '';
+    el('pinBtn').style.color = note.pinned ? 'var(--warn)' : '';
+    el('pinBtn').style.borderColor = note.pinned ? 'rgba(245,158,11,0.4)' : '';
+    renderNoteTags(note);
+    updateNoteMeta(note);
+    renderMarkdownPreview();
+  }
+
+  function updateNoteMeta(note) {
+    const updated = new Date(note.updatedAt);
+    el('noteMeta').textContent = 'Last edited ' + updated.toLocaleString(undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  }
+
+  function renderNoteTags(note) {
+    const row = el('tagsInputRow');
+    const existingTags = row.querySelectorAll('.note-tag');
+    existingTags.forEach(t => t.remove());
+    const input = el('tagInput');
+    (note.tags || []).forEach(tag => {
+      const span = document.createElement('span');
+      span.className = 'note-tag';
+      span.innerHTML = `${escapeHtml(tag)} <button type="button" data-tag="${escapeAttr(tag)}">✕</button>`;
+      row.insertBefore(span, input);
+    });
+    row.querySelectorAll('.note-tag button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const note = currentNote(); if (!note) return;
+        note.tags = (note.tags || []).filter(t => t !== btn.dataset.tag);
+        note.updatedAt = new Date().toISOString();
+        renderNoteTags(note);
+        renderTagFilters();
+        scheduleSave();
+      });
+    });
+  }
+
+  function escapeHtml(s) { return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function escapeAttr(s) { return escapeHtml(s); }
+
+  function renderMarkdownPreview() {
+    const note = currentNote(); if (!note) return;
+    const raw = marked.parse(note.content || '*Nothing to preview yet.*');
+    el('notePreview').innerHTML = DOMPurify.sanitize(raw);
+  }
+
+  // ---------- Editor events ----------
+  el('noteTitle').addEventListener('input', () => {
+    const note = currentNote(); if (!note) return;
+    note.title = el('noteTitle').value;
+    note.updatedAt = new Date().toISOString();
+    scheduleSave();
+  });
+  el('noteContent').addEventListener('input', () => {
+    const note = currentNote(); if (!note) return;
+    note.content = el('noteContent').value;
+    note.updatedAt = new Date().toISOString();
+    scheduleSave();
+  });
+  el('tagInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ',') {
+      e.preventDefault();
+      const note = currentNote(); if (!note) return;
+      const val = el('tagInput').value.trim().replace(/,$/, '');
+      if (val && !(note.tags || []).includes(val)) {
+        note.tags = [...(note.tags || []), val];
+        note.updatedAt = new Date().toISOString();
+        renderNoteTags(note);
+        renderTagFilters();
+        scheduleSave();
+      }
+      el('tagInput').value = '';
+    }
+  });
+  el('pinBtn').addEventListener('click', () => {
+    const note = currentNote(); if (!note) return;
+    note.pinned = !note.pinned;
+    note.updatedAt = new Date().toISOString();
+    renderEditor();
+    scheduleSave();
+  });
+  el('deleteNoteBtn').addEventListener('click', () => {
+    const note = currentNote(); if (!note) return;
+    if (!confirm('Delete "' + (note.title || 'Untitled note') + '"? This cannot be undone.')) return;
+    notes = notes.filter(n => n.id !== note.id);
+    selectedNoteId = notes.length ? [...notes].sort(sortNotes)[0].id : null;
+    renderTagFilters();
+    renderNoteList();
+    renderEditor();
+    scheduleSave();
+  });
+
+  document.querySelectorAll('.editor-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.editor-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      if (tab.dataset.mode === 'preview') {
+        renderMarkdownPreview();
+        el('noteContent').style.display = 'none';
+        el('notePreview').style.display = 'block';
+      } else {
+        el('noteContent').style.display = 'block';
+        el('notePreview').style.display = 'none';
+      }
+    });
+  });
+
+  el('newNoteBtn').addEventListener('click', () => {
+    const id = 'n_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+    const now = new Date().toISOString();
+    notes.push({ id, title: '', content: '', tags: [], pinned: false, createdAt: now, updatedAt: now });
+    selectedNoteId = id;
+    renderNoteList();
+    renderEditor();
+    scheduleSave();
+    setTimeout(() => el('noteTitle').focus(), 50);
+  });
+
+  el('searchInput').addEventListener('input', () => {
+    searchQuery = el('searchInput').value;
+    renderNoteList();
+  });
+
+  el('sidebarToggle').addEventListener('click', () => {
+    el('sidebar').classList.toggle('hide-mobile');
+  });
+  function checkMobileToggle() {
+    const isMobile = window.innerWidth <= 860;
+    el('sidebarToggle').style.display = isMobile ? 'inline-flex' : 'none';
+    if (!isMobile) el('sidebar').classList.remove('hide-mobile');
+  }
+  window.addEventListener('resize', checkMobileToggle);
+  checkMobileToggle();
+
+  // ---------- Export backup (decrypted JSON, for the user's own safekeeping) ----------
+  el('exportBtn').addEventListener('click', () => {
+    const payload = { exportedAt: new Date().toISOString(), notes };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'notes-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+
+  // ============================================================
+  // Init
+  // ============================================================
+  if (!('crypto' in window) || !('subtle' in window.crypto)) {
+    document.body.innerHTML = '<div style="padding:3rem; text-align:center; color:#f5f5f5; font-family:Inter,sans-serif;">Your browser does not support the Web Crypto API needed to encrypt notes. Please use a modern browser over HTTPS (or localhost).</div>';
+    return;
+  }
+  showLockScreen();
+})();
+</script>
+</body>
+</html>

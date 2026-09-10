@@ -6,13 +6,13 @@
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 101622,
-    "price": 323.69,
-    "change_pct": "+2.65%",
+    "tweet_volume": 110803,
+    "price": 325.18,
+    "change_pct": "+3.12%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
     ],
-    "requested_at": "2026-09-10T17:11:39.089558+00:00"
+    "requested_at": "2026-09-10T17:37:09.618522+00:00"
   }
 }

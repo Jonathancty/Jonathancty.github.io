@@ -1,0 +1,38 @@
+name: Analyze Ticker Sentiment (On-Demand)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: 'Stock ticker to analyze (e.g. AAPL)'
+        required: true
+        type: string
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push the result back to the repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run On-Demand Sentiment Analysis
+        run: python scripts/analyze_ticker.py "${{ github.event.inputs.ticker }}"
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add trading/search_results.json trading/history.json
+          git commit -m "On-demand sentiment analysis: ${{ github.event.inputs.ticker }} 🔍" || echo "No changes to commit"
+          git push

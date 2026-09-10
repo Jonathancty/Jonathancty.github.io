@@ -527,6 +527,11 @@
       return 'Neutral';
     }
 
+    function formatScore(score) {
+      if (score === null || score === undefined) return '—';
+      return (score > 0 ? '+' : '') + score.toFixed(2);
+    }
+
     function renderSentimentBar(bullish_pct) {
       if (bullish_pct === null || bullish_pct === undefined) return '';
       const bearish_pct = 100 - bullish_pct;
@@ -568,6 +573,10 @@
               <p class="stock-name">${top_trending.name}</p>
 
               <div class="metric-grid">
+                <div class="metric">
+                  <span class="metric-label">Sentiment Score</span>
+                  <span class="metric-value ${topSentimentClass}">${formatScore(top_trending.current_sentiment)}</span>
+                </div>
                 <div class="metric">
                   <span class="metric-label">Social Mentions</span>
                   <span class="metric-value">
@@ -628,6 +637,10 @@
             <div style="height: 1px; background: var(--border-light); margin: 1rem 0;"></div>
 
             <div class="metric-grid" style="margin-top:0;">
+              <div class="metric">
+                <span class="metric-label" style="font-size:0.7rem">Sentiment Score</span>
+                <span class="metric-value ${sentimentClass}" style="font-size:1rem">${formatScore(stock.current_sentiment)}</span>
+              </div>
               <div class="metric">
                 <span class="metric-label" style="font-size:0.7rem">Social Mentions</span>
                 <span class="metric-value" style="font-size:1rem">${formatNumber(stock.tweet_volume)}</span>
@@ -749,6 +762,10 @@
           <div style="height: 1px; background: var(--border-light); margin: 1rem 0;"></div>
           <div class="metric-grid" style="margin-top:0;">
             <div class="metric">
+              <span class="metric-label" style="font-size:0.7rem">Sentiment Score</span>
+              <span class="metric-value ${sentimentClass}" style="font-size:1rem">${formatScore(stock.current_sentiment)}</span>
+            </div>
+            <div class="metric">
               <span class="metric-label" style="font-size:0.7rem">Social Mentions</span>
               <span class="metric-value" style="font-size:1rem">${formatNumber(stock.tweet_volume)}</span>
             </div>
@@ -785,7 +802,8 @@
 
     async function pollForResult(ticker, sinceTimestamp, attempt) {
       attempt = attempt || 0;
-      const maxAttempts = 30; // ~5 minutes at 10s intervals
+      const maxAttempts = 60; // ~10 minutes at 10s intervals — GitHub Pages' own build+CDN
+                              // propagation can add several minutes on top of the Action's runtime
       try {
         const results = await fetchSearchResults();
         const entry = results[ticker];
@@ -799,7 +817,13 @@
       } catch (e) { /* keep polling */ }
 
       if (attempt >= maxAttempts) {
-        showStatus('error', 'Still not back after 5 minutes — check the "Actions" tab on GitHub to see if the run failed.');
+        searchStatus.className = 'search-status show error';
+        searchStatus.innerHTML = `<span>Still not back after 10 minutes. The run may have succeeded but GitHub Pages is slow to publish — click "Check Again" before re-analyzing (that avoids running the scan twice). If it's still missing after a few checks, look at the "Actions" tab on GitHub for a failed run.
+          <br><button class="search-btn" style="margin-top:0.6rem; padding:0.4rem 0.9rem; font-size:0.8rem;" id="checkAgainBtn">Check Again</button></span>`;
+        document.getElementById('checkAgainBtn').addEventListener('click', () => {
+          showStatus('info', `Checking for ${ticker}…`, true);
+          pollForResult(ticker, sinceTimestamp, 0);
+        });
         analyzeBtn.disabled = false;
         return;
       }

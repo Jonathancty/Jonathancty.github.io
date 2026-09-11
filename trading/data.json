@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-10T16:54:23.585047+00:00",
+  "updated_at": "2026-09-11T16:55:56.334852+00:00",
   "top_trending": {
-    "ticker": "DJT",
-    "name": "Trump Media & Technology Group ",
+    "ticker": "OKLO",
+    "name": "Oklo Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 4359,
-    "price": 8.96,
-    "change_pct": "+2.87%",
+    "tweet_volume": 32879,
+    "price": 37.0,
+    "change_pct": "-7.22%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "USO",
-      "name": "United States Oil Fund",
+      "ticker": "SMR",
+      "name": "NuScale Power Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14582,
-      "price": 156.59,
-      "change_pct": "+4.41%",
+      "tweet_volume": 145275,
+      "price": 8.8,
+      "change_pct": "-13.76%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
+      "ticker": "VKTX",
+      "name": "Viking Therapeutics, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12919,
-      "price": 8.13,
-      "change_pct": "-3.50%",
+      "tweet_volume": 2710,
+      "price": 32.27,
+      "change_pct": "+0.44%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
+      "ticker": "MLTX",
+      "name": "MoonLake Immunotherapeutics",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8861,
-      "price": 249.99,
-      "change_pct": "-1.91%",
+      "tweet_volume": 2606,
+      "price": 12.73,
+      "change_pct": "-3.41%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
+      "ticker": "AENT",
+      "name": "Alliance Entertainment Holding ",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 58771,
-      "price": 759.03,
-      "change_pct": "-0.44%",
+      "tweet_volume": 18079,
+      "price": 6.3,
+      "change_pct": "+14.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TLOFF",
-      "name": "Talon Metals Corp.",
+      "ticker": "HIMX",
+      "name": "Himax Technologies, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 721,
-      "price": 7.75,
-      "change_pct": "+28.10%",
+      "tweet_volume": 1797,
+      "price": 14.76,
+      "change_pct": "+7.08%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AEO",
-      "name": "American Eagle Outfitters, Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 37150,
-      "price": 14.29,
-      "change_pct": "-15.36%",
+      "tweet_volume": 11348,
+      "price": 12.6,
+      "change_pct": "-6.60%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FNMA",
-      "name": "Fannie Mae",
+      "ticker": "XE",
+      "name": "X-Energy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 970,
-      "price": 5.76,
-      "change_pct": "-2.21%",
+      "tweet_volume": 12143,
+      "price": 14.96,
+      "change_pct": "-5.53%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
+      "ticker": "BWET",
+      "name": "Breakwave Tanker Shipping ETF",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3191,
-      "price": 202.28,
-      "change_pct": "+2.55%",
+      "tweet_volume": 565,
+      "price": 725.54,
+      "change_pct": "+11.62%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
+      "ticker": "CHWY",
+      "name": "Chewy, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11963,
-      "price": 20.36,
-      "change_pct": "+2.39%",
+      "tweet_volume": 14625,
+      "price": 20.11,
+      "change_pct": "-4.63%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "NCLH",
-      "name": "Norwegian Cruise Line Holdings ",
+      "ticker": "TTAN",
+      "name": "ServiceTitan, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 20257,
-      "price": 14.58,
-      "change_pct": "-1.82%",
+      "tweet_volume": 5892,
+      "price": 54.11,
+      "change_pct": "-3.38%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

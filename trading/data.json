@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-11T16:55:56.334852+00:00",
+  "updated_at": "2026-09-12T16:00:07.859010+00:00",
   "top_trending": {
-    "ticker": "OKLO",
-    "name": "Oklo Inc.",
+    "ticker": "ETH",
+    "name": "Grayscale Ethereum Staking Mini",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 32879,
-    "price": 37.0,
-    "change_pct": "-7.22%",
+    "tweet_volume": 21134,
+    "price": 24.25,
+    "change_pct": "+3.24%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "SMR",
-      "name": "NuScale Power Corporation",
+      "ticker": "ON",
+      "name": "ON Semiconductor Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 145275,
-      "price": 8.8,
-      "change_pct": "-13.76%",
+      "tweet_volume": 28199,
+      "price": 76.14,
+      "change_pct": "+8.51%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "VKTX",
-      "name": "Viking Therapeutics, Inc.",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2710,
-      "price": 32.27,
-      "change_pct": "+0.44%",
+      "tweet_volume": 4294,
+      "price": 284.75,
+      "change_pct": "-0.43%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "MLTX",
-      "name": "MoonLake Immunotherapeutics",
+      "ticker": "PDYN",
+      "name": "Palladyne AI Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2606,
-      "price": 12.73,
-      "change_pct": "-3.41%",
+      "tweet_volume": 1745,
+      "price": 5.77,
+      "change_pct": "+2.49%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AENT",
-      "name": "Alliance Entertainment Holding ",
+      "ticker": "SPOT",
+      "name": "Spotify Technology S.A.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 18079,
-      "price": 6.3,
-      "change_pct": "+14.34%",
+      "tweet_volume": 2545,
+      "price": 525.75,
+      "change_pct": "+0.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "HIMX",
-      "name": "Himax Technologies, Inc.",
+      "ticker": "KRMN",
+      "name": "Karman Holdings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 1797,
-      "price": 14.76,
-      "change_pct": "+7.08%",
+      "tweet_volume": 9221,
+      "price": 35.28,
+      "change_pct": "+2.59%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 11348,
-      "price": 12.6,
-      "change_pct": "-6.60%",
+      "tweet_volume": 25491,
+      "price": 50.23,
+      "change_pct": "+0.42%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "XE",
-      "name": "X-Energy, Inc.",
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 12143,
-      "price": 14.96,
-      "change_pct": "-5.53%",
+      "tweet_volume": 9292,
+      "price": 100.28,
+      "change_pct": "+0.31%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BWET",
-      "name": "Breakwave Tanker Shipping ETF",
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 565,
-      "price": 725.54,
-      "change_pct": "+11.62%",
+      "tweet_volume": 13092,
+      "price": 72.97,
+      "change_pct": "+0.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CHWY",
-      "name": "Chewy, Inc.",
+      "ticker": "AGEN",
+      "name": "Agenus Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14625,
-      "price": 20.11,
-      "change_pct": "-4.63%",
+      "tweet_volume": 1976,
+      "price": 6.94,
+      "change_pct": "+0.73%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "TTAN",
-      "name": "ServiceTitan, Inc.",
+      "ticker": "NUVB",
+      "name": "Nuvation Bio Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 5892,
-      "price": 54.11,
-      "change_pct": "-3.38%",
+      "tweet_volume": 10794,
+      "price": 6.07,
+      "change_pct": "-3.34%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

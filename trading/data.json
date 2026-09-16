@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-15T17:29:00.227743+00:00",
+  "updated_at": "2026-09-16T17:28:28.545333+00:00",
   "top_trending": {
-    "ticker": "DJT",
-    "name": "Trump Media & Technology Group ",
+    "ticker": "RCAT",
+    "name": "Red Cat Holdings, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 2859,
-    "price": 8.66,
-    "change_pct": "-2.09%",
+    "tweet_volume": 25494,
+    "price": 7.21,
+    "change_pct": "-9.42%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,15 +17,75 @@
   },
   "trending_list": [
     {
-      "ticker": "QXO",
-      "name": "QXO, Inc.",
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 37269,
-      "price": 11.47,
-      "change_pct": "-5.24%",
+      "tweet_volume": 41380,
+      "price": 105.58,
+      "change_pct": "-4.40%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "BULL",
+      "name": "Webull Corporation",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 32601,
+      "price": 7.93,
+      "change_pct": "-8.37%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "AUPH",
+      "name": "Aurinia Pharmaceuticals Inc",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 825,
+      "price": 16.7,
+      "change_pct": "+3.56%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 4047,
+      "price": 192.2,
+      "change_pct": "-5.01%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "ARWR",
+      "name": "Arrowhead Pharmaceuticals, Inc.",
+      "sentiment_delta": 0.0,
+      "current_sentiment": 0.0,
+      "sentiment_label": "Neutral",
+      "bullish_pct": null,
+      "tweet_volume": 6415,
+      "price": 67.57,
+      "change_pct": "-4.39%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -38,38 +98,23 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 53416,
-      "price": 31.93,
-      "change_pct": "+11.49%",
+      "tweet_volume": 27137,
+      "price": 35.17,
+      "change_pct": "+12.15%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "CAVA",
-      "name": "CAVA Group, Inc.",
+      "ticker": "SOUN",
+      "name": "SoundHound AI, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 8815,
-      "price": 49.94,
-      "change_pct": "-9.03%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 8418,
-      "price": 411.64,
+      "tweet_volume": 34978,
+      "price": 5.93,
       "change_pct": "-3.58%",
       "key_topics": [
         "Momentum",
@@ -77,75 +122,30 @@
       ]
     },
     {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
+      "ticker": "FLY",
+      "name": "Firefly Aerospace Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 26057,
-      "price": 34.46,
-      "change_pct": "-6.94%",
+      "tweet_volume": 3246,
+      "price": 20.25,
+      "change_pct": "-1.17%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines, Inc.",
+      "ticker": "PHAT",
+      "name": "Phathom Pharmaceuticals, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 7354,
-      "price": 14.06,
-      "change_pct": "+1.30%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 3854,
-      "price": 156.26,
-      "change_pct": "+1.86%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "RCAT",
-      "name": "Red Cat Holdings, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9607,
-      "price": 8.06,
-      "change_pct": "+3.33%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "USO",
-      "name": "United States Oil Fund",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 12616,
-      "price": 163.29,
-      "change_pct": "+4.23%",
+      "tweet_volume": 2407,
+      "price": 7.98,
+      "change_pct": "-2.21%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
@@ -158,9 +158,9 @@
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 14772,
-      "price": 5.13,
-      "change_pct": "-1.25%",
+      "tweet_volume": 10836,
+      "price": 5.0,
+      "change_pct": "-0.89%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-16T17:28:28.545333+00:00",
+  "updated_at": "2026-09-17T17:28:45.720240+00:00",
   "top_trending": {
-    "ticker": "RCAT",
-    "name": "Red Cat Holdings, Inc.",
+    "ticker": "CRWV",
+    "name": "CoreWeave, Inc.",
     "sentiment_delta": 0.0,
     "current_sentiment": 0.0,
     "sentiment_label": "Neutral",
     "bullish_pct": null,
-    "tweet_volume": 25494,
-    "price": 7.21,
-    "change_pct": "-9.42%",
+    "tweet_volume": 127533,
+    "price": 79.53,
+    "change_pct": "-4.58%",
     "key_topics": [
       "Momentum",
       "Volume Spike"
@@ -17,150 +17,150 @@
   },
   "trending_list": [
     {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 41380,
-      "price": 105.58,
-      "change_pct": "-4.40%",
+      "tweet_volume": 39517,
+      "price": 26.63,
+      "change_pct": "+9.19%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "BULL",
-      "name": "Webull Corporation",
+      "ticker": "GT",
+      "name": "The Goodyear Tire & Rubber Comp",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 32601,
-      "price": 7.93,
-      "change_pct": "-8.37%",
+      "tweet_volume": 13497,
+      "price": 5.12,
+      "change_pct": "-0.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "AUPH",
-      "name": "Aurinia Pharmaceuticals Inc",
+      "ticker": "GNRC",
+      "name": "Generac Holdlings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 825,
-      "price": 16.7,
-      "change_pct": "+3.56%",
+      "tweet_volume": 15628,
+      "price": 208.1,
+      "change_pct": "+18.84%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FSLR",
-      "name": "First Solar, Inc.",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 4047,
-      "price": 192.2,
-      "change_pct": "-5.01%",
+      "tweet_volume": 29407,
+      "price": 40.1,
+      "change_pct": "+12.58%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "ARWR",
-      "name": "Arrowhead Pharmaceuticals, Inc.",
+      "ticker": "LEN",
+      "name": "Lennar Corporation",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 6415,
-      "price": 67.57,
-      "change_pct": "-4.39%",
+      "tweet_volume": 11029,
+      "price": 77.83,
+      "change_pct": "-0.68%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FPS",
-      "name": "Forgent Power Solutions, Inc.",
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 27137,
-      "price": 35.17,
-      "change_pct": "+12.15%",
+      "tweet_volume": 28082,
+      "price": 8.53,
+      "change_pct": "+7.77%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "SOUN",
-      "name": "SoundHound AI, Inc.",
+      "ticker": "DKNG",
+      "name": "DraftKings Inc.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 34978,
-      "price": 5.93,
-      "change_pct": "-3.58%",
+      "tweet_volume": 13424,
+      "price": 23.06,
+      "change_pct": "-5.22%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "FLY",
-      "name": "Firefly Aerospace Inc.",
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 3246,
-      "price": 20.25,
-      "change_pct": "-1.17%",
+      "tweet_volume": 52110,
+      "price": 762.04,
+      "change_pct": "+1.06%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "PHAT",
-      "name": "Phathom Pharmaceuticals, Inc.",
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 2407,
-      "price": 7.98,
-      "change_pct": "-2.21%",
+      "tweet_volume": 9939,
+      "price": 8.98,
+      "change_pct": "+15.57%",
       "key_topics": [
         "Momentum",
         "Volume Spike"
       ]
     },
     {
-      "ticker": "QS",
-      "name": "QuantumScape Corporation",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
       "sentiment_delta": 0.0,
       "current_sentiment": 0.0,
       "sentiment_label": "Neutral",
       "bullish_pct": null,
-      "tweet_volume": 10836,
-      "price": 5.0,
-      "change_pct": "-0.89%",
+      "tweet_volume": 44069,
+      "price": 716.39,
+      "change_pct": "+1.66%",
       "key_topics": [
         "Momentum",
         "Volume Spike"

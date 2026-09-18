@@ -14,5 +14,21 @@
       "Volume Spike"
     ],
     "requested_at": "2026-09-10T17:37:09.618522+00:00"
+  },
+  "AAOI": {
+    "ticker": "AAOI",
+    "name": "Applied Optoelectronics, Inc.",
+    "sentiment_delta": 0.0,
+    "current_sentiment": 0.0,
+    "sentiment_label": "Neutral",
+    "bullish_pct": null,
+    "tweet_volume": 19386,
+    "price": 98.06,
+    "change_pct": "+1.36%",
+    "key_topics": [
+      "Momentum",
+      "Volume Spike"
+    ],
+    "requested_at": "2026-09-18T12:07:50.949800+00:00"
   }
 }

@@ -11,6 +11,14 @@ import requests
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
 
+def _sentiment_basic(message):
+    # StockTwits sets entities/sentiment to null (not absent) when untagged,
+    # so a plain .get(..., {}) chain still hits None and raises.
+    entities = message.get('entities') or {}
+    sentiment = entities.get('sentiment') or {}
+    return sentiment.get('basic')
+
+
 def fetch_stocktwits_trending():
     """Fetch trending tickers from StockTwits (sorted by social discussion volume)"""
     try:
@@ -41,14 +49,8 @@ def get_stocktwits_data(ticker):
             symbol_info = data.get('symbol', {})
 
             texts = [m['body'] for m in messages if m.get('body')]
-            bullish = sum(
-                1 for m in messages
-                if m.get('entities', {}).get('sentiment', {}).get('basic') == 'Bullish'
-            )
-            bearish = sum(
-                1 for m in messages
-                if m.get('entities', {}).get('sentiment', {}).get('basic') == 'Bearish'
-            )
+            bullish = sum(1 for m in messages if _sentiment_basic(m) == 'Bullish')
+            bearish = sum(1 for m in messages if _sentiment_basic(m) == 'Bearish')
             watchlist_count = symbol_info.get('watchlist_count', 0)
             return texts, bullish, bearish, watchlist_count, messages
         elif resp.status_code == 429:

@@ -30,5 +30,22 @@
       "Volume Spike"
     ],
     "requested_at": "2026-09-18T12:07:50.949800+00:00"
+  },
+  "GOOG": {
+    "ticker": "GOOG",
+    "name": "Alphabet Inc.",
+    "sentiment_delta": 0.053,
+    "current_sentiment": 0.053,
+    "sentiment_label": "Neutral",
+    "bullish_pct": 53,
+    "tweet_volume": 311867,
+    "price": 343.68,
+    "change_pct": "+1.27%",
+    "key_topics": [
+      "AI",
+      "Chips",
+      "Earnings"
+    ],
+    "requested_at": "2026-09-18T12:39:26.139467+00:00"
   }
 }

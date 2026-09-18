@@ -1,169 +1,177 @@
 {
-  "updated_at": "2026-09-17T17:28:45.720240+00:00",
+  "updated_at": "2026-09-18T16:57:28.217174+00:00",
   "top_trending": {
-    "ticker": "CRWV",
-    "name": "CoreWeave, Inc.",
-    "sentiment_delta": 0.0,
-    "current_sentiment": 0.0,
-    "sentiment_label": "Neutral",
-    "bullish_pct": null,
-    "tweet_volume": 127533,
-    "price": 79.53,
-    "change_pct": "-4.58%",
+    "ticker": "RARE",
+    "name": "Ultragenyx Pharmaceutical Inc.",
+    "sentiment_delta": 1.0,
+    "current_sentiment": 1.0,
+    "sentiment_label": "Bullish",
+    "bullish_pct": 100,
+    "tweet_volume": 4571,
+    "price": 14.9,
+    "change_pct": "+2.76%",
     "key_topics": [
-      "Momentum",
-      "Volume Spike"
+      "AI",
+      "Market",
+      "Revenue"
     ]
   },
   "trending_list": [
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 39517,
-      "price": 26.63,
-      "change_pct": "+9.19%",
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 138592,
+      "price": 194.17,
+      "change_pct": "+11.61%",
       "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GT",
-      "name": "The Goodyear Tire & Rubber Comp",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 13497,
-      "price": 5.12,
-      "change_pct": "-0.68%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "GNRC",
-      "name": "Generac Holdlings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 15628,
-      "price": 208.1,
-      "change_pct": "+18.84%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 29407,
-      "price": 40.1,
-      "change_pct": "+12.58%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "LEN",
-      "name": "Lennar Corporation",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 11029,
-      "price": 77.83,
-      "change_pct": "-0.68%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 28082,
-      "price": 8.53,
-      "change_pct": "+7.77%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "DKNG",
-      "name": "DraftKings Inc.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 13424,
-      "price": 23.06,
-      "change_pct": "-5.22%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 52110,
-      "price": 762.04,
-      "change_pct": "+1.06%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
+        "AI",
+        "Market",
+        "Crypto"
       ]
     },
     {
       "ticker": "SECZ",
       "name": "Securitize Corp.",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 9939,
-      "price": 8.98,
-      "change_pct": "+15.57%",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 840,
+      "price": 9.88,
+      "change_pct": "+10.69%",
       "key_topics": [
-        "Momentum",
-        "Volume Spike"
+        "Tokenized",
+        "Trades"
       ]
     },
     {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust, Series 1",
-      "sentiment_delta": 0.0,
-      "current_sentiment": 0.0,
-      "sentiment_label": "Neutral",
-      "bullish_pct": null,
-      "tweet_volume": 44069,
-      "price": 716.39,
-      "change_pct": "+1.66%",
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 131287,
+      "price": 70.41,
+      "change_pct": "-0.65%",
       "key_topics": [
+        "AI",
+        "Market",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 11193,
+      "price": 41.87,
+      "change_pct": "-6.14%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "GIPR",
+      "name": "Generation Income Properties In",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1929,
+      "price": 1.14,
+      "change_pct": "+159.32%",
+      "key_topics": [
+        "AI",
+        "Squeeze",
+        "Update"
+      ]
+    },
+    {
+      "ticker": "TRUG",
+      "name": "TruGolf Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3569,
+      "price": 0.58,
+      "change_pct": "+51.12%",
+      "key_topics": [
+        "AI",
+        "Squeeze",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "MRNO",
+      "name": "Murano Global Investments PLC",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 964,
+      "price": 0.37,
+      "change_pct": "+69.44%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "TNMG",
+      "name": "TNL Mediagene",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2058,
+      "price": 3.87,
+      "change_pct": "+43.68%",
+      "key_topics": [
+        "2nd",
         "Momentum",
-        "Volume Spike"
+        "Stockstotrade"
+      ]
+    },
+    {
+      "ticker": "MARA",
+      "name": "MARA Holdings, Inc.",
+      "sentiment_delta": 0.905,
+      "current_sentiment": 0.905,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 158130,
+      "price": 12.94,
+      "change_pct": "+11.17%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 114814,
+      "price": 10.68,
+      "change_pct": "+0.73%",
+      "key_topics": [
+        "AI",
+        "Demand"
       ]
     }
   ]

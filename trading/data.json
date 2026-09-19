@@ -1,177 +1,177 @@
 {
-  "updated_at": "2026-09-18T16:57:28.217174+00:00",
+  "updated_at": "2026-09-19T16:14:08.549646+00:00",
   "top_trending": {
-    "ticker": "RARE",
-    "name": "Ultragenyx Pharmaceutical Inc.",
+    "ticker": "GMEU",
+    "name": "T-REX 2X Long GME Daily Target ",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 4571,
-    "price": 14.9,
-    "change_pct": "+2.76%",
+    "tweet_volume": 316,
+    "price": 7.76,
+    "change_pct": "-2.14%",
     "key_topics": [
-      "AI",
       "Market",
-      "Revenue"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
+      "ticker": "ABEO",
+      "name": "Abeona Therapeutics Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 138592,
-      "price": 194.17,
-      "change_pct": "+11.61%",
+      "tweet_volume": 11069,
+      "price": 5.57,
+      "change_pct": "-0.36%",
       "key_topics": [
-        "AI",
         "Market",
-        "Crypto"
-      ]
-    },
-    {
-      "ticker": "SECZ",
-      "name": "Securitize Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 840,
-      "price": 9.88,
-      "change_pct": "+10.69%",
-      "key_topics": [
-        "Tokenized",
-        "Trades"
-      ]
-    },
-    {
-      "ticker": "UBER",
-      "name": "Uber Technologies, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 131287,
-      "price": 70.41,
-      "change_pct": "-0.65%",
-      "key_topics": [
         "AI",
-        "Market",
-        "Revenue"
+        "Earnings"
       ]
     },
     {
-      "ticker": "SYM",
-      "name": "Symbotic Inc.",
+      "ticker": "WRD",
+      "name": "WERIDE INC.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11193,
-      "price": 41.87,
-      "change_pct": "-6.14%",
+      "tweet_volume": 4480,
+      "price": 5.5,
+      "change_pct": "-1.79%",
       "key_topics": [
-        "AI",
-        "Market",
-        "Price Target"
-      ]
-    },
-    {
-      "ticker": "GIPR",
-      "name": "Generation Income Properties In",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1929,
-      "price": 1.14,
-      "change_pct": "+159.32%",
-      "key_topics": [
-        "AI",
-        "Squeeze",
-        "Update"
-      ]
-    },
-    {
-      "ticker": "TRUG",
-      "name": "TruGolf Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3569,
-      "price": 0.58,
-      "change_pct": "+51.12%",
-      "key_topics": [
-        "AI",
-        "Squeeze",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "MRNO",
-      "name": "Murano Global Investments PLC",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 964,
-      "price": 0.37,
-      "change_pct": "+69.44%",
-      "key_topics": [
+        "Guidance",
         "AI",
         "Market"
       ]
     },
     {
-      "ticker": "TNMG",
-      "name": "TNL Mediagene",
+      "ticker": "EROC",
+      "name": "ERock, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2058,
-      "price": 3.87,
-      "change_pct": "+43.68%",
+      "tweet_volume": 692,
+      "price": 13.09,
+      "change_pct": "+1.47%",
       "key_topics": [
-        "2nd",
-        "Momentum",
-        "Stockstotrade"
-      ]
-    },
-    {
-      "ticker": "MARA",
-      "name": "MARA Holdings, Inc.",
-      "sentiment_delta": 0.905,
-      "current_sentiment": 0.905,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 158130,
-      "price": 12.94,
-      "change_pct": "+11.17%",
-      "key_topics": [
-        "AI",
         "Market",
+        "AI",
         "Revenue"
       ]
     },
     {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "PSKY",
+      "name": "Paramount Skydance Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 114814,
-      "price": 10.68,
-      "change_pct": "+0.73%",
+      "bullish_pct": 100,
+      "tweet_volume": 26646,
+      "price": 10.21,
+      "change_pct": "-3.86%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "DUOL",
+      "name": "Duolingo, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 9549,
+      "price": 141.9,
+      "change_pct": "-3.54%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5258,
+      "price": 47.82,
+      "change_pct": "+4.32%",
       "key_topics": [
         "AI",
-        "Demand"
+        "Market",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "SMTC",
+      "name": "Semtech Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3299,
+      "price": 185.0,
+      "change_pct": "+3.82%",
+      "key_topics": [
+        "Sst",
+        "Swingtrading",
+        "Stocks"
+      ]
+    },
+    {
+      "ticker": "CRML",
+      "name": "Critical Metals Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 14508,
+      "price": 6.73,
+      "change_pct": "-2.04%",
+      "key_topics": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "GRML",
+      "name": "Greenland Mines Ltd",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6730,
+      "price": 2.85,
+      "change_pct": "-4.36%",
+      "key_topics": [
+        "Crypto",
+        "AI",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros. Discovery, Inc. - ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10104,
+      "price": 27.8,
+      "change_pct": "-1.56%",
+      "key_topics": [
+        "Price Target",
+        "Market",
+        "AI"
       ]
     }
   ]

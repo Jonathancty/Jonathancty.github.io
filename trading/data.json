@@ -1,163 +1,20 @@
 {
-  "updated_at": "2026-09-19T16:14:08.549646+00:00",
+  "updated_at": "2026-09-20T16:41:33.069415+00:00",
   "top_trending": {
-    "ticker": "GMEU",
-    "name": "T-REX 2X Long GME Daily Target ",
+    "ticker": "XLE",
+    "name": "State Street Energy Select Sect",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 316,
-    "price": 7.76,
-    "change_pct": "-2.14%",
+    "tweet_volume": 24639,
+    "price": 64.31,
+    "change_pct": "-0.26%",
     "key_topics": [
-      "Market",
-      "AI"
+      "Ddamanda"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "ABEO",
-      "name": "Abeona Therapeutics Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 11069,
-      "price": 5.57,
-      "change_pct": "-0.36%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "WRD",
-      "name": "WERIDE INC.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4480,
-      "price": 5.5,
-      "change_pct": "-1.79%",
-      "key_topics": [
-        "Guidance",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "EROC",
-      "name": "ERock, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 692,
-      "price": 13.09,
-      "change_pct": "+1.47%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "PSKY",
-      "name": "Paramount Skydance Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 26646,
-      "price": 10.21,
-      "change_pct": "-3.86%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Trial"
-      ]
-    },
-    {
-      "ticker": "DUOL",
-      "name": "Duolingo, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9549,
-      "price": 141.9,
-      "change_pct": "-3.54%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "GFS",
-      "name": "GlobalFoundries Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5258,
-      "price": 47.82,
-      "change_pct": "+4.32%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "SMTC",
-      "name": "Semtech Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3299,
-      "price": 185.0,
-      "change_pct": "+3.82%",
-      "key_topics": [
-        "Sst",
-        "Swingtrading",
-        "Stocks"
-      ]
-    },
-    {
-      "ticker": "CRML",
-      "name": "Critical Metals Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 14508,
-      "price": 6.73,
-      "change_pct": "-2.04%",
-      "key_topics": [
-        "AI"
-      ]
-    },
-    {
-      "ticker": "GRML",
-      "name": "Greenland Mines Ltd",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6730,
-      "price": 2.85,
-      "change_pct": "-4.36%",
-      "key_topics": [
-        "Crypto",
-        "AI",
-        "Growth"
-      ]
-    },
     {
       "ticker": "WBD",
       "name": "Warner Bros. Discovery, Inc. - ",
@@ -169,7 +26,145 @@
       "price": 27.8,
       "change_pct": "-1.56%",
       "key_topics": [
-        "Price Target",
+        "Market",
+        "Revenue",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "SCHD",
+      "name": "Schwab US Dividend Equity ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23763,
+      "price": 33.68,
+      "change_pct": "-0.62%",
+      "key_topics": [
+        "Growth",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "CURLF",
+      "name": "Curaleaf Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 9014,
+      "price": 10.48,
+      "change_pct": "+1.85%",
+      "key_topics": [
+        "CEO",
+        "Market",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 28477,
+      "price": 71.54,
+      "change_pct": "+0.97%",
+      "key_topics": [
+        "Copper",
+        "Commodities",
+        "Energy"
+      ]
+    },
+    {
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 9287,
+      "price": 60.24,
+      "change_pct": "+0.48%",
+      "key_topics": [
+        "Goldmansachs"
+      ]
+    },
+    {
+      "ticker": "AMRN",
+      "name": "Amarin Corporation plc",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 30395,
+      "price": 13.63,
+      "change_pct": "-1.73%",
+      "key_topics": [
+        "Demand",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 20183,
+      "price": 249.39,
+      "change_pct": "+3.27%",
+      "key_topics": [
+        "CEO",
+        "Demand",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "MP",
+      "name": "MP Materials Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 35992,
+      "price": 47.26,
+      "change_pct": "-4.29%",
+      "key_topics": [
+        "AI",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 114830,
+      "price": 10.68,
+      "change_pct": "+0.75%",
+      "key_topics": [
+        "69billions"
+      ]
+    },
+    {
+      "ticker": "MPT",
+      "name": "Medical Properties Trust, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 8496,
+      "price": 3.4,
+      "change_pct": "-5.56%",
+      "key_topics": [
+        "Update",
         "Market",
         "AI"
       ]

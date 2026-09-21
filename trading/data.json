@@ -1,170 +1,173 @@
 {
-  "updated_at": "2026-09-20T16:41:33.069415+00:00",
+  "updated_at": "2026-09-21T18:29:11.023902+00:00",
   "top_trending": {
-    "ticker": "XLE",
-    "name": "State Street Energy Select Sect",
+    "ticker": "CRML",
+    "name": "Critical Metals Corp.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 24639,
-    "price": 64.31,
-    "change_pct": "-0.26%",
+    "tweet_volume": 15184,
+    "price": 8.97,
+    "change_pct": "+33.36%",
     "key_topics": [
-      "Ddamanda"
+      "Market",
+      "AI",
+      "Demand"
     ]
   },
   "trending_list": [
     {
-      "ticker": "WBD",
-      "name": "Warner Bros. Discovery, Inc. - ",
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10104,
-      "price": 27.8,
-      "change_pct": "-1.56%",
+      "tweet_volume": 107673,
+      "price": 10.58,
+      "change_pct": "+4.65%",
       "key_topics": [
-        "Market",
-        "Revenue",
-        "Price Target"
+        "CEO",
+        "Growth",
+        "Update"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23763,
-      "price": 33.68,
-      "change_pct": "-0.62%",
+      "tweet_volume": 150652,
+      "price": 8.49,
+      "change_pct": "+6.23%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 895,
+      "price": 12.22,
+      "change_pct": "+12.57%",
+      "key_topics": [
+        "Sst",
+        "Swingtrading",
+        "Stocks"
+      ]
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 39050,
+      "price": 15.54,
+      "change_pct": "+11.60%",
+      "key_topics": [
+        "Price Target",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "GRPN",
+      "name": "Groupon, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 37498,
+      "price": 21.14,
+      "change_pct": "+10.77%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "USAR",
+      "name": "USA Rare Earth, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 20259,
+      "price": 16.95,
+      "change_pct": "+10.25%",
+      "key_topics": [
+        "Price Target",
+        "AI",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "TEVA",
+      "name": "Teva Pharmaceutical Industries ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 26761,
+      "price": 40.48,
+      "change_pct": "+3.84%",
       "key_topics": [
         "Growth",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9014,
-      "price": 10.48,
-      "change_pct": "+1.85%",
-      "key_topics": [
-        "CEO",
-        "Market",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 28477,
-      "price": 71.54,
-      "change_pct": "+0.97%",
-      "key_topics": [
-        "Copper",
-        "Commodities",
-        "Energy"
-      ]
-    },
-    {
-      "ticker": "JEPQ",
-      "name": "JPMorgan Nasdaq Equity Premium ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9287,
-      "price": 60.24,
-      "change_pct": "+0.48%",
-      "key_topics": [
-        "Goldmansachs"
-      ]
-    },
-    {
-      "ticker": "AMRN",
-      "name": "Amarin Corporation plc",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 30395,
-      "price": 13.63,
-      "change_pct": "-1.73%",
-      "key_topics": [
-        "Demand",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 20183,
-      "price": 249.39,
-      "change_pct": "+3.27%",
-      "key_topics": [
-        "CEO",
-        "Demand",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "MP",
-      "name": "MP Materials Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 35992,
-      "price": 47.26,
-      "change_pct": "-4.29%",
-      "key_topics": [
-        "AI",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "NOK",
-      "name": "Nokia Corporation Sponsored",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 114830,
-      "price": 10.68,
-      "change_pct": "+0.75%",
-      "key_topics": [
-        "69billions"
-      ]
-    },
-    {
-      "ticker": "MPT",
-      "name": "Medical Properties Trust, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 8496,
-      "price": 3.4,
-      "change_pct": "-5.56%",
-      "key_topics": [
         "Update",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "NUAI",
+      "name": "New Era Energy & Digital, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10335,
+      "price": 7.66,
+      "change_pct": "+30.72%",
+      "key_topics": [
+        "Squeeze",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "VRME",
+      "name": "VerifyMe, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2634,
+      "price": 1.45,
+      "change_pct": "+81.76%",
+      "key_topics": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "FSLY",
+      "name": "Fastly, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 35979,
+      "price": 27.18,
+      "change_pct": "+13.91%",
+      "key_topics": [
         "Market",
         "AI"
       ]

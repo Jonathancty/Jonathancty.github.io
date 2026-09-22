@@ -30,5 +30,39 @@
       "Volume Spike"
     ],
     "requested_at": "2026-09-18T12:07:50.949800+00:00"
+  },
+  "GOOG": {
+    "ticker": "GOOG",
+    "name": "Alphabet Inc.",
+    "sentiment_delta": 0.053,
+    "current_sentiment": 0.053,
+    "sentiment_label": "Neutral",
+    "bullish_pct": 53,
+    "tweet_volume": 311867,
+    "price": 343.68,
+    "change_pct": "+1.27%",
+    "key_topics": [
+      "AI",
+      "Chips",
+      "Earnings"
+    ],
+    "requested_at": "2026-09-18T12:39:26.139467+00:00"
+  },
+  "NOK": {
+    "ticker": "NOK",
+    "name": "Nokia Corporation Sponsored",
+    "sentiment_delta": 0.6,
+    "current_sentiment": 0.6,
+    "sentiment_label": "Bullish",
+    "bullish_pct": 80,
+    "tweet_volume": 114860,
+    "price": 10.56,
+    "change_pct": "-3.49%",
+    "key_topics": [
+      "Nokia",
+      "Datacenters",
+      "Airan"
+    ],
+    "requested_at": "2026-09-22T15:31:13.626247+00:00"
   }
 }

@@ -1,174 +1,170 @@
 {
-  "updated_at": "2026-09-21T18:29:11.023902+00:00",
+  "updated_at": "2026-09-22T17:31:37.851842+00:00",
   "top_trending": {
-    "ticker": "CRML",
-    "name": "Critical Metals Corp.",
+    "ticker": "FSLY",
+    "name": "Fastly, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 15184,
-    "price": 8.97,
-    "change_pct": "+33.36%",
+    "tweet_volume": 35989,
+    "price": 25.56,
+    "change_pct": "-6.78%",
     "key_topics": [
-      "Market",
-      "AI",
-      "Demand"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
+      "ticker": "RARE",
+      "name": "Ultragenyx Pharmaceutical Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 107673,
-      "price": 10.58,
-      "change_pct": "+4.65%",
+      "tweet_volume": 4555,
+      "price": 15.87,
+      "change_pct": "+8.33%",
       "key_topics": [
-        "CEO",
-        "Growth",
-        "Update"
+        "Launch",
+        "Market",
+        "CEO"
       ]
     },
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
+      "ticker": "FLY",
+      "name": "Firefly Aerospace Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 150652,
-      "price": 8.49,
-      "change_pct": "+6.23%",
+      "tweet_volume": 9462,
+      "price": 22.72,
+      "change_pct": "-0.46%",
+      "key_topics": [
+        "Launch",
+        "Demand",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "GT",
+      "name": "The Goodyear Tire & Rubber Comp",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6013,
+      "price": 5.47,
+      "change_pct": "+8.96%",
       "key_topics": [
         "Market",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "SECZ",
-      "name": "Securitize Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 895,
-      "price": 12.22,
-      "change_pct": "+12.57%",
-      "key_topics": [
-        "Sst",
-        "Swingtrading",
-        "Stocks"
-      ]
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 39050,
-      "price": 15.54,
-      "change_pct": "+11.60%",
-      "key_topics": [
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "GRPN",
-      "name": "Groupon, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 37498,
-      "price": 21.14,
-      "change_pct": "+10.77%",
-      "key_topics": [
-        "Market",
-        "AI",
+        "Buyout",
         "Squeeze"
       ]
     },
     {
-      "ticker": "USAR",
-      "name": "USA Rare Earth, Inc.",
+      "ticker": "AXSM",
+      "name": "Axsome Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20259,
-      "price": 16.95,
-      "change_pct": "+10.25%",
+      "tweet_volume": 11947,
+      "price": 205.33,
+      "change_pct": "-0.08%",
       "key_topics": [
-        "Price Target",
-        "AI",
-        "Squeeze"
+        "Alzheimers",
+        "Biotech"
       ]
     },
     {
-      "ticker": "TEVA",
-      "name": "Teva Pharmaceutical Industries ",
+      "ticker": "TOPS",
+      "name": "TOP Ships, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 26761,
-      "price": 40.48,
-      "change_pct": "+3.84%",
+      "tweet_volume": 78320,
+      "price": 1.0,
+      "change_pct": "+39.40%",
       "key_topics": [
-        "Growth",
-        "Update",
+        "Market",
         "AI"
       ]
     },
     {
-      "ticker": "NUAI",
-      "name": "New Era Energy & Digital, Inc.",
+      "ticker": "LHSW",
+      "name": "Lianhe Sowell International Gro",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10335,
-      "price": 7.66,
-      "change_pct": "+30.72%",
+      "tweet_volume": 885,
+      "price": 0.86,
+      "change_pct": "+98.29%",
       "key_topics": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "JAGX",
+      "name": "Jaguar Health, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 84159,
+      "price": 15.44,
+      "change_pct": "+478.28%",
+      "key_topics": [
+        "Market",
         "Squeeze",
         "AI"
       ]
     },
     {
-      "ticker": "VRME",
-      "name": "VerifyMe, Inc.",
+      "ticker": "VICR",
+      "name": "Vicor Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2634,
-      "price": 1.45,
-      "change_pct": "+81.76%",
+      "tweet_volume": 2052,
+      "price": 260.9,
+      "change_pct": "+16.53%",
       "key_topics": [
-        "AI"
+        "Earnings",
+        "Semiconductors",
+        "Datacenters"
       ]
     },
     {
-      "ticker": "FSLY",
-      "name": "Fastly, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "PSKY",
+      "name": "Paramount Skydance Corporation",
+      "sentiment_delta": 0.923,
+      "current_sentiment": 0.923,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 35979,
-      "price": 27.18,
-      "change_pct": "+13.91%",
+      "bullish_pct": 96,
+      "tweet_volume": 26752,
+      "price": 10.07,
+      "change_pct": "+1.66%",
       "key_topics": [
-        "Market",
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "GME",
+      "name": "GameStop Corporation",
+      "sentiment_delta": 0.917,
+      "current_sentiment": 0.917,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 96,
+      "tweet_volume": 307908,
+      "price": 24.07,
+      "change_pct": "+5.77%",
+      "key_topics": [
         "AI"
       ]
     }

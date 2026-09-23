@@ -1,68 +1,20 @@
 {
-  "updated_at": "2026-09-22T17:31:37.851842+00:00",
+  "updated_at": "2026-09-23T17:42:50.758389+00:00",
   "top_trending": {
-    "ticker": "FSLY",
-    "name": "Fastly, Inc.",
+    "ticker": "NLST",
+    "name": "Netlist, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 35989,
-    "price": 25.56,
-    "change_pct": "-6.78%",
+    "tweet_volume": 27385,
+    "price": 5.88,
+    "change_pct": "+11.15%",
     "key_topics": [
-      "AI"
+      "Won"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "RARE",
-      "name": "Ultragenyx Pharmaceutical Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4555,
-      "price": 15.87,
-      "change_pct": "+8.33%",
-      "key_topics": [
-        "Launch",
-        "Market",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "FLY",
-      "name": "Firefly Aerospace Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9462,
-      "price": 22.72,
-      "change_pct": "-0.46%",
-      "key_topics": [
-        "Launch",
-        "Demand",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "GT",
-      "name": "The Goodyear Tire & Rubber Comp",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6013,
-      "price": 5.47,
-      "change_pct": "+8.96%",
-      "key_topics": [
-        "Market",
-        "Buyout",
-        "Squeeze"
-      ]
-    },
     {
       "ticker": "AXSM",
       "name": "Axsome Therapeutics, Inc.",
@@ -70,100 +22,149 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11947,
-      "price": 205.33,
-      "change_pct": "-0.08%",
+      "tweet_volume": 11946,
+      "price": 192.69,
+      "change_pct": "-5.12%",
       "key_topics": [
-        "Alzheimers",
-        "Biotech"
+        "158",
+        "355"
       ]
     },
     {
-      "ticker": "TOPS",
-      "name": "TOP Ships, Inc.",
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 78320,
-      "price": 1.0,
-      "change_pct": "+39.40%",
+      "tweet_volume": 21678,
+      "price": 55.09,
+      "change_pct": "-5.19%",
       "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "QUBT",
+      "name": "Quantum Computing Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 33551,
+      "price": 9.31,
+      "change_pct": "+2.59%",
+      "key_topics": [
+        "Acquisition",
         "Market",
-        "AI"
+        "Guidance"
       ]
     },
     {
-      "ticker": "LHSW",
-      "name": "Lianhe Sowell International Gro",
+      "ticker": "INOD",
+      "name": "Innodata Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 885,
-      "price": 0.86,
-      "change_pct": "+98.29%",
+      "tweet_volume": 11360,
+      "price": 71.0,
+      "change_pct": "+1.47%",
       "key_topics": [
-        "AI"
+        "Growth",
+        "AI",
+        "Market"
       ]
     },
     {
-      "ticker": "JAGX",
-      "name": "Jaguar Health, Inc.",
+      "ticker": "RIOT",
+      "name": "Riot Platforms, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 84159,
-      "price": 15.44,
-      "change_pct": "+478.28%",
+      "tweet_volume": 129945,
+      "price": 24.94,
+      "change_pct": "+0.04%",
       "key_topics": [
-        "Market",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "VICR",
-      "name": "Vicor Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2052,
-      "price": 260.9,
-      "change_pct": "+16.53%",
-      "key_topics": [
-        "Earnings",
-        "Semiconductors",
-        "Datacenters"
-      ]
-    },
-    {
-      "ticker": "PSKY",
-      "name": "Paramount Skydance Corporation",
-      "sentiment_delta": 0.923,
-      "current_sentiment": 0.923,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 96,
-      "tweet_volume": 26752,
-      "price": 10.07,
-      "change_pct": "+1.66%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
+        "AI",
+        "Market"
       ]
     },
     {
       "ticker": "GME",
       "name": "GameStop Corporation",
-      "sentiment_delta": 0.917,
-      "current_sentiment": 0.917,
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 96,
-      "tweet_volume": 307908,
-      "price": 24.07,
-      "change_pct": "+5.77%",
+      "bullish_pct": 100,
+      "tweet_volume": 307973,
+      "price": 24.49,
+      "change_pct": "+1.91%",
+      "key_topics": [
+        "AI",
+        "CEO",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "VTGN",
+      "name": "VistaGen Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 18313,
+      "price": 0.38,
+      "change_pct": "+50.91%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 962,
+      "price": 14.38,
+      "change_pct": "+10.62%",
+      "key_topics": [
+        "Earnings",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "MSS",
+      "name": "Maison Solutions Inc.",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 2408,
+      "price": 2.14,
+      "change_pct": "+37.17%",
+      "key_topics": [
+        "Earnings",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 60615,
+      "price": 42.81,
+      "change_pct": "+5.08%",
       "key_topics": [
         "AI"
       ]

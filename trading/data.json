@@ -1,172 +1,177 @@
 {
-  "updated_at": "2026-09-23T17:42:50.758389+00:00",
+  "updated_at": "2026-09-24T17:44:57.876267+00:00",
   "top_trending": {
-    "ticker": "NLST",
-    "name": "Netlist, Inc.",
+    "ticker": "SOXL",
+    "name": "Direxion Daily Semiconductor Bu",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 27385,
-    "price": 5.88,
-    "change_pct": "+11.15%",
+    "tweet_volume": 40355,
+    "price": 143.65,
+    "change_pct": "-1.78%",
     "key_topics": [
-      "Won"
+      "Demand",
+      "Squeeze",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "AXSM",
-      "name": "Axsome Therapeutics, Inc.",
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11946,
-      "price": 192.69,
-      "change_pct": "-5.12%",
+      "tweet_volume": 49427,
+      "price": 89.94,
+      "change_pct": "+3.49%",
       "key_topics": [
-        "158",
-        "355"
+        "Price Target",
+        "Squeeze",
+        "AI"
       ]
     },
     {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
+      "ticker": "INFQ",
+      "name": "Infleqtion, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 21678,
-      "price": 55.09,
-      "change_pct": "-5.19%",
+      "tweet_volume": 16884,
+      "price": 14.54,
+      "change_pct": "+5.10%",
       "key_topics": [
-        "AI",
-        "Market"
+        "CEO",
+        "AI"
       ]
     },
     {
-      "ticker": "QUBT",
-      "name": "Quantum Computing Inc.",
+      "ticker": "NCLH",
+      "name": "Norwegian Cruise Line Holdings ",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 33551,
-      "price": 9.31,
-      "change_pct": "+2.59%",
+      "tweet_volume": 39637,
+      "price": 14.21,
+      "change_pct": "+0.18%",
       "key_topics": [
-        "Acquisition",
+        "Price Target",
+        "Squeeze",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "KYTX",
+      "name": "Kyverna Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1463,
+      "price": 6.89,
+      "change_pct": "-2.55%",
+      "key_topics": [
         "Market",
-        "Guidance"
+        "CEO",
+        "Buyout"
       ]
     },
     {
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
+      "ticker": "UNG",
+      "name": "United States Natural Gas Fund ",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11360,
-      "price": 71.0,
-      "change_pct": "+1.47%",
+      "tweet_volume": 17669,
+      "price": 11.65,
+      "change_pct": "+7.17%",
+      "key_topics": [
+        "Smartmoneyconcepts",
+        "Trading",
+        "Priceaction"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 36307,
+      "price": 266.32,
+      "change_pct": "-3.22%",
+      "key_topics": [
+        "Squeeze",
+        "Market",
+        "Chips"
+      ]
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 20926,
+      "price": 126.39,
+      "change_pct": "+15.27%",
       "key_topics": [
         "Growth",
-        "AI",
-        "Market"
+        "Guidance",
+        "AI"
       ]
     },
     {
-      "ticker": "RIOT",
-      "name": "Riot Platforms, Inc.",
+      "ticker": "APUS",
+      "name": "Apimeds Pharmaceuticals US, Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 129945,
-      "price": 24.94,
-      "change_pct": "+0.04%",
+      "tweet_volume": 924,
+      "price": 5.32,
+      "change_pct": "+132.10%",
       "key_topics": [
-        "AI",
-        "Market"
+        "Squeeze",
+        "AI"
       ]
     },
     {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
+      "ticker": "PFSA",
+      "name": "Profusa, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 307973,
-      "price": 24.49,
-      "change_pct": "+1.91%",
+      "tweet_volume": 2290,
+      "price": 3.06,
+      "change_pct": "+49.27%",
       "key_topics": [
-        "AI",
-        "CEO",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "VTGN",
-      "name": "VistaGen Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 18313,
-      "price": 0.38,
-      "change_pct": "+50.91%",
-      "key_topics": [
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "SECZ",
-      "name": "Securitize Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 962,
-      "price": 14.38,
-      "change_pct": "+10.62%",
-      "key_topics": [
-        "Earnings",
         "Market",
         "AI"
       ]
     },
     {
-      "ticker": "MSS",
-      "name": "Maison Solutions Inc.",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "SKYQ",
+      "name": "Sky Quarry Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 2408,
-      "price": 2.14,
-      "change_pct": "+37.17%",
+      "bullish_pct": 100,
+      "tweet_volume": 2757,
+      "price": 2.91,
+      "change_pct": "+14.56%",
       "key_topics": [
-        "Earnings",
         "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 60615,
-      "price": 42.81,
-      "change_pct": "+5.08%",
-      "key_topics": [
-        "AI"
+        "Squeeze",
+        "Revenue"
       ]
     }
   ]

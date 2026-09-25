@@ -1,177 +1,172 @@
 {
-  "updated_at": "2026-09-24T17:44:57.876267+00:00",
+  "updated_at": "2026-09-25T17:46:22.853049+00:00",
   "top_trending": {
-    "ticker": "SOXL",
-    "name": "Direxion Daily Semiconductor Bu",
+    "ticker": "AKAM",
+    "name": "Akamai Technologies, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 40355,
-    "price": 143.65,
-    "change_pct": "-1.78%",
+    "tweet_volume": 6973,
+    "price": 116.31,
+    "change_pct": "+5.34%",
     "key_topics": [
-      "Demand",
-      "Squeeze",
-      "Market"
+      "Price Target",
+      "AI",
+      "Chips"
     ]
   },
   "trending_list": [
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 49427,
-      "price": 89.94,
-      "change_pct": "+3.49%",
+      "tweet_volume": 20438,
+      "price": 10.92,
+      "change_pct": "+1.11%",
       "key_topics": [
-        "Price Target",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "INFQ",
-      "name": "Infleqtion, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 16884,
-      "price": 14.54,
-      "change_pct": "+5.10%",
-      "key_topics": [
-        "CEO",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "NCLH",
-      "name": "Norwegian Cruise Line Holdings ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 39637,
-      "price": 14.21,
-      "change_pct": "+0.18%",
-      "key_topics": [
-        "Price Target",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "KYTX",
-      "name": "Kyverna Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1463,
-      "price": 6.89,
-      "change_pct": "-2.55%",
-      "key_topics": [
-        "Market",
-        "CEO",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "UNG",
-      "name": "United States Natural Gas Fund ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17669,
-      "price": 11.65,
-      "change_pct": "+7.17%",
-      "key_topics": [
-        "Smartmoneyconcepts",
-        "Trading",
-        "Priceaction"
-      ]
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 36307,
-      "price": 266.32,
-      "change_pct": "-3.22%",
-      "key_topics": [
-        "Squeeze",
-        "Market",
-        "Chips"
-      ]
-    },
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 20926,
-      "price": 126.39,
-      "change_pct": "+15.27%",
-      "key_topics": [
-        "Growth",
         "Guidance",
         "AI"
       ]
     },
     {
-      "ticker": "APUS",
-      "name": "Apimeds Pharmaceuticals US, Inc",
+      "ticker": "EROC",
+      "name": "ERock, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 924,
-      "price": 5.32,
-      "change_pct": "+132.10%",
+      "tweet_volume": 836,
+      "price": 12.48,
+      "change_pct": "+3.48%",
       "key_topics": [
-        "Squeeze",
-        "AI"
+        "CEO",
+        "AI",
+        "Demand"
       ]
     },
     {
-      "ticker": "PFSA",
-      "name": "Profusa, Inc.",
+      "ticker": "CIFR",
+      "name": "Cipher Digital Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2290,
-      "price": 3.06,
-      "change_pct": "+49.27%",
-      "key_topics": [
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SKYQ",
-      "name": "Sky Quarry Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2757,
-      "price": 2.91,
-      "change_pct": "+14.56%",
+      "tweet_volume": 23722,
+      "price": 17.72,
+      "change_pct": "-2.10%",
       "key_topics": [
         "AI",
-        "Squeeze",
+        "Price Target",
         "Revenue"
+      ]
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1065,
+      "price": 15.79,
+      "change_pct": "-4.51%",
+      "key_topics": [
+        "Crypto",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 35653,
+      "price": 178.05,
+      "change_pct": "+3.42%",
+      "key_topics": [
+        "Ddamanda"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 68342,
+      "price": 74.27,
+      "change_pct": "+0.89%",
+      "key_topics": [
+        "Growth",
+        "AI",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs PBC",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 16384,
+      "price": 17.62,
+      "change_pct": "+0.03%",
+      "key_topics": [
+        "Marketrecon"
+      ]
+    },
+    {
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
+      "sentiment_delta": 0.913,
+      "current_sentiment": 0.913,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 96,
+      "tweet_volume": 62074,
+      "price": 11.66,
+      "change_pct": "-2.70%",
+      "key_topics": [
+        "FDA",
+        "AI",
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "GLND",
+      "name": "Greenland Energy Company",
+      "sentiment_delta": 0.875,
+      "current_sentiment": 0.875,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 28204,
+      "price": 6.0,
+      "change_pct": "+12.24%",
+      "key_topics": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "INLF",
+      "name": "INLIF LIMITED",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 1615,
+      "price": 4.78,
+      "change_pct": "+62.03%",
+      "key_topics": [
+        "AI",
+        "Market"
       ]
     }
   ]

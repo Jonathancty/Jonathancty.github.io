@@ -1,82 +1,66 @@
 {
-  "updated_at": "2026-09-28T19:59:53.070601+00:00",
+  "updated_at": "2026-09-29T18:27:58.992068+00:00",
   "top_trending": {
-    "ticker": "BB",
-    "name": "BlackBerry Limited",
+    "ticker": "XERS",
+    "name": "Xeris Biopharma Holdings, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 151483,
-    "price": 8.84,
-    "change_pct": "+7.67%",
+    "tweet_volume": 10748,
+    "price": 9.63,
+    "change_pct": "-1.98%",
     "key_topics": [
-      "Earnings",
-      "Market",
-      "Revenue"
+      "Acquisition",
+      "AI",
+      "Demand"
     ]
   },
   "trending_list": [
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 Index Fund",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 107717,
-      "price": 10.8,
-      "change_pct": "+1.60%",
+      "tweet_volume": 49819,
+      "price": 278.22,
+      "change_pct": "-0.64%",
       "key_topics": [
-        "Fjj"
+        "Pennion"
       ]
     },
     {
-      "ticker": "ZIM",
-      "name": "ZIM Integrated Shipping Service",
+      "ticker": "AXSM",
+      "name": "Axsome Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 15372,
-      "price": 28.47,
-      "change_pct": "-2.47%",
+      "tweet_volume": 11948,
+      "price": 183.6,
+      "change_pct": "-5.31%",
       "key_topics": [
-        "Acquisition",
-        "Earnings",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 46501,
-      "price": 24.52,
-      "change_pct": "-6.57%",
-      "key_topics": [
-        "Market",
         "AI",
-        "Earnings"
+        "FDA",
+        "Launch"
       ]
     },
     {
-      "ticker": "USAR",
-      "name": "USA Rare Earth, Inc.",
+      "ticker": "BCRX",
+      "name": "BioCryst Pharmaceuticals, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20381,
-      "price": 14.39,
-      "change_pct": "-5.17%",
+      "tweet_volume": 36973,
+      "price": 8.3,
+      "change_pct": "-2.01%",
       "key_topics": [
-        "Market",
         "AI",
-        "Growth"
+        "Market",
+        "Launch"
       ]
     },
     {
@@ -86,89 +70,108 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9644,
-      "price": 13.88,
-      "change_pct": "+9.29%",
+      "tweet_volume": 9679,
+      "price": 14.86,
+      "change_pct": "+6.72%",
       "key_topics": [
+        "Price Target",
         "AI",
         "CEO"
       ]
     },
     {
-      "ticker": "TEST",
-      "name": "YieldMax TSLA Performance & Dis",
+      "ticker": "ALM",
+      "name": "Almonty Industries Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7,
-      "price": 36.67,
-      "change_pct": "-2.70%",
+      "tweet_volume": 1257,
+      "price": 12.97,
+      "change_pct": "-1.82%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Price Target"
-      ]
-    },
-    {
-      "ticker": "GYGY",
-      "name": "Game Your Game, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 670,
-      "price": 0.86,
-      "change_pct": "+16.10%",
-      "key_topics": [
-        "AI",
-        "Revenue",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "ARAY",
-      "name": "Accuray Incorporated",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2683,
-      "price": 0.3,
-      "change_pct": "+38.54%",
-      "key_topics": [
+        "Earnings",
+        "Price Target",
         "AI"
       ]
     },
     {
-      "ticker": "AMPX",
-      "name": "Amprius Technologies, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
+      "ticker": "SDEV",
+      "name": "Stablecoin Development Corporat",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 9375,
-      "price": 9.61,
-      "change_pct": "-1.49%",
+      "bullish_pct": 100,
+      "tweet_volume": 20105,
+      "price": 3.34,
+      "change_pct": "+112.73%",
       "key_topics": [
-        "Defensetech",
-        "Batterytech"
+        "Earnings",
+        "AI",
+        "Buyout"
       ]
     },
     {
-      "ticker": "SOAR",
-      "name": "Volato Group, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
+      "ticker": "SMMT",
+      "name": "Summit Therapeutics Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 4237,
-      "price": 0.32,
-      "change_pct": "+79.22%",
+      "bullish_pct": 100,
+      "tweet_volume": 10586,
+      "price": 16.45,
+      "change_pct": "+6.27%",
       "key_topics": [
-        "Demand",
-        "Market",
-        "Revenue"
+        "Eeniemeenyminymoe",
+        "Summittherapeutics",
+        "Teamsummit"
+      ]
+    },
+    {
+      "ticker": "QSI",
+      "name": "Quantum-Si Incorporated",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10550,
+      "price": 0.98,
+      "change_pct": "+22.99%",
+      "key_topics": [
+        "Earnings",
+        "AI",
+        "Launch"
+      ]
+    },
+    {
+      "ticker": "NAUT",
+      "name": "Nautilus Biotechnology, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2412,
+      "price": 1.47,
+      "change_pct": "+32.43%",
+      "key_topics": [
+        "Earnings",
+        "Price Target",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "sentiment_delta": 0.875,
+      "current_sentiment": 0.875,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 13474,
+      "price": 199.85,
+      "change_pct": "+1.58%",
+      "key_topics": [
+        "AI",
+        "Chips"
       ]
     }
   ]

@@ -80,5 +80,22 @@
       "AI"
     ],
     "requested_at": "2026-09-23T16:04:57.894349+00:00"
+  },
+  "GLW": {
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "sentiment_delta": 1.0,
+    "current_sentiment": 1.0,
+    "sentiment_label": "Bullish",
+    "bullish_pct": 100,
+    "tweet_volume": 16050,
+    "price": 155.0,
+    "change_pct": "-2.34%",
+    "key_topics": [
+      "Price Target",
+      "Revenue",
+      "Market"
+    ],
+    "requested_at": "2026-09-30T13:48:48.178884+00:00"
   }
 }

@@ -1,177 +1,174 @@
 {
-  "updated_at": "2026-09-29T18:27:58.992068+00:00",
+  "updated_at": "2026-09-30T18:16:53.202327+00:00",
   "top_trending": {
-    "ticker": "XERS",
-    "name": "Xeris Biopharma Holdings, Inc.",
+    "ticker": "CADL",
+    "name": "Candel Therapeutics, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 10748,
-    "price": 9.63,
-    "change_pct": "-1.98%",
+    "tweet_volume": 10423,
+    "price": 10.43,
+    "change_pct": "-4.14%",
     "key_topics": [
-      "Acquisition",
-      "AI",
-      "Demand"
+      "CEO",
+      "Trial",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 Index Fund",
+      "ticker": "ZETA",
+      "name": "Zeta Global Holdings Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 49819,
-      "price": 278.22,
-      "change_pct": "-0.64%",
+      "tweet_volume": 15390,
+      "price": 31.7,
+      "change_pct": "+9.48%",
       "key_topics": [
-        "Pennion"
-      ]
-    },
-    {
-      "ticker": "AXSM",
-      "name": "Axsome Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 11948,
-      "price": 183.6,
-      "change_pct": "-5.31%",
-      "key_topics": [
-        "AI",
-        "FDA",
-        "Launch"
-      ]
-    },
-    {
-      "ticker": "BCRX",
-      "name": "BioCryst Pharmaceuticals, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 36973,
-      "price": 8.3,
-      "change_pct": "-2.01%",
-      "key_topics": [
-        "AI",
+        "Guidance",
         "Market",
-        "Launch"
+        "Growth"
       ]
     },
     {
-      "ticker": "ABCL",
-      "name": "AbCellera Biologics Inc.",
+      "ticker": "PGEN",
+      "name": "Precigen, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9679,
-      "price": 14.86,
-      "change_pct": "+6.72%",
+      "tweet_volume": 9098,
+      "price": 8.84,
+      "change_pct": "+9.81%",
       "key_topics": [
-        "Price Target",
-        "AI",
-        "CEO"
+        "Acquisition",
+        "Squeeze",
+        "Market"
       ]
     },
     {
-      "ticker": "ALM",
-      "name": "Almonty Industries Inc.",
+      "ticker": "XRPN",
+      "name": "Armada Acquisition Corp. II",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1257,
-      "price": 12.97,
-      "change_pct": "-1.82%",
-      "key_topics": [
-        "Earnings",
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SDEV",
-      "name": "Stablecoin Development Corporat",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 20105,
-      "price": 3.34,
-      "change_pct": "+112.73%",
-      "key_topics": [
-        "Earnings",
-        "AI",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "SMMT",
-      "name": "Summit Therapeutics Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 10586,
-      "price": 16.45,
-      "change_pct": "+6.27%",
-      "key_topics": [
-        "Eeniemeenyminymoe",
-        "Summittherapeutics",
-        "Teamsummit"
-      ]
-    },
-    {
-      "ticker": "QSI",
-      "name": "Quantum-Si Incorporated",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 10550,
-      "price": 0.98,
-      "change_pct": "+22.99%",
-      "key_topics": [
-        "Earnings",
-        "AI",
-        "Launch"
-      ]
-    },
-    {
-      "ticker": "NAUT",
-      "name": "Nautilus Biotechnology, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2412,
-      "price": 1.47,
-      "change_pct": "+32.43%",
-      "key_topics": [
-        "Earnings",
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "sentiment_delta": 0.875,
-      "current_sentiment": 0.875,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 13474,
-      "price": 199.85,
-      "change_pct": "+1.58%",
+      "tweet_volume": 797,
+      "price": 15.36,
+      "change_pct": "+19.03%",
       "key_topics": [
         "AI",
-        "Chips"
+        "Update"
+      ]
+    },
+    {
+      "ticker": "GTBIF",
+      "name": "Green Thumb Industries Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6360,
+      "price": 6.72,
+      "change_pct": "-12.84%",
+      "key_topics": [
+        "AI",
+        "Squeeze",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "SCHD",
+      "name": "Schwab US Dividend Equity ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23927,
+      "price": 32.69,
+      "change_pct": "-0.50%",
+      "key_topics": [
+        "Etfs"
+      ]
+    },
+    {
+      "ticker": "TGE",
+      "name": "The Generation Essentials Group",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1770,
+      "price": 1.49,
+      "change_pct": "+79.55%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporatio",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 12027,
+      "price": 253.75,
+      "change_pct": "-4.09%",
+      "key_topics": [
+        "CEO",
+        "Chips",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "CNTB",
+      "name": "Connect Biopharma Holdings Limi",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1164,
+      "price": 1.24,
+      "change_pct": "+25.00%",
+      "key_topics": [
+        "AI",
+        "Squeeze",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 57530,
+      "price": 30.25,
+      "change_pct": "+5.40%",
+      "key_topics": [
+        "Getin"
+      ]
+    },
+    {
+      "ticker": "NLY",
+      "name": "Annaly Capital Management Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10224,
+      "price": 19.18,
+      "change_pct": "-2.02%",
+      "key_topics": [
+        "AI",
+        "Revenue",
+        "Market"
       ]
     }
   ]

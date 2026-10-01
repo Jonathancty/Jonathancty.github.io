@@ -97,5 +97,22 @@
       "Market"
     ],
     "requested_at": "2026-09-30T13:48:48.178884+00:00"
+  },
+  "TEM": {
+    "ticker": "TEM",
+    "name": "Tempus AI, Inc.",
+    "sentiment_delta": 0.5,
+    "current_sentiment": 0.5,
+    "sentiment_label": "Bullish",
+    "bullish_pct": 75,
+    "tweet_volume": 21800,
+    "price": 78.02,
+    "change_pct": "-4.74%",
+    "key_topics": [
+      "Launch",
+      "AI",
+      "Market"
+    ],
+    "requested_at": "2026-10-01T15:51:39.634221+00:00"
   }
 }

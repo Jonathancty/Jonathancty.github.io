@@ -1,172 +1,175 @@
 {
-  "updated_at": "2026-10-02T18:13:01.383472+00:00",
+  "updated_at": "2026-10-03T16:59:36.477038+00:00",
   "top_trending": {
-    "ticker": "APLD",
-    "name": "Applied Digital Corporation",
+    "ticker": "TGT",
+    "name": "Target Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 46690,
-    "price": 25.2,
-    "change_pct": "+4.31%",
+    "tweet_volume": 50135,
+    "price": 156.0,
+    "change_pct": "-0.45%",
     "key_topics": [
-      "AI",
-      "Earnings"
+      "Target",
+      "Tgt"
     ]
   },
   "trending_list": [
     {
-      "ticker": "IBIT",
-      "name": "iShares Bitcoin Trust ETF",
+      "ticker": "SMTC",
+      "name": "Semtech Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20525,
-      "price": 48.03,
-      "change_pct": "+0.15%",
+      "tweet_volume": 3356,
+      "price": 194.88,
+      "change_pct": "+4.44%",
       "key_topics": [
-        "Bitcoin"
+        "Canslim",
+        "Smtc"
       ]
     },
     {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
+      "ticker": "ACAD",
+      "name": "ACADIA Pharmaceuticals Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 51318,
-      "price": 41.35,
-      "change_pct": "+1.72%",
+      "tweet_volume": 13052,
+      "price": 19.95,
+      "change_pct": "+0.30%",
       "key_topics": [
-        "Ddamanda"
+        "Trial",
+        "Market",
+        "Price Target"
       ]
     },
     {
-      "ticker": "NAT",
-      "name": "Nordic American Tankers Limited",
+      "ticker": "KYTX",
+      "name": "Kyverna Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10844,
-      "price": 8.38,
-      "change_pct": "+2.51%",
+      "tweet_volume": 1524,
+      "price": 6.22,
+      "change_pct": "-4.60%",
       "key_topics": [
-        "146",
-        "145",
-        "144"
+        "Trial",
+        "Market",
+        "Acquisition"
       ]
     },
     {
-      "ticker": "CAPR",
-      "name": "Capricor Therapeutics, Inc.",
+      "ticker": "CADL",
+      "name": "Candel Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 33468,
-      "price": 9.04,
-      "change_pct": "+1.17%",
+      "tweet_volume": 10427,
+      "price": 10.18,
+      "change_pct": "+0.20%",
       "key_topics": [
+        "Launch",
         "Update",
-        "Demand",
         "Market"
       ]
     },
     {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4909,
-      "price": 228.64,
-      "change_pct": "+6.32%",
+      "tweet_volume": 616,
+      "price": 268.32,
+      "change_pct": "+0.48%",
       "key_topics": [
-        "Ntap",
-        "Netapp",
-        "Aistocks"
+        "Trump"
       ]
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "EPD",
+      "name": "Enterprise Products Partners L.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 15624,
-      "price": 1085.28,
-      "change_pct": "+3.78%",
+      "tweet_volume": 10879,
+      "price": 36.18,
+      "change_pct": "+1.43%",
       "key_topics": [
+        "AI",
+        "Demand",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "OUST",
+      "name": "Ouster, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 17543,
+      "price": 44.39,
+      "change_pct": "+8.61%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "MO",
+      "name": "Altria Group, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 25084,
+      "price": 67.35,
+      "change_pct": "+0.60%",
+      "key_topics": [
+        "FDA",
         "Market",
         "AI"
       ]
     },
     {
-      "ticker": "QTEX",
-      "name": "QTREX Quantum Ltd.",
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8675,
-      "price": 1.1,
-      "change_pct": "+40.34%",
+      "tweet_volume": 23053,
+      "price": 20.47,
+      "change_pct": "+1.84%",
       "key_topics": [
-        "Deeptech",
-        "Quantum",
-        "Defensetech"
+        "Earnings",
+        "Launch",
+        "AI"
       ]
     },
     {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Comp",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "AGEN",
+      "name": "Agenus Inc.",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13698,
-      "price": 69.68,
-      "change_pct": "+7.90%",
+      "bullish_pct": 90,
+      "tweet_volume": 12789,
+      "price": 8.36,
+      "change_pct": "+0.36%",
       "key_topics": [
-        "Revenue",
-        "Demand",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "CRH",
-      "name": "CRH PLC",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 918,
-      "price": 82.13,
-      "change_pct": "+0.53%",
-      "key_topics": [
-        "Growth",
-        "Acquisition",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.889,
-      "current_sentiment": 0.889,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 30833,
-      "price": 10.22,
-      "change_pct": "+10.18%",
-      "key_topics": [
-        "Revenue",
+        "FDA",
+        "Market",
         "AI"
       ]
     }

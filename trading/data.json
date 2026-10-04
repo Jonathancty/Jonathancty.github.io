@@ -1,176 +1,178 @@
 {
-  "updated_at": "2026-10-03T16:59:36.477038+00:00",
+  "updated_at": "2026-10-04T17:18:05.987853+00:00",
   "top_trending": {
-    "ticker": "TGT",
-    "name": "Target Corporation",
+    "ticker": "VELO",
+    "name": "Velo3D, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 50135,
-    "price": 156.0,
-    "change_pct": "-0.45%",
+    "tweet_volume": 8643,
+    "price": 11.2,
+    "change_pct": "+6.97%",
     "key_topics": [
-      "Target",
-      "Tgt"
+      "AI",
+      "Acquisition",
+      "CEO"
     ]
   },
   "trending_list": [
     {
-      "ticker": "SMTC",
-      "name": "Semtech Corporation",
+      "ticker": "MP",
+      "name": "MP Materials Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3356,
-      "price": 194.88,
-      "change_pct": "+4.44%",
+      "tweet_volume": 36293,
+      "price": 46.97,
+      "change_pct": "+1.91%",
       "key_topics": [
-        "Canslim",
-        "Smtc"
+        "Price Target",
+        "AI",
+        "Revenue"
       ]
     },
     {
-      "ticker": "ACAD",
-      "name": "ACADIA Pharmaceuticals Inc.",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13052,
-      "price": 19.95,
-      "change_pct": "+0.30%",
+      "tweet_volume": 11091,
+      "price": 337.04,
+      "change_pct": "+5.59%",
       "key_topics": [
+        "AI",
         "Trial",
-        "Market",
-        "Price Target"
+        "Launch"
       ]
     },
     {
-      "ticker": "KYTX",
-      "name": "Kyverna Therapeutics, Inc.",
+      "ticker": "ROOT",
+      "name": "Root, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1524,
-      "price": 6.22,
-      "change_pct": "-4.60%",
+      "tweet_volume": 19555,
+      "price": 46.26,
+      "change_pct": "+0.11%",
       "key_topics": [
-        "Trial",
+        "AI",
         "Market",
-        "Acquisition"
+        "Trial"
       ]
     },
     {
-      "ticker": "CADL",
-      "name": "Candel Therapeutics, Inc.",
+      "ticker": "CURLF",
+      "name": "Curaleaf Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10427,
-      "price": 10.18,
-      "change_pct": "+0.20%",
+      "tweet_volume": 9012,
+      "price": 9.95,
+      "change_pct": "-3.24%",
       "key_topics": [
-        "Launch",
+        "FDA",
+        "AI",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 13221,
+      "price": 350.33,
+      "change_pct": "-1.71%",
+      "key_topics": [
+        "AI",
+        "Chips",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "name": "Grayscale Ethereum Staking Mini",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 2958,
+      "price": 25.46,
+      "change_pct": "-1.24%",
+      "key_topics": [
         "Update",
+        "Launch",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "BBAI",
+      "name": "BigBear.ai, Inc.",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 55121,
+      "price": 2.65,
+      "change_pct": "-3.28%",
+      "key_topics": [
+        "Update",
+        "AI",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics, Inc.",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 26049,
+      "price": 115.59,
+      "change_pct": "+7.71%",
+      "key_topics": [
+        "AI",
+        "Revenue",
         "Market"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 616,
-      "price": 268.32,
-      "change_pct": "+0.48%",
-      "key_topics": [
-        "Trump"
-      ]
-    },
-    {
-      "ticker": "EPD",
-      "name": "Enterprise Products Partners L.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 10879,
-      "price": 36.18,
-      "change_pct": "+1.43%",
-      "key_topics": [
-        "AI",
-        "Demand",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "OUST",
-      "name": "Ouster, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17543,
-      "price": 44.39,
-      "change_pct": "+8.61%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "MO",
-      "name": "Altria Group, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 25084,
-      "price": 67.35,
-      "change_pct": "+0.60%",
+      "bullish_pct": 92,
+      "tweet_volume": 29806,
+      "price": 86.46,
+      "change_pct": "+1.48%",
       "key_topics": [
         "FDA",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "ET",
-      "name": "Energy Transfer LP",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23053,
-      "price": 20.47,
-      "change_pct": "+1.84%",
-      "key_topics": [
-        "Earnings",
         "Launch",
         "AI"
       ]
     },
     {
-      "ticker": "AGEN",
-      "name": "Agenus Inc.",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
       "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 12789,
-      "price": 8.36,
-      "change_pct": "+0.36%",
+      "bullish_pct": 91,
+      "tweet_volume": 156717,
+      "price": 15.77,
+      "change_pct": "-0.44%",
       "key_topics": [
-        "FDA",
-        "Market",
-        "AI"
+        "Ddamanda"
       ]
     }
   ]

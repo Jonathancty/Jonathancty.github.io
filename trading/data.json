@@ -1,178 +1,175 @@
 {
-  "updated_at": "2026-10-04T17:18:05.987853+00:00",
+  "updated_at": "2026-10-05T21:08:21.897308+00:00",
   "top_trending": {
-    "ticker": "VELO",
-    "name": "Velo3D, Inc.",
+    "ticker": "NVAX",
+    "name": "Novavax, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 8643,
-    "price": 11.2,
-    "change_pct": "+6.97%",
+    "tweet_volume": 108000,
+    "price": 12.56,
+    "change_pct": "+20.08%",
     "key_topics": [
       "AI",
-      "Acquisition",
-      "CEO"
+      "Squeeze",
+      "Launch"
     ]
   },
   "trending_list": [
     {
-      "ticker": "MP",
-      "name": "MP Materials Corp.",
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 36293,
-      "price": 46.97,
-      "change_pct": "+1.91%",
+      "tweet_volume": 22519,
+      "price": 1860.61,
+      "change_pct": "+9.67%",
       "key_topics": [
-        "Price Target",
-        "AI",
-        "Revenue"
+        "Melion"
       ]
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "VST",
+      "name": "Vistra Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11091,
-      "price": 337.04,
-      "change_pct": "+5.59%",
+      "tweet_volume": 17447,
+      "price": 144.89,
+      "change_pct": "+3.48%",
       "key_topics": [
-        "AI",
-        "Trial",
-        "Launch"
+        "Squeeze",
+        "Revenue",
+        "AI"
       ]
     },
     {
-      "ticker": "ROOT",
-      "name": "Root, Inc.",
+      "ticker": "ZETA",
+      "name": "Zeta Global Holdings Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 19555,
-      "price": 46.26,
-      "change_pct": "+0.11%",
+      "tweet_volume": 15432,
+      "price": 32.88,
+      "change_pct": "+0.77%",
       "key_topics": [
-        "AI",
         "Market",
-        "Trial"
-      ]
-    },
-    {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9012,
-      "price": 9.95,
-      "change_pct": "-3.24%",
-      "key_topics": [
-        "FDA",
         "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13221,
-      "price": 350.33,
-      "change_pct": "-1.71%",
-      "key_topics": [
-        "AI",
-        "Chips",
         "Earnings"
       ]
     },
     {
-      "ticker": "ETH",
-      "name": "Grayscale Ethereum Staking Mini",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
+      "ticker": "RBRK",
+      "name": "Rubrik, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 2958,
-      "price": 25.46,
-      "change_pct": "-1.24%",
+      "bullish_pct": 100,
+      "tweet_volume": 6329,
+      "price": 122.68,
+      "change_pct": "+3.46%",
       "key_topics": [
-        "Update",
-        "Launch",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "BBAI",
-      "name": "BigBear.ai, Inc.",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 55121,
-      "price": 2.65,
-      "change_pct": "-3.28%",
-      "key_topics": [
-        "Update",
         "AI",
-        "Revenue"
+        "Guidance",
+        "Price Target"
       ]
     },
     {
-      "ticker": "AAOI",
-      "name": "Applied Optoelectronics, Inc.",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
+      "ticker": "VSTM",
+      "name": "Verastem, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 26049,
-      "price": 115.59,
-      "change_pct": "+7.71%",
+      "bullish_pct": 100,
+      "tweet_volume": 24227,
+      "price": 8.0,
+      "change_pct": "+3.90%",
       "key_topics": [
         "AI",
         "Revenue",
+        "Update"
+      ]
+    },
+    {
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 15118,
+      "price": 104.4,
+      "change_pct": "-2.62%",
+      "key_topics": [
+        "Revenue",
+        "Market",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "PGY",
+      "name": "Pagaya Technologies Ltd.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 8836,
+      "price": 18.4,
+      "change_pct": "+2.34%",
+      "key_topics": [
+        "AI",
         "Market"
       ]
     },
     {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sentiment_delta": 0.833,
-      "current_sentiment": 0.833,
+      "ticker": "PENN",
+      "name": "PENN Entertainment, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 29806,
-      "price": 86.46,
-      "change_pct": "+1.48%",
+      "bullish_pct": 100,
+      "tweet_volume": 36344,
+      "price": 15.1,
+      "change_pct": "+2.23%",
       "key_topics": [
-        "FDA",
-        "Launch",
-        "AI"
+        "Revenue",
+        "Market",
+        "Acquisition"
       ]
     },
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
-      "sentiment_delta": 0.818,
-      "current_sentiment": 0.818,
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 156717,
-      "price": 15.77,
-      "change_pct": "-0.44%",
+      "bullish_pct": 100,
+      "tweet_volume": 7346,
+      "price": 389.69,
+      "change_pct": "-0.42%",
       "key_topics": [
-        "Ddamanda"
+        "Regn"
+      ]
+    },
+    {
+      "ticker": "XERS",
+      "name": "Xeris Biopharma Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10777,
+      "price": 10.13,
+      "change_pct": "+11.56%",
+      "key_topics": [
+        "Squeeze",
+        "Revenue",
+        "Market"
       ]
     }
   ]

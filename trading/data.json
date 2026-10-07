@@ -1,82 +1,35 @@
 {
-  "updated_at": "2026-10-06T18:46:40.463266+00:00",
+  "updated_at": "2026-10-07T19:12:38.592436+00:00",
   "top_trending": {
-    "ticker": "FCEL",
-    "name": "FuelCell Energy, Inc.",
+    "ticker": "CAPR",
+    "name": "Capricor Therapeutics, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 144111,
-    "price": 21.0,
-    "change_pct": "+16.21%",
+    "tweet_volume": 33588,
+    "price": 8.24,
+    "change_pct": "+6.32%",
     "key_topics": [
       "AI",
+      "FDA",
       "Squeeze"
     ]
   },
   "trending_list": [
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 17728,
-      "price": 159.62,
-      "change_pct": "+10.17%",
-      "key_topics": [
-        "Update",
-        "AI",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4107,
-      "price": 60.89,
-      "change_pct": "+0.29%",
-      "key_topics": [
-        "Earnings",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "FRVO",
-      "name": "Fervo Energy Company",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1862,
-      "price": 14.16,
-      "change_pct": "+5.20%",
-      "key_topics": [
-        "Growth",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CCXI",
-      "name": "Churchill Capital Corp XI",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 12677,
-      "price": 11.54,
-      "change_pct": "-4.39%",
+      "tweet_volume": 93194,
+      "price": 45.43,
+      "change_pct": "+4.53%",
       "key_topics": [
         "Market",
-        "Crypto",
+        "Launch",
         "AI"
       ]
     },
@@ -87,58 +40,41 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 27741,
-      "price": 6.47,
-      "change_pct": "+14.51%",
+      "tweet_volume": 28054,
+      "price": 6.99,
+      "change_pct": "+4.95%",
       "key_topics": [
         "AI",
         "Revenue"
       ]
     },
     {
-      "ticker": "XNDU",
-      "name": "Xanadu Quantum Technologies Lim",
+      "ticker": "CIFR",
+      "name": "Cipher Digital Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6772,
-      "price": 5.25,
-      "change_pct": "+16.15%",
+      "tweet_volume": 23792,
+      "price": 14.65,
+      "change_pct": "-5.45%",
       "key_topics": [
-        "Trial",
-        "Market",
-        "AI"
+        "Squeeze",
+        "AI",
+        "Market"
       ]
     },
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 49692,
-      "price": 92.7,
-      "change_pct": "+6.08%",
+      "tweet_volume": 12834,
+      "price": 298.64,
+      "change_pct": "+3.05%",
       "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "XBI",
-      "name": "State Street SPDR S&P Biotech E",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 29021,
-      "price": 151.41,
-      "change_pct": "-3.06%",
-      "key_topics": [
-        "Trial",
-        "Market",
         "AI"
       ]
     },
@@ -149,29 +85,88 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2417,
-      "price": 10.78,
-      "change_pct": "-0.51%",
+      "tweet_volume": 2420,
+      "price": 10.54,
+      "change_pct": "-2.90%",
       "key_topics": [
-        "Earnings",
-        "Market",
         "AI"
       ]
     },
     {
-      "ticker": "ETHA",
-      "name": "iShares Ethereum Trust ETF",
+      "ticker": "PENG",
+      "name": "Penguin Solutions, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4220,
-      "price": 60.92,
-      "change_pct": "+198.16%",
+      "tweet_volume": 4559,
+      "price": 72.8,
+      "change_pct": "+13.37%",
       "key_topics": [
+        "Growth",
+        "Update",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "BRZE",
+      "name": "Braze, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1379,
+      "price": 28.67,
+      "change_pct": "+8.85%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "BKH",
+      "name": "Black Hills Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 443,
+      "price": 76.57,
+      "change_pct": "+8.24%",
+      "key_topics": [
+        "Dividend"
+      ]
+    },
+    {
+      "ticker": "FUBO",
+      "name": "fuboTV Inc.",
+      "sentiment_delta": 0.9,
+      "current_sentiment": 0.9,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 67703,
+      "price": 9.27,
+      "change_pct": "+4.98%",
+      "key_topics": [
+        "AI",
+        "Update",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "name": "Roundhill Memory ETF",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 14896,
+      "price": 59.99,
+      "change_pct": "+0.78%",
+      "key_topics": [
+        "Update",
         "Market",
-        "Crypto",
-        "AI"
+        "Price Target"
       ]
     }
   ]

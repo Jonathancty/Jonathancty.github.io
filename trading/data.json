@@ -1,172 +1,174 @@
 {
-  "updated_at": "2026-10-07T19:12:38.592436+00:00",
+  "updated_at": "2026-10-08T19:09:17.674912+00:00",
   "top_trending": {
-    "ticker": "CAPR",
-    "name": "Capricor Therapeutics, Inc.",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 33588,
-    "price": 8.24,
-    "change_pct": "+6.32%",
+    "tweet_volume": 308142,
+    "price": 25.08,
+    "change_pct": "+2.04%",
     "key_topics": [
-      "AI",
-      "FDA",
-      "Squeeze"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "GRRR",
+      "name": "Gorilla Technology Group Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 93194,
-      "price": 45.43,
-      "change_pct": "+4.53%",
+      "bullish_pct": 93,
+      "tweet_volume": 25536,
+      "price": 11.81,
+      "change_pct": "+0.45%",
       "key_topics": [
         "Market",
-        "Launch",
         "AI"
       ]
     },
     {
-      "ticker": "NLST",
-      "name": "Netlist, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
+      "sentiment_delta": 0.826,
+      "current_sentiment": 0.826,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 28054,
-      "price": 6.99,
-      "change_pct": "+4.95%",
+      "bullish_pct": 91,
+      "tweet_volume": 47682,
+      "price": 23.18,
+      "change_pct": "-2.65%",
       "key_topics": [
-        "AI",
-        "Revenue"
+        "Market",
+        "Earnings",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 91,
+      "tweet_volume": 20554,
+      "price": 46.08,
+      "change_pct": "-2.38%",
+      "key_topics": [
+        "Market",
+        "Crypto",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN LIMITED",
+      "sentiment_delta": 0.765,
+      "current_sentiment": 0.765,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 88,
+      "tweet_volume": 51659,
+      "price": 35.72,
+      "change_pct": "-7.68%",
+      "key_topics": [
+        "Chips",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
+      "sentiment_delta": 0.75,
+      "current_sentiment": 0.75,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 88,
+      "tweet_volume": 31046,
+      "price": 9.8,
+      "change_pct": "+0.51%",
+      "key_topics": [
+        "Trial",
+        "Revenue",
+        "FDA"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 0.75,
+      "current_sentiment": 0.75,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 88,
+      "tweet_volume": 37040,
+      "price": 267.91,
+      "change_pct": "-8.03%",
+      "key_topics": [
+        "Market",
+        "Revenue",
+        "AI"
       ]
     },
     {
       "ticker": "CIFR",
       "name": "Cipher Digital Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "sentiment_delta": 0.684,
+      "current_sentiment": 0.684,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23792,
-      "price": 14.65,
-      "change_pct": "-5.45%",
+      "bullish_pct": 84,
+      "tweet_volume": 23834,
+      "price": 13.38,
+      "change_pct": "-8.07%",
       "key_topics": [
-        "Squeeze",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 12834,
-      "price": 298.64,
-      "change_pct": "+3.05%",
-      "key_topics": [
-        "AI"
-      ]
-    },
-    {
-      "ticker": "DX",
-      "name": "Dynex Capital, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2420,
-      "price": 10.54,
-      "change_pct": "-2.90%",
-      "key_topics": [
-        "AI"
-      ]
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4559,
-      "price": 72.8,
-      "change_pct": "+13.37%",
-      "key_topics": [
-        "Growth",
-        "Update",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "BRZE",
-      "name": "Braze, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1379,
-      "price": 28.67,
-      "change_pct": "+8.85%",
-      "key_topics": [
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "BKH",
-      "name": "Black Hills Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 443,
-      "price": 76.57,
-      "change_pct": "+8.24%",
-      "key_topics": [
-        "Dividend"
-      ]
-    },
-    {
-      "ticker": "FUBO",
-      "name": "fuboTV Inc.",
-      "sentiment_delta": 0.9,
-      "current_sentiment": 0.9,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 67703,
-      "price": 9.27,
-      "change_pct": "+4.98%",
-      "key_topics": [
-        "AI",
-        "Update",
-        "Guidance"
-      ]
-    },
-    {
-      "ticker": "DRAM",
-      "name": "Roundhill Memory ETF",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 14896,
-      "price": 59.99,
-      "change_pct": "+0.78%",
-      "key_topics": [
-        "Update",
         "Market",
-        "Price Target"
+        "Price Target",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "sentiment_delta": 0.625,
+      "current_sentiment": 0.625,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 81,
+      "tweet_volume": 40485,
+      "price": 139.74,
+      "change_pct": "-12.06%",
+      "key_topics": [
+        "Pivotpoint",
+        "Pivot"
+      ]
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed, Inc.",
+      "sentiment_delta": 0.571,
+      "current_sentiment": 0.571,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 79,
+      "tweet_volume": 20576,
+      "price": 30.25,
+      "change_pct": "-3.57%",
+      "key_topics": [
+        "Market",
+        "Demand",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "EQPT",
+      "name": "EquipmentShare.com Inc",
+      "sentiment_delta": 0.556,
+      "current_sentiment": 0.556,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 78,
+      "tweet_volume": 522,
+      "price": 15.54,
+      "change_pct": "-12.13%",
+      "key_topics": [
+        "Price Target",
+        "AI"
       ]
     }
   ]

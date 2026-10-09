@@ -1,173 +1,174 @@
 {
-  "updated_at": "2026-10-08T19:09:17.674912+00:00",
+  "updated_at": "2026-10-09T18:39:47.054233+00:00",
   "top_trending": {
-    "ticker": "GME",
-    "name": "GameStop Corporation",
+    "ticker": "AUPH",
+    "name": "Aurinia Pharmaceuticals Inc",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 308142,
-    "price": 25.08,
-    "change_pct": "+2.04%",
+    "tweet_volume": 46401,
+    "price": 16.87,
+    "change_pct": "+4.01%",
     "key_topics": [
+      "CEO",
       "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "GRRR",
-      "name": "Gorilla Technology Group Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "GME",
+      "name": "GameStop Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 25536,
-      "price": 11.81,
-      "change_pct": "+0.45%",
+      "bullish_pct": 100,
+      "tweet_volume": 308185,
+      "price": 26.36,
+      "change_pct": "+4.27%",
       "key_topics": [
         "Market",
-        "AI"
+        "AI",
+        "Squeeze"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 0.826,
-      "current_sentiment": 0.826,
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 47682,
-      "price": 23.18,
-      "change_pct": "-2.65%",
+      "bullish_pct": 100,
+      "tweet_volume": 14443,
+      "price": 48.41,
+      "change_pct": "-1.04%",
       "key_topics": [
-        "Market",
-        "Earnings",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "IBIT",
-      "name": "iShares Bitcoin Trust ETF",
-      "sentiment_delta": 0.818,
-      "current_sentiment": 0.818,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 20554,
-      "price": 46.08,
-      "change_pct": "-2.38%",
-      "key_topics": [
-        "Market",
-        "Crypto",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
-      "sentiment_delta": 0.765,
-      "current_sentiment": 0.765,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 51659,
-      "price": 35.72,
-      "change_pct": "-7.68%",
-      "key_topics": [
-        "Chips",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 31046,
-      "price": 9.8,
-      "change_pct": "+0.51%",
-      "key_topics": [
-        "Trial",
-        "Revenue",
-        "FDA"
-      ]
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 37040,
-      "price": 267.91,
-      "change_pct": "-8.03%",
-      "key_topics": [
-        "Market",
-        "Revenue",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CIFR",
-      "name": "Cipher Digital Inc.",
-      "sentiment_delta": 0.684,
-      "current_sentiment": 0.684,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 84,
-      "tweet_volume": 23834,
-      "price": 13.38,
-      "change_pct": "-8.07%",
-      "key_topics": [
-        "Market",
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SOXL",
-      "name": "Direxion Daily Semiconductor Bu",
-      "sentiment_delta": 0.625,
-      "current_sentiment": 0.625,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 81,
-      "tweet_volume": 40485,
-      "price": 139.74,
-      "change_pct": "-12.06%",
-      "key_topics": [
-        "Pivotpoint",
-        "Pivot"
-      ]
-    },
-    {
-      "ticker": "WOLF",
-      "name": "Wolfspeed, Inc.",
-      "sentiment_delta": 0.571,
-      "current_sentiment": 0.571,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 79,
-      "tweet_volume": 20576,
-      "price": 30.25,
-      "change_pct": "-3.57%",
-      "key_topics": [
-        "Market",
         "Demand",
+        "Revenue",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "FSLY",
+      "name": "Fastly, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 36193,
+      "price": 29.77,
+      "change_pct": "+17.73%",
+      "key_topics": [
+        "Squeeze",
+        "Revenue",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "CCI",
+      "name": "Crown Castle Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5039,
+      "price": 77.42,
+      "change_pct": "+12.39%",
+      "key_topics": [
+        "Launch",
+        "Earnings",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "MIR",
+      "name": "Mirion Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 7838,
+      "price": 16.66,
+      "change_pct": "+2.74%",
+      "key_topics": [
+        "Market",
         "AI"
       ]
     },
     {
-      "ticker": "EQPT",
-      "name": "EquipmentShare.com Inc",
-      "sentiment_delta": 0.556,
-      "current_sentiment": 0.556,
+      "ticker": "VEEA",
+      "name": "Veea Inc.",
+      "sentiment_delta": 0.9,
+      "current_sentiment": 0.9,
       "sentiment_label": "Bullish",
-      "bullish_pct": 78,
-      "tweet_volume": 522,
-      "price": 15.54,
-      "change_pct": "-12.13%",
+      "bullish_pct": 95,
+      "tweet_volume": 1591,
+      "price": 5.58,
+      "change_pct": "+44.19%",
       "key_topics": [
-        "Price Target",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 57532,
+      "price": 30.48,
+      "change_pct": "+8.61%",
+      "key_topics": [
+        "AI",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 21003,
+      "price": 14.79,
+      "change_pct": "+11.12%",
+      "key_topics": [
+        "Update",
+        "AI",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 108228,
+      "price": 12.76,
+      "change_pct": "+15.85%",
+      "key_topics": [
+        "Matrixm",
+        "Oncolgy",
+        "Cic"
+      ]
+    },
+    {
+      "ticker": "QSI",
+      "name": "Quantum-Si Incorporated",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 10736,
+      "price": 1.57,
+      "change_pct": "+29.10%",
+      "key_topics": [
+        "Launch",
         "AI"
       ]
     }

@@ -1,175 +1,178 @@
 {
-  "updated_at": "2026-10-09T18:39:47.054233+00:00",
+  "updated_at": "2026-10-10T17:39:12.679600+00:00",
   "top_trending": {
-    "ticker": "AUPH",
-    "name": "Aurinia Pharmaceuticals Inc",
+    "ticker": "BTDR",
+    "name": "Bitdeer Technologies Group",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 46401,
-    "price": 16.87,
-    "change_pct": "+4.01%",
+    "tweet_volume": 4157,
+    "price": 9.63,
+    "change_pct": "-0.93%",
     "key_topics": [
-      "CEO",
-      "AI"
+      "Update",
+      "Market",
+      "Price Target"
     ]
   },
   "trending_list": [
     {
-      "ticker": "GME",
-      "name": "GameStop Corporation",
+      "ticker": "ZVRA",
+      "name": "Zevra Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 308185,
-      "price": 26.36,
-      "change_pct": "+4.27%",
+      "tweet_volume": 24233,
+      "price": 11.39,
+      "change_pct": "+3.55%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Squeeze"
+        "Update",
+        "Buyout",
+        "Market"
       ]
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 14443,
-      "price": 48.41,
-      "change_pct": "-1.04%",
-      "key_topics": [
-        "Demand",
-        "Revenue",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "FSLY",
-      "name": "Fastly, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 36193,
-      "price": 29.77,
-      "change_pct": "+17.73%",
+      "tweet_volume": 16219,
+      "price": 22.27,
+      "change_pct": "-0.93%",
       "key_topics": [
         "Squeeze",
-        "Revenue",
+        "Market",
         "Earnings"
       ]
     },
     {
-      "ticker": "CCI",
-      "name": "Crown Castle Inc.",
+      "ticker": "SMMT",
+      "name": "Summit Therapeutics Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 5039,
-      "price": 77.42,
-      "change_pct": "+12.39%",
+      "tweet_volume": 10603,
+      "price": 17.59,
+      "change_pct": "+2.45%",
       "key_topics": [
-        "Launch",
-        "Earnings",
-        "Growth"
+        "Squeeze",
+        "Update",
+        "Trial"
       ]
     },
     {
-      "ticker": "MIR",
-      "name": "Mirion Technologies, Inc.",
+      "ticker": "EPD",
+      "name": "Enterprise Products Partners L.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7838,
-      "price": 16.66,
-      "change_pct": "+2.74%",
+      "tweet_volume": 10887,
+      "price": 36.08,
+      "change_pct": "-1.82%",
       "key_topics": [
-        "Market",
-        "AI"
+        "AI",
+        "Revenue",
+        "Demand"
       ]
     },
     {
-      "ticker": "VEEA",
-      "name": "Veea Inc.",
-      "sentiment_delta": 0.9,
-      "current_sentiment": 0.9,
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 1591,
-      "price": 5.58,
-      "change_pct": "+44.19%",
+      "bullish_pct": 100,
+      "tweet_volume": 614,
+      "price": 271.47,
+      "change_pct": "+0.61%",
       "key_topics": [
+        "Trump"
+      ]
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23062,
+      "price": 20.41,
+      "change_pct": "-1.02%",
+      "key_topics": [
+        "Update",
         "Market",
-        "AI"
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "SGOV",
+      "name": "iShares 0-3 Month Treasury Bond",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2134,
+      "price": 100.51,
+      "change_pct": "+0.04%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Earnings"
       ]
     },
     {
       "ticker": "HIMS",
       "name": "Hims & Hers Health, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 57532,
-      "price": 30.48,
-      "change_pct": "+8.61%",
+      "bullish_pct": 100,
+      "tweet_volume": 57583,
+      "price": 30.92,
+      "change_pct": "+10.19%",
       "key_topics": [
         "AI",
-        "Squeeze"
+        "Squeeze",
+        "Market"
       ]
     },
     {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "MSTX",
+      "name": "Defiance Daily Target 2x Long M",
+      "sentiment_delta": 0.913,
+      "current_sentiment": 0.913,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 21003,
-      "price": 14.79,
-      "change_pct": "+11.12%",
+      "bullish_pct": 96,
+      "tweet_volume": 4003,
+      "price": 18.26,
+      "change_pct": "+3.57%",
       "key_topics": [
-        "Update",
         "AI",
-        "Squeeze"
+        "Market",
+        "Crypto"
       ]
     },
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 108228,
-      "price": 12.76,
-      "change_pct": "+15.85%",
+      "bullish_pct": 92,
+      "tweet_volume": 5968,
+      "price": 56.27,
+      "change_pct": "+0.37%",
       "key_topics": [
-        "Matrixm",
-        "Oncolgy",
-        "Cic"
-      ]
-    },
-    {
-      "ticker": "QSI",
-      "name": "Quantum-Si Incorporated",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 10736,
-      "price": 1.57,
-      "change_pct": "+29.10%",
-      "key_topics": [
-        "Launch",
-        "AI"
+        "AI",
+        "Market",
+        "Revenue"
       ]
     }
   ]

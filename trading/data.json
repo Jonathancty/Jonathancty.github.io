@@ -1,178 +1,179 @@
 {
-  "updated_at": "2026-10-11T17:54:55.820568+00:00",
+  "updated_at": "2026-10-12T21:33:47.642891+00:00",
   "top_trending": {
-    "ticker": "NTSK",
-    "name": "Netskope, Inc.",
+    "ticker": "CORZ",
+    "name": "Core Scientific, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 1737,
-    "price": 20.75,
-    "change_pct": "+5.84%",
+    "tweet_volume": 14291,
+    "price": 15.02,
+    "change_pct": "-2.53%",
     "key_topics": [
-      "Revenue",
-      "Growth",
-      "Earnings"
+      "AI",
+      "Demand",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 68882,
-      "price": 68.21,
-      "change_pct": "-0.28%",
+      "bullish_pct": 100,
+      "tweet_volume": 44435,
+      "price": 140.32,
+      "change_pct": "-0.38%",
       "key_topics": [
-        "Growth",
-        "Launch",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "MGM",
+      "name": "MGM Resorts International",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 27664,
+      "price": 29.32,
+      "change_pct": "+0.17%",
+      "key_topics": [
+        "AI",
+        "Demand",
+        "Buyout"
+      ]
+    },
+    {
+      "ticker": "LEGN",
+      "name": "Legend Biotech Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1451,
+      "price": 17.8,
+      "change_pct": "-4.40%",
+      "key_topics": [
+        "AI",
+        "FDA",
+        "Acquisition"
+      ]
+    },
+    {
+      "ticker": "FIGS",
+      "name": "FIGS, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3134,
+      "price": 17.74,
+      "change_pct": "+12.42%",
+      "key_topics": [
+        "AI",
+        "Guidance",
         "Market"
       ]
     },
     {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 0.789,
-      "current_sentiment": 0.789,
+      "ticker": "FICO",
+      "name": "Fair Isaac Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 47740,
-      "price": 23.68,
-      "change_pct": "-0.71%",
+      "bullish_pct": 100,
+      "tweet_volume": 3320,
+      "price": 740.0,
+      "change_pct": "+10.85%",
       "key_topics": [
-        "Market",
-        "Earnings",
-        "Price Target"
+        "Revenue",
+        "AI",
+        "Earnings"
       ]
     },
     {
-      "ticker": "UEC",
-      "name": "Uranium Energy Corp.",
-      "sentiment_delta": 0.778,
-      "current_sentiment": 0.778,
+      "ticker": "SKYA",
+      "name": "SkyAI, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 19242,
-      "price": 9.19,
-      "change_pct": "+0.55%",
+      "bullish_pct": 100,
+      "tweet_volume": 5189,
+      "price": 2.6,
+      "change_pct": "+42.86%",
       "key_topics": [
-        "Uec",
-        "Options",
-        "Trading"
-      ]
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 83885,
-      "price": 82.17,
-      "change_pct": "+0.04%",
-      "key_topics": [
-        "Thegapreport"
-      ]
-    },
-    {
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 61125,
-      "price": 39.89,
-      "change_pct": "+1.12%",
-      "key_topics": [
-        "Growth",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "TRLV",
-      "name": "Trulieve Cannabis Corp. Subordi",
-      "sentiment_delta": 0.667,
-      "current_sentiment": 0.667,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 83,
-      "tweet_volume": 7811,
-      "price": 10.67,
-      "change_pct": "+2.89%",
-      "key_topics": [
-        "Market",
-        "Acquisition",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "GRML",
-      "name": "Greenland Mines Ltd",
-      "sentiment_delta": 0.667,
-      "current_sentiment": 0.667,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 83,
-      "tweet_volume": 8040,
-      "price": 5.17,
-      "change_pct": "-12.07%",
-      "key_topics": [
-        "Update",
-        "CEO",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CAR",
-      "name": "Avis Budget Group, Inc.",
-      "sentiment_delta": 0.444,
-      "current_sentiment": 0.444,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 72,
-      "tweet_volume": 11290,
-      "price": 105.98,
-      "change_pct": "-3.65%",
-      "key_topics": [
-        "Demand",
+        "Revenue",
         "AI",
         "Squeeze"
       ]
     },
     {
-      "ticker": "DJIA",
-      "name": "Global X Dow 30 Covered Call ET",
-      "sentiment_delta": 0.429,
-      "current_sentiment": 0.429,
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor Corporati",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
       "sentiment_label": "Bullish",
-      "bullish_pct": 71,
-      "tweet_volume": 84334,
-      "price": 22.5,
-      "change_pct": "+0.67%",
+      "bullish_pct": 93,
+      "tweet_volume": 27439,
+      "price": 9.99,
+      "change_pct": "-7.33%",
       "key_topics": [
-        "Earnings",
-        "Treasuryyields",
-        "Economy"
+        "Market",
+        "AI",
+        "Squeeze"
       ]
     },
     {
-      "ticker": "QFIN",
-      "name": "Qfin Holdings, Inc.",
-      "sentiment_delta": 0.4,
-      "current_sentiment": 0.4,
+      "ticker": "POET",
+      "name": "POET Technologies Inc.",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
       "sentiment_label": "Bullish",
-      "bullish_pct": 70,
-      "tweet_volume": 2765,
-      "price": 6.2,
-      "change_pct": "+1.72%",
+      "bullish_pct": 92,
+      "tweet_volume": 29629,
+      "price": 6.41,
+      "change_pct": "-8.03%",
       "key_topics": [
-        "Revenue",
-        "Growth",
-        "Market"
+        "AI",
+        "Demand",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "NNE",
+      "name": "Nano Nuclear Energy Inc.",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 91,
+      "tweet_volume": 12979,
+      "price": 14.29,
+      "change_pct": "-6.84%",
+      "key_topics": [
+        "Conversion",
+        "Deconversion",
+        "Haleu"
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 90,
+      "tweet_volume": 234385,
+      "price": 6.53,
+      "change_pct": "+4.82%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Revenue"
       ]
     }
   ]

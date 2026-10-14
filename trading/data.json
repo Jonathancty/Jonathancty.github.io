@@ -1,83 +1,36 @@
 {
-  "updated_at": "2026-10-13T19:44:56.981624+00:00",
+  "updated_at": "2026-10-14T17:47:12.886151+00:00",
   "top_trending": {
-    "ticker": "NOW",
-    "name": "ServiceNow, Inc.",
+    "ticker": "IBRX",
+    "name": "ImmunityBio, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 44427,
-    "price": 139.22,
-    "change_pct": "-0.79%",
+    "tweet_volume": 31177,
+    "price": 10.4,
+    "change_pct": "+6.11%",
     "key_topics": [
-      "Servicenow",
-      "Cybersecurity"
+      "Trial",
+      "Revenue",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "NLST",
-      "name": "Netlist, Inc.",
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 28059,
-      "price": 6.19,
-      "change_pct": "-2.37%",
+      "tweet_volume": 47847,
+      "price": 20.07,
+      "change_pct": "-10.56%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "NVTS",
-      "name": "Navitas Semiconductor Corporati",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 27497,
-      "price": 10.53,
-      "change_pct": "+5.41%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Acquisition"
-      ]
-    },
-    {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9021,
-      "price": 8.8,
-      "change_pct": "-6.28%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Acquisition"
-      ]
-    },
-    {
-      "ticker": "UNG",
-      "name": "United States Natural Gas Fund ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17700,
-      "price": 11.42,
-      "change_pct": "+4.58%",
-      "key_topics": [
-        "Smartmoneyconcepts",
-        "Trading",
-        "Priceaction"
+        "Growth",
+        "Revenue",
+        "Market"
       ]
     },
     {
@@ -87,91 +40,141 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 24277,
-      "price": 7.59,
-      "change_pct": "-7.94%",
+      "tweet_volume": 24413,
+      "price": 7.91,
+      "change_pct": "+6.11%",
+      "key_topics": [
+        "Trial",
+        "Update",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 108272,
+      "price": 13.11,
+      "change_pct": "+2.22%",
       "key_topics": [
         "Market",
-        "Update",
+        "Launch",
         "AI"
       ]
     },
     {
-      "ticker": "RGC",
-      "name": "Regencell Bioscience Holdings L",
+      "ticker": "GRML",
+      "name": "Greenland Mines Ltd",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8093,
-      "price": 8.34,
-      "change_pct": "+16.97%",
+      "tweet_volume": 8275,
+      "price": 6.57,
+      "change_pct": "+18.59%",
       "key_topics": [
-        "Squeeze",
         "Market",
-        "Update"
+        "AI",
+        "Squeeze"
       ]
     },
     {
-      "ticker": "PFAI",
-      "name": "Pinnacle Food Group Limited",
+      "ticker": "DOCN",
+      "name": "DigitalOcean Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 584,
-      "price": 4.37,
-      "change_pct": "+67.43%",
+      "tweet_volume": 7321,
+      "price": 110.05,
+      "change_pct": "-14.16%",
       "key_topics": [
-        "Market",
+        "Demand",
         "Update",
-        "Squeeze"
+        "Growth"
       ]
     },
     {
-      "ticker": "SES",
-      "name": "SES AI Corporation",
+      "ticker": "HALO",
+      "name": "Halozyme Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9996,
-      "price": 0.97,
-      "change_pct": "+21.54%",
+      "tweet_volume": 5028,
+      "price": 118.69,
+      "change_pct": "+8.27%",
+      "key_topics": [
+        "Trial",
+        "Growth",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries Inc.",
+      "sentiment_delta": 0.875,
+      "current_sentiment": 0.875,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 5411,
+      "price": 48.7,
+      "change_pct": "+4.27%",
+      "key_topics": [
+        "Revenue",
+        "Chips",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
+      "sentiment_delta": 0.692,
+      "current_sentiment": 0.692,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 85,
+      "tweet_volume": 72184,
+      "price": 42.63,
+      "change_pct": "-9.42%",
+      "key_topics": [
+        "Trial",
+        "Launch",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "AFRM",
+      "name": "Affirm Holdings, Inc.",
+      "sentiment_delta": 0.6,
+      "current_sentiment": 0.6,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 80,
+      "tweet_volume": 39804,
+      "price": 69.26,
+      "change_pct": "-11.08%",
+      "key_topics": [
+        "Trial",
+        "Growth",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 Index Fund",
+      "sentiment_delta": 0.571,
+      "current_sentiment": 0.571,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 79,
+      "tweet_volume": 50030,
+      "price": 270.86,
+      "change_pct": "-2.11%",
       "key_topics": [
         "Market",
-        "Revenue",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "EFXT",
-      "name": "Enerflex Ltd",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 266,
-      "price": 27.59,
-      "change_pct": "+14.58%",
-      "key_topics": [
-        "Earnings",
-        "Revenue",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "PS",
-      "name": "Pershing Square Inc.",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 1547,
-      "price": 47.99,
-      "change_pct": "-11.49%",
-      "key_topics": [
-        "Stockbreakouts"
+        "AI",
+        "Update"
       ]
     }
   ]

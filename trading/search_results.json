@@ -84,19 +84,19 @@
   "GLW": {
     "ticker": "GLW",
     "name": "Corning Incorporated",
-    "sentiment_delta": 1.0,
-    "current_sentiment": 1.0,
+    "sentiment_delta": 0.833,
+    "current_sentiment": 0.833,
     "sentiment_label": "Bullish",
-    "bullish_pct": 100,
-    "tweet_volume": 16050,
-    "price": 155.0,
-    "change_pct": "-2.34%",
+    "bullish_pct": 92,
+    "tweet_volume": 16263,
+    "price": 134.72,
+    "change_pct": "-4.38%",
     "key_topics": [
-      "Price Target",
-      "Revenue",
-      "Market"
+      "Market",
+      "AI",
+      "Demand"
     ],
-    "requested_at": "2026-09-30T13:48:48.178884+00:00"
+    "requested_at": "2026-10-15T16:58:41.093978+00:00"
   },
   "TEM": {
     "ticker": "TEM",

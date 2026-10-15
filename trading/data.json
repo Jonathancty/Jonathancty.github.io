@@ -1,38 +1,22 @@
 {
-  "updated_at": "2026-10-14T17:47:12.886151+00:00",
+  "updated_at": "2026-10-15T17:36:34.553529+00:00",
   "top_trending": {
-    "ticker": "IBRX",
-    "name": "ImmunityBio, Inc.",
+    "ticker": "WULF",
+    "name": "TeraWulf Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 31177,
-    "price": 10.4,
-    "change_pct": "+6.11%",
+    "tweet_volume": 32111,
+    "price": 11.79,
+    "change_pct": "+2.21%",
     "key_topics": [
-      "Trial",
-      "Revenue",
-      "Market"
+      "Squeeze",
+      "CEO",
+      "AI"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 47847,
-      "price": 20.07,
-      "change_pct": "-10.56%",
-      "key_topics": [
-        "Growth",
-        "Revenue",
-        "Market"
-      ]
-    },
     {
       "ticker": "VSTM",
       "name": "Verastem, Inc.",
@@ -40,140 +24,154 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 24413,
-      "price": 7.91,
-      "change_pct": "+6.11%",
+      "tweet_volume": 24436,
+      "price": 9.55,
+      "change_pct": "+23.93%",
       "key_topics": [
-        "Trial",
-        "Update",
-        "CEO"
+        "Price Target",
+        "AI",
+        "Market"
       ]
     },
     {
-      "ticker": "NVAX",
-      "name": "Novavax, Inc.",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 108272,
-      "price": 13.11,
-      "change_pct": "+2.22%",
+      "tweet_volume": 57615,
+      "price": 28.05,
+      "change_pct": "+1.21%",
       "key_topics": [
-        "Market",
-        "Launch",
+        "CEO",
+        "FDA",
         "AI"
       ]
     },
     {
-      "ticker": "GRML",
-      "name": "Greenland Mines Ltd",
+      "ticker": "VICR",
+      "name": "Vicor Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8275,
-      "price": 6.57,
-      "change_pct": "+18.59%",
+      "tweet_volume": 2195,
+      "price": 213.08,
+      "change_pct": "-13.15%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Squeeze"
+        "Launch",
+        "Revenue",
+        "Price Target"
       ]
     },
     {
-      "ticker": "DOCN",
-      "name": "DigitalOcean Holdings, Inc.",
+      "ticker": "ELF",
+      "name": "e.l.f. Beauty, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7321,
-      "price": 110.05,
-      "change_pct": "-14.16%",
+      "tweet_volume": 13399,
+      "price": 114.39,
+      "change_pct": "+5.79%",
       "key_topics": [
-        "Demand",
-        "Update",
+        "Launch",
+        "Price Target",
         "Growth"
       ]
     },
     {
-      "ticker": "HALO",
-      "name": "Halozyme Therapeutics, Inc.",
+      "ticker": "ONDS",
+      "name": "Ondas Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 5028,
-      "price": 118.69,
-      "change_pct": "+8.27%",
+      "tweet_volume": 37630,
+      "price": 6.26,
+      "change_pct": "+1.95%",
       "key_topics": [
-        "Trial",
-        "Growth",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "GFS",
-      "name": "GlobalFoundries Inc.",
-      "sentiment_delta": 0.875,
-      "current_sentiment": 0.875,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 5411,
-      "price": 48.7,
-      "change_pct": "+4.27%",
-      "key_topics": [
-        "Revenue",
-        "Chips",
+        "Squeeze",
         "AI"
       ]
     },
     {
-      "ticker": "ASTS",
-      "name": "AST SpaceMobile, Inc.",
-      "sentiment_delta": 0.692,
-      "current_sentiment": 0.692,
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 85,
-      "tweet_volume": 72184,
-      "price": 42.63,
-      "change_pct": "-9.42%",
+      "bullish_pct": 100,
+      "tweet_volume": 16220,
+      "price": 23.26,
+      "change_pct": "+2.47%",
       "key_topics": [
-        "Trial",
         "Launch",
-        "Revenue"
+        "Price Target",
+        "AI"
       ]
     },
     {
-      "ticker": "AFRM",
-      "name": "Affirm Holdings, Inc.",
-      "sentiment_delta": 0.6,
-      "current_sentiment": 0.6,
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 80,
-      "tweet_volume": 39804,
-      "price": 69.26,
-      "change_pct": "-11.08%",
+      "bullish_pct": 100,
+      "tweet_volume": 37488,
+      "price": 529.96,
+      "change_pct": "+1.48%",
       "key_topics": [
-        "Trial",
-        "Growth",
-        "Revenue"
+        "CEO",
+        "Demand",
+        "Buyout"
       ]
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 Index Fund",
-      "sentiment_delta": 0.571,
-      "current_sentiment": 0.571,
+      "ticker": "RXRX",
+      "name": "Recursion Pharmaceuticals, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 79,
-      "tweet_volume": 50030,
-      "price": 270.86,
-      "change_pct": "-2.11%",
+      "bullish_pct": 100,
+      "tweet_volume": 15407,
+      "price": 4.21,
+      "change_pct": "+12.70%",
       "key_topics": [
-        "Market",
-        "AI",
+        "Squeeze",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "OPK",
+      "name": "Opko Health, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 27575,
+      "price": 1.54,
+      "change_pct": "+12.06%",
+      "key_topics": [
+        "Buyout",
+        "Revenue",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23917,
+      "price": 123.4,
+      "change_pct": "+5.58%",
+      "key_topics": [
+        "Acquisition",
+        "Revenue",
         "Update"
       ]
     }

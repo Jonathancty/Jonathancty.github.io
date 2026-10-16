@@ -1,178 +1,178 @@
 {
-  "updated_at": "2026-10-15T17:36:34.553529+00:00",
+  "updated_at": "2026-10-16T17:10:43.500693+00:00",
   "top_trending": {
-    "ticker": "WULF",
-    "name": "TeraWulf Inc.",
+    "ticker": "AUPH",
+    "name": "Aurinia Pharmaceuticals Inc",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 32111,
-    "price": 11.79,
-    "change_pct": "+2.21%",
+    "tweet_volume": 46395,
+    "price": 16.36,
+    "change_pct": "-2.21%",
     "key_topics": [
-      "Squeeze",
-      "CEO",
-      "AI"
+      "Trial",
+      "Revenue",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "VSTM",
-      "name": "Verastem, Inc.",
+      "ticker": "UVIX",
+      "name": "2x Long VIX Futures ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 24436,
-      "price": 9.55,
-      "change_pct": "+23.93%",
+      "tweet_volume": 7204,
+      "price": 41.14,
+      "change_pct": "+19.87%",
       "key_topics": [
-        "Price Target",
-        "AI",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "OMER",
+      "name": "Omeros Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 11794,
+      "price": 15.96,
+      "change_pct": "-15.06%",
+      "key_topics": [
+        "Demand",
+        "Revenue",
         "Market"
       ]
     },
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health, Inc.",
+      "ticker": "VRNS",
+      "name": "Varonis Systems, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 57615,
-      "price": 28.05,
-      "change_pct": "+1.21%",
+      "tweet_volume": 1523,
+      "price": 48.7,
+      "change_pct": "+2.86%",
+      "key_topics": [
+        "Revenue",
+        "CEO",
+        "Buyout"
+      ]
+    },
+    {
+      "ticker": "ABCL",
+      "name": "AbCellera Biologics Inc.",
+      "sentiment_delta": 0.92,
+      "current_sentiment": 0.92,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 96,
+      "tweet_volume": 9694,
+      "price": 11.92,
+      "change_pct": "-6.00%",
       "key_topics": [
         "CEO",
+        "Price Target",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
+      "sentiment_delta": 0.9,
+      "current_sentiment": 0.9,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 31389,
+      "price": 9.32,
+      "change_pct": "-6.80%",
+      "key_topics": [
+        "Market",
         "FDA",
         "AI"
       ]
     },
     {
-      "ticker": "VICR",
-      "name": "Vicor Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "IAM",
+      "name": "Iambic Therapeutics, Inc. Common Stock",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2195,
-      "price": 213.08,
-      "change_pct": "-13.15%",
+      "bullish_pct": 94,
+      "tweet_volume": 69,
+      "price": 24.0,
+      "change_pct": "+26.92%",
       "key_topics": [
-        "Launch",
-        "Revenue",
-        "Price Target"
-      ]
-    },
-    {
-      "ticker": "ELF",
-      "name": "e.l.f. Beauty, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13399,
-      "price": 114.39,
-      "change_pct": "+5.79%",
-      "key_topics": [
-        "Launch",
-        "Price Target",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "ONDS",
-      "name": "Ondas Inc",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 37630,
-      "price": 6.26,
-      "change_pct": "+1.95%",
-      "key_topics": [
+        "Market",
         "Squeeze",
         "AI"
       ]
     },
     {
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 16220,
-      "price": 23.26,
-      "change_pct": "+2.47%",
-      "key_topics": [
-        "Launch",
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 37488,
-      "price": 529.96,
-      "change_pct": "+1.48%",
-      "key_topics": [
-        "CEO",
-        "Demand",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "RXRX",
-      "name": "Recursion Pharmaceuticals, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 15407,
-      "price": 4.21,
-      "change_pct": "+12.70%",
-      "key_topics": [
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "OPK",
-      "name": "Opko Health, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 27575,
-      "price": 1.54,
-      "change_pct": "+12.06%",
+      "bullish_pct": 93,
+      "tweet_volume": 62383,
+      "price": 9.88,
+      "change_pct": "-12.92%",
       "key_topics": [
         "Buyout",
-        "Revenue",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "S",
+      "name": "SentinelOne, Inc.",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 32196,
+      "price": 21.25,
+      "change_pct": "-9.07%",
+      "key_topics": [
+        "Market",
+        "Price Target",
         "Squeeze"
       ]
     },
     {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "GRAL",
+      "name": "GRAIL, Inc.",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23917,
-      "price": 123.4,
-      "change_pct": "+5.58%",
+      "bullish_pct": 90,
+      "tweet_volume": 2618,
+      "price": 120.97,
+      "change_pct": "-10.70%",
       "key_topics": [
-        "Acquisition",
-        "Revenue",
-        "Update"
+        "Trial",
+        "Demand",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "CADL",
+      "name": "Candel Therapeutics, Inc.",
+      "sentiment_delta": 0.75,
+      "current_sentiment": 0.75,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 88,
+      "tweet_volume": 10419,
+      "price": 8.36,
+      "change_pct": "-6.17%",
+      "key_topics": [
+        "Market",
+        "Demand",
+        "CEO"
       ]
     }
   ]

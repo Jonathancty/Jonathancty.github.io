@@ -1,178 +1,175 @@
 {
-  "updated_at": "2026-10-16T17:10:43.500693+00:00",
+  "updated_at": "2026-10-17T16:09:01.229174+00:00",
   "top_trending": {
-    "ticker": "AUPH",
-    "name": "Aurinia Pharmaceuticals Inc",
+    "ticker": "KHC",
+    "name": "The Kraft Heinz Company",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 46395,
-    "price": 16.36,
-    "change_pct": "-2.21%",
+    "tweet_volume": 16225,
+    "price": 23.68,
+    "change_pct": "+1.72%",
     "key_topics": [
-      "Trial",
-      "Revenue",
-      "Market"
+      "Growth",
+      "Market",
+      "Update"
     ]
   },
   "trending_list": [
     {
-      "ticker": "UVIX",
-      "name": "2x Long VIX Futures ETF",
+      "ticker": "XLE",
+      "name": "State Street Energy Select Sect",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7204,
-      "price": 41.14,
-      "change_pct": "+19.87%",
+      "tweet_volume": 24754,
+      "price": 68.24,
+      "change_pct": "+2.52%",
       "key_topics": [
-        "Market",
-        "AI"
+        "Energy",
+        "Xle",
+        "Bluebox"
       ]
     },
     {
-      "ticker": "OMER",
-      "name": "Omeros Corporation",
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11794,
-      "price": 15.96,
-      "change_pct": "-15.06%",
+      "tweet_volume": 13506,
+      "price": 118.6,
+      "change_pct": "+2.43%",
       "key_topics": [
-        "Demand",
-        "Revenue",
-        "Market"
+        "Gold",
+        "Edgebell"
       ]
     },
     {
-      "ticker": "VRNS",
-      "name": "Varonis Systems, Inc.",
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1523,
-      "price": 48.7,
-      "change_pct": "+2.86%",
+      "tweet_volume": 11575,
+      "price": 519.86,
+      "change_pct": "+4.05%",
       "key_topics": [
-        "Revenue",
-        "CEO",
-        "Buyout"
+        "Nasa"
       ]
     },
     {
-      "ticker": "ABCL",
-      "name": "AbCellera Biologics Inc.",
-      "sentiment_delta": 0.92,
-      "current_sentiment": 0.92,
+      "ticker": "UNG",
+      "name": "United States Natural Gas Fund ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 96,
-      "tweet_volume": 9694,
-      "price": 11.92,
-      "change_pct": "-6.00%",
+      "bullish_pct": 100,
+      "tweet_volume": 17701,
+      "price": 10.66,
+      "change_pct": "-3.88%",
       "key_topics": [
-        "CEO",
-        "Price Target",
-        "AI"
+        "Smartmoneyconcepts",
+        "Trading",
+        "Priceaction"
       ]
     },
     {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "sentiment_delta": 0.9,
-      "current_sentiment": 0.9,
+      "ticker": "KOLD",
+      "name": "ProShares UltraShort Bloomberg ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 31389,
-      "price": 9.32,
-      "change_pct": "-6.80%",
+      "bullish_pct": 100,
+      "tweet_volume": 10348,
+      "price": 27.06,
+      "change_pct": "+8.76%",
       "key_topics": [
         "Market",
-        "FDA",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "IAM",
-      "name": "Iambic Therapeutics, Inc. Common Stock",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 69,
-      "price": 24.0,
-      "change_pct": "+26.92%",
-      "key_topics": [
-        "Market",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 62383,
-      "price": 9.88,
-      "change_pct": "-12.92%",
-      "key_topics": [
-        "Buyout",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "S",
-      "name": "SentinelOne, Inc.",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 32196,
-      "price": 21.25,
-      "change_pct": "-9.07%",
-      "key_topics": [
-        "Market",
-        "Price Target",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "GRAL",
-      "name": "GRAIL, Inc.",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 2618,
-      "price": 120.97,
-      "change_pct": "-10.70%",
-      "key_topics": [
-        "Trial",
         "Demand",
         "Price Target"
       ]
     },
     {
-      "ticker": "CADL",
-      "name": "Candel Therapeutics, Inc.",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
+      "ticker": "STRL",
+      "name": "Sterling Infrastructure, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 10419,
-      "price": 8.36,
-      "change_pct": "-6.17%",
+      "bullish_pct": 100,
+      "tweet_volume": 3250,
+      "price": 424.36,
+      "change_pct": "-4.91%",
       "key_topics": [
+        "Sidotiresearch",
+        "Investing",
+        "Smallcap"
+      ]
+    },
+    {
+      "ticker": "CSIQ",
+      "name": "Canadian Solar Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 14830,
+      "price": 9.81,
+      "change_pct": "-7.19%",
+      "key_topics": [
+        "Squeeze",
+        "Earnings",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "ITT",
+      "name": "ITT Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 388,
+      "price": 198.42,
+      "change_pct": "-1.30%",
+      "key_topics": [
+        "Growth",
         "Market",
-        "Demand",
-        "CEO"
+        "Update"
+      ]
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23064,
+      "price": 20.26,
+      "change_pct": "+1.91%",
+      "key_topics": [
+        "Acquisition",
+        "Market",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6001,
+      "price": 53.62,
+      "change_pct": "-2.33%",
+      "key_topics": [
+        "Cef"
       ]
     }
   ]

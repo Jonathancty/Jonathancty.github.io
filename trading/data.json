@@ -1,36 +1,67 @@
 {
-  "updated_at": "2026-10-18T16:21:24.856673+00:00",
+  "updated_at": "2026-10-19T19:01:23.894580+00:00",
   "top_trending": {
-    "ticker": "LHX",
-    "name": "L3Harris Technologies, Inc.",
+    "ticker": "RUN",
+    "name": "Sunrun Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 4535,
-    "price": 248.51,
-    "change_pct": "+3.33%",
+    "tweet_volume": 22968,
+    "price": 6.92,
+    "change_pct": "-5.14%",
     "key_topics": [
-      "Update",
-      "Acquisition",
-      "AI"
+      "AI",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "EBS",
-      "name": "Emergent BioSolutions Inc.",
+      "ticker": "CRMD",
+      "name": "CorMedix Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8431,
-      "price": 6.38,
-      "change_pct": "-11.14%",
+      "tweet_volume": 23549,
+      "price": 7.39,
+      "change_pct": "+1.79%",
       "key_topics": [
-        "Update",
+        "Market",
         "FDA",
-        "AI"
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "XE",
+      "name": "X-Energy, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4025,
+      "price": 10.52,
+      "change_pct": "+1.50%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "ARQT",
+      "name": "Arcutis Biotherapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2417,
+      "price": 32.88,
+      "change_pct": "+14.08%",
+      "key_topics": [
+        "AI",
+        "Buyout",
+        "Earnings"
       ]
     },
     {
@@ -40,139 +71,105 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13073,
-      "price": 8.72,
-      "change_pct": "-1.13%",
+      "tweet_volume": 13085,
+      "price": 8.46,
+      "change_pct": "-3.04%",
       "key_topics": [
-        "Cef"
+        "Earnings"
       ]
     },
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
+      "ticker": "XERS",
+      "name": "Xeris Biopharma Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 18298,
-      "price": 152.02,
-      "change_pct": "-1.39%",
+      "tweet_volume": 10805,
+      "price": 11.29,
+      "change_pct": "+9.51%",
+      "key_topics": [
+        "Neverforget"
+      ]
+    },
+    {
+      "ticker": "AIBZ",
+      "name": "Bitzero Holdings Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 392,
+      "price": 3.15,
+      "change_pct": "+35.19%",
+      "key_topics": [
+        "Crypto",
+        "Chips",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate Equities",
+      "sentiment_delta": 0.905,
+      "current_sentiment": 0.905,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 1456,
+      "price": 40.26,
+      "change_pct": "-3.27%",
       "key_topics": [
         "AI",
         "Market",
-        "Price Target"
+        "Earnings"
       ]
     },
     {
-      "ticker": "ONTO",
-      "name": "Onto Innovation Inc.",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
+      "ticker": "CELH",
+      "name": "Celsius Holdings, Inc.",
+      "sentiment_delta": 0.9,
+      "current_sentiment": 0.9,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 1805,
-      "price": 220.7,
-      "change_pct": "-4.85%",
-      "key_topics": [
-        "Guidance",
-        "AI",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 26242,
-      "price": 56.08,
-      "change_pct": "+0.95%",
+      "bullish_pct": 95,
+      "tweet_volume": 30960,
+      "price": 29.81,
+      "change_pct": "+5.75%",
       "key_topics": [
         "Earnings",
-        "AI",
-        "Revenue"
+        "Growth",
+        "Squeeze"
       ]
     },
     {
-      "ticker": "NIO",
-      "name": "NIO Inc.",
-      "sentiment_delta": 0.833,
-      "current_sentiment": 0.833,
+      "ticker": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 388092,
-      "price": 3.43,
-      "change_pct": "-2.00%",
+      "bullish_pct": 95,
+      "tweet_volume": 23286,
+      "price": 81.82,
+      "change_pct": "-0.49%",
       "key_topics": [
-        "Update",
-        "AI",
-        "Revenue"
+        "Crypto",
+        "Chips",
+        "Growth"
       ]
     },
     {
-      "ticker": "CLX",
-      "name": "Clorox Company (The)",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
+      "ticker": "SLN",
+      "name": "Silence Therapeutics Plc - Amer",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 7843,
-      "price": 87.09,
-      "change_pct": "+1.03%",
+      "bullish_pct": 93,
+      "tweet_volume": 577,
+      "price": 19.57,
+      "change_pct": "+125.46%",
       "key_topics": [
-        "Update",
-        "Guidance",
-        "Acquisition"
-      ]
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor Corporation",
-      "sentiment_delta": 0.5,
-      "current_sentiment": 0.5,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 75,
-      "tweet_volume": 13353,
-      "price": 72.02,
-      "change_pct": "-2.28%",
-      "key_topics": [
+        "Market",
         "Squeeze",
-        "Acquisition",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "sentiment_delta": 0.5,
-      "current_sentiment": 0.5,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 75,
-      "tweet_volume": 1553,
-      "price": 142.03,
-      "change_pct": "-2.54%",
-      "key_topics": [
-        "Acquisition",
-        "Trial",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sentiment_delta": 0.385,
-      "current_sentiment": 0.385,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 69,
-      "tweet_volume": 51497,
-      "price": 61.39,
-      "change_pct": "-11.91%",
-      "key_topics": [
-        "AI",
-        "Revenue",
-        "Market"
+        "Buyout"
       ]
     }
   ]

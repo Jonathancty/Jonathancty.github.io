@@ -112,5 +112,21 @@
       "AI"
     ],
     "requested_at": "2026-10-06T17:02:49.755539+00:00"
+  },
+  "BNC.L": {
+    "ticker": "BNC.L",
+    "name": "BANCO SANTANDER S.A. ORD EUR0.5",
+    "sentiment_delta": 0.0,
+    "current_sentiment": 0.0,
+    "sentiment_label": "Neutral",
+    "bullish_pct": null,
+    "tweet_volume": 261,
+    "price": 985.0,
+    "change_pct": "-2.48%",
+    "key_topics": [
+      "Momentum",
+      "Volume Spike"
+    ],
+    "requested_at": "2026-10-19T18:21:06.225684+00:00"
   }
 }

@@ -1,175 +1,174 @@
 {
-  "updated_at": "2026-10-19T19:01:23.894580+00:00",
+  "updated_at": "2026-10-20T17:46:50.347582+00:00",
   "top_trending": {
-    "ticker": "RUN",
-    "name": "Sunrun Inc.",
+    "ticker": "SRPT",
+    "name": "Sarepta Therapeutics, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 22968,
-    "price": 6.92,
-    "change_pct": "-5.14%",
+    "tweet_volume": 26696,
+    "price": 19.36,
+    "change_pct": "+9.19%",
     "key_topics": [
       "AI",
-      "Market"
+      "Earnings"
     ]
   },
   "trending_list": [
     {
-      "ticker": "CRMD",
-      "name": "CorMedix Inc.",
+      "ticker": "MYGN",
+      "name": "Myriad Genetics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23549,
-      "price": 7.39,
-      "change_pct": "+1.79%",
+      "tweet_volume": 2242,
+      "price": 5.83,
+      "change_pct": "+38.36%",
       "key_topics": [
+        "CEO",
         "Market",
-        "FDA",
-        "Trial"
-      ]
-    },
-    {
-      "ticker": "XE",
-      "name": "X-Energy, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4025,
-      "price": 10.52,
-      "change_pct": "+1.50%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "ARQT",
-      "name": "Arcutis Biotherapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2417,
-      "price": 32.88,
-      "change_pct": "+14.08%",
-      "key_topics": [
-        "AI",
-        "Buyout",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "AGNC",
-      "name": "AGNC Investment Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13085,
-      "price": 8.46,
-      "change_pct": "-3.04%",
-      "key_topics": [
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "XERS",
-      "name": "Xeris Biopharma Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 10805,
-      "price": 11.29,
-      "change_pct": "+9.51%",
-      "key_topics": [
-        "Neverforget"
-      ]
-    },
-    {
-      "ticker": "AIBZ",
-      "name": "Bitzero Holdings Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 392,
-      "price": 3.15,
-      "change_pct": "+35.19%",
-      "key_topics": [
-        "Crypto",
-        "Chips",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "ARE",
-      "name": "Alexandria Real Estate Equities",
-      "sentiment_delta": 0.905,
-      "current_sentiment": 0.905,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 1456,
-      "price": 40.26,
-      "change_pct": "-3.27%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings, Inc.",
-      "sentiment_delta": 0.9,
-      "current_sentiment": 0.9,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 30960,
-      "price": 29.81,
-      "change_pct": "+5.75%",
-      "key_topics": [
-        "Earnings",
-        "Growth",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 23286,
-      "price": 81.82,
-      "change_pct": "-0.49%",
-      "key_topics": [
-        "Crypto",
-        "Chips",
         "Growth"
       ]
     },
     {
-      "ticker": "SLN",
-      "name": "Silence Therapeutics Plc - Amer",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "RAPP",
+      "name": "Rapport Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 577,
-      "price": 19.57,
-      "change_pct": "+125.46%",
+      "bullish_pct": 100,
+      "tweet_volume": 469,
+      "price": 29.41,
+      "change_pct": "+2.82%",
       "key_topics": [
         "Market",
-        "Squeeze",
+        "Trial",
+        "Update"
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 234415,
+      "price": 6.43,
+      "change_pct": "+2.59%",
+      "key_topics": [
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 11599,
+      "price": 537.98,
+      "change_pct": "+5.35%",
+      "key_topics": [
+        "Marketrecon",
+        "Google_vignette"
+      ]
+    },
+    {
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 21689,
+      "price": 54.2,
+      "change_pct": "+1.69%",
+      "key_topics": [
+        "Market",
+        "Growth",
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "MSTX",
+      "name": "Defiance Daily Target 2x Long M",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4013,
+      "price": 15.63,
+      "change_pct": "+13.10%",
+      "key_topics": [
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IEP",
+      "name": "Icahn Enterprises L.P. - Deposi",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6640,
+      "price": 6.42,
+      "change_pct": "-0.85%",
+      "key_topics": [
+        "Market",
+        "Acquisition",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "BRZE",
+      "name": "Braze, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1402,
+      "price": 45.52,
+      "change_pct": "+51.53%",
+      "key_topics": [
+        "Market",
+        "Acquisition",
         "Buyout"
+      ]
+    },
+    {
+      "ticker": "MLI",
+      "name": "Mueller Industries, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 681,
+      "price": 55.44,
+      "change_pct": "-8.85%",
+      "key_topics": [
+        "Mli"
+      ]
+    },
+    {
+      "ticker": "WAT",
+      "name": "Waters Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 794,
+      "price": 446.29,
+      "change_pct": "+2.77%",
+      "key_topics": [
+        "Wat",
+        "Optionsflow",
+        "Stockmarket"
       ]
     }
   ]

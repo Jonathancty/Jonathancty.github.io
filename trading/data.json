@@ -1,174 +1,171 @@
 {
-  "updated_at": "2026-10-20T17:46:50.347582+00:00",
+  "updated_at": "2026-10-21T17:54:45.436006+00:00",
   "top_trending": {
-    "ticker": "SRPT",
-    "name": "Sarepta Therapeutics, Inc.",
+    "ticker": "ASST",
+    "name": "Strive, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 26696,
-    "price": 19.36,
-    "change_pct": "+9.19%",
+    "tweet_volume": 20115,
+    "price": 30.62,
+    "change_pct": "+13.17%",
     "key_topics": [
-      "AI",
-      "Earnings"
+      "Recovery"
     ]
   },
   "trending_list": [
     {
-      "ticker": "MYGN",
-      "name": "Myriad Genetics, Inc.",
+      "ticker": "SKYD",
+      "name": "Skydance Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2242,
-      "price": 5.83,
-      "change_pct": "+38.36%",
+      "tweet_volume": 27180,
+      "price": 7.67,
+      "change_pct": "+8.10%",
       "key_topics": [
-        "CEO",
+        "Growth",
         "Market",
-        "Growth"
+        "CEO"
       ]
     },
     {
-      "ticker": "RAPP",
-      "name": "Rapport Therapeutics, Inc.",
+      "ticker": "CAPR",
+      "name": "Capricor Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 469,
-      "price": 29.41,
-      "change_pct": "+2.82%",
+      "tweet_volume": 33644,
+      "price": 6.01,
+      "change_pct": "-9.00%",
       "key_topics": [
-        "Market",
-        "Trial",
-        "Update"
+        "777"
       ]
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap Inc.",
+      "ticker": "NET",
+      "name": "Cloudflare, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 234415,
-      "price": 6.43,
-      "change_pct": "+2.59%",
+      "tweet_volume": 35408,
+      "price": 311.49,
+      "change_pct": "+6.79%",
       "key_topics": [
-        "AI",
+        "Pennion"
+      ]
+    },
+    {
+      "ticker": "APPS",
+      "name": "Digital Turbine, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 25020,
+      "price": 10.38,
+      "change_pct": "+5.87%",
+      "key_topics": [
+        "Launch",
+        "Update",
         "Earnings"
       ]
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11599,
-      "price": 537.98,
-      "change_pct": "+5.35%",
+      "tweet_volume": 166296,
+      "price": 57.9,
+      "change_pct": "+1.33%",
       "key_topics": [
-        "Marketrecon",
-        "Google_vignette"
-      ]
-    },
-    {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 21689,
-      "price": 54.2,
-      "change_pct": "+1.69%",
-      "key_topics": [
-        "Market",
-        "Growth",
-        "Trial"
-      ]
-    },
-    {
-      "ticker": "MSTX",
-      "name": "Defiance Daily Target 2x Long M",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4013,
-      "price": 15.63,
-      "change_pct": "+13.10%",
-      "key_topics": [
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "IEP",
-      "name": "Icahn Enterprises L.P. - Deposi",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6640,
-      "price": 6.42,
-      "change_pct": "-0.85%",
-      "key_topics": [
-        "Market",
-        "Acquisition",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "BRZE",
-      "name": "Braze, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1402,
-      "price": 45.52,
-      "change_pct": "+51.53%",
-      "key_topics": [
-        "Market",
-        "Acquisition",
+        "Update",
+        "Earnings",
         "Buyout"
       ]
     },
     {
-      "ticker": "MLI",
-      "name": "Mueller Industries, Inc.",
+      "ticker": "TSLL",
+      "name": "Direxion Daily TSLA Bull 2X ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 681,
-      "price": 55.44,
-      "change_pct": "-8.85%",
+      "tweet_volume": 9353,
+      "price": 10.57,
+      "change_pct": "+7.20%",
       "key_topics": [
-        "Mli"
+        "Buyout",
+        "Earnings",
+        "Market"
       ]
     },
     {
-      "ticker": "WAT",
-      "name": "Waters Corporation",
+      "ticker": "CDE",
+      "name": "Coeur Mining, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 794,
-      "price": 446.29,
-      "change_pct": "+2.77%",
+      "tweet_volume": 6912,
+      "price": 15.06,
+      "change_pct": "-0.43%",
       "key_topics": [
-        "Wat",
-        "Optionsflow",
-        "Stockmarket"
+        "Update",
+        "Earnings",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 18404,
+      "price": 158.37,
+      "change_pct": "-3.39%",
+      "key_topics": [
+        "Hovdid"
+      ]
+    },
+    {
+      "ticker": "WULF",
+      "name": "TeraWulf Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 32484,
+      "price": 12.93,
+      "change_pct": "+7.62%",
+      "key_topics": [
+        "Demand",
+        "Acquisition",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "AMOD",
+      "name": "Alpha Modus Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1862,
+      "price": 1.67,
+      "change_pct": "+29.45%",
+      "key_topics": [
+        "Market",
+        "AI"
       ]
     }
   ]

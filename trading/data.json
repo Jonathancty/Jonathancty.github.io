@@ -1,20 +1,84 @@
 {
-  "updated_at": "2026-10-21T17:54:45.436006+00:00",
+  "updated_at": "2026-10-22T17:51:17.790657+00:00",
   "top_trending": {
-    "ticker": "ASST",
-    "name": "Strive, Inc.",
+    "ticker": "FPS",
+    "name": "Forgent Power Solutions, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 20115,
-    "price": 30.62,
-    "change_pct": "+13.17%",
+    "tweet_volume": 3275,
+    "price": 23.58,
+    "change_pct": "-25.76%",
     "key_topics": [
-      "Recovery"
+      "Market",
+      "AI",
+      "Earnings"
     ]
   },
   "trending_list": [
+    {
+      "ticker": "NVAX",
+      "name": "Novavax, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 108255,
+      "price": 9.79,
+      "change_pct": "-11.13%",
+      "key_topics": [
+        "Demand",
+        "AI",
+        "FDA"
+      ]
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 37581,
+      "price": 584.47,
+      "change_pct": "+5.98%",
+      "key_topics": [
+        "Chips",
+        "AI",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "FMCC",
+      "name": "Freddie Mac",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6749,
+      "price": 3.94,
+      "change_pct": "+15.20%",
+      "key_topics": [
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "FNMA",
+      "name": "Fannie Mae",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 17889,
+      "price": 4.24,
+      "change_pct": "+13.67%",
+      "key_topics": [
+        "AI",
+        "Earnings"
+      ]
+    },
     {
       "ticker": "SKYD",
       "name": "Skydance Corporation",
@@ -22,150 +86,91 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 27180,
-      "price": 7.67,
-      "change_pct": "+8.10%",
-      "key_topics": [
-        "Growth",
-        "Market",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "CAPR",
-      "name": "Capricor Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 33644,
-      "price": 6.01,
-      "change_pct": "-9.00%",
-      "key_topics": [
-        "777"
-      ]
-    },
-    {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 35408,
-      "price": 311.49,
-      "change_pct": "+6.79%",
-      "key_topics": [
-        "Pennion"
-      ]
-    },
-    {
-      "ticker": "APPS",
-      "name": "Digital Turbine, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 25020,
-      "price": 10.38,
-      "change_pct": "+5.87%",
-      "key_topics": [
-        "Launch",
-        "Update",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 166296,
-      "price": 57.9,
-      "change_pct": "+1.33%",
-      "key_topics": [
-        "Update",
-        "Earnings",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "TSLL",
-      "name": "Direxion Daily TSLA Bull 2X ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9353,
-      "price": 10.57,
-      "change_pct": "+7.20%",
-      "key_topics": [
-        "Buyout",
-        "Earnings",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "CDE",
-      "name": "Coeur Mining, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6912,
-      "price": 15.06,
-      "change_pct": "-0.43%",
-      "key_topics": [
-        "Update",
-        "Earnings",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc. Common St",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 18404,
-      "price": 158.37,
-      "change_pct": "-3.39%",
-      "key_topics": [
-        "Hovdid"
-      ]
-    },
-    {
-      "ticker": "WULF",
-      "name": "TeraWulf Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 32484,
-      "price": 12.93,
-      "change_pct": "+7.62%",
-      "key_topics": [
-        "Demand",
-        "Acquisition",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "AMOD",
-      "name": "Alpha Modus Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1862,
-      "price": 1.67,
-      "change_pct": "+29.45%",
+      "tweet_volume": 27269,
+      "price": 7.8,
+      "change_pct": "-0.89%",
       "key_topics": [
         "Market",
         "AI"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 37571,
+      "price": 212.42,
+      "change_pct": "-10.95%",
+      "key_topics": [
+        "Demand",
+        "AI",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia Corporation Sponsored",
+      "sentiment_delta": 0.789,
+      "current_sentiment": 0.789,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 89,
+      "tweet_volume": 115056,
+      "price": 8.04,
+      "change_pct": "-13.03%",
+      "key_topics": [
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sentiment_delta": 0.789,
+      "current_sentiment": 0.789,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 89,
+      "tweet_volume": 234421,
+      "price": 6.5,
+      "change_pct": "+2.36%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "name": "iShares PHLX SOX Semiconductor ",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 86,
+      "tweet_volume": 11313,
+      "price": 478.54,
+      "change_pct": "-6.23%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Chips"
+      ]
+    },
+    {
+      "ticker": "BHVN",
+      "name": "Biohaven Ltd.",
+      "sentiment_delta": 0.692,
+      "current_sentiment": 0.692,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 85,
+      "tweet_volume": 3575,
+      "price": 14.83,
+      "change_pct": "+26.18%",
+      "key_topics": [
+        "AI",
+        "Update",
+        "FDA"
       ]
     }
   ]

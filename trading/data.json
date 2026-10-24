@@ -1,177 +1,174 @@
 {
-  "updated_at": "2026-10-23T17:43:11.278146+00:00",
+  "updated_at": "2026-10-24T16:26:28.939831+00:00",
   "top_trending": {
-    "ticker": "BE",
-    "name": "Bloom Energy Corporation",
+    "ticker": "AXON",
+    "name": "Axon Enterprise, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 38124,
-    "price": 190.19,
-    "change_pct": "-12.66%",
+    "tweet_volume": 15481,
+    "price": 420.37,
+    "change_pct": "+1.39%",
     "key_topics": [
       "Revenue",
       "Earnings",
-      "Growth"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 21716,
-      "price": 55.2,
-      "change_pct": "+3.83%",
+      "tweet_volume": 12205,
+      "price": 138.68,
+      "change_pct": "-0.22%",
       "key_topics": [
-        "Revenue",
         "Earnings",
-        "Market"
+        "CEO",
+        "AI"
       ]
     },
     {
-      "ticker": "IEP",
-      "name": "Icahn Enterprises L.P. - Deposi",
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6671,
-      "price": 5.68,
-      "change_pct": "-7.26%",
+      "tweet_volume": 20558,
+      "price": 45.96,
+      "change_pct": "-0.22%",
       "key_topics": [
+        "Bitcoin"
+      ]
+    },
+    {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3365,
+      "price": 186.99,
+      "change_pct": "-0.37%",
+      "key_topics": [
+        "900"
+      ]
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 26252,
+      "price": 56.89,
+      "change_pct": "-0.30%",
+      "key_topics": [
+        "Revenue",
         "Earnings",
         "AI"
       ]
     },
     {
-      "ticker": "PHAT",
-      "name": "Phathom Pharmaceuticals, Inc.",
+      "ticker": "VG",
+      "name": "Venture Global, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2418,
-      "price": 5.51,
-      "change_pct": "-21.40%",
+      "tweet_volume": 4796,
+      "price": 14.0,
+      "change_pct": "+9.29%",
       "key_topics": [
-        "Earnings",
-        "Market",
-        "FDA"
-      ]
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 37591,
-      "price": 603.66,
-      "change_pct": "+2.33%",
-      "key_topics": [
-        "Dod",
-        "Wholesaleprices"
-      ]
-    },
-    {
-      "ticker": "BETR",
-      "name": "Better Home & Finance Holding C",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5809,
-      "price": 17.04,
-      "change_pct": "+2.77%",
-      "key_topics": [
+        "AI",
         "Squeeze",
-        "Price Target",
         "Market"
       ]
     },
     {
-      "ticker": "NET",
-      "name": "Cloudflare, Inc.",
+      "ticker": "FXAIX",
+      "name": "Fidelity 500 Index Fund",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 35462,
-      "price": 325.96,
-      "change_pct": "+7.36%",
+      "tweet_volume": 634,
+      "price": 264.99,
+      "change_pct": "-0.51%",
+      "key_topics": [
+        "Trump"
+      ]
+    },
+    {
+      "ticker": "VUG",
+      "name": "Vanguard Morningstar Growth ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 7235,
+      "price": 86.76,
+      "change_pct": "-0.47%",
+      "key_topics": [
+        "Revenue",
+        "Trial",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "NLY",
+      "name": "Annaly Capital Management Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10291,
+      "price": 18.35,
+      "change_pct": "+0.05%",
       "key_topics": [
         "Revenue",
         "Earnings",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SCHD",
+      "name": "Schwab US Dividend Equity ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 24284,
+      "price": 35.27,
+      "change_pct": "-0.37%",
+      "key_topics": [
+        "Trial",
+        "AI",
         "Growth"
       ]
     },
     {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb Company",
+      "ticker": "ARCC",
+      "name": "Ares Capital Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20862,
-      "price": 61.61,
-      "change_pct": "-2.21%",
+      "tweet_volume": 5868,
+      "price": 18.64,
+      "change_pct": "-0.80%",
       "key_topics": [
-        "CEO",
-        "Buyout",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "XLE",
-      "name": "State Street Energy Select Sect",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 24791,
-      "price": 69.31,
-      "change_pct": "+2.57%",
-      "key_topics": [
-        "Trading",
-        "Elliottwave"
-      ]
-    },
-    {
-      "ticker": "FXI",
-      "name": "iShares China Large-Cap ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 7335,
-      "price": 32.3,
-      "change_pct": "-0.46%",
-      "key_topics": [
-        "Smartmoneyconcepts",
-        "Trading",
-        "Priceaction"
-      ]
-    },
-    {
-      "ticker": "RHI",
-      "name": "Robert Half Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 583,
-      "price": 45.59,
-      "change_pct": "+20.99%",
-      "key_topics": [
-        "Buyout",
-        "Guidance",
-        "Chips"
+        "Squeeze",
+        "AI",
+        "Earnings"
       ]
     }
   ]

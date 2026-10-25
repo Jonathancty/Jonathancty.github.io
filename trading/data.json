@@ -1,80 +1,66 @@
 {
-  "updated_at": "2026-10-24T16:26:28.939831+00:00",
+  "updated_at": "2026-10-25T16:58:07.878593+00:00",
   "top_trending": {
-    "ticker": "AXON",
-    "name": "Axon Enterprise, Inc.",
+    "ticker": "SMMT",
+    "name": "Summit Therapeutics Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 15481,
-    "price": 420.37,
-    "change_pct": "+1.39%",
+    "tweet_volume": 10607,
+    "price": 15.47,
+    "change_pct": "-0.51%",
     "key_topics": [
-      "Revenue",
-      "Earnings",
-      "AI"
+      "Smmt"
     ]
   },
   "trending_list": [
     {
-      "ticker": "STZ",
-      "name": "Constellation Brands, Inc.",
+      "ticker": "MAT",
+      "name": "Mattel, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 12205,
-      "price": 138.68,
-      "change_pct": "-0.22%",
+      "tweet_volume": 6791,
+      "price": 16.41,
+      "change_pct": "-3.13%",
       "key_topics": [
-        "Earnings",
-        "CEO",
-        "AI"
+        "AI",
+        "Buyout",
+        "Market"
       ]
     },
     {
-      "ticker": "IBIT",
-      "name": "iShares Bitcoin Trust ETF",
+      "ticker": "GRAL",
+      "name": "GRAIL, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20558,
-      "price": 45.96,
-      "change_pct": "-0.22%",
+      "tweet_volume": 2632,
+      "price": 132.55,
+      "change_pct": "+4.32%",
       "key_topics": [
-        "Bitcoin"
+        "Gral",
+        "Biotech",
+        "Esmo2026"
       ]
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
+      "ticker": "RIG",
+      "name": "Transocean Ltd (Switzerland)",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3365,
-      "price": 186.99,
-      "change_pct": "-0.37%",
+      "tweet_volume": 25114,
+      "price": 6.41,
+      "change_pct": "+5.43%",
       "key_topics": [
-        "900"
-      ]
-    },
-    {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 26252,
-      "price": 56.89,
-      "change_pct": "-0.30%",
-      "key_topics": [
-        "Revenue",
-        "Earnings",
-        "AI"
+        "Market",
+        "Guidance",
+        "Earnings"
       ]
     },
     {
@@ -84,91 +70,108 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4796,
+      "tweet_volume": 4797,
       "price": 14.0,
       "change_pct": "+9.29%",
       "key_topics": [
+        "Market",
+        "Revenue",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 21738,
+      "price": 54.17,
+      "change_pct": "+1.90%",
+      "key_topics": [
         "AI",
-        "Squeeze",
+        "Buyout",
         "Market"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
+      "ticker": "P",
+      "name": "Everpure, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 634,
-      "price": 264.99,
-      "change_pct": "-0.51%",
+      "tweet_volume": 21133,
+      "price": 123.33,
+      "change_pct": "+1.76%",
       "key_topics": [
-        "Trump"
+        "AI",
+        "Market",
+        "Revenue"
       ]
     },
     {
-      "ticker": "VUG",
-      "name": "Vanguard Morningstar Growth ETF",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7235,
-      "price": 86.76,
-      "change_pct": "-0.47%",
+      "tweet_volume": 21085,
+      "price": 14.09,
+      "change_pct": "-0.35%",
       "key_topics": [
-        "Revenue",
-        "Trial",
-        "AI"
+        "Iova",
+        "3725ro"
       ]
     },
     {
-      "ticker": "NLY",
-      "name": "Annaly Capital Management Inc.",
+      "ticker": "EWZ",
+      "name": "iShares MSCI Brazil ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10291,
-      "price": 18.35,
-      "change_pct": "+0.05%",
+      "tweet_volume": 5291,
+      "price": 42.59,
+      "change_pct": "+1.77%",
       "key_topics": [
-        "Revenue",
+        "Smartmoneyconcepts",
+        "Trading",
+        "Priceaction"
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation, PLC",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5880,
+      "price": 366.11,
+      "change_pct": "-0.78%",
+      "key_topics": [
+        "Price Target",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
+      "sentiment_delta": 0.913,
+      "current_sentiment": 0.913,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 96,
+      "tweet_volume": 24180,
+      "price": 8.36,
+      "change_pct": "+2.70%",
+      "key_topics": [
+        "Market",
         "Earnings",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 24284,
-      "price": 35.27,
-      "change_pct": "-0.37%",
-      "key_topics": [
-        "Trial",
-        "AI",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "ARCC",
-      "name": "Ares Capital Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5868,
-      "price": 18.64,
-      "change_pct": "-0.80%",
-      "key_topics": [
-        "Squeeze",
-        "AI",
-        "Earnings"
+        "Squeeze"
       ]
     }
   ]

@@ -1,62 +1,90 @@
 {
-  "updated_at": "2026-10-25T16:58:07.878593+00:00",
+  "updated_at": "2026-10-26T19:01:41.015909+00:00",
   "top_trending": {
-    "ticker": "SMMT",
-    "name": "Summit Therapeutics Inc.",
+    "ticker": "NLST",
+    "name": "Netlist, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 10607,
-    "price": 15.47,
-    "change_pct": "-0.51%",
+    "tweet_volume": 28134,
+    "price": 6.46,
+    "change_pct": "+10.05%",
     "key_topics": [
-      "Smmt"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "MAT",
-      "name": "Mattel, Inc.",
+      "ticker": "XP",
+      "name": "XP Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6791,
-      "price": 16.41,
-      "change_pct": "-3.13%",
+      "tweet_volume": 1324,
+      "price": 15.37,
+      "change_pct": "-49.46%",
       "key_topics": [
-        "AI",
-        "Buyout",
-        "Market"
+        "Market",
+        "AI"
       ]
     },
     {
-      "ticker": "GRAL",
-      "name": "GRAIL, Inc.",
+      "ticker": "NN",
+      "name": "NextNav Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2632,
-      "price": 132.55,
-      "change_pct": "+4.32%",
+      "tweet_volume": 1248,
+      "price": 12.19,
+      "change_pct": "+20.93%",
       "key_topics": [
-        "Gral",
-        "Biotech",
-        "Esmo2026"
+        "Thedellcurrybottomwasin"
       ]
     },
     {
-      "ticker": "RIG",
-      "name": "Transocean Ltd (Switzerland)",
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 25114,
-      "price": 6.41,
-      "change_pct": "+5.43%",
+      "tweet_volume": 17124,
+      "price": 12.55,
+      "change_pct": "-17.18%",
+      "key_topics": [
+        "Wallstreet",
+        "Stocks"
+      ]
+    },
+    {
+      "ticker": "BETR",
+      "name": "Better Home & Finance Holding C",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5813,
+      "price": 17.73,
+      "change_pct": "+6.01%",
+      "key_topics": [
+        "Update",
+        "Market",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "RBRK",
+      "name": "Rubrik, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6393,
+      "price": 133.91,
+      "change_pct": "+4.01%",
       "key_topics": [
         "Market",
         "Guidance",
@@ -64,114 +92,80 @@
       ]
     },
     {
-      "ticker": "VG",
-      "name": "Venture Global, Inc.",
+      "ticker": "SGRY",
+      "name": "Surgery Partners, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4797,
-      "price": 14.0,
-      "change_pct": "+9.29%",
+      "tweet_volume": 912,
+      "price": 23.18,
+      "change_pct": "+47.21%",
       "key_topics": [
-        "Market",
+        "FDA",
+        "Update",
+        "Buyout"
+      ]
+    },
+    {
+      "ticker": "BBD",
+      "name": "Banco Bradesco Sa",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1861,
+      "price": 2.87,
+      "change_pct": "-29.61%",
+      "key_topics": [
+        "Ddamanda",
+        "Insiders"
+      ]
+    },
+    {
+      "ticker": "ITUB",
+      "name": "Itau Unibanco Banco Holding SA",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1748,
+      "price": 7.64,
+      "change_pct": "-20.94%",
+      "key_topics": [
+        "Ddamanda"
+      ]
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 90,
+      "tweet_volume": 22691,
+      "price": 1655.23,
+      "change_pct": "-8.56%",
+      "key_topics": [
+        "Growth",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "CAVA",
+      "name": "CAVA Group, Inc.",
+      "sentiment_delta": 0.778,
+      "current_sentiment": 0.778,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 89,
+      "tweet_volume": 13679,
+      "price": 50.72,
+      "change_pct": "-5.16%",
+      "key_topics": [
+        "Growth",
         "Revenue",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 21738,
-      "price": 54.17,
-      "change_pct": "+1.90%",
-      "key_topics": [
-        "AI",
-        "Buyout",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 21133,
-      "price": 123.33,
-      "change_pct": "+1.76%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 21085,
-      "price": 14.09,
-      "change_pct": "-0.35%",
-      "key_topics": [
-        "Iova",
-        "3725ro"
-      ]
-    },
-    {
-      "ticker": "EWZ",
-      "name": "iShares MSCI Brazil ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5291,
-      "price": 42.59,
-      "change_pct": "+1.77%",
-      "key_topics": [
-        "Smartmoneyconcepts",
-        "Trading",
-        "Priceaction"
-      ]
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation, PLC",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5880,
-      "price": 366.11,
-      "change_pct": "-0.78%",
-      "key_topics": [
-        "Price Target",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
-      "sentiment_delta": 0.913,
-      "current_sentiment": 0.913,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 96,
-      "tweet_volume": 24180,
-      "price": 8.36,
-      "change_pct": "+2.70%",
-      "key_topics": [
-        "Market",
-        "Earnings",
-        "Squeeze"
+        "Guidance"
       ]
     }
   ]

@@ -1,171 +1,175 @@
 {
-  "updated_at": "2026-10-26T19:01:41.015909+00:00",
+  "updated_at": "2026-10-27T18:33:35.657687+00:00",
   "top_trending": {
-    "ticker": "NLST",
-    "name": "Netlist, Inc.",
+    "ticker": "BETR",
+    "name": "Better Home & Finance Holding C",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 28134,
-    "price": 6.46,
-    "change_pct": "+10.05%",
+    "tweet_volume": 5847,
+    "price": 21.35,
+    "change_pct": "+20.49%",
     "key_topics": [
+      "Update",
+      "Squeeze",
       "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "XP",
-      "name": "XP Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1324,
-      "price": 15.37,
-      "change_pct": "-49.46%",
+      "tweet_volume": 62691,
+      "price": 12.12,
+      "change_pct": "+6.88%",
       "key_topics": [
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "NN",
-      "name": "NextNav Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1248,
-      "price": 12.19,
-      "change_pct": "+20.93%",
-      "key_topics": [
-        "Thedellcurrybottomwasin"
-      ]
-    },
-    {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17124,
-      "price": 12.55,
-      "change_pct": "-17.18%",
-      "key_topics": [
-        "Wallstreet",
-        "Stocks"
-      ]
-    },
-    {
-      "ticker": "BETR",
-      "name": "Better Home & Finance Holding C",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5813,
-      "price": 17.73,
-      "change_pct": "+6.01%",
-      "key_topics": [
-        "Update",
-        "Market",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "RBRK",
-      "name": "Rubrik, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6393,
-      "price": 133.91,
-      "change_pct": "+4.01%",
-      "key_topics": [
-        "Market",
-        "Guidance",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "SGRY",
-      "name": "Surgery Partners, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 912,
-      "price": 23.18,
-      "change_pct": "+47.21%",
-      "key_topics": [
-        "FDA",
-        "Update",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "BBD",
-      "name": "Banco Bradesco Sa",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1861,
-      "price": 2.87,
-      "change_pct": "-29.61%",
-      "key_topics": [
-        "Ddamanda",
-        "Insiders"
-      ]
-    },
-    {
-      "ticker": "ITUB",
-      "name": "Itau Unibanco Banco Holding SA",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1748,
-      "price": 7.64,
-      "change_pct": "-20.94%",
-      "key_topics": [
-        "Ddamanda"
-      ]
-    },
-    {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 22691,
-      "price": 1655.23,
-      "change_pct": "-8.56%",
-      "key_topics": [
-        "Growth",
+        "Demand",
         "AI",
         "Market"
       ]
     },
     {
-      "ticker": "CAVA",
-      "name": "CAVA Group, Inc.",
-      "sentiment_delta": 0.778,
-      "current_sentiment": 0.778,
+      "ticker": "INFQ",
+      "name": "Infleqtion, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 13679,
-      "price": 50.72,
-      "change_pct": "-5.16%",
+      "bullish_pct": 100,
+      "tweet_volume": 16970,
+      "price": 9.61,
+      "change_pct": "+11.30%",
       "key_topics": [
-        "Growth",
-        "Revenue",
-        "Guidance"
+        "AI",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 16408,
+      "price": 127.0,
+      "change_pct": "-0.58%",
+      "key_topics": [
+        "Marketrecon"
+      ]
+    },
+    {
+      "ticker": "CRML",
+      "name": "Critical Metals Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 15211,
+      "price": 7.24,
+      "change_pct": "+13.48%",
+      "key_topics": [
+        "Acquisition",
+        "Demand",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "XE",
+      "name": "X-Energy, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4116,
+      "price": 11.45,
+      "change_pct": "+7.06%",
+      "key_topics": [
+        "Trial",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "BOIL",
+      "name": "ProShares Ultra Bloomberg Natur",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 17387,
+      "price": 16.97,
+      "change_pct": "-4.96%",
+      "key_topics": [
+        "Demand",
+        "Buyout",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 69667,
+      "price": 58.34,
+      "change_pct": "+8.40%",
+      "key_topics": [
+        "Launch",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "TE",
+      "name": "T1 Energy Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 17501,
+      "price": 2.49,
+      "change_pct": "+17.45%",
+      "key_topics": [
+        "Update",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "ENVX",
+      "name": "Enovix Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 14367,
+      "price": 3.35,
+      "change_pct": "+24.81%",
+      "key_topics": [
+        "Launch",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 55325,
+      "price": 169.95,
+      "change_pct": "+10.88%",
+      "key_topics": [
+        "Spx"
       ]
     }
   ]

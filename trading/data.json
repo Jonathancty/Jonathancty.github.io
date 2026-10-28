@@ -1,175 +1,174 @@
 {
-  "updated_at": "2026-10-27T18:33:35.657687+00:00",
+  "updated_at": "2026-10-28T18:39:23.467783+00:00",
   "top_trending": {
-    "ticker": "BETR",
-    "name": "Better Home & Finance Holding C",
+    "ticker": "BSX",
+    "name": "Boston Scientific Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 5847,
-    "price": 21.35,
-    "change_pct": "+20.49%",
+    "tweet_volume": 9242,
+    "price": 43.72,
+    "change_pct": "-2.98%",
     "key_topics": [
-      "Update",
-      "Squeeze",
-      "AI"
+      "Market",
+      "Buyout",
+      "Revenue"
     ]
   },
   "trending_list": [
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 62691,
-      "price": 12.12,
-      "change_pct": "+6.88%",
+      "tweet_volume": 57618,
+      "price": 29.59,
+      "change_pct": "+5.96%",
       "key_topics": [
-        "Demand",
+        "Peptides"
+      ]
+    },
+    {
+      "ticker": "GDX",
+      "name": "VanEck Gold Miners ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 30277,
+      "price": 83.08,
+      "change_pct": "-0.13%",
+      "key_topics": [
+        "Elliottwave",
+        "Trading",
+        "Gdx"
+      ]
+    },
+    {
+      "ticker": "PRME",
+      "name": "Prime Medicine, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2937,
+      "price": 5.27,
+      "change_pct": "+21.15%",
+      "key_topics": [
         "AI",
-        "Market"
+        "FDA"
       ]
     },
     {
-      "ticker": "INFQ",
-      "name": "Infleqtion, Inc.",
+      "ticker": "SLV",
+      "name": "iShares Silver Trust",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 16970,
-      "price": 9.61,
-      "change_pct": "+11.30%",
+      "tweet_volume": 61848,
+      "price": 48.65,
+      "change_pct": "-1.05%",
       "key_topics": [
-        "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 16408,
-      "price": 127.0,
-      "change_pct": "-0.58%",
-      "key_topics": [
-        "Marketrecon"
-      ]
-    },
-    {
-      "ticker": "CRML",
-      "name": "Critical Metals Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 15211,
-      "price": 7.24,
-      "change_pct": "+13.48%",
-      "key_topics": [
-        "Acquisition",
-        "Demand",
         "AI"
       ]
     },
     {
-      "ticker": "XE",
-      "name": "X-Energy, Inc.",
+      "ticker": "RYCEY",
+      "name": "Rolls Royce Holdings plc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4116,
-      "price": 11.45,
-      "change_pct": "+7.06%",
-      "key_topics": [
-        "Trial",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "BOIL",
-      "name": "ProShares Ultra Bloomberg Natur",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17387,
-      "price": 16.97,
-      "change_pct": "-4.96%",
-      "key_topics": [
-        "Demand",
-        "Buyout",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 69667,
-      "price": 58.34,
-      "change_pct": "+8.40%",
-      "key_topics": [
-        "Launch",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "TE",
-      "name": "T1 Energy Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17501,
-      "price": 2.49,
-      "change_pct": "+17.45%",
+      "tweet_volume": 23295,
+      "price": 16.72,
+      "change_pct": "+0.97%",
       "key_topics": [
         "Update",
-        "AI",
+        "Growth",
         "Market"
       ]
     },
     {
-      "ticker": "ENVX",
-      "name": "Enovix Corporation",
+      "ticker": "NLST",
+      "name": "Netlist, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 14367,
-      "price": 3.35,
-      "change_pct": "+24.81%",
+      "tweet_volume": 28162,
+      "price": 6.94,
+      "change_pct": "+4.83%",
       "key_topics": [
-        "Launch",
-        "AI",
+        "Demand",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings, LLC",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 21075,
+      "price": 242.79,
+      "change_pct": "+16.41%",
+      "key_topics": [
+        "Update",
+        "Growth",
         "Market"
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "STLA",
+      "name": "Stellantis N.V.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 55325,
-      "price": 169.95,
-      "change_pct": "+10.88%",
+      "bullish_pct": 100,
+      "tweet_volume": 11917,
+      "price": 4.72,
+      "change_pct": "+14.01%",
       "key_topics": [
-        "Spx"
+        "Market",
+        "Squeeze",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "EAT",
+      "name": "Brinker International, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2478,
+      "price": 223.93,
+      "change_pct": "+13.83%",
+      "key_topics": [
+        "Update",
+        "Growth",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "GLD",
+      "name": "SPDR Gold Shares",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 96823,
+      "price": 371.4,
+      "change_pct": "-0.24%",
+      "key_topics": [
+        "Smartmoneyconcepts",
+        "Trading",
+        "Priceaction"
       ]
     }
   ]

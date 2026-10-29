@@ -128,5 +128,20 @@
       "Volume Spike"
     ],
     "requested_at": "2026-10-19T18:21:06.225684+00:00"
+  },
+  "SAN": {
+    "ticker": "SAN",
+    "name": "Banco Santander, S.A. Sponsored",
+    "sentiment_delta": 0.667,
+    "current_sentiment": 0.667,
+    "sentiment_label": "Bullish",
+    "bullish_pct": 83,
+    "tweet_volume": 4079,
+    "price": 11.77,
+    "change_pct": "+0.64%",
+    "key_topics": [
+      "San"
+    ],
+    "requested_at": "2026-10-29T17:49:18.423877+00:00"
   }
 }

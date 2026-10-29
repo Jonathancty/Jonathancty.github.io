@@ -1,174 +1,179 @@
 {
-  "updated_at": "2026-10-28T18:39:23.467783+00:00",
+  "updated_at": "2026-10-29T18:47:53.732705+00:00",
   "top_trending": {
-    "ticker": "BSX",
-    "name": "Boston Scientific Corporation",
+    "ticker": "KLAR",
+    "name": "Klarna Group plc",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 9242,
-    "price": 43.72,
-    "change_pct": "-2.98%",
+    "tweet_volume": 7904,
+    "price": 13.59,
+    "change_pct": "+3.23%",
     "key_topics": [
-      "Market",
-      "Buyout",
-      "Revenue"
+      "AI",
+      "Growth",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "HIMS",
-      "name": "Hims & Hers Health, Inc.",
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 57618,
-      "price": 29.59,
-      "change_pct": "+5.96%",
+      "tweet_volume": 62940,
+      "price": 9.88,
+      "change_pct": "-4.77%",
       "key_topics": [
-        "Peptides"
-      ]
-    },
-    {
-      "ticker": "GDX",
-      "name": "VanEck Gold Miners ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 30277,
-      "price": 83.08,
-      "change_pct": "-0.13%",
-      "key_topics": [
-        "Elliottwave",
-        "Trading",
-        "Gdx"
-      ]
-    },
-    {
-      "ticker": "PRME",
-      "name": "Prime Medicine, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2937,
-      "price": 5.27,
-      "change_pct": "+21.15%",
-      "key_topics": [
-        "AI",
-        "FDA"
-      ]
-    },
-    {
-      "ticker": "SLV",
-      "name": "iShares Silver Trust",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 61848,
-      "price": 48.65,
-      "change_pct": "-1.05%",
-      "key_topics": [
+        "Squeeze",
+        "Market",
         "AI"
       ]
     },
     {
-      "ticker": "RYCEY",
-      "name": "Rolls Royce Holdings plc",
+      "ticker": "PURR",
+      "name": "Hyperliquid Strategies Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23295,
-      "price": 16.72,
-      "change_pct": "+0.97%",
+      "tweet_volume": 26597,
+      "price": 11.94,
+      "change_pct": "+19.71%",
       "key_topics": [
-        "Update",
-        "Growth",
-        "Market"
+        "Squeeze",
+        "AI",
+        "Update"
       ]
     },
     {
-      "ticker": "NLST",
-      "name": "Netlist, Inc.",
+      "ticker": "OMER",
+      "name": "Omeros Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 28162,
-      "price": 6.94,
-      "change_pct": "+4.83%",
+      "tweet_volume": 11796,
+      "price": 18.68,
+      "change_pct": "+4.45%",
       "key_topics": [
+        "Market",
         "Demand",
         "AI"
       ]
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings, LLC",
+      "ticker": "BHC",
+      "name": "Bausch Health Companies Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 21075,
-      "price": 242.79,
-      "change_pct": "+16.41%",
+      "tweet_volume": 41709,
+      "price": 8.9,
+      "change_pct": "+28.68%",
       "key_topics": [
-        "Update",
-        "Growth",
-        "Market"
+        "Healthcare",
+        "Corporategovernance",
+        "Managementrisk"
       ]
     },
     {
-      "ticker": "STLA",
-      "name": "Stellantis N.V.",
+      "ticker": "ADT",
+      "name": "ADT Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11917,
-      "price": 4.72,
-      "change_pct": "+14.01%",
+      "tweet_volume": 5286,
+      "price": 9.93,
+      "change_pct": "+33.94%",
       "key_topics": [
         "Market",
         "Squeeze",
-        "Revenue"
+        "AI"
       ]
     },
     {
-      "ticker": "EAT",
-      "name": "Brinker International, Inc.",
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2478,
-      "price": 223.93,
-      "change_pct": "+13.83%",
+      "tweet_volume": 14004,
+      "price": 135.68,
+      "change_pct": "+7.73%",
       "key_topics": [
-        "Update",
-        "Growth",
+        "AI",
+        "Earnings",
         "Market"
       ]
     },
     {
-      "ticker": "GLD",
-      "name": "SPDR Gold Shares",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
       "bullish_pct": 93,
-      "tweet_volume": 96823,
-      "price": 371.4,
-      "change_pct": "-0.24%",
+      "tweet_volume": 21480,
+      "price": 9.82,
+      "change_pct": "-33.69%",
       "key_topics": [
-        "Smartmoneyconcepts",
-        "Trading",
-        "Priceaction"
+        "387",
+        "957"
+      ]
+    },
+    {
+      "ticker": "TDOC",
+      "name": "Teladoc Health, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 40286,
+      "price": 8.88,
+      "change_pct": "+29.14%",
+      "key_topics": [
+        "Squeeze",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sentiment_delta": 0.667,
+      "current_sentiment": 0.667,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 83,
+      "tweet_volume": 234396,
+      "price": 5.65,
+      "change_pct": "-5.20%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "CROX",
+      "name": "Crocs, Inc.",
+      "sentiment_delta": 0.636,
+      "current_sentiment": 0.636,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 82,
+      "tweet_volume": 9510,
+      "price": 149.93,
+      "change_pct": "+25.27%",
+      "key_topics": [
+        "Market",
+        "Demand",
+        "Guidance"
       ]
     }
   ]

@@ -1,112 +1,62 @@
 {
-  "updated_at": "2026-10-29T18:47:53.732705+00:00",
+  "updated_at": "2026-10-30T18:25:01.486483+00:00",
   "top_trending": {
-    "ticker": "KLAR",
-    "name": "Klarna Group plc",
+    "ticker": "SOXS",
+    "name": "Direxion Daily Semiconductor Be",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 7904,
-    "price": 13.59,
-    "change_pct": "+3.23%",
+    "tweet_volume": 19097,
+    "price": 53.78,
+    "change_pct": "+29.04%",
     "key_topics": [
-      "AI",
-      "Growth",
-      "Market"
+      "Lower"
     ]
   },
   "trending_list": [
     {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
+      "ticker": "PGY",
+      "name": "Pagaya Technologies Ltd.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 62940,
-      "price": 9.88,
-      "change_pct": "-4.77%",
+      "tweet_volume": 8806,
+      "price": 18.63,
+      "change_pct": "-10.48%",
       "key_topics": [
-        "Squeeze",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "PURR",
-      "name": "Hyperliquid Strategies Inc",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 26597,
-      "price": 11.94,
-      "change_pct": "+19.71%",
-      "key_topics": [
-        "Squeeze",
         "AI",
-        "Update"
+        "Price Target",
+        "Guidance"
       ]
     },
     {
-      "ticker": "OMER",
-      "name": "Omeros Corporation",
+      "ticker": "VGT",
+      "name": "Vanguard Information Tech ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11796,
-      "price": 18.68,
-      "change_pct": "+4.45%",
+      "tweet_volume": 11207,
+      "price": 115.62,
+      "change_pct": "-5.41%",
       "key_topics": [
-        "Market",
         "Demand",
-        "AI"
+        "Crypto",
+        "Growth"
       ]
     },
     {
-      "ticker": "BHC",
-      "name": "Bausch Health Companies Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "RDW",
+      "name": "Redwire Corporation",
+      "sentiment_delta": 0.778,
+      "current_sentiment": 0.778,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 41709,
-      "price": 8.9,
-      "change_pct": "+28.68%",
-      "key_topics": [
-        "Healthcare",
-        "Corporategovernance",
-        "Managementrisk"
-      ]
-    },
-    {
-      "ticker": "ADT",
-      "name": "ADT Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5286,
-      "price": 9.93,
-      "change_pct": "+33.94%",
-      "key_topics": [
-        "Market",
-        "Squeeze",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 14004,
-      "price": 135.68,
-      "change_pct": "+7.73%",
+      "bullish_pct": 89,
+      "tweet_volume": 24188,
+      "price": 8.21,
+      "change_pct": "-10.37%",
       "key_topics": [
         "AI",
         "Earnings",
@@ -114,66 +64,112 @@
       ]
     },
     {
-      "ticker": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
+      "sentiment_delta": 0.778,
+      "current_sentiment": 0.778,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 21480,
-      "price": 9.82,
-      "change_pct": "-33.69%",
+      "bullish_pct": 89,
+      "tweet_volume": 151511,
+      "price": 8.28,
+      "change_pct": "-9.89%",
       "key_topics": [
-        "387",
-        "957"
+        "AI",
+        "Growth",
+        "Market"
       ]
     },
     {
-      "ticker": "TDOC",
-      "name": "Teladoc Health, Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
+      "sentiment_delta": 0.733,
+      "current_sentiment": 0.733,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 40286,
-      "price": 8.88,
-      "change_pct": "+29.14%",
+      "bullish_pct": 87,
+      "tweet_volume": 29453,
+      "price": 19.82,
+      "change_pct": "-8.52%",
       "key_topics": [
-        "Squeeze",
+        "Update",
+        "Crypto",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "TQQQ",
+      "name": "ProShares UltraPro QQQ",
+      "sentiment_delta": 0.733,
+      "current_sentiment": 0.733,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 87,
+      "tweet_volume": 44654,
+      "price": 60.57,
+      "change_pct": "-12.55%",
+      "key_topics": [
         "AI",
         "Market"
       ]
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap Inc.",
+      "ticker": "GLD",
+      "name": "SPDR Gold Shares",
       "sentiment_delta": 0.667,
       "current_sentiment": 0.667,
       "sentiment_label": "Bullish",
       "bullish_pct": 83,
-      "tweet_volume": 234396,
-      "price": 5.65,
-      "change_pct": "-5.20%",
+      "tweet_volume": 96845,
+      "price": 355.44,
+      "change_pct": "-3.56%",
       "key_topics": [
-        "Market",
         "AI",
-        "Price Target"
+        "Market"
       ]
     },
     {
-      "ticker": "CROX",
-      "name": "Crocs, Inc.",
-      "sentiment_delta": 0.636,
-      "current_sentiment": 0.636,
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "sentiment_delta": 0.455,
+      "current_sentiment": 0.455,
       "sentiment_label": "Bullish",
-      "bullish_pct": 82,
-      "tweet_volume": 9510,
-      "price": 149.93,
-      "change_pct": "+25.27%",
+      "bullish_pct": 73,
+      "tweet_volume": 37570,
+      "price": 89.82,
+      "change_pct": "-30.69%",
       "key_topics": [
-        "Market",
-        "Demand",
-        "Guidance"
+        "Revenue",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "sentiment_delta": 0.333,
+      "current_sentiment": 0.333,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 67,
+      "tweet_volume": 88512,
+      "price": 11.66,
+      "change_pct": "+1.88%",
+      "key_topics": [
+        "AI",
+        "Earnings",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "CRMD",
+      "name": "CorMedix Inc.",
+      "sentiment_delta": 0.333,
+      "current_sentiment": 0.333,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 67,
+      "tweet_volume": 23604,
+      "price": 5.84,
+      "change_pct": "-23.49%",
+      "key_topics": [
+        "Update",
+        "CEO",
+        "Growth"
       ]
     }
   ]

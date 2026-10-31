@@ -1,174 +1,176 @@
 {
-  "updated_at": "2026-10-30T18:25:01.486483+00:00",
+  "updated_at": "2026-10-31T17:30:56.923318+00:00",
   "top_trending": {
-    "ticker": "SOXS",
-    "name": "Direxion Daily Semiconductor Be",
+    "ticker": "GNRC",
+    "name": "Generac Holdlings Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 19097,
-    "price": 53.78,
-    "change_pct": "+29.04%",
+    "tweet_volume": 6332,
+    "price": 197.93,
+    "change_pct": "-2.67%",
     "key_topics": [
-      "Lower"
+      "AI",
+      "Market",
+      "Revenue"
     ]
   },
   "trending_list": [
     {
-      "ticker": "PGY",
-      "name": "Pagaya Technologies Ltd.",
+      "ticker": "PGEN",
+      "name": "Precigen, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8806,
-      "price": 18.63,
-      "change_pct": "-10.48%",
+      "tweet_volume": 9240,
+      "price": 6.94,
+      "change_pct": "+4.52%",
       "key_topics": [
         "AI",
-        "Price Target",
-        "Guidance"
+        "Market",
+        "Revenue"
       ]
     },
     {
-      "ticker": "VGT",
-      "name": "Vanguard Information Tech ETF",
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporatio",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 11207,
-      "price": 115.62,
-      "change_pct": "-5.41%",
+      "tweet_volume": 43279,
+      "price": 64.0,
+      "change_pct": "+1.57%",
       "key_topics": [
-        "Demand",
-        "Crypto",
+        "AI",
+        "Market",
         "Growth"
       ]
     },
     {
-      "ticker": "RDW",
-      "name": "Redwire Corporation",
-      "sentiment_delta": 0.778,
-      "current_sentiment": 0.778,
+      "ticker": "UCTT",
+      "name": "Ultra Clean Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 24188,
-      "price": 8.21,
-      "change_pct": "-10.37%",
+      "bullish_pct": 100,
+      "tweet_volume": 3818,
+      "price": 49.71,
+      "change_pct": "-9.12%",
+      "key_topics": [
+        "Uctt"
+      ]
+    },
+    {
+      "ticker": "TMF",
+      "name": "Direxion Daily 20-Yr Treasury B",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5622,
+      "price": 29.85,
+      "change_pct": "+1.32%",
       "key_topics": [
         "AI",
-        "Earnings",
-        "Market"
+        "Market",
+        "Update"
       ]
     },
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
-      "sentiment_delta": 0.778,
-      "current_sentiment": 0.778,
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 151511,
-      "price": 8.28,
-      "change_pct": "-9.89%",
+      "bullish_pct": 100,
+      "tweet_volume": 8402,
+      "price": 274.37,
+      "change_pct": "-7.38%",
       "key_topics": [
         "AI",
-        "Growth",
-        "Market"
+        "Market",
+        "Revenue"
       ]
     },
     {
-      "ticker": "BMNR",
-      "name": "BitMine Immersion Technologies,",
-      "sentiment_delta": 0.733,
-      "current_sentiment": 0.733,
+      "ticker": "GTBIF",
+      "name": "Green Thumb Industries Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 87,
-      "tweet_volume": 29453,
-      "price": 19.82,
-      "change_pct": "-8.52%",
-      "key_topics": [
-        "Update",
-        "Crypto",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "TQQQ",
-      "name": "ProShares UltraPro QQQ",
-      "sentiment_delta": 0.733,
-      "current_sentiment": 0.733,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 87,
-      "tweet_volume": 44654,
-      "price": 60.57,
-      "change_pct": "-12.55%",
+      "bullish_pct": 100,
+      "tweet_volume": 6361,
+      "price": 6.27,
+      "change_pct": "-2.49%",
       "key_topics": [
         "AI",
-        "Market"
+        "Market",
+        "Revenue"
       ]
     },
     {
-      "ticker": "GLD",
-      "name": "SPDR Gold Shares",
-      "sentiment_delta": 0.667,
-      "current_sentiment": 0.667,
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 83,
-      "tweet_volume": 96845,
-      "price": 355.44,
-      "change_pct": "-3.56%",
+      "bullish_pct": 100,
+      "tweet_volume": 9496,
+      "price": 57.58,
+      "change_pct": "-3.03%",
       "key_topics": [
         "AI",
         "Market"
       ]
     },
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "sentiment_delta": 0.455,
-      "current_sentiment": 0.455,
+      "ticker": "EQX",
+      "name": "Equinox Gold Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 73,
-      "tweet_volume": 37570,
-      "price": 89.82,
-      "change_pct": "-30.69%",
-      "key_topics": [
-        "Revenue",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "RIVN",
-      "name": "Rivian Automotive, Inc.",
-      "sentiment_delta": 0.333,
-      "current_sentiment": 0.333,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 67,
-      "tweet_volume": 88512,
-      "price": 11.66,
-      "change_pct": "+1.88%",
+      "bullish_pct": 100,
+      "tweet_volume": 2310,
+      "price": 9.7,
+      "change_pct": "-4.72%",
       "key_topics": [
         "AI",
-        "Earnings",
-        "Market"
+        "Market",
+        "Guidance"
       ]
     },
     {
-      "ticker": "CRMD",
-      "name": "CorMedix Inc.",
-      "sentiment_delta": 0.333,
-      "current_sentiment": 0.333,
+      "ticker": "BETA",
+      "name": "Beta Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 67,
-      "tweet_volume": 23604,
-      "price": 5.84,
-      "change_pct": "-23.49%",
+      "bullish_pct": 100,
+      "tweet_volume": 1276,
+      "price": 20.05,
+      "change_pct": "-2.53%",
       "key_topics": [
-        "Update",
-        "CEO",
+        "Demand",
+        "AI",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4578,
+      "price": 130.7,
+      "change_pct": "-5.24%",
+      "key_topics": [
+        "AI",
+        "Market",
         "Growth"
       ]
     }

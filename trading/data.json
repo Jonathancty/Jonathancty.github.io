@@ -1,177 +1,174 @@
 {
-  "updated_at": "2026-10-31T17:30:56.923318+00:00",
+  "updated_at": "2026-11-01T18:15:58.631284+00:00",
   "top_trending": {
-    "ticker": "GNRC",
-    "name": "Generac Holdlings Inc.",
+    "ticker": "OXY",
+    "name": "Occidental Petroleum Corporatio",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 6332,
-    "price": 197.93,
-    "change_pct": "-2.67%",
+    "tweet_volume": 43283,
+    "price": 64.0,
+    "change_pct": "+1.57%",
     "key_topics": [
+      "Update",
       "AI",
-      "Market",
-      "Revenue"
+      "Growth"
     ]
   },
   "trending_list": [
     {
-      "ticker": "PGEN",
-      "name": "Precigen, Inc.",
+      "ticker": "OWL",
+      "name": "Blue Owl Capital Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9240,
-      "price": 6.94,
-      "change_pct": "+4.52%",
+      "tweet_volume": 3810,
+      "price": 10.33,
+      "change_pct": "-0.77%",
       "key_topics": [
         "AI",
-        "Market",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporatio",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 43279,
-      "price": 64.0,
-      "change_pct": "+1.57%",
-      "key_topics": [
-        "AI",
-        "Market",
+        "Squeeze",
         "Growth"
       ]
     },
     {
-      "ticker": "UCTT",
-      "name": "Ultra Clean Holdings, Inc.",
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3818,
-      "price": 49.71,
-      "change_pct": "-9.12%",
+      "tweet_volume": 17650,
+      "price": 927.89,
+      "change_pct": "+13.33%",
       "key_topics": [
-        "Uctt"
+        "Update",
+        "Price Target",
+        "AI"
       ]
     },
     {
-      "ticker": "TMF",
-      "name": "Direxion Daily 20-Yr Treasury B",
+      "ticker": "LNG",
+      "name": "Cheniere Energy, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 5622,
-      "price": 29.85,
-      "change_pct": "+1.32%",
+      "tweet_volume": 7961,
+      "price": 330.32,
+      "change_pct": "+3.57%",
       "key_topics": [
-        "AI",
-        "Market",
-        "Update"
+        "Lng"
       ]
     },
     {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8402,
-      "price": 274.37,
-      "change_pct": "-7.38%",
+      "tweet_volume": 14463,
+      "price": 52.15,
+      "change_pct": "+1.92%",
       "key_topics": [
-        "AI",
-        "Market",
-        "Revenue"
+        "Chips",
+        "Trial",
+        "AI"
       ]
     },
     {
-      "ticker": "GTBIF",
-      "name": "Green Thumb Industries Inc.",
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6361,
-      "price": 6.27,
-      "change_pct": "-2.49%",
+      "tweet_volume": 8304,
+      "price": 444.73,
+      "change_pct": "+2.83%",
       "key_topics": [
         "AI",
-        "Market",
-        "Revenue"
+        "Revenue",
+        "Earnings"
       ]
     },
     {
-      "ticker": "JEPQ",
-      "name": "JPMorgan Nasdaq Equity Premium ",
+      "ticker": "CRSP",
+      "name": "CRISPR Therapeutics AG",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9496,
-      "price": 57.58,
-      "change_pct": "-3.03%",
+      "tweet_volume": 41730,
+      "price": 51.42,
+      "change_pct": "-5.23%",
       "key_topics": [
+        "Update",
         "AI",
-        "Market"
+        "Launch"
       ]
     },
     {
-      "ticker": "EQX",
-      "name": "Equinox Gold Corp.",
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 2310,
-      "price": 9.7,
-      "change_pct": "-4.72%",
+      "tweet_volume": 23828,
+      "price": 237.83,
+      "change_pct": "-4.03%",
       "key_topics": [
+        "Price Target",
         "AI",
-        "Market",
-        "Guidance"
-      ]
-    },
-    {
-      "ticker": "BETA",
-      "name": "Beta Technologies, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1276,
-      "price": 20.05,
-      "change_pct": "-2.53%",
-      "key_topics": [
-        "Demand",
-        "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4578,
-      "price": 130.7,
-      "change_pct": "-5.24%",
-      "key_topics": [
-        "AI",
-        "Market",
         "Growth"
+      ]
+    },
+    {
+      "ticker": "TEM",
+      "name": "Tempus AI, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 21975,
+      "price": 72.22,
+      "change_pct": "-7.22%",
+      "key_topics": [
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "INOD",
+      "name": "Innodata Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 11843,
+      "price": 43.81,
+      "change_pct": "-5.11%",
+      "key_topics": [
+        "Price Target",
+        "AI",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "INFQ",
+      "name": "Infleqtion, Inc.",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 17016,
+      "price": 8.88,
+      "change_pct": "-5.83%",
+      "key_topics": [
+        "Theorangegrifter"
       ]
     }
   ]

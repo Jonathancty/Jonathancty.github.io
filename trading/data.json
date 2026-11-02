@@ -1,174 +1,177 @@
 {
-  "updated_at": "2026-11-01T18:15:58.631284+00:00",
+  "updated_at": "2026-11-02T22:09:08.109078+00:00",
   "top_trending": {
-    "ticker": "OXY",
-    "name": "Occidental Petroleum Corporatio",
+    "ticker": "CMPS",
+    "name": "COMPASS Pathways Plc - American",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 43283,
-    "price": 64.0,
-    "change_pct": "+1.57%",
+    "tweet_volume": 10087,
+    "price": 8.41,
+    "change_pct": "-27.31%",
     "key_topics": [
-      "Update",
-      "AI",
-      "Growth"
+      "Earnings",
+      "Market",
+      "FDA"
     ]
   },
   "trending_list": [
     {
-      "ticker": "OWL",
-      "name": "Blue Owl Capital Inc.",
+      "ticker": "FN",
+      "name": "Fabrinet",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3810,
-      "price": 10.33,
-      "change_pct": "-0.77%",
+      "tweet_volume": 3502,
+      "price": 314.7,
+      "change_pct": "-3.85%",
       "key_topics": [
-        "AI",
-        "Squeeze",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17650,
-      "price": 927.89,
-      "change_pct": "+13.33%",
-      "key_topics": [
-        "Update",
-        "Price Target",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "LNG",
-      "name": "Cheniere Energy, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 7961,
-      "price": 330.32,
-      "change_pct": "+3.57%",
-      "key_topics": [
-        "Lng"
-      ]
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 14463,
-      "price": 52.15,
-      "change_pct": "+1.92%",
-      "key_topics": [
-        "Chips",
-        "Trial",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 8304,
-      "price": 444.73,
-      "change_pct": "+2.83%",
-      "key_topics": [
-        "AI",
+        "Earnings",
         "Revenue",
-        "Earnings"
+        "Guidance"
       ]
     },
     {
-      "ticker": "CRSP",
-      "name": "CRISPR Therapeutics AG",
+      "ticker": "O",
+      "name": "Realty Income Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 41730,
-      "price": 51.42,
-      "change_pct": "-5.23%",
-      "key_topics": [
-        "Update",
-        "AI",
-        "Launch"
-      ]
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23828,
-      "price": 237.83,
-      "change_pct": "-4.03%",
+      "tweet_volume": 26280,
+      "price": 57.58,
+      "change_pct": "+1.14%",
       "key_topics": [
         "Price Target",
-        "AI",
+        "Earnings",
         "Growth"
       ]
     },
     {
-      "ticker": "TEM",
-      "name": "Tempus AI, Inc.",
+      "ticker": "AXSM",
+      "name": "Axsome Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 21975,
-      "price": 72.22,
-      "change_pct": "-7.22%",
-      "key_topics": [
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 11843,
-      "price": 43.81,
-      "change_pct": "-5.11%",
-      "key_topics": [
-        "Price Target",
-        "AI",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "INFQ",
-      "name": "Infleqtion, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 17016,
-      "price": 8.88,
+      "tweet_volume": 12049,
+      "price": 136.01,
       "change_pct": "-5.83%",
       "key_topics": [
-        "Theorangegrifter"
+        "Biopharmaceuticals",
+        "Regulatorycompliance",
+        "Marketaccess"
+      ]
+    },
+    {
+      "ticker": "VG",
+      "name": "Venture Global, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4809,
+      "price": 12.87,
+      "change_pct": "-12.98%",
+      "key_topics": [
+        "AI",
+        "Earnings",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "BMRN",
+      "name": "BioMarin Pharmaceutical Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5330,
+      "price": 57.44,
+      "change_pct": "-1.83%",
+      "key_topics": [
+        "Earnings",
+        "Bmrn"
+      ]
+    },
+    {
+      "ticker": "BLZE",
+      "name": "Backblaze, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 2493,
+      "price": 7.4,
+      "change_pct": "-2.50%",
+      "key_topics": [
+        "Cloudstorage",
+        "Aitalent",
+        "Workforcereskilling"
+      ]
+    },
+    {
+      "ticker": "SMCX",
+      "name": "Defiance Daily Target 2X Long S",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 3596,
+      "price": 6.94,
+      "change_pct": "-15.37%",
+      "key_topics": [
+        "Earnings",
+        "Growth",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 41868,
+      "price": 68.17,
+      "change_pct": "-11.52%",
+      "key_topics": [
+        "AI",
+        "Earnings",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 15292,
+      "price": 51.47,
+      "change_pct": "-6.23%",
+      "key_topics": [
+        "Earnings",
+        "CEO",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor Corporati",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 91,
+      "tweet_volume": 3549,
+      "price": 95.44,
+      "change_pct": "+2.66%",
+      "key_topics": [
+        "Lscc"
       ]
     }
   ]

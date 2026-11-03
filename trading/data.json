@@ -1,177 +1,178 @@
 {
-  "updated_at": "2026-11-02T22:09:08.109078+00:00",
+  "updated_at": "2026-11-03T19:58:06.788642+00:00",
   "top_trending": {
-    "ticker": "CMPS",
-    "name": "COMPASS Pathways Plc - American",
+    "ticker": "MDGL",
+    "name": "Madrigal Pharmaceuticals, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 10087,
-    "price": 8.41,
-    "change_pct": "-27.31%",
+    "tweet_volume": 6972,
+    "price": 400.73,
+    "change_pct": "-7.06%",
     "key_topics": [
       "Earnings",
-      "Market",
-      "FDA"
+      "AI",
+      "Price Target"
     ]
   },
   "trending_list": [
     {
-      "ticker": "FN",
-      "name": "Fabrinet",
+      "ticker": "FISV",
+      "name": "Fiserv, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3502,
-      "price": 314.7,
-      "change_pct": "-3.85%",
+      "tweet_volume": 10195,
+      "price": 59.14,
+      "change_pct": "+13.89%",
       "key_topics": [
-        "Earnings",
-        "Revenue",
-        "Guidance"
+        "Thegapreport"
       ]
     },
     {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
+      "ticker": "ADMA",
+      "name": "ADMA Biologics Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 26280,
-      "price": 57.58,
-      "change_pct": "+1.14%",
+      "tweet_volume": 20597,
+      "price": 11.01,
+      "change_pct": "-0.50%",
       "key_topics": [
-        "Price Target",
+        "Demand",
         "Earnings",
-        "Growth"
+        "AI"
       ]
     },
     {
-      "ticker": "AXSM",
-      "name": "Axsome Therapeutics, Inc.",
+      "ticker": "ACB",
+      "name": "Aurora Cannabis Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 12049,
-      "price": 136.01,
-      "change_pct": "-5.83%",
+      "tweet_volume": 119264,
+      "price": 5.15,
+      "change_pct": "+22.01%",
       "key_topics": [
-        "Biopharmaceuticals",
-        "Regulatorycompliance",
-        "Marketaccess"
-      ]
-    },
-    {
-      "ticker": "VG",
-      "name": "Venture Global, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4809,
-      "price": 12.87,
-      "change_pct": "-12.98%",
-      "key_topics": [
-        "AI",
-        "Earnings",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "BMRN",
-      "name": "BioMarin Pharmaceutical Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5330,
-      "price": 57.44,
-      "change_pct": "-1.83%",
-      "key_topics": [
-        "Earnings",
-        "Bmrn"
-      ]
-    },
-    {
-      "ticker": "BLZE",
-      "name": "Backblaze, Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 2493,
-      "price": 7.4,
-      "change_pct": "-2.50%",
-      "key_topics": [
-        "Cloudstorage",
-        "Aitalent",
-        "Workforcereskilling"
-      ]
-    },
-    {
-      "ticker": "SMCX",
-      "name": "Defiance Daily Target 2X Long S",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 3596,
-      "price": 6.94,
-      "change_pct": "-15.37%",
-      "key_topics": [
-        "Earnings",
         "Growth",
-        "Revenue"
+        "Market",
+        "AI"
       ]
     },
     {
-      "ticker": "SOXL",
-      "name": "Direxion Daily Semiconductor Bu",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 41868,
-      "price": 68.17,
-      "change_pct": "-11.52%",
+      "bullish_pct": 100,
+      "tweet_volume": 93836,
+      "price": 31.64,
+      "change_pct": "+3.96%",
       "key_topics": [
+        "Guidance",
+        "Revenue",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "IEP",
+      "name": "Icahn Enterprises L.P. - Deposi",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6687,
+      "price": 5.32,
+      "change_pct": "+3.00%",
+      "key_topics": [
+        "Revenue",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "UPST",
+      "name": "Upstart Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 47568,
+      "price": 21.3,
+      "change_pct": "-0.05%",
+      "key_topics": [
+        "Earnings",
+        "Guidance",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "CCXI",
+      "name": "Churchill Capital Corp XI",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 12837,
+      "price": 10.39,
+      "change_pct": "+11.84%",
+      "key_topics": [
+        "Market",
         "AI",
-        "Earnings",
-        "Demand"
+        "Squeeze"
       ]
     },
     {
-      "ticker": "AEHR",
-      "name": "Aehr Test Systems",
-      "sentiment_delta": 0.833,
-      "current_sentiment": 0.833,
+      "ticker": "APP",
+      "name": "Applovin Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 15292,
-      "price": 51.47,
-      "change_pct": "-6.23%",
+      "bullish_pct": 100,
+      "tweet_volume": 25527,
+      "price": 244.9,
+      "change_pct": "+7.01%",
       "key_topics": [
-        "Earnings",
-        "CEO",
-        "Growth"
+        "Growth",
+        "AI",
+        "Earnings"
       ]
     },
     {
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor Corporati",
-      "sentiment_delta": 0.818,
-      "current_sentiment": 0.818,
+      "ticker": "SYY",
+      "name": "Sysco Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 3549,
-      "price": 95.44,
-      "change_pct": "+2.66%",
+      "bullish_pct": 100,
+      "tweet_volume": 3729,
+      "price": 74.89,
+      "change_pct": "-8.38%",
       "key_topics": [
-        "Lscc"
+        "Demand",
+        "Trial",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "STVN",
+      "name": "Stevanato Group S.p.A.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 196,
+      "price": 14.37,
+      "change_pct": "-27.23%",
+      "key_topics": [
+        "Earnings",
+        "Guidance",
+        "Update"
       ]
     }
   ]

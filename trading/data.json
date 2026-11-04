@@ -1,34 +1,36 @@
 {
-  "updated_at": "2026-11-03T19:58:06.788642+00:00",
+  "updated_at": "2026-11-04T20:17:04.066886+00:00",
   "top_trending": {
-    "ticker": "MDGL",
-    "name": "Madrigal Pharmaceuticals, Inc.",
+    "ticker": "SMCI",
+    "name": "Super Micro Computer, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 6972,
-    "price": 400.73,
-    "change_pct": "-7.06%",
+    "tweet_volume": 94169,
+    "price": 29.61,
+    "change_pct": "-5.67%",
     "key_topics": [
-      "Earnings",
-      "AI",
-      "Price Target"
+      "Market",
+      "Revenue",
+      "Growth"
     ]
   },
   "trending_list": [
     {
-      "ticker": "FISV",
-      "name": "Fiserv, Inc.",
+      "ticker": "BB",
+      "name": "BlackBerry Limited",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10195,
-      "price": 59.14,
-      "change_pct": "+13.89%",
+      "tweet_volume": 151495,
+      "price": 8.71,
+      "change_pct": "+6.29%",
       "key_topics": [
-        "Thegapreport"
+        "Squeeze",
+        "Market",
+        "AI"
       ]
     },
     {
@@ -38,41 +40,9 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20597,
-      "price": 11.01,
-      "change_pct": "-0.50%",
-      "key_topics": [
-        "Demand",
-        "Earnings",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "ACB",
-      "name": "Aurora Cannabis Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 119264,
-      "price": 5.15,
-      "change_pct": "+22.01%",
-      "key_topics": [
-        "Growth",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 93836,
-      "price": 31.64,
-      "change_pct": "+3.96%",
+      "tweet_volume": 20600,
+      "price": 10.7,
+      "change_pct": "-3.74%",
       "key_topics": [
         "Guidance",
         "Revenue",
@@ -80,99 +50,130 @@
       ]
     },
     {
-      "ticker": "IEP",
-      "name": "Icahn Enterprises L.P. - Deposi",
+      "ticker": "RIOT",
+      "name": "Riot Platforms, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6687,
-      "price": 5.32,
-      "change_pct": "+3.00%",
+      "tweet_volume": 129962,
+      "price": 15.78,
+      "change_pct": "+12.52%",
       "key_topics": [
-        "Revenue",
-        "Market",
-        "AI"
+        "Price Target",
+        "Squeeze",
+        "Market"
       ]
     },
     {
-      "ticker": "UPST",
-      "name": "Upstart Holdings, Inc.",
+      "ticker": "OUST",
+      "name": "Ouster, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 47568,
-      "price": 21.3,
-      "change_pct": "-0.05%",
+      "tweet_volume": 17748,
+      "price": 33.42,
+      "change_pct": "+15.32%",
       "key_topics": [
-        "Earnings",
         "Guidance",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CCXI",
-      "name": "Churchill Capital Corp XI",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 12837,
-      "price": 10.39,
-      "change_pct": "+11.84%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "APP",
-      "name": "Applovin Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 25527,
-      "price": 244.9,
-      "change_pct": "+7.01%",
-      "key_topics": [
-        "Growth",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "SYY",
-      "name": "Sysco Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3729,
-      "price": 74.89,
-      "change_pct": "-8.38%",
-      "key_topics": [
-        "Demand",
         "Trial",
-        "Earnings"
+        "Market"
       ]
     },
     {
-      "ticker": "STVN",
-      "name": "Stevanato Group S.p.A.",
+      "ticker": "XYZ",
+      "name": "Block, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 196,
-      "price": 14.37,
-      "change_pct": "-27.23%",
+      "tweet_volume": 178413,
+      "price": 87.83,
+      "change_pct": "+15.57%",
       "key_topics": [
         "Earnings",
+        "Fintech"
+      ]
+    },
+    {
+      "ticker": "GLXY",
+      "name": "Galaxy Digital Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 18899,
+      "price": 14.16,
+      "change_pct": "-15.86%",
+      "key_topics": [
+        "Market",
+        "CEO",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 29894,
+      "price": 80.95,
+      "change_pct": "-11.44%",
+      "key_topics": [
         "Guidance",
-        "Update"
+        "Market",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "YOU",
+      "name": "Clear Secure, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2801,
+      "price": 60.08,
+      "change_pct": "+25.79%",
+      "key_topics": [
+        "Squeeze",
+        "Market",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "KD",
+      "name": "Kyndryl Holdings, Inc.",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 2236,
+      "price": 17.46,
+      "change_pct": "+34.93%",
+      "key_topics": [
+        "Market",
+        "Revenue",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 18557,
+      "price": 120.02,
+      "change_pct": "-14.02%",
+      "key_topics": [
+        "Market",
+        "Demand",
+        "AI"
       ]
     }
   ]

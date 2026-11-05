@@ -1,19 +1,17 @@
 {
-  "updated_at": "2026-11-04T20:17:04.066886+00:00",
+  "updated_at": "2026-11-05T20:28:42.947959+00:00",
   "top_trending": {
-    "ticker": "SMCI",
-    "name": "Super Micro Computer, Inc.",
+    "ticker": "RDW",
+    "name": "Redwire Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 94169,
-    "price": 29.61,
-    "change_pct": "-5.67%",
+    "tweet_volume": 24217,
+    "price": 6.28,
+    "change_pct": "-18.67%",
     "key_topics": [
-      "Market",
-      "Revenue",
-      "Growth"
+      "Space"
     ]
   },
   "trending_list": [
@@ -24,156 +22,157 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 151495,
-      "price": 8.71,
-      "change_pct": "+6.29%",
+      "tweet_volume": 151512,
+      "price": 8.38,
+      "change_pct": "-4.28%",
       "key_topics": [
-        "Squeeze",
-        "Market",
-        "AI"
+        "Update",
+        "AI",
+        "Demand"
       ]
     },
     {
-      "ticker": "ADMA",
-      "name": "ADMA Biologics Inc",
+      "ticker": "CELH",
+      "name": "Celsius Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 20600,
-      "price": 10.7,
-      "change_pct": "-3.74%",
+      "tweet_volume": 31005,
+      "price": 30.59,
+      "change_pct": "-0.52%",
       "key_topics": [
-        "Guidance",
+        "AI",
         "Revenue",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "RIOT",
-      "name": "Riot Platforms, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 129962,
-      "price": 15.78,
-      "change_pct": "+12.52%",
-      "key_topics": [
-        "Price Target",
-        "Squeeze",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "OUST",
-      "name": "Ouster, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 17748,
-      "price": 33.42,
-      "change_pct": "+15.32%",
-      "key_topics": [
-        "Guidance",
-        "Trial",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "XYZ",
-      "name": "Block, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 178413,
-      "price": 87.83,
-      "change_pct": "+15.57%",
-      "key_topics": [
-        "Earnings",
-        "Fintech"
-      ]
-    },
-    {
-      "ticker": "GLXY",
-      "name": "Galaxy Digital Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 18899,
-      "price": 14.16,
-      "change_pct": "-15.86%",
-      "key_topics": [
-        "Market",
-        "CEO",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 29894,
-      "price": 80.95,
-      "change_pct": "-11.44%",
-      "key_topics": [
-        "Guidance",
-        "Market",
         "Earnings"
       ]
     },
     {
-      "ticker": "YOU",
-      "name": "Clear Secure, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "WEN",
+      "name": "Wendy's Company (The)",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2801,
-      "price": 60.08,
-      "change_pct": "+25.79%",
+      "bullish_pct": 93,
+      "tweet_volume": 16082,
+      "price": 7.96,
+      "change_pct": "+3.99%",
       "key_topics": [
         "Squeeze",
-        "Market",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "VGT",
+      "name": "Vanguard Information Tech ETF",
+      "sentiment_delta": 0.833,
+      "current_sentiment": 0.833,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 11245,
+      "price": 107.9,
+      "change_pct": "-6.62%",
+      "key_topics": [
+        "CEO",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "CRSR",
+      "name": "Corsair Gaming, Inc.",
+      "sentiment_delta": 0.826,
+      "current_sentiment": 0.826,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 91,
+      "tweet_volume": 24251,
+      "price": 13.05,
+      "change_pct": "-2.03%",
+      "key_topics": [
+        "AI",
+        "Growth",
         "Revenue"
       ]
     },
     {
-      "ticker": "KD",
-      "name": "Kyndryl Holdings, Inc.",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
+      "ticker": "KORU",
+      "name": "Direxion Daily South Korea Bull",
+      "sentiment_delta": 0.733,
+      "current_sentiment": 0.733,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 2236,
-      "price": 17.46,
-      "change_pct": "+34.93%",
+      "bullish_pct": 87,
+      "tweet_volume": 3823,
+      "price": 7.04,
+      "change_pct": "-32.50%",
       "key_topics": [
+        "AI",
         "Market",
-        "Revenue",
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "QQQM",
+      "name": "Invesco NASDAQ 100 ETF",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 86,
+      "tweet_volume": 8177,
+      "price": 268.43,
+      "change_pct": "-5.79%",
+      "key_topics": [
+        "Earnings",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 Index Fund",
+      "sentiment_delta": 0.667,
+      "current_sentiment": 0.667,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 83,
+      "tweet_volume": 50195,
+      "price": 271.56,
+      "change_pct": "-4.39%",
+      "key_topics": [
+        "AI",
+        "Market",
         "Growth"
       ]
     },
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
+      "ticker": "MUU",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "sentiment_delta": 0.556,
+      "current_sentiment": 0.556,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 18557,
-      "price": 120.02,
-      "change_pct": "-14.02%",
+      "bullish_pct": 78,
+      "tweet_volume": 2188,
+      "price": 13.57,
+      "change_pct": "-29.43%",
       "key_topics": [
+        "Earnings",
+        "Update",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
+      "sentiment_delta": 0.538,
+      "current_sentiment": 0.538,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 77,
+      "tweet_volume": 53932,
+      "price": 676.53,
+      "change_pct": "-4.01%",
+      "key_topics": [
+        "AI",
         "Market",
-        "Demand",
-        "AI"
+        "Trial"
       ]
     }
   ]

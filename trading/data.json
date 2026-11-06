@@ -1,178 +1,177 @@
 {
-  "updated_at": "2026-11-05T20:28:42.947959+00:00",
+  "updated_at": "2026-11-06T19:51:19.321529+00:00",
   "top_trending": {
-    "ticker": "RDW",
-    "name": "Redwire Corporation",
+    "ticker": "XERS",
+    "name": "Xeris Biopharma Holdings, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 24217,
-    "price": 6.28,
-    "change_pct": "-18.67%",
+    "tweet_volume": 10887,
+    "price": 14.85,
+    "change_pct": "+13.49%",
     "key_topics": [
-      "Space"
+      "AI",
+      "Price Target",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "BB",
-      "name": "BlackBerry Limited",
+      "ticker": "KRMN",
+      "name": "Karman Holdings Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 151512,
-      "price": 8.38,
-      "change_pct": "-4.28%",
+      "tweet_volume": 1660,
+      "price": 43.38,
+      "change_pct": "+35.18%",
       "key_topics": [
-        "Update",
-        "AI",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "CELH",
-      "name": "Celsius Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 31005,
-      "price": 30.59,
-      "change_pct": "-0.52%",
-      "key_topics": [
-        "AI",
-        "Revenue",
+        "Defense",
         "Earnings"
       ]
     },
     {
-      "ticker": "WEN",
-      "name": "Wendy's Company (The)",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "MLTX",
+      "name": "MoonLake Immunotherapeutics",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 16082,
-      "price": 7.96,
-      "change_pct": "+3.99%",
+      "bullish_pct": 100,
+      "tweet_volume": 6574,
+      "price": 11.46,
+      "change_pct": "+6.11%",
       "key_topics": [
-        "Squeeze",
         "AI",
+        "FDA",
         "Market"
       ]
     },
     {
-      "ticker": "VGT",
-      "name": "Vanguard Information Tech ETF",
-      "sentiment_delta": 0.833,
-      "current_sentiment": 0.833,
+      "ticker": "INFQ",
+      "name": "Infleqtion, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 11245,
-      "price": 107.9,
-      "change_pct": "-6.62%",
+      "bullish_pct": 100,
+      "tweet_volume": 16993,
+      "price": 8.97,
+      "change_pct": "+20.63%",
       "key_topics": [
-        "CEO",
-        "AI",
-        "Earnings"
+        "Revenue",
+        "Market",
+        "AI"
       ]
     },
     {
-      "ticker": "CRSR",
-      "name": "Corsair Gaming, Inc.",
-      "sentiment_delta": 0.826,
-      "current_sentiment": 0.826,
+      "ticker": "APPS",
+      "name": "Digital Turbine, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 24251,
-      "price": 13.05,
-      "change_pct": "-2.03%",
+      "bullish_pct": 100,
+      "tweet_volume": 25003,
+      "price": 10.29,
+      "change_pct": "+6.41%",
+      "key_topics": [
+        "What"
+      ]
+    },
+    {
+      "ticker": "GDX",
+      "name": "VanEck Gold Miners ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 30306,
+      "price": 87.01,
+      "change_pct": "+1.47%",
       "key_topics": [
         "AI",
-        "Growth",
+        "Market",
         "Revenue"
       ]
     },
     {
-      "ticker": "KORU",
-      "name": "Direxion Daily South Korea Bull",
-      "sentiment_delta": 0.733,
-      "current_sentiment": 0.733,
+      "ticker": "SERV",
+      "name": "Serve Robotics Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 87,
-      "tweet_volume": 3823,
-      "price": 7.04,
-      "change_pct": "-32.50%",
+      "bullish_pct": 100,
+      "tweet_volume": 17413,
+      "price": 3.08,
+      "change_pct": "+32.54%",
       "key_topics": [
-        "AI",
+        "Revenue",
         "Market",
-        "Trial"
+        "AI"
       ]
     },
     {
-      "ticker": "QQQM",
-      "name": "Invesco NASDAQ 100 ETF",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
+      "ticker": "TMDX",
+      "name": "TransMedics Group, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 8177,
-      "price": 268.43,
-      "change_pct": "-5.79%",
+      "bullish_pct": 100,
+      "tweet_volume": 7005,
+      "price": 87.22,
+      "change_pct": "+26.44%",
       "key_topics": [
-        "Earnings",
         "AI",
+        "Market",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "QNT",
+      "name": "Quantinuum Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4206,
+      "price": 37.34,
+      "change_pct": "+25.22%",
+      "key_topics": [
+        "AI",
+        "Price Target",
         "Market"
       ]
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 Index Fund",
-      "sentiment_delta": 0.667,
-      "current_sentiment": 0.667,
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 83,
-      "tweet_volume": 50195,
-      "price": 271.56,
-      "change_pct": "-4.39%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Growth"
-      ]
-    },
-    {
-      "ticker": "MUU",
-      "name": "Direxion Daily MU Bull 2X ETF",
-      "sentiment_delta": 0.556,
-      "current_sentiment": 0.556,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 78,
-      "tweet_volume": 2188,
-      "price": 13.57,
-      "change_pct": "-29.43%",
+      "bullish_pct": 100,
+      "tweet_volume": 69787,
+      "price": 52.38,
+      "change_pct": "+13.89%",
       "key_topics": [
         "Earnings",
-        "Update",
-        "Guidance"
+        "Squeeze",
+        "AI"
       ]
     },
     {
-      "ticker": "VOO",
-      "name": "Vanguard S&P 500 ETF",
-      "sentiment_delta": 0.538,
-      "current_sentiment": 0.538,
+      "ticker": "EROC",
+      "name": "ERock, Inc.",
+      "sentiment_delta": 0.923,
+      "current_sentiment": 0.923,
       "sentiment_label": "Bullish",
-      "bullish_pct": 77,
-      "tweet_volume": 53932,
-      "price": 676.53,
-      "change_pct": "-4.01%",
+      "bullish_pct": 96,
+      "tweet_volume": 999,
+      "price": 7.18,
+      "change_pct": "+8.21%",
       "key_topics": [
+        "Demand",
         "AI",
-        "Market",
-        "Trial"
+        "Market"
       ]
     }
   ]

@@ -1,176 +1,166 @@
 {
-  "updated_at": "2026-11-07T17:57:01.033141+00:00",
+  "updated_at": "2026-11-08T18:13:39.930868+00:00",
   "top_trending": {
-    "ticker": "CADL",
-    "name": "Candel Therapeutics, Inc.",
+    "ticker": "DRTS",
+    "name": "Alpha Tau Medical Ltd.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 10468,
-    "price": 8.75,
-    "change_pct": "+8.83%",
+    "tweet_volume": 3432,
+    "price": 13.72,
+    "change_pct": "+3.16%",
     "key_topics": [
-      "Market",
-      "AI",
-      "Trial"
+      "Drts"
     ]
   },
   "trending_list": [
     {
-      "ticker": "KWEB",
-      "name": "KraneShares CSI China Internet ",
+      "ticker": "NRG",
+      "name": "NRG Energy, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 8991,
-      "price": 24.88,
-      "change_pct": "+0.48%",
-      "key_topics": [
-        "Trial",
-        "Squeeze",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "ALB",
-      "name": "Albemarle Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 14700,
-      "price": 99.25,
-      "change_pct": "+0.89%",
-      "key_topics": [
-        "Market",
-        "Demand",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporatio",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 12826,
-      "price": 249.95,
-      "change_pct": "+4.30%",
+      "tweet_volume": 5567,
+      "price": 88.29,
+      "change_pct": "+9.61%",
       "key_topics": [
         "Earnings"
       ]
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
+      "ticker": "LEGN",
+      "name": "Legend Biotech Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13526,
-      "price": 120.91,
-      "change_pct": "+1.00%",
+      "tweet_volume": 1465,
+      "price": 23.4,
+      "change_pct": "+3.82%",
       "key_topics": [
-        "Elliottwave",
-        "Nem",
-        "Trading"
+        "Legn"
       ]
     },
     {
-      "ticker": "ON",
-      "name": "ON Semiconductor Corporation",
+      "ticker": "CRMD",
+      "name": "CorMedix Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13388,
-      "price": 63.31,
-      "change_pct": "+0.48%",
+      "tweet_volume": 23696,
+      "price": 5.32,
+      "change_pct": "+1.72%",
       "key_topics": [
-        "Market",
-        "Demand",
-        "AI"
+        "Crmd"
       ]
     },
     {
-      "ticker": "O",
-      "name": "Realty Income Corporation",
+      "ticker": "BKSY",
+      "name": "BlackSky Technology Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 26299,
-      "price": 59.04,
-      "change_pct": "-0.77%",
+      "tweet_volume": 12708,
+      "price": 21.33,
+      "change_pct": "+11.56%",
       "key_topics": [
-        "Lower",
-        "Harder",
-        "Bollingerbands"
+        "Sidotiresearch",
+        "Investing",
+        "Smallcap"
       ]
     },
     {
-      "ticker": "SIRI",
-      "name": "SiriusXM Holdings Inc.",
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23583,
-      "price": 32.4,
-      "change_pct": "-1.67%",
+      "tweet_volume": 18486,
+      "price": 160.66,
+      "change_pct": "-4.77%",
       "key_topics": [
-        "Market",
-        "Price Target",
-        "AI"
+        "Earnings",
+        "Travelstocks"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
+      "ticker": "EROC",
+      "name": "ERock, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 647,
-      "price": 256.48,
-      "change_pct": "+0.32%",
+      "tweet_volume": 1011,
+      "price": 7.12,
+      "change_pct": "+7.23%",
       "key_topics": [
-        "Trump"
+        "184626"
       ]
     },
     {
-      "ticker": "KMI",
-      "name": "Kinder Morgan, Inc.",
+      "ticker": "KORU",
+      "name": "Direxion Daily South Korea Bull",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 15830,
-      "price": 29.96,
-      "change_pct": "-0.76%",
+      "tweet_volume": 3857,
+      "price": 6.91,
+      "change_pct": "+5.82%",
       "key_topics": [
-        "Market",
-        "Demand",
-        "AI"
+        "Pennion"
       ]
     },
     {
-      "ticker": "KMB",
-      "name": "Kimberly-Clark Corporation",
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding ",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 5269,
-      "price": 108.43,
-      "change_pct": "-1.84%",
+      "tweet_volume": 14167,
+      "price": 120.51,
+      "change_pct": "+7.28%",
       "key_topics": [
-        "Market",
-        "Demand",
-        "Price Target"
+        "Trial",
+        "Earnings",
+        "Chips"
+      ]
+    },
+    {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3415,
+      "price": 192.28,
+      "change_pct": "+8.24%",
+      "key_topics": [
+        "Trial",
+        "Earnings",
+        "Launch"
+      ]
+    },
+    {
+      "ticker": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6107,
+      "price": 49.48,
+      "change_pct": "+1.23%",
+      "key_topics": [
+        "AI",
+        "Market"
       ]
     }
   ]

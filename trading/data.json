@@ -1,48 +1,22 @@
 {
-  "updated_at": "2026-11-08T18:13:39.930868+00:00",
+  "updated_at": "2026-11-09T22:52:33.280598+00:00",
   "top_trending": {
-    "ticker": "DRTS",
-    "name": "Alpha Tau Medical Ltd.",
+    "ticker": "ZETA",
+    "name": "Zeta Global Holdings Corp.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 3432,
-    "price": 13.72,
-    "change_pct": "+3.16%",
+    "tweet_volume": 15649,
+    "price": 32.42,
+    "change_pct": "+4.48%",
     "key_topics": [
-      "Drts"
+      "CEO",
+      "Earnings",
+      "Growth"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "NRG",
-      "name": "NRG Energy, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5567,
-      "price": 88.29,
-      "change_pct": "+9.61%",
-      "key_topics": [
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "LEGN",
-      "name": "Legend Biotech Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1465,
-      "price": 23.4,
-      "change_pct": "+3.82%",
-      "key_topics": [
-        "Legn"
-      ]
-    },
     {
       "ticker": "CRMD",
       "name": "CorMedix Inc.",
@@ -50,117 +24,155 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23696,
-      "price": 5.32,
-      "change_pct": "+1.72%",
+      "tweet_volume": 23732,
+      "price": 5.47,
+      "change_pct": "+2.82%",
       "key_topics": [
-        "Crmd"
+        "Revenue",
+        "AI",
+        "Acquisition"
       ]
     },
     {
-      "ticker": "BKSY",
-      "name": "BlackSky Technology Inc.",
+      "ticker": "ABCL",
+      "name": "AbCellera Biologics Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 12708,
-      "price": 21.33,
-      "change_pct": "+11.56%",
+      "tweet_volume": 9839,
+      "price": 12.5,
+      "change_pct": "+5.22%",
       "key_topics": [
-        "Sidotiresearch",
-        "Investing",
-        "Smallcap"
+        "Riskfactors",
+        "Secfilings"
       ]
     },
     {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc. Common St",
+      "ticker": "SKYD",
+      "name": "Skydance Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 18486,
-      "price": 160.66,
-      "change_pct": "-4.77%",
+      "tweet_volume": 27362,
+      "price": 8.7,
+      "change_pct": "+8.61%",
       "key_topics": [
-        "Earnings",
-        "Travelstocks"
+        "Riskfactors",
+        "Secfilings"
       ]
     },
     {
-      "ticker": "EROC",
-      "name": "ERock, Inc.",
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1011,
-      "price": 7.12,
-      "change_pct": "+7.23%",
+      "tweet_volume": 21949,
+      "price": 63.38,
+      "change_pct": "+5.94%",
       "key_topics": [
-        "184626"
+        "Update",
+        "Price Target",
+        "Revenue"
       ]
     },
     {
-      "ticker": "KORU",
-      "name": "Direxion Daily South Korea Bull",
+      "ticker": "SENS",
+      "name": "Senseonics Holdings, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3857,
-      "price": 6.91,
-      "change_pct": "+5.82%",
+      "tweet_volume": 48246,
+      "price": 9.8,
+      "change_pct": "+14.09%",
       "key_topics": [
-        "Pennion"
+        "Legaldisclosure",
+        "Secfilings",
+        "Legal"
       ]
     },
     {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding ",
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 14167,
-      "price": 120.51,
-      "change_pct": "+7.28%",
+      "tweet_volume": 1278,
+      "price": 6.97,
+      "change_pct": "+0.14%",
       "key_topics": [
-        "Trial",
-        "Earnings",
-        "Chips"
-      ]
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3415,
-      "price": 192.28,
-      "change_pct": "+8.24%",
-      "key_topics": [
-        "Trial",
-        "Earnings",
+        "Revenue",
+        "AI",
         "Launch"
       ]
     },
     {
-      "ticker": "QQQI",
-      "name": "NEOS Nasdaq 100 High Income ETF",
+      "ticker": "EXK",
+      "name": "Endeavour Silver Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6107,
-      "price": 49.48,
-      "change_pct": "+1.23%",
+      "tweet_volume": 5597,
+      "price": 8.34,
+      "change_pct": "+6.38%",
       "key_topics": [
+        "Revenue",
         "AI",
         "Market"
+      ]
+    },
+    {
+      "ticker": "FLY",
+      "name": "Firefly Aerospace Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 10123,
+      "price": 24.31,
+      "change_pct": "+17.10%",
+      "key_topics": [
+        "Revenue",
+        "AI",
+        "Launch"
+      ]
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporatio",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 43312,
+      "price": 55.76,
+      "change_pct": "-1.10%",
+      "key_topics": [
+        "Update",
+        "Revenue",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "ALOY",
+      "name": "REalloys Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 16047,
+      "price": 6.85,
+      "change_pct": "+11.84%",
+      "key_topics": [
+        "Market",
+        "Earnings",
+        "Squeeze"
       ]
     }
   ]

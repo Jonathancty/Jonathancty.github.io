@@ -1,98 +1,99 @@
 {
-  "updated_at": "2026-11-09T22:52:33.280598+00:00",
+  "updated_at": "2026-11-10T20:13:34.119887+00:00",
   "top_trending": {
-    "ticker": "ZETA",
-    "name": "Zeta Global Holdings Corp.",
+    "ticker": "LEGN",
+    "name": "Legend Biotech Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 15649,
-    "price": 32.42,
-    "change_pct": "+4.48%",
+    "tweet_volume": 1485,
+    "price": 20.02,
+    "change_pct": "-17.58%",
     "key_topics": [
-      "CEO",
       "Earnings",
-      "Growth"
+      "Market",
+      "CEO"
     ]
   },
   "trending_list": [
     {
-      "ticker": "CRMD",
-      "name": "CorMedix Inc.",
+      "ticker": "LKNCY",
+      "name": "Luckin Coffee Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23732,
-      "price": 5.47,
-      "change_pct": "+2.82%",
+      "tweet_volume": 40108,
+      "price": 36.69,
+      "change_pct": "+5.55%",
       "key_topics": [
-        "Revenue",
-        "AI",
-        "Acquisition"
-      ]
-    },
-    {
-      "ticker": "ABCL",
-      "name": "AbCellera Biologics Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9839,
-      "price": 12.5,
-      "change_pct": "+5.22%",
-      "key_topics": [
-        "Riskfactors",
-        "Secfilings"
-      ]
-    },
-    {
-      "ticker": "SKYD",
-      "name": "Skydance Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 27362,
-      "price": 8.7,
-      "change_pct": "+8.61%",
-      "key_topics": [
-        "Riskfactors",
-        "Secfilings"
-      ]
-    },
-    {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 21949,
-      "price": 63.38,
-      "change_pct": "+5.94%",
-      "key_topics": [
-        "Update",
         "Price Target",
-        "Revenue"
+        "AI",
+        "Update"
       ]
     },
     {
-      "ticker": "SENS",
-      "name": "Senseonics Holdings, Inc.",
+      "ticker": "LU",
+      "name": "Lufax Holding Ltd",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 48246,
-      "price": 9.8,
-      "change_pct": "+14.09%",
+      "tweet_volume": 1510,
+      "price": 7.19,
+      "change_pct": "-8.74%",
       "key_topics": [
-        "Legaldisclosure",
-        "Secfilings",
-        "Legal"
+        "Market",
+        "AI",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 25117,
+      "price": 224.24,
+      "change_pct": "+8.12%",
+      "key_topics": [
+        "Taketwointeractivesoftware",
+        "Gtavi"
+      ]
+    },
+    {
+      "ticker": "RUN",
+      "name": "Sunrun Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 23203,
+      "price": 8.6,
+      "change_pct": "-11.70%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "MGNI",
+      "name": "Magnite, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 12044,
+      "price": 28.57,
+      "change_pct": "-1.60%",
+      "key_topics": [
+        "AI",
+        "Earnings",
+        "Launch"
       ]
     },
     {
@@ -102,45 +103,43 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1278,
-      "price": 6.97,
-      "change_pct": "+0.14%",
+      "tweet_volume": 1355,
+      "price": 8.38,
+      "change_pct": "+20.23%",
       "key_topics": [
-        "Revenue",
         "AI",
-        "Launch"
+        "Earnings"
       ]
     },
     {
-      "ticker": "EXK",
-      "name": "Endeavour Silver Corporation",
+      "ticker": "TSLL",
+      "name": "Direxion Daily TSLA Bull 2X ETF",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 5597,
-      "price": 8.34,
-      "change_pct": "+6.38%",
+      "tweet_volume": 9358,
+      "price": 9.74,
+      "change_pct": "-0.15%",
       "key_topics": [
-        "Revenue",
-        "AI",
+        "Market",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SENS",
+      "name": "Senseonics Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 48277,
+      "price": 10.39,
+      "change_pct": "+6.07%",
+      "key_topics": [
+        "Earnings",
+        "Buyout",
         "Market"
-      ]
-    },
-    {
-      "ticker": "FLY",
-      "name": "Firefly Aerospace Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 10123,
-      "price": 24.31,
-      "change_pct": "+17.10%",
-      "key_topics": [
-        "Revenue",
-        "AI",
-        "Launch"
       ]
     },
     {
@@ -150,29 +149,29 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 43312,
-      "price": 55.76,
-      "change_pct": "-1.10%",
+      "tweet_volume": 43318,
+      "price": 57.13,
+      "change_pct": "+2.46%",
       "key_topics": [
-        "Update",
-        "Revenue",
-        "AI"
+        "Earnings",
+        "Squeeze",
+        "Market"
       ]
     },
     {
-      "ticker": "ALOY",
-      "name": "REalloys Inc.",
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 16047,
-      "price": 6.85,
-      "change_pct": "+11.84%",
+      "tweet_volume": 13530,
+      "price": 119.89,
+      "change_pct": "-4.21%",
       "key_topics": [
-        "Market",
-        "Earnings",
-        "Squeeze"
+        "Elliottwave",
+        "Nem",
+        "Trading"
       ]
     }
   ]

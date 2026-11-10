@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsorship Screener</title>
+  <meta name="description" content="Institutional sponsorship screener: industry-group strength and fund sponsorship scores for US tech stocks. Personal research tool, not investment advice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #06080d;
+      --bg-surface: rgba(20, 25, 35, 0.55);
+      --bg-raised: rgba(30, 38, 52, 0.75);
+      --text-primary: #f5f5f5;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-primary: #2dd4bf;
+      --accent-secondary: #6366f1;
+      --pass: #10b981;
+      --partial: #f59e0b;
+      --fail: #ef4444;
+      --na: #475569;
+      --border-light: rgba(255, 255, 255, 0.07);
+      --border-strong: rgba(255, 255, 255, 0.14);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif; background-color: var(--bg-base); color: var(--text-primary);
+      min-height: 100vh; overflow-x: hidden; line-height: 1.5;
+    }
+    .ambient-glow {
+      position: fixed; width: 600px; height: 600px; top: -200px; right: -100px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(45,212,191,0.07) 0%, rgba(99,102,241,0.05) 40%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+    .container { max-width: 1320px; margin: 0 auto; padding: 2rem 1rem 4rem; position: relative; z-index: 1; }
+    @media (min-width: 768px) { .container { padding: 2rem 2rem 4rem; } }
+
+    header {
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap;
+      margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1.25rem;
+    }
+    header h1 {
+      font-family: 'Outfit', sans-serif; font-size: 1.75rem; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    header p { color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem; max-width: 640px; }
+    .nav-links { display: flex; gap: 1.25rem; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--accent-primary); }
+
+    .disclaimer {
+      background: rgba(245,158,11,0.07); border: 1px solid rgba(245,158,11,0.3); color: #fcd34d;
+      border-radius: 12px; padding: 0.75rem 1rem; font-size: 0.85rem; margin-bottom: 1.5rem;
+    }
+    .disclaimer strong { color: #fbbf24; }
+
+    .card {
+      background: var(--bg-surface); backdrop-filter: blur(12px); border: 1px solid var(--border-light);
+      border-radius: 16px; padding: 1.25rem;
+    }
+    .grid-top { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1rem; }
+    @media (min-width: 960px) { .grid-top { grid-template-columns: 1.1fr 1fr; } }
+    .label {
+      color: var(--text-secondary); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+      margin-bottom: 0.6rem; display: block;
+    }
+
+    .regime { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    .regime-pill {
+      font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem; padding: 0.3rem 0.9rem; border-radius: 999px;
+    }
+    .regime-pill.bull { color: var(--pass); background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.35); }
+    .regime-pill.pressure { color: var(--partial); background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.35); }
+    .regime-pill.bear { color: var(--fail); background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.35); }
+    .regime-detail { font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.6rem; }
+    .regime-detail b { color: var(--text-primary); font-weight: 600; }
+
+    .sources { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .chip {
+      font-size: 0.76rem; padding: 0.3rem 0.65rem; border-radius: 8px; border: 1px solid var(--border-light);
+      background: rgba(255,255,255,0.03); color: var(--text-secondary);
+    }
+    .chip b { color: var(--text-primary); font-weight: 600; }
+    .chip.stale { border-color: rgba(245,158,11,0.4); color: #fcd34d; }
+    .chip.stale b { color: #fde68a; }
+    .warn { font-size: 0.8rem; color: #fca5a5; margin-top: 0.6rem; }
+
+    .controls { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; margin-bottom: 1rem; }
+    .seg { display: inline-flex; border: 1px solid var(--border-strong); border-radius: 10px; overflow: hidden; }
+    .seg button {
+      background: transparent; color: var(--text-secondary); border: 0; padding: 0.45rem 0.85rem; font-size: 0.85rem;
+      font-weight: 600; cursor: pointer; font-family: inherit;
+    }
+    .seg button[aria-pressed="true"] { background: rgba(45,212,191,0.15); color: var(--accent-primary); }
+    .seg button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .toggle { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.85rem; color: var(--text-secondary); cursor: pointer; }
+    .toggle input[type="checkbox"] { accent-color: var(--accent-primary); width: 16px; height: 16px; }
+    .num-input {
+      width: 3.5rem; background: rgba(15,23,42,0.9); border: 1px solid var(--border-strong); color: var(--text-primary);
+      border-radius: 6px; padding: 0.2rem 0.35rem; font-size: 0.82rem; font-family: inherit;
+    }
+    .search {
+      background: rgba(15,23,42,0.9); border: 1px solid var(--border-strong); color: var(--text-primary); border-radius: 10px;
+      padding: 0.45rem 0.8rem; font-size: 0.88rem; min-width: 0; width: 180px; font-family: inherit;
+    }
+    .search:focus, .num-input:focus { outline: none; border-color: var(--accent-primary); }
+
+    details.panel { margin-bottom: 1rem; }
+    details.panel > summary {
+      cursor: pointer; list-style: none; font-weight: 600; font-size: 0.92rem; color: var(--text-primary);
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    details.panel > summary::-webkit-details-marker { display: none; }
+    details.panel > summary::before { content: '▸'; color: var(--accent-primary); transition: transform 0.15s; }
+    details.panel[open] > summary::before { transform: rotate(90deg); }
+    details.panel .body { margin-top: 1rem; }
+
+    .mini-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .mini-table th, .mini-table td { padding: 0.4rem 0.5rem; border-bottom: 1px solid var(--border-light); text-align: right; white-space: nowrap; }
+    .mini-table th:first-child, .mini-table td:first-child { text-align: left; }
+    .mini-table th { color: var(--text-secondary); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .mini-table td.pos { color: var(--pass); } .mini-table td.neg { color: var(--fail); }
+    .note { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; }
+
+    .groups-wrap { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media (min-width: 900px) { .groups-wrap { grid-template-columns: 1fr 1fr; } }
+    .etf-item { padding: 0.6rem 0; border-bottom: 1px solid var(--border-light); font-size: 0.84rem; }
+    .etf-item:last-child { border-bottom: 0; }
+    .etf-item .tag { font-size: 0.7rem; padding: 0.1rem 0.45rem; border-radius: 6px; margin-left: 0.35rem; }
+    .tag.ok { color: var(--pass); border: 1px solid rgba(16,185,129,0.35); }
+    .tag.no { color: var(--fail); border: 1px solid rgba(239,68,68,0.35); }
+    .muted { color: var(--text-muted); }
+
+    .table-scroll { overflow-x: auto; border-radius: 16px; border: 1px solid var(--border-light); background: var(--bg-surface); }
+    table.screener { border-collapse: collapse; width: 100%; min-width: 1180px; font-size: 0.84rem; }
+    table.screener th {
+      position: sticky; top: 0; background: #0d121b; color: var(--text-secondary); font-weight: 600; font-size: 0.72rem;
+      text-transform: uppercase; letter-spacing: 0.04em; padding: 0.7rem 0.55rem; text-align: left; border-bottom: 1px solid var(--border-strong);
+      white-space: nowrap;
+    }
+    table.screener th.num, table.screener td.num { text-align: right; }
+    table.screener td { padding: 0.65rem 0.55rem; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+    table.screener tr:hover td { background: rgba(255,255,255,0.02); }
+    table.screener tr.low-cov td { opacity: 0.5; }
+    .tkr { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1rem; }
+    .tkr-name { color: var(--text-secondary); font-size: 0.76rem; max-width: 190px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .grp { max-width: 170px; font-size: 0.8rem; }
+    .grp small { color: var(--text-secondary); display: block; }
+    .score { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.1rem; }
+    .score-bar { height: 4px; background: rgba(255,255,255,0.06); border-radius: 4px; margin-top: 4px; width: 64px; margin-left: auto; }
+    .score-bar span { display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary)); }
+    .met { font-weight: 600; }
+    .met small { color: var(--text-secondary); font-weight: 400; display: block; font-size: 0.72rem; }
+    .badges { display: flex; gap: 4px; }
+    .badge {
+      width: 30px; height: 26px; border-radius: 6px; font-size: 0.68rem; font-weight: 700; display: inline-flex; align-items: center;
+      justify-content: center; cursor: help; border: 1px solid transparent; background: transparent; font-family: inherit; color: inherit;
+    }
+    .badge.pass { color: var(--pass); background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.35); }
+    .badge.partial { color: var(--partial); background: rgba(245,158,11,0.12); border-color: rgba(245,158,11,0.35); }
+    .badge.fail { color: var(--fail); background: rgba(239,68,68,0.10); border-color: rgba(239,68,68,0.3); }
+    .badge.na { color: var(--text-muted); background: rgba(71,85,105,0.12); border-color: rgba(71,85,105,0.4); border-style: dashed; }
+    .badge:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 1px; }
+    .sym { font-size: 0.68rem; color: var(--fail); border: 1px solid rgba(239,68,68,0.4); border-radius: 6px; padding: 0 0.3rem; margin-left: 0.3rem; font-weight: 600; }
+    .sponsors { font-size: 0.76rem; color: var(--text-secondary); max-width: 230px; }
+    .sponsors div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sponsors b { color: var(--text-primary); font-weight: 600; }
+    .pos { color: var(--pass); } .neg { color: var(--fail); }
+    .uk { font-size: 0.75rem; color: var(--pass); }
+    .sent { font-size: 0.8rem; }
+    .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-size: 0.76rem; color: var(--text-secondary); margin: 0.75rem 0; }
+    .legend .badge { width: auto; padding: 0 0.4rem; height: 20px; cursor: default; }
+
+    #tooltip {
+      position: fixed; z-index: 50; max-width: 320px; background: #0f1623; border: 1px solid var(--border-strong);
+      border-radius: 10px; padding: 0.7rem 0.85rem; font-size: 0.78rem; box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      pointer-events: none; display: none;
+    }
+    #tooltip h4 { font-size: 0.82rem; margin-bottom: 0.35rem; }
+    #tooltip .row { display: flex; justify-content: space-between; gap: 1rem; color: var(--text-secondary); }
+    #tooltip .row span:last-child { color: var(--text-primary); text-align: right; }
+    .empty { padding: 3rem 1rem; text-align: center; color: var(--text-secondary); }
+    .skeleton { background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+      background-size: 200% 100%; animation: loading 1.5s infinite; border-radius: 12px; height: 240px; }
+    @keyframes loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Sponsorship Screener</h1>
+        <p>US-listed stocks ranked on industry-group strength and institutional sponsorship (CAN SLIM style), from free SEC 13F and N-PORT filings.</p>
+      </div>
+      <nav class="nav-links">
+        <a href="/trading/">← X-Sentiment</a>
+        <a href="/">Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="disclaimer">
+      <strong>Personal research tool, not investment advice.</strong>
+      Scores come from public filings that are weeks to months old, from free data that can be incomplete or wrong, and from rules that only approximate published methods. Do your own research before buying anything.
+    </div>
+
+    <main id="app"><div class="skeleton"></div></main>
+  </div>
+  <div id="tooltip" role="tooltip"></div>
+
+  <script>
+  (function () {
+    const IND = [
+      { key: 'group_strength', short: 'GRP', name: 'Industry group strength' },
+      { key: 'leader', short: 'LDR', name: 'Leader, not sympathy' },
+      { key: 'inst_trend', short: 'TRD', name: 'Rising institutional ownership' },
+      { key: 'added_owners', short: 'ADD', name: 'Added owners last quarter' },
+      { key: 'sponsor_quality', short: 'QLT', name: 'Sponsor quality' },
+      { key: 'growth_fund', short: 'GRW', name: 'Top-rated growth funds' },
+      { key: 'not_crowded', short: 'CRW', name: 'Not over-owned' },
+    ];
+    const RAW_LABELS = {
+      group: 'Group', rank: 'Group rank', of: 'of groups', percentile: 'Percentile', constituents: 'Stocks in group',
+      group_ret_3m_pct: 'Group 3m return %', group_ret_12m_pct: 'Group 12m return %',
+      group_rank: 'Rank in group', group_size: 'Group size', group_leader: 'Group leader', rs_rating: 'RS rating',
+      eps_q_growth_pct: 'EPS growth, latest Q %', eps_a_growth_pct: 'EPS growth, annual %', rev_q_growth_pct: 'Revenue growth, latest Q %',
+      sympathy: 'Sympathy stock', sym_corr_with_leader: 'Correlation with leader', sym_leader: 'Leader', sym_weaker_rs: 'Weaker RS',
+      sym_weaker_eps: 'Weaker EPS', sym_own_catalyst_days: 'Own catalyst days', sym_followed_leader_gaps: 'Gaps following leader',
+      increases_last4: 'Increases in last 4 Q', consecutive_increases: 'Consecutive increases', slope_pct_per_q: 'Trend %/quarter',
+      filer_adjusted: 'Adjusted for filer growth', net_new_holders: 'Net new holders', holders_change_pct: 'Holders change %',
+      shares_change_pct: 'Shares held change %', quarter: 'Quarter', active_fund_holders: 'Active funds holding',
+      quality_sponsors: 'Quality sponsors (holding/adding)', conviction_points: 'Conviction points',
+      top_rated_growth_funds: 'A/A-/B+ growth funds', grades: 'Grades', inst_ownership_pct: 'Institutional ownership %',
+      distribution_signal: 'Distribution signal', reason: 'Why n/a', quarters: 'Quarters of data',
+    };
+    const STORE_KEY = 'screener_prefs_v1';
+    let data = null, calib = null;
+    let prefs = { weightSet: 'default', techOnly: true, sentiment: false, sentimentWeight: 10, showLow: false, q: '' };
+
+    let hadPrefs = false;
+    function loadPrefs() {
+      try {
+        const s = localStorage.getItem(STORE_KEY);
+        if (s) { Object.assign(prefs, JSON.parse(s)); hadPrefs = true; }
+      } catch (e) {}
+    }
+    function savePrefs() { try { localStorage.setItem(STORE_KEY, JSON.stringify(prefs)); } catch (e) {} }
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v)) ? '—' : Number(v).toFixed(d);
+    const fmtCap = v => !v ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(2) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
+    const daysSince = d => Math.round((Date.now() - new Date(d + (d.length === 10 ? 'T00:00:00Z' : '')).getTime()) / 864e5);
+
+    async function getJSON(url) {
+      const r = await fetch(url + '?t=' + Math.floor(Date.now() / 3.6e6), { cache: 'no-store' });
+      if (!r.ok) throw new Error(url + ' ' + r.status);
+      return r.json();
+    }
+
+    // Same formula as scripts/screener/scoring.py: weighted mean over available indicators, minus sympathy penalty.
+    function composite(row, weights) {
+      let num = 0, den = 0, total = 0;
+      for (const ind of IND) {
+        const w = weights[ind.key] || 0; total += w;
+        const s = row.indicators[ind.key].score;
+        if (s !== null && s !== undefined) { num += w * s; den += w; }
+      }
+      if (prefs.sentiment) {
+        const w = Number(prefs.sentimentWeight) || 0; total += w;
+        const s = row.sentiment && row.sentiment.score;
+        if (s !== null && s !== undefined && w) { num += w * Math.max(0, Math.min(100, (s + 1) * 50)); den += w; }
+      }
+      if (!den) return { score: null, coverage: 0 };
+      let score = num / den - (row.sympathy ? data.sympathy_penalty : 0);
+      return { score: Math.max(0, Math.min(100, score)), coverage: Math.round(100 * den / total) };
+    }
+
+    function activeWeights() {
+      const sets = data.weights.active;
+      return sets[prefs.weightSet] || sets.default;
+    }
+
+    function regimeClass(r) { return r === 'Confirmed uptrend' ? 'bull' : r === 'Uptrend under pressure' ? 'pressure' : 'bear'; }
+
+    function renderTop() {
+      const reg = data.regime;
+      const idx = Object.entries(reg.indices).map(([k, s]) =>
+        `<div>${k === '^GSPC' ? 'S&amp;P 500' : 'NASDAQ'}: <b>${s.above_ma ? 'above' : 'below'}</b> its 200-day MA (${s.ma_rising ? 'rising' : 'falling'}), ${s.above_ma50 === undefined ? '' : (s.above_ma50 ? 'above' : '<b>below</b>') + ' its 50-day, '}<b>${s.distribution_days}</b> distribution days in 25 sessions</div>`).join('');
+      const corr = reg.regime === 'Correction';
+      const srcOrder = [['prices', 'Prices'], ['13f', '13F holdings'], ['nport', 'Fund holdings (N-PORT)'], ['fundamentals', 'EPS / revenue'], ['classification', 'Industry'], ['sentiment', 'Sentiment']];
+      const chips = srcOrder.filter(([k]) => data.sources[k]).map(([k, label]) => {
+        const s = data.sources[k];
+        const age = daysSince(s.as_of);
+        const stale = (k === '13f' || k === 'nport') ? age > 75 : age > 4;
+        const ageTxt = (k === '13f' || k === 'nport') ? `quarter ended ${esc(s.as_of)} · ${age}d old` : esc(s.as_of);
+        return `<span class="chip ${stale ? 'stale' : ''}" title="${esc(s.source + (s.note ? ' — ' + s.note : ''))}">${label}: <b>${ageTxt}</b></span>`;
+      }).join('');
+      const warns = (data.warnings || []).map(w => `<div class="warn">⚠ ${esc(w)}</div>`).join('');
+      return `
+        <div class="grid-top">
+          <section class="card">
+            <span class="label">Market regime · as of ${esc(reg.as_of)}</span>
+            <div class="regime"><span class="regime-pill ${regimeClass(reg.regime)}">${esc(reg.regime)}</span></div>
+            <div class="regime-detail">${idx}
+              <div style="margin-top:0.4rem">${corr
+                ? 'Correction regime: <b>top-rated growth fund</b> weight is cut to ~0 and moved to group strength and sponsor quality.'
+                : 'Bull regime: all seven indicators carry their normal weights.'}</div>
+            </div>
+          </section>
+          <section class="card">
+            <span class="label">Data as of (hover for source)</span>
+            <div class="sources">${chips}</div>
+            <div class="note">13F holdings are filed up to 45 days after quarter end and N-PORT fund holdings ~60 days after, then SEC publishes them quarterly, so sponsorship data is always one to several months old.</div>
+            ${warns}
+          </section>
+        </div>`;
+    }
+
+    function renderWeightsPanel() {
+      const base = data.weights.base, act = data.weights.active;
+      const hasCal = !!base.calibrated;
+      const ic = calib && calib.avg_ic ? calib.avg_ic : null;
+      const rows = IND.map(i => `<tr><td>${i.name}</td>
+          <td>${fmt(base.default[i.key], 0)}</td><td>${fmt(act.default[i.key], 1)}</td>
+          <td>${hasCal ? fmt(base.calibrated[i.key], 0) : '—'}</td>
+          <td>${ic && ic[i.key] !== null && ic[i.key] !== undefined ? fmt(ic[i.key], 3) : '—'}</td></tr>`).join('');
+      let oos = '';
+      if (calib && calib.horizons) {
+        oos = Object.entries(calib.horizons).filter(([, h]) => h.oos_summary).map(([n, h]) => {
+          const s = h.oos_summary;
+          return `<div>${n}: out-of-sample composite IC <b>${fmt(s.mean_ic_calibrated, 3)}</b> calibrated vs <b>${fmt(s.mean_ic_default, 3)}</b> default over ${s.test_dates} quarters; top-decile excess vs ${esc(calib.benchmark)} ${fmt(s.mean_top_decile_excess_calibrated_pct)}% vs ${fmt(s.mean_top_decile_excess_default_pct)}%.</div>`;
+        }).join('');
+      }
+      return `
+        <details class="panel card">
+          <summary>Weights &amp; calibration</summary>
+          <div class="body">
+            <div style="overflow-x:auto"><table class="mini-table">
+              <thead><tr><th>Indicator</th><th>Default</th><th>Default, regime-adjusted</th><th>Calibrated</th><th>Avg IC</th></tr></thead>
+              <tbody>${rows}</tbody>
+            </table></div>
+            <div class="note">${hasCal
+              ? `Calibrated weights blend 50/50 the defaults with weights implied by each indicator's historical information coefficient (rank correlation with forward 3- and 6-month returns vs QQQ), computed with only data available at each past quarter-end. ${calib ? `Calibration run ${esc((calib.generated_at || '').slice(0, 10))}, ${calib.n_dates} quarter-ends (${esc(calib.dates[0])} to ${esc(calib.dates[1])}).` : ''}`
+              : 'No calibration run yet: run the "Calibrate Screener Weights" workflow to produce calibrated weights.'}
+              ${oos ? '<div style="margin-top:0.5rem">' + oos + '</div>' : ''}
+              ${calib && calib.caveats ? '<ul style="margin:0.5rem 0 0 1.1rem">' + calib.caveats.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul>' : ''}
+            </div>
+          </div>
+        </details>`;
+    }
+
+    function renderGroupsPanel() {
+      const groups = data.top_groups.slice(0, 15).map(g => `<tr><td>${esc(g.group)}</td><td>${g.rank}/${g.of}</td><td>${g.n}</td>
+        <td class="${g.ret_3m_pct >= 0 ? 'pos' : 'neg'}">${fmt(g.ret_3m_pct)}%</td></tr>`).join('');
+      const route = e => e.uk_buyable
+        ? `<span class="tag ok">UK-buyable</span><div class="muted" style="margin-top:0.2rem">${e.ucits.map(u => `${esc(u.lse)} · ${esc(u.name)} <span class="muted">(${esc(u.isin)})</span>`).join('<br>')}${e.match === 'close' ? '<br><i>Close match: different index, same theme.</i>' : ''}</div>`
+        : `<span class="tag no">${esc(e.note)}</span>${e.closest ? `<div class="muted" style="margin-top:0.2rem">Closest UCITS: ${esc(e.closest)}</div>` : ''}`;
+      const etfs = (data.etf_signals.length ? data.etf_signals : []).map(e =>
+        `<div class="etf-item"><b>${esc(e.group)}</b> <span class="muted">#${e.rank}/${e.of}</span> → US ETF <b>${esc(e.us_etf)}</b> ${route(e)}</div>`).join('')
+        || '<div class="note">No tech/communication group is in the top 20% right now.</div>';
+      const broad = data.broad_market_ucits.map(e => `<div class="etf-item"><b>${esc(e.us_etf)}</b> ${route(e)}</div>`).join('');
+      return `
+        <details class="panel card">
+          <summary>Strongest industry groups &amp; UK ETF routes</summary>
+          <div class="body groups-wrap">
+            <div style="overflow-x:auto"><table class="mini-table"><thead><tr><th>Group (all sectors)</th><th>Rank</th><th>Stocks</th><th>3m</th></tr></thead><tbody>${groups}</tbody></table></div>
+            <div>
+              <span class="label">Strong tech groups → UCITS equivalent</span>${etfs}
+              <span class="label" style="margin-top:1rem">Broad market</span>${broad}
+              <div class="note">US-domiciled ETFs generally can't be bought by UK retail investors (no UK key information document). Mappings checked ${esc(data.ucits_verified_on)}; confirm the share class with your broker.</div>
+            </div>
+          </div>
+        </details>`;
+    }
+
+    function renderControls() {
+      const hasCal = !!data.weights.active.calibrated;
+      return `
+        <div class="controls">
+          <div class="seg" role="group" aria-label="Weight set">
+            <button data-ws="default" aria-pressed="${prefs.weightSet === 'default'}">Default weights</button>
+            <button data-ws="calibrated" aria-pressed="${prefs.weightSet === 'calibrated'}" ${hasCal ? '' : 'disabled title="Run the calibration workflow first"'}>Calibrated</button>
+          </div>
+          <label class="toggle"><input type="checkbox" id="techOnly" ${prefs.techOnly ? 'checked' : ''}> Tech &amp; communication only</label>
+          <label class="toggle"><input type="checkbox" id="sentOn" ${prefs.sentiment ? 'checked' : ''}> Add social sentiment as 8th factor, weight
+            <input class="num-input" type="number" id="sentW" min="0" max="50" value="${prefs.sentimentWeight}"></label>
+          <label class="toggle"><input type="checkbox" id="showLow" ${prefs.showLow ? 'checked' : ''}> Show low-coverage rows</label>
+          <input class="search" id="q" type="search" placeholder="Filter ticker / group" value="${esc(prefs.q)}">
+        </div>
+        <div class="legend">
+          <span><span class="badge pass">✓</span> pass</span><span><span class="badge partial">~</span> partial</span>
+          <span><span class="badge fail">✗</span> fail</span><span><span class="badge na">n/a</span> no data (excluded, not 0)</span>
+          <span>Badges: ${IND.map(i => `<b>${i.short}</b> ${i.name.toLowerCase()}`).join(' · ')}</span>
+        </div>`;
+    }
+
+    function rowsView() {
+      const w = activeWeights();
+      const tech = new Set(data.tech_sectors);
+      const q = (prefs.q || '').trim().toLowerCase();
+      let rows = data.rows.map(r => ({ r, c: composite(r, w) }));
+      if (prefs.techOnly) rows = rows.filter(x => tech.has(x.r.sector));
+      if (q) rows = rows.filter(x => x.r.ticker.toLowerCase().includes(q) || (x.r.group || '').toLowerCase().includes(q) || (x.r.name || '').toLowerCase().includes(q));
+      const minCov = data.min_coverage_pct;
+      if (!prefs.showLow) rows = rows.filter(x => x.c.coverage >= minCov);
+      rows.sort((a, b) => ((b.c.coverage >= minCov) - (a.c.coverage >= minCov)) || ((b.c.score ?? -1) - (a.c.score ?? -1)));
+      return rows.slice(0, 60);
+    }
+
+    function badge(row, ind) {
+      const d = row.indicators[ind.key];
+      const cls = d.status === 'n/a' ? 'na' : d.status;
+      const sym = d.status === 'pass' ? '✓' : d.status === 'partial' ? '~' : d.status === 'fail' ? '✗' : 'n/a';
+      return `<button class="badge ${cls}" data-t="${esc(row.ticker)}" data-k="${ind.key}" aria-label="${esc(ind.name)}: ${esc(d.status)}">${sym}</button>`;
+    }
+
+    function renderTable() {
+      const view = rowsView();
+      if (!view.length) {
+        const hidden = !prefs.showLow && data.rows.length;
+        return `<div class="table-scroll"><div class="empty">No stocks match these filters${data.rows.length ? '' : ' yet: the data pipeline has not produced results'}.
+          ${hidden ? `<br>Rows need at least ${data.min_coverage_pct}% of the indicator weight to have data. If the holdings data hasn't loaded yet (see warnings above), turn on "Show low-coverage rows".` : ''}</div></div>`;
+      }
+      const body = view.map(({ r, c }, i) => {
+        const met = IND.filter(x => r.indicators[x.key].status === 'pass').length;
+        const part = IND.filter(x => r.indicators[x.key].status === 'partial').length;
+        const na = IND.filter(x => r.indicators[x.key].status === 'n/a').length;
+        const sp = (r.top_sponsors || []).slice(0, 3).map(s => `<div title="${esc(s.name)}"><b>${esc(s.grade || '—')}</b> ${esc(s.name)} <span class="muted">${s.position_pct != null ? fmt(s.position_pct, 2) + '%' : ''}${s.new ? ' · new' : ''}</span></div>`).join('') || '<span class="muted">—</span>';
+        const hc = r.holder_change;
+        const sent = r.sentiment ? `<span class="${r.sentiment.score >= 0.1 ? 'pos' : r.sentiment.score <= -0.1 ? 'neg' : ''}">${r.sentiment.score > 0 ? '+' : ''}${fmt(r.sentiment.score, 2)}</span> <span class="muted">${esc(r.sentiment.label || '')}</span>` : '<span class="muted">—</span>';
+        return `<tr class="${c.coverage < data.min_coverage_pct ? 'low-cov' : ''}">
+          <td class="num muted">${i + 1}</td>
+          <td><div class="tkr">${esc(r.ticker)}${r.sympathy ? '<span class="sym" title="Moves with the group leader without its own catalyst">sympathy</span>' : ''}</div>
+              <div class="tkr-name" title="${esc(r.name)}">${esc(r.name)}</div>
+              <div class="muted" style="font-size:0.72rem">$${fmt(r.price, 2)} · ${fmtCap(r.market_cap)} · RS ${r.rs_rating ?? '—'}</div></td>
+          <td class="grp">${esc(r.group || '—')}<small>${r.group_rank ? `#${r.group_rank} of ${r.group_of} groups` : 'unranked'}</small></td>
+          <td class="num"><div class="score">${fmt(c.score, 0)}</div><div class="score-bar"><span style="width:${Math.max(0, c.score || 0)}%"></span></div>
+              <div class="muted" style="font-size:0.7rem">coverage ${c.coverage}%</div></td>
+          <td class="met">${met}/7<small>${part} partial${na ? ' · ' + na + ' n/a' : ''}</small></td>
+          <td><div class="badges">${IND.map(ind => badge(r, ind)).join('')}</div></td>
+          <td class="sponsors">${sp}</td>
+          <td class="num">${hc == null ? '<span class="muted">—</span>' : `<span class="${hc >= 0 ? 'pos' : 'neg'}">${hc > 0 ? '+' : ''}${hc}</span><div class="muted" style="font-size:0.72rem">${fmt(r.holder_change_pct)}%</div>`}</td>
+          <td class="uk" title="${esc(r.uk_note)}">${r.uk_buyable ? 'Yes' : '<span class="neg">No</span>'}</td>
+          <td class="sent">${sent}</td>
+        </tr>`;
+      }).join('');
+      return `<div class="table-scroll"><table class="screener">
+        <thead><tr><th class="num">#</th><th>Stock</th><th>Industry group</th><th class="num">Composite</th><th>Criteria met</th>
+          <th>${IND.map(i => i.short).join(' · ')}</th><th>Top quality sponsors</th><th class="num">Holders Δ (last Q)</th><th>UK</th><th>Social sentiment</th></tr></thead>
+        <tbody>${body}</tbody></table></div>
+        <div class="note">Composite = weighted average of the available indicator scores (0–100), minus ${data.sympathy_penalty} points for sympathy stocks. Missing indicators are left out and the weights rescaled; rows under ${data.min_coverage_pct}% weight coverage are hidden unless "Show low-coverage rows" is on. Social sentiment is shown separately and only counts if the 8th-factor toggle is on. Universe: ${data.universe.liquid} liquid stocks out of ${data.universe.listed} listed (price ≥ $${data.universe.floors.min_price}, market cap ≥ $${data.universe.floors.min_market_cap / 1e9}B, 50-day dollar volume ≥ $${data.universe.floors.min_avg_dollar_volume_50d / 1e6}M). Generated ${esc(new Date(data.generated_at).toLocaleString())}.</div>`;
+    }
+
+    function render() {
+      const app = document.getElementById('app');
+      app.innerHTML = renderTop() + renderWeightsPanel() + renderGroupsPanel() + renderControls() + '<div id="tableArea">' + renderTable() + '</div>';
+      wire();
+    }
+    function rerenderTable() { document.getElementById('tableArea').innerHTML = renderTable(); }
+
+    function wire() {
+      document.querySelectorAll('[data-ws]').forEach(b => b.addEventListener('click', () => {
+        prefs.weightSet = b.dataset.ws; savePrefs();
+        document.querySelectorAll('[data-ws]').forEach(x => x.setAttribute('aria-pressed', x.dataset.ws === prefs.weightSet));
+        rerenderTable();
+      }));
+      const on = (id, ev, fn) => document.getElementById(id).addEventListener(ev, fn);
+      on('techOnly', 'change', e => { prefs.techOnly = e.target.checked; savePrefs(); rerenderTable(); });
+      on('sentOn', 'change', e => { prefs.sentiment = e.target.checked; savePrefs(); rerenderTable(); });
+      on('sentW', 'input', e => { prefs.sentimentWeight = Math.max(0, Math.min(50, Number(e.target.value) || 0)); savePrefs(); if (prefs.sentiment) rerenderTable(); });
+      on('showLow', 'change', e => { prefs.showLow = e.target.checked; savePrefs(); rerenderTable(); });
+      on('q', 'input', e => { prefs.q = e.target.value; savePrefs(); rerenderTable(); });
+    }
+
+    // ---- tooltip (hover on desktop, tap on touch) ----
+    const tip = document.getElementById('tooltip');
+    function showTip(el) {
+      const row = data.rows.find(r => r.ticker === el.dataset.t);
+      const ind = IND.find(i => i.key === el.dataset.k);
+      if (!row || !ind) return;
+      const d = row.indicators[ind.key];
+      const w = activeWeights()[ind.key];
+      const lines = Object.entries(d.raw || {}).filter(([k, v]) => v !== null && v !== '' && k !== 'holders_by_quarter').map(([k, v]) =>
+        `<div class="row"><span>${esc(RAW_LABELS[k] || k)}</span><span>${typeof v === 'number' ? (Number.isInteger(v) ? v : v.toFixed(2)) : esc(typeof v === 'boolean' ? (v ? 'yes' : 'no') : v)}</span></div>`).join('');
+      const hist = d.raw && d.raw.holders_by_quarter ? '<div style="margin-top:0.35rem;color:var(--text-secondary)">Holders by quarter: ' +
+        Object.entries(d.raw.holders_by_quarter).map(([q, n]) => `${esc(q.slice(0, 7))}: <b style="color:var(--text-primary)">${n}</b>`).join(', ') + '</div>' : '';
+      tip.innerHTML = `<h4>${esc(row.ticker)} · ${esc(ind.name)}</h4>
+        <div class="row"><span>Score</span><span>${d.score === null ? 'n/a' : fmt(d.score, 0) + ' / 100'} (${esc(d.status)})</span></div>
+        <div class="row"><span>Weight now</span><span>${fmt(w, 1)}</span></div>${lines}${hist}`;
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      let x = Math.min(window.innerWidth - tw - 8, Math.max(8, r.left + r.width / 2 - tw / 2));
+      let y = r.bottom + 8;
+      if (y + th > window.innerHeight - 8) y = r.top - th - 8;
+      tip.style.left = x + 'px'; tip.style.top = Math.max(8, y) + 'px';
+    }
+    function hideTip() { tip.style.display = 'none'; }
+    document.addEventListener('mouseover', e => { const b = e.target.closest('.badge[data-k]'); if (b) showTip(b); });
+    document.addEventListener('mouseout', e => { if (e.target.closest('.badge[data-k]')) hideTip(); });
+    document.addEventListener('focusin', e => { const b = e.target.closest('.badge[data-k]'); if (b) showTip(b); });
+    document.addEventListener('focusout', hideTip);
+    document.addEventListener('click', e => { const b = e.target.closest('.badge[data-k]'); if (b) showTip(b); else hideTip(); });
+    window.addEventListener('scroll', hideTip, { passive: true });
+
+    async function init() {
+      loadPrefs();
+      try {
+        data = await getJSON('./screener.json');
+      } catch (e) {
+        document.getElementById('app').innerHTML = '<div class="card empty">The screener data hasn\'t been generated yet. It is produced by the daily "Sponsorship Screener" GitHub Actions workflow.</div>';
+        return;
+      }
+      try { calib = await getJSON('./calibration.json'); } catch (e) { calib = null; }
+      if (!data.weights.active[prefs.weightSet]) prefs.weightSet = 'default';
+      if (!hadPrefs) {
+        prefs.techOnly = data.tech_only_default;
+        prefs.sentiment = data.weights.sentiment.enabled_default;
+        prefs.sentimentWeight = data.weights.sentiment.weight;
+      }
+      render();
+    }
+    init();
+  })();
+  </script>
+</body>
+</html>

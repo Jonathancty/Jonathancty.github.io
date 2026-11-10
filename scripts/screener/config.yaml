@@ -1,0 +1,155 @@
+# Institutional Sponsorship Screener: every threshold and weight lives here.
+# Personal research tool, not investment advice.
+
+paths:
+  cache_dir: _screener_cache          # committed, small (leading "_" keeps Jekyll from publishing it)
+  hist_dir: _screener_hist            # large intermediates; kept in the GitHub Actions cache, never committed
+  output_dir: trading/screener        # what the web page reads
+
+universe:
+  exchanges: [NASDAQ, NYSE]           # NYSE American / Arca / Cboe / OTC are excluded
+  include_adrs: true                  # US-listed ADRs of foreign companies (e.g. TSM, ASML)
+  min_price: 10.0
+  min_market_cap: 1000000000      # $1B
+  min_avg_dollar_volume_50d: 20000000   # $20M
+  tech_sectors: [Technology, Communication Services]
+  tech_only_default: true             # the page toggle starts in this state
+  info_refresh_days: 30               # yfinance sector/industry/market-cap cache lifetime
+  info_max_refresh_per_run: 2500     # first run classifies everything (~25 min); later runs only refresh stale entries
+
+relative_strength:
+  # IBD-style weighting: 40% last 3 months, 20% each for the 6/9/12-month windows
+  windows_days: [63, 126, 189, 252]
+  weights: [0.4, 0.2, 0.2, 0.2]
+
+weights:                              # default weights (sum to 100)
+  group_strength: 20
+  leader: 15
+  inst_trend: 20
+  added_owners: 10
+  sponsor_quality: 20
+  growth_fund: 10
+  not_crowded: 5
+
+sentiment_factor:
+  enabled_default: false              # social sentiment is NOT in the composite unless toggled on
+  weight: 10
+  top_n_to_score: 25                  # run the StockTwits sentiment scan for this many top screener names
+
+composite:
+  sympathy_penalty: 15                # points subtracted from the composite for sympathy stocks
+  min_coverage_pct: 50                # rows with less indicator weight available are listed but greyed out
+  top_n_output: 60
+
+indicators:
+  group_strength:
+    pass_percentile: 80               # top 20% of groups
+    partial_percentile: 60            # top 40% of groups
+    min_group_size: 3
+
+  leader:
+    top_n_per_group: 3
+    # within-group ranking blend
+    rank_weights: {rs: 0.4, eps_q: 0.25, eps_a: 0.15, rev_q: 0.2}
+    partial_within_group_percentile: 60
+    sympathy:
+      corr_window_days: 60
+      min_corr: 0.70
+      rs_gap: 10                      # RS rating points below the leader
+      catalyst_gap_pct: 4.0           # own catalyst = gap >= 4% ...
+      catalyst_volume_mult: 1.5       # ... on >= 1.5x 50-day average volume
+      catalyst_lookback_days: 60
+      leader_gap_window_days: 1       # a gap within +/-1 day of the leader's gap is "following"
+      leader_score_cap: 20
+
+  inst_trend:
+    lookback_quarters: 6
+    adjust_for_filer_growth: true     # rescale counts to the latest quarter's 13F filer population
+    pass_min_increases_of_last4: 3
+    partial_min_increases_of_last4: 2
+    slope_full_score_pct_per_q: 5.0   # +5%/quarter holder growth = full slope score
+    blend: {increases: 0.45, consecutive: 0.2, slope: 0.35}
+
+  added_owners:
+    # score = mean of cross-sectional percentiles of (% change in holders, % change in shares)
+    pass_requires_both_positive: true
+
+  sponsor_quality:
+    min_quality_sponsors_pass: 3
+    min_quality_sponsors_partial: 1
+    above_average_percentile: 50      # on BOTH 12m and 3y annualised return vs peers
+    full_score_points: 15             # conviction points needed for a 100 score
+    conviction_cap_pct: 3.0           # position % of fund net assets counted up to this
+    min_fund_holdings: 20
+    min_equity_pct: 80
+
+  growth_fund:
+    good_grades: [A+, A, A-, B+]
+    min_funds_pass: 3
+    min_funds_partial: 1
+    full_score_points: 10
+    # rating input = weighted annual returns of the last 36 months, recent year weighted most
+    year_weights: [0.5, 0.25, 0.25]
+    grade_cutoffs:                    # percentile >= cutoff gets the grade (checked top-down)
+      - [A+, 95]
+      - [A, 90]
+      - [A-, 85]
+      - [B+, 80]
+      - [B, 75]
+      - [B-, 70]
+      - [C+, 65]
+      - [C, 60]
+      - [C-, 55]
+      - [D+, 50]
+      - [D, 45]
+      - [D-, 40]
+      - [E, 0]
+    growth_name_regex: "growth|opportunit|aggressive|innovat|technolog|discovery|emerging|momentum|leaders|select|focus|disciplined"
+    exclude_name_regex: "value|income|dividend|bond|municipal|treasury|balanced|allocation|retirement|target"
+
+  not_crowded:
+    full_score_max_pct: 80            # institutional ownership % of shares at or below this = 100
+    crowded_pct: 90                   # spec threshold; score falls to 30 here ...
+    zero_score_pct: 100               # ... and to 0 here
+    distribution_drop_pct: -3.0       # a holder drop of >= 3% ...
+    distribution_prior_increases: 3   # ... after >= 3 consecutive increases = distribution signal
+    distribution_penalty: 50
+
+funds:
+  index_name_regex: "index|\\betf\\b|s&p ?500|s&p ?midcap|s&p ?smallcap|russell|msci|ftse|nasdaq[- ]?100|total (stock )?market|crsp|wilshire|\\bspdr\\b|ishares|vanguard extended"
+  min_months_for_rating: 36
+
+regime:
+  ma_days: 200
+  ma_rising_lookback: 20
+  short_ma_days: 50                  # heavy distribution only means "correction" once an index loses this MA
+  distribution_window: 25
+  distribution_min_drop_pct: 0.2
+  distribution_expiry_rally_pct: 5.0  # a distribution day expires once the index rallies 5% above it
+  pressure_distribution_days: 5
+  correction_distribution_days: 7    # ...and an index below its 50-day MA => correction; otherwise "under pressure"
+  # in a correction/bear regime, growth_fund drops to this weight; the rest moves to these indicators
+  correction_growth_fund_weight: 1
+  redistribute_to: {group_strength: 0.5, sponsor_quality: 0.5}
+
+calibration:
+  horizons_days: {"3m": 63, "6m": 126}
+  benchmark: QQQ
+  min_train_dates: 8
+  blend_with_default: 0.5
+  start_date: "2014-12-31"
+  min_stocks_per_date: 30
+  tech_only: true                     # calibrate on the tech universe the screener defaults to
+
+sec:
+  user_agent_env: SEC_CONTACT_EMAIL   # GitHub Actions secret; SEC requires a contact in the User-Agent
+  app_name: "jonathan-chan.net sponsorship-screener"
+  max_requests_per_second: 8          # SEC's limit is 10/s
+  datasets_13f_page: https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets
+  datasets_nport_page: https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets
+  history_13f_quarters: 12            # quarters of 13F holder counts kept for the live screener
+
+openfigi:
+  api_key_env: OPENFIGI_API_KEY       # optional; raises the free rate limit
+  max_lookups_per_run: 2500
+  min_holders_to_lookup: 30

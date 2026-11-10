@@ -1,0 +1,67 @@
+name: Calibrate Screener Weights
+
+# Backfills every SEC 13F (2013+) and N-PORT (2019+) data set, then runs the point-in-time
+# calibration. The first backfill downloads several GB and can take hours; progress is saved
+# to the Actions cache and the repo even if the job times out, so re-running resumes it.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 15 1,4,7,10 *'   # quarterly, after each 13F season
+
+concurrency:
+  group: screener
+  cancel-in-progress: false
+
+jobs:
+  calibrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: scripts/screener/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/screener/requirements.txt
+
+      - name: Restore large intermediates
+        uses: actions/cache/restore@v4
+        with:
+          path: _screener_hist
+          key: screener-hist-${{ github.run_id }}
+          restore-keys: screener-hist-
+
+      - name: Backfill all holdings history
+        timeout-minutes: 280
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+        run: python -m scripts.screener.refresh_holdings --history
+
+      - name: Run calibration
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: python -m scripts.screener.calibrate
+
+      - name: Save large intermediates
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: _screener_hist
+          key: screener-hist-${{ github.run_id }}
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add _screener_cache trading/screener/calibration.json scripts/screener/CALIBRATION.md
+          git commit -m "Screener calibration report 📊" || { echo "No changes"; exit 0; }
+          git pull --rebase --autostash
+          git push

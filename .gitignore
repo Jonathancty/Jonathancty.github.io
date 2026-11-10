@@ -1,0 +1,5 @@
+# Sponsorship screener: large SEC intermediates live in the GitHub Actions cache, not the repo
+_screener_hist/
+.pytest_cache/
+scripts/screener/**/__pycache__/
+scripts/screener/__pycache__/

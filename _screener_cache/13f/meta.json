@@ -1,0 +1,71 @@
+{
+ "periods": {
+  "2023-06-30": {
+   "dataset": "2023q3_form13f.zip",
+   "n_filers": 6828
+  },
+  "2023-09-30": {
+   "dataset": "2023q4_form13f.zip",
+   "n_filers": 6863
+  },
+  "2023-12-31": {
+   "dataset": "01jan2024-29feb2024_form13f.zip",
+   "n_filers": 7113
+  },
+  "2024-03-31": {
+   "dataset": "01mar2024-31may2024_form13f.zip",
+   "n_filers": 7170
+  },
+  "2024-06-30": {
+   "dataset": "01jun2024-31aug2024_form13f.zip",
+   "n_filers": 7226
+  },
+  "2024-09-30": {
+   "dataset": "01sep2024-30nov2024_form13f.zip",
+   "n_filers": 7264
+  },
+  "2024-12-31": {
+   "dataset": "01dec2024-28feb2025_form13f.zip",
+   "n_filers": 7733
+  },
+  "2025-03-31": {
+   "dataset": "01mar2025-31may2025_form13f.zip",
+   "n_filers": 7904
+  },
+  "2025-06-30": {
+   "dataset": "01jun2025-31aug2025_form13f.zip",
+   "n_filers": 7949
+  },
+  "2025-09-30": {
+   "dataset": "01sep2025-30nov2025_form13f.zip",
+   "n_filers": 7906
+  },
+  "2025-12-31": {
+   "dataset": "01dec2025-28feb2026_form13f.zip",
+   "n_filers": 8382
+  },
+  "2026-03-31": {
+   "dataset": "01mar2026-31may2026_form13f.zip",
+   "n_filers": 8649
+  },
+  "2026-06-30": {
+   "dataset": "01jun2026-31aug2026_form13f.zip",
+   "n_filers": 8771
+  }
+ },
+ "processed_datasets": [
+  "01dec2024-28feb2025_form13f.zip",
+  "01dec2025-28feb2026_form13f.zip",
+  "01jan2024-29feb2024_form13f.zip",
+  "01jun2024-31aug2024_form13f.zip",
+  "01jun2025-31aug2025_form13f.zip",
+  "01jun2026-31aug2026_form13f.zip",
+  "01mar2024-31may2024_form13f.zip",
+  "01mar2025-31may2025_form13f.zip",
+  "01mar2026-31may2026_form13f.zip",
+  "01sep2024-30nov2024_form13f.zip",
+  "01sep2025-30nov2025_form13f.zip",
+  "2023q3_form13f.zip",
+  "2023q4_form13f.zip"
+ ]
+}

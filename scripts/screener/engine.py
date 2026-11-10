@@ -79,6 +79,12 @@ def score_universe(ctx, cfg, as_of=None):
     have_holdings = ctx.sponsors is not None
     lookback = cfg["indicators"]["inst_trend"]["lookback_quarters"]
 
+    # sponsor indicators are scored relative to the universe (see the indicator modules)
+    srows = {t: sponsor_row(ctx, t) for t in tickers}
+    mapped_t = [t for t in tickers if ctx.ticker_cusips.get(t)]
+    sq_pct = sponsor_quality.cross_section({t: srows[t] for t in mapped_t}) if have_holdings else {}
+    gf_pct = growth_fund.cross_section({t: srows[t] for t in mapped_t}) if have_holdings else {}
+
     out = {}
     opens = ctx.opens.loc[:as_of]
     vols = ctx.volumes.loc[:as_of]
@@ -89,10 +95,10 @@ def score_universe(ctx, cfg, as_of=None):
         h = holders[t].dropna() if t in holders else pd.Series(dtype=float)
         res["inst_trend"] = inst_trend.compute(h.tail(lookback), ctx.n_filers, cfg) if len(h) else na("no 13F mapping for ticker")
         res["added_owners"] = added.get(t) or na("no 13F mapping for ticker")
-        srow = sponsor_row(ctx, t)
+        srow = srows[t]
         mapped = bool(ctx.ticker_cusips.get(t))
-        res["sponsor_quality"] = sponsor_quality.compute(srow, cfg, have_holdings and mapped)
-        res["growth_fund"] = growth_fund.compute(srow, cfg, have_holdings and mapped)
+        res["sponsor_quality"] = sponsor_quality.compute(srow, cfg, have_holdings and mapped, pct=sq_pct.get(t))
+        res["growth_fund"] = growth_fund.compute(srow, cfg, have_holdings and mapped, pct=gf_pct.get(t))
         ipct = ctx.inst_pct.get(t)
         if ipct is None and t in ctx.values and len(ctx.values[t].dropna()):
             mc = ctx.market_caps.get(t)

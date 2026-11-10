@@ -76,6 +76,25 @@ def test_growth_fund_indicator(cfg, fund_fixture):
     assert res.status in ("pass", "partial")
 
 
+def test_sponsor_scores_are_relative_and_do_not_saturate(cfg):
+    """Large caps with hundreds of quality sponsors must still be distinguishable."""
+    def m(nq, holders, pts, ng, gpts):
+        return pd.Series({"n_quality": nq, "n_active_holders": holders, "quality_points": pts,
+                          "n_good_growth": ng, "growth_points": gpts, "growth_grades": ""})
+    rows = {"BIG_BROAD": m(200, 1000, 300.0, 30, 45.0),     # many sponsors, low quality share
+            "FOCUSED": m(120, 200, 200.0, 25, 40.0),       # fewer but high-quality holders
+            "THIN": m(2, 40, 3.0, 0, 0.0),
+            "NONE": None}
+    sq = sponsor_quality.cross_section(rows)
+    gf = growth_fund.cross_section(rows)
+    s = {t: sponsor_quality.compute(rows[t], cfg, pct=sq[t]) for t in rows}
+    assert s["BIG_BROAD"].score < 100 and s["FOCUSED"].score < 100
+    assert s["FOCUSED"].score > s["THIN"].score > s["NONE"].score == 0
+    assert s["BIG_BROAD"].status == "pass" and s["THIN"].status == "partial"
+    g = {t: growth_fund.compute(rows[t], cfg, pct=gf[t]) for t in rows}
+    assert g["THIN"].score == 0 and g["BIG_BROAD"].score == 100 and g["FOCUSED"].score < 100
+
+
 def test_unheld_stock_scores_zero_but_missing_data_is_na(cfg):
     assert sponsor_quality.compute(None, cfg).score == 0.0
     assert sponsor_quality.compute(None, cfg, holdings_available=False).status == "n/a"

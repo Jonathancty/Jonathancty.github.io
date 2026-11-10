@@ -78,7 +78,8 @@ indicators:
     min_quality_sponsors_pass: 3
     min_quality_sponsors_partial: 1
     above_average_percentile: 50      # on BOTH 12m and 3y annualised return vs peers
-    full_score_points: 15             # conviction points needed for a 100 score
+    full_score_points: 15             # fallback absolute scale (the live score is a universe percentile)
+    score_blend_points: 0.5           # score = 50% percentile of conviction points + 50% percentile of quality share
     conviction_cap_pct: 3.0           # position % of fund net assets counted up to this
     min_fund_holdings: 20
     min_equity_pct: 80

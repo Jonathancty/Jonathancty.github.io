@@ -46,6 +46,20 @@ def load_json(path, default=None):
         return default
 
 
+def load_fundamentals(client, tickers, now, frames_dir):
+    """ticker -> eps_q_growth, eps_a_growth, rev_q_growth (point-in-time as of `now`)."""
+    now = pd.Timestamp(now)
+    if now.tzinfo is not None:
+        now = now.tz_localize(None)
+    labels = fundamentals.period_labels(now.year - 3, now)
+    fundamentals.fetch_frames(client, frames_dir, labels)
+    table = fundamentals.build_table(frames_dir, labels)
+    cik_map = company_tickers(client)
+    g = fundamentals.growth_as_of(table, now, ciks=[cik_map[t] for t in tickers if t in cik_map])
+    rows = {t: g.loc[cik_map[t]] for t in tickers if t in cik_map and cik_map[t] in g.index}
+    return pd.DataFrame(rows).T if rows else pd.DataFrame()
+
+
 def weight_sets(cfg, reg):
     default = {k: float(cfg["weights"][k]) for k in INDICATORS}
     cal = load_json(output_path(cfg, "calibration.json"), {}) or {}
@@ -88,17 +102,10 @@ def main():
     # --- fundamentals (SEC XBRL frames) ------------------------------------------------
     fund = pd.DataFrame()
     try:
-        client = SecClient(cfg)
-        labels = fundamentals.period_labels(now.year - 3, now)
-        fdir = hist_dir(cfg, "frames")
-        fundamentals.fetch_frames(client, fdir, labels)
-        table = fundamentals.build_table(fdir, labels)
-        cik_map = company_tickers(client)
-        g = fundamentals.growth_as_of(table, now.replace(tzinfo=None), ciks=[cik_map[t] for t in pre.index if t in cik_map])
-        fund = pd.DataFrame({t: g.loc[cik_map[t]] for t in pre.index if t in cik_map and cik_map[t] in g.index}).T
+        fund = load_fundamentals(SecClient(cfg), list(pre.index), now, hist_dir(cfg, "frames"))
         sources["fundamentals"] = {"source": "SEC XBRL frames (EPS diluted, revenue)", "as_of": now.date().isoformat(),
                                    "note": "quarters count from 45 days after quarter end"}
-    except RuntimeError as e:
+    except Exception as e:      # missing email, SEC outage...: degrade to n/a, don't kill the build
         warnings.append(f"Fundamentals skipped: {e}")
         print(warnings[-1])
 

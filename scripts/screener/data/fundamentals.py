@@ -18,6 +18,8 @@ Q_LAG_DAYS, A_LAG_DAYS = 45, 75
 
 def period_labels(start_year, end_ts):
     end_ts = pd.Timestamp(end_ts)
+    if end_ts.tzinfo is not None:
+        end_ts = end_ts.tz_localize(None)
     out = []
     for y in range(start_year, end_ts.year + 1):
         for q in range(1, 5):
@@ -120,6 +122,8 @@ def growth_as_of(table, as_of, ciks=None):
     """Per cik: eps_q_growth, rev_q_growth (latest quarter vs same quarter a year earlier) and
     eps_a_growth (latest annual vs prior), using only figures available on `as_of`."""
     as_of = pd.Timestamp(as_of)
+    if as_of.tzinfo is not None:
+        as_of = as_of.tz_localize(None)
     t = table[(table["available"] <= as_of) & (table["available"] > as_of - pd.Timedelta(days=800))]
     if ciks is not None:
         t = t[t["cik"].isin(set(ciks))]

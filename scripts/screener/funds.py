@@ -111,7 +111,8 @@ def sponsor_metrics(cur, prev, rated, cfg):
         q = g[g["quality"]].copy()
         gg = g[g["good_growth"]]
         q["rank_key"] = q["points"] * ((q["pct12"] + q["pct36"]) / 2)
-        top = q.sort_values("rank_key", ascending=False).head(3)
+        # sister share-class series of one fund often share a name: show each name once
+        top = q.sort_values("rank_key", ascending=False).drop_duplicates("SERIES_NAME").head(3)
         rows.append({
             "CUSIP": cusip,
             "n_active_holders": int(len(g)),

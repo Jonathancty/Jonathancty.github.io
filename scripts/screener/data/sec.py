@@ -60,6 +60,23 @@ class SecClient:
     def get_json(self, url):
         return self.get(url).json()
 
+    def exists(self, url, retries=4):
+        """True if the URL serves a file (200), False on 404. Only response headers are read."""
+        for attempt in range(retries):
+            self._throttle()
+            try:
+                r = self.session.get(url, stream=True, timeout=30)
+                r.close()
+            except requests.RequestException:
+                time.sleep(2 ** attempt * 2)
+                continue
+            if r.status_code == 200:
+                return True
+            if r.status_code == 404:
+                return False
+            time.sleep(10 * (attempt + 1))           # 403/429/503 = throttled: back off
+        return False
+
     def download(self, url, dest):
         """Stream a (large) file to disk; skip if already present."""
         if os.path.exists(dest) and os.path.getsize(dest) > 0:
@@ -118,8 +135,89 @@ def list_datasets(client, page_url, suffix):
     return out
 
 
-def list_13f_datasets(client, cfg):
-    found = list_datasets(client, cfg["sec"]["datasets_13f_page"], "_form13f.zip")
+# ---------------------------------------------------------------------------
+# Fallback discovery: SEC's listing pages can 404/403 for automated clients, but the zip
+# files follow fixed naming patterns. Build the expected names and probe which exist.
+# ---------------------------------------------------------------------------
+_MON = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+F13_DIRS = ["/files/datastandardsinnovation/data/form-13f-data-sets/", "/files/structureddata/data/form-13f-data-sets/"]
+NPORT_DIRS = ["/files/dera/data/form-n-port-data-sets/", "/files/datastandardsinnovation/data/form-n-port-data-sets/",
+              "/files/structureddata/data/form-n-port-data-sets/"]
+
+
+def _last_day(y, m):
+    return (datetime(y + (m == 12), m % 12 + 1, 1) - timedelta(days=1)).day
+
+
+def candidate_13f_names(today):
+    """Expected 13F zip names, oldest first, for windows that have already ended."""
+    names = [f"{y}q{q}_form13f.zip" for y in range(2013, 2024) for q in range(1, 5) if (y, q) >= (2013, 2)]
+    names.append("01jan2024-29feb2024_form13f.zip")
+    y = 2024
+    while True:
+        for sm in (3, 6, 9, 12):
+            em, ey = (sm + 2 - 1) % 12 + 1, y + (sm + 2 > 12)
+            end = datetime(ey, em, _last_day(ey, em))
+            if end >= today:
+                return names
+            names.append(f"01{_MON[sm - 1]}{y}-{_last_day(ey, em):02d}{_MON[em - 1]}{ey}_form13f.zip")
+        y += 1
+
+
+def candidate_nport_names(today):
+    out = []
+    for y in range(2019, today.year + 1):
+        for q in range(1, 5):
+            if (y, q) < (2019, 4):
+                continue
+            if datetime(y, 3 * q, _last_day(y, 3 * q)) >= today:
+                return out
+            out.append(f"{y}q{q}_nport.zip")
+    return out
+
+
+def probe_datasets(client, names, dirs, cache_file):
+    """Find each name under one of `dirs`; results are cached because published files never move."""
+    import json
+    known = {}
+    if cache_file and os.path.exists(cache_file):
+        with open(cache_file) as f:
+            known = json.load(f)
+    found = {}
+    for name in names:
+        if name in known:
+            found[name] = known[name]
+            continue
+        for d in dirs:
+            url = SEC_BASE + d + name
+            if client.exists(url):
+                found[name] = known[name] = url
+                break
+    if cache_file:
+        os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+        with open(cache_file, "w") as f:
+            json.dump(known, f, indent=1, sort_keys=True)
+    print(f"  probed {len(names)} expected file names, found {len(found)}")
+    return found
+
+
+def _discover(client, page_url, suffix, names, dirs, cache_file):
+    try:
+        found = list_datasets(client, page_url, suffix)
+        if found:
+            return found
+        print(f"  listing page had no {suffix} links; probing file names instead")
+    except requests.RequestException as e:
+        print(f"  listing page unavailable ({e}); probing file names instead")
+    return probe_datasets(client, names, dirs, cache_file)
+
+
+def list_13f_datasets(client, cfg, recent=None, cache_file=None):
+    """recent=N limits probing to the newest N expected files (live mode)."""
+    names = candidate_13f_names(datetime.now())
+    if recent:
+        names = names[-recent:]
+    found = _discover(client, cfg["sec"]["datasets_13f_page"], "_form13f.zip", names, F13_DIRS, cache_file)
     rows = []
     for name, url in found.items():
         win = parse_13f_zip_name(name)
@@ -128,8 +226,11 @@ def list_13f_datasets(client, cfg):
     return sorted(rows, key=lambda r: r["start"])
 
 
-def list_nport_datasets(client, cfg):
-    found = list_datasets(client, cfg["sec"]["datasets_nport_page"], "_nport.zip")
+def list_nport_datasets(client, cfg, recent=None, cache_file=None):
+    names = candidate_nport_names(datetime.now())
+    if recent:
+        names = names[-recent:]
+    found = _discover(client, cfg["sec"]["datasets_nport_page"], "_nport.zip", names, NPORT_DIRS, cache_file)
     rows = []
     for name, url in found.items():
         yq = parse_nport_zip_name(name)

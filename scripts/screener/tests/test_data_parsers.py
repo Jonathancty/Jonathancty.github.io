@@ -19,6 +19,46 @@ def test_zip_name_parsing():
     assert parse_nport_zip_name("2026q3_nport.zip") == (2026, 3)
 
 
+def test_expected_sec_file_names_match_published_ones():
+    from datetime import datetime
+    from scripts.screener.data import sec
+    names = sec.candidate_13f_names(datetime(2026, 11, 10))
+    # names as listed on SEC's page (checked 2026-11-10)
+    for real in ("2013q2_form13f.zip", "2023q4_form13f.zip", "01jan2024-29feb2024_form13f.zip",
+                 "01dec2025-28feb2026_form13f.zip", "01mar2026-31may2026_form13f.zip", "01jun2026-31aug2026_form13f.zip"):
+        assert real in names
+    assert names[-1] == "01jun2026-31aug2026_form13f.zip"      # Sep-Nov 2026 window hasn't ended yet
+    assert all(sec.parse_13f_zip_name(n) for n in names)
+    np_names = sec.candidate_nport_names(datetime(2026, 11, 10))
+    assert np_names[0] == "2019q4_nport.zip" and np_names[-1] == "2026q3_nport.zip"
+
+
+def test_discovery_falls_back_to_probing(tmp_path, cfg):
+    import requests
+    from scripts.screener.data import sec
+
+    class FakeClient:
+        def __init__(self):
+            self.probed = []
+
+        def get(self, url, **kw):
+            raise requests.HTTPError("404 Client Error: Not Found")
+
+        def exists(self, url):
+            self.probed.append(url)
+            return "datastandardsinnovation" in url and "01jun2026" in url or \
+                   ("structureddata" in url and "01mar2026" in url)
+
+    c = FakeClient()
+    cache = str(tmp_path / "found.json")
+    rows = sec.list_13f_datasets(c, cfg, recent=3, cache_file=cache)
+    assert [r["name"] for r in rows] == ["01mar2026-31may2026_form13f.zip", "01jun2026-31aug2026_form13f.zip"]
+    assert rows[-1]["url"].startswith("https://www.sec.gov/files/datastandardsinnovation/")
+    n_first = len(c.probed)
+    sec.list_13f_datasets(c, cfg, recent=3, cache_file=cache)
+    assert len(c.probed) - n_first == 2       # found files are cached; only the missing one is re-probed (2 dirs)
+
+
 def _write_13f_zip(path):
     sub = ("ACCESSION_NUMBER\tFILING_DATE\tSUBMISSIONTYPE\tCIK\tPERIODOFREPORT\n"
            "A1\t10-AUG-2026\t13F-HR\t1\t30-JUN-2026\n"

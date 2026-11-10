@@ -23,7 +23,8 @@ def refresh_13f(client, cfg, history):
     d13f = cache_dir(cfg, "13f")
     meta = holdings_13f.load_meta(d13f)
     done = set(meta.get("processed_datasets", []))
-    sets = list_13f_datasets(client, cfg)
+    sets = list_13f_datasets(client, cfg, recent=None if history else cfg["sec"]["history_13f_quarters"] + 2,
+                             cache_file=cache_path(cfg, "sec_datasets_13f.json"))
     if not history:
         sets = sets[-(cfg["sec"]["history_13f_quarters"] + 1):]
     todo = [s for s in sets if s["name"] not in done]
@@ -42,7 +43,8 @@ def refresh_13f(client, cfg, history):
 def refresh_nport(client, cfg, history):
     nport_hist = hist_dir(cfg, "nport")
     small_dir = cache_dir(cfg, "nport")
-    sets = list_nport_datasets(client, cfg)
+    sets = list_nport_datasets(client, cfg, recent=None if history else 16,
+                               cache_file=cache_path(cfg, "sec_datasets_nport.json"))
     # live needs 36+ months of fund returns (13 data sets) and the last 3 sets of holdings
     need_returns = sets if history else sets[-14:]
     need_holdings = sets if history else sets[-3:]

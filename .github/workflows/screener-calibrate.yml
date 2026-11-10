@@ -20,6 +20,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main            # "Re-run" must still use the latest code, not the original commit
 
       - uses: actions/setup-python@v5
         with:
@@ -63,5 +65,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add _screener_cache trading/screener/calibration.json scripts/screener/CALIBRATION.md
           git commit -m "Screener calibration report 📊" || { echo "No changes"; exit 0; }
-          git pull --rebase --autostash
-          git push
+          for i in 1 2 3; do
+            git fetch origin main
+            # generated files: on conflict keep this run's freshly built copy
+            if git rebase -X theirs origin/main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          exit 1

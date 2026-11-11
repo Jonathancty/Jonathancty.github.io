@@ -1,177 +1,177 @@
 {
-  "updated_at": "2026-11-10T20:13:34.119887+00:00",
+  "updated_at": "2026-11-11T20:00:31.078025+00:00",
   "top_trending": {
-    "ticker": "LEGN",
-    "name": "Legend Biotech Corporation",
+    "ticker": "CAPR",
+    "name": "Capricor Therapeutics, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 1485,
-    "price": 20.02,
-    "change_pct": "-17.58%",
+    "tweet_volume": 34344,
+    "price": 11.02,
+    "change_pct": "+24.24%",
     "key_topics": [
-      "Earnings",
-      "Market",
-      "CEO"
+      "FDA",
+      "AI",
+      "Launch"
     ]
   },
   "trending_list": [
     {
-      "ticker": "LKNCY",
-      "name": "Luckin Coffee Inc.",
+      "ticker": "ABCL",
+      "name": "AbCellera Biologics Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 40108,
-      "price": 36.69,
-      "change_pct": "+5.55%",
+      "tweet_volume": 9891,
+      "price": 12.16,
+      "change_pct": "-2.41%",
       "key_topics": [
-        "Price Target",
-        "AI",
-        "Update"
+        "Trial",
+        "Market",
+        "CEO"
       ]
     },
     {
-      "ticker": "LU",
-      "name": "Lufax Holding Ltd",
+      "ticker": "MLTX",
+      "name": "MoonLake Immunotherapeutics",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1510,
-      "price": 7.19,
-      "change_pct": "-8.74%",
+      "tweet_volume": 6609,
+      "price": 13.63,
+      "change_pct": "+8.52%",
       "key_topics": [
         "Market",
         "AI",
-        "Demand"
+        "FDA"
       ]
     },
     {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, ",
+      "ticker": "RUM",
+      "name": "RUM Group Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 25117,
-      "price": 224.24,
-      "change_pct": "+8.12%",
+      "tweet_volume": 35318,
+      "price": 5.89,
+      "change_pct": "+15.36%",
       "key_topics": [
-        "Taketwointeractivesoftware",
-        "Gtavi"
+        "Demand",
+        "Update",
+        "Revenue"
       ]
     },
     {
-      "ticker": "RUN",
-      "name": "Sunrun Inc.",
+      "ticker": "AUPH",
+      "name": "Aurinia Pharmaceuticals Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23203,
-      "price": 8.6,
-      "change_pct": "-11.70%",
+      "tweet_volume": 46383,
+      "price": 16.03,
+      "change_pct": "-1.66%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "MGNI",
-      "name": "Magnite, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 12044,
-      "price": 28.57,
-      "change_pct": "-1.60%",
-      "key_topics": [
-        "AI",
-        "Earnings",
-        "Launch"
-      ]
-    },
-    {
-      "ticker": "SECZ",
-      "name": "Securitize Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1355,
-      "price": 8.38,
-      "change_pct": "+20.23%",
-      "key_topics": [
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "TSLL",
-      "name": "Direxion Daily TSLA Bull 2X ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9358,
-      "price": 9.74,
-      "change_pct": "-0.15%",
-      "key_topics": [
-        "Market",
+        "CEO",
         "AI"
       ]
     },
     {
-      "ticker": "SENS",
-      "name": "Senseonics Holdings, Inc.",
+      "ticker": "CDNL",
+      "name": "Cardinal Infrastructure Group I",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 48277,
-      "price": 10.39,
-      "change_pct": "+6.07%",
+      "tweet_volume": 191,
+      "price": 14.75,
+      "change_pct": "+1.03%",
       "key_topics": [
         "Earnings",
-        "Buyout",
-        "Market"
+        "Trial",
+        "Acquisition"
       ]
     },
     {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporatio",
+      "ticker": "RVMD",
+      "name": "Revolution Medicines, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 43318,
-      "price": 57.13,
-      "change_pct": "+2.46%",
+      "tweet_volume": 3417,
+      "price": 180.82,
+      "change_pct": "-6.34%",
       "key_topics": [
-        "Earnings",
-        "Squeeze",
-        "Market"
+        "Veteransday"
       ]
     },
     {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
+      "ticker": "PRAX",
+      "name": "Praxis Precision Medicines, Inc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13530,
-      "price": 119.89,
-      "change_pct": "-4.21%",
+      "tweet_volume": 1845,
+      "price": 346.81,
+      "change_pct": "+2.73%",
       "key_topics": [
-        "Elliottwave",
-        "Nem",
-        "Trading"
+        "Earnings",
+        "Update",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "LPTH",
+      "name": "LightPath Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 8811,
+      "price": 7.83,
+      "change_pct": "-2.00%",
+      "key_topics": [
+        "Earnings",
+        "Demand",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "NLST",
+      "name": "Netlist, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 28283,
+      "price": 5.99,
+      "change_pct": "-6.84%",
+      "key_topics": [
+        "Earnings",
+        "Demand",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "ZETA",
+      "name": "Zeta Global Holdings Corp.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 15721,
+      "price": 37.87,
+      "change_pct": "+7.98%",
+      "key_topics": [
+        "Earnings",
+        "Revenue",
+        "Growth"
       ]
     }
   ]

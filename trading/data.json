@@ -1,85 +1,21 @@
 {
-  "updated_at": "2026-11-12T20:39:12.958006+00:00",
+  "updated_at": "2026-11-13T20:19:35.857030+00:00",
   "top_trending": {
-    "ticker": "NU",
-    "name": "Nu Holdings Ltd.",
+    "ticker": "U",
+    "name": "Unity Software Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 17340,
-    "price": 11.84,
-    "change_pct": "-3.90%",
+    "tweet_volume": 37276,
+    "price": 52.64,
+    "change_pct": "+4.90%",
     "key_topics": [
-      "Market",
-      "Earnings",
-      "AI"
+      "Tradingbot",
+      "Algotrading"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "AGNC",
-      "name": "AGNC Investment Corp.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13097,
-      "price": 8.21,
-      "change_pct": "-3.18%",
-      "key_topics": [
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "TSLL",
-      "name": "Direxion Daily TSLA Bull 2X ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 9355,
-      "price": 10.82,
-      "change_pct": "+3.89%",
-      "key_topics": [
-        "Market",
-        "Trial",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "LUNR",
-      "name": "Intuitive Machines, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 39422,
-      "price": 13.29,
-      "change_pct": "+9.15%",
-      "key_topics": [
-        "Revenue",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "XPEV",
-      "name": "XPeng Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 57058,
-      "price": 9.45,
-      "change_pct": "-3.87%",
-      "key_topics": [
-        "Market",
-        "Earnings",
-        "AI"
-      ]
-    },
     {
       "ticker": "KLAR",
       "name": "Klarna Group plc",
@@ -88,90 +24,150 @@
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
       "tweet_volume": 7898,
-      "price": 12.78,
-      "change_pct": "-5.16%",
+      "price": 13.63,
+      "change_pct": "+7.28%",
+      "key_topics": [
+        "Earnings",
+        "AI",
+        "Acquisition"
+      ]
+    },
+    {
+      "ticker": "GSAT",
+      "name": "Globalstar, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 50496,
+      "price": 86.31,
+      "change_pct": "+0.09%",
       "key_topics": [
         "Revenue",
-        "AI",
-        "CEO"
+        "Launch",
+        "AI"
       ]
     },
     {
-      "ticker": "SMMT",
-      "name": "Summit Therapeutics Inc.",
+      "ticker": "CADL",
+      "name": "Candel Therapeutics, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 10703,
-      "price": 15.05,
-      "change_pct": "-9.53%",
+      "tweet_volume": 10795,
+      "price": 6.12,
+      "change_pct": "-27.06%",
       "key_topics": [
-        "AI",
-        "CEO",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "SRPT",
-      "name": "Sarepta Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 26673,
-      "price": 16.07,
-      "change_pct": "-3.69%",
-      "key_topics": [
-        "Price Target",
-        "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "GTBIF",
-      "name": "Green Thumb Industries Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6364,
-      "price": 6.27,
-      "change_pct": "-4.27%",
-      "key_topics": [
-        "Revenue",
-        "AI",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "CHWY",
-      "name": "Chewy, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 31142,
-      "price": 22.59,
-      "change_pct": "-2.40%",
-      "key_topics": [
-        "Revenue",
-        "AI",
+        "FDA",
+        "Trial",
         "Earnings"
       ]
     },
     {
-      "ticker": "CURLF",
-      "name": "Curaleaf Holdings, Inc.",
+      "ticker": "BKSY",
+      "name": "BlackSky Technology Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 9016,
-      "price": 8.32,
-      "change_pct": "-6.20%",
+      "tweet_volume": 12704,
+      "price": 23.84,
+      "change_pct": "+2.58%",
       "key_topics": [
-        "Revenue",
+        "Sidotiresearch",
+        "Investing",
+        "Smallcap"
+      ]
+    },
+    {
+      "ticker": "AMPX",
+      "name": "Amprius Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 9641,
+      "price": 7.91,
+      "change_pct": "-5.27%",
+      "key_topics": [
+        "Growth",
+        "Squeeze",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "HAWK",
+      "name": "HawkEye 360, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1092,
+      "price": 18.01,
+      "change_pct": "+22.77%",
+      "key_topics": [
+        "Chemicalrecycling"
+      ]
+    },
+    {
+      "ticker": "CHPY",
+      "name": "YieldMax Semiconductor Portfoli",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1987,
+      "price": 52.69,
+      "change_pct": "-2.70%",
+      "key_topics": [
+        "Amdy"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 42953,
+      "price": 58.12,
+      "change_pct": "-11.32%",
+      "key_topics": [
+        "CEO",
+        "Earnings",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "LFTO",
+      "name": "Liftoff Mobile, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 253,
+      "price": 24.5,
+      "change_pct": "+30.95%",
+      "key_topics": [
+        "Earnings",
+        "Growth",
+        "Guidance"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 39139,
+      "price": 190.98,
+      "change_pct": "-5.42%",
+      "key_topics": [
+        "Earnings",
         "AI",
         "CEO"
       ]

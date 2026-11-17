@@ -1,170 +1,180 @@
 {
-  "updated_at": "2026-11-16T22:44:25.006309+00:00",
+  "updated_at": "2026-11-17T21:30:28.266501+00:00",
   "top_trending": {
-    "ticker": "SLS",
-    "name": "SELLAS Life Sciences Group, Inc",
+    "ticker": "NVDL",
+    "name": "GraniteShares 2x Long NVDA Dail",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 63563,
-    "price": 7.47,
-    "change_pct": "-4.96%",
+    "tweet_volume": 5533,
+    "price": 16.22,
+    "change_pct": "-0.80%",
     "key_topics": [
-      "Revenue",
-      "Market",
-      "AI"
+      "Earnings",
+      "AI",
+      "Price Target"
     ]
   },
   "trending_list": [
     {
-      "ticker": "GSAT",
-      "name": "Globalstar, Inc.",
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 50494,
-      "price": 85.96,
-      "change_pct": "-0.38%",
+      "tweet_volume": 12828,
+      "price": 320.79,
+      "change_pct": "-7.17%",
       "key_topics": [
-        "Spectrumisking"
-      ]
-    },
-    {
-      "ticker": "CHPY",
-      "name": "YieldMax Semiconductor Portfoli",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2009,
-      "price": 50.08,
-      "change_pct": "-5.22%",
-      "key_topics": [
+        "Earnings",
         "AI",
-        "Market",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "RUM",
-      "name": "RUM Group Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 35332,
-      "price": 5.11,
-      "change_pct": "-11.44%",
-      "key_topics": [
-        "Revenue",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "XPEV",
-      "name": "XPeng Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 57107,
-      "price": 9.67,
-      "change_pct": "+3.20%",
-      "key_topics": [
-        "Update",
-        "Guidance",
         "Revenue"
       ]
     },
     {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
+      "ticker": "KLAR",
+      "name": "Klarna Group plc",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 31514,
-      "price": 5.98,
-      "change_pct": "-0.66%",
+      "tweet_volume": 7985,
+      "price": 14.27,
+      "change_pct": "+4.70%",
       "key_topics": [
-        "Revenue",
-        "FDA",
+        "Fintech",
+        "Earnings",
+        "Bnpl"
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "name": "State Street SPDR S&P 500 ETF T",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 640298,
+      "price": 732.44,
+      "change_pct": "-1.01%",
+      "key_topics": [
+        "Earnings",
+        "Guidance",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 234358,
+      "price": 5.5,
+      "change_pct": "+8.06%",
+      "key_topics": [
+        "Buyout",
+        "AI",
         "Market"
       ]
     },
     {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "MNSO",
+      "name": "MINISO Group Holding Limited",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 22837,
-      "price": 78.11,
-      "change_pct": "-1.09%",
+      "bullish_pct": 90,
+      "tweet_volume": 826,
+      "price": 12.18,
+      "change_pct": "+8.36%",
       "key_topics": [
-        "Earnings"
+        "Earnings",
+        "Guidance",
+        "AI"
       ]
     },
     {
-      "ticker": "GMM",
-      "name": "Global Mofy AI Limited",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1939,
-      "price": 2.01,
-      "change_pct": "+97.06%",
+      "bullish_pct": 86,
+      "tweet_volume": 64562,
+      "price": 19.15,
+      "change_pct": "+156.36%",
       "key_topics": [
-        "Fgl"
+        "Buyout",
+        "AI",
+        "CEO"
       ]
     },
     {
-      "ticker": "ACM",
-      "name": "AECOM",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2114,
-      "price": 72.5,
-      "change_pct": "+2.84%",
+      "bullish_pct": 86,
+      "tweet_volume": 45585,
+      "price": 92.9,
+      "change_pct": "-6.51%",
       "key_topics": [
-        "Earnings"
+        "AI",
+        "CEO",
+        "Growth"
       ]
     },
     {
-      "ticker": "CGON",
-      "name": "CG Oncology, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sentiment_delta": 0.667,
+      "current_sentiment": 0.667,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 654,
-      "price": 84.78,
-      "change_pct": "+13.95%",
+      "bullish_pct": 83,
+      "tweet_volume": 6865,
+      "price": 105.12,
+      "change_pct": "-3.13%",
       "key_topics": [
-        "Chemicalrecycling"
+        "Earnings",
+        "AI",
+        "Revenue"
       ]
     },
     {
-      "ticker": "TU",
-      "name": "Telus Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust, Series 1",
+      "sentiment_delta": 0.625,
+      "current_sentiment": 0.625,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1582,
-      "price": 9.57,
-      "change_pct": "+12.19%",
+      "bullish_pct": 81,
+      "tweet_volume": 283409,
+      "price": 656.95,
+      "change_pct": "-0.73%",
       "key_topics": [
         "Revenue",
-        "Market",
-        "CEO"
+        "Guidance",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "sentiment_delta": 0.6,
+      "current_sentiment": 0.6,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 80,
+      "tweet_volume": 36051,
+      "price": 152.97,
+      "change_pct": "-5.84%",
+      "key_topics": [
+        "Earnings",
+        "Guidance",
+        "AI"
       ]
     }
   ]

@@ -1,160 +1,80 @@
 {
-  "updated_at": "2026-11-17T21:30:28.266501+00:00",
+  "updated_at": "2026-11-18T21:05:52.237488+00:00",
   "top_trending": {
-    "ticker": "NVDL",
-    "name": "GraniteShares 2x Long NVDA Dail",
+    "ticker": "GTBIF",
+    "name": "Green Thumb Industries Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 5533,
-    "price": 16.22,
-    "change_pct": "-0.80%",
+    "tweet_volume": 6373,
+    "price": 5.96,
+    "change_pct": "+0.00%",
     "key_topics": [
-      "Earnings",
-      "AI",
-      "Price Target"
+      "Revenue",
+      "CEO",
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
+      "ticker": "ZIM",
+      "name": "ZIM Integrated Shipping Service",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 12828,
-      "price": 320.79,
-      "change_pct": "-7.17%",
+      "tweet_volume": 15365,
+      "price": 29.91,
+      "change_pct": "+0.74%",
       "key_topics": [
-        "Earnings",
-        "AI",
-        "Revenue"
+        "Buyout",
+        "Acquisition",
+        "Guidance"
       ]
     },
     {
-      "ticker": "KLAR",
-      "name": "Klarna Group plc",
+      "ticker": "TRLV",
+      "name": "Trulieve Cannabis Corp. Subordi",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7985,
-      "price": 14.27,
-      "change_pct": "+4.70%",
+      "tweet_volume": 7820,
+      "price": 10.02,
+      "change_pct": "-0.55%",
       "key_topics": [
-        "Fintech",
-        "Earnings",
-        "Bnpl"
-      ]
-    },
-    {
-      "ticker": "SPY",
-      "name": "State Street SPDR S&P 500 ETF T",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 640298,
-      "price": 732.44,
-      "change_pct": "-1.01%",
-      "key_topics": [
-        "Earnings",
-        "Guidance",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SNAP",
-      "name": "Snap Inc.",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 234358,
-      "price": 5.5,
-      "change_pct": "+8.06%",
-      "key_topics": [
-        "Buyout",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "MNSO",
-      "name": "MINISO Group Holding Limited",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 826,
-      "price": 12.18,
-      "change_pct": "+8.36%",
-      "key_topics": [
-        "Earnings",
-        "Guidance",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 64562,
-      "price": 19.15,
-      "change_pct": "+156.36%",
-      "key_topics": [
-        "Buyout",
-        "AI",
+        "Revenue",
+        "Update",
         "CEO"
       ]
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
+      "ticker": "FLUT",
+      "name": "Flutter Entertainment plc",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 45585,
-      "price": 92.9,
-      "change_pct": "-6.51%",
+      "bullish_pct": 100,
+      "tweet_volume": 2059,
+      "price": 72.91,
+      "change_pct": "-3.52%",
       "key_topics": [
-        "AI",
+        "Revenue",
         "CEO",
-        "Growth"
+        "Guidance"
       ]
     },
     {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "sentiment_delta": 0.667,
-      "current_sentiment": 0.667,
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 83,
-      "tweet_volume": 6865,
-      "price": 105.12,
-      "change_pct": "-3.13%",
-      "key_topics": [
-        "Earnings",
-        "AI",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust, Series 1",
-      "sentiment_delta": 0.625,
-      "current_sentiment": 0.625,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 81,
-      "tweet_volume": 283409,
-      "price": 656.95,
-      "change_pct": "-0.73%",
+      "bullish_pct": 100,
+      "tweet_volume": 50199,
+      "price": 165.96,
+      "change_pct": "+4.03%",
       "key_topics": [
         "Revenue",
         "Guidance",
@@ -162,18 +82,97 @@
       ]
     },
     {
-      "ticker": "FSLR",
-      "name": "First Solar, Inc.",
-      "sentiment_delta": 0.6,
-      "current_sentiment": 0.6,
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 80,
-      "tweet_volume": 36051,
-      "price": 152.97,
-      "change_pct": "-5.84%",
+      "bullish_pct": 100,
+      "tweet_volume": 23850,
+      "price": 197.83,
+      "change_pct": "+6.83%",
       "key_topics": [
-        "Earnings",
+        "Soybeans",
+        "Commodities",
+        "Biofuels"
+      ]
+    },
+    {
+      "ticker": "TENB",
+      "name": "Tenable Holdings, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 1852,
+      "price": 44.68,
+      "change_pct": "+15.75%",
+      "key_topics": [
+        "Revenue",
         "Guidance",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "CAPR",
+      "name": "Capricor Therapeutics, Inc.",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 35141,
+      "price": 8.03,
+      "change_pct": "-4.52%",
+      "key_topics": [
+        "Market",
+        "FDA",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 92,
+      "tweet_volume": 48481,
+      "price": 14.45,
+      "change_pct": "+1.62%",
+      "key_topics": [
+        "Revenue",
+        "Guidance",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan, Inc.",
+      "sentiment_delta": 0.778,
+      "current_sentiment": 0.778,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 89,
+      "tweet_volume": 28492,
+      "price": 51.45,
+      "change_pct": "-6.96%",
+      "key_topics": [
+        "Demand",
+        "AI",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "sentiment_delta": 0.75,
+      "current_sentiment": 0.75,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 88,
+      "tweet_volume": 16405,
+      "price": 94.15,
+      "change_pct": "-9.63%",
+      "key_topics": [
+        "Market",
         "AI"
       ]
     }

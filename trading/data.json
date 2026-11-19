@@ -1,179 +1,178 @@
 {
-  "updated_at": "2026-11-18T21:05:52.237488+00:00",
+  "updated_at": "2026-11-19T21:11:09.275396+00:00",
   "top_trending": {
-    "ticker": "GTBIF",
-    "name": "Green Thumb Industries Inc.",
+    "ticker": "GME",
+    "name": "GameStop Corporation",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 6373,
-    "price": 5.96,
-    "change_pct": "+0.00%",
+    "tweet_volume": 308101,
+    "price": 26.97,
+    "change_pct": "+1.66%",
     "key_topics": [
-      "Revenue",
-      "CEO",
-      "AI"
+      "AI",
+      "Market",
+      "Update"
     ]
   },
   "trending_list": [
     {
-      "ticker": "ZIM",
-      "name": "ZIM Integrated Shipping Service",
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 15365,
-      "price": 29.91,
-      "change_pct": "+0.74%",
+      "tweet_volume": 157437,
+      "price": 13.53,
+      "change_pct": "-4.11%",
       "key_topics": [
-        "Buyout",
-        "Acquisition",
-        "Guidance"
+        "AI",
+        "Growth",
+        "Revenue"
       ]
     },
     {
-      "ticker": "TRLV",
-      "name": "Trulieve Cannabis Corp. Subordi",
+      "ticker": "INSM",
+      "name": "Insmed Incorporated",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7820,
-      "price": 10.02,
-      "change_pct": "-0.55%",
+      "tweet_volume": 3381,
+      "price": 144.46,
+      "change_pct": "+20.58%",
       "key_topics": [
-        "Revenue",
-        "Update",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "FLUT",
-      "name": "Flutter Entertainment plc",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2059,
-      "price": 72.91,
-      "change_pct": "-3.52%",
-      "key_topics": [
-        "Revenue",
-        "CEO",
-        "Guidance"
-      ]
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target Corporation",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 50199,
-      "price": 165.96,
-      "change_pct": "+4.03%",
-      "key_topics": [
-        "Revenue",
-        "Guidance",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23850,
-      "price": 197.83,
-      "change_pct": "+6.83%",
-      "key_topics": [
-        "Soybeans",
-        "Commodities",
-        "Biofuels"
-      ]
-    },
-    {
-      "ticker": "TENB",
-      "name": "Tenable Holdings, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 1852,
-      "price": 44.68,
-      "change_pct": "+15.75%",
-      "key_topics": [
-        "Revenue",
-        "Guidance",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "CAPR",
-      "name": "Capricor Therapeutics, Inc.",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 35141,
-      "price": 8.03,
-      "change_pct": "-4.52%",
-      "key_topics": [
-        "Market",
         "FDA",
+        "Market",
         "AI"
-      ]
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 48481,
-      "price": 14.45,
-      "change_pct": "+1.62%",
-      "key_topics": [
-        "Revenue",
-        "Guidance",
-        "Market"
       ]
     },
     {
       "ticker": "FCX",
       "name": "Freeport-McMoRan, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 28496,
+      "price": 49.08,
+      "change_pct": "-4.61%",
+      "key_topics": [
+        "Silver",
+        "Copper",
+        "Gold"
+      ]
+    },
+    {
+      "ticker": "SVRA",
+      "name": "Savara, Inc.",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 91,
+      "tweet_volume": 23298,
+      "price": 5.21,
+      "change_pct": "+10.38%",
+      "key_topics": [
+        "FDA",
+        "Launch",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "SMH",
+      "name": "VanEck Semiconductor ETF",
       "sentiment_delta": 0.778,
       "current_sentiment": 0.778,
       "sentiment_label": "Bullish",
       "bullish_pct": 89,
-      "tweet_volume": 28492,
-      "price": 51.45,
-      "change_pct": "-6.96%",
+      "tweet_volume": 19911,
+      "price": 447.48,
+      "change_pct": "-2.62%",
       "key_topics": [
-        "Demand",
+        "Market",
         "AI",
-        "Growth"
+        "Earnings"
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "VVV",
+      "name": "Valvoline Inc.",
       "sentiment_delta": 0.75,
       "current_sentiment": 0.75,
       "sentiment_label": "Bullish",
       "bullish_pct": 88,
-      "tweet_volume": 16405,
-      "price": 94.15,
-      "change_pct": "-9.63%",
+      "tweet_volume": 862,
+      "price": 36.85,
+      "change_pct": "+10.43%",
       "key_topics": [
         "Market",
+        "AI",
+        "Price Target"
+      ]
+    },
+    {
+      "ticker": "ABVX",
+      "name": "Abivax SA",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 86,
+      "tweet_volume": 2817,
+      "price": 80.65,
+      "change_pct": "-3.79%",
+      "key_topics": [
+        "Bbio"
+      ]
+    },
+    {
+      "ticker": "SNEX",
+      "name": "StoneX Group Inc.",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 86,
+      "tweet_volume": 821,
+      "price": 39.45,
+      "change_pct": "-26.71%",
+      "key_topics": [
+        "Launch",
+        "Market",
         "AI"
+      ]
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sentiment_delta": 0.636,
+      "current_sentiment": 0.636,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 82,
+      "tweet_volume": 22875,
+      "price": 86.0,
+      "change_pct": "+11.04%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
+      "sentiment_delta": 0.6,
+      "current_sentiment": 0.6,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 80,
+      "tweet_volume": 33211,
+      "price": 11.24,
+      "change_pct": "-4.13%",
+      "key_topics": [
+        "Market",
+        "AI",
+        "Earnings"
       ]
     }
   ]

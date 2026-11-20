@@ -1,112 +1,94 @@
 {
-  "updated_at": "2026-11-19T21:11:09.275396+00:00",
+  "updated_at": "2026-11-20T20:55:45.480594+00:00",
   "top_trending": {
-    "ticker": "GME",
-    "name": "GameStop Corporation",
+    "ticker": "INFQ",
+    "name": "Infleqtion, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 308101,
-    "price": 26.97,
-    "change_pct": "+1.66%",
+    "tweet_volume": 17041,
+    "price": 6.33,
+    "change_pct": "-13.36%",
     "key_topics": [
-      "AI",
       "Market",
-      "Update"
+      "AI"
     ]
   },
   "trending_list": [
     {
-      "ticker": "SOFI",
-      "name": "SoFi Technologies, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "CAPR",
+      "name": "Capricor Therapeutics, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 157437,
-      "price": 13.53,
-      "change_pct": "-4.11%",
+      "bullish_pct": 93,
+      "tweet_volume": 35849,
+      "price": 7.5,
+      "change_pct": "-0.33%",
       "key_topics": [
-        "AI",
-        "Growth",
-        "Revenue"
+        "Market",
+        "FDA"
       ]
     },
     {
-      "ticker": "INSM",
-      "name": "Insmed Incorporated",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3381,
-      "price": 144.46,
-      "change_pct": "+20.58%",
+      "bullish_pct": 86,
+      "tweet_volume": 58450,
+      "price": 81.76,
+      "change_pct": "-15.64%",
       "key_topics": [
-        "FDA",
         "Market",
+        "Revenue",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sentiment_delta": 0.714,
+      "current_sentiment": 0.714,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 86,
+      "tweet_volume": 102183,
+      "price": 61.88,
+      "change_pct": "-9.85%",
+      "key_topics": [
+        "Market",
+        "Squeeze",
         "AI"
       ]
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "sentiment_delta": 0.556,
+      "current_sentiment": 0.556,
       "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 28496,
-      "price": 49.08,
-      "change_pct": "-4.61%",
-      "key_topics": [
-        "Silver",
-        "Copper",
-        "Gold"
-      ]
-    },
-    {
-      "ticker": "SVRA",
-      "name": "Savara, Inc.",
-      "sentiment_delta": 0.818,
-      "current_sentiment": 0.818,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 23298,
-      "price": 5.21,
-      "change_pct": "+10.38%",
-      "key_topics": [
-        "FDA",
-        "Launch",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "SMH",
-      "name": "VanEck Semiconductor ETF",
-      "sentiment_delta": 0.778,
-      "current_sentiment": 0.778,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 19911,
-      "price": 447.48,
-      "change_pct": "-2.62%",
+      "bullish_pct": 78,
+      "tweet_volume": 43320,
+      "price": 30.9,
+      "change_pct": "-31.79%",
       "key_topics": [
         "Market",
-        "AI",
-        "Earnings"
+        "Chips",
+        "AI"
       ]
     },
     {
-      "ticker": "VVV",
-      "name": "Valvoline Inc.",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sentiment_delta": 0.556,
+      "current_sentiment": 0.556,
       "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 862,
-      "price": 36.85,
-      "change_pct": "+10.43%",
+      "bullish_pct": 78,
+      "tweet_volume": 40368,
+      "price": 78.4,
+      "change_pct": "-16.94%",
       "key_topics": [
         "Market",
         "AI",
@@ -114,65 +96,81 @@
       ]
     },
     {
-      "ticker": "ABVX",
-      "name": "Abivax SA",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sentiment_delta": 0.556,
+      "current_sentiment": 0.556,
       "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 2817,
-      "price": 80.65,
-      "change_pct": "-3.79%",
+      "bullish_pct": 78,
+      "tweet_volume": 55435,
+      "price": 120.82,
+      "change_pct": "-12.75%",
       "key_topics": [
-        "Bbio"
+        "Market",
+        "Revenue",
+        "Growth"
       ]
     },
     {
-      "ticker": "SNEX",
-      "name": "StoneX Group Inc.",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
+      "ticker": "NVDL",
+      "name": "GraniteShares 2x Long NVDA Dail",
+      "sentiment_delta": 0.5,
+      "current_sentiment": 0.5,
       "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 821,
-      "price": 39.45,
-      "change_pct": "-26.71%",
+      "bullish_pct": 75,
+      "tweet_volume": 5588,
+      "price": 10.32,
+      "change_pct": "-27.58%",
       "key_topics": [
-        "Launch",
         "Market",
+        "AI",
+        "CEO"
+      ]
+    },
+    {
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
+      "sentiment_delta": 0.455,
+      "current_sentiment": 0.455,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 73,
+      "tweet_volume": 29368,
+      "price": 13.04,
+      "change_pct": "-13.44%",
+      "key_topics": [
         "AI"
       ]
     },
     {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "sentiment_delta": 0.636,
-      "current_sentiment": 0.636,
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
+      "sentiment_delta": 0.4,
+      "current_sentiment": 0.4,
       "sentiment_label": "Bullish",
-      "bullish_pct": 82,
-      "tweet_volume": 22875,
-      "price": 86.0,
-      "change_pct": "+11.04%",
+      "bullish_pct": 70,
+      "tweet_volume": 48549,
+      "price": 11.37,
+      "change_pct": "-18.67%",
       "key_topics": [
         "Market",
-        "AI",
-        "Earnings"
+        "Revenue",
+        "Demand"
       ]
     },
     {
-      "ticker": "PATH",
-      "name": "UiPath, Inc.",
-      "sentiment_delta": 0.6,
-      "current_sentiment": 0.6,
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, ",
+      "sentiment_delta": 0.333,
+      "current_sentiment": 0.333,
       "sentiment_label": "Bullish",
-      "bullish_pct": 80,
-      "tweet_volume": 33211,
-      "price": 11.24,
-      "change_pct": "-4.13%",
+      "bullish_pct": 67,
+      "tweet_volume": 26563,
+      "price": 210.33,
+      "change_pct": "+0.81%",
       "key_topics": [
-        "Market",
-        "AI",
-        "Earnings"
+        "Earnings",
+        "Launch",
+        "Squeeze"
       ]
     }
   ]

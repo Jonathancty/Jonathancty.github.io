@@ -1,22 +1,70 @@
 {
-  "updated_at": "2026-11-21T19:56:33.989869+00:00",
+  "updated_at": "2026-11-22T20:08:33.569094+00:00",
   "top_trending": {
-    "ticker": "ZS",
-    "name": "Zscaler, Inc.",
+    "ticker": "CLX",
+    "name": "Clorox Company (The)",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 23987,
-    "price": 194.82,
-    "change_pct": "-5.29%",
+    "tweet_volume": 7874,
+    "price": 104.73,
+    "change_pct": "-0.16%",
     "key_topics": [
       "Earnings",
-      "Demand",
-      "Market"
+      "AI",
+      "Demand"
     ]
   },
   "trending_list": [
+    {
+      "ticker": "LNG",
+      "name": "Cheniere Energy, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 7991,
+      "price": 294.84,
+      "change_pct": "-0.18%",
+      "key_topics": [
+        "Guidance",
+        "Revenue",
+        "Earnings"
+      ]
+    },
+    {
+      "ticker": "RVMD",
+      "name": "Revolution Medicines, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 3531,
+      "price": 161.2,
+      "change_pct": "+1.11%",
+      "key_topics": [
+        "Revenue",
+        "Acquisition",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "ZS",
+      "name": "Zscaler, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 24001,
+      "price": 194.82,
+      "change_pct": "-5.29%",
+      "key_topics": [
+        "Buyout",
+        "Revenue",
+        "Acquisition"
+      ]
+    },
     {
       "ticker": "HPE",
       "name": "Hewlett Packard Enterprise Comp",
@@ -24,7 +72,7 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 13919,
+      "tweet_volume": 13937,
       "price": 40.91,
       "change_pct": "-10.07%",
       "key_topics": [
@@ -34,143 +82,93 @@
       ]
     },
     {
-      "ticker": "ALM",
-      "name": "Almonty Industries Inc.",
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporatio",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 1382,
-      "price": 6.39,
-      "change_pct": "-15.48%",
+      "tweet_volume": 43285,
+      "price": 53.9,
+      "change_pct": "+0.17%",
       "key_topics": [
-        "Earnings",
-        "Demand",
-        "Market"
+        "AI"
       ]
     },
     {
-      "ticker": "FXAIX",
-      "name": "Fidelity 500 Index Fund",
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 674,
-      "price": 240.44,
-      "change_pct": "-3.69%",
+      "tweet_volume": 23136,
+      "price": 18.61,
+      "change_pct": "-2.62%",
       "key_topics": [
-        "Trump"
+        "Acquisition",
+        "AI",
+        "Demand"
       ]
     },
     {
-      "ticker": "SCHD",
-      "name": "Schwab US Dividend Equity ETF",
+      "ticker": "BOIL",
+      "name": "ProShares Ultra Bloomberg Natur",
+      "sentiment_delta": 0.882,
+      "current_sentiment": 0.882,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 94,
+      "tweet_volume": 17357,
+      "price": 20.01,
+      "change_pct": "+5.48%",
+      "key_topics": [
+        "Natgas"
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital Corporation",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 48587,
+      "price": 11.49,
+      "change_pct": "-17.81%",
+      "key_topics": [
+        "Price Target",
+        "Update",
+        "Revenue"
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
       "sentiment_delta": 0.846,
       "current_sentiment": 0.846,
       "sentiment_label": "Bullish",
       "bullish_pct": 92,
-      "tweet_volume": 24829,
-      "price": 33.94,
-      "change_pct": "-0.76%",
+      "tweet_volume": 13984,
+      "price": 86.79,
+      "change_pct": "-9.51%",
       "key_topics": [
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "FSLY",
-      "name": "Fastly, Inc.",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 36219,
-      "price": 14.91,
-      "change_pct": "-11.57%",
-      "key_topics": [
-        "Guidance",
+        "Update",
         "Earnings",
-        "Market"
+        "Growth"
       ]
     },
     {
-      "ticker": "WING",
-      "name": "Wingstop Inc.",
-      "sentiment_delta": 0.789,
-      "current_sentiment": 0.789,
+      "ticker": "CHPY",
+      "name": "YieldMax Semiconductor Portfoli",
+      "sentiment_delta": 0.818,
+      "current_sentiment": 0.818,
       "sentiment_label": "Bullish",
-      "bullish_pct": 89,
-      "tweet_volume": 5282,
-      "price": 151.53,
-      "change_pct": "+0.11%",
+      "bullish_pct": 91,
+      "tweet_volume": 2017,
+      "price": 43.82,
+      "change_pct": "-10.04%",
       "key_topics": [
-        "Market",
-        "Trial",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "ABVX",
-      "name": "Abivax SA",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 2852,
-      "price": 73.2,
-      "change_pct": "-9.24%",
-      "key_topics": [
-        "Market",
-        "Trial",
-        "Buyout"
-      ]
-    },
-    {
-      "ticker": "SEZL",
-      "name": "Sezzle Inc.",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 4568,
-      "price": 137.42,
-      "change_pct": "-6.09%",
-      "key_topics": [
-        "Crypto",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "AI",
-      "name": "C3.ai, Inc.",
-      "sentiment_delta": 0.75,
-      "current_sentiment": 0.75,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 88,
-      "tweet_volume": 49500,
-      "price": 9.13,
-      "change_pct": "-9.06%",
-      "key_topics": [
-        "Demand",
-        "Market",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "SRPT",
-      "name": "Sarepta Therapeutics, Inc.",
-      "sentiment_delta": 0.714,
-      "current_sentiment": 0.714,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 86,
-      "tweet_volume": 26679,
-      "price": 13.33,
-      "change_pct": "-5.93%",
-      "key_topics": [
-        "Guidance",
-        "Demand",
+        "AI",
         "Market"
       ]
     }

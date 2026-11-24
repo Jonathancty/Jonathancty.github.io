@@ -1,98 +1,52 @@
 {
-  "updated_at": "2026-11-22T20:08:33.569094+00:00",
+  "updated_at": "2026-11-24T00:35:41.354331+00:00",
   "top_trending": {
-    "ticker": "CLX",
-    "name": "Clorox Company (The)",
+    "ticker": "BBIO",
+    "name": "BridgeBio Pharma, Inc.",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 7874,
-    "price": 104.73,
-    "change_pct": "-0.16%",
+    "tweet_volume": 5581,
+    "price": 79.12,
+    "change_pct": "+4.07%",
     "key_topics": [
-      "Earnings",
       "AI",
-      "Demand"
+      "FDA",
+      "Launch"
     ]
   },
   "trending_list": [
     {
-      "ticker": "LNG",
-      "name": "Cheniere Energy, Inc.",
+      "ticker": "GLXY",
+      "name": "Galaxy Digital Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 7991,
-      "price": 294.84,
-      "change_pct": "-0.18%",
+      "tweet_volume": 18853,
+      "price": 12.55,
+      "change_pct": "+11.85%",
       "key_topics": [
-        "Guidance",
-        "Revenue",
-        "Earnings"
+        "AI",
+        "Crypto",
+        "CEO"
       ]
     },
     {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
+      "ticker": "PBR",
+      "name": "Petroleo Brasileiro S.A. Petrob",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 3531,
-      "price": 161.2,
-      "change_pct": "+1.11%",
+      "tweet_volume": 15487,
+      "price": 15.81,
+      "change_pct": "-1.25%",
       "key_topics": [
-        "Revenue",
-        "Acquisition",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "ZS",
-      "name": "Zscaler, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 24001,
-      "price": 194.82,
-      "change_pct": "-5.29%",
-      "key_topics": [
-        "Buyout",
-        "Revenue",
-        "Acquisition"
-      ]
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Comp",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13937,
-      "price": 40.91,
-      "change_pct": "-10.07%",
-      "key_topics": [
+        "AI",
         "Earnings",
-        "Optionstrading",
-        "Stockmarket"
-      ]
-    },
-    {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporatio",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 43285,
-      "price": 53.9,
-      "change_pct": "+0.17%",
-      "key_topics": [
-        "AI"
+        "Crypto"
       ]
     },
     {
@@ -102,9 +56,9 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 23136,
-      "price": 18.61,
-      "change_pct": "-2.62%",
+      "tweet_volume": 23143,
+      "price": 18.39,
+      "change_pct": "-1.18%",
       "key_topics": [
         "Acquisition",
         "AI",
@@ -112,64 +66,109 @@
       ]
     },
     {
-      "ticker": "BOIL",
-      "name": "ProShares Ultra Bloomberg Natur",
-      "sentiment_delta": 0.882,
-      "current_sentiment": 0.882,
+      "ticker": "TMDX",
+      "name": "TransMedics Group, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 94,
-      "tweet_volume": 17357,
-      "price": 20.01,
-      "change_pct": "+5.48%",
+      "bullish_pct": 100,
+      "tweet_volume": 6996,
+      "price": 92.73,
+      "change_pct": "+8.77%",
       "key_topics": [
-        "Natgas"
-      ]
-    },
-    {
-      "ticker": "APLD",
-      "name": "Applied Digital Corporation",
-      "sentiment_delta": 0.857,
-      "current_sentiment": 0.857,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 93,
-      "tweet_volume": 48587,
-      "price": 11.49,
-      "change_pct": "-17.81%",
-      "key_topics": [
-        "Price Target",
-        "Update",
-        "Revenue"
-      ]
-    },
-    {
-      "ticker": "AVAV",
-      "name": "AeroVironment, Inc.",
-      "sentiment_delta": 0.846,
-      "current_sentiment": 0.846,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 92,
-      "tweet_volume": 13984,
-      "price": 86.79,
-      "change_pct": "-9.51%",
-      "key_topics": [
-        "Update",
+        "AI",
         "Earnings",
+        "Trial"
+      ]
+    },
+    {
+      "ticker": "TQQQ",
+      "name": "ProShares UltraPro QQQ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 45231,
+      "price": 49.1,
+      "change_pct": "+19.17%",
+      "key_topics": [
+        "Pivotgroup"
+      ]
+    },
+    {
+      "ticker": "TECL",
+      "name": "Direxion Daily Technology Bull ",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4958,
+      "price": 117.01,
+      "change_pct": "+25.83%",
+      "key_topics": [
+        "Momentum",
+        "Volume Spike"
+      ]
+    },
+    {
+      "ticker": "KYMR",
+      "name": "Kymera Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 956,
+      "price": 150.37,
+      "change_pct": "+30.40%",
+      "key_topics": [
+        "Trial",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence Energy, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 8452,
+      "price": 3.8,
+      "change_pct": "+9.83%",
+      "key_topics": [
+        "AI",
+        "Earnings",
+        "Demand"
+      ]
+    },
+    {
+      "ticker": "BNAI",
+      "name": "Brand Engagement Network Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4734,
+      "price": 7.32,
+      "change_pct": "+117.86%",
+      "key_topics": [
+        "Revenue",
+        "Market",
         "Growth"
       ]
     },
     {
-      "ticker": "CHPY",
-      "name": "YieldMax Semiconductor Portfoli",
-      "sentiment_delta": 0.818,
-      "current_sentiment": 0.818,
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 91,
-      "tweet_volume": 2017,
-      "price": 43.82,
-      "change_pct": "-10.04%",
+      "bullish_pct": 100,
+      "tweet_volume": 4596,
+      "price": 176.04,
+      "change_pct": "+3.32%",
       "key_topics": [
-        "AI",
-        "Market"
+        "Earnings"
       ]
     }
   ]

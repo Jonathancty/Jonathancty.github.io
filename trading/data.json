@@ -1,174 +1,177 @@
 {
-  "updated_at": "2026-11-24T00:35:41.354331+00:00",
+  "updated_at": "2026-11-24T22:55:08.618481+00:00",
   "top_trending": {
-    "ticker": "BBIO",
-    "name": "BridgeBio Pharma, Inc.",
+    "ticker": "MLTX",
+    "name": "MoonLake Immunotherapeutics",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 5581,
-    "price": 79.12,
-    "change_pct": "+4.07%",
+    "tweet_volume": 6654,
+    "price": 13.07,
+    "change_pct": "+11.61%",
     "key_topics": [
-      "AI",
       "FDA",
-      "Launch"
+      "AI",
+      "Market"
     ]
   },
   "trending_list": [
     {
-      "ticker": "GLXY",
-      "name": "Galaxy Digital Inc.",
+      "ticker": "TTMI",
+      "name": "TTM Technologies, Inc.",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 18853,
-      "price": 12.55,
-      "change_pct": "+11.85%",
+      "tweet_volume": 2292,
+      "price": 59.42,
+      "change_pct": "-13.34%",
       "key_topics": [
-        "AI",
-        "Crypto",
-        "CEO"
-      ]
-    },
-    {
-      "ticker": "PBR",
-      "name": "Petroleo Brasileiro S.A. Petrob",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 15487,
-      "price": 15.81,
-      "change_pct": "-1.25%",
-      "key_topics": [
-        "AI",
-        "Earnings",
-        "Crypto"
-      ]
-    },
-    {
-      "ticker": "ET",
-      "name": "Energy Transfer LP",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 23143,
-      "price": 18.39,
-      "change_pct": "-1.18%",
-      "key_topics": [
-        "Acquisition",
-        "AI",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "TMDX",
-      "name": "TransMedics Group, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 6996,
-      "price": 92.73,
-      "change_pct": "+8.77%",
-      "key_topics": [
-        "AI",
-        "Earnings",
-        "Trial"
-      ]
-    },
-    {
-      "ticker": "TQQQ",
-      "name": "ProShares UltraPro QQQ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 45231,
-      "price": 49.1,
-      "change_pct": "+19.17%",
-      "key_topics": [
-        "Pivotgroup"
-      ]
-    },
-    {
-      "ticker": "TECL",
-      "name": "Direxion Daily Technology Bull ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4958,
-      "price": 117.01,
-      "change_pct": "+25.83%",
-      "key_topics": [
-        "Momentum",
-        "Volume Spike"
-      ]
-    },
-    {
-      "ticker": "KYMR",
-      "name": "Kymera Therapeutics, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 956,
-      "price": 150.37,
-      "change_pct": "+30.40%",
-      "key_topics": [
-        "Trial",
-        "AI"
-      ]
-    },
-    {
-      "ticker": "FLNC",
-      "name": "Fluence Energy, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 8452,
-      "price": 3.8,
-      "change_pct": "+9.83%",
-      "key_topics": [
-        "AI",
-        "Earnings",
-        "Demand"
-      ]
-    },
-    {
-      "ticker": "BNAI",
-      "name": "Brand Engagement Network Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 4734,
-      "price": 7.32,
-      "change_pct": "+117.86%",
-      "key_topics": [
-        "Revenue",
         "Market",
-        "Growth"
+        "AI",
+        "Earnings"
       ]
     },
     {
-      "ticker": "A",
-      "name": "Agilent Technologies, Inc.",
+      "ticker": "APO",
+      "name": "Apollo Global Management, Inc. ",
       "sentiment_delta": 1.0,
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 4596,
-      "price": 176.04,
-      "change_pct": "+3.32%",
+      "tweet_volume": 3349,
+      "price": 119.84,
+      "change_pct": "+2.48%",
       "key_topics": [
-        "Earnings"
+        "Demand",
+        "Squeeze",
+        "Chips"
+      ]
+    },
+    {
+      "ticker": "SNY",
+      "name": "Sanofi",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 6002,
+      "price": 51.9,
+      "change_pct": "+10.97%",
+      "key_topics": [
+        "Buyout",
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "name": "State Street Health Care Select",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 8035,
+      "price": 184.72,
+      "change_pct": "+2.95%",
+      "key_topics": [
+        "Elliottwave",
+        "Trading",
+        "Bluebox"
+      ]
+    },
+    {
+      "ticker": "LABD",
+      "name": "Direxion Daily S&P Biotech Bear",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 13906,
+      "price": 6.24,
+      "change_pct": "-19.48%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Squeeze"
+      ]
+    },
+    {
+      "ticker": "MUU",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2299,
+      "price": 10.38,
+      "change_pct": "-22.13%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "NASA",
+      "name": "Tema Space Innovators ETF",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 5346,
+      "price": 17.55,
+      "change_pct": "-4.98%",
+      "key_topics": [
+        "AI",
+        "Market",
+        "Chips"
+      ]
+    },
+    {
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium ",
+      "sentiment_delta": 0.895,
+      "current_sentiment": 0.895,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 95,
+      "tweet_volume": 9671,
+      "price": 53.06,
+      "change_pct": "-1.80%",
+      "key_topics": [
+        "AI",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "AMTM",
+      "name": "Amentum Holdings, Inc.",
+      "sentiment_delta": 0.867,
+      "current_sentiment": 0.867,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 93,
+      "tweet_volume": 2077,
+      "price": 24.8,
+      "change_pct": "+20.10%",
+      "key_topics": [
+        "Riskfactors",
+        "Secfilings"
+      ]
+    },
+    {
+      "ticker": "TGTX",
+      "name": "TG Therapeutics, Inc.",
+      "sentiment_delta": 0.8,
+      "current_sentiment": 0.8,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 90,
+      "tweet_volume": 22022,
+      "price": 70.13,
+      "change_pct": "+9.60%",
+      "key_topics": [
+        "FDA",
+        "AI",
+        "Market"
       ]
     }
   ]

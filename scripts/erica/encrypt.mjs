@@ -2,6 +2,7 @@
 // Usage: node scripts/erica/encrypt.mjs
 // Only the hint stays readable. Everything else needs the secret word.
 import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { dirname, resolve, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { deriveKey, normalise, unlock } from '../../erica/js/vault.js';
@@ -54,17 +55,23 @@ if (!Array.isArray(content.memories) || content.memories.length > 8) fail('memor
 // Photos are shown without captions, so nothing else is published.
 content.memories = content.memories.map((m) => ({ image: m?.image ?? '' }));
 
+// Make small, metadata-free copies of the photos to publish instead of the originals.
+const shrink = spawnSync(process.platform === 'win32' ? 'python' : 'python3', [resolve(here, 'shrink.py')], { encoding: 'utf8' });
+if (shrink.status !== 0) fail(`could not shrink the photos. Is Python with Pillow installed? ${shrink.stderr ?? shrink.error ?? ''}`);
+
 // Any "image" value naming a file in _erica_private is embedded, so pictures are encrypted too.
 function embed(node) {
   if (!node || typeof node !== 'object') return;
   for (const [k, v] of Object.entries(node)) {
     if (k === 'image' && typeof v === 'string' && v) {
       const file = resolve(privateDir, v);
-      const type = TYPES[extname(v).toLowerCase()];
+      let type = TYPES[extname(v).toLowerCase()];
       if (!type) fail(`${v}: use jpg, png, webp or svg.`);
       if (!existsSync(file)) fail(`picture not found: ${v}`);
-      const buf = readFileSync(file);
-      if (buf.length > 500_000) console.warn(`Note: ${v} is ${Math.round(buf.length / 1000)} KB. Under 500 KB loads faster.`);
+      const small = resolve(privateDir, 'web', `${v}.jpg`);
+      if (type !== 'image/svg+xml') type = 'image/jpeg';
+      const buf = readFileSync(type === 'image/jpeg' ? small : file);
+      if (buf.length > 500_000) console.warn(`Note: ${v} is still ${Math.round(buf.length / 1000)} KB after shrinking.`);
       node[k] = `data:${type};base64,${buf.toString('base64')}`;
     } else embed(v);
   }
@@ -80,4 +87,6 @@ const box = { v: 1, hint, iterations: ITERATIONS, salt: b64(salt), iv: b64(iv), 
 
 if (!(await unlock(secretWord, box)) || (await unlock(`${secretWord}x`, box))) fail('self-check failed, nothing written.');
 writeFileSync(target, JSON.stringify(box));
+// The hint is also on its own, so it shows before the photos have downloaded.
+writeFileSync(resolve(root, 'erica/hint.json'), JSON.stringify({ hint }));
 console.log(`Wrote erica/content.enc.json (${Math.ceil(JSON.stringify(box).length / 1024)} KB).`);

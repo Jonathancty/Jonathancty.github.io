@@ -9,6 +9,9 @@ import { makeGift, makeEnding } from './gift.js';
 import { makeTree } from './tree.js';
 import { loadProgress, saveProgress, saveStage, myBox, myAlbum, addToAlbum, clearProgress, rememberWord, recallWord, forgetWord } from './progress.js';
 
+// Older phones draw square corners instead of failing.
+CanvasRenderingContext2D.prototype.roundRect ??= function (x, y, w, h) { this.rect(x, y, w, h); };
+
 const $ = (id) => document.getElementById(id);
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -51,6 +54,7 @@ function loadBox() {
     .catch((e) => { boxPromise = undefined; throw e; });
   return boxPromise;
 }
+fetch('hint.json', { cache: 'no-cache' }).then((r) => r.json()).then((h) => { $('hint').textContent = h.hint; }).catch(() => {});
 loadBox().catch(() => { $('reply').textContent = 'The connection is slow… Tap the button to try again.'; });
 
 const word = $('word'), reply = $('reply'), button = $('open'), gate = $('gate');

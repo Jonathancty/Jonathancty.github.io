@@ -12,7 +12,7 @@ const privateDir = resolve(root, '_erica_private');
 const source = resolve(privateDir, 'content.json');
 const target = resolve(root, 'erica/content.enc.json');
 const ITERATIONS = 600_000;
-const TYPES = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
+const TYPES = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
 
 const fail = (msg) => { console.error(`Stopped: ${msg}`); process.exit(1); };
 
@@ -61,7 +61,7 @@ function embed(node) {
     if (k === 'image' && typeof v === 'string' && v) {
       const file = resolve(privateDir, v);
       const type = TYPES[extname(v).toLowerCase()];
-      if (!type) fail(`${v}: use jpg, png or webp.`);
+      if (!type) fail(`${v}: use jpg, png, webp or svg.`);
       if (!existsSync(file)) fail(`picture not found: ${v}`);
       const buf = readFileSync(file);
       if (buf.length > 500_000) console.warn(`Note: ${v} is ${Math.round(buf.length / 1000)} KB. Under 500 KB loads faster.`);

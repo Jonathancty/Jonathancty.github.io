@@ -1,0 +1,96 @@
+{
+  "secretWord": "snowflake",
+  "hint": "Tiny, white, and no two are ever the same. One of a kind, just like you ❄️",
+  "welcome": {
+    "title": "Hi Erica, I've been waiting for you!",
+    "text": "Santa says he has a present for you, but he can't remember where he left it… Are you ready to find it?",
+    "button": "Let's go!"
+  },
+  "questions": [
+    {
+      "question": "Santa is checking his list. Have you been naughty or nice?",
+      "answers": [
+        {
+          "text": "Nice, obviously 😇",
+          "reply": "Santa double-checked. He has some questions, but okay!"
+        },
+        {
+          "text": "A tiny bit naughty 😈",
+          "reply": "Honesty is very nice, so that cancels out!"
+        },
+        {
+          "text": "Depends who's asking 👀",
+          "reply": "Santa laughed so hard his belt popped."
+        }
+      ]
+    },
+    {
+      "question": "There is one last Christmas cookie. What do you do?",
+      "answers": [
+        {
+          "text": "Eat it, no regrets 🍪",
+          "reply": "Crumbs on your scarf, but nobody saw a thing."
+        },
+        {
+          "text": "Share it with me 💕",
+          "reply": "Half each! The bigger half is yours, of course."
+        },
+        {
+          "text": "Blame the reindeer 🦌",
+          "reply": "Rudolph is speechless. Brilliant plan."
+        }
+      ]
+    },
+    {
+      "question": "Who gives the best hugs in the whole world?",
+      "answers": [
+        {
+          "text": "You do 🥰",
+          "reply": "Correct! One free hug is on its way."
+        },
+        {
+          "text": "Me, clearly 💁‍♀️",
+          "reply": "Also correct. I can confirm this personally."
+        },
+        {
+          "text": "We need to test it 🤗",
+          "reply": "Excellent idea. Testing may take all day."
+        }
+      ]
+    }
+  ],
+  "boxes": [
+    "The Candy Cane Box",
+    "The Snowflake Box",
+    "The Gingerbread Box",
+    "The Holly Box",
+    "The Starlight Box",
+    "The Jingle Bell Box"
+  ],
+  "gift": {
+    "name": "Your gift name goes here",
+    "text": "A short line about the gift.",
+    "image": ""
+  },
+  "ending": {
+    "title": "Merry Christmas, Erica!",
+    "text": "Your Christmas message goes here."
+  },
+  "memories": [
+    {
+      "image": ""
+    },
+    {
+      "image": ""
+    },
+    {
+      "image": ""
+    },
+    {
+      "image": ""
+    },
+    {
+      "image": ""
+    }
+  ]
+}

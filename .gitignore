@@ -3,3 +3,6 @@ _screener_hist/
 .pytest_cache/
 scripts/screener/**/__pycache__/
 scripts/screener/__pycache__/
+
+# Erica game: private content (secret word, gift, photos) must never be committed
+/_erica_private/

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16294d">
+<title>A little Christmas adventure</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg class="scene" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16294d"/><stop offset=".55" stop-color="#3d4f86"/><stop offset=".85" stop-color="#b9849b"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#ffd98a" stop-opacity=".75"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient>
+    <g id="pine">
+      <rect x="-4" y="-8" width="8" height="14" rx="3" fill="#5b4038"/>
+      <path d="M0-92Q10-70 23-60Q14-58 12-59Q20-42 32-32Q22-30 18-31Q27-14 40-6Q0 4-40-6Q-27-14-18-31Q-22-30-32-32Q-20-42-12-59Q-14-58-23-60Q-10-70 0-92Z"/>
+      <path d="M0-92Q10-70 23-60Q8-66 0-62Q-8-66-23-60Q-10-70 0-92Z" fill="#fff6ee" opacity=".9"/>
+    </g>
+  </defs>
+  <rect width="400" height="800" fill="url(#sky)"/>
+  <circle cx="318" cy="150" r="80" fill="url(#glow)" opacity=".6"/>
+  <circle cx="318" cy="150" r="30" fill="#fff1cf"/>
+  <path d="M0 620Q90 545 190 610T400 570V800H0Z" fill="#8e8fc0"/>
+  <g fill="#39577a">
+    <use href="#pine" transform="translate(40 612) scale(.55)"/><use href="#pine" transform="translate(84 600) scale(.75)"/>
+    <use href="#pine" transform="translate(352 602) scale(.8)"/><use href="#pine" transform="translate(386 606) scale(.6)"/>
+  </g>
+  <path d="M0 690Q130 600 260 660T400 640V800H0Z" fill="#c9c8e6"/>
+  <g transform="translate(252 610)">
+    <circle cx="32" cy="36" r="85" fill="url(#glow)"/>
+    <rect x="50" y="-28" width="13" height="30" fill="#7b4a44"/><rect x="47" y="-32" width="19" height="8" rx="4" fill="#fff6ee"/>
+    <rect x="0" y="10" width="72" height="52" rx="4" fill="#9a5548"/>
+    <path d="M-12 18 36-26 84 18Q86 26 76 25L36-6-4 25Q-14 26-12 18Z" fill="#fff6ee"/>
+    <rect x="10" y="28" width="18" height="18" rx="3" fill="#ffdf8f"/><path d="M19 28v18M10 37h18" stroke="#7b4a44" stroke-width="2"/>
+    <path d="M42 62V40a9 9 0 0 1 18 0v22Z" fill="#b5323f"/><circle cx="51" cy="42" r="5" fill="none" stroke="#5fa36f" stroke-width="3"/>
+  </g>
+  <g fill="#2c6658"><use href="#pine" transform="translate(48 705) scale(1.25)"/><use href="#pine" transform="translate(364 694)"/></g>
+  <path d="M0 730Q120 665 230 715T400 695V800H0Z" fill="#fff6ee"/>
+</svg>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<main>
+  <div id="lights" aria-hidden="true"></div>
+  <section class="screen" data-screen="gate">
+    <form class="tag" id="gate" novalidate>
+      <span class="hole" aria-hidden="true"></span>
+      <h1>Who's knocking?</h1>
+      <p class="lead">This door only opens for one very special girl.</p>
+      <p class="hint"><b>Hint</b><span id="hint">…</span></p>
+      <label for="word">Secret word</label>
+      <input id="word" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="go" maxlength="60" aria-describedby="reply">
+      <p class="reply" id="reply" role="status"></p>
+      <button id="open" type="submit">Open the door</button>
+    </form>
+  </section>
+
+  <section class="screen" data-screen="welcome" hidden>
+    <div class="tag">
+      <span class="hole" aria-hidden="true"></span>
+      <h1 id="welcome-title" tabindex="-1"></h1>
+      <p class="lead" id="welcome-text"></p>
+      <button id="start" type="button"></button>
+      <button id="restart" class="quiet" type="button" hidden>Start over</button>
+    </div>
+  </section>
+
+  <section class="maze" data-screen="maze" aria-label="Snowy maze" hidden>
+    <canvas class="world"></canvas>
+    <p class="keys" role="status"></p>
+    <p class="album" hidden></p>
+    <canvas class="map" aria-hidden="true"></canvas>
+    <p class="toast" role="status"></p>
+    <p class="tip">Drag anywhere to walk</p>
+    <div class="stick" aria-hidden="true"><div class="knob"></div></div>
+  </section>
+
+  <div class="memory" id="memory" role="dialog" aria-modal="true" aria-label="A photo memory" hidden>
+    <div class="photo">
+      <img alt="" hidden><p class="blank" aria-hidden="true">📷</p>
+    </div>
+    <button id="memory-keep" type="button">Keep this memory</button>
+  </div>
+
+  <section class="room" data-screen="question" hidden>
+    <canvas aria-hidden="true"></canvas>
+    <div class="front">
+      <div class="ask"><p class="step"></p><h1 tabindex="-1"></h1></div>
+      <div class="wall"></div>
+      <div class="pop" hidden>
+        <h2 class="reply-text" tabindex="-1"></h2>
+        <div class="prize"></div>
+        <button class="go" type="button"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" data-screen="wheel" hidden>
+    <canvas aria-hidden="true"></canvas>
+    <div class="front">
+      <div class="ask" role="status"><h1 tabindex="-1"></h1><p class="lead"></p></div>
+      <button class="low" type="button" hidden></button>
+    </div>
+  </section>
+
+  <section class="stage" data-screen="gift" hidden>
+    <canvas aria-hidden="true"></canvas>
+    <button class="tap" type="button" aria-label="Open the present"></button>
+    <div class="front">
+      <div class="ask" role="status"><h1 tabindex="-1"></h1><p class="lead"></p></div>
+      <div class="pop" hidden>
+        <p class="lead">Inside you found…</p>
+        <img alt="" hidden><p class="gift-emoji" aria-hidden="true">🎁</p>
+        <h2 class="reply-text" tabindex="-1"></h2>
+        <p class="note"></p>
+        <button class="go" type="button">There's a note too</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" data-screen="ending" hidden>
+    <canvas aria-hidden="true"></canvas>
+    <div class="front">
+      <div class="pop">
+        <h1 tabindex="-1"></h1>
+        <p class="lead message"></p>
+        <button id="peek" class="quiet" type="button">See my present again</button>
+        <button id="again" class="quiet" type="button">Play again</button>
+      </div>
+    </div>
+  </section>
+</main>
+<button id="mute" type="button" aria-label="Mute sound" aria-pressed="false">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12v8h5l7 6V6l-7 6Z" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path class="waves" d="M21 11.5a6.4 6.4 0 0 1 0 9M24.5 8a11.4 11.4 0 0 1 0 16"/><path class="cross" d="m22 12 7 8m0-8-7 8"/></g></svg>
+</button>
+<noscript>Please turn on JavaScript to play.</noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

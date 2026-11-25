@@ -1,8 +1,9 @@
-// Someone is waiting for her. They walk hand in hand to the memory tree, where every
+// Someone is waiting for her. After a snowball fight she cannot win, they walk hand in hand to the memory tree, where every
 // photo she found hangs as an ornament.
 import { makeStage } from './stage.js';
 import { drawGirl } from './girl.js';
 import { drawPartner, drawCouple } from './partner.js';
+import { drawBall, drawSnowOn, drawSnowErica, drawBubble } from './snowfight.js';
 import { star } from './art.js';
 import { rng } from './maze.js';
 import { sfx } from './audio.js';
@@ -12,7 +13,7 @@ const SLOTS = {
   5: [[0, .27], [-.13, .45], [.14, .49], [-.2, .67], [.2, .7]],
   8: [[0, .23], [-.1, .42], [.13, .46], [-.18, .62], [.07, .66], [-.27, .77], [.27, .77], [.02, .8]],
 };
-const GAP = 62;
+const GAP = 62, APART = 108, THROWS = 6;
 const BULBS = ['#ff6b6b', '#ffcf70', '#8fc7ff', '#ff9fc6', '#fff3b0'];
 const FAR = Array.from({ length: 40 }, (_, i) => { const r = rng(i + 400); return { x: r(), y: r(), s: r() }; });
 
@@ -20,7 +21,8 @@ export function makeTree(root) {
   const ask = root.querySelector('.ask'), title = ask.querySelector('h1'), text = ask.querySelector('.lead');
   const button = root.querySelector('.low'), hang = root.querySelector('.ornaments');
   const stage = makeStage(root, draw);
-  let k = 1, scroll = 1, meet = 0, together = false, walk = 0, moving = false, dir = 'down', hold = 0, lit = 0, shining = 0, heart = 0, waiting = 'left';
+  let gx = 0, px = 0, coupleX = 0, hop = 0, snow = 0, frozen = false, laugh = 0, pull = 0, fighting = false, nextThrow = 0, hers = 0, his = 0, balls = [], puffs = [], before = 0;
+  let k = 1, scroll = 1, together = false, walk = 0, moving = false, dir = 'down', hold = 0, lit = 0, shining = 0, heart = 0, waiting = 'left';
   let press = null, count = 5, size = 60;
 
   function layout() {
@@ -57,12 +59,25 @@ export function makeTree(root) {
       const step = 30 * k, phase = ((scroll * L.travel) % step + step) % step, x = L.mid - 70 * k - i * step + phase;
       if (scroll < 1 && x > L.mid - 70 * k - (1 - scroll) * L.travel) { ctx.beginPath(); ctx.ellipse(x, L.feet + (i % 2 ? 2 : -3) * k, 6 * k, 3 * k, 0, 0, 7); ctx.fill(); }
     }
-    if (together) stage.place(L.mid, L.feet, k, () => drawCouple(ctx, { dir, walk, moving, t, gap: GAP, hold }));
+    if (together) stage.place(L.mid + coupleX * k, L.feet, k, () => drawCouple(ctx, { dir, walk, moving, t, gap: GAP, hold }));
     else {
-      const gx = -60 * k + (L.mid - GAP / 2 * k + 60 * k) * meet;
-      stage.place(gx, L.feet, k, () => drawGirl(ctx, { dir: 'right', walk, moving, t }));
-      stage.place(L.mid + GAP / 2 * k, L.feet, k, () => drawPartner(ctx, { dir: waiting, walk: 0, moving: false, t }));
+      // Each shakes a little when hit
+      const sg = Math.sin(t * 40) * 4 * hers, sp = Math.sin(t * 40) * 4 * his;
+      stage.place(L.mid + (gx + sg + Math.sin(pull * Math.PI * 6) * 5) * k, L.feet - hop * k, k, () => {
+        if (frozen) { ctx.rotate(Math.sin(pull * Math.PI * 6) * .09); drawSnowErica(ctx, t); return; }
+        drawGirl(ctx, { dir: 'right', walk, moving, t }); drawSnowOn(ctx, snow);
+      });
+      const giggle = laugh > 0 ? Math.abs(Math.sin(t * 13)) * 6 : 0;
+      stage.place(L.mid + (px + sp + (pull > 0 ? Math.sin(pull * Math.PI * 6) * 5 + 4 : 0)) * k, L.feet - giggle * k, k, () => {
+        if (pull > 0) { ctx.strokeStyle = '#17171b'; ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-8, -38); ctx.lineTo(gx + 40 - px, -38); ctx.stroke(); ctx.fillStyle = '#f5cfa6'; ctx.beginPath(); ctx.arc(gx + 40 - px, -38, 5.5, 0, 7); ctx.fill(); }
+        drawPartner(ctx, { dir: waiting, walk, moving: moving && frozen, t });
+      });
+      if (laugh > 0) {
+        const bx = Math.min(L.mid + px * k, L.w - 84 * k);
+        stage.place(bx, L.feet - 122 * k, k * Math.min(1, laugh * 5), () => drawBubble(ctx, 'HAHAHA! 😂', t));
+      }
     }
+    snowballs(ctx, L, t);
     if (heart > 0) {
       ctx.globalAlpha = Math.min(1, (1 - heart) * 3);
       stage.place(L.mid, L.feet - (118 + heart * 46) * k, k * (.6 + Math.min(1, heart * 5) * .5), () => {
@@ -78,6 +93,94 @@ export function makeTree(root) {
       ctx.arc(((s.x * w + shift * .9 + Math.sin(t + s.s * 9) * 14) % w + w) % w, (s.y * h * 3 + t * (26 + s.s * 40)) % h, 1.2 + s.s * 2, 0, 7); ctx.fill();
     }
     ctx.globalAlpha = 1;
+  }
+
+  // Snowballs in the air, and the puffs where they land.
+  function snowballs(ctx, L, t) {
+    const dt = Math.min(.05, Math.max(0, t - before));
+    before = t;
+    hers = Math.max(0, hers - dt * 3); his = Math.max(0, his - dt * 3); nextThrow = Math.max(0, nextThrow - dt);
+    for (const b of balls) {
+      b.age += dt;
+      const p = Math.min(1, b.age / b.time), a = b.mine ? gx + 22 : px - 22, z = b.mine ? px : gx;
+      stage.place(L.mid + (a + (z - a) * p) * k, L.feet - (46 + Math.sin(p * Math.PI) * (b.big ? 110 : 62)) * k, k, () => { ctx.rotate(p * 5); drawBall(ctx, b.big ? 26 : 9); });
+      if (p === 1) { b.done = true; b.land(); }
+    }
+    balls = balls.filter((b) => !b.done);
+    ctx.fillStyle = '#fff';
+    for (const f of puffs) {
+      f.age += dt; f.vy += 260 * dt; f.x += f.vx * dt; f.y += f.vy * dt;
+      ctx.globalAlpha = Math.max(0, 1 - f.age / .9);
+      ctx.beginPath(); ctx.arc(L.mid + f.x * k, L.feet + f.y * k, f.r * k, 0, 7); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    puffs = puffs.filter((f) => f.age < .9);
+  }
+  function puff(x, y, n, power) {
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * 6.3, v = power * (.3 + Math.random() * .7);
+      puffs.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 60, r: 2 + Math.random() * 5, age: 0 });
+    }
+  }
+  function toss(mine, big = false) {
+    sfx('throw');
+    return new Promise((hit) => balls.push({
+      mine, big, age: 0, time: big ? 1.1 : .55,
+      land() {
+        sfx('splat');
+        if (mine) { his = 1; puff(px, -56, 16, 130); } else { hers = 1; puff(gx, -56, big ? 70 : 18, big ? 300 : 140); }
+        hit();
+      },
+    }));
+  }
+  const throwBack = () => { if (fighting && nextThrow <= 0) { nextThrow = .4; toss(true); } };
+  root.querySelector('canvas').addEventListener('pointerdown', throwBack);
+
+  async function fight() {
+    title.textContent = 'Snowball fight!'; text.textContent = 'Tap to throw!';
+    waiting = 'right';
+    await steps(1.1, (p) => { gx = -GAP / 2 - (APART - GAP / 2) * p; px = -gx; });
+    waiting = 'left';
+    button.textContent = 'Throw a snowball!'; button.hidden = false;
+    fighting = true;
+    const hits = [];
+    for (let i = 1; i <= THROWS; i++) {
+      await stage.pause(i === 1 ? .9 : 1.15);
+      hits.push(toss(false).then(() => { snow = i / THROWS * .95; }));
+    }
+    await Promise.all(hits);
+    fighting = false; button.hidden = true;
+    title.textContent = 'Uh-oh…'; text.textContent = '';
+    await stage.pause(.6);
+    await toss(false, true);
+    frozen = true; snow = 0;
+    title.textContent = 'You are a snowman now!';
+    await stage.pause(1);
+    sfx('haha');
+    stage.tween(2.4, (p) => { laugh = p < 1 ? p + .01 : 0; });
+    await stage.pause(1.25);
+    sfx('haha');
+    await stage.pause(1.3);
+
+    title.textContent = 'Okay, okay, I will get you out!';
+    await steps(1.2, (p) => { px = APART + (gx + 74 - APART) * p; });
+    // Three big tugs, and out she comes
+    for (let i = 0; i < 3; i++) { sfx('boing'); await stage.tween(.5, (p) => { pull = p || .001; }); }
+    pull = 0; frozen = false; snow = .25;
+    sfx('pop');
+    puff(gx, -50, 90, 320);
+    const from = gx;
+    await stage.tween(.6, (p) => { hop = Math.sin(p * Math.PI) * 46; gx = from + 12 * p; });
+    hop = 0;
+    waiting = 'right';
+    await stage.pause(.25);
+    snow = 0; puff(gx, -60, 24, 150); // she shakes it off
+    coupleX = (gx + px) / 2;
+    together = true; dir = 'right';
+    await stage.tween(.4, (p) => { hold = p; });
+    const start = coupleX;
+    title.textContent = 'Come with me…';
+    await steps(1.2, (p) => { coupleX = start * (1 - p); });
   }
 
   function hill(ctx, w, h, y, bump, wave, shift, fill) {
@@ -146,7 +249,7 @@ export function makeTree(root) {
     });
   }
   addEventListener('resize', () => { if (stage.w) requestAnimationFrame(placeOrnaments); });
-  button.addEventListener('click', () => { const p = press; press = null; p?.(); });
+  button.addEventListener('click', () => { throwBack(); const p = press; press = null; p?.(); });
 
   async function steps(seconds, fn) {
     moving = true;
@@ -165,19 +268,19 @@ export function makeTree(root) {
       count = memories.length; press = null;
       const all = count > 0 && found.length === count;
       button.hidden = true; hang.replaceChildren(); hang.hidden = true;
-      meet = 0; together = false; walk = 0; hold = 0; lit = 0; shining = 0; heart = 0; scroll = 1; dir = 'right'; waiting = 'left';
+      gx = -2000; px = GAP / 2; coupleX = 0; hop = 0; snow = 0; frozen = false; laugh = 0; pull = 0; fighting = false; nextThrow = 0; hers = 0; his = 0; balls = []; puffs = [];
+      together = false; walk = 0; hold = 0; lit = 0; shining = 0; heart = 0; scroll = 1; dir = 'right'; waiting = 'left';
       stage.start();
       if (skipWalk) { together = true; hold = 1; scroll = 0; } else {
         title.textContent = 'Someone was waiting for you…'; text.textContent = '';
         await stage.pause(.5);
-        await steps(2, (p) => { meet = p; });
+        const enter = -(layout().mid / k + 60);
+        await steps(2, (p) => { gx = enter + (-GAP / 2 - enter) * p; });
         sfx('sparkle');
         await stage.tween(1.5, (p) => { heart = p; });
         heart = 0; waiting = 'right';
         await stage.pause(.2);
-        together = true; dir = 'right';
-        await stage.tween(.5, (p) => { hold = p; });
-        title.textContent = 'Come with me…';
+        await fight();
         // Ease in and out, so they set off and arrive gently
         await steps(7, (p) => { scroll = 1 - p * p * (3 - 2 * p); });
       }

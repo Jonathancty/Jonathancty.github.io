@@ -1,54 +1,22 @@
 {
-  "updated_at": "2026-11-24T22:55:08.618481+00:00",
+  "updated_at": "2026-11-25T22:08:32.887406+00:00",
   "top_trending": {
-    "ticker": "MLTX",
-    "name": "MoonLake Immunotherapeutics",
+    "ticker": "KHC",
+    "name": "The Kraft Heinz Company",
     "sentiment_delta": 1.0,
     "current_sentiment": 1.0,
     "sentiment_label": "Bullish",
     "bullish_pct": 100,
-    "tweet_volume": 6654,
-    "price": 13.07,
-    "change_pct": "+11.61%",
+    "tweet_volume": 16273,
+    "price": 26.51,
+    "change_pct": "+3.68%",
     "key_topics": [
-      "FDA",
-      "AI",
-      "Market"
+      "Growth",
+      "Market",
+      "AI"
     ]
   },
   "trending_list": [
-    {
-      "ticker": "TTMI",
-      "name": "TTM Technologies, Inc.",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2292,
-      "price": 59.42,
-      "change_pct": "-13.34%",
-      "key_topics": [
-        "Market",
-        "AI",
-        "Earnings"
-      ]
-    },
-    {
-      "ticker": "APO",
-      "name": "Apollo Global Management, Inc. ",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 3349,
-      "price": 119.84,
-      "change_pct": "+2.48%",
-      "key_topics": [
-        "Demand",
-        "Squeeze",
-        "Chips"
-      ]
-    },
     {
       "ticker": "SNY",
       "name": "Sanofi",
@@ -56,122 +24,151 @@
       "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
       "bullish_pct": 100,
-      "tweet_volume": 6002,
-      "price": 51.9,
-      "change_pct": "+10.97%",
+      "tweet_volume": 6006,
+      "price": 54.39,
+      "change_pct": "+4.80%",
       "key_topics": [
-        "Buyout",
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "XLV",
-      "name": "State Street Health Care Select",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 8035,
-      "price": 184.72,
-      "change_pct": "+2.95%",
-      "key_topics": [
-        "Elliottwave",
-        "Trading",
-        "Bluebox"
-      ]
-    },
-    {
-      "ticker": "LABD",
-      "name": "Direxion Daily S&P Biotech Bear",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 13906,
-      "price": 6.24,
-      "change_pct": "-19.48%",
-      "key_topics": [
-        "AI",
-        "Market",
-        "Squeeze"
-      ]
-    },
-    {
-      "ticker": "MUU",
-      "name": "Direxion Daily MU Bull 2X ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 2299,
-      "price": 10.38,
-      "change_pct": "-22.13%",
-      "key_topics": [
-        "AI",
-        "Market"
-      ]
-    },
-    {
-      "ticker": "NASA",
-      "name": "Tema Space Innovators ETF",
-      "sentiment_delta": 1.0,
-      "current_sentiment": 1.0,
-      "sentiment_label": "Bullish",
-      "bullish_pct": 100,
-      "tweet_volume": 5346,
-      "price": 17.55,
-      "change_pct": "-4.98%",
-      "key_topics": [
-        "AI",
-        "Market",
+        "Revenue",
+        "CEO",
         "Chips"
       ]
     },
     {
-      "ticker": "JEPQ",
-      "name": "JPMorgan Nasdaq Equity Premium ",
-      "sentiment_delta": 0.895,
-      "current_sentiment": 0.895,
+      "ticker": "VKTX",
+      "name": "Viking Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
       "sentiment_label": "Bullish",
-      "bullish_pct": 95,
-      "tweet_volume": 9671,
-      "price": 53.06,
-      "change_pct": "-1.80%",
+      "bullish_pct": 100,
+      "tweet_volume": 40182,
+      "price": 31.38,
+      "change_pct": "+6.45%",
       "key_topics": [
-        "AI",
+        "Revenue",
+        "Acquisition",
         "Market"
       ]
     },
     {
-      "ticker": "AMTM",
-      "name": "Amentum Holdings, Inc.",
-      "sentiment_delta": 0.867,
-      "current_sentiment": 0.867,
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bu",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 44066,
+      "price": 32.02,
+      "change_pct": "-1.78%",
+      "key_topics": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 41371,
+      "price": 73.61,
+      "change_pct": "-5.57%",
+      "key_topics": [
+        "Earnings",
+        "CEO",
+        "Market"
+      ]
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 4322,
+      "price": 147.27,
+      "change_pct": "+8.39%",
+      "key_topics": [
+        "Ibdpartner"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 72825,
+      "price": 26.02,
+      "change_pct": "+10.25%",
+      "key_topics": [
+        "Revenue",
+        "CEO",
+        "Launch"
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 186082,
+      "price": 1.06,
+      "change_pct": "+14.34%",
+      "key_topics": [
+        "Americanfusion"
+      ]
+    },
+    {
+      "ticker": "VERA",
+      "name": "Vera Therapeutics, Inc.",
+      "sentiment_delta": 1.0,
+      "current_sentiment": 1.0,
+      "sentiment_label": "Bullish",
+      "bullish_pct": 100,
+      "tweet_volume": 2181,
+      "price": 29.5,
+      "change_pct": "+1.76%",
+      "key_topics": [
+        "Revenue",
+        "Update",
+        "Growth"
+      ]
+    },
+    {
+      "ticker": "AG",
+      "name": "First Majestic Silver Corp.",
+      "sentiment_delta": 0.857,
+      "current_sentiment": 0.857,
       "sentiment_label": "Bullish",
       "bullish_pct": 93,
-      "tweet_volume": 2077,
-      "price": 24.8,
-      "change_pct": "+20.10%",
+      "tweet_volume": 19885,
+      "price": 11.23,
+      "change_pct": "+4.37%",
       "key_topics": [
-        "Riskfactors",
-        "Secfilings"
+        "Blackfriday",
+        "Silver",
+        "Petrodollar"
       ]
     },
     {
-      "ticker": "TGTX",
-      "name": "TG Therapeutics, Inc.",
-      "sentiment_delta": 0.8,
-      "current_sentiment": 0.8,
+      "ticker": "AGQ",
+      "name": "ProShares Ultra Silver",
+      "sentiment_delta": 0.846,
+      "current_sentiment": 0.846,
       "sentiment_label": "Bullish",
-      "bullish_pct": 90,
-      "tweet_volume": 22022,
-      "price": 70.13,
-      "change_pct": "+9.60%",
+      "bullish_pct": 92,
+      "tweet_volume": 4607,
+      "price": 29.22,
+      "change_pct": "+1.25%",
       "key_topics": [
-        "FDA",
-        "AI",
-        "Market"
+        "Launch",
+        "Price Target",
+        "AI"
       ]
     }
   ]

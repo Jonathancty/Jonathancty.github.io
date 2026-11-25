@@ -131,6 +131,15 @@ noscript { position: fixed; bottom: 20px; left: 0; right: 0; text-align: center;
 .message { margin: 10px 0 6px; color: var(--ink); overflow-wrap: anywhere; }
 .message ~ .quiet { margin-top: 2px; min-height: 44px; }
 
+/* Memory tree */
+.ornaments { position: absolute; inset: 0; pointer-events: none; }
+.ornament { position: absolute; min-height: 0; padding: 3px; border-radius: 50%; background: linear-gradient(140deg, #fff3c4, #f2b544 55%, #cf9326); box-shadow: 0 3px 10px #0b173599; pointer-events: auto; font-size: 26px; line-height: 1; transform-origin: 50% -8px; animation: hang .9s ease-out; }
+.ornament::before { content: ""; position: absolute; left: 50%; top: -7px; width: 12px; height: 9px; margin-left: -6px; border-radius: 3px 3px 0 0; background: #cf9326; }
+.ornament img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.ornament:active { transform: scale(.94); box-shadow: 0 2px 6px #0b173599; }
+.ornament.lost { background: #51668a; color: #d8e2f5; }
+.ornament.lost::before { background: #3d4f70; }
+
 /* Short screens: keyboard open, small phones, landscape */
 @media (max-height: 620px) {
   .screen { padding-top: calc(52px + env(safe-area-inset-top)); }

@@ -31,6 +31,19 @@ export function myBox(choose) {
   return box;
 }
 
+// Photos she has found, added up over every game.
+const ALBUM = 'erica-album';
+let album = [];
+export function myAlbum() {
+  try { const a = JSON.parse(read(local, ALBUM)); if (Array.isArray(a)) album = [...new Set([...album, ...a])]; } catch { /* start empty */ }
+  for (const id of loadProgress()?.gone ?? []) if (/^memory\d$/.test(id)) album = [...new Set([...album, Number(id.slice(6))])];
+  return album;
+}
+export function addToAlbum(i) {
+  album = [...new Set([...myAlbum(), i])];
+  write(local, ALBUM, JSON.stringify(album));
+}
+
 // The word is kept only until this tab closes, so a refresh doesn't ask again.
 export const rememberWord = (word) => write(session, WORD, word);
 export const recallWord = () => read(session, WORD);

@@ -6,7 +6,8 @@ import { music, sfx, isMuted, setMuted } from './audio.js';
 import { makeQuestion, keySvg } from './question.js';
 import { makeWheel } from './wheel.js';
 import { makeGift, makeEnding } from './gift.js';
-import { loadProgress, saveProgress, saveStage, myBox, clearProgress, rememberWord, recallWord, forgetWord } from './progress.js';
+import { makeTree } from './tree.js';
+import { loadProgress, saveProgress, saveStage, myBox, myAlbum, addToAlbum, clearProgress, rememberWord, recallWord, forgetWord } from './progress.js';
 
 const $ = (id) => document.getElementById(id);
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -19,7 +20,7 @@ const WRONG = [
   'Peek at the hint again, you can do it ❤️',
 ];
 
-const TUNES = { gate: 'deck', welcome: 'deck', maze: 'jingle', question: 'wish', wheel: 'jingle', gift: 'wish', ending: 'silent' };
+const TUNES = { gate: 'deck', welcome: 'deck', maze: 'jingle', question: 'wish', wheel: 'jingle', gift: 'wish', tree: 'silent', ending: 'silent' };
 
 function show(name) {
   music(TUNES[name]);
@@ -122,10 +123,17 @@ let answers = [];
 const keep = () => saveProgress({ ...game.save(), answers });
 
 const memory = $('memory'), memoryPic = memory.querySelector('img'), album = mazeScreen.querySelector('.album');
-$('memory-keep').addEventListener('click', () => {
-  memory.hidden = true; mazeScreen.inert = false;
-  game.start();
-});
+let closePhoto = null;
+function openPhoto(m, label, onClose) {
+  memoryPic.hidden = !m.image; memory.querySelector('.blank').hidden = !!m.image;
+  if (m.image) { memoryPic.src = m.image; memoryPic.alt = 'A photo of a memory'; }
+  const behind = document.querySelector('[data-screen]:not([hidden])');
+  $('memory-keep').textContent = label;
+  memory.hidden = false; behind.inert = true;
+  $('memory-keep').focus({ preventScroll: true });
+  closePhoto = () => { memory.hidden = true; behind.inert = false; onClose?.(); };
+}
+$('memory-keep').addEventListener('click', () => { const close = closePhoto; closePhoto = null; close?.(); });
 
 const game = makeGame(mazeScreen, {
   memoryCount: () => content.memories?.length ?? 0,
@@ -137,12 +145,9 @@ const game = makeGame(mazeScreen, {
   onMemory(i) {
     game.stop();
     sfx('sparkle');
-    const m = content.memories[i];
-    memoryPic.hidden = !m.image; memory.querySelector('.blank').hidden = !!m.image;
-    if (m.image) { memoryPic.src = m.image; memoryPic.alt = 'A photo of a memory'; }
+    addToAlbum(i);
     toast.classList.remove('on');
-    memory.hidden = false; mazeScreen.inert = true;
-    $('memory-keep').focus({ preventScroll: true });
+    openPhoto(content.memories[i], 'Keep this memory', () => game.start());
     keep();
   },
   onSay: (text) => say(text),
@@ -170,7 +175,7 @@ const game = makeGame(mazeScreen, {
 });
 
 const screen = (name) => document.querySelector(`[data-screen="${name}"]`);
-const wheel = makeWheel(screen('wheel')), gift = makeGift(screen('gift')), ending = makeEnding(screen('ending'));
+const wheel = makeWheel(screen('wheel')), gift = makeGift(screen('gift')), ending = makeEnding(screen('ending')), tree = makeTree(screen('tree'));
 
 async function toWheel() {
   show('wheel');
@@ -186,8 +191,15 @@ async function toGift(already) {
   const box = myBox() ?? 0;
   show('gift');
   await gift.show(box, content.boxes[box], content.gift, already, () => saveStage('open'));
+  toTree(false);
+}
+
+async function toTree(skipWalk) {
+  const all = content.memories ?? [];
+  show('tree');
+  await tree.play(all, myAlbum().filter((i) => i < all.length), (m) => openPhoto(m, 'Back to the tree'), skipWalk);
   show('ending');
-  ending.show(box, content.ending);
+  ending.show(myBox() ?? 0, content.ending);
 }
 
 function playMaze(saved) {
@@ -207,6 +219,7 @@ const fresh = () => { if (content) { clearProgress(); playMaze(null); } };
 $('start').addEventListener('click', () => { if (content) playMaze(loadProgress()); });
 $('restart').addEventListener('click', fresh);
 $('again').addEventListener('click', () => { ending.stop(); fresh(); });
+$('to-tree').addEventListener('click', () => { ending.stop(); toTree(true); });
 $('peek').addEventListener('click', () => { ending.stop(); toGift(true); });
 
 // Phones can close the page without warning, so save often and whenever it is hidden.

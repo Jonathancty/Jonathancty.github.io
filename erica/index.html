@@ -121,9 +121,18 @@
         <img alt="" hidden><p class="gift-emoji" aria-hidden="true">🎁</p>
         <h2 class="reply-text" tabindex="-1"></h2>
         <p class="note"></p>
-        <button class="go" type="button">There's a note too</button>
+        <button class="go" type="button">Someone is waiting for you…</button>
       </div>
     </div>
+  </section>
+
+  <section class="stage" data-screen="tree" hidden>
+    <canvas aria-hidden="true"></canvas>
+    <div class="front">
+      <div class="ask" role="status"><h1 tabindex="-1"></h1><p class="lead"></p></div>
+      <button class="low" type="button" hidden></button>
+    </div>
+    <div class="ornaments" hidden></div>
   </section>
 
   <section class="stage" data-screen="ending" hidden>
@@ -132,6 +141,7 @@
       <div class="pop">
         <h1 tabindex="-1"></h1>
         <p class="lead message"></p>
+        <button id="to-tree" class="quiet" type="button">See our memory tree</button>
         <button id="peek" class="quiet" type="button">See my present again</button>
         <button id="again" class="quiet" type="button">Play again</button>
       </div>

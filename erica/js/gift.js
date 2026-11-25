@@ -2,7 +2,7 @@
 import { makeStage } from './stage.js';
 import { sfx } from './audio.js';
 import { drawBox } from './box.js';
-import { drawGirl } from './girl.js';
+import { drawCouple } from './partner.js';
 
 // On a sideways phone the card is on the left, so the picture moves to the right.
 const middle = (w, h) => (h < 500 && w > h * 1.2 ? w * .75 : w / 2);
@@ -89,8 +89,8 @@ export function makeEnding(root) {
 
   function draw(ctx, { w, h, t }) {
     const k = Math.min(w / 375, h / 700) * 1.35, x = middle(w, h), y = h * .95;
-    stage.place(x - 52 * k, y, k, () => drawBox(ctx, box, { lid: 1 }));
-    stage.place(x + 48 * k, y - Math.abs(Math.sin(t * 5)) * 9 * k, k, () => drawGirl(ctx, { dir: 'down', walk: t * 9, moving: true, t }));
+    stage.place(x - 92 * k, y, k * .8, () => drawBox(ctx, box, { lid: 1 }));
+    stage.place(x + 36 * k, y - Math.abs(Math.sin(t * 4)) * 6 * k, k, () => drawCouple(ctx, { dir: 'down', walk: 0, moving: false, t }));
   }
 
   return {

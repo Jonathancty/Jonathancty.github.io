@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>if (location.protocol === "http:" && !/^(localhost|127.0.0.1)$/.test(location.hostname)) location.replace("https:" + location.href.slice(5));</script>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2733">
+<title>ISA Risk Tracker</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📉</text></svg>">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<header class="top">
+  <div class="brand">ISA Risk Tracker</div>
+  <div class="top-actions">
+    <button class="btn ghost sm" id="btn-export">Export JSON</button>
+    <label class="btn ghost sm" for="file-import">Import JSON</label>
+    <input type="file" id="file-import" accept="application/json,.json" hidden>
+  </div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-view="today" class="active">Today</button>
+  <button data-view="new">New trade</button>
+  <button data-view="history">History</button>
+  <button data-view="log">Trade log</button>
+  <button data-view="settings">Settings</button>
+</nav>
+<main id="app">
+  <section id="view-today" class="view"></section>
+  <section id="view-new" class="view" hidden></section>
+  <section id="view-history" class="view" hidden></section>
+  <section id="view-log" class="view" hidden></section>
+  <section id="view-settings" class="view" hidden></section>
+</main>
+<footer class="foot">Personal risk-tracking tool, not financial advice.</footer>
+<div id="modal-root"></div>
+<div id="tip" role="tooltip" hidden></div>
+<div id="toast" hidden></div>
+<script src="app.js?v=4"></script>
+</body>
+</html>
